@@ -20,4 +20,4 @@ Route::get('/dashboard', function () {
 Route::get('/', 'HomeController@index')->name('index');
 Route::get('contact-us', 'HomeController@contact')->name('contact');
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

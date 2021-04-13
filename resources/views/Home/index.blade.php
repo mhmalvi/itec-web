@@ -78,7 +78,7 @@
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <figure> <img src="{{ asset('assets/img/office02.jpg') }}" alt="Image">
+                                <figure> <img src="{{ asset('assets/images/office02.jpg') }}" alt="Image">
                                     <figcaption>
                                         <h6>BANGLADESH OFFICE</h6>
                                     </figcaption>
@@ -164,97 +164,214 @@
         <!-- end container -->
     </section>
     <!-- end icon-content-block -->
-    <section class="works">
-        <ul>
-            <li>
-                <figure class="reveal-effect masker wow"> <a href="{{ asset('assets/images/works01.jpg') }}"
-                        data-fancybox><img src="{{ asset('assets/images/works01.jpg') }}" alt="Image"></a> </figure>
-                <div class="caption wow" data-splitting>
-                    <h3>Darkness Vehicle</h3>
-                    <small>DIGITAL, PRINT, DEVELOPMENT</small>
-                </div>
-                <!-- end caption -->
-            </li>
-            <li>
-                <figure class="reveal-effect masker wow"> <a href="{{ asset('assets/images/works02.jpg') }}"
-                        data-fancybox><img src="{{ asset('assets/images/works02.jpg') }}" alt="Image"></a> </figure>
-                <div class="caption wow" data-splitting>
-                    <h3>Goddes Cover Art</h3>
-                    <small>PRINT, DIGITAL, DEVELOPMENT</small>
-                </div>
-                <!-- end caption -->
-            </li>
-            <li>
-                <figure class="reveal-effect masker wow"> <a href="{{ asset('assets/images/works03.jpg') }}"
-                        data-fancybox><img src="{{ asset('assets/images/works03.jpg') }}" alt="Image"></a> </figure>
-                <div class="caption wow" data-splitting>
-                    <h3>Hard Employee</h3>
-                    <small>WEB, DIGITAL, DEVELOPMENT</small>
-                </div>
-                <!-- end caption -->
-            </li>
-            <li>
-                <figure class="reveal-effect masker wow"> <a href="{{ asset('assets/images/works04.jpg') }}"
-                        data-fancybox><img src="{{ asset('assets/images/works04.jpg') }}" alt="Image"></a> </figure>
-                <div class="caption wow" data-splitting>
-                    <h3>Sweet Berry Pie</h3>
-                    <small>DIGITAL, PRINT, DEVELOPMENT</small>
-                </div>
-                <!-- end caption -->
-            </li>
-            <li>
-                <figure class="reveal-effect masker wow"> <a href="{{ asset('assets/images/works05.jpg') }}"
-                        data-fancybox><img src="{{ asset('assets/images/works05.jpg') }}" alt="Image"></a> </figure>
-                <div class="caption wow" data-splitting>
-                    <h3>King of Roosters</h3>
-                    <small>PRINT, DIGITAL, DEVELOPMENT</small>
-                </div>
-                <!-- end caption -->
-            </li>
-            <li>
-                <figure class="reveal-effect masker wow"> <a href="{{ asset('assets/images/works06.jpg') }}"
-                        data-fancybox><img src="{{ asset('assets/images/works06.jpg') }}" alt="Image"> </a></figure>
-                <div class="caption wow" data-splitting>
-                    <h3>Primero Car</h3>
-                    <small>WEB, DIGITAL, DEVELOPMENT</small>
-                </div>
-                <!-- end caption -->
-            </li>
-        </ul>
-    </section>
-    <!-- end works -->
-    <section class="clients">
+    <section class="rpl">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AGENSY PROUD<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
+                <div class="col-lg-4 my-2">
+                    <div class="rpl-card">
+                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                        <div class="rpl-des">
+                            <h3>Title</h3>
+                            <ul>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-2">
+                    <div class="rpl-card">
+                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                        <div class="rpl-des">
+                            <h3>Title</h3>
+                            <ul>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-2">
+                    <div class="rpl-card">
+                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                        <div class="rpl-des">
+                            <h3>Title</h3>
+                            <ul>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7">
-                    <ul>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo01.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo02.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo03.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo04.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo05.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo06.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo07.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo08.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo09.png') }}"
-                                alt="Image"> </li>
-                    </ul>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-2">
+                    <div class="rpl-card">
+                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                        <div class="rpl-des">
+                            <h3>Title</h3>
+                            <ul>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <!-- end col-7 -->
+                <div class="col-lg-4 my-2">
+                    <div class="rpl-card">
+                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                        <div class="rpl-des">
+                            <h3>Title</h3>
+                            <ul>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-2">
+                    <div class="rpl-card">
+                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                        <div class="rpl-des">
+                            <h3>Title</h3>
+                            <ul>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-5 -->
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-2">
+                    <div class="rpl-card">
+                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                        <div class="rpl-des">
+                            <h3>Title</h3>
+                            <ul>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-2">
+                    <div class="rpl-card">
+                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                        <div class="rpl-des">
+                            <h3>Title</h3>
+                            <ul>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-2">
+                    <div class="rpl-card">
+                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                        <div class="rpl-des">
+                            <h3>Title</h3>
+                            <ul>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                                <li>
+                                    <a href="">BANGLADESH OFFICE</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-5 -->
             </div>
             <!-- end row -->
         </div>
