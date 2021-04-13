@@ -29,7 +29,7 @@
         </li>
         <li><a href="">MIGRATIONS</a> <small>Migration Information</small> </li>
         <li><a href="">BLOG</a> <small>Recent posts</small> </li>
-        <li><a href="">CONTACT</a> <small>Say hello</small> </li>
+        <li><a href="{{route('contact')}}">CONTACT</a> <small>Say hello</small> </li>
     </ul>
     </div>
     <!-- end inner --> 
