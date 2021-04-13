@@ -28,7 +28,7 @@
           <!-- end layer --> 
         </div>
         <!-- end page-transition -->
-        @include('layouts.nav')
+        @include('layouts.navigation')
         <!-- end site-navigation -->
         <div class="social-media">
           <div class="layer"></div>

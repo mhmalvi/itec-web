@@ -6,7 +6,7 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide" data-background="{{asset('assets/images/slide01.jpg')}}"></div>
             <div class="swiper-slide">
-                <video src="videos/video01.mp4" muted autoplay loop></video>
+                <video src="{{asset('assets/videos/video01.mp4')}}" muted autoplay loop></video>
             </div>
             <div class="swiper-slide" data-background="{{asset('assets/images/slide02.jpg')}}"></div>
         </div>
@@ -36,17 +36,21 @@
         <div class="container">
         <div class="row">
             <div class="col-lg-5 wow" data-splitting>
-            <h3 class="section-title">HOW WE MAKE <br>
-                USER EXPERIENCES</h3>
-            <a href="#">hello@tourog.com</a> </div>
+            <h3 class="section-title">Why Choose ITEC <br> To <br> Study Abroad</h3>
+            <a href="javascript:void(0)">hello@itecounsel.com</a> </div>
             <!-- end col-5 -->
             <div class="col-lg-7 wow" data-splitting>
-            <p>You can't use up creativity. The more you use, the 
-                more you have in your signifant mind.</p>
-            <h6>Salvador Dali</h6>
-            <small>Digital Artisit</small> <b>25</b>
-            <h4>YEARS OF<br>
-                DIGITAL EXPERIENCE</h4>
+                <p class="text-justify">
+                    ITEC – International Training & Education Counsel is your most trusted education agent who is here to help you getting your 
+                    higher education dream come true by applying to the most highly ranked universities across the world even with a scholarship! 
+                    Also get yourself sorted with your university change, TR and PR application, visa extension, NAATI, PTE coaching through us in 
+                    our head office at Australia!
+                </p>
+                <h6>Salvador Dali</h6>
+                <small>Digital Artisit</small> <b>10</b>
+                <h4>
+                    YEARS OF<br>STUDENT<br>COUNSELINIG<br>EXPERIENCE
+                </h4>
             </div>
             <!-- end col-7 --> 
         </div>
@@ -103,52 +107,61 @@
         <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 wow" data-splitting>
-            <h3 class="section-title">THE THINGS<br>
-                WE ARE ABLE TO DO</h3>
+            <h3 class="section-title">
+                THE SERVICES<br>
+                WE ARE PROVIDING</h3>
             </div>
             <!-- end col-12 -->
             <div class="col-lg-3 col-md-4 wow" data-splitting>
-            <div class="content-block">
-                <figure> <img src="{{asset('assets/images/icon01.png')}}" alt="Image"> </figure>
-                <h6>DIGITAL PRODUCTS</h6>
-                <ul>
-                <li>Digital Branding</li>
-                <li>Web & Mobile Sites</li>
-                <li>User Interface Design</li>
-                <li>Responsive Techs</li>
-                </ul>
-            </div>
-            <!-- end content-block --> 
-            </div>
-            <!-- end col-3 -->
-            <div class="col-lg-3 col-md-4 wow" data-splitting>
-            <div class="content-block selected">
-                <figure> <img src="{{asset('assets/images/icon02.png')}}" alt="Image"> </figure>
-                <h6>UI-UX DESIGN</h6>
-                <ul>
-                <li>Digital Strategy</li>
-                <li>User Experience Design</li>
-                <li>User Interface Design</li>
-                <li>Mobile Sites</li>
-                </ul>
-            </div>
-            <!-- end content-block --> 
+                <a class="service-link" href="">
+                    <div class="content-block">
+                        <figure>
+                            <img src="{{asset('assets/images/icon01.png')}}" alt="Image">
+                        </figure>
+                        <h6>IELTS</h6>
+                        <ul>
+                            <li>Qualified Instructor</li>
+                            <li>Digitalized Classroom</li>
+                            <li>24/7 Study Support</li>
+                            <li>Mock Tests</li>
+                        </ul>
+                    </div>
+                </a>
+                <!-- end content-block --> 
             </div>
             <!-- end col-3 -->
             <div class="col-lg-3 col-md-4 wow" data-splitting>
-            <div class="content-block">
-                <figure> <img src="{{asset('assets/images/icon03.png')}}" alt="Image"> </figure>
-                <h6>WEB DEVELOPMENT</h6>
-                <ul>
-                <li>Custom Platform</li>
-                <li>Back-End Executions</li>
-                <li>Interface Apps</li>
-                <li>Mobile Systems</li>
-                </ul>
-            </div>
-            <!-- end content-block --> 
+                <a class="service-link" href="">
+                    <div class="content-block selected">
+                        <figure> <img src="{{asset('assets/images/icon03.png')}}" alt="Image"> </figure>
+                        <h6>ADMISSION</h6>
+                        <ul>
+                            <li>Study in Australia</li>
+                            <li>Study in Canada</li>
+                            <li>Study in Europe</li>
+                            <li>Study in Malaysia</li>
+                        </ul>
+                    </div>
+                </a>
+                <!-- end content-block --> 
             </div>
             <!-- end col-3 --> 
+            <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <a class="service-link" href="">
+                    <div class="content-block">
+                        <figure> <img src="{{asset('assets/images/icon02.png')}}" alt="Image"> </figure>
+                        <h6>RPL</h6>
+                        <ul>
+                            <li>Recognitions of Prior Learning</li>
+                            <li>Career planning</li>
+                            <li>Preparing for an interview</li>
+                            <li>Gain credits in academic</li>
+                        </ul>
+                    </div>
+                </a>
+                <!-- end content-block --> 
+            </div>
+            <!-- end col-3 -->
         </div>
         <!-- end row --> 
         </div>

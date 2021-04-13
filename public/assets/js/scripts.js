@@ -80,6 +80,7 @@
 		$('.all-cases-link b').on('click', function(e) {
 			if ($(".all-cases").hasClass("active")) {
 				$("body").toggleClass("overflow");
+				$(this).toggleClass('b-active');
 				$(".all-cases").removeClass("active");
 				$(".all-cases").css("transition-delay", "0.5s");
 				$(".all-cases .layer").css("transition-delay", "0.3s");
@@ -88,6 +89,7 @@
 			{
 				$(".all-cases").addClass('active');
 				$("body").toggleClass("overflow");
+				$(this).toggleClass('b-active');
 				$(".all-cases.active").css("transition-delay", "0s");
 				$(".all-cases.active .layer").css("transition-delay", "0.2s");
 				$(".all-cases.active .inner").css("transition-delay", "0.7s");
