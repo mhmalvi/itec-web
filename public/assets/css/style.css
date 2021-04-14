@@ -2923,7 +2923,7 @@ textarea {
   position: absolute;
   width: 100%;
   bottom: 0;
-  padding: 15px;
+  padding: 25px;
   color: #fff;
   transform: translateY(50%);
   -webkit-transform: translateY(50%);
@@ -2938,10 +2938,10 @@ textarea {
   position: absolute;
   width: 100%;
   bottom: 0;
-  padding: 15px;
+  padding: 25px;
   color: #fff;
-  transform: translateY(-150%);
-  -webkit-transform: translateY(-150%);
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
 }
 
 .rpl-card:hover .rpl-des ul li{
@@ -2966,4 +2966,89 @@ textarea {
   color: #CD4236;
 }
 
+.rpl-des .find{
+  padding: 10px 25px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+}
 
+.rpl-des .find:hover {
+    background-color: #fff;
+    color: #CD4236;
+}
+
+@media (min-width: 1300px) {
+    .rpl-form {
+        max-width: 1140px;
+    }
+}
+
+.rpl-form select{
+  height: calc(1.5em + .75rem + 22px);
+}
+
+.form-control{
+  color: #fff;
+  background-color: transparent;
+}
+
+.form-control:focus{
+  color: #fff;
+  background-color: transparent;
+}
+
+.all-cases .inner .rpl-form {
+    display: block;
+    max-height: 650px;
+    overflow-y: scroll;
+}
+
+.rpl-btn{
+  margin: 25px;
+  border: 1px solid #fff;
+  padding: 10px 35px;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.rpl-btn:hover{
+  color: #1C375B;
+  background-color: #fff;
+}
+
+input[type="file"]{
+  height: 58px;
+  padding: 1rem 0.75rem;
+  display: none;
+}
+
+.rpl-files label {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 58px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: .25rem;
+}
+
+.rpl-form ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1;
+    /* Firefox */
+}
+
+.rpl-form :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+.rpl-form ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff;
+}

@@ -186,6 +186,7 @@
                                     <a href="">BANGLADESH OFFICE</a>
                                 </li>
                             </ul>
+                            <a href="" class="find">Find More</a>
                         </div>
                     </div>
                 </div>
@@ -208,6 +209,7 @@
                                     <a href="">BANGLADESH OFFICE</a>
                                 </li>
                             </ul>
+                            <a href="" class="find">Find More</a>
                         </div>
                     </div>
                 </div>
@@ -230,10 +232,10 @@
                                     <a href="">BANGLADESH OFFICE</a>
                                 </li>
                             </ul>
+                            <a href="" class="find">Find More</a>
                         </div>
                     </div>
                 </div>
-                <!-- end col-5 -->
             </div>
             <div class="row">
                 <div class="col-lg-4 my-2">
@@ -255,6 +257,7 @@
                                     <a href="">BANGLADESH OFFICE</a>
                                 </li>
                             </ul>
+                            <a href="" class="find">Find More</a>
                         </div>
                     </div>
                 </div>
@@ -277,6 +280,7 @@
                                     <a href="">BANGLADESH OFFICE</a>
                                 </li>
                             </ul>
+                            <a href="" class="find">Find More</a>
                         </div>
                     </div>
                 </div>
@@ -299,10 +303,10 @@
                                     <a href="">BANGLADESH OFFICE</a>
                                 </li>
                             </ul>
+                            <a href="" class="find">Find More</a>
                         </div>
                     </div>
                 </div>
-                <!-- end col-5 -->
             </div>
             <div class="row">
                 <div class="col-lg-4 my-2">
@@ -324,6 +328,7 @@
                                     <a href="">BANGLADESH OFFICE</a>
                                 </li>
                             </ul>
+                            <a href="" class="find">Find More</a>
                         </div>
                     </div>
                 </div>
@@ -346,6 +351,7 @@
                                     <a href="">BANGLADESH OFFICE</a>
                                 </li>
                             </ul>
+                            <a href="" class="find">Find More</a>
                         </div>
                     </div>
                 </div>
@@ -368,10 +374,10 @@
                                     <a href="">BANGLADESH OFFICE</a>
                                 </li>
                             </ul>
+                            <a href="" class="find">Find More</a>
                         </div>
                     </div>
                 </div>
-                <!-- end col-5 -->
             </div>
             <!-- end row -->
         </div>
