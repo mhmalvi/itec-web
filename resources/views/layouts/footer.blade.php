@@ -1,7 +1,51 @@
 <footer class="footer">
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
-            <div class="col-12">
+            <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="footer-links">
+                    <h5>Most Usefull Links</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">RPL</a>
+                        </li>
+                        <li>
+                            <a href="#">Migration</a>
+                        </li>
+                        <li>
+                            <a href="#">Admission</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-7 col-md-7">
+                <div class="footer-industry">
+                    <h5>Find Your Qualification</h5>
+                    <ul>
+                        <li>
+                            <a href="#">Qualification Links</a>
+                        </li>
+                        <li>
+                            <a href="#">Qualification Links</a>
+                        </li>
+                        <li>
+                            <a href="#">Qualification Links</a>
+                        </li>
+                        <li>
+                            <a href="#">Qualification Links</a>
+                        </li>
+                        <li>
+                            <a href="#">Qualification Links</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-2 col-md-2">
                 <ul>
                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -9,10 +53,6 @@
                     <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                     <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                 </ul>
-                <h6>LET’S HAVE A TALK ABOUT YOUR PROJECT.</h6>
-                <h2>Need more information or want <br>
-                    to get in touch?</h2>
-                <a href="#" class="link">Get in touch</a>
             </div>
             <!-- end col-12 -->
             <div class="col-12">
