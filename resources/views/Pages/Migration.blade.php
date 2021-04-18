@@ -20,7 +20,7 @@
         <!-- end inner -->
     </header>
     <!-- end page-header -->
-    <section class="works migration">
+    <section class="works itec-bg-img migration">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>

@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', 'PagesController@index')->name('index');
-Route::get('{page}', 'PagesController')->where('page', 'Contact|RPL|Migration')->name('page');
+Route::get('{page}', 'PagesController')->where('page', 'contact|rpl|migration')->name('page');
+Route::get('admission/{page}', 'AdmissionsController')->name('admission');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

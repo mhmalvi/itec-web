@@ -3119,12 +3119,40 @@ input[type="file"]{
     opacity: 1;
 }
 
-.migration{
+.itec-bg-img{
   position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.migration{
   background-image: url('../images/slider1.jpg');
+}
+.australia{
+  background-image: url('../images/BG/bg-parallax7.jpg');
+}
+.europe{
+  background-image: url('../images/BG/bg-parallax7-europe.jpg');
+}
+.malaysia {
+  background-image: url('../images/BG/bg-parallax7-malaysia.jpg');
+}
+
+.works{
+  display: block;
+  position: relative;
+}
+
+.works .overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  background-color: #1C375B;
 }
 
 .inner-text{
@@ -3162,3 +3190,16 @@ input[type="file"]{
     display: block;
     padding: 5px 0px;
 }
+
+.works .content-box {
+  width: 100%;
+  height: 250px;
+  padding: 25px 15px;
+  margin-top: 15px auto;
+  text-align: justify;
+}
+
+.works .content-box h4{
+  font-weight: 600;
+}
+

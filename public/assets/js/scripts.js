@@ -381,7 +381,11 @@
 				offset:       50
 			}
 			);
-			wow.init();
+	wow.init();
+	
+
+	//AOS
+	AOS.init();
 
 
 
