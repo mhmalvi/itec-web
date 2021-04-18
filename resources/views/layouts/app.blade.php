@@ -13,7 +13,7 @@
     @include('layouts.styles')
 </head>
 
-<body>
+<body id="body" data-audio="{{ asset('assets/audio/audio.mp3') }}">
     <div class="preloader">
         <div class="layer"></div>
         <!-- end layer -->

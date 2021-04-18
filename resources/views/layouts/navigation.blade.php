@@ -15,13 +15,13 @@
             </li>
             <li><a href="">OTHER SERVICES</a><i class="fas fa-caret-down"></i><small>Our Services</small>
                 <ul>
-                    <li><a href="">PTE</a></li>
-                    <li><a href="">IELTS</a></li>
-                    <li><a href="">TOURIST VISA</a></li>
+                    <li><a href="{{ route('page', 'pte') }}">PTE</a></li>
+                    <li><a href="{{ route('page', 'ielts') }}">IELTS</a></li>
+                    <li><a href="{{ route('page', 'tourist-visa') }}">TOURIST VISA</a></li>
                 </ul>
             </li>
             <li><a href="{{ route('page', 'migration') }}">MIGRATIONS</a> <small>Migration Information</small> </li>
-            <li><a href="">BLOG</a> <small>Recent posts</small> </li>
+            <li><a href="{{ route('page', 'blogs') }}">BLOG</a> <small>Recent posts</small> </li>
             <li><a href="{{ route('page', 'contact') }}">CONTACT</a> <small>Say hello</small> </li>
         </ul>
     </div>

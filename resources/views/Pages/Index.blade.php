@@ -99,6 +99,63 @@
         <!-- end container -->
     </section>
 
+    <section class="icon-content-block">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title">THE THINGS<br>
+                        WE ARE ABLE TO DO</h3>
+                </div>
+                <!-- end col-12 -->
+                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                    <div class="content-block">
+                        <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
+                        <h6>IELTS</h6>
+                        <ul>
+                            <li>Digital Branding</li>
+                            <li>Web & Mobile Sites</li>
+                            <li>User Interface Design</li>
+                            <li>Responsive Techs</li>
+                        </ul>
+                    </div>
+                    <!-- end content-block -->
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                    <div class="content-block selected">
+                        <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
+                        <h6>RPL | PTE</h6>
+                        <ul>
+                            <li>Digital Strategy</li>
+                            <li>User Experience Design</li>
+                            <li>User Interface Design</li>
+                            <li>Mobile Sites</li>
+                        </ul>
+                    </div>
+                    <!-- end content-block -->
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                    <div class="content-block">
+                        <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
+                        <h6>ADMISSION</h6>
+                        <ul>
+                            <li>Custom Platform</li>
+                            <li>Back-End Executions</li>
+                            <li>Interface Apps</li>
+                            <li>Mobile Systems</li>
+                        </ul>
+                    </div>
+                    <!-- end content-block -->
+                </div>
+                <!-- end col-3 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end icon-content-block -->
+
     <section class="rpl">
         <div class="container">
             <div class="row">
@@ -226,6 +283,124 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end clients -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="testimonials-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial wow" data-splitting>
+                                    <blockquote> We work closely with your development team. markettting profissionals and
+                                        stakeholder to design and develop UX and UI that make your website. application or
+                                        software a joy to use </blockquote>
+                                    <div class="reviewer"> <img src="images/team01.jpg" alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>Marcus James</h6>
+                                            <small>IBIS HOTEL MANAGER</small>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <blockquote> We work closely with your development team. markettting profissionals and
+                                        stakeholder to design and develop UX and UI that make your website. application or
+                                        software a joy to use </blockquote>
+                                    <div class="reviewer"> <img src="{{ asset('assets/images/team01.jpg') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>Marcus James</h6>
+                                            <small>IBIS HOTEL MANAGER</small>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <blockquote> We work closely with your development team. markettting profissionals and
+                                        stakeholder to design and develop UX and UI that make your website. application or
+                                        software a joy to use </blockquote>
+                                    <div class="reviewer"> <img src="{{ asset('assets/images/team01.jpg') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>Marcus James</h6>
+                                            <small>IBIS HOTEL MANAGER</small>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                        </div>
+                        <!-- end swiper-wrapper -->
+                        <div class="swiper-pagination"></div>
+                        <!-- end swiper-pagination -->
+                    </div>
+                    <!-- end testimonials-slider -->
+                </div>
+                <!-- end col-6 -->
+                <div class="col-lg-6 wow" data-splitting>
+                    <h3 class="section-title">STUDIO PROUD<br>
+                        IS QUALITY OF<br>
+                        PARTNERS</h3>
+                    <a href="#"></a>
+                </div>
+                <!-- end col-6 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end testimonials -->
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 wow" data-splitting>
+                    <h3 class="section-title">AGENSY PROUD<br>
+                        IS QUALITY OF<br>
+                        PARTNERS</h3>
+                </div>
+                <!-- end col-5 -->
+                <div class="col-lg-7">
+                    <ul>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo01.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo02.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo03.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo04.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo05.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo06.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo07.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo08.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo09.png') }}"
+                                alt="Image"> </li>
+                    </ul>
+                </div>
+                <!-- end col-7 -->
+            </div>
+            <!-- end row -->
         </div>
         <!-- end container -->
     </section>
