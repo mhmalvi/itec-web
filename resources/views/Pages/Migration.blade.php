@@ -28,7 +28,7 @@
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7">
-                    <div class="inner-text">
+                    <div class="inner-text" data-aos="zoom-out">
                         <p class="text-justify wow bounceInUp">
                             Having Our Own Headquarter Currently Operating Out Of Sydney, We Are Already A Certified
                             Migration

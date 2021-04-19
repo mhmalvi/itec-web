@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#75dab4" />
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>ITECounsel</title>
 
     @include('layouts.styles')
 </head>

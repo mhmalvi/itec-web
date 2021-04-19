@@ -196,7 +196,7 @@
     <section class="clients">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-4 col-lg-4 text-center">
+                <div class="col-xs-12 col-md-4 col-lg-4 text-center" data-aos="fade-up">
                     <div class="service_box">
                         <div class="service_icon">
                             <i class="fas fa-dollar-sign"></i>
@@ -207,7 +207,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 col-lg-4 text-center">
+                <div class="col-xs-12 col-md-4 col-lg-4 text-center" data-aos="fade-up" data-aos-duration="1500">
                     <div class="service_box">
                         <div class="service_icon">
                             <i class="far fa-clock"></i>
@@ -219,7 +219,7 @@
                         <br>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-4 col-lg-4">
+                <div class="col-xs-12 col-md-4 col-lg-4" data-aos="fade-up" data-aos-duration="2500">
                     <div class="service_box">
                         <div class="service_icon">
                             <i class="fas fa-tachometer-alt"></i>

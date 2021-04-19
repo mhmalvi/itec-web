@@ -49,8 +49,8 @@
                         PTE coaching through us in
                         our head office at Australia!
                     </p>
-                    <h6>Salvador Dali</h6>
-                    <small>Digital Artisit</small> <b>10</b>
+                    <h6>Team ITECounsel</h6>
+                    <b>10</b>
                     <h4>
                         YEARS OF<br>STUDENT<br>COUNSELINIG<br>EXPERIENCE
                     </h4>
