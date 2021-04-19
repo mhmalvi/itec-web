@@ -2932,9 +2932,16 @@ textarea {
   transition: all 0.3s ease-out;
 }
 
+.rpl-des h3{
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
 .rpl-des ul {
   width: 100%;
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 .rpl-des ul li {
@@ -2958,28 +2965,37 @@ textarea {
 .rpl-card:hover .rpl-des {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 60px;
   padding: 25px;
   color: #fff;
   transform: translateY(-20%);
   -webkit-transform: translateY(-20%);
 }
 
+.rpl-card:hover .rpl-des h3 {
+  display: none;
+}
+
 .rpl-card:hover .rpl-des ul li{
   display: block;
 }
 
-.rpl-des .find{
-  margin: 30px 0px;
-  padding: 10px 25px;
+.rpl-card .find{
+  position: absolute;
+  margin: 15px 0px;
+  padding: 5px 10px;
   border: 1px solid #fff;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 50px;
   font-size: 12px;
+  bottom: 15px;
+  right: 39%;
+  left: 39%;
+  text-align: center;
 }
 
-.rpl-des .find:hover {
+.find:hover {
     background-color: #fff;
     color: #CD4236;
 }
@@ -3203,3 +3219,6 @@ input[type="file"]{
   font-weight: 600;
 }
 
+.card:hover a {
+  text-decoration: none;
+}

@@ -19,6 +19,8 @@ Route::get('{page}', 'PagesController')
     ->where('page', 'contact|rpl|migration|blogs|ielts|tourist-visa|pte')
     ->name('page');
 Route::get('admission/{page}', 'AdmissionsController')->name('admission');
+Route::get('{slug}', 'CourseController@index')->name('courses');
+// Route::get('{slug}', 'CourseController@course')->name('course.single');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
