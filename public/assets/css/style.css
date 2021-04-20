@@ -414,7 +414,7 @@ textarea {
   position: absolute;
   left: 0;
   top: 0;
-  background: #1c1c1c;
+  background: #0E1E2F;
   transition-delay: 0.3s;
 }
 .preloader .inner {
@@ -436,7 +436,7 @@ textarea {
   transition-delay: 0.1s;
 }
 .preloader .inner figure img {
-  height: 40px;
+  height: 350px;
   transform: translateX(-7px);
 }
 
@@ -505,7 +505,7 @@ textarea {
   position: absolute;
   right: 0;
   top: 0;
-  background: #1c1c1c;
+  background: #0E1E2F;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -856,8 +856,8 @@ textarea {
 .all-cases-link b {
   width: 40px;
   height: 40px;
-  line-height: 44px;
-  font-size: 25px;
+  line-height: 42px;
+  font-size: 22px;
   font-weight: 300;
   display: inline-block;
   background: #fff;
@@ -868,10 +868,10 @@ textarea {
   transition: all .4s ease-in-out;;
 }
 
-.b-active{
+/* .b-active{
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-}
+} */
 
 .all-cases-link b:hover {
   background: #CD4236;
@@ -2271,15 +2271,15 @@ textarea {
   width: 100%;
   display: block;
 }
-.contact .contact-form #contact {
+.contact .contact-form {
   display: block;
 }
-.contact .contact-form #contact .form-group {
+.contact .contact-form .form-group {
   display: block;
   position: relative;
   margin-bottom: 35px;
 }
-.contact .contact-form #contact .form-group span {
+.contact .contact-form .form-group span {
   width: 100%;
   line-height: 58px;
   position: absolute;
@@ -2293,37 +2293,38 @@ textarea {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
-.contact .contact-form #contact .form-group span.label-up {
+.contact .contact-form .form-group span.label-up {
   font-size: 13px;
   line-height: 16px;
   top: -20px;
   font-weight: 600;
 }
-.contact .contact-form #contact .form-group input[type=text] {
+.contact .contact-form .form-group input[type=text] {
   width: 400px;
   background: none;
   position: relative;
   z-index: 2;
+  color: #1C375B;
 }
-.contact .contact-form #contact .form-group input:focus + span {
+.contact .contact-form .form-group input:focus + span {
   font-size: 13px;
   line-height: 16px;
   top: -20px;
   font-weight: 600;
 }
-.contact .contact-form #contact .form-group textarea {
+.contact .contact-form .form-group textarea {
   width: 500px;
   background: none;
   position: relative;
   z-index: 2;
 }
-.contact .contact-form #contact .form-group textarea:focus + span {
+.contact .contact-form .form-group textarea:focus + span {
   font-size: 13px;
   line-height: 16px;
   top: -20px;
   font-weight: 600;
 }
-.contact .contact-form #contact .form-group label.error {
+.contact .contact-form .form-group label.error {
   width: 100%;
   color: red;
   margin-top: 5px;
@@ -2331,7 +2332,7 @@ textarea {
   font-weight: 600;
   font-size: 13px;
 }
-.contact .contact-form #success, .contact .contact-form #error {
+.contact .contact-form, .contact .contact-form #error {
   display: none;
   float: left;
 }
@@ -2349,7 +2350,7 @@ textarea {
   padding: 20px 30px;
 }
 .contact .map {
-  width: 80%;
+  width: 100%;
   height: 400px;
   display: block;
   background: #1C375B;
@@ -3209,7 +3210,7 @@ input[type="file"]{
 
 .works .content-box {
   width: 100%;
-  height: 250px;
+  height: 350px;
   padding: 25px 15px;
   margin-top: 15px auto;
   text-align: justify;
@@ -3221,4 +3222,31 @@ input[type="file"]{
 
 .card:hover a {
   text-decoration: none;
+}
+
+#contactForm{
+  padding-left: 60px;
+}
+
+#contactForm .form-control {
+  color: #1C375B!important;
+}
+
+#contactForm textarea {
+  resize: none;
+}
+
+.contact-img{
+  width: 100%;
+  height: 550px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.contact-img img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0 auto;
 }

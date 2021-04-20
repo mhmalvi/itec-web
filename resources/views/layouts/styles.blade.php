@@ -6,4 +6,5 @@
 <link rel="stylesheet" href="{{ asset('assets/css/swiper.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
+@stack('css')
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">

@@ -63,7 +63,7 @@
         <!-- end left-side -->
         <div class="all-cases-link">
             <span>CHECK YOUR RPL ELIGIBILITY</span>
-            <b>+</b>
+            <b><i class="fas fa-tasks"></i></b>
         </div>
         <!-- end all-cases-link -->
 

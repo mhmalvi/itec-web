@@ -190,7 +190,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="" class="find">Find More</a>
+                        <a href="{{ route('courses', 'building-and-construction') }}" class="find">Find More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 my-2">
@@ -217,7 +217,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="" class="find">Find More</a>
+                        <a href="{{ route('courses', 'building-and-construction') }}" class="find">Find More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 my-2">
@@ -244,7 +244,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="" class="find">Find More</a>
+                        <a href="{{ route('courses', 'building-and-construction') }}" class="find">Find More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 my-2">
@@ -271,7 +271,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="" class="find">Find More</a>
+                        <a href="{{ route('courses', 'building-and-construction') }}" class="find">Find More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 my-2">
@@ -298,7 +298,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="" class="find">Find More</a>
+                        <a href="{{ route('courses', 'building-and-construction') }}" class="find">Find More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 my-2">
@@ -325,7 +325,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="" class="find">Find More</a>
+                        <a href="{{ route('courses', 'building-and-construction') }}" class="find">Find More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 my-2">
@@ -352,7 +352,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="" class="find">Find More</a>
+                        <a href="{{ route('courses', 'building-and-construction') }}" class="find">Find More</a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 my-2">
@@ -379,7 +379,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="" class="find">Find More</a>
+                        <a href="{{ route('courses', 'building-and-construction') }}" class="find">Find More</a>
                     </div>
                 </div>
             </div>

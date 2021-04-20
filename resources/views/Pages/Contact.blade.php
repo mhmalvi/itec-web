@@ -1,10 +1,14 @@
 @extends('layouts.app')
 
+@push('css')
+    <link rel="stylesheet" href="{{ asset('assets/css/jquery.datetimepicker.min.css') }}">
+@endpush
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
         <div class="video-bg">
-            <video src="videos/video02.mp4" muted loop autoplay></video>
+            <video src="" muted loop autoplay></video>
         </div>
         <!-- end video-bg -->
         <div class="inner">
@@ -47,8 +51,48 @@
                     </address>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-4">
-                    <h3>Australia</h3>
+                <div class="col-lg-5">
+                    <div class="contact-img">
+                        <img src="{{ asset('assets/images/contact_us.svg') }}" alt="">
+                    </div>
+                </div>
+                <!-- end col-5 -->
+                <div class="col-lg-7 pl-5">
+                    <form method="post" id="contactForm">
+                        <div class="form-group">
+                            <input id="name" class="form-control" type="text" name="name" placeholder="Enter Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input id="email" class="form-control" type="email" name="email"
+                                placeholder="Enter Your Email Address">
+                        </div>
+                        <div class="form-group">
+                            <input id="phone" class="form-control" type="text" name="phone"
+                                placeholder="Enter Your Cantact Number">
+                        </div>
+                        <div class="form-group">
+                            <input id="date" class="form-control" type="text" name="date"
+                                placeholder="Choose Appointment Date">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="msg" class="form-control" name="msg" rows="8"
+                                placeholder="Your Message (255 character max)"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <!-- end form -->
+                </div>
+                <!-- col-7 -->
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end blog -->
+    <section class="contact py-0">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-lg-6 p-0">
                     <div class="map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.8570010205053!2d151.03202011550917!3d-33.91907978064232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12bc1b224cf2c5%3A0x11c945bdf4b2d7bf!2sLEVEL%201%2F7%20Greenfield%20Parade%2C%20Bankstown%20NSW%202200%2C%20Australia!5e0!3m2!1sen!2sbd!4v1618304659561!5m2!1sen!2sbd"
@@ -56,54 +100,7 @@
                     </div>
                     <!-- end map -->
                 </div>
-                <!-- end col-5 -->
-                <div class="col-lg-4">
-                    <div class="contact-form">
-                        <form id="contact" name="contact" method="post">
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" autocomplete="off" required>
-                                <span>Your name</span>
-                            </div>
-                            <!-- end form-group -->
-                            <div class="form-group">
-                                <input type="text" name="email" id="email" autocomplete="off" required>
-                                <span>Your e-mail</span>
-                            </div>
-                            <!-- end form-group -->
-                            <div class="form-group">
-                                <input type="text" name="subject" id="subject" autocomplete="off" required>
-                                <span>Subject</span>
-                            </div>
-                            <!-- end form-group -->
-                            <div class="form-group">
-                                <textarea name="message" id="message" autocomplete="off" required></textarea>
-                                <span>Your message</span>
-                            </div>
-                            <!-- end form-group -->
-                            <div class="form-group">
-                                <button id="submit" type="submit" name="submit">
-                                    <strong>Submit Now<b></b> <i></i></strong>
-                                </button>
-                            </div>
-                            <!-- end form-group -->
-                        </form>
-                        <!-- end form -->
-                        <div class="form-group">
-                            <div id="success" class="alert alert-success" role="alert"> Your message was sent successfully!
-                                We will be in touch as soon as we can. </div>
-                            <!-- end success -->
-                            <div id="error" class="alert alert-danger" role="alert"> Something went wrong, try refreshing
-                                and submitting the form again. </div>
-                            <!-- end error -->
-                        </div>
-                        <!-- end form-group -->
-                    </div>
-                    <!-- end contact-form -->
-                </div>
-                <!-- col-7 -->
-                <!-- end row -->
-                <div class="col-lg-4">
-                    <h3>Bangladesh</h3>
+                <div class="col-lg-6 p-0">
                     <div class="map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d228.24124030753345!2d90.38007109664254!3d23.75237686112746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b9fe484befeb%3A0xf868db2756385e6e!2sITEC%20BD%20Office!5e0!3m2!1sen!2sbd!4v1618301934233!5m2!1sen!2sbd"
@@ -113,10 +110,21 @@
                 </div>
             </div>
         </div>
-        <!-- end container -->
-    </section>
-    <!-- end blog -->
-
-    <section>
     </section>
 @endsection
+
+@push('js')
+    <script src="{{ asset('assets/js/jquery.datetimepicker.full.min.js') }}"></script>
+    <script>
+        $('#date').datetimepicker({
+            step: 30,
+            allowTimes: [
+                '09:00', '09:30', '10:00', '10:30', '11:00', '11:30', '12:00',
+                '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30',
+                '16:00', '16:30', '17:00', '17:30', '18:00', '18:30'
+            ],
+
+        });
+
+    </script>
+@endpush

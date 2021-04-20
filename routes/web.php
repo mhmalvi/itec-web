@@ -19,11 +19,11 @@ Route::get('{page}', 'PagesController')
     ->where('page', 'contact|rpl|migration|blogs|ielts|tourist-visa|pte')
     ->name('page');
 Route::get('admission/{page}', 'AdmissionsController')->name('admission');
-Route::get('{slug}', 'CourseController@index')->name('courses');
-// Route::get('{slug}', 'CourseController@course')->name('course.single');
+Route::get('{slug}/courses', 'CourseController@index')->name('courses');
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', 'Admin\AdminController@index')->name('dashboard');
+});
 
 require __DIR__ . '/auth.php';
