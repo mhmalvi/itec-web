@@ -44,15 +44,14 @@
         <!-- end container -->
     </section>
     <!-- end testimonials -->
-    <section class="works itec-bg-img malaysia">
-        <div class="overlay"></div>
+    <section class="testimonials mt-0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 wow" data-splitting>
-                    <h3 class="section-title text-center">Why Study In Malaysia</h3>
+                    <h3 class="section-title text-center">Why Study In Europe</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row my-5">
                 <div class="col-lg-12" data-aos="fade-down">
                     <p class="text-center">
                         Malaysia has become a favourite destination for tertiary education with over 40,000 international
@@ -61,59 +60,145 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="content-box" data-aos="zoom-in-up">
-                        <h4>Quality Education Programs</h4>
-                        <p>Want to get ahead in your career? Many employers worldwide actively seek or value an
-                            international study experience when recruiting. By studying here, you will gain the skills,
-                            knowledge and experience that employers value. With strong international business, creative and
-                            research sectors, Europe is a great place to build your career.</p>
+            <div class="row align-items-center" data-aos="zoom-in">
+                <div class="col-lg-12">
+                    <div class="testimonials-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Quality Education Programs</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        The Malaysian Qualification Agency (MQA) provides guidelines and constant monitoring
+                                        to ensure colleges and universities meet the highest standards in education and are
+                                        internationally recognised. Courses offered are up-to-date and market relevant. With
+                                        career-focused education, graduates from Malaysia have no problems seeking
+                                        employment back in their home country. Besides, there are accredited degrees from
+                                        various choices of world-renowned universities from USA, UK, Australia, Canada
+                                        through their twining programs or branch campuses in Malaysia.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Part-Time Work While Studying</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        Malaysia’s law allows students to work 20 hours per week while studying. This gives
+                                        chance to students to earn extra pocket money to buy books and for other leisure
+                                        activities.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Multicultural Studying Environment</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        International students studying in Malaysia will get to experience of living in a
+                                        plural and multicultural society. The diverse ethnics of Malaysia will enrich
+                                        students’ understanding of different cultures, ethnic groups and traditions
+                                        throughout the world. The three major races are Malays, Chinese and Indians. Apart
+                                        from mixing with Malaysian students, international students are exposed to other
+                                        students from different nationalities. They also get to experience the different
+                                        cuisines speciality by different races. If stay long, they may learn some cooking
+                                        skills to cook when they are back to their home country.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Low Cost Of Living & Tuition Fees</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        One of the main reason why study in Malaysia is that the tuition fees of high
+                                        quality programmes are very reasonable and highly affordable. The low cost of living
+                                        is contributed mainly due to the ringgit value is lower compared to other currency,
+                                        thus results in enormous savings by the students. A student can live comfortably for
+                                        about RM 1,200 – 1,800 per month (USD 380 – USD 570 per month)
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Courses Are Conducted In English</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        English is the primary medium of instruction for all courses and programs conducted
+                                        at the private higher educational institutions. For those whom are less proficient
+                                        in English, there are many schools and institutions offering basic English courses.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Safe & Comfortable Place To Study</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        Malaysia is geographically safe country free from natural disasters, with its modern
+                                        infrastructure and efficient transportation system, Malaysia makes a safe and
+                                        comfortable place to live and study. Your children can utilise their MM2H Visa
+                                        without the need to apply for specific student visa to study at any reputable
+                                        international schools in Malaysia. However, student visa is required only if they
+                                        were to study at the university level.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                        </div>
+                        <!-- end swiper-wrapper -->
+                        <div class="swiper-pagination"></div>
+                        <!-- end swiper-pagination -->
                     </div>
-                    <div class="content-box" data-aos="zoom-in-up">
-                        <h4>Part-Time Work While Studying</h4>
-                        <p>Malaysia’s law allows students to work 20 hours per week while studying. This gives chance to
-                            students to earn extra pocket money to buy books and for other leisure activities.</p>
-                    </div>
-                    <div class="content-box" data-aos="zoom-in-up">
-                        <h4>Multicultural Studying Environment</h4>
-                        <p>International students studying in Malaysia will get to experience of living in a plural and
-                            multicultural society. The diverse ethnics of Malaysia will enrich students’ understanding of
-                            different cultures, ethnic groups and traditions throughout the world. The three major races are
-                            Malays, Chinese and Indians. Apart from mixing with Malaysian students, international students
-                            are exposed to other students from different nationalities. They also get to experience the
-                            different cuisines speciality by different races. If stay long, they may learn some cooking
-                            skills to cook when they are back to their home country..</p>
-                    </div>
+                    <!-- end testimonials-slider -->
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="content-box" data-aos="zoom-in-up">
-                        <h4>Low Cost Of Living & Tuition Fees</h4>
-                        <p>One of the main reason why study in Malaysia is that the tuition fees of high quality programmes
-                            are very reasonable and highly affordable. The low cost of living is contributed mainly due to
-                            the ringgit value is lower compared to other currency, thus results in enormous savings by the
-                            students. A student can live comfortably for about RM 1,200 – 1,800 per month (USD 380 – USD 570
-                            per month)</p>
-                    </div>
-                    <div class="content-box" data-aos="zoom-in-up">
-                        <h4>Courses Are Conducted In English</h4>
-                        <p>English is the primary medium of instruction for all courses and programs conducted at the
-                            private higher educational institutions. For those whom are less proficient in English, there
-                            are many schools and institutions offering basic English courses.</p>
-                    </div>
-                    <div class="content-box" data-aos="zoom-in-up">
-                        <h4>Safe & Comfortable Place To Study</h4>
-                        <p>Malaysia is geographically safe country free from natural disasters, with its modern
-                            infrastructure and efficient transportation system, Malaysia makes a safe and comfortable place
-                            to live and study. Your children can utilise their MM2H Visa without the need to apply for
-                            specific student visa to study at any reputable international schools in Malaysia. However,
-                            student visa is required only if they were to study at the university level.</p>
-                    </div>
-                </div>
+                <!-- end col-6 -->
             </div>
+            <!-- end row -->
         </div>
+        <!-- end container -->
     </section>
-    <!-- end works -->
     <section class="clients">
         <div class="container">
             <div class="row">

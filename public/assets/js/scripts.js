@@ -28,7 +28,7 @@
 		
 		
 		// TREE MENU
-		$('.site-navigation .inner ul li i').click(function () {
+		$('.site-navigation .inner ul li a').click(function () {
 	  	$(this).parent().children('.site-navigation .inner ul li ul').slideToggle(300);
         return true;
 	  	});
@@ -345,15 +345,28 @@
 	
 	
 	// TESTIMONIALS
-			new Swiper('.testimonials-slider', {
-		  slidesPerView: '1',
-		  spaceBetween: 0,
-				centeredSlides: true,
-				loop: true,
-		  pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		  },
+		new Swiper('.testimonials-slider', {
+			slidesPerView: '1',
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true
+			},
+			spaceBetween: 0,
+			centeredSlides: true,
+			loop: true,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			autoplay: {
+				delay: 8000,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+				
 		});
 
 

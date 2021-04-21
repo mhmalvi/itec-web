@@ -9,9 +9,9 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>STUDY IN EUROPE</h1>
+                <h1>STUDY IN CANADA</h1>
                 <p>
-                    ITEC is affiliated with numerous colleges of Europe.
+                    ITEC is affiliated with numerous colleges of Malaysia.
                 </p>
             </div>
             <!-- end container -->
@@ -23,15 +23,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">Why Europe</h3>
+                    <h3 class="section-title">Why Canada</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7" data-aos="fade-down">
                     <p class="text-justify">
-                        The study curriculum followed by Europe is to induce creativity and sense of innovation among
-                        students as well as guide them towards achieving their goals. Presently, we are in collaboration
-                        with universities in Poland, Sweden, UK, Norway including Germany as well as France. Reserve your
-                        spot today so we could determine your chances of admission to the right university.
+                        There are multiple reasons behind choosing Canada as a desired country for higher study.
+                        Representatives of ITEC are affiliated with some of the best Canadian universities offering
+                        full-scholarships for international students. Canadian universities are offering various scholarship
+                        programmes for international students, so consider filing up the form on our website and find out if
+                        you are eligible.
                     </p>
                 </div>
                 <!-- end col-7 -->
@@ -40,19 +41,22 @@
         </div>
         <!-- end container -->
     </section>
+    <!-- end testimonials -->
     <section class="testimonials mt-0">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 wow" data-splitting>
-                    <h3 class="section-title text-center">Why Study In Europe</h3>
+                    <h3 class="section-title text-center">Why Study In Canada</h3>
                 </div>
             </div>
             <div class="row my-5">
                 <div class="col-lg-12" data-aos="fade-down">
                     <p class="text-center">
-                        Being able to study in any of the European countries is perhaps a dream come true for those who seek
-                        for higher education abroad. Tuition fees along with living expenses are comparatively lesser than
-                        other countries such as the USA.
+                        It offers a sound education system, friendly student environment and an immigration system that is
+                        open to everyone. One of the greatest aspects of studying abroad in Canada is that there is an
+                        option for students of all ages, whether you are in high school or in pursuit of a graduate degree.
+                        If you are looking to study in a student-friendly place with great academic options and highly
+                        ranked universities, then you should consider studying in Canada
                     </p>
                 </div>
             </div>
@@ -64,18 +68,16 @@
                                 <div class="testimonial">
                                     <div class="reviewer">
                                         <div class="reviewer-infos">
-                                            <h4>Careers</h4>
+                                            <h4>Lower tuition fees</h4>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        Want to get ahead in your career? Many employers worldwide actively seek or value an
-                                        international study experience when recruiting. By studying here, you will gain the
-                                        skills,
-                                        knowledge and experience that employers value. With strong international business,
-                                        creative and
-                                        research sectors, Europe is a great place to build your career.
+                                        Yes, as an international student you will still pay more than Canadians for the same
+                                        course, but that same course in another country, such as the United States,
+                                        Australia or United Kingdom, would likely cost even more. Also, see point 1 above –
+                                        not only are you paying less in Canada, you’re also earning.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -85,19 +87,18 @@
                                 <div class="testimonial">
                                     <div class="reviewer">
                                         <div class="reviewer-infos">
-                                            <h4>Languages</h4>
+                                            <h4>You will receive a quality education</h4>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        There are 24 official languages in the European Union, but did you know that most
-                                        countries
-                                        across Europe offer study programmes in English too? You’ll also find programmes
-                                        taught in other
-                                        leading global business languages such as Spanish, French, German, Italian,
-                                        Portuguese, Arabic
-                                        and more.
+                                        Among all the other reasons why to study in Canada, let’s not lose sight of the
+                                        basics: Canadian colleges and universities turn out incredibly talented graduates.
+                                        These well-funded, internationally-renowned institutions attract top professors and
+                                        offer courses tailored to a changing economy. You will finish your course even
+                                        smarter than you are right now (difficult to believe, but it’s true) and will be
+                                        prepared to launch your career in Canada.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -107,17 +108,22 @@
                                 <div class="testimonial">
                                     <div class="reviewer">
                                         <div class="reviewer-infos">
-                                            <h4>Cultural Experience</h4>
+                                            <h4>You can immigrate to Canada</h4>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        Studying in Europe is not just about lectures and libraries, it is also a
-                                        once-in-a-lifetime chance to discover new countries and to discover yourself too!
-                                        From the snowy north to the sun-soaked south, across Europe you will find
-                                        breath-takingly beautiful landscapes, buzzing cities and vibrant cultures waiting
-                                        for you.
+                                        Speaking of permanent residence, what is that anyway? Well, it’s the right to live
+                                        and work in Canada, while enjoying public health and social benefits, forever. And
+                                        as an international student or graduate, Canada wants you. Canada’s Express Entry
+                                        immigration system offers bonus points to people with Canadian study and work
+                                        experience (by now you have both), with further emphasis on your language skills
+                                        (which you have developed over the years), and your age (you probably have a few
+                                        decades of your career left to go, unless you retire early, which, given you have a
+                                        Canadian education, is entirely possible). And if Express Entry doesn’t work out,
+                                        Canada’s provinces also offer routes to permanent residence through their Provincial
+                                        Nominee Programs.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -127,19 +133,15 @@
                                 <div class="testimonial">
                                     <div class="reviewer">
                                         <div class="reviewer-infos">
-                                            <h4>Diversity</h4>
+                                            <h4>You have half a million others who can help and advise you</h4>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        The beauty of Europe is that it offers so much choice. With world-class
-                                        universities, higher
-                                        education institutions and research institutes, offering 100,000s of Bachelor’s
-                                        Degree, Master’s
-                                        Degree and PhD/Doctoral programmes, plus short-term study opportunities, you can
-                                        choose the
-                                        experience that suits you.
+                                        You won’t be alone. There are close to half a million international students in
+                                        Canada. They each have a story. You will come across them everywhere, and they
+                                        understand your day-to-day concerns — they’ve had those same concerns too.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -149,16 +151,19 @@
                                 <div class="testimonial">
                                     <div class="reviewer">
                                         <div class="reviewer-infos">
-                                            <h4>World-Class Education</h4>
+                                            <h4>You can enter the Canadian workforce</h4>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        World-leading universities, top facilities and inspirational teaching. in Europe,
-                                        you’re at the centre of an international community with a passion for learning. What
-                                        makes European universities so strong is the emphasis on creativity, innovation and
-                                        support – helping you to reach your true potential.
+                                        Other countries, such as the US and UK, could, rather than turfing out recent
+                                        international graduates or making it extremely difficult for them to stay, learn a
+                                        lesson from Canada. How does a post-graduation work permit valid for up to three
+                                        years sound to you? How about we make it so that this work permit allows you to work
+                                        for any employer in Canada, and in any location, and allows you the flexibility to
+                                        change employers and gather even more crucial work experience that you can leverage
+                                        into your Canadian permanent residence application?
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -168,63 +173,18 @@
                                 <div class="testimonial">
                                     <div class="reviewer">
                                         <div class="reviewer-infos">
-                                            <h4>Support And Friendship</h4>
+                                            <h4>You can bring your family</h4>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        Europe is a welcoming, friendly place for students from all around the world.
-                                        Europe’s
-                                        universities and colleges offer support and social activities to help you feel at
-                                        home and
-                                        happy.
-                                    </p>
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <div class="reviewer">
-                                        <div class="reviewer-infos">
-                                            <h4>Scholarships And Costs</h4>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                    <p>
-                                        European countries invest in their higher education systems to help make education
-                                        affordable for
-                                        students, whilst maintaining high quality standards. Across Europe, tuition fees and
-                                        living
-                                        costs compare very well to other study destinations. In fact, in some European
-                                        countries, study
-                                        programmes are free of charge! There are lots of scholarships and financial support
-                                        options
-                                        available too.
-                                    </p>
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <div class="reviewer">
-                                        <div class="reviewer-infos">
-                                            <h4>Pioneering Research</h4>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                    <p>
-                                        Are you an ambitious researcher looking to boost your career? Europe offers you
-                                        great
-                                        opportunities. There were 1.58 million full time equivalent researchers in the EU-27
-                                        in 2009.
-                                        Over the next decade, the European Union is actively looking to attract an
-                                        additional 1 million
-                                        researchers! Find out more about research jobs, funding and opportunities in Europe.
+                                        Let’s take a step back. We’ve gone way ahead, beyond your graduation and all the way
+                                        to obtaining permanent residence. Here’s a perk and one of the main reasons to study
+                                        in Canada right now: you can bring your spouse or common-law partner with you on an
+                                        open work permit, and your kids, if you have them, will be able to go to one of
+                                        Canada’s public elementary or secondary schools without needing their own study
+                                        permit.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -243,7 +203,6 @@
         </div>
         <!-- end container -->
     </section>
-    <!-- end works -->
     <section class="clients">
         <div class="container">
             <div class="row">

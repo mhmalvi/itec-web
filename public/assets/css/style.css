@@ -1592,6 +1592,7 @@ textarea {
   color: #fff;
   background: #1C375B;
   position: relative;
+  text-align: center;
 }
 .testimonials:before {
   content: "";
@@ -1606,17 +1607,17 @@ textarea {
   margin-bottom: 0;
 }
 .testimonials .testimonials-slider {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
   position: relative;
 }
 .testimonials .swiper-pagination {
-  width: 100px;
+  width: 200px;
   right: 80px;
   left: auto;
-  bottom: 115px;
+  bottom: 30px;
   text-align: right;
 }
 .testimonials .swiper-pagination-bullet {
@@ -1631,9 +1632,10 @@ textarea {
 }
 .testimonials .testimonial {
   width: 100%;
+  height: 350px;
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 80px;
+  padding: 80px;
   background: #CD4236;
   color: #fff;
 }
@@ -3062,19 +3064,31 @@ input[type="file"]{
 
 .rpl-form ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #fff;
+    color: rgba(255, 255, 255, 0.2);
     opacity: 1;
     /* Firefox */
 }
 
 .rpl-form :-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #fff;
+    color: rgba(255, 255, 255, 0.2);
 }
 
 .rpl-form ::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: #fff;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.rpl-form select {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.rpl-form option{
+  color: #fff;
+}
+
+.rpl-form select option:first-child{
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .service_box {
