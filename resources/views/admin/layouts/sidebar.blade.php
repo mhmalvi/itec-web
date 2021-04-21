@@ -15,27 +15,31 @@
             </li>
 
             {{-- Navigations Starts --}}
-
             <li>
                 <a href="{{ route('index') }}"><i class="fa fa-globe"></i> <span class="nav-label">Visit
                         Site</span></a>
             </li>
-            <li>
-                <a href=""><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span></a>
+            <li class="{{ Route::currentRouteName() === 'admin.dashboard' ? 'active' : '' }}">
+                <a href="{{ route('admin.dashboard') }}"><i class="fa fa-th-large"></i> <span
+                        class="nav-label">Dashboards</span></a>
             </li>
-            <li>
-                <a href="javascript:void(0)"><i class="fa fa-cubes"></i> <span class="nav-label">Attributes</span><span
-                        class="fa arrow"></span></a>
-                <ul class="nav nav-second-level collapse">
-                    <li><a href="">Categories</a></li>
-                </ul>
-            </li>
-            <li>
+            <li class="{{ request()->segment(2) === 'blogs' ? 'active' : '' }}">
                 <a href="javascript:void(0)"><i class="fa fa-newspaper-o"></i> <span class="nav-label">Blogs</span><span
                         class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
+                    <li class="{{ Route::currentRouteName() === 'admin.blog.category' ? 'active' : '' }}">
+                        <a href="{{ route('admin.blog.category') }}">Categories</a>
+                    </li>
                     <li><a href="">Post New Blog</a></li>
                     <li><a href="">Manage Blogs</a></li>
+                </ul>
+            </li>
+            <li class="">
+                <a href="javascript:void(0)"><i class="fa fa-list-alt" aria-hidden="true"></i> <span
+                        class="nav-label">Courses</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="">Post New Course</a></li>
+                    <li><a href="">Manage Courses</a></li>
                 </ul>
             </li>
             <li>
@@ -43,6 +47,7 @@
                         class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li><a href="">Profile</a></li>
+                    <li><a href="">Site SEO</a></li>
                 </ul>
             </li>
         </ul>

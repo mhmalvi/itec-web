@@ -1,0 +1,18 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class CoursesController extends Controller
+{
+    /**
+     * @return View
+     * 
+     */
+    public function index()
+    {
+        return view('admin.Course.index');
+    }
+}

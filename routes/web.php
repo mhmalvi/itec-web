@@ -24,8 +24,17 @@ Route::get('admission/{page}', 'AdmissionsController')
 Route::get('{slug}/courses', 'CourseController@index')->name('courses');
 
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', 'Admin\AdminController@index')->name('dashboard');
+
+    Route::prefix('blogs')->group(function () {
+        Route::get('categories', 'Admin\BlogCategoriesController@index')->name('blog.category');
+    });
+
+
+    Route::prefix('course')->group(function () {
+        Route::get('/', 'Admin/CoursesController@index')->name('course');
+    });
 });
 
 require __DIR__ . '/auth.php';
