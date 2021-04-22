@@ -51,39 +51,50 @@
                     </address>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-5">
-                    <div class="contact-img">
-                        <img src="{{ asset('assets/images/contact_us.svg') }}" alt="">
+            </div>
+            <div class="card shadow p-0 mb-5 bg-white rounded border-0">
+                <div class="card-body p-0">
+                    <div class="row">
+                        <!-- end col-5 -->
+                        <div class="col-lg-6 pr-5 contact-card-inner">
+                            <form method="post" id="contactForm">
+                                <div class="form-group">
+                                    <input id="name" class="form-control" type="text" name="name"
+                                        placeholder="Enter Your Name">
+                                </div>
+                                <div class="form-group">
+                                    <input id="email" class="form-control" type="email" name="email"
+                                        placeholder="Enter Your Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input id="phone" class="form-control" type="text" name="phone"
+                                        placeholder="Enter Your Cantact Number">
+                                </div>
+                                <div class="form-group">
+                                    <input id="date" class="form-control" type="text" name="date"
+                                        placeholder="Choose Appointment Date">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="msg" class="form-control" name="msg" rows="8"
+                                        placeholder="Your Message (255 character max)"></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            <!-- end form -->
+                        </div>
+                        <div class="col-lg-6 pl-5 contact-card-inner contact-card-right">
+                            <h3 class="section-title wow" data-splitting>
+                                NEED <br>CONSULTANCY?
+                            </h3>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis iusto tenetur inventore
+                                cumque nihil porro.
+                            </p>
+                        </div>
+                        <!-- col-7 -->
                     </div>
                 </div>
-                <!-- end col-5 -->
-                <div class="col-lg-7 pl-5">
-                    <form method="post" id="contactForm">
-                        <div class="form-group">
-                            <input id="name" class="form-control" type="text" name="name" placeholder="Enter Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input id="email" class="form-control" type="email" name="email"
-                                placeholder="Enter Your Email Address">
-                        </div>
-                        <div class="form-group">
-                            <input id="phone" class="form-control" type="text" name="phone"
-                                placeholder="Enter Your Cantact Number">
-                        </div>
-                        <div class="form-group">
-                            <input id="date" class="form-control" type="text" name="date"
-                                placeholder="Choose Appointment Date">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="msg" class="form-control" name="msg" rows="8"
-                                placeholder="Your Message (255 character max)"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                    <!-- end form -->
-                </div>
-                <!-- col-7 -->
             </div>
         </div>
         <!-- end container -->

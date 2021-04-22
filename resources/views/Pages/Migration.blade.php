@@ -54,6 +54,55 @@
         </div>
     </section>
     <!-- end works -->
+    <section class="works gallary">
+        <div class="wow py-3" data-splitting>
+            <h3 class="section-title text-center">
+                Lorem ipsum <br> dolor sit amet
+            </h3>
+        </div>
+        <ul>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+        </ul>
+    </section>
     <section class="clients">
         <div class="container">
             <div class="row">

@@ -203,6 +203,92 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
+                    <h3 class="section-title">AGENSY PROUD<br>
+                        IS QUALITY OF<br>
+                        PARTNERS</h3>
+                </div>
+                <!-- end col-5 -->
+                <div class="col-lg-7">
+                    <ul>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo01.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo02.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo03.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo04.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo05.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo06.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo07.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo08.png') }}"
+                                alt="Image"> </li>
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo09.png') }}"
+                                alt="Image"> </li>
+                    </ul>
+                </div>
+                <!-- end col-7 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <section class="works gallary">
+        <div class="wow py-3" data-splitting>
+            <h3 class="section-title text-center">
+                Lorem ipsum <br> dolor sit amet
+            </h3>
+        </div>
+        <ul>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+            <li>
+                <figure data-aos="zoom-in">
+                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 wow" data-splitting>
                     <h3 class="section-title">Apply Now</h3>
                 </div>
                 <div class="col-lg-7">

@@ -414,7 +414,7 @@ textarea {
   position: absolute;
   left: 0;
   top: 0;
-  background: #0E1E2F;
+  background: #1C375B;
   transition-delay: 0.3s;
 }
 .preloader .inner {
@@ -2253,7 +2253,7 @@ textarea {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 150px 0;
+  padding: 100px 0;
   background: #fff;
 }
 .contact h6 {
@@ -3263,4 +3263,19 @@ input[type="file"]{
   max-height: 100%;
   display: block;
   margin: 0 auto;
+}
+
+.gallary ul li{
+  width: 24.999%;
+  padding: 10px !important;
+  margin-top: 0px!important;
+}
+
+.contact-card-inner{
+  padding: 90px 15px;
+}
+
+.contact-card-right{
+  background-color: #1C375B;
+  color: #fff;
 }

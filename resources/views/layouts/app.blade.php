@@ -13,13 +13,13 @@
     @include('layouts.styles')
 </head>
 
-<body id="body" data-audio="{{ asset('assets/audio/audio.mp3') }}">
+<body id="body" data-audio="">
     <div class="preloader">
         <div class="layer"></div>
         <!-- end layer -->
         <div class="inner">
             <figure>
-                <img src="{{ asset('assets/images/preloader.gif') }}" alt="Image">
+                <img src="{{ asset('assets/images/logow.png') }}" alt="Image">
             </figure>
             <span>Loading</span>
         </div>

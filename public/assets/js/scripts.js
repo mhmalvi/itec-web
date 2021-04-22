@@ -28,7 +28,7 @@
 		
 		
 		// TREE MENU
-		$('.site-navigation .inner ul li a').click(function () {
+		$('.site-navigation .inner ul li .nav-tree').click(function () {
 	  	$(this).parent().children('.site-navigation .inner ul li ul').slideToggle(300);
         return true;
 	  	});
