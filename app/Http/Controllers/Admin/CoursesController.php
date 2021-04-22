@@ -15,4 +15,15 @@ class CoursesController extends Controller
     {
         return view('admin.Course.index');
     }
+
+
+
+    /**
+     * @return view
+     * 
+     */
+    public function create()
+    {
+        return view('admin.Course.create');
+    }
 }

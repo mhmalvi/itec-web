@@ -34,11 +34,13 @@
                     <li><a href="">Manage Blogs</a></li>
                 </ul>
             </li>
-            <li class="">
+            <li class="{{ request()->segment(2) === 'course' ? 'active' : '' }}">
                 <a href="javascript:void(0)"><i class="fa fa-list-alt" aria-hidden="true"></i> <span
                         class="nav-label">Courses</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li><a href="">Post New Course</a></li>
+                    <li class="{{ Route::currentRouteName() === 'admin.course.add' ? 'active' : '' }}">
+                        <a href="{{ route('admin.course.add') }}">Post New Course</a>
+                    </li>
                     <li><a href="">Manage Courses</a></li>
                 </ul>
             </li>

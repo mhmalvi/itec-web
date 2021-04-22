@@ -33,7 +33,8 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 
 
     Route::prefix('course')->group(function () {
-        Route::get('/', 'Admin/CoursesController@index')->name('course');
+        Route::get('/', 'Admin\CoursesController@index')->name('course');
+        Route::get('add-new', 'Admin\CoursesController@create')->name('course.add');
     });
 });
 
