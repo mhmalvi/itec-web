@@ -16,6 +16,7 @@ class Blog extends Model
         'blog_title',
         'blog_slug',
         'blog_des',
+        'meta_des',
         'thumbnail',
         'isPublished'
     ];
@@ -26,7 +27,7 @@ class Blog extends Model
      *
      * @return array
      */
-    public function sluggable()
+    public function sluggable(): array
     {
         return [
             'blog_slug' => [

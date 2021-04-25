@@ -83,19 +83,23 @@ class CoursesController extends Controller
      */
     public function store(Request $request)
     {
-        //Get the file name without extension
-        $image = $request->thumbnail;
-        $imagename = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
-        $ext = $image->getClientOriginalExtension();
-        $random = uniqid();
+        $newName = null;
 
-        $newName = "{$imagename}_{$random}.{$ext}";
+        if ($request->hasFile('thumbnail')) {
+            //Get the file name without extension
+            $image = $request->file('thumbnail');
+            $imagename = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
+            $ext = $image->getClientOriginalExtension();
+            $random = uniqid();
 
-        //check if directory exist or not
-        if (!Storage::exists("public/courses")) {
-            Storage::makeDirectory("public/courses");
+            $newName = "{$imagename}_{$random}.{$ext}";
+
+            //check if directory exist or not
+            if (!Storage::exists("public/blogs")) {
+                Storage::makeDirectory("public/blogs");
+            }
+            Storage::putFileAs('public/blogs', $image, $newName);
         }
-        Storage::putFileAs('public/courses', $image, $newName);
 
         $course = Course::create([
             'action_user' => Auth::id(),

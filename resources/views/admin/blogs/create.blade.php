@@ -18,15 +18,18 @@
                 <div class="ibox">
                     <div class="ibox-content p-5">
                         <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Blog Title</label>
+                            <label class="col-sm-2 col-form-label">Blog Title <small class="text-danger">*</small></label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="blog_title">
+                                <input type="text" class="form-control" name="blog_title" value="{{ old('blog_title') }}">
+                                @error('blog_title')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                         <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Category</label>
+                            <label class="col-sm-2 col-form-label">Category <small class="text-danger">*</small></label>
                             <div class="col-sm-10">
-                                <select name="category" class="form-control" id="category">
+                                <select name="category_id" class="form-control" id="category">
                                     <option value selected disabled>Select or Create Category...</option>
                                     @forelse ($categories as $item)
                                         <option value="{{ $item->id }}">{{ $item->title }}</option>
@@ -34,6 +37,9 @@
 
                                     @endforelse
                                 </select>
+                                @error('category_id')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                     </div>
@@ -43,9 +49,12 @@
                 <div class="ibox">
                     <div class="ibox-content p-5">
                         <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Details</label>
+                            <label class="col-sm-2 col-form-label">Details <small class="text-danger">*</small></label>
                             <div class="col-sm-10">
-                                <textarea name="details" id="info"></textarea>
+                                <textarea name="details" id="info">{!! old('details') !!}</textarea>
+                                @error('details')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                     </div>
@@ -56,26 +65,33 @@
                     <div class="ibox-content p-5">
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Tags (max 10)</label>
-                            <div class="col-sm-9">
+                            <div class="col-sm-9" id="tags">
                                 <input type="text" class="form-control" name="meta_tags[]" />
                             </div>
                             <div class="col-sm-1 text-right">
-                                <button type="button" class="btn btn-sm btn-primary my-1">Add</button>
+                                <button type="button" class="btn btn-sm btn-primary my-1" id="tags__input">
+                                    Add
+                                </button>
                             </div>
                         </div>
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Keywords (max 5)</label>
-                            <div class="col-sm-9">
+                            <div class="col-sm-9" id="keys">
                                 <input type="text" class="form-control" name="meta_keys[]" />
                             </div>
                             <div class="col-sm-1 text-right">
-                                <button type="button" class="btn btn-sm btn-primary my-1">Add</button>
+                                <button type="button" class="btn btn-sm btn-primary my-1" id="keys__input">
+                                    Add
+                                </button>
                             </div>
                         </div>
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Description</label>
                             <div class="col-sm-10">
                                 <textarea class="form-control" name="meta_des" rows="5" style="resize: none;"></textarea>
+                                @error('meta_des')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                     </div>
@@ -86,7 +102,7 @@
                     <div class="ibox-content p-5">
                         <div class="row">
                             <div class="col-sm-4">
-                                <h5>Thumbnail (1920 x 1080)</h5>
+                                <h5>Thumbnail (1920 x 1080) <small class="text-danger">*</small></h5>
                                 <p class="text-secondary">
                                     Upload image that should show as thumbnail image to visitors.
                                 </p>
@@ -96,6 +112,9 @@
                             </div>
                             <div class="col-sm-8">
                                 <div id="thumb" data-height="250px"></div>
+                                @error('thumbnail')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                     </div>
@@ -131,6 +150,30 @@
 
     <script>
         $(document).ready(function() {
+            /*
+             *Add meta tags input field
+             */
+            $('#tags__input').on('click', function(event) {
+                event.preventDefault();
+
+                let input = `<input type="text" class="form-control my-2" name="meta_tags[]" />`;
+
+                $("#tags").append(input);
+            });
+
+
+            /*
+             *Add meta keywords input field
+             */
+            $('#keys__input').on('click', function(event) {
+                event.preventDefault();
+
+                let input = `<input type="text" class="form-control my-2" name="meta_keys[]" />`;
+
+                $("#keys").append(input);
+            });
+
+
             $('#info').summernote({
                 height: 650,
                 disableResizeEditor: true,
@@ -143,11 +186,13 @@
                 ]
             });
 
+
             $("#thumb").spartanMultiImagePicker({
                 fieldName: 'thumbnail',
                 width: '100%',
                 maxCount: 1,
             });
+
 
             $("#category").select2({
                 placeholder: 'Select or Create Course Category...',
