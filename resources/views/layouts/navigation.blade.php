@@ -29,7 +29,7 @@
                 </ul>
             </li>
             <li><a href="{{ route('page', 'migration') }}">MIGRATIONS</a> <small>Migration Information</small> </li>
-            <li><a href="{{ route('page', 'blogs') }}">BLOG</a> <small>Recent posts</small> </li>
+            <li><a href="{{ route('blogs') }}">BLOG</a> <small>Recent posts</small> </li>
             <li><a href="{{ route('page', 'contact') }}">CONTACT</a> <small>Say hello</small> </li>
         </ul>
     </div>

@@ -1905,7 +1905,7 @@ textarea {
   background: #fff;
 }
 .blog .col-lg-9 {
-  padding-right: 60px;
+  padding-right: 40px;
 }
 .blog .sidebar {
   width: 100%;
@@ -2028,6 +2028,10 @@ textarea {
 .blog .post.single .post-image {
   width: 100%;
   margin-bottom: 50px;
+}
+.post-image img{
+  max-width: 1086px;
+  max-height: 612px;
 }
 .blog .post.single .post-content {
   width: 100%;
@@ -3278,4 +3282,12 @@ input[type="file"]{
 .contact-card-right{
   background-color: #1C375B;
   color: #fff;
+}
+
+.blog-card{
+  height: 400px;
+}
+
+.blog-card img{
+  max-height: 280px;
 }

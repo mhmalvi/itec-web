@@ -8,6 +8,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#75dab4" />
 
+    @stack('seo')
+
     <title>ITECounsel</title>
 
     @include('layouts.styles')

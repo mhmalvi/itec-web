@@ -16,12 +16,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('{page}', 'PagesController')
-    ->where('page', 'contact|rpl|migration|blogs|ielts|tourist-visa|pte|about-itec')
+    ->where('page', 'contact|rpl|migration|ielts|tourist-visa|pte|about-itec')
     ->name('page');
 Route::get('admission/{page}', 'AdmissionsController')
     ->where('page', 'australia|canada|europe|malaysia')
     ->name('admission');
 Route::get('{slug}/courses', 'CourseController@index')->name('courses');
+
+Route::get('blogs', 'PagesController@blogs')->name('blogs');
+Route::get('blog/{slug}', 'PagesController@blogDetail')->name('blog.detail');
 
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {

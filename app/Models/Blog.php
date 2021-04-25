@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
 
 class Blog extends Model
 {
@@ -34,5 +35,25 @@ class Blog extends Model
                 'source' => 'blog_title'
             ]
         ];
+    }
+
+
+
+    /**
+     * @return Date
+     */
+    public function getCreatedAtAttribute($value)
+    {
+        return date("M d, Y", strtotime($value));
+    }
+
+
+
+    /**
+     * 
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'action_user');
     }
 }

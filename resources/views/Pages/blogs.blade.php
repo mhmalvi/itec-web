@@ -21,129 +21,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="post">
-                        <figure class="post-image">
-                            <img src="{{ asset('assets/images/works01.jpg') }}" alt="Image">
-                        </figure>
-                        <div class="post-content">
-                            <small class="post-date">
-                                01, September 2019
-                            </small>
-                            <h3 class="post-title"><a href="#">Legally recognized as the only person who is authorized</a>
-                            </h3>
-                            <div class="post-author">
-                                <img src="{{ asset('assets/images/avatar01.jpg') }}" alt="Image">
-                                <span>by <a href="#">Marcus Aurelio</a></span>
+                    <div class="row">
+                        @forelse ($blogs as $item)
+                            <div class="col-lg-6">
+                                <div class="card blog-card">
+                                    <a href="">
+                                        <img src="{{ asset('storage/blogs/' . $item->thumbnail) }}" class="card-img-top"
+                                            alt="..." />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>
+                                            <a href="{{ route('blog.detail', $item->blog_slug) }}">
+                                                <strong>{{ $item->blog_title }}</strong>
+                                            </a>
+                                        </h4>
+                                        <p class="card-text">
+                                            <small class="text-muted"><b>By:&nbsp;</b>{{ $item->user->name }}</small>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- end post-author -->
-                            <ul class="post-categories">
-                                <li><a href="#">DESIGN</a></li>
-                                <li><a href="#">ECOMMERCE</a></li>
-                                <li><a href="#">DIGITAL</a></li>
-                            </ul>
-                            <a href="" class="post-link">READ MORE</a>
-                        </div>
-                        <!-- end post-content -->
+                        @empty
+
+                        @endforelse
+                        <!-- end post -->
                     </div>
-                    <!-- end post -->
-                    <div class="post">
-                        <figure class="post-image">
-                            <img src="{{ asset('assets/images/works02.jpg') }}" alt="Image">
-                        </figure>
-                        <div class="post-content">
-                            <small class="post-date">
-                                01, September 2019
-                            </small>
-                            <h3 class="post-title"><a href="#">Business is the activity of making one's living</a></h3>
-                            <div class="post-author">
-                                <img src="{{ asset('assets/images/avatar01.jpg') }}" alt="Image">
-                                <span>by <a href="#">Marcus Aurelio</a></span>
-                            </div>
-                            <!-- end post-author -->
-                            <ul class="post-categories">
-                                <li><a href="#">DESIGN</a></li>
-                                <li><a href="#">ECOMMERCE</a></li>
-                                <li><a href="#">DIGITAL</a></li>
-                            </ul>
-                            <a href="" class="post-link">READ MORE</a>
-                        </div>
-                        <!-- end post-content -->
-                    </div>
-                    <!-- end post -->
-                    <div class="post">
-                        <figure class="post-image">
-                            <img src="{{ asset('assets/images/works03.jpg') }}" alt="Image">
-                        </figure>
-                        <div class="post-content">
-                            <small class="post-date">
-                                01, September 2019
-                            </small>
-                            <h3 class="post-title"><a href="#">Making one's living or making money by producing</a></h3>
-                            <div class="post-author">
-                                <img src="{{ asset('assets/images/avatar01.jpg') }}" alt="Image">
-                                <span>by <a href="#">Marcus Aurelio</a></span>
-                            </div>
-                            <!-- end post-author -->
-                            <ul class="post-categories">
-                                <li><a href="#">DESIGN</a></li>
-                                <li><a href="#">ECOMMERCE</a></li>
-                                <li><a href="#">DIGITAL</a></li>
-                            </ul>
-                            <a href="" class="post-link">READ MORE</a>
-                        </div>
-                        <!-- end post-content -->
-                    </div>
-                    <!-- end post -->
-                    <div class="post">
-                        <figure class="post-image">
-                            <img src="{{ asset('assets/images/works04.jpg') }}" alt="Image">
-                        </figure>
-                        <div class="post-content">
-                            <small class="post-date">
-                                01, September 2019
-                            </small>
-                            <h3 class="post-title"><a href="#">Simply put, it is "any activity or enterprise entered</a>
-                            </h3>
-                            <div class="post-author">
-                                <img src="{{ asset('assets/images/avatar01.jpg') }}" alt="Image">
-                                <span>by <a href="#">Marcus Aurelio</a></span>
-                            </div>
-                            <!-- end post-author -->
-                            <ul class="post-categories">
-                                <li><a href="#">DESIGN</a></li>
-                                <li><a href="#">ECOMMERCE</a></li>
-                                <li><a href="#">DIGITAL</a></li>
-                            </ul>
-                            <a href="" class="post-link">READ MORE</a>
-                        </div>
-                        <!-- end post-content -->
-                    </div>
-                    <!-- end post -->
-                    <div class="post">
-                        <figure class="post-image">
-                            <img src="{{ asset('assets/images/works05.jpg') }}" alt="Image">
-                        </figure>
-                        <div class="post-content">
-                            <small class="post-date">
-                                01, September 2019
-                            </small>
-                            <h3 class="post-title"><a href="#">But this article will not deal with that sense of the
-                                    word</a></h3>
-                            <div class="post-author">
-                                <img src="{{ asset('assets/images/avatar01.jpg') }}" alt="Image">
-                                <span>by <a href="#">Marcus Aurelio</a></span>
-                            </div>
-                            <!-- end post-author -->
-                            <ul class="post-categories">
-                                <li><a href="#">DESIGN</a></li>
-                                <li><a href="#">ECOMMERCE</a></li>
-                                <li><a href="#">DIGITAL</a></li>
-                            </ul>
-                            <a href="" class="post-link">READ MORE</a>
-                        </div>
-                        <!-- end post-content -->
-                    </div>
-                    <!-- end post -->
                     <ul class="pagination">
                         <li class="page-item">
                             <a class="page-link" href="#" tabindex="-1">PREV</a>
