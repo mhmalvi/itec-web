@@ -12,41 +12,23 @@
 
 @section('content')
     <div class="container">
-        <form action="{{ route('admin.course.add') }}" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('admin.blog.add') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="my-5">
                 <div class="ibox">
                     <div class="ibox-content p-5">
                         <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Course Code</label>
+                            <label class="col-sm-2 col-form-label">Blog Title</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="course_code">
+                                <input type="text" class="form-control" name="blog_title">
                             </div>
                         </div>
                         <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Course Title</label>
+                            <label class="col-sm-2 col-form-label">Category</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="course_title">
-                            </div>
-                        </div>
-                        <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Course Category</label>
-                            <div class="col-sm-4">
                                 <select name="category" class="form-control" id="category">
-                                    <option value selected disabled>Select or Create Course Category...</option>
+                                    <option value selected disabled>Select or Create Category...</option>
                                     @forelse ($categories as $item)
-                                        <option value="{{ $item->id }}">{{ $item->title }}</option>
-                                    @empty
-
-                                    @endforelse
-                                </select>
-                            </div>
-
-                            <label class="col-sm-2 col-form-label text-right">Course Industry</label>
-                            <div class="col-sm-4">
-                                <select name="industry" class="form-control" id="industry">
-                                    <option value selected disabled>Select or Create Course Industry...</option>
-                                    @forelse ($industries as $item)
                                         <option value="{{ $item->id }}">{{ $item->title }}</option>
                                     @empty
 
@@ -61,7 +43,7 @@
                 <div class="ibox">
                     <div class="ibox-content p-5">
                         <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Informations</label>
+                            <label class="col-sm-2 col-form-label">Details</label>
                             <div class="col-sm-10">
                                 <textarea name="details" id="info"></textarea>
                             </div>
@@ -104,7 +86,7 @@
                     <div class="ibox-content p-5">
                         <div class="row">
                             <div class="col-sm-4">
-                                <h5>Course Thumbnail (1920 x 1080)</h5>
+                                <h5>Thumbnail (1920 x 1080)</h5>
                                 <p class="text-secondary">
                                     Upload image that should show as thumbnail image to visitors.
                                 </p>
@@ -123,7 +105,7 @@
                 <div class="checkbox checkbox-success pl-0">
                     <input id="checkbox3" type="checkbox" name="publish" checked>
                     <label for="checkbox3">
-                        Publish Course
+                        Publish This Article
                     </label>
                 </div>
                 <button type="submit" class="btn btn-primary mr-4">Publish</button>
@@ -150,9 +132,9 @@
     <script>
         $(document).ready(function() {
             $('#info').summernote({
-                height: 400,
+                height: 650,
                 disableResizeEditor: true,
-                placeholder: 'Write course information here',
+                placeholder: 'Write your content here...',
                 toolbar: [
                     // [groupName, [list of button]]
                     ['style', ['bold', 'italic', 'underline', 'clear']],
@@ -177,43 +159,16 @@
 
                 if (isNaN(new_category) && new_category != '') {
                     $.ajax({
-                        url: "{!! route('admin.category.add') !!}",
+                        url: "{!! route('admin.blog.category.add') !!}",
                         method: "POST",
                         data: {
-                            category_name: new_category
+                            blog_category: new_category
                         },
                         dataType: 'json',
                         success: function(res) {
                             if (res.data.status == 200) {
                                 element.append('<option value="' + res.data.id + '">' +
                                     res.data.name + '</option>').val(res.data.id);
-                            }
-                        }
-                    });
-                };
-            });
-
-
-            $("#industry").select2({
-                placeholder: 'Select or Create Course Industry...',
-                theme: 'bootstrap4',
-                tags: true
-            }).on('select2:close', function() {
-                var element = $(this);
-                var new_category = $.trim(element.val());
-
-                if (isNaN(new_category) && new_category != '') {
-                    $.ajax({
-                        url: "{!! route('admin.industry.add') !!}",
-                        method: "POST",
-                        data: {
-                            industry_name: new_category
-                        },
-                        dataType: 'json',
-                        success: function(res) {
-                            if (res.data.status == 200) {
-                                element.append('<option value="' + res.data.id + '">' +
-                                    res.data.name + '</option>').val(res.data.name);
                             }
                         }
                     });

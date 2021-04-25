@@ -30,7 +30,9 @@
                     <li class="{{ Route::currentRouteName() === 'admin.blog.category' ? 'active' : '' }}">
                         <a href="{{ route('admin.blog.category') }}">Categories</a>
                     </li>
-                    <li><a href="">Post New Blog</a></li>
+                    <li class="{{ Route::currentRouteName() === 'admin.blogs.add' ? 'active' : '' }}">
+                        <a href="{{ route('admin.blogs.add') }}">Post New Blog</a>
+                    </li>
                     <li><a href="">Manage Blogs</a></li>
                 </ul>
             </li>
