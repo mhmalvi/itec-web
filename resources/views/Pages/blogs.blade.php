@@ -59,7 +59,7 @@
                 </div>
                 <!-- end col-8 -->
                 <div class="col-lg-3">
-                    <aside class="sidebar">
+                    {{-- <aside class="sidebar">
                         <div class="widget">
                             <h4 class="title">CATEGORIES</h4>
                             <ul class="categories">
@@ -73,56 +73,8 @@
                             </ul>
                         </div>
                         <!-- end widget -->
-                        <div class="widget">
-                            <h4 class="title">TOUROG</h4>
-                            <p>Interactive digital experiences are continually becoming more <u>amazing</u> and more
-                                <u>complex</u> to produce. Our team is specially designed to create successful digital
-                                products.
-                            </p>
-                        </div>
-                        <!-- end widget -->
-                        <div class="widget">
-                            <h4 class="title">SEARCH</h4>
-                            <form>
-                                <input type="text" placeholder="Search on blog">
-                                <button type="submit">SEARCH</button>
-                            </form>
-                        </div>
-                        <!-- end widget -->
-                        <div class="widget">
-                            <h4 class="title">TAGS</h4>
-                            <ul class="tags">
-                                <li><a href="#">Animation</a></li>
-                                <li><a href="#">Branding</a></li>
-                                <li><a href="#">Development</a></li>
-                                <li><a href="#">Apps for IOS</a></li>
-                                <li><a href="#">Creative</a></li>
-                                <li><a href="#">Direction</a></li>
-                                <li><a href="#">Product Design</a></li>
-                                <li><a href="#">UI-UX Design</a></li>
-                                <li><a href="#">Web Design</a></li>
-                            </ul>
-                        </div>
-                        <!-- end widget -->
-                        <div class="widget">
-                            <h4 class="title">WORKS</h4>
-                            <ul class="mini-works">
-                                <li><a href="{{ asset('assets/images/works01.jpg') }}" data-fancybox><img
-                                            src="{{ asset('assets/images/works01.jpg') }}" alt="Image"></a></li>
-                                <li><a href="{{ asset('assets/images/works02.jpg') }}" data-fancybox><img
-                                            src="{{ asset('assets/images/works02.jpg') }}" alt="Image"></a></li>
-                                <li><a href="{{ asset('assets/images/works03.jpg') }}" data-fancybox><img
-                                            src="{{ asset('assets/images/works03.jpg') }}" alt="Image"></a></li>
-                                <li><a href="{{ asset('assets/images/works04.jpg') }}" data-fancybox><img
-                                            src="{{ asset('assets/images/works04.jpg') }}" alt="Image"></a></li>
-                                <li><a href="{{ asset('assets/images/works05.jpg') }}" data-fancybox><img
-                                            src="{{ asset('assets/images/works05.jpg') }}" alt="Image"></a></li>
-                                <li><a href="{{ asset('assets/images/works06.jpg') }}" data-fancybox><img
-                                            src="{{ asset('assets/images/works06.jpg') }}" alt="Image"></a></li>
-                            </ul>
-                        </div>
                     </aside>
-                    <!-- end sidebar -->
+                    <!-- end sidebar --> --}}
                 </div>
                 <!-- end col-4 -->
             </div>
