@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
+use App\Models\BlogCategory;
 
 class Blog extends Model
 {
@@ -55,5 +56,15 @@ class Blog extends Model
     public function user()
     {
         return $this->belongsTo(User::class, 'action_user');
+    }
+
+
+
+    /**
+     * 
+     */
+    public function category()
+    {
+        return $this->belongsTo(BlogCategory::class, 'blog_categories_id');
     }
 }

@@ -21,7 +21,8 @@ class CreateBlogsTable extends Migration
             $table->string('blog_slug')->nullable();
             $table->longText('blog_des');
             $table->text('meta_des')->nullable();
-            $table->string('thumbnail')->nullable();
+            $table->string('thumbnailOne')->nullable();
+            $table->string('thumbnailTwo')->nullable();
             $table->boolean('isPublished')->default(0);
             $table->timestamps();
         });

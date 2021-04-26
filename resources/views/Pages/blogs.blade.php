@@ -21,45 +21,41 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="row">
-                        @forelse ($blogs as $item)
-                            <div class="col-lg-6">
-                                <div class="card blog-card">
-                                    <a href="">
-                                        <img src="{{ asset('storage/blogs/' . $item->thumbnail) }}" class="card-img-top"
-                                            alt="..." />
+                    @forelse ($blogs as $item)
+                        <div class="post">
+                            <figure class="post-image">
+                                <img src="{{ asset('storage/blogs/' . $item->thumbnailTwo) }}" alt="Image">
+                            </figure>
+                            <div class="post-content">
+                                <small class="post-date">
+                                    {{ $item->created_at }}
+                                </small>
+                                <h3 class="post-title">
+                                    <a href="{{ route('blog.detail', $item->blog_slug) }}">
+                                        {{ $item->blog_title }}
                                     </a>
-                                    <div class="card-body">
-                                        <h4>
-                                            <a href="{{ route('blog.detail', $item->blog_slug) }}">
-                                                <strong>{{ $item->blog_title }}</strong>
-                                            </a>
-                                        </h4>
-                                        <p class="card-text">
-                                            <small class="text-muted"><b>By:&nbsp;</b>{{ $item->user->name }}</small>
-                                        </p>
-                                    </div>
+                                </h3>
+                                <div class="post-author">
+                                    <span>by <a href="#">{{ $item->user->name }}</a></span>
                                 </div>
+                                <!-- end post-author -->
+                                <ul class="post-categories">
+                                    <li><a href="#">{{ $item->category->title }}</a></li>
+                                </ul>
+                                <a href="{{ route('blog.detail', $item->blog_slug) }}" class="post-link">READ MORE</a>
                             </div>
-                        @empty
+                            <!-- end post-content -->
+                        </div>
+                    @empty
 
-                        @endforelse
-                        <!-- end post -->
-                    </div>
-                    {{-- <ul class="pagination">
-                        <li class="page-item">
-                            <a class="page-link" href="#" tabindex="-1">PREV</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">NEXT</a>
-                        </li>
-                    </ul> --}}
+                    @endforelse
+                    <!-- end post -->
 
                     {{ $blogs->links() }}
                 </div>
                 <!-- end col-8 -->
                 <div class="col-lg-3">
-                    {{-- <aside class="sidebar">
+                    <aside class="sidebar">
                         <div class="widget">
                             <h4 class="title">CATEGORIES</h4>
                             <ul class="categories">
@@ -74,7 +70,7 @@
                         </div>
                         <!-- end widget -->
                     </aside>
-                    <!-- end sidebar --> --}}
+                    <!-- end sidebar -->
                 </div>
                 <!-- end col-4 -->
             </div>

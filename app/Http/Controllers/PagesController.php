@@ -36,7 +36,7 @@ class PagesController extends Controller
      */
     public function blogs()
     {
-        $blogs = Blog::with('user')->orderBy('created_at', 'desc')->paginate('6');
+        $blogs = Blog::with(['user', 'category'])->orderBy('created_at', 'desc')->paginate('3');
         return view('Pages.blogs', compact('blogs'));
     }
 
