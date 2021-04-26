@@ -67,225 +67,28 @@
                 <div class="col-12 wow" data-splitting>
                     <h3 class="section-title text-center">OUR RTO PARTNERS OFFERS</h3>
                 </div>
-                <div class="col-lg-4 col-md-4 my-2">
-                    <div class="rpl-card reveal-effect masker wow">
-                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
-                        <div class="rpl-des">
-                            <h3>BUILDING & CONSTRUCTION</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">CPC10111 Certificate I in Construction</a>
-                                </li>
-                            </ul>
+
+                @forelse ($industries as $item)
+                    <div class="col-lg-4 col-md-4 my-2">
+                        <div class="rpl-card reveal-effect masker wow">
+                            <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                            <div class="rpl-des">
+                                <h3>{{ $item->title }}</h3>
+                                <ul class="text-left">
+                                    @foreach ($item->courses->take(5) as $course)
+                                        <li>
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                            <a href="">{{ $course->course_code }}-{{ $course->course_name }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            <a href="{{ route('industry', $item->slug) }}" class="find">Find More</a>
                         </div>
-                        <a href="" class="find">Find More</a>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-4 my-2">
-                    <div class="rpl-card reveal-effect masker wow">
-                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
-                        <div class="rpl-des">
-                            <h3>BUSINESS & FINANCE</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">CPP20617 Certificate II in Cleaning </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="" class="find">Find More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 my-2">
-                    <div class="rpl-card reveal-effect masker wow">
-                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
-                        <div class="rpl-des">
-                            <h3>AUTOMOTIVE</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">SHB30416 Certificate III in Hairdressing</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSB30115 Certificate III in Business</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">AHC30916 Certificate III in Landscape Construction</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">RII30815 Certificate III in Civil Construction Plant Operations</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="" class="find">Find More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 my-2">
-                    <div class="rpl-card reveal-effect masker wow">
-                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
-                        <div class="rpl-des">
-                            <h3>CIVIL CONSTRUCTION</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">SHB40115 Certificate IV in Beauty Therapy </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSB40215 Certificate IV in Business</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSB40515 Certificate IV in Business</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSB41015 Certificate IV in Human Resources</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="" class="find">Find More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 my-2">
-                    <div class="rpl-card reveal-effect masker wow">
-                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
-                        <div class="rpl-des">
-                            <h3>COMMUNITY SERVICES</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">HLT52015 Diploma of Remedial Massage </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">SHB50115 Diploma of Beauty Therapy</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSB50215 Diploma of Business </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSB50618 Diploma of Human Resources Management</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="" class="find">Find More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 my-2">
-                    <div class="rpl-card reveal-effect masker wow">
-                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
-                        <div class="rpl-des">
-                            <h3>COMMERCIAL COOKERY & HOSPITALITY</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">SIT60316 Advanced Diploma of Hospitality Management</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSBHRM505 Manage remuneration and employee benefits </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">HLTAID003 Provide first aid </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">RIIGOV401E Apply, monitor and report on compliance systems</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="" class="find">Find More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 my-2">
-                    <div class="rpl-card reveal-effect masker wow">
-                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
-                        <div class="rpl-des">
-                            <h3>FITNESS & RECREATION</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">SIT60316 Advanced Diploma of Hospitality Management</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSBHRM505 Manage remuneration and employee benefits </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">HLTAID003 Provide first aid </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">RIIGOV401E Apply, monitor and report on compliance systems</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="" class="find">Find More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 my-2">
-                    <div class="rpl-card reveal-effect masker wow">
-                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
-                        <div class="rpl-des">
-                            <h3>HAIR & BEAUTY</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">SIT60316 Advanced Diploma of Hospitality Management</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSBHRM505 Manage remuneration and employee benefits </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">HLTAID003 Provide first aid </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">RIIGOV401E Apply, monitor and report on compliance systems</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="" class="find">Find More</a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 my-2">
-                    <div class="rpl-card reveal-effect masker wow">
-                        <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
-                        <div class="rpl-des">
-                            <h3>COMMERCIAL COOKERY & HOSPITALITY</h3>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">SIT60316 Advanced Diploma of Hospitality Management</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">BSBHRM505 Manage remuneration and employee benefits </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">HLTAID003 Provide first aid </a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-long-arrow-alt-right"></i>
-                                    <a href="">RIIGOV401E Apply, monitor and report on compliance systems</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="" class="find">Find More</a>
-                    </div>
-                </div>
+                @empty
+
+                @endforelse
             </div>
         </div>
         <!-- end container -->

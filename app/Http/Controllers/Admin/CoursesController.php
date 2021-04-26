@@ -83,35 +83,66 @@ class CoursesController extends Controller
      */
     public function store(Request $request)
     {
-        $newName = null;
+        try {
+            $category = CourseCategory::where('title', $request->category)->first();
+            $industry = CourseIndustry::where('title', $request->industry)->first();
 
-        if ($request->hasFile('thumbnail')) {
-            //Get the file name without extension
-            $image = $request->file('thumbnail');
-            $imagename = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
-            $ext = $image->getClientOriginalExtension();
-            $random = uniqid();
+            $newName = null;
+            $fileName = null;
 
-            $newName = "{$imagename}_{$random}.{$ext}";
+            if ($request->hasFile('thumbnail')) {
+                //Get the file name without extension
+                $image = $request->file('thumbnail');
+                $imagename = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
+                $ext = $image->getClientOriginalExtension();
+                $random = uniqid();
 
-            //check if directory exist or not
-            if (!Storage::exists("public/blogs")) {
-                Storage::makeDirectory("public/blogs");
+                $newName = "{$imagename}_{$random}.{$ext}";
+
+                //check if directory exist or not
+                if (!Storage::exists("public/courses")) {
+                    Storage::makeDirectory("public/courses");
+                }
+                Storage::putFileAs('public/courses', $image, $newName);
             }
-            Storage::putFileAs('public/blogs', $image, $newName);
+
+            if ($request->hasFile('checklist')) {
+                $file = $request->file('checklist');
+                $fileName = $file->getClientOriginalName();
+
+                //check if directory exist or not
+                if (!Storage::exists("public/checklists")) {
+                    Storage::makeDirectory("public/checklists");
+                }
+                Storage::putFileAs('public/checklists', $file, $fileName);
+            }
+
+            Course::create([
+                'action_user' => Auth::id(),
+                'course_code' => $request->course_code,
+                'course_name' => $request->course_title,
+                'course_categories_id' => $category->id,
+                'course_industries_id' => $industry->id,
+                'course_desc' => $request->details,
+                'thumbnail' => $newName,
+                'checklist' => $fileName,
+                'isPublished' => ($request->publish === 'on') ? 1 : 0
+            ]);
+
+            $notification = [
+                'message'   =>  'Successfully Saved.',
+                'alert-type'    =>  'success'
+            ];
+
+            return back()->with($notification);
+        } catch (\Throwable $th) {
+            $notification = [
+                // 'message'   =>  'oops! Something went wrong',
+                'message' => $th->getMessage(),
+                'alert-type'    =>  'warning'
+            ];
+
+            return back()->with($notification);
         }
-
-        $course = Course::create([
-            'action_user' => Auth::id(),
-            'course_code' => $request->course_code,
-            'course_name' => $request->course_title,
-            'course_categories_id' => $request->category,
-            'course_industries_id' => $request->industry,
-            'course_desc' => $request->details,
-            'thumbnail' => $newName,
-            'isPublished' => ($request->publish === 'on') ? 1 : 0
-        ]);
-
-        dd($course);
     }
 }

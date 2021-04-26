@@ -41,11 +41,11 @@
         <div class="inner">
             <h5>Social Share </h5>
             <ul>
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="https://www.facebook.com/ITECOUNSEL.AUSTRALIA/"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/itecounsel"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/itec-international-training-education-counsel/"><i
+                            class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="https://www.instagram.com/itecounsel/"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </div>
     </div>

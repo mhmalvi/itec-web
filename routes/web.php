@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('{page}', 'PagesController')
-    ->where('page', 'contact|rpl|migration|ielts|tourist-visa|pte|about-itec')
+    ->where('page', 'contact|migration|ielts|tourist-visa|pte|about-itec')
     ->name('page');
 Route::get('admission/{page}', 'AdmissionsController')
     ->where('page', 'australia|canada|europe|malaysia')
@@ -25,6 +25,12 @@ Route::get('{slug}/courses', 'CourseController@index')->name('courses');
 
 Route::get('blogs', 'PagesController@blogs')->name('blogs');
 Route::get('blog/{slug}', 'PagesController@blogDetail')->name('blog.detail');
+
+Route::get('rpl', 'PagesController@rpl')->name('rpl');
+Route::get('{slug}/industry', 'PagesController@industry')->name('industry');
+Route::get('{Slug}/course', 'PagesController@course')->name('course.single');
+
+Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
 
 
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {

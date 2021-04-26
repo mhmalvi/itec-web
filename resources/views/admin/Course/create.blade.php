@@ -35,7 +35,7 @@
                                 <select name="category" class="form-control" id="category">
                                     <option value selected disabled>Select or Create Course Category...</option>
                                     @forelse ($categories as $item)
-                                        <option value="{{ $item->id }}">{{ $item->title }}</option>
+                                        <option value="{{ $item->title }}">{{ $item->title }}</option>
                                     @empty
 
                                     @endforelse
@@ -47,7 +47,7 @@
                                 <select name="industry" class="form-control" id="industry">
                                     <option value selected disabled>Select or Create Course Industry...</option>
                                     @forelse ($industries as $item)
-                                        <option value="{{ $item->id }}">{{ $item->title }}</option>
+                                        <option value="{{ $item->title }}">{{ $item->title }}</option>
                                     @empty
 
                                     @endforelse
@@ -63,7 +63,7 @@
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Informations</label>
                             <div class="col-sm-10">
-                                <textarea name="details" id="info"></textarea>
+                                <textarea name="details" class="info"></textarea>
                             </div>
                         </div>
                     </div>
@@ -116,6 +116,17 @@
                                 <div id="thumb" data-height="250px"></div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h5>Upload Check List</h5>
+                                <p>
+                                    Max File Size: 1 mb
+                                </p>
+                            </div>
+                            <div class="col-sm-8 form-group">
+                                <input type="file" name="checklist" class="form-control" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -134,8 +145,6 @@
 @endsection
 
 @push('js')
-    <!-- SUMMERNOTE -->
-    <script src="{{ asset('admin/js/plugins/summernote/summernote-bs4.js') }}"></script>
     <!-- Tags Input -->
     <script src="{{ asset('admin/js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js') }}"></script>
 
@@ -147,79 +156,7 @@
     <!-- Select2 -->
     <script src="{{ asset('admin/js/plugins/select2/select2.full.min.js') }}"></script>
 
-    <script>
-        $(document).ready(function() {
-            $('#info').summernote({
-                height: 400,
-                disableResizeEditor: true,
-                placeholder: 'Write course information here',
-                toolbar: [
-                    // [groupName, [list of button]]
-                    ['style', ['bold', 'italic', 'underline', 'clear']],
-                    ['para', ['ul', 'ol', 'paragraph']],
-                    ['height', ['height']]
-                ]
-            });
+    <script src="{{ asset('admin/tinymce/tinymce.min.js') }}"></script>
 
-            $("#thumb").spartanMultiImagePicker({
-                fieldName: 'thumbnail',
-                width: '100%',
-                maxCount: 1,
-            });
-
-            $("#category").select2({
-                placeholder: 'Select or Create Course Category...',
-                theme: 'bootstrap4',
-                tags: true
-            }).on('select2:close', function() {
-                var element = $(this);
-                var new_category = $.trim(element.val());
-
-                if (isNaN(new_category) && new_category != '') {
-                    $.ajax({
-                        url: "{!! route('admin.category.add') !!}",
-                        method: "POST",
-                        data: {
-                            category_name: new_category
-                        },
-                        dataType: 'json',
-                        success: function(res) {
-                            if (res.data.status == 200) {
-                                element.append('<option value="' + res.data.id + '">' +
-                                    res.data.name + '</option>').val(res.data.id);
-                            }
-                        }
-                    });
-                };
-            });
-
-
-            $("#industry").select2({
-                placeholder: 'Select or Create Course Industry...',
-                theme: 'bootstrap4',
-                tags: true
-            }).on('select2:close', function() {
-                var element = $(this);
-                var new_category = $.trim(element.val());
-
-                if (isNaN(new_category) && new_category != '') {
-                    $.ajax({
-                        url: "{!! route('admin.industry.add') !!}",
-                        method: "POST",
-                        data: {
-                            industry_name: new_category
-                        },
-                        dataType: 'json',
-                        success: function(res) {
-                            if (res.data.status == 200) {
-                                element.append('<option value="' + res.data.id + '">' +
-                                    res.data.name + '</option>').val(res.data.name);
-                            }
-                        }
-                    });
-                };
-            });
-        });
-
-    </script>
+    @include('admin.Course.script')
 @endpush

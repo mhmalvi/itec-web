@@ -22,6 +22,7 @@ class CreateCoursesTable extends Migration
             $table->string('course_name');
             $table->text('course_desc')->nullable();
             $table->string('thumbnail')->nullable();
+            $table->string('checklist')->nullable();
             $table->boolean('isPublished')->default(0);
             $table->timestamps();
         });

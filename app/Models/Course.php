@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\CourseIndustry;
 
 class Course extends Model
 {
@@ -17,6 +18,16 @@ class Course extends Model
         'course_name',
         'course_desc',
         'thumbnail',
+        'checklist',
         'isPublished'
     ];
+
+
+    /**
+     * 
+     */
+    public function courseIndustry()
+    {
+        return $this->belongsTo(CourseIndustry::class, 'course_industries_id');
+    }
 }

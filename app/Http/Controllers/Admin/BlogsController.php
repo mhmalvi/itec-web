@@ -36,6 +36,7 @@ class BlogsController extends Controller
             $newName = null;
 
             $slug = SlugService::createSlug(Blog::class, 'blog_slug', $request->blog_title);
+            $category = BlogCategory::where('title', $request->category_id)->first();
 
             if ($request->hasFile('thumbnail')) {
                 //Get the file name without extension
@@ -55,7 +56,7 @@ class BlogsController extends Controller
 
             Blog::create([
                 'action_user' => Auth::id(),
-                'blog_categories_id' => $request->category_id,
+                'blog_categories_id' => $category->id,
                 'blog_title' => $request->blog_title,
                 'blog_slug' => $slug,
                 'blog_des' => $request->details,
