@@ -46,14 +46,16 @@
                         @endforelse
                         <!-- end post -->
                     </div>
-                    <ul class="pagination">
+                    {{-- <ul class="pagination">
                         <li class="page-item">
                             <a class="page-link" href="#" tabindex="-1">PREV</a>
                         </li>
                         <li class="page-item">
                             <a class="page-link" href="#">NEXT</a>
                         </li>
-                    </ul>
+                    </ul> --}}
+
+                    {{ $blogs->links() }}
                 </div>
                 <!-- end col-8 -->
                 <div class="col-lg-3">

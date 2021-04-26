@@ -30,7 +30,7 @@ class BlogsController extends Controller
      * @param $request
      * 
      */
-    public function store(BlogRequest $request)
+    public function store(Request $request)
     {
         try {
             $newName = null;
@@ -53,7 +53,7 @@ class BlogsController extends Controller
                 Storage::putFileAs('public/blogs', $image, $newName);
             }
 
-            $blog = Blog::create([
+            Blog::create([
                 'action_user' => Auth::id(),
                 'blog_categories_id' => $request->category_id,
                 'blog_title' => $request->blog_title,
@@ -64,20 +64,22 @@ class BlogsController extends Controller
                 'isPublished' => ($request->publish === 'on') ? 1 : 0
             ]);
 
-            if ($request->filled('meta_tags') && $blog->id) {
-                $this->tags($request->meta_tags, $blog->id);
-            }
+            // dd($blog);
 
-            if ($request->filled('meta_keys') && $blog->id) {
-                $this->keywords($request->meta_keys, $blog->id);
-            }
+            // if ($blog->id && ($request->filled('meta_tags'))) {
+            //     $this->tags($request->meta_tags, $blog->id);
+            // }
+
+            // if ($blog->id && ($request->filled('meta_keys'))) {
+            //     $this->keywords($request->meta_keys, $blog->id);
+            // }
 
             $notification = [
                 'message'   =>  'Successfully Saved.',
                 'alert-type'    =>  'success'
             ];
 
-            return redirect()->back()->with($notification);
+            return back()->with($notification);
         } catch (\Throwable $th) {
             $notification = [
                 // 'message'   =>  'oops! Something went wrong',
@@ -85,7 +87,7 @@ class BlogsController extends Controller
                 'alert-type'    =>  'warning'
             ];
 
-            return redirect()->back()->with($notification);
+            return back()->with($notification);
         }
     }
 

@@ -3285,7 +3285,8 @@ input[type="file"]{
 }
 
 .blog-card{
-  height: 400px;
+  height: 480px;
+  margin: 15px auto;
 }
 
 .blog-card img{
