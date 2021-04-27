@@ -43,7 +43,9 @@
                     <li class="{{ Route::currentRouteName() === 'admin.course.add' ? 'active' : '' }}">
                         <a href="{{ route('admin.course.add') }}">Post New Course</a>
                     </li>
-                    <li><a href="">Manage Courses</a></li>
+                    <li class="{{ Route::currentRouteName() === 'admin.course' ? 'active' : '' }}">
+                        <a href="{{ route('admin.course') }}">Manage Courses</a>
+                    </li>
                 </ul>
             </li>
             <li>

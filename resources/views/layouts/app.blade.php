@@ -7,6 +7,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#75dab4" />
+    <link href="{{ asset('assets/favicon.png') }}" rel="shortcut icon">
 
     @stack('seo')
 

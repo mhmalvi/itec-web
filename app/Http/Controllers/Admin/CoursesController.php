@@ -9,6 +9,7 @@ use App\Models\CourseIndustry;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
+use Cviebrock\EloquentSluggable\Services\SlugService;
 
 class CoursesController extends Controller
 {
@@ -18,7 +19,8 @@ class CoursesController extends Controller
      */
     public function index()
     {
-        return view('admin.Course.index');
+        $courses = Course::all();
+        return view('admin.Course.index', compact('courses'));
     }
 
 
@@ -49,8 +51,17 @@ class CoursesController extends Controller
      */
     public function createIndustry(Request $request)
     {
-        $industry = CourseIndustry::firstOrCreate([
-            'title' => $request->industry_name
+        $industry = CourseIndustry::where('title', $request->industry_name)->first();
+        if (isset($industry->id)) {
+            return false;
+            die();
+        }
+
+        $slug = SlugService::createSlug(CourseIndustry::class, 'slug', $request->industry_name);
+        $industry = CourseIndustry::updateOrCreate([
+            'action_user' => Auth::id(),
+            'title' => $request->industry_name,
+            'slug' => $slug
         ]);
 
         if ($industry->id) {
@@ -108,7 +119,8 @@ class CoursesController extends Controller
 
             if ($request->hasFile('checklist')) {
                 $file = $request->file('checklist');
-                $fileName = $file->getClientOriginalName();
+                $ext = $file->getClientOriginalExtension();
+                $fileName = "{$request->course_code}.{$ext}";
 
                 //check if directory exist or not
                 if (!Storage::exists("public/checklists")) {

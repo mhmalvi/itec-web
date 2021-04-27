@@ -72,17 +72,12 @@
                             <div class="swiper-slide">
                                 <figure class="reveal-effect masker wow"> <img
                                         src="{{ asset('assets/images/office01.jpg') }}" alt="Image">
-                                    <figcaption>
-                                        <h6>HEAD OFFICE</h6>
-                                    </figcaption>
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <figure> <img src="{{ asset('assets/images/office02.jpg') }}" alt="Image">
-                                    <figcaption>
-                                        <h6>BANGLADESH OFFICE</h6>
-                                    </figcaption>
+                                <figure>
+                                    <img src="{{ asset('assets/images/office02.jpg') }}" alt="Image">
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->
@@ -111,7 +106,7 @@
                 <div class="col-lg-3 col-md-4 wow" data-splitting>
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
-                        <h6>IELTS</h6>
+                        <h6>IELTS | PTE</h6>
                         <ul>
                             <li>Digital Branding</li>
                             <li>Web & Mobile Sites</li>
@@ -125,7 +120,7 @@
                 <div class="col-lg-3 col-md-4 wow" data-splitting>
                     <div class="content-block selected">
                         <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
-                        <h6>RPL | PTE</h6>
+                        <h6>RPL</h6>
                         <ul>
                             <li>Digital Strategy</li>
                             <li>User Experience Design</li>
@@ -166,7 +161,8 @@
                 @forelse ($industries as $item)
                     <div class="col-lg-4 col-md-4 my-2">
                         <div class="rpl-card reveal-effect masker wow">
-                            <img src="{{ asset('assets/images/works01.jpg') }}" alt="">
+                            <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
+                                alt="">
                             <div class="rpl-des">
                                 <h3>{{ $item->title }}</h3>
                                 <ul class="text-left">

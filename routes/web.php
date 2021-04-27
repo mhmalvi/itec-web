@@ -33,6 +33,9 @@ Route::get('{Slug}/course', 'PagesController@course')->name('course.single');
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
 
 
+Route::get('testMail', 'MailsController@testMail');
+
+
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
     Route::get('/dashboard', 'Admin\AdminController@index')->name('dashboard');
 
@@ -45,7 +48,7 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 
 
     Route::prefix('course')->group(function () {
-        Route::get('/', 'Admin\CoursesController@index')->name('course');
+        Route::get('/all', 'Admin\CoursesController@index')->name('course');
         Route::get('add-new', 'Admin\CoursesController@create')->name('course.add');
         Route::post('add-new', 'Admin\CoursesController@store');
 

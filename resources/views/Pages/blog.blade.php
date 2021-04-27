@@ -30,7 +30,8 @@
                 <div class="col-lg-10">
                     <div class="post single">
                         <figure class="post-image">
-                            <img src="{{ asset('storage/blogs/' . $blog->thumbnailOne) }}" alt="Image">
+                            <img src="{{ !is_null($blog->thumbnailOne) ? asset('storage/blogs/' . $blog->thumbnailOne) : asset('assets/images/blog/blog.jpg') }}"
+                                alt="Image">
                         </figure>
                         <div class="post-content">
                             <small class="post-date">

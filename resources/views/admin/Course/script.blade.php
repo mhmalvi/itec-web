@@ -38,7 +38,7 @@
             placeholder: 'Select or Create Course Industry...',
             theme: 'bootstrap4',
             tags: true
-        }).on('select2:close', function() {
+        }).on('select2:close', function(e) {
             var element = $(this);
             var new_category = $.trim(element.val());
 
