@@ -159,7 +159,7 @@
                     <h3 class="section-title text-center">OUR RTO PARTNERS OFFERS</h3>
                 </div>
                 @forelse ($industries as $item)
-                    <div class="col-lg-4 col-md-4 my-2">
+                    <div class="col-lg-4 col-md-4 my-2 industry-card">
                         <div class="rpl-card reveal-effect masker wow">
                             <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
                                 alt="">
@@ -180,6 +180,10 @@
                 @empty
 
                 @endforelse
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="load">Load More</button>
             </div>
         </div>
         <!-- end container -->

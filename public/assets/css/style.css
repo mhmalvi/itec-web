@@ -3292,3 +3292,20 @@ input[type="file"]{
 .blog-card img{
   max-height: 280px;
 }
+
+.industry-card{
+  display: none;
+}
+
+#load{
+  margin: 25px auto;
+  padding: 15px 30px;
+  border: transparent;
+  background-color: #1C375B;
+  color: #fff;
+}
+
+.load-rpl{
+    background-color: #fff !important;
+    color: #1C375B !important;
+}
