@@ -545,7 +545,7 @@ textarea {
   -webkit-transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  background: #CD4236;
+  background: rgba(255, 255, 255, 0.5);
   padding-left: 120px;
 }
 .site-navigation .layer {
@@ -554,7 +554,7 @@ textarea {
   position: absolute;
   right: 0;
   top: 0;
-  background: #1C375B;
+  background: rgba(255, 255, 255, 0.5);
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -601,7 +601,7 @@ textarea {
 .site-navigation .inner ul li i {
   margin-left: 20px;
   font-size: 30px;
-  color: #fff;
+  color: #1C375B;
   display: inline-block;
   line-height: 1;
   transform: translateY(-5px);
@@ -610,7 +610,7 @@ textarea {
 .site-navigation .inner ul li small {
   width: 100%;
   display: block;
-  color: #fff;
+  color: #CD4236;
   opacity: 0.7;
   letter-spacing: 0.5px;
   font-size: 11px;
@@ -622,7 +622,7 @@ textarea {
   font-size: 36px;
   display: inline-block;
   font-weight: 800;
-  color: #fff;
+  color: #1C375B;
   -webkit-transition: 0.25s ease-in-out;
   -moz-transition: 0.25s ease-in-out;
   -ms-transition: 0.25s ease-in-out;
