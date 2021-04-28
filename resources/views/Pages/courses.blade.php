@@ -9,8 +9,7 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>Building & Constructions</h1>
-                <p>We provide a free day to experience our benefits of digital world</p>
+                <h1>{{ $industry->title }}</h1>
             </div>
             <!-- end container -->
         </div>
@@ -41,23 +40,26 @@
                     </div>
                 </div>
                 <!-- end col-8 -->
-                {{-- <div class="col-lg-3">
+                <div class="col-lg-3">
                     <aside class="sidebar">
                         <div class="widget">
-                            <h4 class="title">CATEGORIES</h4>
+                            <h4 class="title">OTHER INDUSTRIES</h4>
                             <ul class="categories">
-                                <li><span>10</span><a href="#">BUSINESS & FINANCE</a></li>
-                                <li><span>22</span><a href="#">AUTOMOTIVE</a></li>
-                                <li><span>74</span><a href="#">CIVIL CONSTRUCTION</a></li>
-                                <li><span>4</span><a href="#">COMMUNITY SERVICES</a></li>
-                                <li><span>53</span><a href="#">FITNESS & RECREATION</a></li>
-                                <li><span>14</span><a href="#">HAIR & BEAUTY</a></li>
+                                @forelse ($industries as $item)
+                                    @if ($item->slug !== request()->segment(1))
+                                        <li><span>{{ count($item->courses) }}</span>
+                                            <a href="{{ route('industry', $item->slug) }}">{{ $item->title }}</a>
+                                        </li>
+                                    @endif
+                                @empty
+
+                                @endforelse
                             </ul>
                         </div>
                         <!-- end widget -->
                     </aside>
                     <!-- end sidebar -->
-                </div> --}}
+                </div>
                 <!-- end col-4 -->
             </div>
             <!-- end row -->

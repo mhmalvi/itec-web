@@ -17,6 +17,7 @@ class CreateBlogCategoriesTable extends Migration
             $table->id();
             $table->unsignedBigInteger('action_user')->nullable();
             $table->string('title');
+            $table->string('slug')->nullable();
             $table->text('description')->nullable();
             $table->timestamps();
         });

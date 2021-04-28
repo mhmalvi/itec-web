@@ -16,8 +16,20 @@ class CreateCoursesTable extends Migration
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('action_user')->nullable();
+            $table->foreign('action_user')->on('users')
+                ->onDelete('set null')
+                ->onUpdate('cascade');
+
             $table->unsignedBigInteger('course_industries_id')->nullable();
+            $table->foreign('course_industries_id')->on('course_industries')
+                ->onDelete('set null')
+                ->onUpdate('cascade');
+
             $table->unsignedBigInteger('course_categories_id')->nullable();
+            $table->foreign('course_categories_id')->on('course_categories')
+                ->onDelete('set null')
+                ->onUpdate('cascade');
+
             $table->string('course_code');
             $table->string('course_name');
             $table->text('course_desc')->nullable();

@@ -21,7 +21,7 @@
             <div class="row form-group">
                 <div class="col-md-6 my-2">
                     <select name="live" class="form-control" required>
-                        <option disabled selected value>Where are you currentlu located</option>
+                        <option disabled selected value>Where are you currently located</option>
                         <option value="NSW">NSW</option>
                         <option value="VIC">VIC</option>
                         <option value="QLD">QLD</option>
@@ -71,12 +71,19 @@
             </div>
             <div class="row form-group">
                 <div class="col-md-6 my-2">
-                    <input type="text" class="form-control" name="designation"
-                        placeholder="Industry of interest. Ex: Hospitality, Construction etc" required>
+                    <select name="industry" class="form-control" required />
+                    <option disabled selected value>Choose your industry of interest...</option>
+                    </select>
                 </div>
-                <div class="col-md-6 my-2 rpl-files">
-                    <select name="live" class="form-control" required>
-                        <option disabled selected value>Select your preffered course</option>
+                <div class="col-md-6 my-2">
+                    <input type="text" class="form-control" name="industry_other"
+                        placeholder="other industry of interest..." required>
+                </div>
+            </div>
+            <div class="row form-group">
+                <div class="col md-12 my-2">
+                    <select name="course" class="form-control">
+                        <option disabled selected value>Choose your preffered course...</option>
                     </select>
                 </div>
             </div>

@@ -39,6 +39,16 @@ class Blog extends Model
     }
 
 
+    public function getBlogCategoriesIdAttribute($value)
+    {
+        if (is_null($value)) {
+            return 'Uncategorized';
+        }
+
+        return $value;
+    }
+
+
 
     /**
      * @return Date

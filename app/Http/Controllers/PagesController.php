@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use App\Models\Course;
+use App\Models\CourseCategory;
 use App\Models\CourseIndustry;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -37,7 +38,8 @@ class PagesController extends Controller
     public function blogs()
     {
         $blogs = Blog::with(['user', 'category'])->orderBy('created_at', 'desc')->paginate('3');
-        return view('Pages.blogs', compact('blogs'));
+        $industries = CourseIndustry::all();
+        return view('Pages.blogs', compact('blogs', 'industries'));
     }
 
 
@@ -74,10 +76,12 @@ class PagesController extends Controller
      */
     public function industry($slug)
     {
+        $industries = CourseIndustry::all();
+        $categories = CourseCategory::all();
         $industry = CourseIndustry::where('slug', $slug)->first();
         $courses = Course::where('course_industries_id', $industry->id)->get();
 
-        return view('Pages.courses', compact('courses'));
+        return view('Pages.courses', compact('industry', 'courses', 'industries'));
     }
 
 
@@ -89,7 +93,6 @@ class PagesController extends Controller
     public function course($slug)
     {
         $course = Course::where('course_code', $slug)->first();
-
         return view('Pages.course-single', compact('course'));
     }
 

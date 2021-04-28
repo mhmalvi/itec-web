@@ -40,7 +40,9 @@
                                 </div>
                                 <!-- end post-author -->
                                 <ul class="post-categories">
-                                    <li><a href="#">{{ $item->category->title }}</a></li>
+                                    <li><a
+                                            href="#">{{ is_int($item->blog_categories_id) ? $item->category->title : $item->blog_categories_id }}</a>
+                                    </li>
                                 </ul>
                                 <a href="{{ route('blog.detail', $item->blog_slug) }}" class="post-link">READ MORE</a>
                             </div>
@@ -57,15 +59,15 @@
                 <div class="col-lg-3">
                     <aside class="sidebar">
                         <div class="widget">
-                            <h4 class="title">CATEGORIES</h4>
+                            <h4 class="title">INDUSTRIES</h4>
                             <ul class="categories">
-                                <li><span>14</span><a href="#">Web Design</a></li>
-                                <li><span>22</span><a href="#">Web Development</a></li>
-                                <li><span>74</span><a href="#">e-Commerce</a></li>
-                                <li><span>4</span><a href="#">Woo Commerce</a></li>
-                                <li><span>64</span><a href="#">Wordpress</a></li>
-                                <li><span>53</span><a href="#">App Development</a></li>
-                                <li><span>14</span><a href="#">Print Design</a></li>
+                                @forelse ($industries as $item)
+                                    <li><span>{{ count($item->courses) }}</span>
+                                        <a href="{{ route('industry', $item->slug) }}">{{ $item->title }}</a>
+                                    </li>
+                                @empty
+
+                                @endforelse
                             </ul>
                         </div>
                         <!-- end widget -->
