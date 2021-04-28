@@ -21,7 +21,10 @@ Route::get('{page}', 'PagesController')
 Route::get('admission/{page}', 'AdmissionsController')
     ->where('page', 'australia|canada|europe|malaysia')
     ->name('admission');
+
+
 Route::get('{slug}/courses', 'CourseController@index')->name('courses');
+Route::post('get-course-by-industry', 'CourseController@getCourseByIndustry')->name('get.course');
 
 Route::get('blogs', 'PagesController@blogs')->name('blogs');
 Route::get('blog/{slug}', 'PagesController@blogDetail')->name('blog.detail');
@@ -31,6 +34,8 @@ Route::get('{slug}/industry', 'PagesController@industry')->name('industry');
 Route::get('{Slug}/course', 'PagesController@course')->name('course.single');
 
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
+
+Route::post('book-appointment', 'MailsController@appointment')->name('book.appointment');
 
 
 Route::get('testMail', 'MailsController@testMail');

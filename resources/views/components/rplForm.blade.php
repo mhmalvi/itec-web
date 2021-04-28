@@ -71,8 +71,13 @@
             </div>
             <div class="row form-group">
                 <div class="col-md-6 my-2">
-                    <select name="industry" class="form-control" required />
+                    <select name="industry" class="form-control" id="industry" required />
                     <option disabled selected value>Choose your industry of interest...</option>
+                    @forelse (\App\Models\CourseIndustry::all() as $item)
+                        <option value="{{ $item->title }}">{{ $item->title }}</option>
+                    @empty
+
+                    @endforelse
                     </select>
                 </div>
                 <div class="col-md-6 my-2">
@@ -82,8 +87,8 @@
             </div>
             <div class="row form-group">
                 <div class="col md-12 my-2">
-                    <select name="course" class="form-control">
-                        <option disabled selected value>Choose your preffered course...</option>
+                    <select name="course" class="form-control" id="courses">
+                        <option disabled selected value>Choose your preffered industry first...</option>
                     </select>
                 </div>
             </div>

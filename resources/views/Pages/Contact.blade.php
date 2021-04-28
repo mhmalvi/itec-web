@@ -57,7 +57,8 @@
                     <div class="row">
                         <!-- end col-5 -->
                         <div class="col-lg-6 pr-5 contact-card-inner">
-                            <form method="post" id="contactForm">
+                            <form id="contactForm">
+                                <ul id="errors"></ul>
                                 <div class="form-group">
                                     <input id="name" class="form-control" type="text" name="name"
                                         placeholder="Enter Your Name">
@@ -79,7 +80,7 @@
                                         placeholder="Your Message (255 character max)"></textarea>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-primary" id="form-submit">Send</button>
                             </form>
                             <!-- end form -->
                         </div>
@@ -136,6 +137,32 @@
             ],
 
         });
+
+        $("#contactForm").on("submit", function(e) {
+            e.preventDefault();
+
+            $.ajax({
+                url: "{!! route('book.appointment') !!}",
+                method: "POST",
+                data: $(this).serialize(),
+                dataType: "json",
+                beforeSend: function() {
+                    $("#form-submit").text('Sending');
+                },
+                success: function(data) {
+                    if (data.status == 422) {
+                        var errors = "";
+                        data.error.map((err) => {
+                            errors += `<li class="text-danger">${err}</li>`;
+                        })
+                        setTimeout(function() {
+                            $("#errors").html(errors);
+                            $("#form-submit").text('Send');
+                        }, 3000);
+                    }
+                }
+            });
+        })
 
     </script>
 @endpush
