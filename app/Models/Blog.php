@@ -19,7 +19,8 @@ class Blog extends Model
         'blog_slug',
         'blog_des',
         'meta_des',
-        'thumbnail',
+        'thumbnailOne',
+        'thumbnailTwo',
         'isPublished'
     ];
 

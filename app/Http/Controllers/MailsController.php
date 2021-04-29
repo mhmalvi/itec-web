@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Jobs\SendEmailJob;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\AppointmentMail;
 
 class MailsController extends Controller
 {
@@ -47,6 +49,11 @@ class MailsController extends Controller
             'Msg' => $request->msg
         ];
 
-        return false;
+        // SendEmailJob::dispatch($data)->delay(now()->addSeconds(5));
+        Mail::to('rajin.uxid@gmail.com')->send(new AppointmentMail($data));
+
+        return response()->json([
+            'status' => 200
+        ]);
     }
 }

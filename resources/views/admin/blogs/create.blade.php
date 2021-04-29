@@ -31,7 +31,7 @@
                                 <select name="category_id" class="form-control" id="category">
                                     <option value selected disabled>Select or Create Category...</option>
                                     @forelse ($categories as $item)
-                                        <option value="{{ $item->id }}">{{ $item->title }}</option>
+                                        <option value="{{ $item->title }}">{{ $item->title }}</option>
                                     @empty
 
                                     @endforelse
@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="my-5">
+            <div class="my-5">
                 <div class="ibox">
                     <div class="ibox-content p-5">
                         <div class="form-group  row">
@@ -67,22 +67,22 @@
                             <div class="col-sm-9" id="tags">
                                 <input type="text" class="form-control" name="meta_tags[]" />
                             </div>
-                            <div class="col-sm-1 text-right">
+                            {{-- <div class="col-sm-1 text-right">
                                 <button type="button" class="btn btn-sm btn-primary my-1" id="tags__input">
                                     Add
                                 </button>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Keywords (max 5)</label>
                             <div class="col-sm-9" id="keys">
                                 <input type="text" class="form-control" name="meta_keys[]" />
                             </div>
-                            <div class="col-sm-1 text-right">
+                            {{-- <div class="col-sm-1 text-right">
                                 <button type="button" class="btn btn-sm btn-primary my-1" id="keys__input">
                                     Add
                                 </button>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Description</label>
@@ -95,23 +95,34 @@
                         </div>
                     </div>
                 </div>
-            </div> --}}
+            </div>
             <div class="my-5">
                 <div class="ibox">
                     <div class="ibox-content p-5">
                         <div class="row">
-                            <div class="col-sm-4">
-                                <h5>Thumbnail (1920 x 1080) <small class="text-danger">*</small></h5>
+                            <div class="col-sm-6">
+                                <h5>Thumbnail (780 x 1000) <small class="text-danger">*</small></h5>
                                 <p class="text-secondary">
                                     Upload image that should show as thumbnail image to visitors.
                                 </p>
                                 <p>
                                     Max File Size: 1 mb
                                 </p>
-                            </div>
-                            <div class="col-sm-8">
                                 <div id="thumb" data-height="250px"></div>
                                 @error('thumbnail')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
+                            </div>
+                            <div class="col-sm-6">
+                                <h5>Content Image (1920 x 1080) <small class="text-danger">*</small></h5>
+                                <p class="text-secondary">
+                                    Upload image that should show as main content image to visitors.
+                                </p>
+                                <p>
+                                    Max File Size: 1 mb
+                                </p>
+                                <div id="img" data-height="250px"></div>
+                                @error('img')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
                             </div>

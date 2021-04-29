@@ -31,6 +31,13 @@
             });
 
 
+            $("#img").spartanMultiImagePicker({
+                fieldName: 'img',
+                width: '100%',
+                maxCount: 1,
+            });
+
+
             $("#category").select2({
                 placeholder: 'Select or Create Course Category...',
                 theme: 'bootstrap4',

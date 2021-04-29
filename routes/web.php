@@ -45,6 +45,7 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
     Route::get('/dashboard', 'Admin\AdminController@index')->name('dashboard');
 
     Route::prefix('blogs')->group(function () {
+        Route::get('/', 'Admin\BlogsController@index')->name('blogs');
         Route::get('categories', 'Admin\BlogCategoriesController@index')->name('blog.category');
         Route::get('add-new', 'Admin\BlogsController@create')->name('blogs.add');
         Route::post('add-category', 'Admin\BlogCategoriesController@create')->name('blog.category.add');

@@ -27,13 +27,12 @@
                 <a href="javascript:void(0)"><i class="fa fa-newspaper-o"></i> <span class="nav-label">Blogs</span><span
                         class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li class="{{ Route::currentRouteName() === 'admin.blog.category' ? 'active' : '' }}">
-                        <a href="{{ route('admin.blog.category') }}">Categories</a>
-                    </li>
                     <li class="{{ Route::currentRouteName() === 'admin.blogs.add' ? 'active' : '' }}">
                         <a href="{{ route('admin.blogs.add') }}">Post New Blog</a>
                     </li>
-                    <li><a href="">Manage Blogs</a></li>
+                    <li class="{{ Route::currentRouteName() === 'admin.blogs' ? 'active' : '' }}">
+                        <a href="{{ route('admin.blogs') }}">Manage Blogs</a>
+                    </li>
                 </ul>
             </li>
             <li class="{{ request()->segment(2) === 'course' ? 'active' : '' }}">

@@ -15,6 +15,18 @@ use Illuminate\Support\Facades\DB;
 class BlogsController extends Controller
 {
     /**
+     * @return View
+     * 
+     */
+    public function index()
+    {
+        $blogs = Blog::with('category')->orderBy('created_at', 'desc')->get();
+        return view('admin.blogs.index', compact('blogs'));
+    }
+
+
+
+    /**
      * @return view
      * 
      */
@@ -30,50 +42,59 @@ class BlogsController extends Controller
      * @param $request
      * 
      */
-    public function store(Request $request)
+    public function store(BlogRequest $request)
     {
         try {
-            $newName = null;
+            $newImg = null;
+            $newThumb = null;
 
             $slug = SlugService::createSlug(Blog::class, 'blog_slug', $request->blog_title);
             $category = BlogCategory::where('title', $request->category_id)->first();
 
-            if ($request->hasFile('thumbnail')) {
+            if (($request->hasFile('thumbnail')) && ($request->hasFile('img'))) {
                 //Get the file name without extension
-                $image = $request->file('thumbnail');
-                $imagename = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
+                $thumb = $request->file('thumbnail');
+                $thumbName = pathinfo($thumb->getClientOriginalName(), PATHINFO_FILENAME);
+                $ext = $thumb->getClientOriginalExtension();
+
+                $image = $request->file('img');
+                $imageName = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
                 $ext = $image->getClientOriginalExtension();
+
                 $random = uniqid();
 
-                $newName = "{$imagename}_{$random}.{$ext}";
+                $newThumb = "{$thumbName}_{$random}.{$ext}";
+                $newImg = "{$imageName}_{$random}.{$ext}";
 
                 //check if directory exist or not
                 if (!Storage::exists("public/blogs")) {
                     Storage::makeDirectory("public/blogs");
                 }
-                Storage::putFileAs('public/blogs', $image, $newName);
+                Storage::putFileAs('public/blogs', $image, $newThumb);
+                Storage::putFileAs('public/blogs', $image, $newImg);
             }
 
-            Blog::create([
+            $blog = Blog::create([
                 'action_user' => Auth::id(),
                 'blog_categories_id' => $category->id,
                 'blog_title' => $request->blog_title,
                 'blog_slug' => $slug,
                 'blog_des' => $request->details,
                 'meta_des' => $request->meta_des,
-                'thumbnail' => $newName,
+                'thumbnailOne' => $newImg,
+                'thumbnailTwo' => $newThumb,
                 'isPublished' => ($request->publish === 'on') ? 1 : 0
             ]);
 
             // dd($blog);
 
-            // if ($blog->id && ($request->filled('meta_tags'))) {
-            //     $this->tags($request->meta_tags, $blog->id);
-            // }
+            if ($request->has('meta_tags')) {
+                $this->tags($request->meta_tags, $blog->id);
+            }
 
-            // if ($blog->id && ($request->filled('meta_keys'))) {
-            //     $this->keywords($request->meta_keys, $blog->id);
-            // }
+            if ($request->has('meta_keys')) {
+                $this->keywords($request->meta_keys, $blog->id);
+            }
 
             $notification = [
                 'message'   =>  'Successfully Saved.',
