@@ -3007,6 +3007,10 @@ textarea {
     background-color: #fff;
     color: #CD4236;
 }
+.rpl-form{
+  padding-top: 45px;
+  padding-right: 45px;
+}
 
 @media (min-width: 1300px) {
     .rpl-form {
@@ -3309,4 +3313,11 @@ input[type="file"]{
 .load-rpl{
     background-color: #fff !important;
     color: #1C375B !important;
+}
+
+.other_ind {
+    display: none;
+}
+.other_course {
+    display: none;
 }

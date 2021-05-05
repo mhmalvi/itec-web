@@ -71,7 +71,7 @@
                 @forelse ($industries as $item)
                     <div class="col-lg-4 col-md-4 my-2 industry-card">
                         <div class="rpl-card reveal-effect masker wow">
-                            <img src="{{ !is_null($item->thumbnail) ? asset('public/storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
+                            <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
                                 alt="">
                             <div class="rpl-des">
                                 <h3>{{ $item->title }}</h3>

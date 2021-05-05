@@ -24,6 +24,10 @@
         $("#industry").on("change", function() {
             var title = $(this).val();
 
+            if (title == 'other') {
+                $(".other_ind").slideDown("slow").css('display', 'block');
+            }
+
             $.ajax({
                 url: "{!! route('get.course') !!}",
                 method: "POST",
@@ -44,6 +48,12 @@
                     }
                 }
             })
+        });
+
+        $("#courses").on("change", function() {
+            if ($(this).val() == 'other') {
+                $(".other_course").slideDown("slow").css('display', 'block');
+            }
         });
     });
 

@@ -255,23 +255,17 @@
                 <!-- end col-5 -->
                 <div class="col-lg-7">
                     <ul>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo01.png') }}"
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo1.png') }}"
                                 alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo02.png') }}"
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo2.png') }}"
                                 alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo03.png') }}"
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo3.png') }}"
                                 alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo04.png') }}"
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo4.png') }}"
                                 alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo05.png') }}"
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo5.png') }}"
                                 alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo06.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo07.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo08.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo09.png') }}"
+                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo6.png') }}"
                                 alt="Image"> </li>
                     </ul>
                 </div>

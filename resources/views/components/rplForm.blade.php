@@ -78,18 +78,24 @@
                     @empty
 
                     @endforelse
+                    <option value="other">Other</option>
                     </select>
                 </div>
                 <div class="col-md-6 my-2">
-                    <input type="text" class="form-control" name="industry_other"
-                        placeholder="other industry of interest..." required>
+                    <select name="course" class="form-control" id="courses">
+                        <option disabled selected value>Choose your preffered industry first...</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
             </div>
             <div class="row form-group">
-                <div class="col md-12 my-2">
-                    <select name="course" class="form-control" id="courses">
-                        <option disabled selected value>Choose your preffered industry first...</option>
-                    </select>
+                <div class="col-md-12 other_ind">
+                    <input type="text" class="form-control" name="industry_other"
+                        placeholder="other industry of interest..." required>
+                </div>
+                <div class="col-md-12 other_course">
+                    <input type="text" class="form-control" name="industry_course"
+                        placeholder="other course of interest..." required>
                 </div>
             </div>
             <div class="row form-group my-2">
