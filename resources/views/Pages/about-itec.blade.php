@@ -54,7 +54,7 @@
         <!-- end container -->
     </section>
     <!-- end text-content-block -->
-    <section class="intro-image light">
+    <section class="intro-image">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -62,26 +62,13 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <figure class="reveal-effect masker wow"> <img
-                                        src="{{ asset('assets/images/office01.jpg') }}" alt="Image">
-                                    <figcaption>
-                                        <h6> HEADQUARTOR OF TOUROG</h6>
-                                    </figcaption>
+                                        src="{{ asset('assets/images/home/1.jpg') }}" alt="Image">
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <figure> <img src="{{ asset('assets/images/office02.jpg') }}" alt="Image">
-                                    <figcaption>
-                                        <h6> TORONTO OFFICE</h6>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <figure> <img src="{{ asset('assets/images/office03.jpg') }}" alt="Image">
-                                    <figcaption>
-                                        <h6> HEADQUARTOR OF TOUROG</h6>
-                                    </figcaption>
+                                <figure>
+                                    <img src="{{ asset('assets/images/home/2.jpg') }}" alt="Image">
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->

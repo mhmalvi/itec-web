@@ -114,44 +114,44 @@
             </h3>
         </div>
         <ul>
-            <li>
+                        <li>
                 <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                    <img src="{{ asset('assets/images/tourist/1.jpg') }}" alt="Image">
                 </figure>
             </li>
             <li>
                 <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                    <img src="{{ asset('assets/images/tourist/2.jpg') }}" alt="Image">
                 </figure>
             </li>
             <li>
                 <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                    <img src="{{ asset('assets/images/tourist/3.jpg') }}" alt="Image">
                 </figure>
             </li>
             <li>
                 <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                    <img src="{{ asset('assets/images/tourist/4.jpg') }}" alt="Image">
                 </figure>
             </li>
             <li>
                 <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                    <img src="{{ asset('assets/images/tourist/5.JPG') }}" alt="Image">
                 </figure>
             </li>
             <li>
                 <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                    <img src="{{ asset('assets/images/tourist/6.jpg') }}" alt="Image">
                 </figure>
             </li>
             <li>
                 <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                    <img src="{{ asset('assets/images/tourist/7.jpg') }}" alt="Image">
                 </figure>
             </li>
             <li>
                 <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/works08.jpg') }}" alt="Image">
+                    <img src="{{ asset('assets/images/tourist/8.jpg') }}" alt="Image">
                 </figure>
             </li>
         </ul>

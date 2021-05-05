@@ -24,7 +24,7 @@
                     @forelse ($blogs as $item)
                         <div class="post">
                             <figure class="post-image">
-                                <img src="{{ asset('storage/blogs/' . $item->thumbnailTwo) }}" alt="Image">
+                                <img src="{{ asset('public/storage/blogs/' . $item->thumbnailTwo) }}" alt="Image">
                             </figure>
                             <div class="post-content">
                                 <small class="post-date">
@@ -41,7 +41,7 @@
                                 <!-- end post-author -->
                                 <ul class="post-categories">
                                     <li><a
-                                            href="#">{{ is_int($item->blog_categories_id) ? $item->category->title : $item->blog_categories_id }}</a>
+                                            href="#">{{ $item->category->title }}</a>
                                     </li>
                                 </ul>
                                 <a href="{{ route('blog.detail', $item->blog_slug) }}" class="post-link">READ MORE</a>

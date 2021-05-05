@@ -43,7 +43,7 @@
                 $(".site-navigation").css("transition-delay", "0.5s");
                 $(".site-navigation .layer").css("transition-delay", "0.3s");
                 $(".site-navigation .inner").css("transition-delay", "0s");
-                $("#itec-logo").attr("src", "assets/images/logow.png");
+                $("#itec-logo").attr("src", "http://new.itecounsel.com/assets/images/logow.png");
             } else {
                 $(".site-navigation").addClass("active");
                 $("body").toggleClass("overflow");
@@ -56,7 +56,7 @@
                     "transition-delay",
                     "0.7s"
                 );
-                $("#itec-logo").attr("src", "assets/images/logo.png");
+                $("#itec-logo").attr("src", "http://new.itecounsel.com/assets/images/logo.png");
             }
             $(this).toggleClass("is-opened-navi");
         });

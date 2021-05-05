@@ -160,10 +160,6 @@
                             $("#form-submit").text('Send');
                         }, 3000);
                     }
-
-                    if (data.status == 200) {
-                        $("#form-submit").text('Send');
-                    }
                 }
             });
         })

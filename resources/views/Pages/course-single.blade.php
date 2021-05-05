@@ -66,7 +66,8 @@
             <div class="row">
                 <div class="col-12">
                     <figure class="post-image text-center">
-                        <img src="{{ asset('assets/images/1.jpg') }}" alt="Image">
+                        <img src="{{ !is_null($course->thumbnail) ? asset('storage/courses/' . $course->thumbnail) : asset('assets/images/1.jpg') }}"
+                            alt="Image">
                     </figure>
                 </div>
                 <!-- end col-12 -->

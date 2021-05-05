@@ -71,13 +71,13 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <figure class="reveal-effect masker wow"> <img
-                                        src="{{ asset('assets/images/office01.jpg') }}" alt="Image">
+                                        src="{{ asset('assets/images/home/1.jpg') }}" alt="Image">
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="{{ asset('assets/images/office02.jpg') }}" alt="Image">
+                                    <img src="{{ asset('assets/images/home/2.jpg') }}" alt="Image">
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->

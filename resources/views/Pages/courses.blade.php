@@ -25,7 +25,8 @@
                             <div class="col-lg-6" data-aos="zoom-in">
                                 <a href="{{ route('course.single', $item->course_code) }}">
                                     <div class="card mb-3" style="height: 420px;">
-                                        <img src="{{ asset('assets/images/1.jpg') }}" class="card-img-top" alt="...">
+                                        <img src="{{ !is_null($item->thumbnail) ? asset('storage/courses/' . $item->thumbnail) : asset('assets/images/1.jpg') }}"
+                                            class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h5 class="card-title">{{ $item->course_code }}-{{ $item->course_name }}
                                             </h5>
