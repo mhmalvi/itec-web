@@ -31,7 +31,23 @@
                                 <tbody>
                                     @forelse ($blogs as $item)
                                         <tr>
-                                            <td>{{ $item->blog_title }}</td>
+                                            <td>
+                                                {{ $item->blog_title }}
+                                                <br>
+                                                <div class="action-links">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="{{ route('admin.blog.edit', $item->blog_slug) }}"><i
+                                                                    class="fa fa-edit"></i>&nbsp;Edit</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="{{ route('admin.blog.remove', $item->blog_slug) }}"
+                                                                onclick="return confirm('Are you sure to delete?')"><i
+                                                                    class="fa fa-trash"></i>&nbsp;Trash</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </td>
                                             <td>
                                                 {{ $item->blog_categories_id }}
                                             </td>

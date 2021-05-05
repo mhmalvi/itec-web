@@ -88,11 +88,11 @@ class BlogsController extends Controller
 
             // dd($blog);
 
-            if ($request->has('meta_tags')) {
+            if ($request->filled('meta_tags')) {
                 $this->tags($request->meta_tags, $blog->id);
             }
 
-            if ($request->has('meta_keys')) {
+            if ($request->filled('meta_keys')) {
                 $this->keywords($request->meta_keys, $blog->id);
             }
 
@@ -142,6 +142,56 @@ class BlogsController extends Controller
                 'blogs_id' => $blogId,
                 'keywords' => $keyword
             ]);
+        }
+    }
+
+
+    /**
+     * @param Slug
+     * 
+     */
+    public function edit($slug)
+    {
+        try {
+            $categories = BlogCategory::all();
+            $blog = Blog::where('blog_slug', $slug)->first();
+
+            return view('admin.blogs.update', compact('blog', 'categories'));
+        } catch (\Throwable $th) {
+            $notification = [
+                'message'   =>  'oops! Something went wrong',
+                'alert-type'    =>  'warning'
+            ];
+
+            return back()->with($notification);
+        }
+    }
+
+
+    /**
+     * @param Slug
+     * 
+     */
+    public function destroy($slug)
+    {
+        try {
+            $blog = Blog::where('blog_slug', $slug)->first();
+
+            $blog->delete();
+
+            $notification = [
+                'message'   =>  'Scuccessfully removed!',
+                'alert-type'    =>  'success'
+            ];
+
+            return back()->with($notification);
+        } catch (\Throwable $th) {
+            $notification = [
+                'message'   =>  'oops! Something went wrong',
+                'alert-type'    =>  'warning'
+            ];
+
+            return back()->with($notification);
         }
     }
 }

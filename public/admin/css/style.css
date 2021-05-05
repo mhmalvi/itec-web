@@ -9596,3 +9596,17 @@ body.md-skin {
     margin: 0;
   }
 }
+.action-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.action-links ul li:nth-child(even) {
+    border-left: 1px solid #ddd;
+}
+
+.action-links ul li {
+    display: inline-block;
+    padding: 5px 15px;
+}

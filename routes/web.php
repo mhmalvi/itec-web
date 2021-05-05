@@ -50,6 +50,9 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
         Route::get('add-new', 'Admin\BlogsController@create')->name('blogs.add');
         Route::post('add-category', 'Admin\BlogCategoriesController@create')->name('blog.category.add');
         Route::post('add-blog', 'Admin\BlogsController@store')->name('blog.add');
+        Route::get('edit/{slug}', 'Admin\BlogsController@edit')->name('blog.edit');
+        Route::put('updated', 'Admin\BlogsController@update')->name('blog.update');
+        Route::get('remove/{slug}', 'Admin\BlogsController@destroy')->name('blog.remove');
     });
 
 
