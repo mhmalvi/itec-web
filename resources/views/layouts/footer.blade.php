@@ -6,19 +6,16 @@
                     <h5>Most Usefull Links</h5>
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a href="{{ route('index') }}">Home</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="{{ route('page', 'contact') }}">Contact Us</a>
                         </li>
                         <li>
-                            <a href="#">RPL</a>
+                            <a href="{{ route('rpl') }}">RPL</a>
                         </li>
                         <li>
-                            <a href="#">Migration</a>
-                        </li>
-                        <li>
-                            <a href="#">Admission</a>
+                            <a href="{{ route('page', 'migration') }}">Migration</a>
                         </li>
                     </ul>
                 </div>

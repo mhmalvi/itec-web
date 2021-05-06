@@ -169,7 +169,8 @@
                                     @foreach ($item->courses->take(5) as $course)
                                         <li>
                                             <i class="fas fa-long-arrow-alt-right"></i>
-                                            <a href="">{{ $course->course_code }}-{{ $course->course_name }}</a>
+                                            <a
+                                                href="{{ route('course.single', $course->course_code) }}">{{ $course->course_code }}-{{ $course->course_name }}</a>
                                         </li>
                                     @endforeach
                                 </ul>
