@@ -89,11 +89,11 @@
                 </div>
             </div>
             <div class="row form-group">
-                <div class="col-md-12 other_ind">
+                <div class="col-md-12 other_ind mb-2">
                     <input type="text" class="form-control" name="industry_other"
                         placeholder="other industry of interest..." required>
                 </div>
-                <div class="col-md-12 other_course">
+                <div class="col-md-12 other_course mt-2">
                     <input type="text" class="form-control" name="industry_course"
                         placeholder="other course of interest..." required>
                 </div>
