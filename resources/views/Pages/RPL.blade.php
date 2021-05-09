@@ -8,13 +8,38 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>RPL</h1>
-                <p class="text-justify">
-                    Recognition of Prior Learning (RPL) is an assessment process used by RTOs to evaluate a person’s skills,
-                    knowledge and experience gained through working and learning, in Australia or overseas, be it through
-                    life experience, work or other activities such as volunteering. RTOs can also provide a credit against
-                    units of competency, often shortening the time needed to undertake a qualification.
-                </p>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        <h1>RPL</h1>
+                        <p class="text-justify">
+                            Recognition of Prior Learning (RPL) is an assessment process used by RTOs to evaluate a person’s skills,
+                            knowledge and experience gained through working and learning, in Australia or overseas, be it through
+                            life experience, work or other activities such as volunteering. RTOs can also provide a credit against
+                            units of competency, often shortening the time needed to undertake a qualification.
+                        </p>
+                    </div>
+
+                    <div class="col-xs-12 col-md-4 d-none d-lg-block d-xl-none">
+                        <div class="border">
+                            <div class="p-3">
+                                <h3 class="text-center text-light">GET IN TOUCH</h3>
+                                <p class="text-center">
+                                    <small>for a free skill test</small>
+                                </p>
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" name="name" id="" class="form-control my-3" placeholder="Your Name"/>
+                                        <input type="email" name="email" id="" class="form-control my-3" placeholder="Your Email Address"/>
+                                        <input type="text" name="phone" id="" class="form-control my-3" placeholder="You Phone Number"/>
+                                        <textarea name="message" id="" rows="3" class="form-control my-3" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="touch-btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- end container -->
         </div>
@@ -85,7 +110,7 @@
                                     @endforeach
                                 </ul>
                             </div>
-                            <a href="{{ route('industry', $item->slug) }}" class="find">Find More</a>
+                            <a href="{{ route('industry', $item->slug) }}" class="find qualifications">View Qualifications</a>
                         </div>
                     </div>
                 @empty

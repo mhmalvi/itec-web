@@ -1,6 +1,6 @@
 <aside class="left-side">
     <div class="logo"> <a href="{{ route('index') }}">
-            <img src="{{ asset('assets/images/logow.png') }}" alt="Image" id="itec-logo"></a>
+            <img src="{{ asset('assets/images/logo.png') }}" alt="Image" id="itec-logo"></a>
     </div>
     <!-- end logo -->
     <div class="hamburger" id="hamburger">

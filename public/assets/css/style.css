@@ -2384,11 +2384,9 @@ textarea {
 .footer ul {
   margin: 0;
   padding: 0;
-  float: right;
 }
 .footer ul li {
   display: inline-block;
-  margin-left: 10px;
 }
 .footer ul li a {
   color: #fff;
@@ -3003,6 +3001,12 @@ textarea {
   text-align: center;
 }
 
+.rpl-card .qualifications{
+  padding: 12px 10px;
+  right: 32% !important;
+  left: 32% !important;
+}
+
 .find:hover {
     background-color: #fff;
     color: #CD4236;
@@ -3320,4 +3324,23 @@ input[type="file"]{
 }
 .other_course {
     display: none;
+}
+.footer-logo{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-logo img{
+  max-width: 230px;
+}
+.touch-btn{
+  width: 100%;
+  border: 1px solid #fff !important;
+  background-color: transparent !important;
+  color: #fff !important;
+  transition: all 0.3s ease-in-out;
+}
+.touch-btn:hover{
+  background-color: #fff !important;
+  color: #1C375B !important;
 }
