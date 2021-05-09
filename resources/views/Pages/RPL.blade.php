@@ -14,7 +14,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-8">
-                        <h1>Get Your Recognition of Prior Learning certificate | ITEC</h1>
+                        <h1>GET YOUR <br> RPL CERTIFICATE</h1>
                         <p class="text-justify">
                             Recognition of Prior Learning (RPL) is an assessment process used by RTOs to evaluate a person’s skills,
                             knowledge and experience gained through working and learning, in Australia or overseas, be it through
