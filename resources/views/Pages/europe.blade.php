@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Know the best way to study in Europe  Get free counselling and professional guidance on how to get into any of European University. " />
+@endpush
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
@@ -11,7 +15,7 @@
             <div class="container">
                 <h1>STUDY IN EUROPE</h1>
                 <p>
-                    ITEC is affiliated with numerous colleges of Europe.
+                    Top Universities for Bachelor and Master in Europe
                 </p>
             </div>
             <!-- end container -->

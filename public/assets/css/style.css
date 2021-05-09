@@ -19,7 +19,7 @@ theme.
 		11. PRELOADER
 		12. PAGE LOADED
 		13. TEXT ROTATER
-		14. PERSPECTIVE 
+		14. PERSPECTIVE
 		15. SOCIAL BAR
 		16. HEADER
 		17. DROPDOWN
@@ -1331,7 +1331,7 @@ textarea {
 .page-header .inner h1 {
   color: #fff;
   font-weight: 800;
-  font-size: 10vw;
+  font-size: 4vw;
   letter-spacing: -3px;
 }
 .page-header .inner p {

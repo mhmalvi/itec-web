@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="ITEC is a licensed visa and immigration specialist with years of experience assisting people with their migration to Australia. Make an appointment./>
+@endpush
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
@@ -9,7 +13,7 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>MIGRATION</h1>
+                <h1>Immigration & Visa Specialists | Migrate to Australia</h1>
                 <p>
                     ITEC is affiliated with numerous attorneys currently practicing in states of Australia, Canada and
                     Europe ready to make the migrational arrangements for you abroad.

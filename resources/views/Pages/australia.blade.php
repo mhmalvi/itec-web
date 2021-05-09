@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Find globally recognized study programs in Australia, a sunny higher education destination that meets European and Asian expectations." />
+@endpush
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
@@ -9,9 +13,9 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>STUDY IN AUSTRALIA</h1>
+                <h1>Want to study in Australia?</h1>
                 <p>
-                    ITEC is affiliated with numerous colleges of Australia.
+                    Get consultancy from ITEC.
                 </p>
             </div>
             <!-- end container -->

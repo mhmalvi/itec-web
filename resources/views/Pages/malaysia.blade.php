@@ -1,17 +1,21 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Apply to study in Malaysia and learn about admissions, common courses, study fees, scholarships, and visa requirements for students at Canadian universities." />
+@endpush
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
         <div class="video-bg">
-            <video src="{{ asset('assets/videos/kuala-lumpur-city.mp4') }}" muted loop autoplay></video>
+            <video src="{{ asset('assets/videos/kuala-lumpur-city.m4v') }}" muted loop autoplay></video>
         </div>
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
                 <h1>STUDY IN MALAYSIA</h1>
                 <p>
-                    ITEC is affiliated with numerous colleges of Malaysia.
+                    Find Universities, Costs, Courses & Scholarships
                 </p>
             </div>
             <!-- end container -->

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Recognition of Prior Learning acknowledges skills gained through formal and informal learning as well as work experience. The method evaluates proof of your competency to see whether you meet the criteria." />
+@endpush
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">
@@ -9,8 +13,8 @@
         <div class="inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-lg-9">
-                        <h1>RPL</h1>
+                    <div class="col-xs-12 col-md-8">
+                        <h1>Get Your Recognition of Prior Learning certificate | ITEC</h1>
                         <p class="text-justify">
                             Recognition of Prior Learning (RPL) is an assessment process used by RTOs to evaluate a person’s skills,
                             knowledge and experience gained through working and learning, in Australia or overseas, be it through

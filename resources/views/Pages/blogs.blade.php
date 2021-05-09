@@ -4,7 +4,7 @@
     <!-- end all-cases-link -->
     <header class="page-header">
         <div class="video-bg">
-            <video src="videos/video02.mp4" muted loop autoplay></video>
+            <video src="{{ asset('assets/videos/blog.m4v') }}" muted loop autoplay></video>
         </div>
         <!-- end video-bg -->
         <div class="inner">

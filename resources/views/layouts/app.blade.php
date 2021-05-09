@@ -11,6 +11,8 @@
 
     @stack('seo')
 
+    @stack('meta-description')
+
     <title>ITECounsel</title>
 
     @include('layouts.styles')

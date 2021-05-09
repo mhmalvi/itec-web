@@ -1,14 +1,18 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Take the IELTS exam to prove that you have the required English language skills to study in Australia. IELTS ratings are accepted as evidence of English language proficiency by higher education institutions./>
+@endpush
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">
-            <video src="videos/video02.mp4" muted loop autoplay></video>
+            <video src="{{ asset('assets/videos/ielts.m4v') }}"muted loop autoplay></video>
         </div>
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>IELTS</h1>
+                <h1>Study in the Australia with IELTS | ITEC</h1>
                 <p>
                     An English language ability exam, which evaluates a candidate’s ability to converse in the English
                     language across all four essential modules: speaking, writing, reading, and listening.

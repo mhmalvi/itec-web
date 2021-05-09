@@ -8,7 +8,7 @@
     <!-- end all-cases-link -->
     <header class="page-header">
         <div class="video-bg">
-            <video src="" muted loop autoplay></video>
+            <video src="{{ asset('assets/videos/contact.m4v') }}" muted loop autoplay></video>
         </div>
         <!-- end video-bg -->
         <div class="inner">

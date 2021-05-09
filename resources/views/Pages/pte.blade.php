@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="PTE Academic is a computer-based academic English language exam for non-native English speakers who choose to study in a foreign country. ITEC offers the best PTE course in Australia" />
+@endpush
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">
@@ -8,7 +12,7 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>PTE</h1>
+                <h1>PTE Test preparation courses in Australia | ITEC</h1>
                 <p>
                     PTE Exam is one of the widely taken English language tests across the globe. For countries like
                     Australia, the PTE test is also used for immigration. The test focuses on the day to day usage of the
