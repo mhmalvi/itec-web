@@ -9,9 +9,9 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>STUDY IN AUSTRALIA</h1>
+                <h1>Want to study in Australia?</h1>
                 <p>
-                    ITEC is affiliated with numerous colleges of Australia.
+                    Get consultancy from ITEC.
                 </p>
             </div>
             <!-- end container -->

@@ -11,7 +11,7 @@
             <div class="container">
                 <h1>STUDY IN CANADA</h1>
                 <p>
-                    ITEC is affiliated with numerous colleges of Malaysia.
+                    Know About Courses & Admission Process
                 </p>
             </div>
             <!-- end container -->

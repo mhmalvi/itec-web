@@ -8,7 +8,7 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>IELTS</h1>
+                <h1>Study in the Australia with IELTS | ITEC</h1>
                 <p>
                     An English language ability exam, which evaluates a candidate’s ability to converse in the English
                     language across all four essential modules: speaking, writing, reading, and listening.

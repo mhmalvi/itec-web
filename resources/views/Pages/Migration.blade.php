@@ -9,7 +9,7 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>MIGRATION</h1>
+                <h1>Immigration & Visa Specialists | Migrate to Australia</h1>
                 <p>
                     ITEC is affiliated with numerous attorneys currently practicing in states of Australia, Canada and
                     Europe ready to make the migrational arrangements for you abroad.

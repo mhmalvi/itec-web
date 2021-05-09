@@ -11,7 +11,7 @@
             <div class="container">
                 <h1>STUDY IN EUROPE</h1>
                 <p>
-                    ITEC is affiliated with numerous colleges of Europe.
+                    Top Universities for Bachelor and Master in Europe
                 </p>
             </div>
             <!-- end container -->

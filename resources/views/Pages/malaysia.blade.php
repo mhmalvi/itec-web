@@ -4,14 +4,14 @@
     <!-- end all-cases-link -->
     <header class="page-header">
         <div class="video-bg">
-            <video src="{{ asset('assets/videos/kuala-lumpur-city.mp4') }}" muted loop autoplay></video>
+            <video src="{{ asset('assets/videos/kuala-lumpur-city.m4v') }}" muted loop autoplay></video>
         </div>
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
                 <h1>STUDY IN MALAYSIA</h1>
                 <p>
-                    ITEC is affiliated with numerous colleges of Malaysia.
+                    Find Universities, Costs, Courses & Scholarships
                 </p>
             </div>
             <!-- end container -->
