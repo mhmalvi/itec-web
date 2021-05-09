@@ -251,7 +251,7 @@
             <div class="row">
                 <div class="col-12 wow" data-splitting>
                     <h3 class="section-title">
-                        <a href="{{ route('file.download', $course->checklist) }}">CLICK HERE</a> TO DOWNLOAD THE CHECK
+                        <a href="">CLICK HERE</a> TO DOWNLOAD THE CHECK
                         LIST
                     </h3>
                 </div>
