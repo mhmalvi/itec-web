@@ -92,7 +92,7 @@ class PagesController extends Controller
      */
     public function course($slug)
     {
-        $course = Course::where('course_code', $slug)->first();
+        $course = Course::with('courseIndustry')->where('course_code', $slug)->first();
         return view('Pages.course-single', compact('course'));
     }
 
