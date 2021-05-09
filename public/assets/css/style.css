@@ -3344,3 +3344,31 @@ input[type="file"]{
   background-color: #fff !important;
   color: #1C375B !important;
 }
+
+.accordion button h4{
+  font-size: 1.2rem;
+  color: #1C375B;
+  font-weight: 600;
+}
+
+.accordion button:hover, button:active, button:focus{
+  text-decoration: none;
+}
+
+.accordion .card-body h5{
+  color: #CD4236;
+}
+
+.accordion .card-body{
+  color: #212529;
+}
+
+.accordion .card-body ul li{
+  list-style: none;
+}
+
+.accordion .card-body ul li::before{
+  content: "\2713";
+  color: #CD4236;
+  margin-right: 5px;
+}

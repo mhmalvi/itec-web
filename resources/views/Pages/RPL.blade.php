@@ -9,7 +9,7 @@
         <div class="inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-md-8">
+                    <div class="col-xs-12 col-lg-9">
                         <h1>RPL</h1>
                         <p class="text-justify">
                             Recognition of Prior Learning (RPL) is an assessment process used by RTOs to evaluate a person’s skills,
@@ -19,7 +19,7 @@
                         </p>
                     </div>
 
-                    <div class="col-xs-12 col-md-4 d-none d-lg-block d-xl-none">
+                    <div class="col-xs-12 col-lg-3 d-none d-lg-block d-xl-block">
                         <div class="border">
                             <div class="p-3">
                                 <h3 class="text-center text-light">GET IN TOUCH</h3>
@@ -88,6 +88,28 @@
     <!-- end text-content-block -->
     <section class="testimonials">
         <div class="container justify-content-center">
+            <div class="row">
+                <div class="col-xs-12 d-block d-sm-none mx-auto">
+                    <div class="border">
+                        <div class="p-3">
+                            <h3 class="text-center text-light">GET IN TOUCH</h3>
+                            <p class="text-center text-light">
+                                <small>for a free skill test</small>
+                            </p>
+                            <form action="">
+                                <div class="form-group">
+                                    <input type="text" name="name" id="" class="form-control my-3" placeholder="Your Name"/>
+                                    <input type="email" name="email" id="" class="form-control my-3" placeholder="Your Email Address"/>
+                                    <input type="text" name="phone" id="" class="form-control my-3" placeholder="You Phone Number"/>
+                                    <textarea name="message" id="" rows="3" class="form-control my-3" placeholder="Message"></textarea>
+                                </div>
+
+                                <button type="submit" class="touch-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12 wow" data-splitting>
                     <h3 class="section-title text-center">OUR RTO PARTNERS OFFERS</h3>
