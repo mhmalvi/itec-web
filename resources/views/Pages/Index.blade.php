@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @push('meta-description')
-<meta name="description" content="ITEC is the best education consultant & migration agency in Australia. Those who want to study, work or travel to Australia will get the best consultancy from our expert." />
+    <meta name="description"
+        content="ITEC is the best education consultant & migration agency in Australia. Those who want to study, work or travel to Australia will get the best consultancy from our expert." />
 @endpush
 
 @section('content')
@@ -40,25 +41,39 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">Why Choose ITEC <br> To <br> Study Abroad</h3>
-                    <a href="javascript:void(0)">hello@itecounsel.com</a>
-                </div>
-                <!-- end col-5 -->
-                <div class="col-lg-7 wow" data-splitting>
-                    <p class="text-justify">
-                        ITEC – International Training & Education Counsel is your most trusted education agent who is here
-                        to help you getting your
-                        higher education dream come true by applying to the most highly ranked universities across the world
-                        even with a scholarship!
-                        Also get yourself sorted with your university change, TR and PR application, visa extension, NAATI,
-                        PTE coaching through us in
-                        our head office at Australia!
-                    </p>
+                    <h1 class="section-title">ITEC Education Consultant and Student Agency</h1>
                     <h6>Team ITECounsel</h6>
                     <b>10</b>
                     <h4>
                         YEARS OF<br>STUDENT<br>COUNSELINIG<br>EXPERIENCE
                     </h4>
+                    <br>
+                    <br>
+
+                    <a href="javascript:void(0)">hello@itecounsel.com</a>
+                </div>
+                <!-- end col-5 -->
+                <div class="col-lg-7 wow">
+                    <p class="text-justify">
+                        Choosing to study abroad is a life-changing choice, and gaining an Australian qualification,
+                        studying English, or earning a diploma or university degree would provide you with excellent work
+                        opportunities and prospects. The team at the International Education Agency – Australia has
+                        extensive experience putting international students in Australian schools, colleges, and
+                        universities.
+                        ITEC is a professional student recruitment and training company providing students and parents with
+                        current information about studies offered globally. ITEC Services offer information about the
+                        selected destination, the universities, programs, admissions, accommodations, and Student Visas.
+                        ITEC was established in 2019 with a longstanding reputation as one of Australia's leading education
+                        agencies.
+                        In Australia, New Zealand, the United States, the United Kingdom, Canada, Malaysia, Europe, Asia,
+                        and South America, ITEC serves over 500 universities as well as a host of leading English language
+                        centers, technical colleges, and schools.
+                        ITEC is a trusted organization due to its knowledge and support for students from diverse cultural
+                        backgrounds, offering a full-service experience built over years of experience working on behalf of
+                        the highest-level clients. It is an award-winning agency for its service excellence.
+
+                    </p>
+
                 </div>
                 <!-- end col-7 -->
             </div>
@@ -155,6 +170,61 @@
         <!-- end container -->
     </section>
     <!-- end icon-content-block -->
+
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 wow align-self-center" data-splitting>
+                    <h2>//Study, Travel, Work and Immigrate in Australia </h2>
+                    <br>
+                    <p>
+                        ITEC is designed to give consultancy to students, and who travel to Australia from all over the
+                        world.
+                        You will get reliable information about the fantastic opportunities to study, work or travel in
+                        Australia.
+                    </p>
+
+                </div>
+                <!-- end col-5 -->
+                <div class="col-lg-7 wow">
+
+                    <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
+
+                </div>
+                <!-- end col-7 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <section class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 wow" data-splitting>
+                    <img src="{{ asset('assets/images/123.jpg') }}" alt="Image">
+                </div>
+                <!-- end col-5 -->
+                <div class="col-lg-7 wow align-self-center">
+                    <h6>We help international students to : </h6>
+
+                    <br>
+                    <ul>
+                        <li>Find courses</li>
+                        <li>Get accepted into colleges, universities</li>
+                        <li>Apply for a students or travel visa</li>
+                        <li>Fina a student job while studying in Australia</li>
+                        <li>Apply for our work experience program</li>
+                        <li>Get in contact with immigration agents to apply for your PR visa</li>
+                    </ul>
+
+
+                </div>
+                <!-- end col-7 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
 
     <section class="rpl">
         <div class="container">
