@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Know the best way to study in Europe  Get free counselling and professional guidance on how to get into any of European University. " />
+@endpush
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">

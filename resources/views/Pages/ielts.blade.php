@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Take the IELTS exam to prove that you have the required English language skills to study in Australia. IELTS ratings are accepted as evidence of English language proficiency by higher education institutions./>
+@endpush
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">

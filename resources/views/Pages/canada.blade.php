@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Apply to study in Canada, renew your study permit, and learn about working in Canada while you're studying or after you graduate." />
+@endpush
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">

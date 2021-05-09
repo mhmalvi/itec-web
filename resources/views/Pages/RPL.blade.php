@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Recognition of Prior Learning acknowledges skills gained through formal and informal learning as well as work experience. The method evaluates proof of your competency to see whether you meet the criteria." />
+@endpush
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">

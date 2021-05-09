@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@push('meta-description')
+<meta name="description" content="Apply to study in Malaysia and learn about admissions, common courses, study fees, scholarships, and visa requirements for students at Canadian universities." />
+@endpush
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
