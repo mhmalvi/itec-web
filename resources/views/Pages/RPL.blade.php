@@ -14,7 +14,10 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-md-8">
-                        <h1>GET YOUR <br> RPL CERTIFICATE</h1>
+                        <h1>RPL</h1>
+                        <br>
+                        <h1 class="heading-secondary">GET YOUR RECOGNITION OF PRIOR LEARNING CERTIFICATE</h1>
+                        <br>
                         <p class="text-justify">
                             Recognition of Prior Learning (RPL) is an assessment process used by RTOs to evaluate a person’s skills,
                             knowledge and experience gained through working and learning, in Australia or overseas, be it through

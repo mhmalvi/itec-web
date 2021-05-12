@@ -12,7 +12,10 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>PTE Test preparation courses in Australia | ITEC</h1>
+                <h1>PTE</h1>
+                <br>
+                <h1 class="heading-secondary">PTE Test preparation courses in Australia</h1>
+                <br>
                 <p>
                     PTE Exam is one of the widely taken English language tests across the globe. For countries like
                     Australia, the PTE test is also used for immigration. The test focuses on the day to day usage of the

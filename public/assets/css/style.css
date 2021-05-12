@@ -1331,9 +1331,16 @@ textarea {
 .page-header .inner h1 {
   color: #fff;
   font-weight: 800;
-  font-size: 4vw;
-  letter-spacing: -3px;
+  font-size: 10vw;
+  letter-spacing: -1px;
 }
+
+.page-header .inner .heading-secondary {
+  font-size: 28px !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 .page-header .inner p {
   margin: 0;
   color: #fff;

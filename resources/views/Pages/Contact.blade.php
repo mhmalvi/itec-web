@@ -42,7 +42,7 @@
                 <div class="col-lg-3 col-md-6">
                     <h6>OFFSHORE BRANCH</h6>
                     <address>
-                        Level -7, 8/C, F.R Tower, PanthaPath,<br>Dhaka - 1207, Bangladeshh
+                        Level -7, 8/C, F.R Tower, PanthaPath,<br>Dhaka - 1207, Bangladesh
                     </address>
 
                     <address>

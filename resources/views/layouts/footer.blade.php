@@ -1,45 +1,48 @@
 <footer class="footer">
     <div class="container mt-5">
-        <div class="row py-5">
-            <div class="col-md-10 mx-auto">
-                <div class="footer-industry">
-                    <h5>Find Your Qualification</h5>
-                    @php
-                        $industries = \App\Models\CourseIndustry::all();
-                    @endphp
+        <div class="d-none d-sm-block">
+            <div class="row py-5">
+                <div class="col-md-12">
+                    <div class="footer-industry">
+                        <h5>Find Your Qualification</h5>
+                        @php
+                            $industries = \App\Models\CourseIndustry::all();
+                        @endphp
 
-                    <div class="row">
-                        @foreach ($industries->chunk(5) as $industry)
-                        <div class="col-xs-12 col-md-4">
-                            <ul>
-                                @forelse ($industry as $item)
-                                    <li>
-                                        <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
-                                        <a
-                                            href="{{ route('industry', $item->slug) }}">{{ $item->title }}</a>
-                                    </li>
-                                @empty
-                                    <li>
-                                        <a href="#">No Links Found!</a>
-                                    </li>
-                                @endforelse
-                            </ul>
+                        <div class="row">
+                            @foreach ($industries->chunk(5) as $industry)
+                            <div class="col-xs-12 col-md-4">
+                                <ul>
+                                    @forelse ($industry as $item)
+                                        <li>
+                                            <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
+                                            <a
+                                                href="{{ route('industry', $item->slug) }}">{{ $item->title }}</a>
+                                        </li>
+                                    @empty
+                                        <li>
+                                            <a href="#">No Links Found!</a>
+                                        </li>
+                                    @endforelse
+                                </ul>
+                            </div>
+                            @endforeach
                         </div>
-                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col-xs-12 col-lg-3 col-md-3">
+            <div class="col-xs-12 col-lg-2 col-md-2 my-4">
                 <div class="footer-logo">
-                    <img src="{{ asset('assets/images/logow.png') }}" alt="Image">
+                    <img src="{{ asset('assets/images/logow.png') }}" alt="Image" class="img-fluid">
                 </div>
             </div>
-            <div class="col-xs-12 col-lg-4 col-md-4">
+            <div class="col-xs-12 col-lg-3 col-md-3">
                 <div class="footer-links">
                     <p>
-                        <strong>Contact</strong>
+                        <strong>Head Office</strong>
                     </p>
                     <ul>
                         <li class="pb-2">
@@ -55,6 +58,24 @@
                 </div>
             </div>
             <div class="col-xs-12 col-lg-3 col-md-3">
+                <div class="footer-links">
+                    <p>
+                        <strong>Offshore Branch</strong>
+                    </p>
+                    <ul>
+                        <li class="pb-2">
+                            Level -7, 8/C, F.R Tower, PanthaPath, Dhaka - 1207, Bangladeshh
+                        </li>
+                        <li class="py-2">
+                            +1300 535 922
+                        </li>
+                        <li class="py-2">
+                            info@itecounsel.com 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-2 col-md-2 d-none d-sm-block">
                 <div class="footer-links">
                     <p>
                         <strong>Most Usefull Links</strong>

@@ -13,10 +13,9 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>Want to study in Australia?</h1>
-                <p>
-                    Get consultancy from ITEC.
-                </p>
+                <h1>STUDY IN <br> AUSTRALIA</h1>
+                <br>
+                <h1 class="heading-secondary">Want to study in Australia? Get consultancy from ITEC.</h1>
             </div>
             <!-- end container -->
         </div>
