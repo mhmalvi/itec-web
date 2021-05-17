@@ -82,59 +82,14 @@
                                 <div class="testimonial">
                                     <div class="reviewer">
                                         <div class="reviewer-infos">
-                                            <h4>Cost of Living</h4>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                    <p>Australia’s standard of living is amongst the highest in the world. Living expenses
-                                        and tuition costs are considerably lower in Australia than they are in the United
-                                        States and United Kingdom. International students are able to work part time while
-                                        they study, allowing them to offset their living costs. There is also the
-                                        possibility of scholarships, whichhelps to lower the cost of studying for
-                                        international students.</p>
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <div class="reviewer">
-                                        <div class="reviewer-infos">
-                                            <h4>Technology</h4>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                    <p>One of the most appealing aspects of Australia for international students is the
-                                        emphasis on
-                                        scientific research. Australia is at the forefront of new technology and
-                                        innovations.
-                                        Students who study in Australia can take advantage of the country’s impressive
-                                        technology
-                                        and resources.</p>
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <div class="reviewer">
-                                        <div class="reviewer-infos">
-                                            <h4>Work</h4>
+                                            <h4>Intakes</h4>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        International students are allowed to work up to 20 hours per week while studying in
-                                        Australia.
-                                        This is a great opportunity for those who want to earn money to offset living
-                                        expenses during
-                                        their stay, and for students who want to gain work experience in their field of
-                                        interest while
-                                        they study. Find out some important things to keep in mind for the working student
-                                        in Oz.
+                                        Universities deliver two primary intakes: June/July and January/February. 
+                                        In certain universities, admissions are held in March and November.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -144,42 +99,17 @@
                                 <div class="testimonial">
                                     <div class="reviewer">
                                         <div class="reviewer-infos">
-                                            <h4>Diversity of Education</h4>
+                                            <h4>Employment</h4>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        Institutions in Australia offer a wide variety of courses and degrees, so
-                                        international students
-                                        can easily find the school and field that are right for them. The first decision
-                                        international
-                                        students have to make when choosing a degree program is which school caters most to
-                                        their needs
-                                        and interests. Students can choose between universities, vocational education, and
-                                        English
-                                        language training. If necessary, it is easy for students to move between one
-                                        qualification level
-                                        and from one institution to another.
-                                    </p>
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <div class="reviewer">
-                                        <div class="reviewer-infos">
-                                            <h4>Global Recognition</h4>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                    <p>
-                                        Graduates from Australian schools are highly sought after due to the impressive
-                                        international reputation of the Australian education system. This system is
-                                        carefully regulated by the government in order to maintain the high standards of
-                                        education associated with the country.
+                                        A full-time International student can work part-time as per the given guidelines.
+                                        A full-time degree student can work up to 40 hours fortnightly during term-time and full-time during vacations.
+                                        A full-time student can also work on a work placement as part of the course.
+                                        A student can earn from $16 – $25 per hour i.e. $1,280 – $2,000 per month.
+                                        After the successful completion of a Bachelors's or Masters a student can apply for a 2-year Post-Study Work Permit.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -203,9 +133,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AGENSY PROUD<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
+                    <h3 class="section-title">AFFILIATED<br>
+                        UNIVERSITIES IN<br>
+                        AUSTRALIA</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7">
