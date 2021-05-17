@@ -26,18 +26,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">Why Australia</h3>
+                    <h3 class="section-title">About Study in Australian University</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7" data-aos="fade-down">
                     <p class="text-justify">
-                        You cannot deny the fact that the Australia is one of the dream countries for international
-                        students. The country is well-known around the world because of its highest living standards,
-                        creativity, innovation, diversity, and culture. Besides, a significant number of individuals I
-                        know to concentrate abroad in western countries, for example, the UK and the USA. Picking where
-                        to focus overseas can be a troublesome decision. Also, if you need to be living in a less
-                        thickly populated island, surrounded by seashores, or profoundly populated urban areas, at that
-                        point, Australia may be a fantastic choice for you.
+                        Universities with well-known organizations such as the G8, ATN, and IRU set the bar for excellence. This can be a huge game-changer for you in the future if you're looking for jobs. Australia has risen to prominence as a provider of high-quality higher education. Degrees and certificates from 
+                        Australian higher education institutions are regarded as of high standard around the world. 
                     </p>
                 </div>
                 <!-- end col-7 -->
@@ -51,16 +46,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 wow" data-splitting>
-                    <h3 class="section-title text-center">Why Study In Australia</h3>
+                    <h3 class="section-title text-center">Academic Excellence</h3>
                 </div>
             </div>
             <div class="row my-5">
                 <div class="col-lg-12" data-aos="fade-down">
                     <p class="text-center">
-                        There are endless options to consider when deciding to study in another country, there's loads of
-                        highly respected universities and so many beautiful countries to experience living in. There are so
-                        many things to consider when deciding where you'd like to study, but here's a bunch of reasons we
-                        think Australia is one of the best places to do it.
+                        There are 37 government-funded universities in Australia, two private universities, and several other specialist institutions that provide accredited higher education courses. The University of Sydney is Australia's oldest university, having been founded in 1850, followed three years later by the University of Melbourne.Other prominent universities include the University of Adelaide, the Australian National University in Canberra, Monash University, and the University of New South Wales, 
+                        all of which are part of the Group of Eight leading tertiary institutions.
                     </p>
                 </div>
             </div>
@@ -72,16 +65,14 @@
                                 <div class="testimonial">
                                     <div class="reviewer">
                                         <div class="reviewer-infos">
-                                            <h4>Growing Destination</h4>
+                                            <h4>Quality and Standards</h4>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        Australia is currently the third most popular destination for international students
-                                        in the English-speaking world, behind the United States and the UK. Many
-                                        international students choose to study there because of the cultural diversity,
-                                        friendly natives,and high quality of education.
+                                        According to the 2019 global Quality-of-Life Index, all of Australia's major cities perform well in global comparative livability surveys, with Melbourne topping The Economist's 2019 World's Most Livable Cities list, 
+                                        followed by Sydney and Perth in seventh and ninth places, respectively.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -242,7 +233,7 @@
     <section class="works gallary">
         <div class="wow py-3" data-splitting>
             <h3 class="section-title text-center">
-                Lorem ipsum <br> dolor sit amet
+                Want to live, study & work in Australia ? <br/> Get free consultation from ITEC.
             </h3>
         </div>
         <ul>

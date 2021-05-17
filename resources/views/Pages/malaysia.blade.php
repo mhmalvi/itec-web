@@ -1,21 +1,17 @@
 @extends('layouts.app')
 
-@push('meta-description')
-<meta name="description" content="Apply to study in Malaysia and learn about admissions, common courses, study fees, scholarships, and visa requirements for students at Canadian universities." />
-@endpush
-
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
         <div class="video-bg">
-            <video src="{{ asset('assets/videos/kuala-lumpur-city.m4v') }}" muted loop autoplay></video>
+            <video src="{{ asset('assets/videos/kuala-lumpur-city.mp4') }}" muted loop autoplay></video>
         </div>
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
                 <h1>STUDY IN MALAYSIA</h1>
                 <p>
-                    Find Universities, Costs, Courses & Scholarships
+                    Want to live, study & work in Malaysia ? Get free consultation from ITEC.
                 </p>
             </div>
             <!-- end container -->
@@ -237,7 +233,7 @@
     <section class="works gallary">
         <div class="wow py-3" data-splitting>
             <h3 class="section-title text-center">
-                Lorem ipsum <br> dolor sit amet
+                Want to live, study & work in Malaysia ? <br/> Get free consultation from ITEC.
             </h3>
         </div>
         <ul>

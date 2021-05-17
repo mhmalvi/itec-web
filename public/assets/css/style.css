@@ -64,6 +64,12 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   background: #1C375B;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* HTML ELEMENTS */
@@ -1344,9 +1350,10 @@ textarea {
 .page-header .inner p {
   margin: 0;
   color: #fff;
-  font-size: 22px;
+  font-size: 1.2vw;
   font-weight: 300;
   letter-spacing: -0.5px;
+  text-align: justify;
 }
 
 /* INTRO */
@@ -2638,8 +2645,12 @@ textarea {
     padding-left: 100px;
   }
 
+  .page-header .inner .heading-secondary {
+    font-size: 18px;
+  }
+
   .page-header .inner p {
-    font-size: 17px;
+    font-size: 14px;
     padding-right: 10%;
   }
 
@@ -3210,6 +3221,7 @@ input[type="file"]{
   margin: 50px 0px;
   padding: 35px;
   background-color: rgba(255, 255, 255, 0.3);
+  height: 400px;
 }
 
 #migration-form select{
@@ -3378,4 +3390,18 @@ input[type="file"]{
   content: "\2713";
   color: #CD4236;
   margin-right: 5px;
+}
+
+.itec-list{
+  display: block !important;
+  margin: 0px!important;
+  list-style: square !important;
+}
+
+.itec-list li{
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 10px 0px !important;
+  list-style: square !important;
 }

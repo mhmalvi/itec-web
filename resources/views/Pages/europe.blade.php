@@ -1,9 +1,5 @@
 @extends('layouts.app')
 
-@push('meta-description')
-<meta name="description" content="Know the best way to study in Europe  Get free counselling and professional guidance on how to get into any of European University. " />
-@endpush
-
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
@@ -15,7 +11,7 @@
             <div class="container">
                 <h1>STUDY IN EUROPE</h1>
                 <p>
-                    Top Universities for Bachelor and Master in Europe
+                    Want to live, study & work in Europe ? Get free consultation from ITEC.
                 </p>
             </div>
             <!-- end container -->
@@ -282,7 +278,7 @@
     <section class="works gallary">
         <div class="wow py-3" data-splitting>
             <h3 class="section-title text-center">
-                Lorem ipsum <br> dolor sit amet
+                Want to live, study & work in Europe ? <br/> Get free consultation from ITEC.
             </h3>
         </div>
         <ul>

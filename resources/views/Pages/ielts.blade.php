@@ -14,11 +14,11 @@
             <div class="container">
                 <h1>IELTS</h1>
                 <br>
-                <h1 class="heading-secondary">Study in the Australia with IELTS</h1>
+                <h1 class="heading-secondary">A Guide to IELTS in Australia</h1>
                 <br>
                 <p>
-                    An English language ability exam, which evaluates a candidate’s ability to converse in the English
-                    language across all four essential modules: speaking, writing, reading, and listening.
+                    You want to go to Australia to study? Then you'll have to take an English Language Examination. 
+                    The IELTS test is Australia's most common language proficiency test!The IELTS (International English Language Testing System) preparation course is designed for those who wish to obtain an internationally recognised certificate.
                 </p>
             </div>
             <!-- end container -->
@@ -34,19 +34,17 @@
                 </div>
                 <!-- end col-12 -->
                 <div class="col-lg-7 wow" data-splitting>
-                    <p class="text-justify">
-                        Numerous students who have prepared for or appeared for the TOEFL are surprised when they confront
-                        difficulties understanding accents and expressions used by British speakers in the IELTS. This is
-                        why a thorough IELTS Exam preparation, via self-study or a language school that covers the IELTS
-                        course, is required to succeed in the IELTS test.
-
-                        Test-takers must know beforehand, which module is required for their purposes, as the scores are not
-                        interchangeable. Each test has a duration of two hours and forty-five minutes. Test-takers are
-                        required to pay IELTS fees for administration of the exam.
-
-                        Broadly speaking, IELTS is taken by individuals who wish to study, live, or work in a country where
-                        English is the primary language of communication. In particular, the test is taken by three
-                        fundamental classifications of individuals
+                    <p class="text-justify py-2">
+                        ITEC Academy is specialized in IELTS coaching. By working exclusively with the IELTS exam, we are able to deliver great service and quality.  We are the NO.1 IELTS coaching centre in Australia, since we have 1000+ students who have achieved their desired IELTS score.
+                    </p>
+                    <p class="text-justify py-2">
+                       The IELTS (International English Language Testing System) is the world's most widely used English language exam for higher education. So, if you're considering studying in Australia, you've probably heard of it. To get your visa accepted, you must obtain the appropriate IELTS ratings. 
+                    </p>
+                    <p class="text-justify py-2">
+                        Exams may seem intimidating at times, but there are many ways to improve your English skills and ace the test! We'll walk you through the exam's setup, how to register and pay for the IELTS Australia fee, and how to interpret your IELTS results. We've even thrown in a few pointers along the way, so here's your handy guide to the IELTS for Australia.
+                    </p>
+                    <p class="text-justify py-2">
+                        First and foremost, let's go through which exam you'll need to take. The IELTS Academic and IELTS General Training exams are the two variations of the test. If you're applying for undergraduate or postgraduate studies in Australia, you'll need to take the IELTS Academic examination.
                     </p>
                 </div>
                 <!-- end col-12	 -->
@@ -103,6 +101,39 @@
                 <!-- end col-3 -->
             </div>
             <!-- end row -->
+
+            <div class="row mt-5 pt-5">
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title">IELTS PREPARATION COURSES</h3>
+                </div>
+                <div class="col-12">
+                    <div class="p-2 text-justify">
+                        <p>
+                            - IELTS prep courses are scheduled for 10 – 12 weeks modules but can be tailored depending on requirements and needs.
+                        </p>
+                    </div>
+                    <div class="p-2 text-justify">
+                        <p>
+                            - IELTS prep courses have a weekly intake every Monday and are scheduled to be either day or evening classes.
+                        </p>
+                    </div>
+                    <div class="p-2 text-justify">
+                        <p>
+                            - The IELTS exam can be taken at anytime, not necessarily at the end of the course. Exams are held all over the world on scheduled dates – anyone can sit the IELTS exam at these scheduled times.
+                        </p>
+                    </div>
+                    <div class="p-2 text-justify">
+                        <p>
+                            - The IELTS certificate is equivalent to TOEFL (more common in North America).
+                        </p>
+                    </div>
+                    <div class="p-2 text-justify">
+                        <p>
+                            - Both certificates are valid for two years (for migration purposes, IELTS – General is valid for three years).
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- end container -->
     </section>

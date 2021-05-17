@@ -15,11 +15,11 @@
             <div class="container">
                 <h1>MIGRATION</h1>
                 <br>
-                <p>Immigration & Visa Specialists | Migrate to Australia</p>
+                <h1 class="heading-secondary">Professional Australian Migration Services</h1>
                 <br>
                 <p>
-                    ITEC is affiliated with numerous attorneys currently practicing in states of Australia, Canada and
-                    Europe ready to make the migrational arrangements for you abroad.
+                    
+                    ITEC is the most trusted Australian migration services provider in Sydney, and it will assist you by removing all of the hassle from the process and preparing visa applications on behalf of clients to ensure that you get your visa quickly and easily.
                 </p>
             </div>
             <!-- end container -->
@@ -30,85 +30,74 @@
     <section class="works itec-bg-img migration">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">A Certified Migration Agency In Bangladesh</h3>
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title text-center">ITECounsel's Migration Process</h3>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7">
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-4">
                     <div class="inner-text" data-aos="zoom-out">
                         <p class="text-justify wow bounceInUp">
-                            Having Our Own Headquarter Currently Operating Out Of Sydney, We Are Already A Certified
-                            Migration
-                            Agency In Bangladesh.
-                            ITEC is affiliated with numerous attorneys currently practicing in states of Australia, Canada
-                            and
-                            Europe ready to make the migrational arrangements for you abroad.Beginning this year, we
-                            extended
-                            our operation beyond Europe and Canada.
-                            The immigration attorneys currently practising in Canada as well as Europe are going to explain
-                            everything about their immigration process and costs to you in person. As an internationally
-                            recognized agency, we have always maintained complete transparency throughout our whole process.
-                            So,
-                            go ahead and take the eligibility test on our website by filling up the necessary details. Find
-                            out
-                            whether or not your skills can come to use in any of these foreign lands.
+                            You can sign up for a contract with our licensed migration consultant after our initial consultation (online/email/face-to-face consultation) for Australian migration services. 
+                            We'll take care of it for you and prepare your application accordingly. 
+                            A full collection of application forms and checklists will be sent to you by our migration agent in Sydney.
+                        </p>
+                    </div>
+                </div>   
+                <div class="col-lg-4">
+                    <div class="inner-text" data-aos="zoom-out">
+                        <p class="text-justify wow bounceInUp">
+                            As your case-processor, one dedicated member of staff will be assigned to you. 
+                            Our team will continue to assist you at every phase of the process, including training, qualifications evaluation, and filing with the Department of Immigration and Border Protection.
+                        </p>
+                    </div>
+                </div>   
+                <div class="col-lg-4">
+                    <div class="inner-text" data-aos="zoom-out">
+                        <p class="text-justify wow bounceInUp">
+                            We use sophisticated migration process, this system helps with collecting all necessary information, fill the necessary DIBP Forms and we also provide a safe and confidential portal. 
+                            The portal system allows our clients to safely & securely attach their documents (ready for submission to Department of Immigration). 
+                            The documents are encrypted and maintained in a secure environment.
+                        </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </section>
+    <!-- end works -->
+    <section class="works gallary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 wow" data-splitting>
+                    <h3 class="section-title">
+                        Immigration Services from <br/> Experienced Migration Agent 
+                    </h3>
+                </div>
+                <!-- end col-5 -->
+                <div class="col-lg-8">
+                    <div class="inner-text mt-0" data-aos="zoom-out">
+                        <p class="text-justify wow bounceInUp">
+                            We've been counselling students for educational Opportunity in Foreign countries.
+                            <br/>
+                            There are a number of reasons why you should hire a migration agent to assist you in the very complex process of securing an Australian visa. 
+                            Below we list common top reasons why hiring a Migration Agent is the best thing you can do when migrating to Australia.
+                        </p>
+                        <ul class="itec-list">
+                            <li>- Talk to one of our best consultants today</li>
+                            <li>- Our experts are able to find new growth</li>
+                            <li>- Find more information our website</li>
+                        </ul>
+                        <p class="text-justify wow bounceInUp">
+                            If you want to migrate to Australia, there has never been a better option than ITEC. We help clients who wish to study, work or settle in Australia, 
+                            have a dream of immigrating to Australia or seek Permanent Residency.
                         </p>
                     </div>
                 </div>
                 <!-- end col-7 -->
             </div>
-            <!-- end row -->
-        </div>
-    </section>
-    <!-- end works -->
-    <section class="works gallary">
-        <div class="wow py-3" data-splitting>
-            <h3 class="section-title text-center">
-                Lorem ipsum <br> dolor sit amet
-            </h3>
-        </div>
-        <ul>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/migration/1.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/migration/2.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/migration/3.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/migration/4.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/migration/5.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/migration/6.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/migration/7.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/migration/8.jpg') }}" alt="Image">
-                </figure>
-            </li>
-        </ul>
     </section>
     <section class="clients">
         <div class="container">
