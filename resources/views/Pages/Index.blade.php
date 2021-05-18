@@ -264,6 +264,7 @@
         <!-- end container -->
     </section>
     <!-- end clients -->
+
     <section class="testimonials">
         <div class="container">
             <div class="row align-items-center">

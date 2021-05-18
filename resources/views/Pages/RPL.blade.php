@@ -212,40 +212,83 @@
                     </div>
                 </div>
             </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="inner-text" data-aos="zoom-out">
+                        <h2>The Benefits of RPL</h2>
+                        <p class="text-justify wow bounceInUp">There are many reasons to consider going through the process
+                            and applying for Prior Learning Recognition. It may not only cut down on the amount of time you
+                            spend studying a
+                            course, but it can also help you qualify for courses for which you do not have the prerequisite
+                            formal
+                            qualifications.
+                            The AQF has created a guide that Registered Training Organizations can follow when deciding the
+                            amount of credit your RPL may have against a course if you've completed a structured course.
+                            It's important to remember that the above is an AQF recommendation; however, credit is usually
+                            agreed between the applicant and the organization. Certificates may be used to earn RPL, but the
+                            sum
+                            depends on the organization. All formal requirements must be applicable to the course in which
+                            you
+                            wish to enroll.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="inner-text" data-aos="zoom-out">
+                        <h2 class="card-title">Who Can Apply for the RPL Process?</h2>
+                        <p class="text-justify wow bounceInUp">Anyone who has previous knowledge, experience, or skills that
+                            are relevant to
+                            the
+                            course of study that they want to complete can apply for this process regardless of whether your
+                            training or experience was in Australia or abroad. To be successful, you need to be able to
+                            provide
+                            evidence of the skills and knowledge you have gained.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- end container -->
     </section>
     <!-- end testimonials -->
-    <section class="clients">
+    <section class="rpl">
         <div class="container">
             <div class="row">
-                <div class="card-body">
-                    <h2 class="card-title">The Benefits of RPL</h2>
-                    <p class="card-text">There are many reasons to consider going through the process and applying for Prior
-                        Learning Recognition. It may not only cut down on the amount of time you spend studying a course,
-                        but it can also help you qualify for courses for which you do not have the prerequisite formal
-                        qualifications.
-                        The AQF has created a guide that Registered Training Organizations can follow when deciding the
-                        amount of credit your RPL may have against a course if you've completed a structured course.
-                        It's important to remember that the above is an AQF recommendation; however, credit is usually
-                        agreed between the applicant and the organization. Certificates may be used to earn RPL, but the sum
-                        depends on the organization. All formal requirements must be applicable to the course in which you
-                        wish to enroll.
-                    </p>
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title text-center">OUR RTO PARTNERS OFFERS</h3>
                 </div>
-                <div class="card-body">
-                    <h2 class="card-title">Who Can Apply for the RPL Process?</h2>
-                    <p class="card-text">Anyone who has previous knowledge, experience, or skills that are relevant to the
-                        course of study that they want to complete can apply for this process regardless of whether your
-                        training or experience was in Australia or abroad. To be successful, you need to be able to provide
-                        evidence of the skills and knowledge you have gained.
-                    </p>
-                </div>
+                @forelse ($industries as $item)
+                    <div class="col-lg-4 col-md-4 my-2 industry-card">
+                        <div class="rpl-card reveal-effect masker wow">
+                            <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
+                                alt="">
+                            <div class="rpl-des">
+                                <h3>{{ $item->title }}</h3>
+                                <ul class="text-left">
+                                    @foreach ($item->courses->take(5) as $course)
+                                        <li>
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                            <a
+                                                href="{{ route('course.single', $course->course_code) }}">{{ $course->course_code }}-{{ $course->course_name }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            <a href="{{ route('industry', $item->slug) }}" class="find">Find More</a>
+                        </div>
+                    </div>
+                @empty
 
+                @endforelse
             </div>
-            <!-- end row -->
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="load">Load More</button>
+            </div>
         </div>
         <!-- end container -->
     </section>
-    <!-- end clients -->
 @endsection
