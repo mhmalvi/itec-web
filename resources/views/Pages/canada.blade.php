@@ -282,7 +282,7 @@
     <section class="works gallary">
         <div class="wow py-3" data-splitting>
             <h3 class="section-title text-center">
-                Affiliated institutions in Canada
+                Want to live, study and work in canada? <br/> Get free consultation from ITEC
             </h3>
         </div>
         <ul>
