@@ -23,18 +23,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">Why Malaysia</h3>
+                    <h3 class="section-title">About University in Malaysia</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7" data-aos="fade-down">
                     <p class="text-justify">
-                        Studying in Malaysia can be a feasible alternative to European, Canadian or Australian schools for
-                        those with a limited budget, don’t worry as you will be joining with more than 40,000 students from
-                        100 different countries. The courses are conducted in English entirely, which is one of the
-                        underlying reasons behind such massive popularity among students seeking high and quality education.
-                        At a significantly lower costs, students can attain same level of education quality offered by
-                        universities across the world. We have known Malaysia like the back of our hands, so if you are
-                        indeed willing to complete your higher education there, let us know and we would love to guide you
+                        “Malaysia is currently ranked as the world's 11th most preferred study destination by UNESCO.”<br><br>
+                        Malaysia's government is dedicated to achieving its goal of transforming the country into a
+                        world-class education destination for students from all over the world. All institutions are
+                        monitored by the country's Ministry of Higher Education to ensure that they meet the highest
+                        standards.<br><br>
+                        As a result, a number of reputable international universities, including those from the United
+                        States, the United Kingdom, Australia, and New Zealand, have established branch campuses in Malaysia
+                        or formed partnerships with Malaysian institutions.
+
+
                     </p>
                 </div>
                 <!-- end col-7 -->
@@ -48,15 +51,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 wow" data-splitting>
-                    <h3 class="section-title text-center">Why Study In Europe</h3>
+                    <h3 class="section-title text-center">Academic excellence</h3>
                 </div>
             </div>
             <div class="row my-5">
                 <div class="col-lg-12" data-aos="fade-down">
-                    <p class="text-center">
-                        Malaysia has become a favourite destination for tertiary education with over 40,000 international
-                        students from over 100 countries studying in Malaysia. Malaysia has become centre of academic and
-                        higher education excellence due to the following reasons
+                    <p class="text-left">
+                        · More than 30 years of experience in international education<br>
+                        · 2% of the international student population around the world<br>
+                        · Close to 100,000 international students<br><br>
+
+                        The Malaysian government monitors the standard of educational institutions by enforcing laws such as
+                        the Education Act, the Private Higher Educational Institutions Act, and the Malaysian Qualifications
+                        Agency. The Malaysian Qualification Agency (MQA) establishes criteria and monitors colleges and
+                        universities to ensure they meet the highest educational requirements and are globally recognized.
                     </p>
                 </div>
             </div>
@@ -74,13 +82,7 @@
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        The Malaysian Qualification Agency (MQA) provides guidelines and constant monitoring
-                                        to ensure colleges and universities meet the highest standards in education and are
-                                        internationally recognised. Courses offered are up-to-date and market relevant. With
-                                        career-focused education, graduates from Malaysia have no problems seeking
-                                        employment back in their home country. Besides, there are accredited degrees from
-                                        various choices of world-renowned universities from USA, UK, Australia, Canada
-                                        through their twining programs or branch campuses in Malaysia.
+                                        Malaysian universities and colleges provide advanced, career-focused education with up-to-date and market-relevant courses. Malaysian graduates have no difficulty seeking work in their home country. Via twinning programs or branch campuses in Malaysia, international students may obtain an accredited degree from a variety of world-renowned universities from the United Kingdom, the United States, Australia, Canada, and New Zealand.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -186,6 +188,38 @@
                                 <!-- end testimonial -->
                             </div>
                             <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Intakes</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        University Main Intakes take place in June/July and January/February. In certain universities, admissions are held in March and November.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Employment</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        Holders of a student pass or permit in Malaysia are permitted to work when studying under Malaysian law. This allows students to supplement their income and receive extra cash for travel and recreational activities. Part-time work is permitted for a maximum of 20 hours per week for students.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
                         </div>
                         <!-- end swiper-wrapper -->
                         <div class="swiper-pagination"></div>
@@ -233,7 +267,7 @@
     <section class="works gallary">
         <div class="wow py-3" data-splitting>
             <h3 class="section-title text-center">
-                Want to live, study & work in Malaysia ? <br/> Get free consultation from ITEC.
+                Want to live, study & work in Malaysia ? <br /> Get free consultation from ITEC.
             </h3>
         </div>
         <ul>
