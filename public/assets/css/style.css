@@ -1646,7 +1646,7 @@ textarea {
 }
 .testimonials .testimonial {
   width: 100%;
-  height: 350px;
+  /* height: 450px; */
   display: flex;
   flex-wrap: wrap;
   padding: 80px;
