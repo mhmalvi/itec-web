@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @push('meta-description')
-<meta name="description" content="Recognition of Prior Learning acknowledges skills gained through formal and informal learning as well as work experience. The method evaluates proof of your competency to see whether you meet the criteria." />
+    <meta name="description"
+        content="Recognition of Prior Learning acknowledges skills gained through formal and informal learning as well as work experience. The method evaluates proof of your competency to see whether you meet the criteria." />
 @endpush
 
 @section('content')
@@ -19,10 +20,10 @@
                         <h1 class="heading-secondary">GET YOUR RECOGNITION OF PRIOR LEARNING CERTIFICATE</h1>
                         <br>
                         <p class="text-justify">
-                            Recognition of Prior Learning (RPL) is an assessment process used by RTOs to evaluate a person’s skills,
-                            knowledge and experience gained through working and learning, in Australia or overseas, be it through
-                            life experience, work or other activities such as volunteering. RTOs can also provide a credit against
-                            units of competency, often shortening the time needed to undertake a qualification.
+                            Sometimes experience is more valuable than a qualification. Thanks to Recognition of Prior
+                            Learning, or RPL, you can now and the time it takes you to complete a course and get started
+                            working on your career goals sooner by using your previous expertise, experience, and working
+                            knowledge.
                         </p>
                     </div>
 
@@ -35,10 +36,14 @@
                                 </p>
                                 <form action="">
                                     <div class="form-group">
-                                        <input type="text" name="name" id="" class="form-control my-3" placeholder="Your Name"/>
-                                        <input type="email" name="email" id="" class="form-control my-3" placeholder="Your Email Address"/>
-                                        <input type="text" name="phone" id="" class="form-control my-3" placeholder="You Phone Number"/>
-                                        <textarea name="message" id="" rows="3" class="form-control my-3" placeholder="Message"></textarea>
+                                        <input type="text" name="name" id="" class="form-control my-3"
+                                            placeholder="Your Name" />
+                                        <input type="email" name="email" id="" class="form-control my-3"
+                                            placeholder="Your Email Address" />
+                                        <input type="text" name="phone" id="" class="form-control my-3"
+                                            placeholder="You Phone Number" />
+                                        <textarea name="message" id="" rows="3" class="form-control my-3"
+                                            placeholder="Message"></textarea>
                                     </div>
 
                                     <button type="submit" class="touch-btn">Submit</button>
@@ -55,40 +60,34 @@
     <!-- end page-header -->
     <section class="text-content-block">
         <div class="container">
-            <div class="row">
-                <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title">FOUR EASY STEPS TO <br>GET QUALIFIED</h3>
-                </div>
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>01</small>
-                    <h6> FREE SKILLS ASSESSMENT</h6>
-                    <p class="text-justify">
-                        A free, no obligation, RPL skills check provided by an experienced ITEC representative
-                    </p>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>02</small>
-                    <h6>EVIDENCE PORTFOLIO</h6>
-                    <p class="text-justify">Compiling and submitting your 'Experience Portfolio' to provide relevant
-                        documentation such as photos
-                        and videos of you on the job, references, previous qualifications, current resume etc.</p>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>03</small>
-                    <h6>SKILLS CHECK</h6>
-                    <p class="text-justify">A qualified assessor, from one of our partnering RTOs, will review the evidence
-                        and determine if you
-                        are competent in the units for that qualification via an RPL assessment</p>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>04</small>
-                    <h6>QUALIFIED!</h6>
-                    <p class="text-justify">If the RTO assesses you as competent in all required units of competency, then a
-                        qualification will
-                        be awarded by the registered training organisation</p>
-                </div>
-                <!-- end col-3 -->
+            <div class="col-12 wow" data-splitting>
+                <h3 class="section-title">What is Recognition of Prior Learning?</h3>
             </div>
-            <!-- end row -->
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">RPL (Recognition of Prior Learning) is a method that recognizes the skills and
+                            abilities you've developed through prior training, which involves both formal and non-formal
+                            learning, as well as work experience and volunteer work. You will get your certification without
+                            having to repeat the same learnings you've already done thanks to RPL on individual units.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">All students have the right to have their previous expertise, experience, and
+                            training recognized under the Australian Qualification Framework (AQF), which governs education
+                            in Australia. This allows them to advance more quickly through and through qualifications.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Each Registered Training Organization has its own policies and procedures for
+                            determining the RPL eligibility, but the basic principles remain the same. Your job or school
+                            experience and qualifications will help you complete a certification faster and reduce the time
+                            commitment of taking a course to get closer to your dream career.</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- end container -->
     </section>
@@ -105,10 +104,14 @@
                             </p>
                             <form action="">
                                 <div class="form-group">
-                                    <input type="text" name="name" id="" class="form-control my-3" placeholder="Your Name"/>
-                                    <input type="email" name="email" id="" class="form-control my-3" placeholder="Your Email Address"/>
-                                    <input type="text" name="phone" id="" class="form-control my-3" placeholder="You Phone Number"/>
-                                    <textarea name="message" id="" rows="3" class="form-control my-3" placeholder="Message"></textarea>
+                                    <input type="text" name="name" id="" class="form-control my-3"
+                                        placeholder="Your Name" />
+                                    <input type="email" name="email" id="" class="form-control my-3"
+                                        placeholder="Your Email Address" />
+                                    <input type="text" name="phone" id="" class="form-control my-3"
+                                        placeholder="You Phone Number" />
+                                    <textarea name="message" id="" rows="3" class="form-control my-3"
+                                        placeholder="Message"></textarea>
                                 </div>
 
                                 <button type="submit" class="touch-btn">Submit</button>
@@ -119,37 +122,24 @@
             </div>
             <div class="row">
                 <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title text-center">OUR RTO PARTNERS OFFERS</h3>
+                    <h3 class="section-title text-center">The Recognition of Prior Learning Process</h3>
                 </div>
 
-                @forelse ($industries as $item)
-                    <div class="col-lg-4 col-md-4 my-2 industry-card">
-                        <div class="rpl-card reveal-effect masker wow">
-                            <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
-                                alt="">
-                            <div class="rpl-des">
-                                <h3>{{ $item->title }}</h3>
-                                <ul class="text-left">
-                                    @foreach ($item->courses->take(5) as $course)
-                                        <li>
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                            <a
-                                                href="{{ route('course.single', $course->course_code) }}">{{ $course->course_code }}-{{ $course->course_name }}</a>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                            <a href="{{ route('industry', $item->slug) }}" class="find qualifications">View Qualifications</a>
-                        </div>
-                    </div>
-                @empty
-
-                @endforelse
+                <p class="card-text">The process varies by provider, but all must adhere to the AQF's policy of providing a
+                    consistent and open process in which every student is properly considered. In most cases, a
+                    self-assessment
+                    in the form of a document will be required to be completed, which will include all applicable work
+                    experience and qualifications already obtained. This is normally done online, along with the uploading
+                    of
+                    all other supporting documents. An assessor will look over all of this information and, if they believe
+                    it
+                    is appropriate evidence, an interview will be scheduled.
+                    Prepare to clarify your previous jobs, the job you did, and the duties you had during the interview.
+                    Make
+                    sure it's important to the course you want to take and includes proof of your work achievements.
+                </p>
             </div>
 
-            <div class="d-flex justify-content-center">
-                <button type="button" id="load" class="load-rpl">Load More</button>
-            </div>
         </div>
         <!-- end container -->
     </section>
@@ -189,6 +179,31 @@
                         <p>Use your experience to improve your career prospects.</p>
                     </div>
                 </div>
+
+
+                <div class="card-body">
+                    <h2 class="card-title">The Benefits of RPL</h2>
+                    <p class="card-text">There are many reasons to consider going through the process and applying for Prior
+                        Learning Recognition. It may not only cut down on the amount of time you spend studying a course,
+                        but it can also help you qualify for courses for which you do not have the prerequisite formal
+                        qualifications.
+                        The AQF has created a guide that Registered Training Organizations can follow when deciding the
+                        amount of credit your RPL may have against a course if you've completed a structured course.
+                        It's important to remember that the above is an AQF recommendation; however, credit is usually
+                        agreed between the applicant and the organization. Certificates may be used to earn RPL, but the sum
+                        depends on the organization. All formal requirements must be applicable to the course in which you
+                        wish to enroll.
+                    </p>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Who Can Apply for the RPL Process?</h2>
+                    <p class="card-text">Anyone who has previous knowledge, experience, or skills that are relevant to the
+                        course of study that they want to complete can apply for this process regardless of whether your
+                        training or experience was in Australia or abroad. To be successful, you need to be able to provide
+                        evidence of the skills and knowledge you have gained.
+                    </p>
+                </div>
+
             </div>
             <!-- end row -->
         </div>
