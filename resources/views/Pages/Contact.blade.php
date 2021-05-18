@@ -88,9 +88,10 @@
                             <h3 class="section-title wow" data-splitting>
                                 NEED <br>CONSULTANCY?
                             </h3>
-                            <p>
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis iusto tenetur inventore
-                                cumque nihil porro.
+                            <p class="text-justify pr-3">
+                                We know you have a lot of questions in your minds right now. Do not hesitate to ask us
+                                anything you want to know. We got all the answers for you! Feel free to contact us at any
+                                time.
                             </p>
                         </div>
                         <!-- col-7 -->

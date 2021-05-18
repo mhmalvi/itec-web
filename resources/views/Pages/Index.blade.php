@@ -397,9 +397,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AGENSY PROUD<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
+                    <h3 class="section-title">AFFILIATED<br>
+                        UNIVERSITIES</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7">
