@@ -60,34 +60,68 @@
     <!-- end page-header -->
     <section class="text-content-block">
         <div class="container">
-            <div class="col-12 wow" data-splitting>
-                <h3 class="section-title">What is Recognition of Prior Learning?</h3>
-            </div>
-            <div class="card-group">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">RPL (Recognition of Prior Learning) is a method that recognizes the skills and
-                            abilities you've developed through prior training, which involves both formal and non-formal
-                            learning, as well as work experience and volunteer work. You will get your certification without
-                            having to repeat the same learnings you've already done thanks to RPL on individual units.</p>
-                    </div>
+            <div class="row">
+                <div class="col-lg-5 wow" data-splitting>
+                    <h3 class="section-title">What is Recognition of Prior Learning?</h3>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">All students have the right to have their previous expertise, experience, and
-                            training recognized under the Australian Qualification Framework (AQF), which governs education
-                            in Australia. This allows them to advance more quickly through and through qualifications.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Each Registered Training Organization has its own policies and procedures for
-                            determining the RPL eligibility, but the basic principles remain the same. Your job or school
-                            experience and qualifications will help you complete a certification faster and reduce the time
-                            commitment of taking a course to get closer to your dream career.</p>
-                    </div>
+
+                <div class="col-lg-7">
+                    <p class="text-justify py-2">
+                        RPL (Recognition of Prior Learning) is a method that recognizes the skills and
+                        abilities you've developed through prior training, which involves both formal and non-formal
+                        learning, as well as work experience and volunteer work. You will get your certification without
+                        having to repeat the same learnings you've already done thanks to RPL on individual units.
+                    </p>
+                    <p class="text-justify py-2">
+                        All students have the right to have their previous expertise, experience, and
+                        training recognized under the Australian Qualification Framework (AQF), which governs education
+                        in Australia. This allows them to advance more quickly through and through qualifications.
+                    </p>
+                    <p class="text-justify py-2">
+                        Each Registered Training Organization has its own policies and procedures for
+                        determining the RPL eligibility, but the basic principles remain the same. Your job or school
+                        experience and qualifications will help you complete a certification faster and reduce the time
+                        commitment of taking a course to get closer to your dream career.
+                    </p>
                 </div>
             </div>
+
+            <br>
+
+            <div class="row mt-5 pt-5">
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title text-center">FOUR EASY STEPS TO GET QUALIFIED</h3>
+                </div>
+                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>01</small>
+                    <h6> FREE SKILLS ASSESSMENT</h6>
+                    <p class="text-justify">
+                        A free, no obligation, RPL skills check provided by an experienced ITEC representative
+                    </p>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>02</small>
+                    <h6>EVIDENCE PORTFOLIO</h6>
+                    <p class="text-justify">Compiling and submitting your 'Experience Portfolio' to provide relevant
+                        documentation such as photos
+                        and videos of you on the job, references, previous qualifications, current resume etc.</p>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>03</small>
+                    <h6>SKILLS CHECK</h6>
+                    <p class="text-justify">A qualified assessor, from one of our partnering RTOs, will review the evidence
+                        and determine if you
+                        are competent in the units for that qualification via an RPL assessment</p>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>04</small>
+                    <h6>QUALIFIED!</h6>
+                    <p class="text-justify">If the RTO assesses you as competent in all required units of competency, then a
+                        qualification will
+                        be awarded by the registered training organisation</p>
+                </div>
+                <!-- end col-3 -->
+            </div>
+            <!-- end row -->
         </div>
         <!-- end container -->
     </section>
@@ -125,7 +159,9 @@
                     <h3 class="section-title text-center">The Recognition of Prior Learning Process</h3>
                 </div>
 
-                <p class="card-text">The process varies by provider, but all must adhere to the AQF's policy of providing a
+                <p class="text-center py-5">
+                    The process varies by provider, but all must adhere to the AQF's policy of providing
+                    a
                     consistent and open process in which every student is properly considered. In most cases, a
                     self-assessment
                     in the form of a document will be required to be completed, which will include all applicable work
@@ -140,12 +176,8 @@
                 </p>
             </div>
 
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end testimonials -->
-    <section class="clients">
-        <div class="container">
+            <br>
+
             <div class="row">
                 <div class="col-xs-12 col-md-4 col-lg-4 text-center" data-aos="fade-up">
                     <div class="service_box">
@@ -179,8 +211,14 @@
                         <p>Use your experience to improve your career prospects.</p>
                     </div>
                 </div>
-
-
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end testimonials -->
+    <section class="clients">
+        <div class="container">
+            <div class="row">
                 <div class="card-body">
                     <h2 class="card-title">The Benefits of RPL</h2>
                     <p class="card-text">There are many reasons to consider going through the process and applying for Prior
