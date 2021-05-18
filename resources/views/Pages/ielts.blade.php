@@ -7,7 +7,7 @@
 @section('content')
     <header class="page-header">
         <div class="video-bg">
-            <video src="{{ asset('assets/videos/ielts.m4v') }}"muted loop autoplay></video>
+            <video src="{{ asset('assets/videos/Ielts.m4v') }}"muted loop autoplay></video>
         </div>
         <!-- end video-bg -->
         <div class="inner">
@@ -17,7 +17,7 @@
                 <h1 class="heading-secondary">A Guide to IELTS in Australia</h1>
                 <br>
                 <p>
-                    You want to go to Australia to study? Then you'll have to take an English Language Examination. 
+                    You want to go to Australia to study? Then you'll have to take an English Language Examination.
                     The IELTS test is Australia's most common language proficiency test!The IELTS (International English Language Testing System) preparation course is designed for those who wish to obtain an internationally recognised certificate.
                 </p>
             </div>
@@ -38,7 +38,7 @@
                         ITEC Academy is specialized in IELTS coaching. By working exclusively with the IELTS exam, we are able to deliver great service and quality.  We are the NO.1 IELTS coaching centre in Australia, since we have 1000+ students who have achieved their desired IELTS score.
                     </p>
                     <p class="text-justify py-2">
-                       The IELTS (International English Language Testing System) is the world's most widely used English language exam for higher education. So, if you're considering studying in Australia, you've probably heard of it. To get your visa accepted, you must obtain the appropriate IELTS ratings. 
+                       The IELTS (International English Language Testing System) is the world's most widely used English language exam for higher education. So, if you're considering studying in Australia, you've probably heard of it. To get your visa accepted, you must obtain the appropriate IELTS ratings.
                     </p>
                     <p class="text-justify py-2">
                         Exams may seem intimidating at times, but there are many ways to improve your English skills and ace the test! We'll walk you through the exam's setup, how to register and pay for the IELTS Australia fee, and how to interpret your IELTS results. We've even thrown in a few pointers along the way, so here's your handy guide to the IELTS for Australia.
