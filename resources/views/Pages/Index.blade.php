@@ -380,7 +380,9 @@
                         </p>
                     </div>
                 </div>
+                <!-- end col-7 -->
             </div>
+            <!-- end row -->
         </div>
     </section>
 
