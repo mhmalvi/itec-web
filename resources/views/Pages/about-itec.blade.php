@@ -37,39 +37,8 @@
         <!-- end container -->
     </section>
     <!-- end text-content-block -->
-    <section class="intro-image">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="office-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <figure class="reveal-effect masker wow"> <img
-                                        src="{{ asset('assets/images/home/1.jpg') }}" alt="Image">
-                                </figure>
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <figure>
-                                    <img src="{{ asset('assets/images/home/2.jpg') }}" alt="Image">
-                                </figure>
-                            </div>
-                            <!-- end swiper-slide -->
-                        </div>
-                        <!-- end swiper-wrapper -->
-                        <div class="swiper-pagination"></div>
-                        <!-- end swiper-pagination -->
-                    </div>
-                    <!-- end office-slider -->
-                </div>
-                <!-- end col-12 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end intro-image -->
-    <section class="icon-content-block">
+
+    <section class="icon-content-block pt-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 wow" data-splitting>
@@ -124,6 +93,39 @@
     </section>
     <!-- end icon-content-block -->
 
+    <section class="intro-image mt-5">
+        <div class="container pt-5 mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="office-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure class="reveal-effect masker wow"> <img
+                                        src="{{ asset('assets/images/home/1.jpg') }}" alt="Image">
+                                </figure>
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="{{ asset('assets/images/home/2.jpg') }}" alt="Image">
+                                </figure>
+                            </div>
+                            <!-- end swiper-slide -->
+                        </div>
+                        <!-- end swiper-wrapper -->
+                        <div class="swiper-pagination"></div>
+                        <!-- end swiper-pagination -->
+                    </div>
+                    <!-- end office-slider -->
+                </div>
+                <!-- end col-12 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end intro-image -->
+
     <section class="team">
         <div class="container">
             <div class="row">
@@ -133,7 +135,8 @@
                 </div>
                 <!-- end col-8 -->
                 <div class="col-lg-6 wow" data-splitting>
-                    <h5>We have been working in Australia since 2019. Every year we connect with thousands of students, educators, policymakers, academics, partners, and civil society.</h5>
+                    <h5>We have been working in Australia since 2019. Every year we connect with thousands of students,
+                        educators, policymakers, academics, partners, and civil society.</h5>
                 </div>
                 <!-- end col-4 -->
             </div>
@@ -223,45 +226,46 @@
 
     <section class="clients">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow align-self-center" data-splitting>
-                    <p class="card-text">We are committed to maintaining our leadership role in international education by providing the best
-                        resources, information, facilities, and products for international students. In ITEC you'll find
-                        helpful advice pages for international students studying in the United States, the United Kingdom,
-                        and Australia, as well as a dedicated study abroad hub for US students who want to travel abroad.
-                        You'll also find details on international student loans, student health benefits, international
-                        calling cards, scholarship tools, travel, and other helpful resources to aid students in their
-                        preparation for their time abroad. Both of our publications and online tools are free to download,
-                        and we intend to keep it that way.</p>
+            <div class="row py-5 px-3">
+                <div class="col-lg-4 offset-lg-1 order-lg-12">
+                    <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
+                </div>
+                <!-- end col-7 -->
+                <div class="col-lg-7 order-lg-1 py-3">
+                    <h2 class="text-left">
+                        We are committed to maintaining our leadership role in international education by
+                        providing the best resources, information, facilities, and products for international students.
+                    </h2>
+                    <p class="text-justify">
+                        In ITEC you'll find helpful advice pages for international students studying in the United States,
+                        the United Kingdom, and Australia, as well as a dedicated study abroad hub for US students who want
+                        to travel abroad. You'll also find details on international student loans, student health benefits,
+                        international calling cards, scholarship tools, travel, and other helpful resources to aid students
+                        in their preparation for their time abroad. Both of our publications and online tools are free to
+                        download, and we intend to keep it that way.
+                    </p>
 
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7 wow">
-
-                    <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
-
-                </div>
-                <!-- end col-7 -->
             </div>
             <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
+
+
+            <div class="row py-5 mt-3 px-3">
+                <div class="col-lg-4" data-splitting>
                     <img src="{{ asset('assets/images/123.jpg') }}" alt="Image">
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7 wow align-self-center">
-                    <p class="card-text">ITEC quickly gained a reputation for providing high-quality Australian immigration visa services. We
-                        help individuals to work, study or immigrant to Australia. The combination enables us to provide a
-                        comprehensive range of Australian immigration services. Over the years we have grown from one office
-                        and two staff members to four offices and over 15 employees. We now process more than 1,000
-                        applications every year for clients from around the world and in Australia.</p>
-
-
+                <div class="col-lg-7 offset-lg-1 py-3">
+                    <h2 class="text-left">
+                        ITEC quickly gained a reputation for providing high-quality Australian immigration visa services
+                    </h2>
+                    <p class="text-justify">
+                        We help individuals to work, study or immigrant to Australia. The combination enables us to provide
+                        a comprehensive range of Australian immigration services. Over the years we have grown from one
+                        office and two staff members to four offices and over 15 employees. We now process more than 1,000
+                        applications every year for clients from around the world and in Australia.
+                    </p>
                 </div>
                 <!-- end col-7 -->
             </div>
@@ -269,7 +273,6 @@
         </div>
         <!-- end container -->
     </section>
-    {{-- new section by riaz --}}
 
 
 @endsection

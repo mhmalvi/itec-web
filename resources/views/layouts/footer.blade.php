@@ -11,21 +11,21 @@
 
                         <div class="row">
                             @foreach ($industries->chunk(5) as $industry)
-                            <div class="col-xs-12 col-md-4">
-                                <ul>
-                                    @forelse ($industry as $item)
-                                        <li>
-                                            <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
-                                            <a
-                                                href="{{ route('industry', $item->slug) }}">{{ $item->title }}</a>
-                                        </li>
-                                    @empty
-                                        <li>
-                                            <a href="#">No Links Found!</a>
-                                        </li>
-                                    @endforelse
-                                </ul>
-                            </div>
+                                <div class="col-xs-12 col-md-4">
+                                    <ul>
+                                        @forelse ($industry as $item)
+                                            <li>
+                                                <i class="fas fa-long-arrow-alt-right"></i>&nbsp;
+                                                <a
+                                                    href="{{ route('industry', $item->slug) }}">{{ $item->title }}</a>
+                                            </li>
+                                        @empty
+                                            <li>
+                                                <a href="#">No Links Found!</a>
+                                            </li>
+                                        @endforelse
+                                    </ul>
+                                </div>
                             @endforeach
                         </div>
                     </div>
@@ -46,13 +46,13 @@
                     </p>
                     <ul>
                         <li class="pb-2">
-                            Level 1, 7 Greenfield Pde Bankstown, NSW 2200, Sydney, Australia 
+                            Level 1, 7 Greenfield Pde Bankstown, NSW 2200, Sydney, Australia
                         </li>
                         <li class="py-2">
                             +1300 535 922
                         </li>
                         <li class="py-2">
-                            info@itecounsel.com 
+                            info@itecounsel.com
                         </li>
                     </ul>
                 </div>
@@ -67,10 +67,10 @@
                             Level -7, 8/C, F.R Tower, PanthaPath, Dhaka - 1207, Bangladeshh
                         </li>
                         <li class="py-2">
-                            +1300 535 922
+                            +880 1309 001 813
                         </li>
                         <li class="py-2">
-                            info@itecounsel.com 
+                            info@itecounsel.com
                         </li>
                     </ul>
                 </div>
