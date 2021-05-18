@@ -94,28 +94,28 @@
                 </div>
                 <div class="col-lg-3 col-md-6 wow" data-splitting> <small>01</small>
                     <h6> FREE SKILLS ASSESSMENT</h6>
-                    <p class="text-justify">
+                    <p class="text-left">
                         A free, no obligation, RPL skills check provided by an experienced ITEC representative
                     </p>
                 </div>
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-md-6 wow" data-splitting> <small>02</small>
                     <h6>EVIDENCE PORTFOLIO</h6>
-                    <p class="text-justify">Compiling and submitting your 'Experience Portfolio' to provide relevant
+                    <p class="text-left">Compiling and submitting your 'Experience Portfolio' to provide relevant
                         documentation such as photos
                         and videos of you on the job, references, previous qualifications, current resume etc.</p>
                 </div>
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-md-6 wow" data-splitting> <small>03</small>
                     <h6>SKILLS CHECK</h6>
-                    <p class="text-justify">A qualified assessor, from one of our partnering RTOs, will review the evidence
+                    <p class="text-left">A qualified assessor, from one of our partnering RTOs, will review the evidence
                         and determine if you
                         are competent in the units for that qualification via an RPL assessment</p>
                 </div>
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-md-6 wow" data-splitting> <small>04</small>
                     <h6>QUALIFIED!</h6>
-                    <p class="text-justify">If the RTO assesses you as competent in all required units of competency, then a
+                    <p class="text-left">If the RTO assesses you as competent in all required units of competency, then a
                         qualification will
                         be awarded by the registered training organisation</p>
                 </div>

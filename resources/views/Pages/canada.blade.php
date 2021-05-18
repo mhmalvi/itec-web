@@ -28,7 +28,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">About University in Canada</h3>
+                    <h3 class="section-title">About Study in Canadian University</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7" data-aos="fade-down">
@@ -56,7 +56,11 @@
             <div class="row my-5">
                 <div class="col-lg-12" data-aos="fade-down">
                     <p class="text-center">
-                        Every year, over 200,000 foreign students come to Canada to further their studies. Look no further than Canada for a world-class education in an English-speaking country with a high standard of living. In the Times Higher Education Supplement Top 200, Canada has 12 universities. Canada was named one of the best places to live in the world by the United Nations because of its good educational system, as well as its economy and quality of life.
+                        Every year, over 200,000 foreign students come to Canada to further their studies. Look no further
+                        than Canada for a world-class education in an English-speaking country with a high standard of
+                        living. In the Times Higher Education Supplement Top 200, Canada has 12 universities. Canada was
+                        named one of the best places to live in the world by the United Nations because of its good
+                        educational system, as well as its economy and quality of life.
                     </p>
                 </div>
             </div>
@@ -200,7 +204,13 @@
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        With student employment, you will gain valuable work experience and supplement your spending allowance. Although you must show that you and your spouse/common-law partner can pay for your tuition and living expenses before arriving in Canada, there are a variety of opportunities for you and your spouse/common-law partner to work while studying in Canada. Working in Canada will help you develop potential business contacts and even assist you in obtaining permanent residency after graduation.
+                                        With student employment, you will gain valuable work experience and supplement your
+                                        spending allowance. Although you must show that you and your spouse/common-law
+                                        partner can pay for your tuition and living expenses before arriving in Canada,
+                                        there are a variety of opportunities for you and your spouse/common-law partner to
+                                        work while studying in Canada. Working in Canada will help you develop potential
+                                        business contacts and even assist you in obtaining permanent residency after
+                                        graduation.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -215,7 +225,8 @@
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        Universities deliver two primary intakes: June/July and January/February. In certain universities, admissions are held in March and November.
+                                        Universities deliver two primary intakes: June/July and January/February. In certain
+                                        universities, admissions are held in March and November.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -230,7 +241,10 @@
                                     </div>
                                     <!-- end reviewers -->
                                     <p>
-                                        Although Canadian educational institutions are not officially ranked, they all meet the highest quality criteria. When selecting a Canadian educational institution, three factors must be considered: form, size, and location. The best bet is to find out which institution offers more in your field of study.
+                                        Although Canadian educational institutions are not officially ranked, they all meet
+                                        the highest quality criteria. When selecting a Canadian educational institution,
+                                        three factors must be considered: form, size, and location. The best bet is to find
+                                        out which institution offers more in your field of study.
                                     </p>
                                 </div>
                                 <!-- end testimonial -->
@@ -252,9 +266,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AGENSY PROUD<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
+                    <h3 class="section-title">AFFILIATED<br>
+                        UNIVERSITIES IN<br>
+                        CANADA</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7">
@@ -282,7 +296,7 @@
     <section class="works gallary">
         <div class="wow py-3" data-splitting>
             <h3 class="section-title text-center">
-                Affiliated institutions in Canada
+                Want to live, study & work in Canada ? <br /> Get free consultation from ITEC.
             </h3>
         </div>
         <ul>

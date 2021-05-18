@@ -248,9 +248,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AGENSY PROUD<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
+                    <h3 class="section-title">AFFILIATED<br>
+                        UNIVERSITIES IN<br>
+                        EUROPE</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7">
@@ -278,7 +278,7 @@
     <section class="works gallary">
         <div class="wow py-3" data-splitting>
             <h3 class="section-title text-center">
-                Want to live, study & work in Europe ? <br/> Get free consultation from ITEC.
+                Want to live, study & work in Europe ? <br /> Get free consultation from ITEC.
             </h3>
         </div>
         <ul>
