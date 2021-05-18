@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @push('meta-description')
-<meta name="description" content="Apply to study in Canada, renew your study permit, and learn about working in Canada while you're studying or after you graduate." />
+    <meta name="description"
+        content="Apply to study in Canada, renew your study permit, and learn about working in Canada while you're studying or after you graduate." />
 @endpush
 
 @section('content')
@@ -27,16 +28,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">Why Canada</h3>
+                    <h3 class="section-title">About University in Canada</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7" data-aos="fade-down">
                     <p class="text-justify">
-                        There are multiple reasons behind choosing Canada as a desired country for higher study.
-                        Representatives of ITEC are affiliated with some of the best Canadian universities offering
-                        full-scholarships for international students. Canadian universities are offering various scholarship
-                        programmes for international students, so consider filing up the form on our website and find out if
-                        you are eligible.
+                        Because of Canada's strong academic standards and stringent quality controls, you'll receive a
+                        high-quality education that will pave the way for your future and support your career in the long
+                        run. A Canadian degree, diploma, or credential is accepted around the world as equivalent to those
+                        earned in the United States or Commonwealth countries.
                     </p>
                 </div>
                 <!-- end col-7 -->
@@ -50,17 +50,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 wow" data-splitting>
-                    <h3 class="section-title text-center">Why Study In Canada</h3>
+                    <h3 class="section-title text-center">Academic Excellence</h3>
                 </div>
             </div>
             <div class="row my-5">
                 <div class="col-lg-12" data-aos="fade-down">
                     <p class="text-center">
-                        It offers a sound education system, friendly student environment and an immigration system that is
-                        open to everyone. One of the greatest aspects of studying abroad in Canada is that there is an
-                        option for students of all ages, whether you are in high school or in pursuit of a graduate degree.
-                        If you are looking to study in a student-friendly place with great academic options and highly
-                        ranked universities, then you should consider studying in Canada
+                        Every year, over 200,000 foreign students come to Canada to further their studies. Look no further than Canada for a world-class education in an English-speaking country with a high standard of living. In the Times Higher Education Supplement Top 200, Canada has 12 universities. Canada was named one of the best places to live in the world by the United Nations because of its good educational system, as well as its economy and quality of life.
                     </p>
                 </div>
             </div>
@@ -194,6 +190,51 @@
                                 <!-- end testimonial -->
                             </div>
                             <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Employment</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        With student employment, you will gain valuable work experience and supplement your spending allowance. Although you must show that you and your spouse/common-law partner can pay for your tuition and living expenses before arriving in Canada, there are a variety of opportunities for you and your spouse/common-law partner to work while studying in Canada. Working in Canada will help you develop potential business contacts and even assist you in obtaining permanent residency after graduation.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Intakes</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        Universities deliver two primary intakes: June/July and January/February. In certain universities, admissions are held in March and November.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <div class="reviewer">
+                                        <div class="reviewer-infos">
+                                            <h4>Quality and Standards</h4>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                    <p>
+                                        Although Canadian educational institutions are not officially ranked, they all meet the highest quality criteria. When selecting a Canadian educational institution, three factors must be considered: form, size, and location. The best bet is to find out which institution offers more in your field of study.
+                                    </p>
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
                         </div>
                         <!-- end swiper-wrapper -->
                         <div class="swiper-pagination"></div>
@@ -241,7 +282,7 @@
     <section class="works gallary">
         <div class="wow py-3" data-splitting>
             <h3 class="section-title text-center">
-                Lorem ipsum <br> dolor sit amet
+                Affiliated institutions in Canada
             </h3>
         </div>
         <ul>
