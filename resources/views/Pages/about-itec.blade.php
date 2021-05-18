@@ -20,34 +20,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit</h3>
+                    <h3 class="section-title">ITEC builds connections, understanding, and trust between people through
+                        education and learning.</h3>
                 </div>
                 <!-- end col-12 -->
                 <div class="col-12 wow" data-splitting>
-                    <h5>We work closely with your development team. markettting profissionals and stakeholder to design and
-                        develop UX and UI that make your website. application or software a joy to use,</h5>
+                    <h5>We help young people to gain the skills, confidence, and connections they are looking for to realize
+                        their potential and to participate in strong and inclusive communities. We support them to learn
+                        English, to get a high-quality education, and to gain internationally recognized qualifications. Our
+                        work in arts and culture stimulates creative expression and exchange and nurtures creative
+                        enterprise.</h5>
                 </div>
-                <!-- end col-12	 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>01</small>
-                    <h6>PROTOTYPE</h6>
-                    <p>The more you use, the more you have in your signifant mind</p>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>02</small>
-                    <h6>SKETCHING</h6>
-                    <p>The more you use, the more you have in your signifant mind</p>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>03</small>
-                    <h6>WIREFRAME</h6>
-                    <p>The more you use, the more you have in your signifant mind</p>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>04</small>
-                    <h6>UI-UX DESIGN</h6>
-                    <p>The more you use, the more you have in your signifant mind</p>
-                </div>
-                <!-- end col-3 -->
             </div>
             <!-- end row -->
         </div>
@@ -97,12 +80,12 @@
                 <div class="col-lg-3 col-md-4 wow" data-splitting>
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
-                        <h6>Lorem ipsum</h6>
+                        <h6>IELTS | PTE</h6>
                         <ul>
-                            <li>Digital Branding</li>
-                            <li>Web & Mobile Sites</li>
-                            <li>User Interface Design</li>
-                            <li>Responsive Techs</li>
+                            <li>Expected Result</li>
+                            <li>Experienced Mentors</li>
+                            <li>Flexible Batch Times
+                            </li>
                         </ul>
                     </div>
                     <!-- end content-block -->
@@ -111,12 +94,11 @@
                 <div class="col-lg-3 col-md-4 wow" data-splitting>
                     <div class="content-block selected">
                         <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
-                        <h6>Lorem ipsum</h6>
+                        <h6>RPL</h6>
                         <ul>
-                            <li>Digital Strategy</li>
-                            <li>User Experience Design</li>
-                            <li>User Interface Design</li>
-                            <li>Mobile Sites</li>
+                            <li>Get Certified</li>
+                            <li>Boost Your Career</li>
+                            <li>Get Your Dream Job</li>
                         </ul>
                     </div>
                     <!-- end content-block -->
@@ -125,12 +107,11 @@
                 <div class="col-lg-3 col-md-4 wow" data-splitting>
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
-                        <h6>Lorem ipsum</h6>
+                        <h6>ADMISSION</h6>
                         <ul>
-                            <li>Custom Platform</li>
-                            <li>Back-End Executions</li>
-                            <li>Interface Apps</li>
-                            <li>Mobile Systems</li>
+                            <li>University Admission</li>
+                            <li>Migration</li>
+                            <li>Travel Visa</li>
                         </ul>
                     </div>
                     <!-- end content-block -->
@@ -142,84 +123,7 @@
         <!-- end container -->
     </section>
     <!-- end icon-content-block -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="testimonials-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial wow" data-splitting>
-                                    <blockquote> We work closely with your development team. markettting profissionals and
-                                        stakeholder to design and develop UX and UI that make your website. application or
-                                        software a joy to use </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/team01.jpg') }}" alt="Image">
-                                        <div class="reviewer-infos">
-                                            <h6>Marcus James</h6>
-                                            <small>IBIS HOTEL MANAGER</small>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <blockquote> We work closely with your development team. markettting profissionals and
-                                        stakeholder to design and develop UX and UI that make your website. application or
-                                        software a joy to use </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/team01.jpg') }}" alt="Image">
-                                        <div class="reviewer-infos">
-                                            <h6>Marcus James</h6>
-                                            <small>IBIS HOTEL MANAGER</small>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <blockquote> We work closely with your development team. markettting profissionals and
-                                        stakeholder to design and develop UX and UI that make your website. application or
-                                        software a joy to use </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/team01.jpg') }}" alt="Image">
-                                        <div class="reviewer-infos">
-                                            <h6>Marcus James</h6>
-                                            <small>IBIS HOTEL MANAGER</small>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                        </div>
-                        <!-- end swiper-wrapper -->
-                        <div class="swiper-pagination"></div>
-                        <!-- end swiper-pagination -->
-                    </div>
-                    <!-- end testimonials-slider -->
-                </div>
-                <!-- end col-6 -->
-                <div class="col-lg-6 wow" data-splitting>
-                    <h3 class="section-title">LOREM IPSUM<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
-                    <a href="#"></a>
-                </div>
-                <!-- end col-6 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end testimonials -->
+
     <section class="team">
         <div class="container">
             <div class="row">
@@ -229,8 +133,7 @@
                 </div>
                 <!-- end col-8 -->
                 <div class="col-lg-6 wow" data-splitting>
-                    <h5>We work closely with your development team. markettting profissionals and stakeholder to design and
-                        develop UX and UI that make your website. application or software a joy to use,</h5>
+                    <h5>We have been working in Australia since 2019. Every year we connect with thousands of students, educators, policymakers, academics, partners, and civil society.</h5>
                 </div>
                 <!-- end col-4 -->
             </div>
@@ -314,36 +217,29 @@
         <!-- end container -->
     </section>
     <!-- end team -->
+
+    {{-- new section by riaz --}}
+
+
     <section class="clients">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">LOREM IPSUM<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
+                <div class="col-lg-5 wow align-self-center" data-splitting>
+                    <p class="card-text">We are committed to maintaining our leadership role in international education by providing the best
+                        resources, information, facilities, and products for international students. In ITEC you'll find
+                        helpful advice pages for international students studying in the United States, the United Kingdom,
+                        and Australia, as well as a dedicated study abroad hub for US students who want to travel abroad.
+                        You'll also find details on international student loans, student health benefits, international
+                        calling cards, scholarship tools, travel, and other helpful resources to aid students in their
+                        preparation for their time abroad. Both of our publications and online tools are free to download,
+                        and we intend to keep it that way.</p>
+
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7">
-                    <ul>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo01.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo02.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo03.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo04.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo05.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo06.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo07.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo08.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/logo09.png') }}"
-                                alt="Image"> </li>
-                    </ul>
+                <div class="col-lg-7 wow">
+
+                    <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
+
                 </div>
                 <!-- end col-7 -->
             </div>
@@ -351,5 +247,29 @@
         </div>
         <!-- end container -->
     </section>
-    <!-- end clients -->
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 wow" data-splitting>
+                    <img src="{{ asset('assets/images/123.jpg') }}" alt="Image">
+                </div>
+                <!-- end col-5 -->
+                <div class="col-lg-7 wow align-self-center">
+                    <p class="card-text">ITEC quickly gained a reputation for providing high-quality Australian immigration visa services. We
+                        help individuals to work, study or immigrant to Australia. The combination enables us to provide a
+                        comprehensive range of Australian immigration services. Over the years we have grown from one office
+                        and two staff members to four offices and over 15 employees. We now process more than 1,000
+                        applications every year for clients from around the world and in Australia.</p>
+
+
+                </div>
+                <!-- end col-7 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    {{-- new section by riaz --}}
+
+
 @endsection
