@@ -23,15 +23,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">Why Europe</h3>
+                    <h3 class="section-title">About Universities in Europe</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7" data-aos="fade-down">
                     <p class="text-justify">
-                        The study curriculum followed by Europe is to induce creativity and sense of innovation among
-                        students as well as guide them towards achieving their goals. Presently, we are in collaboration
-                        with universities in Poland, Sweden, UK, Norway including Germany as well as France. Reserve your
-                        spot today so we could determine your chances of admission to the right university.
+                        Perhaps the most critical aspect of your decision to visit Europe is learning more about yourself.
+                        Once you know what you want to accomplish, you will find the best place in Europe to learn, live,
+                        and develop.<br><br>
+                        In Europe you will have diverse countries with plenty to see and do while you're there. Make
+                        connections to see if you can find off-the-beaten-path destinations while learning more about the
+                        city where you live. Simply get involved and help in every way you can. The freedom and excitement
+                        that comes with attending university will rub off on you.<br><br>
+
+                        You already have a well-known characteristic if you choose to live and learn in Europe: a sense of
+                        adventure! As an international student, you will be exposed to a wide variety of fresh and exciting
+                        experiences.
+
                     </p>
                 </div>
                 <!-- end col-7 -->
@@ -50,10 +58,9 @@
             <div class="row my-5">
                 <div class="col-lg-12" data-aos="fade-down">
                     <p class="text-center">
-                        Being able to study in any of the European countries is perhaps a dream come true for those who seek
-                        for higher education abroad. Tuition fees along with living expenses are comparatively lesser than
-                        other countries such as the USA.
+                        International student requirements in Europe differ from country to country and can be influenced by where you are from. We've put together a series of Education Guides for countries around Europe to support students with their questions about education in Europe.
                     </p>
+                    <p class="text-left">You can choose any of the following country to study:</p>
                 </div>
             </div>
             <div class="row align-items-center" data-aos="zoom-in">
