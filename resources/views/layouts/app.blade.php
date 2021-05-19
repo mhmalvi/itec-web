@@ -55,8 +55,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/company/itec-international-training-education-counsel/" id="lin">
-                        <i class="fab fa-linkedin-in"></i>
+                    <a href="https://www.youtube.com/channel/UCUKW0wimJCwb4NaItMiK8LA" id="yt">
+                        <i class="fab fa-youtube"></i>
                     </a>
                 </li>
                 <li>

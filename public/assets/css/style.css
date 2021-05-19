@@ -468,6 +468,7 @@ textarea {
 .page-loaded .left-side {
   left: 0;
   opacity: 1;
+  background: rgba(255, 255, 255, 0.35);
 }
 
 .page-loaded .slider {
@@ -763,8 +764,8 @@ textarea {
 .twitter{
   background: #00acee !important;
 }
-.linkedin{
-  background: #0e76a8 !important;
+.youtube{
+  background: #c4302b !important;
 }
 .insta{
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
@@ -915,7 +916,6 @@ textarea {
   top: 0;
   z-index: 10;
   text-align: center;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
   padding: 30px 0;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -2441,8 +2441,8 @@ textarea {
 .footer ul .tw a:hover {
   color: #00acee;
 }
-.footer ul .lin a:hover {
-  color: #0e76a8;
+.footer ul .yt a:hover {
+  color: #c4302b;
 }
 .footer ul li a:hover {
   color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;

@@ -105,16 +105,18 @@
                                 class="fab fa-facebook-f"></i></a>
                     </li>
                     <li class="p-2 tw"><a href="https://twitter.com/itecounsel"><i class="fab fa-twitter"></i></a></li>
-                    <li class="p-2 lin"><a
-                            href="https://www.linkedin.com/company/itec-international-training-education-counsel/"><i
-                                class="fab fa-linkedin-in"></i></a></li>
+                    <li class="p-2 yt">
+                        <a href="https://www.youtube.com/channel/UCUKW0wimJCwb4NaItMiK8LA">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
                     <li class="p-2"><a href="https://www.instagram.com/itecounsel/"><i class="fab fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>
             <!-- end col-12 -->
             <div class="col-12">
-                <div class="footer-bar"> <span class="copyright">© <span id="year"></span> ITECounsel | All Rights
+                <div class="footer-bar"> <span class="copyright">© <span id="year"></span> International Training and Education Counsel (ITEC) | All Rights
                         Reserved</span> <span class="creation">Site created by <a href="https://quadque.tech">Quadque
                             Technologies
                             Ltd</a></span> </div>

@@ -126,7 +126,7 @@
                         WE ARE ABLE TO DO</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-3 wow" data-splitting>
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
                         <h6>IELTS | PTE</h6>
@@ -139,8 +139,8 @@
                     <!-- end content-block -->
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
-                    <div class="content-block selected">
+                <div class="col-lg-3 col-md-3 wow" data-splitting>
+                    <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
                         <h6>RPL</h6>
                         <ul>
@@ -152,7 +152,7 @@
                     <!-- end content-block -->
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-3 wow" data-splitting>
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
                         <h6>ADMISSION</h6>
@@ -160,6 +160,18 @@
                             <li>University Admission</li>
                             <li>Migration</li>
                             <li>Travel Visa</li>
+                        </ul>
+                    </div>
+                    <!-- end content-block -->
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-3 wow" data-splitting>
+                    <div class="content-block">
+                        <figure> <img src="{{ asset('assets/images/icon04.png') }}" alt="Image"> </figure>
+                        <h6>TRAINING</h6>
+                        <ul>
+                            <li>Short Courses</li>
+                            <li>Long Qualifications</li>
                         </ul>
                     </div>
                     <!-- end content-block -->

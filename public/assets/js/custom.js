@@ -12,10 +12,10 @@ $(document).ready(function () {
             $(this).text("Follow Us On Twitter").fadeIn("slow");
         });
     });
-    $("#lin").mouseenter(function () {
-        $("#socialLayer").addClass('linkedin');
+    $("#yt").mouseenter(function () {
+        $("#socialLayer").addClass('youtube');
         $("#socialInner h5").fadeOut(function () {
-            $(this).text("Follow Us On LinkedIn").fadeIn("slow");
+            $(this).text("Subscribe Our Youtube Cannel").fadeIn("slow");
         });
     });
     $("#inst").mouseenter(function () {
@@ -39,8 +39,8 @@ $(document).ready(function () {
             $(this).text("Social Share").fadeIn("slow");
         });
     });
-    $("#lin").mouseleave(function () {
-        $("#socialLayer").removeClass('linkedin');
+    $("#yt").mouseleave(function () {
+        $("#socialLayer").removeClass('youtube');
         $("#socialInner h5").fadeOut(function () {
             $(this).text("Social Share").fadeIn("slow");
         });
