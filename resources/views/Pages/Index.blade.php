@@ -42,15 +42,15 @@
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
                     <h1 class="section-title">ITEC Education Consultant and Student Agency</h1>
-                    <h6>Team ITECounsel</h6>
-                    <b>10</b>
-                    <h4>
-                        YEARS OF<br>STUDENT<br>COUNSELINIG<br>EXPERIENCE
-                    </h4>
-                    <br>
-                    <br>
 
-                    <a href="javascript:void(0)">hello@itecounsel.com</a>
+                    <div class="exp">
+                        <h6>Team ITECounsel</h6>
+                        <b>10</b>
+                        <h4>
+                            YEARS OF<br>STUDENT<br>COUNSELINIG<br>EXPERIENCE
+                        </h4>
+                        <a href="javascript:void(0)">info@itecounsel.com</a>
+                    </div>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7 wow">
@@ -167,57 +167,93 @@
                 <!-- end col-3 -->
             </div>
             <!-- end row -->
+
+            <div class="section-new">
+                <div class="row py-5">
+                    <div class="col-lg-5 wow" data-splitting>
+                        <h2>Study, Travel, Work and Immigrate in Australia </h2>
+                        <br>
+                        <p>
+                            ITEC is designed to give consultancy to students, and who travel to Australia from all over the
+                            world.
+                            You will get reliable information about the fantastic opportunities to study, work or travel in
+                            Australia.
+                        </p>
+
+                    </div>
+                    <!-- end col-5 -->
+                    <div class="col-lg-7 wow">
+
+                        <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
+
+                    </div>
+                    <!-- end col-7 -->
+                </div>
+                <!-- end row -->
+
+                <div class="py-5"></div>
+
+                <div class="row py-5">
+                    <div class="col-lg-5 wow" data-splitting>
+                        <img src="{{ asset('assets/images/123.jpg') }}" alt="Image">
+                    </div>
+                    <!-- end col-5 -->
+                    <div class="col-lg-7 wow">
+                        <h2>We help international students to: </h2>
+                        <br>
+                        <ul>
+                            <li>Find courses</li>
+                            <li>Get accepted into colleges, universities</li>
+                            <li>Apply for a students or travel visa</li>
+                            <li>Fina a student job while studying in Australia</li>
+                            <li>Apply for our work experience program</li>
+                            <li>Get in contact with immigration agents to apply for your PR visa</li>
+                        </ul>
+
+
+                    </div>
+                    <!-- end col-7 -->
+                </div>
+                <!-- end row -->
+            </div>
         </div>
         <!-- end container -->
     </section>
     <!-- end icon-content-block -->
 
-    <section class="intro">
+    <section class="clients shadow-0">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 wow align-self-center" data-splitting>
-                    <h2>Study, Travel, Work and Immigrate in Australia </h2>
-                    <br>
-                    <p>
-                        ITEC is designed to give consultancy to students, and who travel to Australia from all over the
-                        world.
-                        You will get reliable information about the fantastic opportunities to study, work or travel in
-                        Australia.
-                    </p>
-
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title text-center">OUR RTO PARTNERS</h3>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7 wow">
-
-                    <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
-
-                </div>
-                <!-- end col-7 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <section class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <img src="{{ asset('assets/images/123.jpg') }}" alt="Image">
-                </div>
-                <!-- end col-5 -->
-                <div class="col-lg-7 wow align-self-center">
-                    <h2>We help international students to: </h2>
-                    <br>
-                    <ul>
-                        <li>Find courses</li>
-                        <li>Get accepted into colleges, universities</li>
-                        <li>Apply for a students or travel visa</li>
-                        <li>Fina a student job while studying in Australia</li>
-                        <li>Apply for our work experience program</li>
-                        <li>Get in contact with immigration agents to apply for your PR visa</li>
-                    </ul>
-
-
+                <div class="col-12">
+                    <div class="rto-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/UCT.png') }}" alt="Image">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/BRIGHT.png') }}" alt="Image" style="max-width: 120px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/NTA.png') }}" alt="Image" style="max-width: 300px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/ATR.png') }}" alt="Image" style="max-width: 170px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/alpha.png') }}" alt="Image" style="max-width: 170px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                        </div>
+                        <!-- end swiper-wrapper -->
+                    </div>
                 </div>
                 <!-- end col-7 -->
             </div>
@@ -226,7 +262,8 @@
         <!-- end container -->
     </section>
 
-    <section class="rpl">
+
+    <section class="rpl pt-0 shadow-0">
         <div class="container">
             <div class="row">
                 <div class="col-12 wow" data-splitting>
@@ -264,91 +301,8 @@
         <!-- end container -->
     </section>
     <!-- end clients -->
-
-    <section class="testimonials">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 order-lg-12 wow" data-splitting>
-                    <h3 class="section-title">LISTEN FROM<br>
-                        OUR<br>
-                        STUDENTS</h3>
-                    <a href="#"></a>
-                </div>
-                <!-- end col-6 -->
-                <div class="col-lg-7 order-lg-1">
-                    <div class="testimonials-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial wow" data-splitting>
-                                    <blockquote>ITEC is the best way towards your IELTS career. They provide the best
-                                        lectures on cracking IELTS easily. A good Library is what a student needs and they
-                                        have a well-maintained library. I suggest this academy & visa consultancy for your
-                                        better future.</blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/team01.jpg') }}"
-                                            alt="Image">
-                                        <div class="reviewer-infos">
-                                            <h6>Marcus James</h6>
-                                            <small>IBIS HOTEL MANAGER</small>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <blockquote>I have been pursuing my IELTS course from ITEC. This is the best
-                                        preparing classes I have ever found. One of the best IELTS coaching in Sydney,
-                                        Australia. Personalize attention, small group size. </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/team01.jpg') }}"
-                                            alt="Image">
-                                        <div class="reviewer-infos">
-                                            <h6>Marcus James</h6>
-                                            <small>IBIS HOTEL MANAGER</small>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <blockquote>The university I apply for had all the language requirements, so I took
-                                        IELTS. Considering the fact that I started for it with ITEC. With a very basic level
-                                        of writing, I eventually passed the test with my expected result.</blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/team01.jpg') }}"
-                                            alt="Image">
-                                        <div class="reviewer-infos">
-                                            <h6>Marcus James</h6>
-                                            <small>IBIS HOTEL MANAGER</small>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                        </div>
-                        <!-- end swiper-wrapper -->
-                    </div>
-                    <!-- end testimonials-slider -->
-                </div>
-                <!-- end col-6 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end testimonials -->
-
-
-    <!-- section by riaz -->
-    <section class="icon-content-block">
+    
+    <section class="icon-content-block pt-250">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 wow" data-splitting>
@@ -387,48 +341,81 @@
         </div>
     </section>
 
-
-    <!-- section by riaz -->
-
-
-
-
-
-    <section class="clients">
+    <section class="testimonials">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AFFILIATED<br>
-                        UNIVERSITIES</h3>
+            <div class="row align-items-center">
+                <div class="col-lg-5 order-lg-12 wow" data-splitting>
+                    <h3 class="section-title">LISTEN FROM<br>
+                        OUR<br>
+                        STUDENTS</h3>
+                    <a href="#"></a>
                 </div>
-                <!-- end col-5 -->
-                <div class="col-lg-7">
-                    <ul>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/australia/logo1.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/australia/logo2.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/australia/logo3.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/canada/logo4.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/canada/logo5.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/canada/logo6.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo1.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo2.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo3.png') }}"
-                                alt="Image"> </li>
-                    </ul>
+                <!-- end col-6 -->
+                <div class="col-lg-7 order-lg-1">
+                    <div class="testimonials-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial wow" data-splitting>
+                                    <blockquote>ITEC is the best way towards your IELTS career. They provide the best
+                                        lectures on cracking IELTS easily. A good Library is what a student needs and they
+                                        have a well-maintained library. I suggest this academy & visa consultancy for your
+                                        better future.</blockquote>
+                                    <div class="reviewer"> <img src="{{ asset('assets/images/a1.jpg') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>ALAMIN SHUVO</h6>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <blockquote>I have been pursuing my IELTS course from ITEC. This is the best
+                                        preparing classes I have ever found. One of the best IELTS coaching in Sydney,
+                                        Australia. Personalize attention, small group size. </blockquote>
+                                    <div class="reviewer"> <img src="{{ asset('assets/images/a4.jpg') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>PIYASH KHAN</h6>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <blockquote>The university I apply for had all the language requirements, so I took
+                                        IELTS. Considering the fact that I started for it with ITEC. With a very basic level
+                                        of writing, I eventually passed the test with my expected result.</blockquote>
+                                    <div class="reviewer"> <img src="{{ asset('assets/images/a6.jpg') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>DEW ANTHONY GOMES</h6>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                        </div>
+                        <!-- end swiper-wrapper -->
+                    </div>
+                    <!-- end testimonials-slider -->
                 </div>
-                <!-- end col-7 -->
+                <!-- end col-6 -->
             </div>
             <!-- end row -->
         </div>
         <!-- end container -->
     </section>
-    <!-- end clients -->
+    <!-- end testimonials -->
 @endsection

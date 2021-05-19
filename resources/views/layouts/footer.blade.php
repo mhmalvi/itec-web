@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-xs-12 col-lg-2 col-md-2 my-4">
                 <div class="footer-logo">
-                    <img src="{{ asset('assets/images/logow.png') }}" alt="Image" class="img-fluid">
+                    <img src="{{ asset('assets/images/logo.png') }}" alt="Image" class="img-fluid">
                 </div>
             </div>
             <div class="col-xs-12 col-lg-3 col-md-3">
@@ -49,7 +49,7 @@
                             Level 1, 7 Greenfield Pde Bankstown, NSW 2200, Sydney, Australia
                         </li>
                         <li class="py-2">
-                            +1300 535 922
+                            1300 535 922
                         </li>
                         <li class="py-2">
                             info@itecounsel.com
@@ -101,11 +101,11 @@
             </div>
             <div class="col-xs-12 col-lg-2 col-md-2">
                 <ul>
-                    <li class="p-2"><a href="https://www.facebook.com/ITECOUNSEL.AUSTRALIA/"><i
+                    <li class="p-2 fb"><a href="https://www.facebook.com/ITECOUNSEL.AUSTRALIA/"><i
                                 class="fab fa-facebook-f"></i></a>
                     </li>
-                    <li class="p-2"><a href="https://twitter.com/itecounsel"><i class="fab fa-twitter"></i></a></li>
-                    <li class="p-2"><a
+                    <li class="p-2 tw"><a href="https://twitter.com/itecounsel"><i class="fab fa-twitter"></i></a></li>
+                    <li class="p-2 lin"><a
                             href="https://www.linkedin.com/company/itec-international-training-education-counsel/"><i
                                 class="fab fa-linkedin-in"></i></a></li>
                     <li class="p-2"><a href="https://www.instagram.com/itecounsel/"><i class="fab fa-instagram"></i></a>

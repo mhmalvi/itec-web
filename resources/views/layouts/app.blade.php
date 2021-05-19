@@ -24,7 +24,7 @@
         <!-- end layer -->
         <div class="inner">
             <figure>
-                <img src="{{ asset('assets/images/logow.png') }}" alt="Image">
+                <img src="{{ asset('assets/images/logo.png') }}" alt="Image">
             </figure>
             <span>Loading</span>
         </div>
@@ -39,16 +39,31 @@
     @include('layouts.navigation')
     <!-- end site-navigation -->
     <div class="social-media">
-        <div class="layer"></div>
+        <div class="layer" id="socialLayer"></div>
         <!-- end layer -->
-        <div class="inner">
-            <h5>Social Share </h5>
+        <div class="inner" id="socialInner">
+            <h5>Social Share</h5>
             <ul>
-                <li><a href="https://www.facebook.com/ITECOUNSEL.AUSTRALIA/"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://twitter.com/itecounsel"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com/company/itec-international-training-education-counsel/"><i
-                            class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="https://www.instagram.com/itecounsel/"><i class="fab fa-instagram"></i></a></li>
+                <li>
+                    <a href="https://www.facebook.com/ITECOUNSEL.AUSTRALIA/" id="fb">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/itecounsel" id="tw">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/company/itec-international-training-education-counsel/" id="lin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/itecounsel/" id="inst">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

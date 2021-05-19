@@ -357,6 +357,18 @@
         },
     });
 
+    new Swiper(".rto-slider", {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        freeMode: true,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 8000,
+            disableOnInteraction: false,
+        },
+      });
+
     // COUNTER
     $(document).scroll(function () {
         $(".odometer").each(function () {
