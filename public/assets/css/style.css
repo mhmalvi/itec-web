@@ -2895,6 +2895,10 @@ textarea {
     display: block;
     margin-top: 5px;
   }
+
+  .apply-form{
+    margin: 0px 15px;
+  }
 }
 /* ANIMATIONS */
 @keyframes texteffect {
@@ -3474,4 +3478,17 @@ input[type="file"]{
 }
 .rto-slider img{
   max-width: 150px !important;
+}
+.bg-gray{
+  background: #F2F2F2 !important;
+}
+.bg-logo-primary{
+  background: #1C375B !important;
+}
+.bg-logo-secondary{
+  background: #CD4236 !important;
+}
+.apply-form{
+  border: 1px solid #1C375B;
+  padding: 100px 50px;
 }

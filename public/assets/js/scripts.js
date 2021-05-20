@@ -396,13 +396,15 @@
         $("body").addClass("page-loaded");
     });
 
+
+    //Course Load
     $(".industry-card").slice(0, 3).show();
 
     $("#load").on("click", function (e) {
         e.preventDefault();
         $(".industry-card:hidden").slice(0, 3).slideDown();
-        if ($("div:hidden").length == 0) {
-            $("#load").fadeOut("slow");
+        if ($(".industry-card:hidden").length == 0) {
+            $("#load").css('visibility', 'hidden');
         }
         $("html,body").animate(
             {

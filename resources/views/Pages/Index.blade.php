@@ -35,7 +35,6 @@
         </div>
         <!-- end gallery-thumbs -->
     </header>
-
     <!-- end slider -->
     <section class="intro">
         <div class="container">
@@ -233,88 +232,7 @@
     </section>
     <!-- end icon-content-block -->
 
-    <section class="clients shadow-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title text-center">OUR RTO PARTNERS</h3>
-                </div>
-                <!-- end col-5 -->
-                <div class="col-12">
-                    <div class="rto-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/UCT.png') }}" alt="Image">
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/BRIGHT.png') }}" alt="Image" style="max-width: 120px !important;">
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/NTA.png') }}" alt="Image" style="max-width: 300px !important;">
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/ATR.png') }}" alt="Image" style="max-width: 170px !important;">
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/alpha.png') }}" alt="Image" style="max-width: 170px !important;">
-                            </div>
-                            <!-- end swiper-slide -->
-                        </div>
-                        <!-- end swiper-wrapper -->
-                    </div>
-                </div>
-                <!-- end col-7 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-
-
-    <section class="rpl pt-0 shadow-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title text-center">OUR RTO PARTNERS OFFERS</h3>
-                </div>
-                @forelse ($industries as $item)
-                    <div class="col-lg-4 col-md-4 my-2 industry-card">
-                        <div class="rpl-card reveal-effect masker wow">
-                            <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
-                                alt="">
-                            <div class="rpl-des">
-                                <h3>{{ $item->title }}</h3>
-                                <ul class="text-left">
-                                    @foreach ($item->courses->take(5) as $course)
-                                        <li>
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                            <a
-                                                href="{{ route('course.single', $course->course_code) }}">{{ $course->course_code }}-{{ $course->course_name }}</a>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                            <a href="{{ route('industry', $item->slug) }}" class="find">Find More</a>
-                        </div>
-                    </div>
-                @empty
-
-                @endforelse
-            </div>
-
-            <div class="d-flex justify-content-center">
-                <button type="button" id="load">Load More</button>
-            </div>
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end clients -->
-    
-    <section class="icon-content-block pt-250">
+    <section class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 wow" data-splitting>
@@ -351,7 +269,9 @@
             </div>
             <!-- end row -->
         </div>
+        <!-- end container -->
     </section>
+    <!-- end intro -->
 
     <section class="testimonials">
         <div class="container">
@@ -430,4 +350,85 @@
         <!-- end container -->
     </section>
     <!-- end testimonials -->
+
+    <section class="clients shadow-0 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title text-center">OUR RTO PARTNERS</h3>
+                </div>
+                <!-- end col-5 -->
+                <div class="col-12">
+                    <div class="rto-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/UCT.png') }}" alt="Image">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/BRIGHT.png') }}" alt="Image" style="max-width: 120px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/NTA.png') }}" alt="Image" style="max-width: 300px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/ATR.png') }}" alt="Image" style="max-width: 170px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/alpha.png') }}" alt="Image" style="max-width: 170px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                        </div>
+                        <!-- end swiper-wrapper -->
+                    </div>
+                </div>
+                <!-- end col-7 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+
+
+    <section class="rpl pt-0 shadow-0 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title text-center">OUR RTO PARTNERS OFFERS</h3>
+                </div>
+                @forelse ($industries as $item)
+                    <div class="col-lg-4 col-md-4 my-2 industry-card">
+                        <div class="rpl-card reveal-effect masker wow">
+                            <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
+                                alt="">
+                            <div class="rpl-des">
+                                <h3>{{ $item->title }}</h3>
+                                <ul class="text-left">
+                                    @foreach ($item->courses->take(5) as $course)
+                                        <li>
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                            <a
+                                                href="{{ route('course.single', $course->course_code) }}">{{ $course->course_code }}-{{ $course->course_name }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            <a href="{{ route('industry', $item->slug) }}" class="find">Find More</a>
+                        </div>
+                    </div>
+                @empty
+
+                @endforelse
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" id="load">Load More</button>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end clients -->
 @endsection

@@ -19,11 +19,11 @@
         <!-- end inner -->
     </header>
     <!-- end page-header -->
-    <section class="testimonials">
+    <section class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">About Universities in Europe</h3>
+                    <h3 class="section-title">ABOUT STUDY <br> IN EUROPIAN <br> UNIVERSITY</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7" data-aos="fade-down">
@@ -48,7 +48,7 @@
         </div>
         <!-- end container -->
     </section>
-    <section class="testimonials mt-0">
+    <section class="testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 wow" data-splitting>
@@ -562,125 +562,100 @@
         <!-- end container -->
     </section>
     <!-- end works -->
-    <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AFFILIATED<br>
-                        UNIVERSITIES IN<br>
-                        EUROPE</h3>
-                </div>
-                <!-- end col-5 -->
-                <div class="col-lg-7">
-                    <ul>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo1.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo2.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo3.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo4.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo5.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo6.png') }}"
-                                alt="Image"> </li>
-                    </ul>
-                </div>
-                <!-- end col-7 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
     <section class="works gallary">
-        <div class="wow py-3" data-splitting>
-            <h3 class="section-title text-center">
-                Want to live, study & work in Europe ? <br /> Get free consultation from ITEC.
-            </h3>
-        </div>
-        <ul>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/europe/1.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/europe/2.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/europe/3.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/europe/4.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/europe/5.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/europe/6.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/europe/7.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/europe/8.jpg') }}" alt="Image">
-                </figure>
-            </li>
-        </ul>
-    </section>
-    <section class="clients">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">Apply Now</h3>
-                </div>
-                <div class="col-lg-7">
-                    <form id="migration-form" name="contact" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" id="name" autocomplete="off"
-                                placeholder="Enter Your Name" required />
+            <div class="wow py-3" data-splitting>
+                <h3 class="section-title text-center">
+                    Want to live, study & work in Europe ? <br /> Get free consultation from ITEC.
+                </h3>
+            </div>
+            <ul>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/europe/1.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/europe/2.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/europe/3.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/europe/4.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/europe/5.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/europe/6.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/europe/7.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/europe/8.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="clients bg-gray">
+        <div class="container">
+            <h3 class="section-title text-center">Apply Now</h3>
+            <div class="apply">
+                <div class="row">
+                    <div class="col-lg-6 px-0 d-none d-sm-block">
+                        <div>
+                            <img src="{{asset('assets/images/apply.png')}}" alt="">
                         </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="email" id="email" autocomplete="off"
-                                placeholder="Your Email Address" required />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="contact" id="contact"
-                                placeholder="Enter Your Contact Number" autocomplete="off" required />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="nationality" id="nationality"
-                                placeholder="Enter Your Nationality" autocomplete="off" required />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <select name="qualification" id="qualification" class="form-control">
-                                <option value selected disabled>Select Qualification You Looking For</option>
-                            </select>
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <button id="submit" type="submit" name="submit">Submit Now</button>
-                        </div>
-                        <!-- end form-group -->
-                    </form>
+                    </div>
+                    <div class="col-lg-6 apply-form">
+                        <form id="migration-form" name="contact" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" id="name" autocomplete="off"
+                                    placeholder="Enter Your Name" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" id="email" autocomplete="off"
+                                    placeholder="Your Email Address" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="contact" id="contact"
+                                    placeholder="Enter Your Contact Number" autocomplete="off" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nationality" id="nationality"
+                                    placeholder="Enter Your Nationality" autocomplete="off" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nationality" id="nationality"
+                                    placeholder="Enter Your Desired Qualification Name" autocomplete="off" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <button id="submit" type="submit" name="submit">Apply Now</button>
+                            </div>
+                            <!-- end form-group -->
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

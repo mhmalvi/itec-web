@@ -4,7 +4,7 @@
     <!-- end all-cases-link -->
     <header class="page-header">
         <div class="video-bg">
-            <video src="{{ asset('assets/videos/kuala-lumpur-city.mp4') }}" muted loop autoplay></video>
+            <video src="{{ asset('assets/videos/kuala-lumpur-city.m4v') }}" muted loop autoplay></video>
         </div>
         <!-- end video-bg -->
         <div class="inner">
@@ -19,11 +19,11 @@
         <!-- end inner -->
     </header>
     <!-- end page-header -->
-    <section class="testimonials">
+    <section class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">About University in Malaysia</h3>
+                    <h3 class="section-title">ABOUT STUDY <br> IN MALAYSIAN <br> UNIVERSITY</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7" data-aos="fade-down">
@@ -36,8 +36,6 @@
                         As a result, a number of reputable international universities, including those from the United
                         States, the United Kingdom, Australia, and New Zealand, have established branch campuses in Malaysia
                         or formed partnerships with Malaysian institutions.
-
-
                     </p>
                 </div>
                 <!-- end col-7 -->
@@ -47,7 +45,7 @@
         <!-- end container -->
     </section>
     <!-- end testimonials -->
-    <section class="testimonials mt-0">
+    <section class="testimonials">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 wow" data-splitting>
@@ -56,11 +54,7 @@
             </div>
             <div class="row my-5">
                 <div class="col-lg-12" data-aos="fade-down">
-                    <p class="text-left">
-                        · More than 30 years of experience in international education<br>
-                        · 2% of the international student population around the world<br>
-                        · Close to 100,000 international students<br><br>
-
+                    <p class="text-center">
                         The Malaysian government monitors the standard of educational institutions by enforcing laws such as
                         the Education Act, the Private Higher Educational Institutions Act, and the Malaysian Qualifications
                         Agency. The Malaysian Qualification Agency (MQA) establishes criteria and monitors colleges and
@@ -233,125 +227,100 @@
         </div>
         <!-- end container -->
     </section>
-    <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AGENSY PROUD<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
-                </div>
-                <!-- end col-5 -->
-                <div class="col-lg-7">
-                    <ul>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/malaysia/logo1.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/malaysia/logo2.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/malaysia/logo3.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/malaysia/logo4.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/malaysia/logo5.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/malaysia/logo6.png') }}"
-                                alt="Image"> </li>
-                    </ul>
-                </div>
-                <!-- end col-7 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
     <section class="works gallary">
-        <div class="wow py-3" data-splitting>
-            <h3 class="section-title text-center">
-                Want to live, study & work in Malaysia ? <br /> Get free consultation from ITEC.
-            </h3>
-        </div>
-        <ul>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/malaysia/1.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/malaysia/2.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/malaysia/3.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/malaysia/4.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/malaysia/5.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/malaysia/6.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/malaysia/7.jpg') }}" alt="Image">
-                </figure>
-            </li>
-            <li>
-                <figure data-aos="zoom-in">
-                    <img src="{{ asset('assets/images/malaysia/8.jpg') }}" alt="Image">
-                </figure>
-            </li>
-        </ul>
-    </section>
-    <section class="clients">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">Apply Now</h3>
-                </div>
-                <div class="col-lg-7">
-                    <form id="migration-form" name="contact" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" id="name" autocomplete="off"
-                                placeholder="Enter Your Name" required />
+            <div class="wow py-3" data-splitting>
+                <h3 class="section-title text-center">
+                    Want to live, study & work in Malaysia ? <br /> Get free consultation from ITEC.
+                </h3>
+            </div>
+            <ul>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/malaysia/1.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/malaysia/2.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/malaysia/3.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/malaysia/4.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/malaysia/5.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/malaysia/6.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/malaysia/7.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+                <li>
+                    <figure data-aos="zoom-in">
+                        <img src="{{ asset('assets/images/malaysia/8.jpg') }}" alt="Image">
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="clients bg-gray">
+        <div class="container">
+            <h3 class="section-title text-center">Apply Now</h3>
+            <div class="apply">
+                <div class="row">
+                    <div class="col-lg-6 px-0 d-none d-sm-block">
+                        <div>
+                            <img src="{{asset('assets/images/apply.png')}}" alt="">
                         </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="email" id="email" autocomplete="off"
-                                placeholder="Your Email Address" required />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="contact" id="contact"
-                                placeholder="Enter Your Contact Number" autocomplete="off" required />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="nationality" id="nationality"
-                                placeholder="Enter Your Nationality" autocomplete="off" required />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <select name="qualification" id="qualification" class="form-control">
-                                <option value selected disabled>Select Qualification You Looking For</option>
-                            </select>
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <button id="submit" type="submit" name="submit">Submit Now</button>
-                        </div>
-                        <!-- end form-group -->
-                    </form>
+                    </div>
+                    <div class="col-lg-6 apply-form">
+                        <form id="migration-form" name="contact" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" id="name" autocomplete="off"
+                                    placeholder="Enter Your Name" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" id="email" autocomplete="off"
+                                    placeholder="Your Email Address" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="contact" id="contact"
+                                    placeholder="Enter Your Contact Number" autocomplete="off" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nationality" id="nationality"
+                                    placeholder="Enter Your Nationality" autocomplete="off" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nationality" id="nationality"
+                                    placeholder="Enter Your Desired Qualification Name" autocomplete="off" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <button id="submit" type="submit" name="submit">Apply Now</button>
+                            </div>
+                            <!-- end form-group -->
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
