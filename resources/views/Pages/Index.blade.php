@@ -43,7 +43,7 @@
                     <h1 class="section-title">ITEC Education Consultant and Student Agency</h1>
 
                     <div class="exp">
-                        <h6>Team ITECounsel</h6>
+                        <h6>Team ITEC</h6>
                         <b>10</b>
                         <h4>
                             YEARS OF<br>STUDENT<br>COUNSELINIG<br>EXPERIENCE
@@ -119,61 +119,69 @@
 
     <section class="icon-content-block">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center itec-services">
                 <div class="col-12 wow" data-splitting>
                     <h3 class="section-title">THE THINGS<br>
                         WE ARE ABLE TO DO</h3>
                 </div>
                 <!-- end col-12 -->
                 <div class="col-lg-3 col-md-3 wow" data-splitting>
-                    <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
-                        <h6>IELTS | PTE</h6>
-                        <ul>
-                            <li>Expected Result</li>
-                            <li>Experienced Mentors</li>
-                            <li>Flexible Batch Times</li>
-                        </ul>
-                    </div>
-                    <!-- end content-block -->
+                    <a href="{{ route('page', 'ielts') }}">
+                        <div class="content-block">
+                            <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
+                            <h6>IELTS | PTE</h6>
+                            <ul>
+                                <li>Expected Result</li>
+                                <li>Experienced Mentors</li>
+                                <li>Flexible Batch Times</li>
+                            </ul>
+                        </div>
+                        <!-- end content-block -->
+                    </a>
                 </div>
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-md-3 wow" data-splitting>
-                    <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
-                        <h6>RPL</h6>
-                        <ul>
-                            <li>Get Certified</li>
-                            <li>Boost Your Career</li>
-                            <li>Get Your Dream Job</li>
-                        </ul>
-                    </div>
-                    <!-- end content-block -->
+                    <a href="{{ route('rpl') }}">
+                        <div class="content-block">
+                            <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
+                            <h6>RPL</h6>
+                            <ul>
+                                <li>Get Certified</li>
+                                <li>Boost Your Career</li>
+                                <li>Get Your Dream Job</li>
+                            </ul>
+                        </div>
+                        <!-- end content-block -->
+                    </a>
                 </div>
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-md-3 wow" data-splitting>
-                    <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
-                        <h6>ADMISSION</h6>
-                        <ul>
-                            <li>University Admission</li>
-                            <li>Migration</li>
-                            <li>Travel Visa</li>
-                        </ul>
-                    </div>
-                    <!-- end content-block -->
+                    <a href="{{ route('admission', 'australia') }}">
+                        <div class="content-block">
+                            <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
+                            <h6>ADMISSION</h6>
+                            <ul>
+                                <li>University Admission</li>
+                                <li>Migration</li>
+                                <li>Travel Visa</li>
+                            </ul>
+                        </div>
+                        <!-- end content-block -->
+                    </a>
                 </div>
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-md-3 wow" data-splitting>
-                    <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/icon04.png') }}" alt="Image"> </figure>
-                        <h6>TRAINING</h6>
-                        <ul>
-                            <li>Short Courses</li>
-                            <li>Long Qualifications</li>
-                        </ul>
-                    </div>
-                    <!-- end content-block -->
+                    <a href="">
+                        <div class="content-block">
+                            <figure> <img src="{{ asset('assets/images/icon04.png') }}" alt="Image"> </figure>
+                            <h6>TRAINING</h6>
+                            <ul>
+                                <li>Short Courses</li>
+                                <li>Long Qualifications</li>
+                            </ul>
+                        </div>
+                        <!-- end content-block -->
+                    </a>
                 </div>
                 <!-- end col-3 -->
             </div>

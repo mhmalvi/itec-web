@@ -3492,3 +3492,7 @@ input[type="file"]{
   border: 1px solid #1C375B;
   padding: 100px 50px;
 }
+.itec-services a{
+  text-decoration: none;
+  color: #fff;
+}
