@@ -11,8 +11,9 @@
 
 @section('content')
     <div class="container">
-        <form action="" method="POST" enctype="multipart/form-data">
+        <form action="{{ route('admin.blog.update', $blog->id) }}" method="POST" enctype="multipart/form-data">
             @csrf
+            @method("put")
             <div class="my-5">
                 <div class="ibox">
                     <div class="ibox-content p-5">
