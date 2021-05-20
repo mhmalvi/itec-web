@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title text-center">ITECounsel's Migration Process</h3>
+                    <h3 class="section-title text-center">OUR MIGRATION PROCESS</h3>
                 </div>
                 <!-- end col-5 -->
             </div>
@@ -68,7 +68,7 @@
         </div>
     </section>
     <!-- end works -->
-    <section class="works gallary">
+    <section class="intro gallary">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 wow" data-splitting>
@@ -99,45 +99,49 @@
                 <!-- end col-7 -->
             </div>
     </section>
-    <section class="clients">
+    <section class="clients bg-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">Apply Now</h3>
-                </div>
-                <div class="col-lg-7">
-                    <form id="migration-form" name="contact" method="post">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" id="name" autocomplete="off"
-                                placeholder="Enter Your Name" required />
+            <h3 class="section-title text-center">Apply Now</h3>
+            <div class="apply">
+                <div class="row">
+                    <div class="col-lg-6 px-0 d-none d-sm-block">
+                        <div>
+                            <img src="{{asset('assets/images/apply.png')}}" alt="">
                         </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="email" id="email" autocomplete="off"
-                                placeholder="Your Email Address" required />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="contact" id="contact"
-                                placeholder="Enter Your Contact Number" autocomplete="off" required />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="nationality" id="nationality"
-                                placeholder="Enter Your Nationality" autocomplete="off" required />
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <select name="qualification" id="qualification" class="form-control">
-                                <option value selected disabled>Select Qualification You Looking For</option>
-                            </select>
-                        </div>
-                        <!-- end form-group -->
-                        <div class="form-group">
-                            <button id="submit" type="submit" name="submit">Submit Now</button>
-                        </div>
-                        <!-- end form-group -->
-                    </form>
+                    </div>
+                    <div class="col-lg-6 apply-form">
+                        <form id="migration-form" name="contact" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" id="name" autocomplete="off"
+                                    placeholder="Enter Your Name" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" id="email" autocomplete="off"
+                                    placeholder="Your Email Address" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="contact" id="contact"
+                                    placeholder="Enter Your Contact Number" autocomplete="off" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nationality" id="nationality"
+                                    placeholder="Enter Your Nationality" autocomplete="off" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="nationality" id="nationality"
+                                    placeholder="Enter Your Desired Qualification Name" autocomplete="off" required />
+                            </div>
+                            <!-- end form-group -->
+                            <div class="form-group">
+                                <button id="submit" type="submit" name="submit">Apply Now</button>
+                            </div>
+                            <!-- end form-group -->
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

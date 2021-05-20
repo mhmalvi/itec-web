@@ -8,7 +8,7 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>AUSTRALIAN TOURIST VISA</h1>
+                <h1>TOURIST VISA</h1>
                 <br/>
                 <p>
                     Lets visit Australia as a tourist, to see family and friends or for purposes other than business or medical treatment.

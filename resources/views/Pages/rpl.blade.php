@@ -254,7 +254,47 @@
         <!-- end container -->
     </section>
     <!-- end testimonials -->
-    <section class="rpl">
+    <section class="clients shadow-0 bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title text-center">OUR RTO PARTNERS</h3>
+                </div>
+                <!-- end col-5 -->
+                <div class="col-12">
+                    <div class="rto-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/UCT.png') }}" alt="Image">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/BRIGHT.png') }}" alt="Image" style="max-width: 120px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/NTA.png') }}" alt="Image" style="max-width: 300px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/ATR.png') }}" alt="Image" style="max-width: 170px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img src="{{ asset('assets/images/rto/alpha.png') }}" alt="Image" style="max-width: 170px !important;">
+                            </div>
+                            <!-- end swiper-slide -->
+                        </div>
+                        <!-- end swiper-wrapper -->
+                    </div>
+                </div>
+                <!-- end col-7 -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <section class="rpl pt-0 shadow-0 bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-12 wow" data-splitting>

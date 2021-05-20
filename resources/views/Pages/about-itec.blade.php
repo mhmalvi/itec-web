@@ -16,16 +16,16 @@
         <!-- end inner -->
     </header>
     <!-- end page-header -->
-    <section class="text-content-block">
+    <section class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title">ITEC builds connections, understanding, and trust between people through
+                    <h3 class="section-title">ITEC Builds Connections, Understanding, and Trust Between People Through
                         education and learning.</h3>
                 </div>
                 <!-- end col-12 -->
                 <div class="col-12 wow" data-splitting>
-                    <h5>We help young people to gain the skills, confidence, and connections they are looking for to realize
+                    <h5>We help people to gain the skills, confidence, and connections they are looking for to realize
                         their potential and to participate in strong and inclusive communities. We support them to learn
                         English, to get a high-quality education, and to gain internationally recognized qualifications. Our
                         work in arts and culture stimulates creative expression and exchange and nurtures creative
@@ -38,52 +38,71 @@
     </section>
     <!-- end text-content-block -->
 
-    <section class="icon-content-block pt-5">
+    <section class="icon-content-block pt-250">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center itec-services">
                 <div class="col-12 wow" data-splitting>
                     <h3 class="section-title">THE THINGS<br>
                         WE ARE ABLE TO DO</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
-                    <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
-                        <h6>IELTS | PTE</h6>
-                        <ul>
-                            <li>Expected Result</li>
-                            <li>Experienced Mentors</li>
-                            <li>Flexible Batch Times
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- end content-block -->
+                <div class="col-lg-3 col-md-3 wow mt-5" data-splitting>
+                    <a href="{{ route('page', 'ielts') }}">
+                        <div class="content-block">
+                            <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
+                            <h6>IELTS | PTE</h6>
+                            <ul>
+                                <li>Expected Result</li>
+                                <li>Experienced Mentors</li>
+                                <li>Flexible Batch Times</li>
+                            </ul>
+                        </div>
+                        <!-- end content-block -->
+                    </a>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
-                    <div class="content-block selected">
-                        <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
-                        <h6>RPL</h6>
-                        <ul>
-                            <li>Get Certified</li>
-                            <li>Boost Your Career</li>
-                            <li>Get Your Dream Job</li>
-                        </ul>
-                    </div>
-                    <!-- end content-block -->
+                <div class="col-lg-3 col-md-3 wow mt-5" data-splitting>
+                    <a href="{{ route('rpl') }}">
+                        <div class="content-block">
+                            <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
+                            <h6>RPL</h6>
+                            <ul>
+                                <li>Get Certified</li>
+                                <li>Boost Your Career</li>
+                                <li>Get Your Dream Job</li>
+                            </ul>
+                        </div>
+                        <!-- end content-block -->
+                    </a>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
-                    <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
-                        <h6>ADMISSION</h6>
-                        <ul>
-                            <li>University Admission</li>
-                            <li>Migration</li>
-                            <li>Travel Visa</li>
-                        </ul>
-                    </div>
-                    <!-- end content-block -->
+                <div class="col-lg-3 col-md-3 wow mt-5" data-splitting>
+                    <a href="{{ route('admission', 'australia') }}">
+                        <div class="content-block">
+                            <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
+                            <h6>ADMISSION</h6>
+                            <ul>
+                                <li>University Admission</li>
+                                <li>Migration</li>
+                                <li>Travel Visa</li>
+                            </ul>
+                        </div>
+                        <!-- end content-block -->
+                    </a>
+                </div>
+                <!-- end col-3 -->
+                <div class="col-lg-3 col-md-3 wow mt-5" data-splitting>
+                    <a href="">
+                        <div class="content-block">
+                            <figure> <img src="{{ asset('assets/images/icon04.png') }}" alt="Image"> </figure>
+                            <h6>TRAINING</h6>
+                            <ul>
+                                <li>Short Courses</li>
+                                <li>Long Qualifications</li>
+                            </ul>
+                        </div>
+                        <!-- end content-block -->
+                    </a>
                 </div>
                 <!-- end col-3 -->
             </div>
@@ -93,138 +112,26 @@
     </section>
     <!-- end icon-content-block -->
 
-    <section class="intro-image mt-5">
-        <div class="container pt-5 mt-5">
-            <div class="row">
-                <div class="col-12">
-                    <div class="office-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <figure class="reveal-effect masker wow"> <img
-                                        src="{{ asset('assets/images/home/1.jpg') }}" alt="Image">
-                                </figure>
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <figure>
-                                    <img src="{{ asset('assets/images/home/2.jpg') }}" alt="Image">
-                                </figure>
-                            </div>
-                            <!-- end swiper-slide -->
-                        </div>
-                        <!-- end swiper-wrapper -->
-                        <div class="swiper-pagination"></div>
-                        <!-- end swiper-pagination -->
-                    </div>
-                    <!-- end office-slider -->
-                </div>
-                <!-- end col-12 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end intro-image -->
-
-    <section class="team">
+        <section class="testimonials">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 wow" data-splitting>
-                    <h3 class="section-title">ALL ABOUT<br>
-                        THE OUR TEAM</h3>
+            <div class="row align-items-center">
+                <div class="col-lg-5 order-lg-12 wow" data-splitting>
+                    <h3 class="section-title">MEET OUR<br>TALENTED TEAM</h3>
+                    <a href="#"></a>
                 </div>
-                <!-- end col-8 -->
-                <div class="col-lg-6 wow" data-splitting>
-                    <h5>We have been working in Australia since 2019. Every year we connect with thousands of students,
-                        educators, policymakers, academics, partners, and civil society.</h5>
+                <!-- end col-6 -->
+                <div class="col-lg-7 order-lg-1">
+                    <img src="{{asset('assets/images/team.jpeg')}}" alt="">
                 </div>
-                <!-- end col-4 -->
-            </div>
-            <!-- end row -->
-            <div class="row">
-                <div class="col">
-                    <figure class="reveal-effect masker wow">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <img src="{{ asset('assets/images/team01.jpg') }}" alt="Image">
-                        <figcaption class="wow" data-splitting>
-                            <h6>Alexander O'neil</h6> <small>EXECUTIVE CHIEF</small>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col -->
-
-                <div class="col">
-                    <figure class="reveal-effect masker wow">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <img src="{{ asset('assets/images/team02.jpg') }}" alt="Image">
-                        <figcaption class="wow" data-splitting>
-                            <h6>Jessica Tanana</h6> <small>SENIOR ENGINEER</small>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col -->
-
-                <div class="col">
-                    <figure class="reveal-effect masker wow">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <img src="{{ asset('assets/images/team03.jpg') }}" alt="Image">
-                        <figcaption class="wow" data-splitting>
-                            <h6>Steven Mc'Laren</h6> <small>CREATIVE HEAD CHIEF</small>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col -->
-                <div class="col">
-                    <figure class="reveal-effect masker wow">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <img src="{{ asset('assets/images/team04.jpg') }}" alt="Image">
-                        <figcaption class="wow" data-splitting>
-                            <h6>Dasha Avdeieva</h6> <small>ACCOUNT MANAGER</small>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col -->
-                <div class="col">
-                    <figure class="reveal-effect masker wow">
-                        <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        </ul>
-                        <img src="{{ asset('assets/images/team05.jpg') }}" alt="Image">
-                        <figcaption class="wow" data-splitting>
-                            <h6>Dmitry Samohin</h6> <small>DIGITAL PRODUCER</small>
-                        </figcaption>
-                    </figure>
-                </div>
-                <!-- end col -->
+                <!-- end col-6 -->
             </div>
             <!-- end row -->
         </div>
         <!-- end container -->
     </section>
-    <!-- end team -->
+    <!-- end testimonials -->
 
-    {{-- new section by riaz --}}
-
-
-    <section class="clients">
+    <section class="clients bg-gray">
         <div class="container">
             <div class="row py-5 px-3">
                 <div class="col-lg-4 offset-lg-1 order-lg-12">

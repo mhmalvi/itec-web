@@ -34,7 +34,7 @@
                         Level 1, 7 Greenfield Pde Bankstown,<br>NSW 2200, Sydney, Australia
                     </address>
                     <address>
-                        <p>+1300 535 922</p>
+                        <p>1300 535 922</p>
                         <a href="javascript:void(0)">info@itecounsel.com</a>
                     </address>
                 </div>
