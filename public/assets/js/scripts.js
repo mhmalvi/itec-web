@@ -417,6 +417,7 @@
 
     //Course Load
     $(".industry-card").slice(0, 3).show();
+    $(".course-card").slice(0, 6).show();
 
     $("#load").on("click", function (e) {
         e.preventDefault();

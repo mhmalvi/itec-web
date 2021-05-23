@@ -30,6 +30,11 @@ class CreateCoursesTable extends Migration
                 ->onDelete('set null')
                 ->onUpdate('cascade');
 
+            $table->unsignedBigInteger('qualification_id')->nullable();
+            $table->foreign('qualification_id')->on('qualifications')
+                ->onDelete('set null')
+                ->onUpdate('cascade');
+
             $table->string('course_code');
             $table->string('course_name');
             $table->text('course_desc')->nullable();

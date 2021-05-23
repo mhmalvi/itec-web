@@ -25,6 +25,7 @@
                 <ul>
                     <li><a href="{{ route('page', 'pte') }}">PTE</a></li>
                     <li><a href="{{ route('page', 'ielts') }}">IELTS</a></li>
+                    <li><a href="{{ route('trainings') }}">TRAININGS</a></li>
                     <li><a href="{{ route('page', 'tourist-visa') }}">TOURIST VISA</a></li>
                 </ul>
             </li>

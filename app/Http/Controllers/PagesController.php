@@ -105,4 +105,15 @@ class PagesController extends Controller
     {
         return Storage::download("public/checklists/{$file}");
     }
+
+
+
+    /**
+     * 
+     */
+    public function training()
+    {
+        $full = Course::with('qualifications')->select('course_name', 'course_code', 'thumbnail')->get();
+        return view('Pages.training', compact('full'));
+    }
 }

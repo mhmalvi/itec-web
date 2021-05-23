@@ -33,6 +33,8 @@ Route::get('rpl', 'PagesController@rpl')->name('rpl');
 Route::get('{slug}/industry', 'PagesController@industry')->name('industry');
 Route::get('{Slug}/course', 'PagesController@course')->name('course.single');
 
+Route::get('trainings', 'PagesController@training')->name('trainings');
+
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
 
 Route::post('book-appointment', 'MailsController@appointment')->name('book.appointment');
