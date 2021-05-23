@@ -218,7 +218,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="inner-text" data-aos="zoom-out">
-                        <h2>The Benefits of RPL</h2>
+                        <h2 class="card-title pb-5">The Benefits of RPL</h2>
                         <p class="text-justify wow bounceInUp">There are many reasons to consider going through the process
                             and applying for Prior Learning Recognition. It may not only cut down on the amount of time you
                             spend studying a
@@ -238,7 +238,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="inner-text" data-aos="zoom-out">
-                        <h2 class="card-title">Who Can Apply for the RPL Process?</h2>
+                        <h2 class="card-title pb-5">Who Can Apply for the RPL Process?</h2>
                         <p class="text-justify wow bounceInUp">Anyone who has previous knowledge, experience, or skills that
                             are relevant to
                             the

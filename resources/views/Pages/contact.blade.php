@@ -14,7 +14,7 @@
         <div class="inner">
             <div class="container">
                 <h1>CONTACT</h1>
-                <p>ITECounsel can help you to get your experience recognised!</p>
+                <p>ITEC can help you to get your experience recognised!</p>
             </div>
             <!-- end container -->
         </div>

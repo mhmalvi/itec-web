@@ -26,14 +26,14 @@
         <!-- end inner -->
     </header>
     <!-- end page-header -->
-    <section class="text-content-block">
+    <section class="intro">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
                     <h3 class="section-title">Let IELTS Take<br>You To The<br>Another Lavel!</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-7 wow" data-splitting>
+                <div class="col-lg-7">
                     <p class="text-justify py-2">
                         ITEC Academy is specialized in IELTS coaching. By working exclusively with the IELTS exam, we are able to deliver great service and quality.  We are the NO.1 IELTS coaching centre in Australia, since we have 1000+ students who have achieved their desired IELTS score.
                     </p>
@@ -54,7 +54,7 @@
         <!-- end container -->
     </section>
     <!-- end text-content-block -->
-    <section class="icon-content-block">
+    <section class="icon-content-block py-5">
         <div class="container mt-5">
             <div class="row justify-content-center mt-5">
                 <div class="col-12 wow" data-splitting>
@@ -101,73 +101,43 @@
                 <!-- end col-3 -->
             </div>
             <!-- end row -->
-
-            <div class="row mt-5 pt-5">
-                <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title">IELTS PREPARATION COURSES</h3>
-                </div>
-                <div class="col-12">
-                    <div class="p-2 text-justify">
-                        <p>
-                            - IELTS prep courses are scheduled for 10 – 12 weeks modules but can be tailored depending on requirements and needs.
-                        </p>
-                    </div>
-                    <div class="p-2 text-justify">
-                        <p>
-                            - IELTS prep courses have a weekly intake every Monday and are scheduled to be either day or evening classes.
-                        </p>
-                    </div>
-                    <div class="p-2 text-justify">
-                        <p>
-                            - The IELTS exam can be taken at anytime, not necessarily at the end of the course. Exams are held all over the world on scheduled dates – anyone can sit the IELTS exam at these scheduled times.
-                        </p>
-                    </div>
-                    <div class="p-2 text-justify">
-                        <p>
-                            - The IELTS certificate is equivalent to TOEFL (more common in North America).
-                        </p>
-                    </div>
-                    <div class="p-2 text-justify">
-                        <p>
-                            - Both certificates are valid for two years (for migration purposes, IELTS – General is valid for three years).
-                        </p>
-                    </div>
-                </div>
-            </div>
         </div>
         <!-- end container -->
     </section>
     <!-- end team -->
-    <section class="clients">
+    <section class="clients bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AGENSY PROUD<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
+                    <h3 class="section-title">IELTS PREPARATION COURSES</h3>
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7">
-                    <ul>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/australia/logo1.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/australia/logo2.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/australia/logo3.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/canada/logo4.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/canada/logo5.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/canada/logo6.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo1.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo2.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo3.png') }}"
-                                alt="Image"> </li>
-                    </ul>
+                    <div class="p-2 text-justify">
+                        <p>
+                            IELTS prep courses are scheduled for 10 – 12 weeks modules but can be tailored depending on requirements and needs.
+                        </p>
+                    </div>
+                    <div class="p-2 text-justify">
+                        <p>
+                            IELTS prep courses have a weekly intake every Monday and are scheduled to be either day or evening classes.
+                        </p>
+                    </div>
+                    <div class="p-2 text-justify">
+                        <p>
+                            The IELTS exam can be taken at anytime, not necessarily at the end of the course. Exams are held all over the world on scheduled dates – anyone can sit the IELTS exam at these scheduled times.
+                        </p>
+                    </div>
+                    <div class="p-2 text-justify">
+                        <p>
+                            The IELTS certificate is equivalent to TOEFL (more common in North America).
+                        </p>
+                    </div>
+                    <div class="p-2 text-justify">
+                        <p>
+                            Both certificates are valid for two years (for migration purposes, IELTS – General is valid for three years).
+                        </p>
+                    </div>
                 </div>
                 <!-- end col-7 -->
             </div>

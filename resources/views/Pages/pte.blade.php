@@ -34,7 +34,7 @@
                     <h3 class="section-title">Let PTE Academic<br>Prepare You<br>For Higher Studies</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-7 wow" data-splitting>
+                <div class="col-lg-7">
                     <p class="text-justify">
                         In ITEC , Our PTE coaching courses are fully computerized. To simulate the real exam environment, we provide all students with desktop computers. With 40 hours of training time, including lectures, videos, and online practice, you will be completely prepared for all four parts of the PTE Academic exam – 
                         Speaking, Writing, Reading, and Listening – in our complete PTE training course (3 weeks).
@@ -51,7 +51,7 @@
 
                     <p class="text-justify">
                         ITEC Academy focuses on PTE preparation. We are able to provide excellent service and consistency. Since we have 1000+ students who have achieved their desired PTE ranking,
-                        we are Australia's No. 1 IELTS coaching center.
+                        we are Australia's No. 1 PTE coaching center.
                     </p>
                 </div>
                 <!-- end col-12	 -->
@@ -61,11 +61,11 @@
         <!-- end container -->
     </section>
     <!-- end text-content-block -->
-    <section class="icon-content-block">
+    <section class="icon-content-block py-5">
         <div class="container mt-5">
             <div class="row justify-content-center mt-5">
                 <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title">WE PROVIDE THE BEST IELTS TRAINING</h3>
+                    <h3 class="section-title">WE PROVIDE THE BEST PTE TRAINING</h3>
                 </div>
                 <div class="col-lg-3 col-md-4 wow" data-splitting>
                     <div class="content-block">
@@ -103,11 +103,16 @@
                 <!-- end col-3 -->
             </div>
             <!-- end row -->
-
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end team -->
+    <section class="clients bg-gray">
+        <div class="container">
             <div class="row mt-5 pt-5">
                 <div class="col-lg-5">
                     <h3 class="section-title text-left wow" data-splitting>
-                        PTE Advance Course <br/> No.1 PTE coaching classes in Sydney
+                        PTE Advance Course No.1 PTE coaching classes in Sydney
                     </h3>
                 </div>
                 <div class="col-lg-7">
@@ -141,44 +146,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end team -->
-    <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
-                    <h3 class="section-title">AGENSY PROUD<br>
-                        IS QUALITY OF<br>
-                        PARTNERS</h3>
-                </div>
-                <!-- end col-5 -->
-                <div class="col-lg-7">
-                    <ul>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/australia/logo1.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/australia/logo2.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/australia/logo3.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/canada/logo4.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/canada/logo5.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/canada/logo6.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo1.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo2.png') }}"
-                                alt="Image"> </li>
-                        <li class="reveal-effect masker wow"> <img src="{{ asset('assets/images/europe/logo3.png') }}"
-                                alt="Image"> </li>
-                    </ul>
-                </div>
-                <!-- end col-7 -->
-            </div>
-            <!-- end row -->
         </div>
         <!-- end container -->
     </section>

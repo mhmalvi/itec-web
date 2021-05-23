@@ -246,7 +246,7 @@
         <!-- end container -->
     </section>
     <!-- end intro-image -->
-    <section class="clients">
+    <section class="clients bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-12 wow" data-splitting>

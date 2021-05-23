@@ -615,7 +615,6 @@
     </section>
     <section class="clients bg-gray">
         <div class="container">
-            <h3 class="section-title text-center">Apply Now</h3>
             <div class="apply">
                 <div class="row">
                     <div class="col-lg-6 px-0 d-none d-sm-block">

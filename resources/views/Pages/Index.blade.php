@@ -257,7 +257,7 @@
                         </p>
                     </div>
                     <div class="p-2 text-justify">
-                        <p><strong>Free counseling</strong></p>
+                        <p><strong>Free Counseling</strong></p>
                         <p>
                             We are a consulting firm that has been offering high-quality services to
                             people who want to research, work, or travel in Australia for many years. We provide free
