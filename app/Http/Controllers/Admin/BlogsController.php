@@ -168,6 +168,36 @@ class BlogsController extends Controller
     }
 
 
+
+    /**
+     * 
+     */
+    public function update(Request $request, $id)
+    {
+        try {
+            $blog = Blog::findOrFail($id);
+
+            $blog->blog_des = $request->details;
+
+            $blog->save();
+
+            $notification = [
+                'message'   =>  'Scuccessfully removed!',
+                'alert-type'    =>  'success'
+            ];
+
+            return back()->with($notification);
+        } catch (\Throwable $th) {
+            $notification = [
+                'message'   =>  'oops! Something went wrong',
+                'alert-type'    =>  'warning'
+            ];
+
+            return back()->with($notification);
+        }
+    }
+
+
     /**
      * @param Slug
      * 
