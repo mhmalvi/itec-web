@@ -34,7 +34,7 @@
         </div>
 
         <div class="row">
-            <div class="col-xs-12 col-lg-2 col-md-2 my-4">
+            <div class="col-xs-12 col-lg-2 col-md-2 my-4 d-none d-sm-block">
                 <div class="footer-logo">
                     <img src="{{ asset('assets/images/logo.png') }}" alt="Image" class="img-fluid">
                 </div>

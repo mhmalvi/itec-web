@@ -590,7 +590,6 @@ textarea {
 }
 .site-navigation .inner ul li {
   display: block;
-  margin: 5px 0;
   padding: 5px 0;
 }
 .site-navigation .inner ul li ul {
@@ -603,7 +602,8 @@ textarea {
   margin: 0;
 }
 .site-navigation .inner ul li ul li a {
-  font-size: 26px;
+  font-size: 22px;
+  padding-left: 15px;
 }
 .site-navigation .inner ul li i {
   margin-left: 20px;
@@ -624,9 +624,10 @@ textarea {
   text-transform: uppercase;
   font-weight: 600;
   transform: translateY(-15px);
+  padding-top: 8px;
 }
 .site-navigation .inner ul li a {
-  font-size: 36px;
+  font-size: 28px;
   display: inline-block;
   font-weight: 800;
   color: #1C375B;
@@ -2753,10 +2754,11 @@ textarea {
 
   .site-navigation .inner ul li {
     line-height: 1;
+    margin: 10px 0px;
   }
 
   .site-navigation .inner ul li a {
-    font-size: 34px;
+    font-size: 24px;
   }
 
   .site-navigation .inner ul li i {
@@ -2773,7 +2775,8 @@ textarea {
   }
 
   .site-navigation .inner ul li ul li a {
-    font-size: 22px;
+    font-size: 18px;
+    padding-left: 15px;
   }
 
   .left-side {
@@ -2899,6 +2902,10 @@ textarea {
   .apply-form{
     margin: 0px 15px;
   }
+
+  .footer .footer-bar{
+    margin-top: 0px !important;
+  }
 }
 /* ANIMATIONS */
 @keyframes texteffect {
@@ -3001,8 +3008,11 @@ textarea {
   text-decoration: none;
 }
 
+
 /*
-* RPL
+========================================================================
+CUSTOM CSS STARTS HERE
+========================================================================
 */
 .rpl {
     width: 100%;
@@ -3452,7 +3462,6 @@ input[type="file"]{
 .itec-list{
   display: block !important;
   margin: 0px!important;
-  list-style: square !important;
 }
 
 .itec-list li{
@@ -3460,7 +3469,6 @@ input[type="file"]{
   width: 100% !important;
   margin: 0 !important;
   padding: 10px 0px !important;
-  list-style: square !important;
 }
 .section-new{
   text-align: left;
@@ -3492,7 +3500,55 @@ input[type="file"]{
   border: 1px solid #1C375B;
   padding: 100px 50px;
 }
+.apply-form .form-control{
+  color: #CD4236;
+}
 .itec-services a{
   text-decoration: none;
   color: #fff;
+}
+
+
+textarea,
+select,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    border-color: #1C375B !important;
+}
+
+
+textarea:focus,
+select:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: rgba(205, 66, 54, 0.8) !important;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 8px rgba(205, 66, 54, 0.6) !important;
+    outline: 0 none !important;
 }
