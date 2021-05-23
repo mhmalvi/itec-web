@@ -590,26 +590,6 @@
                         <img src="{{ asset('assets/images/europe/4.jpg') }}" alt="Image">
                     </figure>
                 </li>
-                <li>
-                    <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/europe/5.jpg') }}" alt="Image">
-                    </figure>
-                </li>
-                <li>
-                    <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/europe/6.jpg') }}" alt="Image">
-                    </figure>
-                </li>
-                <li>
-                    <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/europe/7.jpg') }}" alt="Image">
-                    </figure>
-                </li>
-                <li>
-                    <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/europe/8.jpg') }}" alt="Image">
-                    </figure>
-                </li>
             </ul>
         </div>
     </section>
