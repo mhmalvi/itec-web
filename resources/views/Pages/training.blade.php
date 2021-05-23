@@ -33,7 +33,7 @@
                     <h3 class="section-title">Neque porro quisquam</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="fade-up">
                     <p class="text-justify">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor, sem id faucibus bibendum, 
                         risus orci vestibulum leo, vulputate consequat leo ipsum nec turpis.
@@ -67,7 +67,7 @@
                     <h3 class="section-title text-center">FULL QUALIFICATION COURSES</h3>
                 </div>
                 @forelse ($full as $item)
-                    <div class="col-lg-4 industry-card course-card" data-aos="zoom-in">
+                    <div class="col-lg-4 industry-card course-card" data-aos="fade-up">
                         <a href="{{ route('course.single', $item->course_code) }}">
                             <div class="card mb-3" style="height: 420px;">
                                 <img src="{{ !is_null($item->thumbnail) ? asset('storage/courses/' . $item->thumbnail) : asset('assets/images/1.jpg') }}"

@@ -26,7 +26,7 @@
                     <h3 class="section-title">ABOUT STUDY <br> IN MALAYSIAN <br> UNIVERSITY</h3>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7" data-aos="fade-down">
+                <div class="col-lg-7" data-aos="fade-up">
                     <p class="text-justify">
                         “Malaysia is currently ranked as the world's 11th most preferred study destination by UNESCO.”<br><br>
                         Malaysia's government is dedicated to achieving its goal of transforming the country into a
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="row my-5">
-                <div class="col-lg-12" data-aos="fade-down">
+                <div class="col-lg-12" data-aos="fade-up">
                     <p class="text-center">
                         The Malaysian government monitors the standard of educational institutions by enforcing laws such as
                         the Education Act, the Private Higher Educational Institutions Act, and the Malaysian Qualifications
@@ -62,9 +62,9 @@
                     </p>
                 </div>
             </div>
-            <div class="row align-items-center" data-aos="zoom-in">
+            <div class="row align-items-center">
                 <div class="col-lg-12">
-                    <div class="testimonials-slider">
+                    <div class="testimonials-slider" data-aos="fade-up">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial">
@@ -280,7 +280,7 @@
     </section>
     <section class="clients bg-gray">
         <div class="container">
-            <div class="apply">
+            <div class="apply" data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-6 px-0 d-none d-sm-block">
                         <div>

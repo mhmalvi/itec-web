@@ -26,7 +26,7 @@
                     <h3 class="section-title">ABOUT STUDY <br> IN EUROPIAN <br> UNIVERSITY</h3>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7" data-aos="fade-down">
+                <div class="col-lg-7" data-aos="fade-up">
                     <p class="text-justify">
                         Perhaps the most critical aspect of your decision to visit Europe is learning more about yourself.
                         Once you know what you want to accomplish, you will find the best place in Europe to learn, live,
@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="row my-5">
-                <div class="col-lg-12" data-aos="fade-down">
+                <div class="col-lg-12" data-aos="fade-up">
                     <p class="text-center">
                         International student requirements in Europe differ from country to country and can be influenced by
                         where you are from. We've put together a series of Education Guides for countries around Europe to
@@ -68,7 +68,7 @@
 
 
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Austria</h5>
                                 <p class="card-text">Austria has a long history of higher education and cutting-edge science
@@ -76,7 +76,7 @@
                                     have excellent social security and economic prosperity. </p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Belgium</h5>
                                 <p class="card-text">Belgium has long been regarded as the heart of Western Europe, serving
@@ -85,7 +85,7 @@
                                     settings.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Bulgaria</h5>
                                 <p class="card-text">Bulgaria is a crossroads between East and West. It is the birthplace of
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Croatia</h5>
                                 <p class="card-text">Croatia extends from the Alps' eastern edges in the north to the
@@ -105,7 +105,7 @@
                                     scenery!</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Cyprus</h5>
                                 <p class="card-text">Cyprus is a good place to study because it has over 300 days of
@@ -114,7 +114,7 @@
                                     to study in Cyprus?</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Czech Republic</h5>
                                 <p class="card-text">If you're aiming for a unique European study abroad journey, the Czech
@@ -124,7 +124,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Denmark</h5>
                                 <p class="card-text">Denmark combines old-world Nordic elegance with an avowedly
@@ -133,7 +133,7 @@
                                     in the middle of this created utopia.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Estonia</h5>
                                 <p class="card-text">Few countries could match Estonia's technological advances as one of
@@ -141,7 +141,7 @@
                                     glimpse into the future when they begin their schooling.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Finland</h5>
                                 <p class="card-text">Are you looking for a Nordic experience? Finland is home to some of
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">France</h5>
                                 <p class="card-text">Education in France allows students to immerse themselves in the
@@ -161,7 +161,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Germany</h5>
                                 <p class="card-text">Germany is a highly developed nation with an outstanding standard of
@@ -170,7 +170,7 @@
                                     is both old and new.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Georgia</h5>
                                 <p class="card-text">a small country rich in history and culture and home to Georgian, one
@@ -180,7 +180,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Greece</h5>
                                 <p class="card-text">Spending time in Greece will allow you to not only see the beautiful
@@ -189,7 +189,7 @@
                                     they might be in your home country.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Hungary</h5>
                                 <p class="card-text">Hungary is becoming a more popular study abroad destination,
@@ -198,7 +198,7 @@
                                     learning, take advantage of Hungary!</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Iceland</h5>
                                 <p class="card-text">The egalitarian nature of Icelandic education is well-known. Many
@@ -208,7 +208,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Ireland</h5>
                                 <p class="card-text">dubbed the Emerald Isle for its vibrant nightlife, is known for its
@@ -217,7 +217,7 @@
                                     popular tourist and international student destination.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Italy</h5>
                                 <p class="card-text">Italy is a diverse country in terms of its natural beauty, culture, and
@@ -226,7 +226,7 @@
                                     yourself in Italian culture while studying abroad!</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Latvia</h5>
                                 <p class="card-text">Latvia shares borders with other Baltic countries such as Estonia and
@@ -237,7 +237,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Lithuania</h5>
                                 <p class="card-text">Lithuania (or Litvak) is one of the three Baltic States in Northern
@@ -246,7 +246,7 @@
                                     while studying abroad in Europe.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Luxembourg</h5>
                                 <p class="card-text">Luxembourg has a population of over half a million people, and despite
@@ -255,7 +255,7 @@
                                     below.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Scandinavia</h5>
                                 <p class="card-text">Do you want to learn about Scandinavian culture, see beautiful scenery,
@@ -265,7 +265,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Poland</h5>
                                 <p class="card-text">Do you like diverse nature, cities steeped in history, and delicious
@@ -274,7 +274,7 @@
                                     Poland!</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Portugal</h5>
                                 <p class="card-text">Portugal, a small Mediterranean country, is a diverse and exciting
@@ -283,7 +283,7 @@
                                     forward to a once-in-a-lifetime experience!</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Romania</h5>
                                 <p class="card-text">Romania is a diverse country with something for all, from stunning
@@ -294,7 +294,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Russian</h5>
                                 <p class="card-text">Russian culture today is a dynamic blend of tradition and creativity,
@@ -303,7 +303,7 @@
                                     Palace in St. Petersburg.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Slovakia</h5>
                                 <p class="card-text">Natural landscapes, mountains, caves, medieval castles and cities, folk
@@ -311,7 +311,7 @@
                                     Slovak Republic. As a result, Slovakia is an excellent place to visit when studying.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Spain</h5>
                                 <p class="card-text">Spain is a popular study abroad destination for students from all over
@@ -323,7 +323,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Sweden</h5>
                                 <p class="card-text">Sweden's education system is no exception to the country's openness to
@@ -331,7 +331,7 @@
                                     study in over 1,000 degree programs taught entirely in English.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Switzerland</h5>
                                 <p class="card-text">Switzerland is a small nation with a long tradition of excellence in
@@ -340,7 +340,7 @@
                                     related to your interests.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">Netherland</h5>
                                 <p class="card-text">The Netherlands is a country in Europe that borders Germany and France.
@@ -351,7 +351,7 @@
                         </div>
                     </div>
                     <div class="card-group">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body ">
                                 <h5 class="card-title">Turkey</h5>
                                 <p class="card-text">As an international student in Turkey, you will be able to combine
@@ -360,7 +360,7 @@
                                     standard of education you will get.</p>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent" data-aos="fade-up">
                             <div class="card-body">
                                 <h5 class="card-title">United Kingdom</h5>
                                 <p class="card-text">The United Kingdom (UK) attracts a diverse number of foreign students
@@ -374,7 +374,7 @@
                     {{-- new section by riaz --}}
                 </div>
             </div>
-            <div class="row align-items-center" data-aos="zoom-in">
+            <div class="row align-items-center" data-aos="fade-up">
                 <div class="col-lg-12">
                     <div class="testimonials-slider">
                         <div class="swiper-wrapper">
@@ -615,7 +615,7 @@
     </section>
     <section class="clients bg-gray">
         <div class="container">
-            <div class="apply">
+            <div class="apply" data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-6 px-0 d-none d-sm-block">
                         <div>

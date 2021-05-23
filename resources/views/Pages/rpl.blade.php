@@ -65,7 +65,7 @@
                     <h3 class="section-title">What is Recognition of Prior Learning?</h3>
                 </div>
 
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-up">
                     <p class="text-justify py-2">
                         RPL (Recognition of Prior Learning) is a method that recognizes the skills and
                         abilities you've developed through prior training, which involves both formal and non-formal
@@ -159,7 +159,7 @@
                     <h3 class="section-title text-center">The Recognition of Prior Learning Process</h3>
                 </div>
 
-                <p class="text-center py-5">
+                <p class="text-center py-5" data-aos="fade-up">
                     The process varies by provider, but all must adhere to the AQF's policy of providing
                     a
                     consistent and open process in which every student is properly considered. In most cases, a
@@ -217,7 +217,7 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="inner-text" data-aos="zoom-out">
+                    <div class="inner-text" data-aos="fade-up">
                         <h2 class="card-title pb-5">The Benefits of RPL</h2>
                         <p class="text-justify wow bounceInUp">There are many reasons to consider going through the process
                             and applying for Prior Learning Recognition. It may not only cut down on the amount of time you
@@ -237,7 +237,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="inner-text" data-aos="zoom-out">
+                    <div class="inner-text" data-aos="fade-up">
                         <h2 class="card-title pb-5">Who Can Apply for the RPL Process?</h2>
                         <p class="text-justify wow bounceInUp">Anyone who has previous knowledge, experience, or skills that
                             are relevant to
@@ -262,7 +262,7 @@
                 </div>
                 <!-- end col-5 -->
                 <div class="col-12">
-                    <div class="rto-slider">
+                    <div class="rto-slider" data-aos="fade-up">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="{{ asset('assets/images/rto/UCT.png') }}" alt="Image">
@@ -301,7 +301,7 @@
                     <h3 class="section-title text-center">OUR RTO PARTNERS OFFERS</h3>
                 </div>
                 @forelse ($industries as $item)
-                    <div class="col-lg-4 col-md-4 my-2 industry-card">
+                    <div class="col-lg-4 col-md-4 my-2 industry-card" data-aos="fade-up">
                         <div class="rpl-card reveal-effect masker wow">
                             <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
                                 alt="">

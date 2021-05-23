@@ -24,7 +24,7 @@
                         education and learning.</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-12 wow" data-splitting>
+                <div class="col-12" data-aos="fade-up">
                     <h5>We help people to gain the skills, confidence, and connections they are looking for to realize
                         their potential and to participate in strong and inclusive communities. We support them to learn
                         English, to get a high-quality education, and to gain internationally recognized qualifications. Our
@@ -46,7 +46,7 @@
                         WE ARE ABLE TO DO</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-3 col-md-3 wow mt-5" data-splitting>
+                <div class="col-lg-3 col-md-3 mt-5" data-aos="fade-up">
                     <a href="{{ route('page', 'ielts') }}">
                         <div class="content-block">
                             <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
@@ -61,7 +61,7 @@
                     </a>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3 wow mt-5" data-splitting>
+                <div class="col-lg-3 col-md-3 mt-5" data-aos="fade-up">
                     <a href="{{ route('rpl') }}">
                         <div class="content-block">
                             <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
@@ -76,7 +76,7 @@
                     </a>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3 wow mt-5" data-splitting>
+                <div class="col-lg-3 col-md-3 mt-5" data-aos="fade-up">
                     <a href="{{ route('admission', 'australia') }}">
                         <div class="content-block">
                             <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
@@ -91,7 +91,7 @@
                     </a>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3 wow mt-5" data-splitting>
+                <div class="col-lg-3 col-md-3 mt-5" data-aos="fade-up">
                     <a href="">
                         <div class="content-block">
                             <figure> <img src="{{ asset('assets/images/icon04.png') }}" alt="Image"> </figure>
@@ -120,7 +120,7 @@
                     <a href="#"></a>
                 </div>
                 <!-- end col-6 -->
-                <div class="col-lg-7 order-lg-1">
+                <div class="col-lg-7 order-lg-1" data-aos="fade-up">
                     <img src="{{asset('assets/images/team.jpeg')}}" alt="">
                 </div>
                 <!-- end col-6 -->
@@ -133,12 +133,12 @@
 
     <section class="clients bg-gray">
         <div class="container">
-            <div class="row py-5 px-3">
+            <div class="row py-5 px-3" data-aos="fade-up">
                 <div class="col-lg-4 offset-lg-1 order-lg-12">
                     <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
                 </div>
                 <!-- end col-7 -->
-                <div class="col-lg-7 order-lg-1 py-3">
+                <div class="col-lg-7 order-lg-1 py-3" data-aos="fade-up">
                     <h2 class="text-left">
                         We are committed to maintaining our leadership role in international education by
                         providing the best resources, information, facilities, and products for international students.
@@ -159,11 +159,11 @@
 
 
             <div class="row py-5 mt-3 px-3">
-                <div class="col-lg-4" data-splitting>
+                <div class="col-lg-4" data-aos="fade-up">
                     <img src="{{ asset('assets/images/123.jpg') }}" alt="Image">
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7 offset-lg-1 py-3">
+                <div class="col-lg-7 offset-lg-1 py-3" data-aos="fade-up">
                     <h2 class="text-left">
                         ITEC quickly gained a reputation for providing high-quality Australian immigration visa services
                     </h2>

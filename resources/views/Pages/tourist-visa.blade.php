@@ -26,7 +26,7 @@
                     <h3 class="section-title">A Certified Visa Processing Agency In Bangladesh</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="fade-up">
                     <p class="text-justify">
                         We are offering a wide variation of packages at affordable prices so that you get to spend another
                         exciting vacation with your family, friends or loved ones that you have always desired.
@@ -62,7 +62,7 @@
                     <h3 class="section-title text-left">DOCUMENTS REQUIRED FOR AUSTRALIA VISA</h3>
                 </div>
 
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="fade-up">
                     <ul class="itec-list text-justify">
                         <li>Original Passport with at least 6 months validity and minimum 3 blank pages + all old passports if any; Notarized copy of all pages of only current passport, including the bio data page, alterations page and back page of the passport.</li>
                         <li>Australia Visa Application form.</li>
@@ -93,7 +93,7 @@
                 <div class="col-12 wow" data-splitting>
                     <h3 class="section-title">WE PROVIDE THE BEST IELTS TRAINING</h3>
                 </div>
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/ielts/calendar.png') }}" alt="Image"> </figure>
                         <h6>DURATION</h6>
@@ -105,7 +105,7 @@
                 </div>
                 <!-- end col-3 -->
                 <!-- end col-12 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block selected">
                         <figure> <img src="{{ asset('assets/images/ielts/money.png') }}" alt="Image"> </figure>
                         <h6>FEES</h6>
@@ -116,7 +116,7 @@
                     <!-- end content-block -->
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/ielts/location.png') }}" alt="Image"> </figure>
                         <h6>LOCATION</h6>
@@ -140,7 +140,7 @@
                     <h3 class="section-title">FREQUENTLY ASKED QUESTIONS</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-8">
+                <div class="col-lg-8" data-aos="fade-up">
                     <div class="py-2 text-justify">
                         <p><strong>Who needs a visa for Australia?</strong></p>
                         <p>

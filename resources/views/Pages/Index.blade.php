@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7 wow">
+                <div class="col-lg-7" data-aos="fade-up">
                     <p class="text-justify">
                         Choosing to study abroad is a life-changing choice, and gaining an Australian qualification,
                         studying English, or earning a diploma or university degree would provide you with excellent work
@@ -125,7 +125,7 @@
                         WE ARE ABLE TO DO</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-3 col-md-3 wow" data-splitting>
+                <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="{{ route('page', 'ielts') }}">
                         <div class="content-block">
                             <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
@@ -140,7 +140,7 @@
                     </a>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3 wow" data-splitting>
+                <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="{{ route('rpl') }}">
                         <div class="content-block">
                             <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
@@ -155,7 +155,7 @@
                     </a>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3 wow" data-splitting>
+                <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="{{ route('admission', 'australia') }}">
                         <div class="content-block">
                             <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
@@ -170,7 +170,7 @@
                     </a>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3 wow" data-splitting>
+                <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="">
                         <div class="content-block">
                             <figure> <img src="{{ asset('assets/images/icon04.png') }}" alt="Image"> </figure>
@@ -189,7 +189,7 @@
 
             <div class="section-new">
                 <div class="row py-5">
-                    <div class="col-lg-5 wow" data-splitting>
+                    <div class="col-lg-5" data-aos="fade-up">
                         <h2>Study, Travel, Work and Immigrate in Australia </h2>
                         <br>
                         <p>
@@ -201,7 +201,7 @@
 
                     </div>
                     <!-- end col-5 -->
-                    <div class="col-lg-7 wow">
+                    <div class="col-lg-7" data-aos="fade-up">
 
                         <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
 
@@ -213,11 +213,11 @@
                 <div class="py-5"></div>
 
                 <div class="row py-5">
-                    <div class="col-lg-5 wow" data-splitting>
+                    <div class="col-lg-5" data-aos="fade-up">
                         <img src="{{ asset('assets/images/123.jpg') }}" alt="Image">
                     </div>
                     <!-- end col-5 -->
-                    <div class="col-lg-7 wow">
+                    <div class="col-lg-7" data-aos="fade-up">
                         <h2>We help international students to: </h2>
                         <br>
                         <ul>
@@ -246,7 +246,7 @@
                 <div class="col-lg-4 wow" data-splitting>
                     <h2 class="section-title text-left">Free Study in Australia Service</h2>
                 </div>
-                <div class="col-lg-7 offset-lg-1">
+                <div class="col-lg-7 offset-lg-1" data-aos="fade-up">
                     <div class="p-2 text-justify">
                         <p><strong>Free Study in Australia</strong></p>
                         <p>
@@ -291,11 +291,11 @@
                     <a href="#"></a>
                 </div>
                 <!-- end col-6 -->
-                <div class="col-lg-7 order-lg-1">
+                <div class="col-lg-7 order-lg-1" data-aos="fade-up">
                     <div class="testimonials-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <div class="testimonial wow" data-splitting>
+                                <div class="testimonial">
                                     <blockquote>ITEC is the best way towards your IELTS career. They provide the best
                                         lectures on cracking IELTS easily. A good Library is what a student needs and they
                                         have a well-maintained library. I suggest this academy & visa consultancy for your
@@ -366,7 +366,7 @@
                     <h3 class="section-title text-center">OUR RTO PARTNERS</h3>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up">
                     <div class="rto-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -408,7 +408,7 @@
                     <h3 class="section-title text-center">OUR RTO PARTNERS OFFERS</h3>
                 </div>
                 @forelse ($industries as $item)
-                    <div class="col-lg-4 col-md-4 my-2 industry-card">
+                    <div class="col-lg-4 col-md-4 my-2 industry-card" data-aos="fade-up">
                         <div class="rpl-card reveal-effect masker wow">
                             <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
                                 alt="">

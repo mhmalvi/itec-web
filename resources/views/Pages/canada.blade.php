@@ -31,7 +31,7 @@
                     <h3 class="section-title">ABOUT STUDY <br> IN CANADIAN <br> UNIVERSITY</h3>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7" data-aos="fade-down">
+                <div class="col-lg-7" data-aos="fade-up">
                     <p class="text-justify">
                         Because of Canada's strong academic standards and stringent quality controls, you'll receive a
                         high-quality education that will pave the way for your future and support your career in the long
@@ -54,7 +54,7 @@
                 </div>
             </div>
             <div class="row my-5">
-                <div class="col-lg-12" data-aos="fade-down">
+                <div class="col-lg-12" data-aos="fade-up">
                     <p class="text-center">
                         Every year, over 200,000 foreign students come to Canada to further their studies. Look no further
                         than Canada for a world-class education in an English-speaking country with a high standard of
@@ -64,9 +64,9 @@
                     </p>
                 </div>
             </div>
-            <div class="row align-items-center" data-aos="zoom-in">
+            <div class="row align-items-center">
                 <div class="col-lg-12">
-                    <div class="testimonials-slider">
+                    <div class="testimonials-slider" data-aos="fade-up">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial">
@@ -315,7 +315,7 @@
     </section>
     <section class="clients bg-gray">
         <div class="container">
-            <div class="apply">
+            <div class="apply" data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-6 px-0 d-none d-sm-block">
                         <div>

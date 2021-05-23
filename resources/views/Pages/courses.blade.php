@@ -22,7 +22,7 @@
                 <div class="col-lg-9">
                     <div class="row">
                         @forelse ($courses as $item)
-                            <div class="col-lg-6" data-aos="zoom-in">
+                            <div class="col-lg-6" data-aos="fade-up">
                                 <a href="{{ route('course.single', $item->course_code) }}">
                                     <div class="card mb-3" style="height: 420px;">
                                         <img src="{{ !is_null($item->thumbnail) ? asset('storage/courses/' . $item->thumbnail) : asset('assets/images/1.jpg') }}"
@@ -48,7 +48,7 @@
                             <ul class="categories">
                                 @forelse ($industries as $item)
                                     @if ($item->slug !== request()->segment(1))
-                                        <li><span>{{ count($item->courses) }}</span>
+                                        <li data-aos="fade-up"><span>{{ count($item->courses) }}</span>
                                             <a href="{{ route('industry', $item->slug) }}">{{ $item->title }}</a>
                                         </li>
                                     @endif

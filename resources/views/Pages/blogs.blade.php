@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-lg-9">
                     @forelse ($blogs as $item)
-                        <div class="post">
+                        <div class="post" data-aos="fade-up">
                             <figure class="post-image">
                                 <img src="{{ asset('storage/blogs/' . $item->thumbnailTwo) }}" alt="Image">
                             </figure>
@@ -58,10 +58,10 @@
                 <div class="col-lg-3">
                     <aside class="sidebar">
                         <div class="widget">
-                            <h4 class="title">INDUSTRIES</h4>
+                            <h4 class="title wow" data-splitting>INDUSTRIES</h4>
                             <ul class="categories">
                                 @forelse ($industries as $item)
-                                    <li><span>{{ count($item->courses) }}</span>
+                                    <li data-aos="fade-up"><span>{{ count($item->courses) }}</span>
                                         <a href="{{ route('industry', $item->slug) }}">{{ $item->title }}</a>
                                     </li>
                                 @empty

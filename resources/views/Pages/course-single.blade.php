@@ -48,7 +48,7 @@
                         COMPLETED IN 4 STEPS</h3>
                 </div>
                 <!-- end col-12	 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>01</small>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up"> <small>01</small>
                     <h6>Free Skills Assessment</h6>
                     <p>
                         Speak to Skills Certified Australia about your goals, and allow us to guide you towards the
@@ -56,7 +56,7 @@
                     </p>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>02</small>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up"> <small>02</small>
                     <h6>Portfolio of Experience</h6>
                     <p>
                         Your dedicated consultant will guide you through the process of putting together a portfolio of
@@ -65,14 +65,14 @@
                     </p>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>03</small>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up"> <small>03</small>
                     <h6>Evidence Review</h6>
                     <p>Once one of our partner registered training organisations (RTOs) has assessed your portfolio, the
                         assessor assigned to your case may be in touch if any additional evidence is required. If you have
                         any weak areas, the RTO may assign a trainer to upskill you at no cost to you.</p>
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-6 wow" data-splitting> <small>04</small>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up"> <small>04</small>
                     <h6>You’re qualified!</h6>
                     <p>Skills Certified Australia is partnered with Registered Training Organisations whose qualifications
                         are nationally recognised in Australia, and are the same as the qualification you would receive from
@@ -88,7 +88,7 @@
     <section class="intro-image light">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-up">
                     <figure class="post-image text-center">
                         <img src="{{ !is_null($course->thumbnail) ? asset('storage/courses/' . $course->thumbnail) : asset('assets/images/1.jpg') }}"
                             alt="Image">
@@ -99,7 +99,7 @@
             <!-- end row -->
             <div class="row justify-content-center my-4 text-light">
                 <div class="col-md-10">
-                    <div id="accordion" class="w-100 pt-5 accordion">
+                    <div id="accordion" class="w-100 pt-5 accordion" data-aos="fade-up">
                         <div class="card rounded-0">
                           <div class="card-header" id="headingOne">
                             <h5 class="mb-0">

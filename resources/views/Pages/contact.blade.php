@@ -24,11 +24,11 @@
     <section class="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 wow" data-splitting>
                     <h3 class="section-title">SAY HELLO <br>TO REACH US</h3>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
                     <h6>HEAD OFFICE</h6>
                     <address>
                         Level 1, 7 Greenfield Pde Bankstown,<br>NSW 2200, Sydney, Australia
@@ -39,7 +39,7 @@
                     </address>
                 </div>
                 <!-- end col-4 -->
-                <div class="col-lg-3 col-md-6">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up">
                     <h6>OFFSHORE BRANCH</h6>
                     <address>
                         Level -7, 8/C, F.R Tower, PanthaPath,<br>Dhaka - 1207, Bangladesh
@@ -56,7 +56,7 @@
                 <div class="card-body p-0">
                     <div class="row">
                         <!-- end col-5 -->
-                        <div class="col-lg-6 pr-5 contact-card-inner">
+                        <div class="col-lg-6 pr-5 contact-card-inner" data-aos="fade-up">
                             <form id="contactForm">
                                 <ul id="errors"></ul>
                                 <div class="form-group">

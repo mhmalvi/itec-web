@@ -39,7 +39,7 @@
 
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="inner-text" data-aos="zoom-out">
+                    <div class="inner-text" data-aos="fade-up">
                         <p class="text-justify wow bounceInUp">
                             You can sign up for a contract with our licensed migration consultant after our initial consultation (online/email/face-to-face consultation) for Australian migration services. 
                             We'll take care of it for you and prepare your application accordingly. 
@@ -48,7 +48,7 @@
                     </div>
                 </div>   
                 <div class="col-lg-4">
-                    <div class="inner-text" data-aos="zoom-out">
+                    <div class="inner-text" data-aos="fade-up">
                         <p class="text-justify wow bounceInUp">
                             As your case-processor, one dedicated member of staff will be assigned to you. 
                             Our team will continue to assist you at every phase of the process, including training, qualifications evaluation, and filing with the Department of Immigration and Border Protection.
@@ -56,7 +56,7 @@
                     </div>
                 </div>   
                 <div class="col-lg-4">
-                    <div class="inner-text" data-aos="zoom-out">
+                    <div class="inner-text" data-aos="fade-up">
                         <p class="text-justify wow bounceInUp">
                             We use sophisticated migration process, this system helps with collecting all necessary information, fill the necessary DIBP Forms and we also provide a safe and confidential portal. 
                             The portal system allows our clients to safely & securely attach their documents (ready for submission to Department of Immigration). 
@@ -78,7 +78,7 @@
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-8">
-                    <div class="inner-text mt-0" data-aos="zoom-out">
+                    <div class="inner-text mt-0" data-aos="fade-up">
                         <p class="text-justify wow bounceInUp">
                             We've been counselling students for educational Opportunity in Foreign countries.
                             <br/>
@@ -101,7 +101,7 @@
     </section>
     <section class="clients bg-gray">
         <div class="container">
-            <div class="apply">
+            <div class="apply" data-aos="fade-up">
                 <div class="row">
                     <div class="col-lg-6 px-0 d-none d-sm-block">
                         <div>

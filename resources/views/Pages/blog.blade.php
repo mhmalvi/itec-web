@@ -25,7 +25,7 @@
     </header>
     <!-- end page-header -->
     <section class="blog">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="post single">

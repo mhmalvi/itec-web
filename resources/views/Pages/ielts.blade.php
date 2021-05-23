@@ -33,7 +33,7 @@
                     <h3 class="section-title">Let IELTS Take<br>You To The<br>Another Lavel!</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-up">
                     <p class="text-justify py-2">
                         ITEC Academy is specialized in IELTS coaching. By working exclusively with the IELTS exam, we are able to deliver great service and quality.  We are the NO.1 IELTS coaching centre in Australia, since we have 1000+ students who have achieved their desired IELTS score.
                     </p>
@@ -60,7 +60,7 @@
                 <div class="col-12 wow" data-splitting>
                     <h3 class="section-title">WE PROVIDE THE BEST IELTS TRAINING</h3>
                 </div>
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/ielts/calendar.png') }}" alt="Image"> </figure>
                         <h6>DURATION</h6>
@@ -73,7 +73,7 @@
                 </div>
                 <!-- end col-3 -->
                 <!-- end col-12 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block selected">
                         <figure> <img src="{{ asset('assets/images/ielts/money.png') }}" alt="Image"> </figure>
                         <h6>FEES</h6>
@@ -85,7 +85,7 @@
                     <!-- end content-block -->
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/ielts/location.png') }}" alt="Image"> </figure>
                         <h6>LOCATION</h6>
@@ -112,7 +112,7 @@
                     <h3 class="section-title">IELTS PREPARATION COURSES</h3>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-up">
                     <div class="p-2 text-justify">
                         <p>
                             IELTS prep courses are scheduled for 10 – 12 weeks modules but can be tailored depending on requirements and needs.

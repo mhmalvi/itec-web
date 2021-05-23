@@ -34,7 +34,7 @@
                     <h3 class="section-title">Let PTE Academic<br>Prepare You<br>For Higher Studies</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-up">
                     <p class="text-justify">
                         In ITEC , Our PTE coaching courses are fully computerized. To simulate the real exam environment, we provide all students with desktop computers. With 40 hours of training time, including lectures, videos, and online practice, you will be completely prepared for all four parts of the PTE Academic exam – 
                         Speaking, Writing, Reading, and Listening – in our complete PTE training course (3 weeks).
@@ -67,7 +67,7 @@
                 <div class="col-12 wow" data-splitting>
                     <h3 class="section-title">WE PROVIDE THE BEST PTE TRAINING</h3>
                 </div>
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/ielts/calendar.png') }}" alt="Image"> </figure>
                         <h6>DURATION</h6>
@@ -79,7 +79,7 @@
                 </div>
                 <!-- end col-3 -->
                 <!-- end col-12 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block selected">
                         <figure> <img src="{{ asset('assets/images/ielts/money.png') }}" alt="Image"> </figure>
                         <h6>FEES</h6>
@@ -90,7 +90,7 @@
                     <!-- end content-block -->
                 </div>
                 <!-- end col-3 -->
-                <div class="col-lg-3 col-md-4 wow" data-splitting>
+                <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
                         <figure> <img src="{{ asset('assets/images/ielts/location.png') }}" alt="Image"> </figure>
                         <h6>LOCATION</h6>
@@ -115,7 +115,7 @@
                         PTE Advance Course No.1 PTE coaching classes in Sydney
                     </h3>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-7" data-aos="fade-up">
                     <div class="p-2 text-justify">
                         <p><strong>Target PTE Score:</strong> 65+, 79+</p>
                     </div>
