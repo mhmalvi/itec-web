@@ -432,6 +432,21 @@
             2500
         );
     });
+
+    $(".short-card").slice(0, 6).show();
+    $("#load2").on("click", function (e) {
+        e.preventDefault();
+        $(".short-card:hidden").slice(0, 3).slideDown();
+        if ($(".short-card:hidden").length == 0) {
+            $("#load2").css('visibility', 'hidden');
+        }
+        $("html,body").animate(
+            {
+                scrollTop: $(this).offset().top,
+            },
+            2500
+        );
+    });
 })(jQuery);
 
 document.getElementById("year").innerHTML = new Date().getFullYear();

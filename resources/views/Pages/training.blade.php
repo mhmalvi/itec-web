@@ -90,6 +90,37 @@
             </div>
         </div>
         <!-- end container -->
+
+
+        <div class="container pt-15">
+            <div class="row">
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title text-center">SHORT COURSES</h3>
+                </div>
+                @forelse ($short as $item)
+                    <div class="col-lg-4 industry-card short-card" data-aos="fade-up">
+                        <a href="{{ route('course.single', $item->course_code) }}">
+                            <div class="card mb-3" style="height: 420px;">
+                                <img src="{{ !is_null($item->thumbnail) ? asset('storage/courses/' . $item->thumbnail) : asset('assets/images/1.jpg') }}"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $item->course_code }}-{{ $item->course_name }}
+                                    </h5>
+                                </div>
+                            </div>
+                        </a>
+                        <!-- end post -->
+                    </div>
+                @empty
+
+                @endforelse
+            </div>
+
+                <div class="d-flex justify-content-center">
+                <button type="button" id="load2">Load More</button>
+            </div>
+        </div>
+        <!-- end container -->
     </section>
     <!-- end blog -->
 @endsection

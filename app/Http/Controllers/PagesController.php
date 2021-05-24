@@ -113,7 +113,8 @@ class PagesController extends Controller
      */
     public function training()
     {
-        $full = Course::with('qualifications')->select('course_name', 'course_code', 'thumbnail')->get();
-        return view('Pages.training', compact('full'));
+        $full = Course::with('qualifications')->select('course_name', 'course_code', 'thumbnail')->where('qualification_id', '1')->get();
+        $short = Course::with('qualifications')->select('course_name', 'course_code', 'thumbnail')->where('qualification_id', '2')->get();
+        return view('Pages.training', compact('full', 'short'));
     }
 }

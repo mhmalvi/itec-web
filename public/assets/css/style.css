@@ -3399,7 +3399,7 @@ input[type="file"]{
   display: none;
 }
 
-#load{
+#load, #load2{
   margin: 25px auto;
   padding: 15px 30px;
   border: transparent;
@@ -3551,4 +3551,8 @@ input[type="color"]:focus,
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
     0 0 8px rgba(205, 66, 54, 0.6) !important;
     outline: 0 none !important;
+}
+
+.pt-15{
+  padding-top: 15rem !important;
 }
