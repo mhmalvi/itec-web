@@ -64,12 +64,12 @@ body {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   background: #F2F2F2;
-  -webkit-touch-callout: none;
+  /* -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
+  user-select: none; */
 }
 
 /* HTML ELEMENTS */
@@ -938,7 +938,17 @@ textarea {
 .left-side .hamburger {
   margin: auto;
 }
-.left-side .follow-us {
+.left-side .follow-us,
+.rpl-link {
+  width: 100px;
+  font-family: "Fjalla One", sans-serif;
+  color: #fff;
+  text-align: center;
+  transform: rotate(-90deg);
+  margin: auto;
+  cursor: pointer;
+}
+.left-side  {
   width: 100px;
   font-family: "Fjalla One", sans-serif;
   color: #fff;
@@ -3578,6 +3588,11 @@ input[type="color"]:focus,
 .popup h2{
   font-size: 48px !important;
   font-weight: 600 !important;
+}
+.popup-title p span {
+    color: #CD4236 !important;
+    font-size: 1.2rem !important;
+    font-weight: 600;
 }
 .popup-form .form-group label{
   color: #fff!important;
