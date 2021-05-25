@@ -9,7 +9,7 @@
         <div class="inner">
             <div class="container">
                 <h1>About us</h1>
-                <p>Iternational Training & Education Counsel</p>
+                <p>International Training & Education Counsel</p>
             </div>
             <!-- end container -->
         </div>

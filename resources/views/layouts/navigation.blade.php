@@ -17,6 +17,7 @@
                     <li><a href="{{ route('admission', 'malaysia') }}">STUDY IN MALAYSIA</a></li>
                 </ul>
             </li>
+            <li><a href="{{ route('trainings') }}">TRAININGS</a><small>Learn about trainigs</small></li>
             <li>
                 <div class="nav-tree">
                     <a href="#">OTHER SERVICES</a><i class="fas fa-caret-down"></i>
@@ -25,7 +26,6 @@
                 <ul>
                     <li><a href="{{ route('page', 'pte') }}">PTE</a></li>
                     <li><a href="{{ route('page', 'ielts') }}">IELTS</a></li>
-                    <li><a href="{{ route('trainings') }}">TRAININGS</a></li>
                     <li><a href="{{ route('page', 'tourist-visa') }}">TOURIST VISA</a></li>
                 </ul>
             </li>

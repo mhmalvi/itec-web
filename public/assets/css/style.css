@@ -3556,3 +3556,50 @@ input[type="color"]:focus,
 .pt-15{
   padding-top: 15rem !important;
 }
+.modal-dialog {
+    width: 600px !important;
+}
+.modal-content {
+  background: #1C375B !important;
+}
+.modal-body {
+    border: 2px solid #CD4236 !important;
+}
+.modal-content{
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+.popup-img{
+  position: relative !important;
+}
+.popup-title{
+  color: #fff !important;
+  text-align: center !important;
+}
+.popup h2{
+  font-size: 48px !important;
+  font-weight: 600 !important;
+}
+.popup-form .form-group label{
+  color: #fff!important;
+}
+.popup-form button[type="submit"]{
+  border: 1px solid #CD4236 !important;
+}
+.popup-form button[type="submit"]:hover{
+  background: #CD4236 !important;
+}
+.popup-form .btn-popup {
+  display: flex;
+  justify-content: center;
+}
+.popup{
+  position: absolute !important;
+  z-index: 1000 !important;
+  right: 10px !important;
+  top: 8px !important;
+  color: #fff !important;
+}
+.close{
+    text-shadow: none !important;
+    opacity: 1 !important;
+}

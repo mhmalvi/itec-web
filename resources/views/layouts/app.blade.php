@@ -91,6 +91,8 @@
     </main>
     <!-- end main -->
 
+    {{-- //popup add --}}
+    @include('layouts.popup')
 
     @include('layouts.footer')
     <!-- end footer -->
