@@ -2,7 +2,7 @@
         <h1 class="text-center text-light">Check Your Eligibility Now</h1>
     </div>
     <div class="container rpl-form">
-        <form action="">
+        <form action="" class="rpl-form-main">
             <div class="row form-group">
                 <div class="col-md-12">
                     <input type="text" class="form-control" name="fullname" placeholder="Please enter your full name"
