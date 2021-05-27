@@ -54,11 +54,11 @@ class BlogsController extends Controller
             if (($request->hasFile('thumbnail')) && ($request->hasFile('img'))) {
                 //Get the file name without extension
                 $thumb = $request->file('thumbnail');
-                $thumbName = pathinfo($thumb->getClientOriginalName(), PATHINFO_FILENAME);
+                $thumbName = trim(pathinfo($thumb->getClientOriginalName(), PATHINFO_FILENAME));
                 $ext = $thumb->getClientOriginalExtension();
 
                 $image = $request->file('img');
-                $imageName = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
+                $imageName = trim(pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME));
                 $ext = $image->getClientOriginalExtension();
 
                 $random = uniqid();
@@ -70,7 +70,7 @@ class BlogsController extends Controller
                 if (!Storage::exists("public/blogs")) {
                     Storage::makeDirectory("public/blogs");
                 }
-                Storage::putFileAs('public/blogs', $image, $newThumb);
+                Storage::putFileAs('public/blogs', $thumb, $newThumb);
                 Storage::putFileAs('public/blogs', $image, $newImg);
             }
 
@@ -86,13 +86,12 @@ class BlogsController extends Controller
                 'isPublished' => ($request->publish === 'on') ? 1 : 0
             ]);
 
-            // dd($blog);
 
-            if ($request->filled('meta_tags')) {
+            if ($request->filled('meta_tags') && $request->has('meta_tags')) {
                 $this->tags($request->meta_tags, $blog->id);
             }
 
-            if ($request->filled('meta_keys')) {
+            if ($request->filled('meta_keys') && $request->has('meta_keys')) {
                 $this->keywords($request->meta_keys, $blog->id);
             }
 
@@ -174,22 +173,73 @@ class BlogsController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $slug = SlugService::createSlug(Blog::class, 'blog_slug', $request->blog_title);
+        $category = BlogCategory::where('title', $request->category_id)->first();
+
         try {
             $blog = Blog::findOrFail($id);
 
+            $blog->blog_categories_id = $category->id;
+            $blog->blog_title = $request->blog_title;
+            $blog->blog_slug = $slug;
             $blog->blog_des = $request->details;
+            $blog->meta_des = $request->meta_des;
+            $blog->isPublished = ($request->publish === 'on') ? 1 : 0;
+
+            if (($request->hasFile('thumbnail'))) {
+                //Get the file name without extension
+                $thumb = $request->file('thumbnail');
+                $thumbName = trim(pathinfo($thumb->getClientOriginalName(), PATHINFO_FILENAME));
+                $ext = $thumb->getClientOriginalExtension();
+
+                $random = uniqid();
+
+                $newThumb = "{$thumbName}_{$random}.{$ext}";
+
+                $blog->thumbnailTwo = $newThumb;
+
+                Storage::delete('public/blogs', $blog->thumbnailTwo);
+
+                Storage::putFileAs('public/blogs', $thumb, $newThumb);
+            }
+
+            if (($request->hasFile('img'))) {
+                //Get the file name without extension
+                $image = $request->file('img');
+                $imageName = trim(pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME));
+                $ext = $image->getClientOriginalExtension();
+
+                $random = uniqid();
+
+                $newImg = "{$imageName}_{$random}.{$ext}";
+
+                $blog->thumbnailOne = $newImg;
+
+                Storage::delete('public/blogs', $blog->thumbnailOne);
+
+                Storage::putFileAs('public/blogs', $image, $newImg);
+            }
+
+
+            if ($request->filled('meta_tags') && $request->has('meta_tags')) {
+                $this->tags($request->meta_tags, $blog->id);
+            }
+
+            if ($request->filled('meta_keys') && $request->has('meta_keys')) {
+                $this->keywords($request->meta_keys, $blog->id);
+            }
 
             $blog->save();
 
             $notification = [
-                'message'   =>  'Scuccessfully removed!',
+                'message'   =>  'Scuccessfully updated',
                 'alert-type'    =>  'success'
             ];
 
-            return back()->with($notification);
+            return redirect()->route('admin.blogs')->with($notification);
         } catch (\Throwable $th) {
             $notification = [
-                'message'   =>  'oops! Something went wrong',
+                'message'   =>  $th->getMessage(),
                 'alert-type'    =>  'warning'
             ];
 

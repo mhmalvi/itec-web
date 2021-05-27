@@ -297,10 +297,9 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial">
-                                    <blockquote>ITEC is the best way towards your IELTS career. They provide the best
-                                        lectures on cracking IELTS easily. A good Library is what a student needs and they
-                                        have a well-maintained library. I suggest this academy & visa consultancy for your
-                                        better future.</blockquote>
+                                    <blockquote>
+                                        Great course and comes with great value! I strongly recommend it for anyone who wants to take higer study!
+                                    </blockquote>
                                     <div class="reviewer"> <img src="{{ asset('assets/images/a1.jpg') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
@@ -315,9 +314,9 @@
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
                                 <div class="testimonial">
-                                    <blockquote>I have been pursuing my IELTS course from ITEC. This is the best
-                                        preparing classes I have ever found. One of the best IELTS coaching in Sydney,
-                                        Australia. Personalize attention, small group size. </blockquote>
+                                    <blockquote>
+                                        Thank you ITEC for helping me. Your Pconsultency was excellent. Best instructor ever! I recommend this interested in higher study! 
+                                    </blockquote>
                                     <div class="reviewer"> <img src="{{ asset('assets/images/a4.jpg') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
@@ -332,13 +331,64 @@
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
                                 <div class="testimonial">
-                                    <blockquote>The university I apply for had all the language requirements, so I took
-                                        IELTS. Considering the fact that I started for it with ITEC. With a very basic level
-                                        of writing, I eventually passed the test with my expected result.</blockquote>
+                                    <blockquote>
+                                        That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam. 
+                                    </blockquote>
                                     <div class="reviewer"> <img src="{{ asset('assets/images/a6.jpg') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
                                             <h6>DEW ANTHONY GOMES</h6>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam. 
+                                    </blockquote>
+                                    <div class="reviewer"> <img src="{{ asset('assets/images/a6.jpg') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>DEW ANTHONY GOMES</h6>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        Consulting with ITEC was pure pleasure! They were friendly and concerned. I was so glad I chose them to help me with my higher study.
+                                    </blockquote>
+                                    <div class="reviewer"> <img src="{{ asset('assets/images/a6.jpg') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>Anthony Jhon</h6>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        Very knowledgeable and helpful company when it comes to higher study and IELTS preparation 
+                                    </blockquote>
+                                    <div class="reviewer"> <img src="{{ asset('assets/images/a6.jpg') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>RIAZ HOSSAIN</h6>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
