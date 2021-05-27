@@ -33,11 +33,23 @@ Route::get('rpl', 'PagesController@rpl')->name('rpl');
 Route::get('{slug}/industry', 'PagesController@industry')->name('industry');
 Route::get('{Slug}/course', 'PagesController@course')->name('course.single');
 
-Route::get('trainings', 'PagesController@training')->name('trainings');
+Route::prefix('trainings')->group(function () {
+    Route::get('/', 'PagesController@training')->name('trainings');
+    Route::name('trainings.')->group(function () {
+        Route::get('full-qualifications', 'PagesController@fullQualifications')->name('full');
+        Route::get('short-courses', 'PagesController@shortCourses')->name('short');
+    });
+});
 
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
 
+/**
+ * Forms
+ * Response send to mail
+ * admission@itecounsel.com
+ */
 Route::post('book-appointment', 'MailsController@appointment')->name('book.appointment');
+Route::post('check-eligibility', 'EligibilityController@action')->name('check.eligibility');
 
 
 Route::get('testMail', 'MailsController@testMail');

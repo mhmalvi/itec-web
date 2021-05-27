@@ -113,8 +113,35 @@ class PagesController extends Controller
      */
     public function training()
     {
-        $full = Course::with('qualifications')->select('course_name', 'course_code', 'thumbnail')->where('qualification_id', '1')->limit(6);
-        $short = Course::with('qualifications')->select('course_name', 'course_code', 'thumbnail')->where('qualification_id', '2')->limit(6);
+        $columns = ['course_name', 'course_code', 'thumbnail'];
+
+        $full = Course::with('qualifications')->select($columns)->where('qualification_id', 1)->limit(6)->get();
+        $short = Course::with('qualifications')->select($columns)->where('qualification_id', 2)->limit(6)->get();
+
         return view('Pages.training', compact('full', 'short'));
+    }
+
+
+    /**
+     * 
+     */
+    public function fullQualifications()
+    {
+        $columns = ['course_name', 'course_code', 'thumbnail'];
+        $full = Course::with('qualifications')->select($columns)->where('qualification_id', '1')->paginate(12);
+
+        return view('Pages.fullQualifications', compact('full'));
+    }
+
+
+    /**
+     * 
+     */
+    public function shortCourses()
+    {
+        $columns = ['course_name', 'course_code', 'thumbnail'];
+        $short = Course::with('qualifications')->select($columns)->where('qualification_id', '2')->paginate(12);
+
+        return view('Pages.shortCourses', compact('short'));
     }
 }

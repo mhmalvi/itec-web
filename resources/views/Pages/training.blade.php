@@ -86,7 +86,7 @@
             </div>
             <!-- end row -->
             <div class="d-flex justify-content-center">
-                <button type="button" id="load">Load More</button>
+                <a href="{{route('trainings.full')}}" class="btn btn-outline-primary">View All</a>
             </div>
         </div>
         <!-- end container -->
@@ -115,9 +115,8 @@
 
                 @endforelse
             </div>
-
-                <div class="d-flex justify-content-center">
-                <button type="button" id="load2">Load More</button>
+            <div class="d-flex justify-content-center">
+                <a href="{{route('trainings.short')}}" class="btn btn-outline-primary">View All</a>
             </div>
         </div>
         <!-- end container -->

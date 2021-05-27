@@ -34,6 +34,7 @@ class MailsController extends Controller
             'phone' => 'required|string|max:50',
             'msg' => 'max:255'
         ]);
+
         if ($validator->fails()) {
             return response()->json([
                 'error' => $validator->errors()->all(),
