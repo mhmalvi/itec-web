@@ -13,7 +13,7 @@
 
     @stack('meta-description')
 
-    <title>ITECounsel</title>
+    <title>ITEC-International Training and Education Counsel</title>
 
     @include('layouts.styles')
 </head>

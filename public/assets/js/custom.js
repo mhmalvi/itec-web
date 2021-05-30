@@ -51,4 +51,30 @@ $(document).ready(function () {
             $(this).text("Social Share").fadeIn("slow");
         });
     });
+
+
+
+    /**
+     * Form Submit
+     * 
+     */
+    $("#subscribe").on("submit", function (e) {
+        e.preventDefault();
+
+        var email = $(this).find('input').val();
+        
+        $.ajax({
+            url: 'api/subscribe',
+            method: 'POST',
+            data: {email: email},
+            dataType: 'json',
+            success: function (data) {
+                if (data.status == 422) {
+                    for (const error in data.errors) {
+                        console.log(data.errors[error]);
+                    }
+                }
+            }
+        })
+    });
 });

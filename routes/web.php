@@ -33,7 +33,7 @@ Route::get('rpl', 'PagesController@rpl')->name('rpl');
 Route::get('{slug}/industry', 'PagesController@industry')->name('industry');
 Route::get('{Slug}/course', 'PagesController@course')->name('course.single');
 
-Route::prefix('trainings')->group(function () {
+Route::prefix('training')->group(function () {
     Route::get('/', 'PagesController@training')->name('trainings');
     Route::name('trainings.')->group(function () {
         Route::get('full-qualifications', 'PagesController@fullQualifications')->name('full');

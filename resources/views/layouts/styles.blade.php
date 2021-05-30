@@ -8,3 +8,4 @@
 <link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
 @stack('css')
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/mobile.css') }}">

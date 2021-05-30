@@ -12,11 +12,10 @@
                     <div class="col-xs-12">
                         <h1>TRAININGS</h1>
                         <br>
-                        <h1 class="heading-secondary">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</h1>
+                        <h1 class="heading-secondary pr-4">Complete different training courses from our expert trainer</h1>
                         <br>
-                        <p class="text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor, sem id faucibus bibendum, risus orci vestibulum leo, vulputate consequat leo ipsum nec turpis.
-                            Suspendisse sem sem, vehicula ut diam sed, pharetra condimentum arcu. Morbi ultricies ullamcorper orci et consectetur.
+                        <p class="text-justify pr-4">
+                            Make your previous job experience into a successful career in growing industries like; IT, Business, Beauty, Construction, or the Healthcare sector.
                         </p>
                     </div>
                 </div>
@@ -29,29 +28,18 @@
     <section class="intro">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 wow" data-splitting>
-                    <h3 class="section-title">Neque porro quisquam</h3>
+                <div class="col-12 wow" data-splitting>
+                    <h3 class="section-title text-center">Our professional trainer is ready to serve your demand</h3>
                 </div>
                 <!-- end col-12 -->
-                <div class="col-lg-8" data-aos="fade-up">
+                <div class="col-lg-12" data-aos="fade-up">
                     <p class="text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor, sem id faucibus bibendum, 
-                        risus orci vestibulum leo, vulputate consequat leo ipsum nec turpis.
+                        Are you a job holder and just looking for a better job, but got rejected repeatedly for no certificate or soft skills? 
+                        Then you already step into the right place to develop your working power and knowledge with our specialized training season.
                     </p>
-                    <br>
                     <p class="text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor, sem id faucibus bibendum, 
-                        risus orci vestibulum leo, vulputate consequat leo ipsum nec turpis.
-                    </p>
-                    <br>
-                    <p class="text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor, sem id faucibus bibendum, 
-                        risus orci vestibulum leo, vulputate consequat leo ipsum nec turpis.
-                    </p>
-                    <br>
-                    <p class="text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempor, sem id faucibus bibendum, 
-                        risus orci vestibulum leo, vulputate consequat leo ipsum nec turpis.
+                        We are here to achieve nationally recognized training through Recognition of Prior Learning (RPL) assessment. Get the training & get qualified for a decent and secure job.
+                        Don't worry, ITEC Australia is now providing lots of different training courses within your limited budget.
                     </p>
                 </div>
                 <!-- end col-12	 -->

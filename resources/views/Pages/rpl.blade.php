@@ -129,7 +129,7 @@
     <section class="testimonials">
         <div class="container justify-content-center">
             <div class="row">
-                <div class="col-xs-12 d-block d-sm-none mx-auto">
+                <div class="col-xs-12 d-block d-sm-none mx-auto px-3">
                     <div class="border">
                         <div class="p-3">
                             <h3 class="text-center text-light">GET IN TOUCH</h3>
@@ -159,7 +159,7 @@
                     <h3 class="section-title text-center">The Recognition of Prior Learning Process</h3>
                 </div>
 
-                <p class="text-center py-5" data-aos="fade-up">
+                <p class="text-center py-5 px-3" data-aos="fade-up">
                     The process varies by provider, but all must adhere to the AQF's policy of providing
                     a
                     consistent and open process in which every student is properly considered. In most cases, a

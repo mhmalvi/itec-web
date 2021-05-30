@@ -17,7 +17,7 @@
                     <li><a href="{{ route('admission', 'malaysia') }}">STUDY IN MALAYSIA</a></li>
                 </ul>
             </li>
-            <li><a href="{{ route('trainings') }}">TRAININGS</a><small>Learn about trainigs</small></li>
+            <li><a href="{{ route('trainings') }}">TRAINING</a><small>Learn about trainigs</small></li>
             <li>
                 <div class="nav-tree">
                     <a href="#">OTHER SERVICES</a><i class="fas fa-caret-down"></i>
