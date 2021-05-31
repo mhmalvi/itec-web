@@ -10,14 +10,15 @@
           <div class="popup-title">
             <h2 class="">SUBSCRIBE</h2>
             <p>To get <span>$100</span> off</p>
+            <small id="success" class="text-success"></small>
           </div>
           <form class="popup-form" id="subscribe">
             <div class="form-group">
               <input type="email" id="email" name="email" class="form-control form-control-lg" type="text" placeholder="Enter your email address">
-              <small class="text-danger"></small>
+              <small id="err" class="text-danger"></small>
             </div>
             <div class="btn-popup">
-              <button type="submit">Submit</button>
+              <button type="submit" id="sub">Submit</button>
             </div>
           </form>
         </div>

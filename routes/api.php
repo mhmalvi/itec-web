@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('subscribe', 'SubscribesController@subscribe');
+Route::post('rpl', 'MailsController@rpl');

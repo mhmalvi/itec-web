@@ -71,9 +71,35 @@ $(document).ready(function () {
             success: function (data) {
                 if (data.status == 422) {
                     for (const error in data.errors) {
-                        console.log(data.errors[error]);
+                        $("#err").text(data.errors[error]);
                     }
                 }
+
+                if (data.status == 200) {
+                    $("#subscribe").trigger("reset");
+                    $("#success").text(data.success);
+                    setInterval(() => {
+                        $("#exampleModalCenter").modal("hide");
+                    }, 500);
+                }
+            }
+        })
+    });
+
+
+
+    $("#form-rpl").on('submit', function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: 'api/rpl',
+            method: 'POST',
+            data:$(this).serialize(),
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (err) {
+                alert("One or more field is required")
             }
         })
     });

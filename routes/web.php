@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::view('test', 'mails.rpl');
+
 
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('{page}', 'PagesController')
