@@ -12,15 +12,17 @@ class RplMail extends Mailable
     use Queueable, SerializesModels;
 
     public $data;
+    public $filePath;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($data)
+    public function __construct($data, $filePath)
     {
         $this->data = $data;
+        $this->filePath = $filePath;
     }
 
     /**
@@ -30,6 +32,14 @@ class RplMail extends Mailable
      */
     public function build()
     {
-        return $this->subject($this->data['name'] . 'has requested for eligibility check')->view('mails.rpl');
+        $email = $this->subject($this->data['name'] . 'has requested for eligibility check')->view('mails.rpl');
+
+        if (count($this->filePath) > 0) {
+            foreach ($this->filePath as $path) {
+                $email->attach($path);
+            }
+        }
+
+        return $email;
     }
 }

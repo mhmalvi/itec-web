@@ -22,66 +22,14 @@
 
 </script>
 
-<script>
-    $(document).ready(function() {
-        $("#industry").on("change", function() {
-            var title = $(this).val();
-
-            if (title == 'other') {
-                $(".other_ind").slideDown("slow").css('display', 'block');
-            }else{
-                $.ajax({
-                    url: "{!! route('get.course') !!}",
-                    method: "POST",
-                    data: {
-                        title: title
-                    },
-                    dataType: "json",
-                    success: function(res) {
-                        var option =
-                            "<option disabled selected value>Choose your preffered course...</option>";
-                        if (res.status == 200) {
-                            res.data.map((data) => {
-
-                                var title = data.Course;
-
-                                option +=
-                                    '<option value="'+title+'">'+title+'</option>';
-                            });
-
-                            $("#courses").html(option);
-                        }
-                    }
-                })
-            }
-        });
-
-        $("#courses").on("change", function() {
-            if ($(this).val() == 'other') {
-                $(".other_course").slideDown("slow").css('display', 'block');
-            }
-        });
-    });
-
-
-    $(document).ready(function(){
-        $(window).on('load', function(){
-            setTimeout(() => {
-                $("#exampleModalCenter").modal('show');
-            }, 2800);
-        })
-    })
-
-</script>
-
 
 <script>
     toastr.options = {
         "closeButton": true,
         "debug": false,
         "newestOnTop": true,
-        "progressBar": true,
-        "positionClass": "toast-bottom-right",
+        "progressBar": false,
+        "positionClass": "toast-bottom-left",
         "preventDuplicates": false,
         "onclick": null,
         "showDuration": "300",

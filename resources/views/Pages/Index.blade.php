@@ -491,3 +491,6 @@
     </section>
     <!-- end clients -->
 @endsection
+@push('js')
+    <script src="{{asset('assets/js/rpl.js')}}"></script>
+@endpush

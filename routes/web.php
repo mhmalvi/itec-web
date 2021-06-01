@@ -26,7 +26,6 @@ Route::get('admission/{page}', 'AdmissionsController')
 
 
 Route::get('{slug}/courses', 'CourseController@index')->name('courses');
-Route::post('get-course-by-industry', 'CourseController@getCourseByIndustry')->name('get.course');
 
 Route::get('blogs', 'PagesController@blogs')->name('blogs');
 Route::get('blog/{slug}', 'PagesController@blogDetail')->name('blog.detail');

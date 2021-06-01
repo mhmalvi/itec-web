@@ -9,7 +9,7 @@ use App\Jobs\SendEmailJob;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AppointmentMail;
 use App\Mail\RplMail;
-use App\Models\Course;
+use Illuminate\Support\Facades\Storage;
 
 class MailsController extends Controller
 {
@@ -66,8 +66,10 @@ class MailsController extends Controller
     /**
      * 
      */
-    public function rpl(Request $request)
+    public function rpl(RplFormRequest $request)
     {
+        $filePath = [];
+
         $data = [
             'name' => $request->name,
             'email' => $request->email,
@@ -78,11 +80,36 @@ class MailsController extends Controller
             'work_location' => $request->work_location,
             'designation' => $request->designation,
             'industry' => $request->industry,
-            'course' => $request->course,
-            'remark' => $request->question
+            'course' => $request->courses,
+            'remark' => $request->remark
         ];
 
-        // Mail::to('dev.quadque@gmail.com')->send(new RplMail($data));
+        if ($request->hasFile('files') && count($request->file('files')) > 0) {
+            $files = $request->file('files');
+
+            foreach ($files as $file) {
+                $fileName = $file->getClientOriginalName();
+                /**
+                 * Check if derectory exist or not
+                 * Create a new directory if not exist
+                 */
+
+                if (!Storage::exists("public/rpl")) {
+                    Storage::makeDirectory("public/rpl");
+                }
+
+                //store image into storage directory
+                Storage::putFileAs('public/rpl/', $file, $fileName);
+
+                array_push($filePath, public_path('storage/rpl/' . $fileName));
+            }
+        }
+
+        Mail::to('dev.quadque@gmail.com')->send(new RplMail($data, $filePath));
+
+        if ($request->hasFile('files') && count($request->file('files')) > 0) {
+            Storage::delete('public/rpl/' . $fileName);
+        }
 
         return response()->json(['sucess' => 'sucess'], 200);
     }

@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    $(window).on('load', function(){
+        setTimeout(() => {
+            $("#exampleModalCenter").modal('show');
+        }, 2800);
+    })
+
+    
     //Mouse Hover
     $("#fb").mouseenter(function () {
         $("#socialLayer").addClass('facebook');
@@ -82,24 +89,6 @@ $(document).ready(function () {
                         $("#exampleModalCenter").modal("hide");
                     }, 500);
                 }
-            }
-        })
-    });
-
-
-
-    $("#form-rpl").on('submit', function (e) {
-        e.preventDefault();
-        $.ajax({
-            url: 'api/rpl',
-            method: 'POST',
-            data:$(this).serialize(),
-            dataType: 'json',
-            success: function (data) {
-                console.log(data);
-            },
-            error: function (err) {
-                alert("One or more field is required")
             }
         })
     });
