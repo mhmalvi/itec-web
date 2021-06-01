@@ -157,4 +157,42 @@ class CoursesController extends Controller
             return back()->with($notification);
         }
     }
+
+
+    public function edit($id)
+    {
+        $course = Course::findOrFail($id);
+        $categories = CourseCategory::all();
+        $industries = CourseIndustry::all();
+        return view('admin.course.update', compact('course', 'categories', 'industries'));
+    }
+
+
+
+    public function update(Request $request, $id)
+    {
+        try {
+            $course = Course::findOrFail($id);
+
+            $course->course_desc = $request->details;
+            $course->rto = $request->rto;
+
+            $course->save();
+
+            $notification = [
+                'message'   =>  'Successfully Saved.',
+                'alert-type'    =>  'success'
+            ];
+
+            return back()->with($notification);
+        } catch (\Throwable $th) {
+            $notification = [
+                // 'message'   =>  'oops! Something went wrong',
+                'message' => $th->getMessage(),
+                'alert-type'    =>  'warning'
+            ];
+
+            return back()->with($notification);
+        }
+    }
 }

@@ -73,8 +73,13 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
 
     Route::prefix('course')->group(function () {
         Route::get('/all', 'Admin\CoursesController@index')->name('course');
-        Route::get('add-new', 'Admin\CoursesController@create')->name('course.add');
         Route::post('add-new', 'Admin\CoursesController@store');
+
+        Route::name('course.')->group(function () {
+            Route::get('add-new', 'Admin\CoursesController@create')->name('add');
+            Route::get('{id}', 'Admin\CoursesController@edit')->name('edit');
+            Route::put('/update/{id}', 'Admin\CoursesController@update')->name('update');
+        });
 
         Route::post('add-category', 'Admin\CoursesController@createCategory')->name('category.add');
         Route::post('add-industry', 'Admin\CoursesController@createIndustry')->name('industry.add');

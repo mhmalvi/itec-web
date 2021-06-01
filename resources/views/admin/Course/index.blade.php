@@ -25,6 +25,7 @@
                                         <th>Course Code</th>
                                         <th>Course Title</th>
                                         <th>Posted at</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
 
@@ -34,6 +35,11 @@
                                             <td>{{ $item->course_code }}</td>
                                             <td>{{ $item->course_name }}</td>
                                             <td>{{ $item->created_at }}</td>
+                                            <td>
+                                                <a href="{{route('admin.course.edit', $item->id)}}" class="btn btn-sm btn-outline-info">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                            </td>
                                         </tr>
                                     @empty
 
