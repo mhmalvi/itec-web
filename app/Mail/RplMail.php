@@ -32,7 +32,7 @@ class RplMail extends Mailable
      */
     public function build()
     {
-        $email = $this->subject($this->data['name'] . 'has requested for eligibility check')->view('mails.rpl');
+        $email = $this->subject($this->data['name'] . ' has requested for eligibility check')->view('mails.rpl');
 
         if (count($this->filePath) > 0) {
             foreach ($this->filePath as $path) {
