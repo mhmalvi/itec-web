@@ -3,6 +3,7 @@ $(document).ready(function () {
         var title = $(this).val();
 
         if (title == 'other') {
+            $(".courses").slideUp("slow").css('display', 'none');
             $(".other_ind").slideDown("slow").css('display', 'block');
             $(".other_course").slideDown("slow").css('display', 'block');
         }else{
@@ -25,6 +26,11 @@ $(document).ready(function () {
                                 '<option value="'+title+'">'+title+'</option>';
                         });
 
+                        if ($(".courses").css('display') == 'none') {
+                            $(".courses").slideDown("slow").css('display', 'block');
+                            $(".other_ind").slideUp("slow").css('display', 'none');
+                            $(".other_course").slideUp("slow").css('display', 'none');
+                        }
                         $("#courses").html(option);
                     }
                 }
@@ -36,7 +42,7 @@ $(document).ready(function () {
     /**
      * Form Response
      */
-    $("#form-rpl").on('submit', function (e) {
+    $("#msform").on('submit', function (e) {
         e.preventDefault();
         const fd = new FormData();
         fd.append('name', $("#name").val());

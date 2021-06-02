@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    $(window).on('load', function(){
-        setTimeout(() => {
-            $("#exampleModalCenter").modal('show');
-        }, 2800);
-    })
+    // $(window).on('load', function(){
+    //     setTimeout(() => {
+    //         $("#exampleModalCenter").modal('show');
+    //     }, 2800);
+    // })
 
     
     //Mouse Hover

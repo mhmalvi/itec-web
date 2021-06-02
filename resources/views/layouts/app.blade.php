@@ -72,7 +72,7 @@
         <div class="layer"></div>
         <!-- end layer -->
         <div class="inner">
-            @include('components.rplForm')
+            @include('components.rpl')
         </div>
         <!-- end inner -->
     </div>

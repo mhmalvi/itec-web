@@ -183,29 +183,9 @@ input[type="file"] {
     border-radius: .25rem;
 }
 
-.rpl-form ::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: rgba(255, 255, 255, 0.2);
-    opacity: 1;
-    /* Firefox */
-}
-
-.rpl-form :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: rgba(255, 255, 255, 0.2);
-}
-
-.rpl-form ::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: rgba(255, 255, 255, 0.2);
-}
 
 .rpl-form select {
     color: rgba(255, 255, 255, 0.2);
-}
-
-.rpl-form option {
-    color: #fff;
 }
 
 .rpl-form select option:first-child {
