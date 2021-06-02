@@ -30,7 +30,7 @@
                 <div class="col-lg-10">
                     <div class="post single">
                         <figure class="post-image">
-                            <img src="{{ !is_null($blog->thumbnailOne) ? asset('public/storage/blogs/' . $blog->thumbnailOne) : asset('assets/images/blog/blog.jpg') }}"
+                            <img src="{{ !is_null($blog->thumbnailOne) ? asset('storage/blogs/' . $blog->thumbnailOne) : asset('assets/images/blog/blog.jpg') }}"
                                 alt="Image">
                         </figure>
                         <div class="post-content">
@@ -39,7 +39,7 @@
                             </small>
                             <h3 class="post-title">{{ $blog->blog_title }}</h3>
                             <div class="post-author">
-                                <img src="{{ asset($blog->user->photo ? 'punlic/storage/users/' . $blog->user->photo : 'admin/images/profile.png') }}"
+                                <img src="{{ asset($blog->user->photo ? 'storage/users/' . $blog->user->photo : 'admin/images/profile.png') }}"
                                     alt="Image">
                                 <span>by: {{ $blog->user->name }}</span>
                             </div>
