@@ -7,6 +7,7 @@
 <script src="{{ asset('assets/js/odometer.min.js') }}"></script>
 <script src="{{ asset('assets/js/fancybox.min.js') }}"></script>
 <script src="{{ asset('assets/js/aos.js') }}"></script>
+<script src="{{ asset('assets/loaders/loaders.css.js') }}"></script>
 <script src="https://kit.fontawesome.com/95f7b9ac36.js" crossorigin="anonymous"></script>
 <!-- Toastr -->
 <script src="{{ asset('admin/js/plugins/toastr/toastr.min.js') }}"></script>

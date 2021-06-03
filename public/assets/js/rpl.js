@@ -78,7 +78,7 @@ $(document).ready(function () {
                 $("#btn-submit").prop('disabled', true);
             },
             success: function (data) {
-                $("#form-rpl").trigger("reset");
+                $("#msform").trigger("reset");
                 $("#btn-submit").html('Submit');
                 $("#btn-submit").prop('disabled', false);
                 toastr.success('Your response has been recorded. Thank you', 'success');
@@ -90,4 +90,6 @@ $(document).ready(function () {
             }
         })
     });
+
+    $('.loader-inner').loaders()
 })

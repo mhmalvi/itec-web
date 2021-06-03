@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="{{ asset('assets/css/swiper.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/aos.css') }}">
-<link href="{{ asset('admin/css/plugins/toastr/toastr.min.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('assets/loaders/loaders.min.css') }}">
+<link rel="stylesheet" href="{{ asset('admin/css/plugins/toastr/toastr.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/multiForm.css') }}">

@@ -94,7 +94,9 @@
                             <textarea id="remark" class="form-control" rows="5" placeholder="Do you have any question?"></textarea>
                         </div> 
                         <button type="button" class="previous rpl-btn">Previous</button> 
-                        <button type="submit" class="rpl-btn" id="btn-submit">Submit</button>
+                        <button type="submit" class="rpl-btn" id="btn-submit">
+                            Submit
+                        </button>
                     </fieldset>
                 </form>
             </div>
