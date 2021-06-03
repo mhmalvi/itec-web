@@ -603,7 +603,9 @@
                         </div>
                     </div>
                     <div class="col-lg-6 apply-form">
+                        <ul id="errors"></ul>
                         <form id="migration-form" name="contact" method="post">
+                            <input type="hidden" name="study" value="Applying For Study in Europe">
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" id="name" autocomplete="off"
                                     placeholder="Enter Your Name" required />
@@ -625,7 +627,7 @@
                             </div>
                             <!-- end form-group -->
                             <div class="form-group">
-                                <input type="text" class="form-control" name="nationality" id="nationality"
+                                <input type="text" class="form-control" name="qualification" id="qualification"
                                     placeholder="Enter Your Desired Qualification Name" autocomplete="off" required />
                             </div>
                             <!-- end form-group -->
@@ -642,3 +644,40 @@
     </section>
     <!-- end clients -->
 @endsection
+@push('js')
+    <script>
+        $("#migration-form").on("submit", function(e) {
+            e.preventDefault();
+            $.ajax({
+                url: "{{url('api/apply-now')}}",
+                method: "POST",
+                data: $(this).serialize(),
+                dataType: "json",
+                beforeSend: function() {
+                    $("#submit").text('Please Wait...').fadeIn("slow");
+                    $("#submit").prop('disabled', true);
+                },
+                success: function(data) {
+                    $("#migration-form").trigger('reset');
+                    toastr.success("Your response is recorded!", "success");
+                    $("#submit").text('Send');
+                    $("#submit").prop('disabled', false);
+                },
+                error: function(err){
+                    let errors = err.responseJSON.errors;
+                    var errorList = "";
+                    for (const error in errors) {
+                        errors[error].map(res => {
+                            errorList += `<li class="text-danger">${res}</li>`;
+                        });
+                    }
+                    setTimeout(function() {
+                        $("#errors").html(errorList);
+                        $("#submit").text('Send');
+                        $("#submit").prop('disabled', false);
+                    }, 3000);
+                }
+            });
+        })
+    </script>
+@endpush
