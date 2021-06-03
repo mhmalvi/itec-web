@@ -113,6 +113,25 @@ class BlogsController extends Controller
     }
 
 
+
+    /**
+     * Share image in blog body
+     */
+    public function shareimg(Request $request)
+    {
+        if ($request->hasFile('file')) {
+            $fileName = $request->file('file')->getClientOriginalName();
+
+            $request->file('file')->move(public_path('blogImages'), $fileName);
+
+            $url = asset('blogImages/' . $fileName);
+
+
+            return response()->json(['location' => $url])->header('content-type', 'application/json');
+        }
+    }
+
+
     /**
      * Save Meta Tags
      * 
