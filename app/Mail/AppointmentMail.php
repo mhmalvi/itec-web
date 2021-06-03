@@ -30,9 +30,6 @@ class AppointmentMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Test Mail')->view('Pages.appointment')
-            ->with([
-                'Name' => $this->data->Name
-            ]);
+        return $this->subject($this->data['Name'] . " has request for appointment")->view('mails.appointment');
     }
 }

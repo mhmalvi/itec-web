@@ -68,7 +68,7 @@
                                         placeholder="Enter Your Email Address">
                                 </div>
                                 <div class="form-group">
-                                    <input id="phone" class="form-control" type="text" name="phone"
+                                    <input id="phone" class="form-control" type="text" name="contact"
                                         placeholder="Enter Your Cantact Number">
                                 </div>
                                 <div class="form-group">
@@ -143,24 +143,33 @@
             e.preventDefault();
 
             $.ajax({
-                url: "{!! route('book.appointment') !!}",
+                url: "api/book-appointment",
                 method: "POST",
                 data: $(this).serialize(),
                 dataType: "json",
                 beforeSend: function() {
-                    $("#form-submit").text('Sending');
+                    $("#form-submit").text('Please Wait...').fadeIn("slow");
+                    $("#form-submit").prop('disabled', true);
                 },
                 success: function(data) {
-                    if (data.status == 422) {
-                        var errors = "";
-                        data.error.map((err) => {
-                            errors += `<li class="text-danger">${err}</li>`;
-                        })
-                        setTimeout(function() {
-                            $("#errors").html(errors);
-                            $("#form-submit").text('Send');
-                        }, 3000);
+                    $("#contactForm").trigger('reset');
+                    toastr.success("Your response is recorded!", "success");
+                    $("#form-submit").text('Send');
+                    $("#form-submit").prop('disabled', false);
+                },
+                error: function(err){
+                    let errors = err.responseJSON.errors;
+                    var errorList = "";
+                    for (const error in errors) {
+                        errors[error].map(res => {
+                            errorList += `<li class="text-danger">${res}</li>`;
+                        });
                     }
+                    setTimeout(function() {
+                        $("#errors").html(errorList);
+                        $("#form-submit").text('Send');
+                        $("#form-submit").prop('disabled', false);
+                    }, 3000);
                 }
             });
         })

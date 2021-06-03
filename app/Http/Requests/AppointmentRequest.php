@@ -26,7 +26,8 @@ class AppointmentRequest extends FormRequest
         return [
             'name' => 'required|string|max:100',
             'email' => 'required|email',
-            'phone' => 'required|string|max:50',
+            'contact' => 'required|string|max:50',
+            'msg' => 'max:255'
         ];
     }
 }

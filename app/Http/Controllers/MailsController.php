@@ -2,9 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AppointmentRequest;
 use App\Http\Requests\RplFormRequest;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Http\Request;
 use App\Jobs\SendEmailJob;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AppointmentMail;
@@ -29,26 +28,12 @@ class MailsController extends Controller
     /**
      * 
      */
-    public function appointment(Request $request)
+    public function appointment(AppointmentRequest $request)
     {
-        $validator = Validator::make($request->all(), [
-            'name' => 'required|string|max:100',
-            'email' => 'required|email',
-            'phone' => 'required|string|max:50',
-            'msg' => 'max:255'
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'error' => $validator->errors()->all(),
-                'status' => 422
-            ]);
-        }
-
         $data = [
             'Name' => $request->name,
             'Email' => $request->email,
-            'Phone' => $request->phone,
+            'Phone' => $request->contact,
             'Date' => $request->date,
             'Msg' => $request->msg
         ];
@@ -57,8 +42,8 @@ class MailsController extends Controller
         Mail::to('dev.quadque@gmail.com')->send(new AppointmentMail($data));
 
         return response()->json([
-            'status' => 200
-        ]);
+            'status' => 'Success'
+        ], 200);
     }
 
 

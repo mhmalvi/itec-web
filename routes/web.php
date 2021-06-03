@@ -44,14 +44,6 @@ Route::prefix('training')->group(function () {
 
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
 
-/**
- * Forms
- * Response send to mail
- * admission@itecounsel.com
- */
-Route::post('book-appointment', 'MailsController@appointment')->name('book.appointment');
-Route::post('check-eligibility', 'EligibilityController@action')->name('check.eligibility');
-
 
 Route::get('testMail', 'MailsController@testMail');
 
