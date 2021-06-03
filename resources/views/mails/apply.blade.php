@@ -65,54 +65,30 @@
                 <tbody>
                     <tr>
                         <td colspan="2" align="center">
-                            <h2 style="color: #CD4236;">Request For Recognition of Prior Learning Eligibility Check</h2>
+                            <h2 style="color: #CD4236;">{{$data['Study']}}</h2>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div>
-                                <h4>Student Name</h4>
-                                <p>{{$data['name']}}</p>
+                                <h4>Full Name</h4>
+                                <p>{{$data['Name']}}</p>
                             </div>
                             <div>
                                 <h4>Email Address</h4>
-                                <p>{{$data['email']}}</p>
+                                <p>{{$data['Email']}}</p>
                             </div>
                             <div>
                                 <h4>Contact Number</h4>
-                                <p>{{$data['contact']}}</p>
+                                <p>{{$data['Phone']}}</p>
                             </div>
                             <div>
-                                <h4>Location</h4>
-                                <p>{{$data['location']}}</p>
+                                <h4>Nationality</h4>
+                                <p>{{$data['Nationality']}}</p>
                             </div>
                             <div>
-                                <h4>Qualification</h4>
-                                <p>{{$data['qualification']}}</p>
-                            </div>
-                            <div>
-                                <h4>Relevant Work Exprience</h4>
-                                <p>{{$data['relevant']}}</p>
-                            </div>
-                            <div>
-                                <h4>Work Location</h4>
-                                <p>{{$data['work_location']}}</p>
-                            </div>
-                            <div>
-                                <h4>Designation</h4>
-                                <p>{{$data['designation']}}</p>
-                            </div>
-                            <div>
-                                <h4>Preffered Course Industry</h4>
-                                <p>{{$data['industry']}}</p>
-                            </div>
-                            <div>
-                                <h4>Preffered Course</h4>
-                                <p>{{$data['course']}}</p>
-                            </div>
-                            <div>
-                                <h4>Remarks</h4>
-                                <p>{{$data['remark']}}</p>
+                                <h4>Preffered Qualification</h4>
+                                <p>{{$data['Qualification']}}</p>
                             </div>
                         </td>
                     </tr>

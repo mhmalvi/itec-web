@@ -22,3 +22,4 @@ Route::get('get-course-by-industry', 'CourseController@getCourseByIndustry');
 Route::post('subscribe', 'SubscribesController@subscribe');
 Route::post('rpl', 'MailsController@rpl');
 Route::post('book-appointment', 'MailsController@appointment');
+Route::post('apply-now', 'MailsController@applied');

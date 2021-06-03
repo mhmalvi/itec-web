@@ -50,12 +50,13 @@
 <body>
     <div class="wrapper">
         <div class="container">
+            <p style="display:none;">Hi there! There is a new request from you website. Your client is waiting for you response!</p>
             <table>
                 <thead>
                     <tr>
                         <th align="center" colspan="2">
                             <a href="https://itecounsel.com" target="_blank">
-                                <img src="https://itecounsel.com/public/assets/images/logo.png" alt="logo" style="width: 100px !important; padding: 35px 15px !important;">
+                                <img src="https://itecounsel.com/public/assets/images/logo.png" alt="logo" style="display:block; width: 100px !important; padding: 35px 15px !important; margin: auto !important; vertical-align: middle !important;">
                             </a>
                         </th>
                     </tr>

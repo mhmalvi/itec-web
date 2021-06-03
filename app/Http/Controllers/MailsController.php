@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use App\Http\Requests\AppointmentRequest;
 use App\Http\Requests\RplFormRequest;
 use App\Jobs\SendEmailJob;
+use App\Mail\ApplyMail;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AppointmentMail;
 use App\Mail\RplMail;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Http\Request;
 
 class MailsController extends Controller
 {
@@ -26,7 +28,7 @@ class MailsController extends Controller
 
 
     /**
-     * 
+     * Appointment Booking
      */
     public function appointment(AppointmentRequest $request)
     {
@@ -38,7 +40,6 @@ class MailsController extends Controller
             'Msg' => $request->msg
         ];
 
-        // SendEmailJob::dispatch($data)->delay(now()->addSeconds(5));
         Mail::to('dev.quadque@gmail.com')->send(new AppointmentMail($data));
 
         return response()->json([
@@ -49,7 +50,7 @@ class MailsController extends Controller
 
 
     /**
-     * 
+     * RPL Eligibility Check
      */
     public function rpl(RplFormRequest $request)
     {
@@ -96,6 +97,28 @@ class MailsController extends Controller
             Storage::delete('public/rpl/' . $fileName);
         }
 
-        return response()->json(['sucess' => 'sucess'], 200);
+        return response()->json(['success' => 'success'], 200);
+    }
+
+
+    /**
+     * Apply Now
+     */
+    public function applied(Request $request)
+    {
+        $data = [
+            'Study' => $request->study,
+            'Name' => $request->name,
+            'Email' => $request->email,
+            'Phone' => $request->contact,
+            'Nationality' => $request->nationality,
+            'Qualification' => $request->qualification
+        ];
+
+        Mail::to('dev.quadque@gmail.com')->send(new ApplyMail($data));
+
+        return response()->json([
+            'status' => 'Success'
+        ], 200);
     }
 }
