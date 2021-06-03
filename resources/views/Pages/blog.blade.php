@@ -6,6 +6,7 @@
     @if (!is_null($blog->meta_des))
         <meta name="description" content="{{ $blog->meta_des }}">
     @endif
+    <meta property="og:image" content="{{ !is_null($blog->thumbnailOne) ? asset('storage/blogs/' . $blog->thumbnailOne) : asset('assets/images/blog/blog.jpg') }}" />
 @endpush
 
 @section('content')
