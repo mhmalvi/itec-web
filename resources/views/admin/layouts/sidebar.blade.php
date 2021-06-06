@@ -51,7 +51,7 @@
                 <a href="javascript:void(0)"><i class="fa fa-cogs"></i> <span class="nav-label">Settings</span><span
                         class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
-                    <li><a href="">Profile</a></li>
+                    <li><a href="{{route('admin.profile')}}">Profile</a></li>
                     <li><a href="">Site SEO</a></li>
                 </ul>
             </li>

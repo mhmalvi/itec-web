@@ -76,6 +76,11 @@ Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () 
         Route::post('add-category', 'Admin\CoursesController@createCategory')->name('category.add');
         Route::post('add-industry', 'Admin\CoursesController@createIndustry')->name('industry.add');
     });
+
+
+    Route::prefix('settings')->group(function () {
+        Route::view('profile', 'admin.settings.profile')->name('profile');
+    });
 });
 
 require __DIR__ . '/auth.php';
