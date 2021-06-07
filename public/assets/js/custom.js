@@ -1,9 +1,9 @@
 $(document).ready(function () {
-    // $(window).on('load', function(){
-    //     setTimeout(() => {
-    //         $("#exampleModalCenter").modal('show');
-    //     }, 2800);
-    // })
+    $(window).on('load', function(){
+        setTimeout(() => {
+            $("#exampleModalCenter").modal('show');
+        }, 2800);
+    })
 
     
     //Mouse Hover
@@ -22,7 +22,7 @@ $(document).ready(function () {
     $("#yt").mouseenter(function () {
         $("#socialLayer").addClass('youtube');
         $("#socialInner h5").fadeOut(function () {
-            $(this).text("Subscribe Our Youtube Cannel").fadeIn("slow");
+            $(this).text("Subscribe Our Youtube Channel").fadeIn("slow");
         });
     });
     $("#inst").mouseenter(function () {

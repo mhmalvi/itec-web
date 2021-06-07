@@ -358,7 +358,9 @@ input[type="file"] {
 
 .contact-card-right {
     background-color: #1C375B;
+    background-image: url('../images/contact2.jpg');
     color: #fff;
+    background-blend-mode: multiply;
 }
 
 .blog-card {
@@ -560,9 +562,9 @@ input[type="color"]:focus,
     border: 2px solid #CD4236 !important;
 }
 
-.modal-content {
+/* .modal-content {
     background: rgba(255, 255, 255, 0.3) !important;
-}
+} */
 
 .popup-img {
     position: relative !important;
