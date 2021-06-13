@@ -646,12 +646,13 @@ input[type="color"]:focus,
     padding: 25px 0px;
 }
 
-.radio input[type=radio]{
+.radio input[type="radio"]{
     display: none;
 }
 
-input:checked + label {
-    border-color: 2px solid #CD4236;
+input[type="radio"]:checked ~ label {
+    background-color:#CD4236;
+    border: 2px solid #CD4236;
 }
 
 .next,
