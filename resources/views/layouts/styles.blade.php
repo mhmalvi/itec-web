@@ -10,6 +10,5 @@
 <link rel="stylesheet" href="{{ asset('admin/css/plugins/toastr/toastr.min.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/multiForm.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/mobile.css') }}">
 @stack('css')

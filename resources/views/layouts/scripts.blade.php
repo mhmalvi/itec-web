@@ -13,6 +13,7 @@
 <script src="{{ asset('admin/js/plugins/toastr/toastr.min.js') }}"></script>
 @stack('js')
 <script src="{{ asset('assets/js/scripts.js') }}"></script>
+   <script src="{{asset('assets/js/rpl.js')}}"></script>
 <script src="{{ asset('assets/js/multiForm.js') }}"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 

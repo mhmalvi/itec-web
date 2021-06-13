@@ -1,11 +1,18 @@
 $(document).ready(function () {
-    $("#industry").on("change", function() {
+    $("#rpl-modal-close").on("click", function () {
+        $(".rpl-modal-bg").removeClass("rpl-modal-active");
+    });
+
+    $("#open-rpl-modal").on("click", function () {
+        $(".rpl-modal-bg").addClass("rpl-modal-active");
+    });
+
+
+    $(".industry").on("change", function () {
         var title = $(this).val();
 
         if (title == 'other') {
-            $(".courses").slideUp("slow").css('display', 'none');
-            $(".other_ind").slideDown("slow").css('display', 'block');
-            $(".other_course").slideDown("slow").css('display', 'block');
+            $(".other").fadeIn(500);
         }else{
             $.ajax({
                 url: "api/get-course-by-industry",
@@ -26,12 +33,8 @@ $(document).ready(function () {
                                 '<option value="'+title+'">'+title+'</option>';
                         });
 
-                        if ($(".courses").css('display') == 'none') {
-                            $(".courses").slideDown("slow").css('display', 'block');
-                            $(".other_ind").slideUp("slow").css('display', 'none');
-                            $(".other_course").slideUp("slow").css('display', 'none');
-                        }
-                        $("#courses").html(option);
+                        $(".other").fadeOut(300);
+                        $(".course").html(option);
                     }
                 }
             })
@@ -42,7 +45,7 @@ $(document).ready(function () {
     /**
      * Form Response
      */
-    $("#msform").on('submit', function (e) {
+    $("#rpl-form").on('submit', function (e) {
         e.preventDefault();
         const fd = new FormData();
         fd.append('name', $("#name").val());
@@ -78,7 +81,7 @@ $(document).ready(function () {
                 $("#btn-submit").prop('disabled', true);
             },
             success: function (data) {
-                $("#msform").trigger("reset");
+                $("#rpl-form").trigger("reset");
                 $("#btn-submit").html('Submit');
                 $("#btn-submit").prop('disabled', false);
                 toastr.success('Your response has been recorded. Thank you', 'success');

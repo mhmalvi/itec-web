@@ -68,7 +68,7 @@
         </div>
     </div>
     <!-- end social-media -->
-    <div class="all-cases">
+    {{-- <div class="all-cases">
         <div class="layer"></div>
         <!-- end layer -->
         <div class="inner">
@@ -76,12 +76,12 @@
         </div>
         <!-- end inner -->
     </div>
-    <!-- end all-cases -->
+    <!-- end all-cases --> --}}
     <main>
         @include('layouts.sidebar')
 
         <!-- end left-side -->
-        <div class="all-cases-link">
+        <div class="all-cases-link" id="open-rpl-modal">
             <span>CHECK YOUR RPL ELIGIBILITY</span>
             <b><i class="fas fa-tasks"></i></b>
         </div>
@@ -90,6 +90,9 @@
         @yield('content')
     </main>
     <!-- end main -->
+
+    {{-- //RPL Modal --}}
+    @include('layouts.rpl-modal')
 
     {{-- //popup add --}}
     @include('layouts.popup')

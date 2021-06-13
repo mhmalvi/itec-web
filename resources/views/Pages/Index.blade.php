@@ -6,6 +6,7 @@
 @endpush
 
 @section('content')
+    <div id="subs"></div>
     <header class="slider">
         <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
@@ -492,5 +493,11 @@
     <!-- end clients -->
 @endsection
 @push('js')
-    <script src="{{asset('assets/js/rpl.js')}}"></script>
+    <script>
+        $(document).ready(function(){
+            setTimeout(() => {
+                $("#exampleModalCenter").modal('show');
+            }, 2800);
+        })
+    </script>
 @endpush

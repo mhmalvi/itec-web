@@ -1,11 +1,4 @@
-$(document).ready(function () {
-    $(window).on('load', function(){
-        setTimeout(() => {
-            $("#exampleModalCenter").modal('show');
-        }, 2800);
-    })
-
-    
+$(document).ready(function () {    
     //Mouse Hover
     $("#fb").mouseenter(function () {
         $("#socialLayer").addClass('facebook');
