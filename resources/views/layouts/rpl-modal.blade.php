@@ -100,53 +100,61 @@
                             <div class="radio">
                                 <div class="fieldlabels">What state do you live in? *</div>
                                 <div class="row">
-                                    <div class="col-sm-3 col-xs-12">
+                                    <div class="col-sm-3 col-6">
                                         <input type="radio" name="location" id="locOne" value="NSW" />
-                                        <label for="locOne" class="exp-lbl">
+                                        <label for="locOne" class="exp-lbl p-1">
+                                            <img src="{{asset('assets/images/maps/01.png')}}" alt="nsw">
                                             <div>NSW</div>
                                         </label>
                                     </div>
-                                    <div class="col-sm-3 col-xs-12">
+                                    <div class="col-sm-3 col-6">
                                         <input type="radio" name="location" id="locTwo" value="VIC">
-                                        <label for="locTwo" class="exp-lbl">
+                                        <label for="locTwo" class="exp-lbl p-1">
+                                            <img src="{{asset('assets/images/maps/02.png')}}" alt="vic">
                                             <div>VIC</div>
                                         </label>
                                     </div>
-                                    <div class="col-sm-3 col-xs-12">
+                                    <div class="col-sm-3 col-6">
                                         <input type="radio" name="location" id="locThree" value="QLD">
-                                        <label for="locThree" class="exp-lbl">
+                                        <label for="locThree" class="exp-lbl p-1">
+                                            <img src="{{asset('assets/images/maps/03.png')}}" alt="qld">
                                             <div>QLDs</div>
                                         </label>
                                     </div>
-                                    <div class="col-sm-3 col-xs-12">
+                                    <div class="col-sm-3 col-6">
                                         <input type="radio" name="location" id="locFour" value="SA">
-                                        <label for="locFour" class="exp-lbl">
+                                        <label for="locFour" class="exp-lbl p-1">
+                                            <img src="{{asset('assets/images/maps/04.png')}}" alt="sa">
                                             <div>SA</div>
                                         </label>
                                     </div>
                                 </div>
-                                <div class="row pt-5">
-                                    <div class="col-sm-3 col-xs-12">
+                                <div class="row pt-sm-5">
+                                    <div class="col-sm-3 col-6">
                                         <input type="radio" name="location" id="locFive" value="WA" />
-                                        <label for="locFive" class="exp-lbl">
+                                        <label for="locFive" class="exp-lbl p-1">
+                                            <img src="{{asset('assets/images/maps/05.png')}}" alt="wa">
                                             <div>WA</div>
                                         </label>
                                     </div>
-                                    <div class="col-sm-3 col-xs-12">
+                                    <div class="col-sm-3 col-6">
                                         <input type="radio" name="location" id="locSix" value="ACT">
-                                        <label for="locSix" class="exp-lbl">
+                                        <label for="locSix" class="exp-lbl p-1">
+                                            <img src="{{asset('assets/images/maps/06.png')}}" alt="act">
                                             <div>ACT</div>
                                         </label>
                                     </div>
-                                    <div class="col-sm-3 col-xs-12">
+                                    <div class="col-sm-3 col-6">
                                         <input type="radio" name="location" id="locSeven" value="NT">
-                                        <label for="locSeven" class="exp-lbl">
+                                        <label for="locSeven" class="exp-lbl p-1">
+                                            <img src="{{asset('assets/images/maps/07.png')}}" alt="nt">
                                             <div>NT</div>
                                         </label>
                                     </div>
-                                    <div class="col-sm-3 col-xs-12">
+                                    <div class="col-sm-3 col-6">
                                         <input type="radio" name="location" id="locEight" value="TAS">
-                                        <label for="locEight" class="exp-lbl">
+                                        <label for="locEight" class="exp-lbl p-1">
+                                            <img src="{{asset('assets/images/maps/08.png')}}" alt="tas">
                                             <div>TAS</div>
                                         </label>
                                     </div>

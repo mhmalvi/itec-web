@@ -642,6 +642,10 @@ input[type="color"]:focus,
     transition: all 0.3s ease-in;
 }
 
+.exp-lbl img{
+    max-width: 75px !important;
+}
+
 .radio{
     padding: 25px 0px;
 }
@@ -710,5 +714,9 @@ only screen and (max-device-width: 767px) {
     .rpl-form-submit {
         font-size: 12px !important;
         padding: 5px 20px !important;
+    }
+
+    .exp-lbl img {
+        max-width: 50px !important;
     }
 }
