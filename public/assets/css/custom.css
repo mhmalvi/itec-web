@@ -472,9 +472,9 @@ input[type="color"]:focus,
     padding-top: 15rem !important;
 }
 
-.modal-dialog {
+/* .modal-dialog {
     width: 600px !important;
-}
+} */
 
 .modal-content {
     background: #1C375B !important;
