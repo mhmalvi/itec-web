@@ -2,7 +2,17 @@
     <div class="rpl-modal-box">
         <span id="rpl-modal-close"><i class="fas fa-times rpl-modal-close"></i></span>
         <div class="rpl-modal-content">
-            <div class="rpl-modal-form">
+            <div class="submit-loader" id="submit-loader">
+                <h4>We are recording you response</h4>
+                <div class="lds-dual-ring"></div>
+                <h4>Please Wait..</h4>
+            </div>
+            <div class="submit-success" id="submit-success">
+                <h2>Thank You!</h2>
+                <img src="{{asset('assets/images/email.gif')}}" alt="mail">
+                <h5>Your Response Submitted Successfully.</h5>
+            </div>
+            <div class="rpl-modal-form visible" id="rpl-modal-form">
                 <form action="" id="rpl-form">
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -184,7 +194,7 @@
                         <div class="form-card">
                             <div class="form-group">
                                 <label class="fieldlabels">Upload your documents</label>
-                                <input type="file" class="form-control" id="file">
+                                <input type="file" class="form-control" id="file"/>
                             </div>
                             <div class="form-group">
                                 <label class="fieldlabels">Remarks:</label>

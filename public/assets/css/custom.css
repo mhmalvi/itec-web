@@ -550,7 +550,7 @@ input[type="color"]:focus,
     align-items: center;
     top: 0;
     left: 0;
-    z-index: 3000;
+    z-index: 100;
     background-color: rgba(255, 255, 255, 0.5);
     transition: all 0.3s ease-in-out;
 }
@@ -597,6 +597,13 @@ input[type="color"]:focus,
 .progress-bar {
     background-color: #CD4236;
 }
+.rpl-modal-form{
+    opacity: 0;
+    display:none;
+    transition: all 0.3s ease-in-out;
+}
+
+
 .rpl-modal-form fieldset {
     border: 0 none;
     border-radius: 0.5rem;
@@ -719,4 +726,30 @@ only screen and (max-device-width: 767px) {
     .exp-lbl img {
         max-width: 50px !important;
     }
+}
+.submit-loader{
+    display: none;
+    visibility: hidden;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.8s ease-in;
+}
+.submit-loader h4 {
+    padding: 30px 0px;
+}
+.visible {
+    visibility: visible;
+    display: block;
+    opacity:1;
+}
+.submit-success {
+    display: none;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.8s ease-in;
+}
+.submit-success img {
+    max-width: 200px;
 }

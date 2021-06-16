@@ -1,10 +1,13 @@
 $(document).ready(function () {
-    $("#rpl-modal-close").on("click", function () {
-        $(".rpl-modal-bg").removeClass("rpl-modal-active");
-    });
-
+    //open modal
     $("#open-rpl-modal").on("click", function () {
         $(".rpl-modal-bg").addClass("rpl-modal-active");
+        $(body).toggleClass("overflow");
+    });
+
+    //close modal
+    $("#rpl-modal-close").on("click", function () {
+        $(".rpl-modal-bg").removeClass("rpl-modal-active");
     });
 
 
@@ -76,18 +79,22 @@ $(document).ready(function () {
             dataType: 'json',
             processData: false,
             contentType: false,
-            beforeSend: function() {
-                $("#btn-submit").html('Sending...');
-                $("#btn-submit").prop('disabled', true);
+            beforeSend: function () {
+                $("#rpl-modal-form").toggleClass('visible');
+                $("#submit-loader").toggleClass('visible');
             },
             success: function (data) {
                 $("#rpl-form").trigger("reset");
-                $("#btn-submit").html('Submit');
                 $("#btn-submit").prop('disabled', false);
-                toastr.success('Your response has been recorded. Thank you', 'success');
+                $("#submit-success").css('display', 'block').css('opacity', '1');
+                $("#submit-loader").toggleClass('visible');
+                setTimeout(() => {
+                    $(".rpl-modal-bg").removeClass("rpl-modal-active");
+                }, 5000);
             },
             error: function (err) {
-                $("#btn-submit").html('Submit');
+                $("#rpl-modal-form").toggleClass('visible');
+                $("#submit-loader").toggleClass('visible');
                 $("#btn-submit").prop('disabled', false);
                 toastr.warning('Invalid form submittion. Please try again', 'warning');
             }
