@@ -10,7 +10,6 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Storage;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 use App\Http\Requests\BlogRequest;
-use Illuminate\Support\Facades\DB;
 
 class BlogsController extends Controller
 {
@@ -81,19 +80,12 @@ class BlogsController extends Controller
                 'blog_slug' => $slug,
                 'blog_des' => $request->details,
                 'meta_des' => $request->meta_des,
+                'meta_tags' => $request->meta_tags,
+                'meta_keys' => $request->meta_keys,
                 'thumbnailOne' => $newImg,
                 'thumbnailTwo' => $newThumb,
                 'isPublished' => ($request->publish === 'on') ? 1 : 0
             ]);
-
-
-            if ($request->filled('meta_tags') && $request->has('meta_tags')) {
-                $this->tags($request->meta_tags, $blog->id);
-            }
-
-            if ($request->filled('meta_keys') && $request->has('meta_keys')) {
-                $this->keywords($request->meta_keys, $blog->id);
-            }
 
             $notification = [
                 'message'   =>  'Successfully Saved.',
@@ -128,38 +120,6 @@ class BlogsController extends Controller
 
 
             return response()->json(['location' => $url])->header('content-type', 'application/json');
-        }
-    }
-
-
-    /**
-     * Save Meta Tags
-     * 
-     */
-    protected function tags(array $tags, int $blogId): void
-    {
-        foreach ($tags as $tag) {
-            DB::table('blogs_meta_tags')->insert([
-                'action_user' => Auth::id(),
-                'blogs_id' => $blogId,
-                'tags' => $tag
-            ]);
-        }
-    }
-
-
-    /**
-     * Save Meta Keywords
-     * 
-     */
-    protected function keywords(array $keywords, int $blogId): void
-    {
-        foreach ($keywords as $keyword) {
-            DB::table('blogs_meta_keywords')->insert([
-                'action_user' => Auth::id(),
-                'blogs_id' => $blogId,
-                'keywords' => $keyword
-            ]);
         }
     }
 
@@ -203,6 +163,8 @@ class BlogsController extends Controller
             $blog->blog_slug = $slug;
             $blog->blog_des = $request->details;
             $blog->meta_des = $request->meta_des;
+            $blog->meta_tags = $request->meta_tags;
+            $blog->meta_keys = $request->meta_keys;
             $blog->isPublished = ($request->publish === 'on') ? 1 : 0;
 
             if (($request->hasFile('thumbnail'))) {
@@ -237,15 +199,6 @@ class BlogsController extends Controller
                 Storage::delete('public/blogs', $blog->thumbnailOne);
 
                 Storage::putFileAs('public/blogs', $image, $newImg);
-            }
-
-
-            if ($request->filled('meta_tags') && $request->has('meta_tags')) {
-                $this->tags($request->meta_tags, $blog->id);
-            }
-
-            if ($request->filled('meta_keys') && $request->has('meta_keys')) {
-                $this->keywords($request->meta_keys, $blog->id);
             }
 
             $blog->save();

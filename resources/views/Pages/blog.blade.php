@@ -1,8 +1,12 @@
 @extends('layouts.app')
 
 @push('seo')
-    @each('components.meta_tags', $metaTags, 'metaTag', 'components.meta_empty')
-    @each('components.meta_keys', $metaKeys, 'metaKey', 'components.meta_empty')
+    @if (!is_null($blog->meta_tags))
+        <meta name="tags" content="{{ $blog->meta_tags }}">
+    @endif
+    @if (!is_null($blog->meta_keys))
+        <meta name="keyword" content="{{ $blog->meta_keys }}">
+    @endif
     @if (!is_null($blog->meta_des))
         <meta name="description" content="{{ $blog->meta_des }}">
     @endif

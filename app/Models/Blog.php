@@ -19,6 +19,8 @@ class Blog extends Model
         'blog_slug',
         'blog_des',
         'meta_des',
+        'meta_tags',
+        'meta_keys',
         'thumbnailOne',
         'thumbnailTwo',
         'isPublished'

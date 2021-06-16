@@ -49,7 +49,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                {{ $item->blog_categories_id }}
+                                                {{ $item->category->title }}
                                             </td>
                                             <td>{{ $item->created_at }}</td>
                                         </tr>

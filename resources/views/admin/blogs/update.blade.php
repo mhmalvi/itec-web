@@ -68,25 +68,15 @@
                     <div class="ibox-content p-5">
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Tags (max 10)</label>
-                            <div class="col-sm-9" id="tags">
-                                <input type="text" class="form-control" name="meta_tags[]" />
+                            <div class="col-sm-10" id="tags">
+                                <input type="text" class="form-control" name="meta_tags" value="{{ $blog->meta_tags}}"/>
                             </div>
-                            {{-- <div class="col-sm-1 text-right">
-                                <button type="button" class="btn btn-sm btn-primary my-1" id="tags__input">
-                                    Add
-                                </button>
-                            </div> --}}
                         </div>
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Keywords (max 5)</label>
-                            <div class="col-sm-9" id="keys">
-                                <input type="text" class="form-control" name="meta_keys[]" />
+                            <div class="col-sm-10" id="keys">
+                                <input type="text" class="form-control" name="meta_keys" value="{{ $blog->meta_keys}}"/>
                             </div>
-                            {{-- <div class="col-sm-1 text-right">
-                                <button type="button" class="btn btn-sm btn-primary my-1" id="keys__input">
-                                    Add
-                                </button>
-                            </div> --}}
                         </div>
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Description</label>
