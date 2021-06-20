@@ -117,9 +117,7 @@
             <!-- end col-12 -->
             <div class="col-12">
                 <div class="footer-bar"> <span class="copyright">© <span id="year"></span> International Training and Education Counsel (ITEC) | All Rights
-                        Reserved</span> <span class="creation">Site created by <a href="https://quadque.tech">Quadque
-                            Technologies
-                            Ltd</a></span> </div>
+                        Reserved</span> <span class="creation">Created with <span>&hearts;</span> by <a href="https://quadque.tech">Quadque Technologies Ltd</a></span></div>
                 <!-- end footer-bar -->
             </div>
             <!-- end col-12 -->
