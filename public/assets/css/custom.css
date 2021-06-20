@@ -539,35 +539,6 @@ input[type="color"]:focus,
 --------------RPL MODAL DESIGN-------------------
 =================================================
 */
-.rpl-modal-bg{
-    visibility: hidden;
-    opacity: 0;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.5);
-    transition: all 0.3s ease-in-out;
-}
-
-.rpl-modal-active {
-    visibility: visible;
-    opacity: 1;
-}
-
-.rpl-modal-box{
-    position: relative;
-    width: 720px;
-    margin: 15px;
-    padding: 25px;
-    background: #1C375B;
-    border: 10px solid #CD4236;
-}
 .rpl-modal-close{
     position: absolute;
     top: -28px;
@@ -582,7 +553,7 @@ input[type="color"]:focus,
     background:#1C375B;
 }
 .rpl-modal-content{
-    padding: 50px;
+    padding: 60px;
 }
 #progressbar {
     margin-bottom: 30px;
@@ -598,9 +569,8 @@ input[type="color"]:focus,
     background-color: #CD4236;
 }
 .rpl-modal-form{
-    opacity: 0;
-    display:none;
-    transition: all 0.3s ease-in-out;
+    display: none;
+    font-size: 16px!important;
 }
 
 
@@ -614,7 +584,7 @@ input[type="color"]:focus,
 }
 
 .rpl-modal-form fieldset:not(:first-of-type) {
-    display: none
+    display: none;
 }
 
 .form-card{
@@ -623,7 +593,6 @@ input[type="color"]:focus,
 
 .fieldlabels {
     color: #fff;
-    font-size: 20px;
     padding-bottom: 15px;
 }
 #rpl-form input[type=text],
@@ -682,12 +651,15 @@ input[type="radio"]:checked ~ label {
 @media only screen and (max-width: 991px),
 only screen and (max-device-width: 991px) {
     .rpl-modal-content {
-        padding: 0;
+        padding: 30px;
     }
     #rpl-form input,
     #rpl-form textarea,
     #rpl-form select {
         font-size: 12px;
+    }
+    .exp-lbl img {
+        max-width: 50px !important;
     }
 }
 
@@ -698,7 +670,7 @@ only screen and (max-device-width: 767px) {
         font-size: 12px;
     }
     .rpl-modal-content {
-        padding: 0;
+        padding: 30px;
     }
     #rpl-form input[type=text],
     #rpl-form input[type=email],

@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //open modal
     $("#open-rpl-modal").on("click", function () {
-        $(".rpl-modal-bg").addClass("rpl-modal-active");
+        $("#rplFormModal").modal("show");
         $(body).toggleClass("overflow");
     });
 
@@ -51,16 +51,14 @@ $(document).ready(function () {
     $("#rpl-form").on('submit', function (e) {
         e.preventDefault();
         const fd = new FormData();
+        fd.append('industry', $("#industry").val());
+        fd.append('qualification', $("#qualification").val());
+        fd.append('location', $("input[name=location]").val());
+        fd.append('relevant', $("input[name=relevent]").val());
+        fd.append('work_location', $("input[name=work_location]").val());
         fd.append('name', $("#name").val());
         fd.append('contact', $("#phone").val());
         fd.append('email', $("#email").val());
-        fd.append('location', $("#location").val());
-        fd.append('qualification', $("#qualification").val());
-        fd.append('relevant', $("#relevant").val());
-        fd.append('work_location', $("#work_location").val());
-        fd.append('designation', $("#designation").val());
-        fd.append('industry', $("#industry").val());
-        fd.append('courses', $("#courses").val());
         fd.append('remark', $("#remark").val());
 
         var files = $("#file").prop('files');
@@ -89,7 +87,7 @@ $(document).ready(function () {
                 $("#submit-success").css('display', 'block').css('opacity', '1');
                 $("#submit-loader").toggleClass('visible');
                 setTimeout(() => {
-                    $(".rpl-modal-bg").removeClass("rpl-modal-active");
+                    $("#rplFormModal").modal("hide");
                 }, 5000);
             },
             error: function (err) {

@@ -31,7 +31,6 @@ class RplFormRequest extends FormRequest
             'qualification' => 'required',
             'relevant' => 'required',
             'work_location' => 'required',
-            'designation' => 'required',
         ];
     }
 }

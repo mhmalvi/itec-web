@@ -1,8 +1,8 @@
-<div class="rpl-modal-bg">
-    <div class="rpl-modal-box">
-        <span id="rpl-modal-close"><i class="fas fa-times rpl-modal-close"></i></span>
-        <div class="rpl-modal-content">
-            <div class="submit-loader" id="submit-loader">
+<div class="modal fade" id="rplFormModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body rpl-modal-content">
+        <div class="submit-loader" id="submit-loader">
                 <h4>We are recording you response</h4>
                 <div class="lds-dual-ring"></div>
                 <h4>Please Wait..</h4>
@@ -13,7 +13,7 @@
                 <h5>Your Response Submitted Successfully.</h5>
             </div>
             <div class="rpl-modal-form visible" id="rpl-modal-form">
-                <form action="" id="rpl-form">
+                <form id="rpl-form">
                     <div class="progress">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                     </div> 
@@ -21,7 +21,7 @@
                         <div class="form-card form-group">
                             <div class="py-3">
                                 <label class="fieldlabels">What industry is your experience in? *</label>
-                                <select class="form-control industry">
+                                <select class="form-control industry" id="qualification">
                                     <option disabled selected value>Choose your industry of interest...</option>
                                         @forelse (\App\Models\CourseIndustry::all() as $item)
                                             <option value="{{ $item->title }}">{{ $item->title }}</option>
@@ -32,7 +32,7 @@
                             </div>
                             <div class="courses py-3">
                                 <label class="fieldlabels">What qualification are you looking for? *</label>
-                                <select class="form-control course">
+                                <select class="form-control course" id="industry">
                                     <option disabled selected value>Choose your preffered industry first...</option>
                                 </select>
                             </div>
@@ -55,25 +55,25 @@
                                     <div class="col-sm-3 col-xs-12">
                                         <input type="radio" name="relevant" id="one" value="1 - 2 years" />
                                         <label for="one" class="exp-lbl">
-                                            <div>1 - 2 Years</div>
+                                            <div>1 - 2 <br> Years</div>
                                         </label>
                                     </div>
                                     <div class="col-sm-3 col-xs-12">
                                         <input type="radio" name="relevant" id="two" value="3 - 4 years">
                                         <label for="two" class="exp-lbl">
-                                            <div>3 - 4 Years</div>
+                                            <div>3 - 4 <br> Years</div>
                                         </label>
                                     </div>
                                     <div class="col-sm-3 col-xs-12">
                                         <input type="radio" name="relevant" id="three" value="5 - 9 years">
                                         <label for="three" class="exp-lbl">
-                                            <div>5 - 9 Years</div>
+                                            <div>5 - 9 <br> Years</div>
                                         </label>
                                     </div>
                                     <div class="col-sm-3 col-xs-12">
                                         <input type="radio" name="relevant" id="four" value="10 + years">
                                         <label for="four" class="exp-lbl">
-                                            <div>10 + Years</div>
+                                            <div>10 + <br> Years</div>
                                         </label>
                                     </div>
                                 </div>
@@ -208,6 +208,7 @@
                     </fieldset>
                 </form>
             </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>

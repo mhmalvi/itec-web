@@ -87,28 +87,16 @@
                                 <p>{{$data['location']}}</p>
                             </div>
                             <div>
-                                <h4>Qualification</h4>
-                                <p>{{$data['qualification']}}</p>
-                            </div>
-                            <div>
-                                <h4>Relevant Work Exprience</h4>
-                                <p>{{$data['relevant']}}</p>
-                            </div>
-                            <div>
                                 <h4>Work Location</h4>
                                 <p>{{$data['work_location']}}</p>
-                            </div>
-                            <div>
-                                <h4>Designation</h4>
-                                <p>{{$data['designation']}}</p>
                             </div>
                             <div>
                                 <h4>Preffered Course Industry</h4>
                                 <p>{{$data['industry']}}</p>
                             </div>
                             <div>
-                                <h4>Preffered Course</h4>
-                                <p>{{$data['course']}}</p>
+                                <h4>Qualification</h4>
+                                <p>{{$data['qualification']}}</p>
                             </div>
                             <div>
                                 <h4>Remarks</h4>
