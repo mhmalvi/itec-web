@@ -2,6 +2,9 @@
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body rpl-modal-content">
+        <button type="button" class="rpl-modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
         <div class="submit-loader" id="submit-loader">
                 <h4>We are recording you response</h4>
                 <div class="lds-dual-ring"></div>
