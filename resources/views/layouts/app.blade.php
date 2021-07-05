@@ -68,37 +68,32 @@
         </div>
     </div>
     <!-- end social-media -->
-    {{-- <div class="all-cases">
-        <div class="layer"></div>
-        <!-- end layer -->
-        <div class="inner">
-            @include('components.rpl')
-        </div>
-        <!-- end inner -->
-    </div>
-    <!-- end all-cases --> --}}
     <main>
-        @include('layouts.sidebar')
+        @if (Route::currentRouteName() != 'check-rpl-eligibility')
+            @include('layouts.sidebar')
 
-        <!-- end left-side -->
-        <div class="all-cases-link" id="open-rpl-modal">
-            <span>CHECK YOUR RPL ELIGIBILITY</span>
-            <b><i class="fas fa-tasks"></i></b>
-        </div>
-        <!-- end all-cases-link -->
+            <!-- end left-side -->
+            <div class="all-cases-link" id="open-rpl-modal">
+                <span>CHECK YOUR RPL ELIGIBILITY</span>
+                <b><i class="fas fa-tasks"></i></b>
+            </div>
+            <!-- end all-cases-link -->
+        @endif
 
         @yield('content')
     </main>
     <!-- end main -->
 
-    {{-- //RPL Modal --}}
-    @include('layouts.rpl-modal')
+    @if (Route::currentRouteName() != 'check-rpl-eligibility')
+        {{-- //RPL Modal --}}
+        @include('layouts.rpl-modal')
 
-    {{-- //popup add --}}
-    @include('layouts.popup')
+        {{-- //popup add --}}
+        @include('layouts.popup')
 
-    @include('layouts.footer')
-    <!-- end footer -->
+        @include('layouts.footer')
+        <!-- end footer -->
+    @endif
 
     @include('layouts.scripts')
 </body>

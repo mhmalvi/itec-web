@@ -447,6 +447,6 @@
             2500
         );
     });
-})(jQuery);
 
-document.getElementById("year").innerHTML = new Date().getFullYear();
+    $("#year").html(new Date().getFullYear());
+})(jQuery);

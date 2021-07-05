@@ -539,7 +539,7 @@ input[type="color"]:focus,
 --------------RPL MODAL DESIGN-------------------
 =================================================
 */
-.rpl-modal-close{
+.rpl-modal-close {
     position: absolute;
     top: -28px;
     right: -28px;
@@ -550,11 +550,13 @@ input[type="color"]:focus,
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
-    background:#1C375B;
+    background: #1C375B;
 }
-.rpl-modal-content{
+
+.rpl-modal-content {
     padding: 60px;
 }
+
 #progressbar {
     margin-bottom: 30px;
     overflow: hidden;
@@ -568,9 +570,10 @@ input[type="color"]:focus,
 .progress-bar {
     background-color: #CD4236;
 }
-.rpl-modal-form{
+
+.rpl-modal-form {
     display: none;
-    font-size: 16px!important;
+    font-size: 16px !important;
 }
 
 
@@ -587,7 +590,7 @@ input[type="color"]:focus,
     display: none;
 }
 
-.form-card{
+.form-card {
     padding-top: 45px;
 }
 
@@ -595,9 +598,13 @@ input[type="color"]:focus,
     color: #fff;
     padding-bottom: 15px;
 }
+
 #rpl-form input[type=text],
 #rpl-form input[type=email],
-#rpl-form select {
+#rpl-form select,
+#rpl-form-2 input[type=text],
+#rpl-form-2 input[type=email],
+#rpl-form-2 select {
     border: 1px solid #ccc;
     width: 100%;
     height: 35px;
@@ -618,20 +625,20 @@ input[type="color"]:focus,
     transition: all 0.3s ease-in;
 }
 
-.exp-lbl img{
+.exp-lbl img {
     max-width: 75px !important;
 }
 
-.radio{
+.radio {
     padding: 25px 0px;
 }
 
-.radio input[type="radio"]{
+.radio input[type="radio"] {
     display: none;
 }
 
-input[type="radio"]:checked ~ label {
-    background-color:#CD4236;
+input[type="radio"]:checked~label {
+    background-color: #CD4236;
     border: 2px solid #CD4236;
 }
 
@@ -653,11 +660,13 @@ only screen and (max-device-width: 991px) {
     .rpl-modal-content {
         padding: 30px;
     }
+
     #rpl-form input,
     #rpl-form textarea,
     #rpl-form select {
         font-size: 12px;
     }
+
     .exp-lbl img {
         max-width: 50px !important;
     }
@@ -666,28 +675,34 @@ only screen and (max-device-width: 991px) {
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px),
 only screen and (max-device-width: 767px) {
-    .fieldlabels{
+    .fieldlabels {
         font-size: 12px;
     }
+
     .rpl-modal-content {
         padding: 30px;
     }
+
     #rpl-form input[type=text],
     #rpl-form input[type=email],
     #rpl-form textarea,
     #rpl-form select {
         font-size: 12px;
     }
-    .radio{
+
+    .radio {
         padding: 5px 0px;
     }
+
     .exp-lbl {
         padding: 10px;
         font-size: 12px;
     }
+
     .form-card {
         padding: 0;
     }
+
     .next,
     .previous,
     .rpl-form-submit {
@@ -699,7 +714,8 @@ only screen and (max-device-width: 767px) {
         max-width: 50px !important;
     }
 }
-.submit-loader{
+
+.submit-loader {
     display: none;
     visibility: hidden;
     text-align: center;
@@ -707,14 +723,17 @@ only screen and (max-device-width: 767px) {
     opacity: 0;
     transition: all 0.8s ease-in;
 }
+
 .submit-loader h4 {
     padding: 30px 0px;
 }
+
 .visible {
     visibility: visible;
     display: block;
-    opacity:1;
+    opacity: 1;
 }
+
 .submit-success {
     display: none;
     text-align: center;
@@ -722,6 +741,180 @@ only screen and (max-device-width: 767px) {
     opacity: 0;
     transition: all 0.8s ease-in;
 }
+
 .submit-success img {
     max-width: 200px;
+}
+
+/*
+====> Check your Eligibility Form Styles
+*/
+.rpl-form-padding {
+    padding: 0px 25px !important;
+}
+
+.progress-bg-2 {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.rpl-form-control-box {
+    padding-bottom: 20px !important;
+}
+
+.rpl-form-control {
+    width: 100% !important;
+    display: block !important;
+    background: transparent !important;
+    color: #fff !important;
+    margin: 15px 0px !important;
+    padding: 20px !important;
+    height: 45px !important;
+}
+
+.rpl-form-select {
+    padding: 10px !important;
+}
+
+.rpl-form-textarea {
+    resize: none !important;
+    height: 100% !important;
+}
+
+#file {
+    display: none;
+}
+
+.rpl-form-file {
+    border: 1px dashed #CD4236 !important;
+    padding: 35px !important;
+    width: 100% !important;
+    text-align: center !important;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.rpl-form-file:hover {
+    background: rgba(205, 66, 54, 0.3) !important;
+}
+
+.exp-lbl-red {
+    border: 1px solid #CD4236 !important;
+}
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 200000;
+    overflow: hidden;
+    transition: 0.3s all;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show-lds {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.lds-spinner {
+    color: official;
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-spinner div {
+    transform-origin: 40px 40px;
+    animation: lds-spinner 1.2s linear infinite;
+}
+
+.lds-spinner div:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 37px;
+    width: 6px;
+    height: 18px;
+    border-radius: 20%;
+    background: #fff;
+}
+
+.lds-spinner div:nth-child(1) {
+    transform: rotate(0deg);
+    animation-delay: -1.1s;
+}
+
+.lds-spinner div:nth-child(2) {
+    transform: rotate(30deg);
+    animation-delay: -1s;
+}
+
+.lds-spinner div:nth-child(3) {
+    transform: rotate(60deg);
+    animation-delay: -0.9s;
+}
+
+.lds-spinner div:nth-child(4) {
+    transform: rotate(90deg);
+    animation-delay: -0.8s;
+}
+
+.lds-spinner div:nth-child(5) {
+    transform: rotate(120deg);
+    animation-delay: -0.7s;
+}
+
+.lds-spinner div:nth-child(6) {
+    transform: rotate(150deg);
+    animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(7) {
+    transform: rotate(180deg);
+    animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(8) {
+    transform: rotate(210deg);
+    animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(9) {
+    transform: rotate(240deg);
+    animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(10) {
+    transform: rotate(270deg);
+    animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(11) {
+    transform: rotate(300deg);
+    animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(12) {
+    transform: rotate(330deg);
+    animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }

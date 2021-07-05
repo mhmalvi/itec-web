@@ -37,7 +37,7 @@ $(document).ready(function () {
                         });
 
                         $(".other").fadeOut(300);
-                        $(".course").html(option);
+                        $("#qualification").html(option);
                     }
                 }
             })
@@ -53,14 +53,16 @@ $(document).ready(function () {
         const fd = new FormData();
         fd.append('industry', $("#industry").val());
         fd.append('qualification', $("#qualification").val());
-        fd.append('location', $("input[name=location]").val());
+
         fd.append('relevant', $("input[name=relevent]").val());
         fd.append('work_location', $("input[name=work_location]").val());
+        fd.append('location', $("input[name=location]").val());
+        
         fd.append('name', $("#name").val());
-        fd.append('contact', $("#phone").val());
         fd.append('email', $("#email").val());
-        fd.append('remark', $("#remark").val());
+        fd.append('contact', $("#phone").val());
 
+        fd.append('remark', $("#remark").val());
         var files = $("#file").prop('files');
 
         if (files.length > 0) {
@@ -97,6 +99,62 @@ $(document).ready(function () {
                 toastr.warning('Invalid form submittion. Please try again', 'warning');
             }
         })
+    });
+
+
+    $("#rpl-form-2").on('submit', function (e) {
+        e.preventDefault();
+        const fd = new FormData();
+        fd.append('qualification', $("#qualification").val());
+        fd.append('industry', $("#industry").val());
+        fd.append('location', $("input[name=location]").val());
+        fd.append('relevant', $("input[name=relevent]").val());
+        fd.append('work_location', $("input[name=work_location]").val());
+        fd.append('name', $("#name").val());
+        fd.append('contact', $("#phone").val());
+        fd.append('email', $("#email").val());
+        fd.append('remark', $("#remark").val());
+
+        var files = $("#file").prop('files');
+
+        if (files.length > 0) {
+            $.each(files, function (key,value) {
+                fd.append('files[]', value);
+            });
+        }
+
+
+        $.ajax({
+            url: 'api/rpl',
+            method: 'POST',
+            data:fd,
+            dataType: 'json',
+            processData: false,
+            contentType: false,
+            beforeSend: function () {
+                $("#lds-wrapper").toggleClass('show-lds');
+            },
+            success: function (data) {
+                $("#rpl-form-2").trigger("reset");
+                $("#lds-wrapper").toggleClass('show-lds');
+                alert(
+                    "Your response successfully submitted. You will be redirect to our website shortly."
+                );
+            },
+            error: function (err) {
+                $("#lds-wrapper").toggleClass('show-lds');
+
+                if (err.status == 422) {
+                    alert("Opps! Invalid submittion. Please try again.");
+                } else {
+                    alert("Opps! Internal server error! Please try again later.");
+                }
+            }
+        }).done(function() {
+            setTimeout(() => {
+                location.href = "https://itecounsel.com";
+            }, 2000);
+        });
     });
 
     $('.loader-inner').loaders()

@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('test', 'mails.rpl');
-
-
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('{page}', 'PagesController')
     ->where('page', 'contact|migration|ielts|tourist-visa|pte|about-itec')
@@ -42,9 +39,8 @@ Route::prefix('training')->group(function () {
     });
 });
 
+Route::view('check-your-rpl-eligibility', 'pages.check-rpl-eligibility')->name('check-rpl-eligibility');
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
-
-
 Route::get('testMail', 'MailsController@testMail');
 
 
