@@ -584,6 +584,7 @@ input[type="color"]:focus,
     width: 100%;
     margin: 0;
     position: relative;
+    text-align: center;
 }
 
 .rpl-modal-form fieldset:not(:first-of-type) {
@@ -749,16 +750,25 @@ only screen and (max-device-width: 767px) {
 /*
 ====> Check your Eligibility Form Styles
 */
+.rpl-form-heading{
+    text-transform: uppercase !important;
+    color: #fff !important;
+    font-weight: 500 !important;
+    padding-bottom: 25px !important;
+}
+
 .rpl-form-padding {
     padding: 0px 25px !important;
 }
 
 .progress-bg-2 {
     background-color: rgba(255, 255, 255, 0.3) !important;
+    margin-bottom: 25px !important;
 }
 
 .rpl-form-control-box {
     padding-bottom: 20px !important;
+    text-align: left !important;
 }
 
 .rpl-form-control {
@@ -773,6 +783,10 @@ only screen and (max-device-width: 767px) {
 
 .rpl-form-select {
     padding: 10px !important;
+}
+
+.rpl-form-select option{
+    background: #1C375B !important;
 }
 
 .rpl-form-textarea {

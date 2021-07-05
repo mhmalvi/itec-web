@@ -11,12 +11,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 mx-auto">
+                        <div class="text-center">
+                            <h2 class="rpl-form-heading">Check Your Eligibility For RPL</h2>
+                        </div>
                         <div class="rpl-modal-form visible rpl-form-padding" id="rpl-modal-form">
                             <form id="rpl-form-2">
                                 <div class="progress progress-bg-2">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div> 
-                                <fieldset class="">
+                                <fieldset>
                                     <div class="form-card">
                                         <div class="rpl-form-control-box">
                                             <label class="fieldlabels p-0 m-0">What industry is your experience in? *</label>
@@ -46,7 +49,7 @@
                                     </div>
                                     <button type="button" class="next">Next</button>
                                 </fieldset>
-                                <fieldset class="">
+                                <fieldset>
                                     <div class="form-card">
                                         <div class="radio">
                                             <div class="fieldlabels">How many years of relevant work experience do you have? *</div>
@@ -104,7 +107,7 @@
                                     <button type="button" class="previous">Previous</button> 
                                     <button type="button" class="next">Next</button>
                                 </fieldset>
-                                <fieldset class="">
+                                <fieldset>
                                     <div class="form-card">
                                         <div class="radio">
                                             <div class="fieldlabels">What state do you live in? *</div>
@@ -173,7 +176,7 @@
                                     <button type="button" class="previous">Previous</button> 
                                     <button type="button" class="next">Next</button>
                                 </fieldset>
-                                <fieldset class="">
+                                <fieldset>
                                     <div class="form-card">
                                         <div class="rpl-form-control-box">
                                             <label for="name" class="fieldlabels p-0 m-0">Enter Your Fully Qualified Name *</label>
@@ -191,7 +194,7 @@
                                     <button type="button" class="previous">Previous</button> 
                                     <button type="button" class="next">Next</button>
                                 </fieldset>
-                                <fieldset class="">
+                                <fieldset>
                                     <div class="form-card">
                                         <div class="rpl-form-control-box">
                                             <label class="fieldlabels p-0 m-0">Remarks:</label>
