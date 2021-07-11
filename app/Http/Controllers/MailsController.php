@@ -40,7 +40,7 @@ class MailsController extends Controller
             'Msg' => $request->msg
         ];
 
-        Mail::to('dev.quadque@gmail.com')->send(new AppointmentMail($data));
+        Mail::to('dev.quadque@gmail.com')->cc('tousif@quadque.tech')->send(new AppointmentMail($data));
 
         return response()->json([
             'status' => 'Success'
@@ -91,7 +91,7 @@ class MailsController extends Controller
             }
         }
 
-        Mail::to('dev.quadque@gmail.com')->send(new RplMail($data, $filePath));
+        Mail::to('dev.quadque@gmail.com')->cc('tousif@quadque.tech')->send(new RplMail($data, $filePath));
 
         if ($request->hasFile('files') && count($request->file('files')) > 0) {
             Storage::delete('public/rpl/' . $fileName);
@@ -115,7 +115,7 @@ class MailsController extends Controller
             'Qualification' => $request->qualification
         ];
 
-        Mail::to('dev.quadque@gmail.com')->send(new ApplyMail($data));
+        Mail::to('dev.quadque@gmail.com')->cc('tousif@quadque.tech')->send(new ApplyMail($data));
 
         return response()->json([
             'status' => 'Success'

@@ -30,6 +30,6 @@ class AppointmentMail extends Mailable
      */
     public function build()
     {
-        return $this->subject($this->data['Name'] . " has request for appointment")->view('mails.appointment');
+        return $this->subject("There is a new request for appointment")->view('mails.appointment');
     }
 }
