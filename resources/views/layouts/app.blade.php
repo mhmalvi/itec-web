@@ -9,6 +9,10 @@
     <meta name="theme-color" content="#75dab4" />
     <link href="{{ asset('assets/favicon.png') }}" rel="shortcut icon">
 
+    {{-- Global SEO --}}
+    @include('layouts.seo')
+    {{-- Global SEO --}}
+
     @stack('seo')
 
     @stack('meta-description')
