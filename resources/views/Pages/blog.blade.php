@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', $blog->blog_title)
+
 @push('seo')
     @if (!is_null($blog->meta_tags))
         <meta name="tags" content="{{ $blog->meta_tags }}">
@@ -10,6 +12,9 @@
     @if (!is_null($blog->meta_des))
         <meta name="description" content="{{ $blog->meta_des }}">
     @endif
+@endpush
+
+@push('og')
     <meta property="og:title" content="{{ $blog->blog_title }}" />
     <meta property="og:image" content="{{ !is_null($blog->thumbnailOne) ? asset('storage/blogs/' . $blog->thumbnailOne) : asset('assets/images/blog/blog.jpg') }}" />
 @endpush

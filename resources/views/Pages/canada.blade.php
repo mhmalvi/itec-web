@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@push('meta-description')
+@section('title', 'Study in Canada')
+@push('seo')
     <meta name="description"
         content="Apply to study in Canada, renew your study permit, and learn about working in Canada while you're studying or after you graduate." />
 @endpush

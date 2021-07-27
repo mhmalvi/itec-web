@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@push('meta-description')
+@section('title', 'Recognitions of prior learning')
+
+@push('seo')
     <meta name="description"
         content="Recognition of Prior Learning acknowledges skills gained through formal and informal learning as well as work experience. The method evaluates proof of your competency to see whether you meet the criteria." />
 @endpush

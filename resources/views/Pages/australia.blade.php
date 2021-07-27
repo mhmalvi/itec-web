@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
-@push('meta-description')
-    <meta name="description"
-        content="Find globally recognized study programs in Australia, a sunny higher education destination that meets European and Asian expectations." />
+@section('title', 'Study in Australia')
+
+@push('seo')
+    <meta name="description" content="Find globally recognized study programs in Australia, a sunny higher education destination that meets European and Asian expectations." />
 @endpush
 
 @section('content')

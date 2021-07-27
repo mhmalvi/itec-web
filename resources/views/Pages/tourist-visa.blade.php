@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Tourist Visa')
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">

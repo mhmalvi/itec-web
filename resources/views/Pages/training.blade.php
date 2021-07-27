@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Training')
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">
@@ -10,7 +12,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h1>TRAININGS</h1>
+                        <h1>TRAINING</h1>
                         <br>
                         <h1 class="heading-secondary pr-4">Complete different training courses from our expert trainer</h1>
                         <br>

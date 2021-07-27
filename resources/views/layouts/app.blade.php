@@ -2,22 +2,41 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <meta name="google-site-verification" content="" />
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#75dab4" />
+    <title>@yield('title') - ITEC</title>
     <link href="{{ asset('assets/favicon.png') }}" rel="shortcut icon">
-
-    {{-- Global SEO --}}
-    @include('layouts.seo')
-    {{-- Global SEO --}}
-
+    <link rel="canonical" href="{{ URL::current() }}" />
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <meta name="title" content="@yield('title') - ITEC" />
     @stack('seo')
 
-    @stack('meta-description')
+    {{-- Open Graph --}}
+    <meta property="og:title" content="@yield('title') - ITEC">
+    <meta property="og:site_name" content="International Training and Education Counsel - ITEC">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ URL::current() }}">
+    @stack('og')
+    {{-- Open Graph --}}
 
-    <title>ITEC-International Training and Education Counsel</title>
+    {{-- Twitter Card --}}
+    <meta name="twitter:card" content="summary">
+    @stack('tc')
+    {{-- Twitter Card --}}
+
+    <meta property="article:section" content="International Training and Education Counsel">
+    <meta property="article:section" content="About Us">
+    <meta property="article:section" content="Recognitions of prior learning">
+    <meta property="article:section" content="IELTS">
+    <meta property="article:section" content="Full Qualification Courses">
+    <meta property="article:section" content="Short Courses">
+
+    <meta name="ahrefs-site-verification" content="c6df018699d9864e4f9c1521bf9ee15e4f9385ca41191ae25fe13bc86a28c0ec">
 
     @include('layouts.styles')
 </head>

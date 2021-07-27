@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Check your eligibility for rpl')
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">

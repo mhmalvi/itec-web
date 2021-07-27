@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@push('meta-description')
+@section('title', 'PTE')
+
+@push('seo')
 <meta name="description" content="PTE Academic is a computer-based academic English language exam for non-native English speakers who choose to study in a foreign country. ITEC offers the best PTE course in Australia" />
 @endpush
 

@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Contact Us')
 @push('css')
     <link rel="stylesheet" href="{{ asset('assets/css/jquery.datetimepicker.min.css') }}">
 @endpush

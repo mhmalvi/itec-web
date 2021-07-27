@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+@section('title', 'About Us')
+
+@push('seo')
+    <meta name="description" content="ITEC is the best education consultant & migration agency in Australia. Those who want to study, work or travel to Australia will get the best consultancy from our expert." />
+@endpush
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">

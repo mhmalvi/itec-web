@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', $course->course_name)
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">

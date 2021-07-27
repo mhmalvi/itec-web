@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Blogs')
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">

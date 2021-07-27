@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', 'Study in Europe')
+
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">

@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@push('meta-description')
+@section('title', 'Migration')
+
+@push('seo')
 <meta name="description" content="ITEC is a licensed visa and immigration specialist with years of experience assisting people with their migration to Australia. Make an appointment./>
 @endpush
 
