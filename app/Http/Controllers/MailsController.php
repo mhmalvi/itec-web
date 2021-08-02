@@ -9,6 +9,7 @@ use App\Mail\ApplyMail;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\AppointmentMail;
 use App\Mail\RplMail;
+use App\Models\RplEligibilityRequest;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 
@@ -64,11 +65,11 @@ class MailsController extends Controller
             'qualification' => $request->qualification,
             'relevant' => $request->relevant,
             'work_location' => $request->work_location,
-            'designation' => $request->designation,
             'industry' => $request->industry,
-            'course' => $request->courses,
             'remark' => $request->remark
         ];
+
+        RplEligibilityRequest::create($data);
 
         if ($request->hasFile('files') && count($request->file('files')) > 0) {
             $files = $request->file('files');

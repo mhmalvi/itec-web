@@ -55,25 +55,25 @@
                                             <div class="fieldlabels">How many years of relevant work experience do you have? *</div>
                                             <div class="row">
                                                 <div class="col-sm-3 col-xs-12">
-                                                    <input type="radio" name="relevant" id="one" value="1 - 2 years" />
+                                                    <input type="radio" name="exp" id="one" value="1 - 2 years" />
                                                     <label for="one" class="exp-lbl exp-lbl-red">
                                                         <div>1 - 2 <br> Years</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-3 col-xs-12">
-                                                    <input type="radio" name="relevant" id="two" value="3 - 4 years">
+                                                    <input type="radio" name="exp" id="two" value="3 - 4 years">
                                                     <label for="two" class="exp-lbl exp-lbl-red">
                                                         <div>3 - 4 <br> Years</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-3 col-xs-12">
-                                                    <input type="radio" name="relevant" id="three" value="5 - 9 years">
+                                                    <input type="radio" name="exp" id="three" value="5 - 9 years">
                                                     <label for="three" class="exp-lbl exp-lbl-red">
                                                         <div>5 - 9 <br> Years</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-3 col-xs-12">
-                                                    <input type="radio" name="relevant" id="four" value="10 + years">
+                                                    <input type="radio" name="exp" id="four" value="10 + years">
                                                     <label for="four" class="exp-lbl exp-lbl-red">
                                                         <div>10 + <br> Years</div>
                                                     </label>
@@ -84,19 +84,19 @@
                                             <div class="fieldlabels">Where is your work experience? *</div>
                                             <div class="row">
                                                 <div class="col-sm-4 col-xs-12">
-                                                    <input type="radio" name="work_location" id="wlOne" value="1 - 2 years" />
+                                                    <input type="radio" name="work_location" id="wlOne" value="Australia" />
                                                     <label for="wlOne" class="exp-lbl exp-lbl-red">
                                                         <div>Australia</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-4 col-xs-12">
-                                                    <input type="radio" name="work_location" id="wlTwo" value="3 - 4 years">
+                                                    <input type="radio" name="work_location" id="wlTwo" value="Overseas">
                                                     <label for="wlTwo" class="exp-lbl exp-lbl-red">
                                                         <div>Overseas</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-4 col-xs-12">
-                                                    <input type="radio" name="work_location" id="wlThree" value="5 - 9 years">
+                                                    <input type="radio" name="work_location" id="wlThree" value="Other">
                                                     <label for="wlThree" class="exp-lbl exp-lbl-red">
                                                         <div>Other</div>
                                                     </label>

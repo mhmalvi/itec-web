@@ -113,7 +113,7 @@ $(document).ready(function () {
         fd.append("qualification", $("#qualification").val());
         fd.append("industry", $("#industry").val());
         fd.append("location", $("input[name=location]").val());
-        fd.append("relevant", $("input[name=relevent]").val());
+        fd.append("relevant", $("input[name='exp']:checked").val());
         fd.append("work_location", $("input[name=work_location]").val());
         fd.append("name", $("#name").val());
         fd.append("contact", $("#phone").val());
