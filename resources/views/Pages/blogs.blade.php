@@ -26,7 +26,7 @@
                     @forelse ($blogs as $item)
                         <div class="post" data-aos="fade-up">
                             <figure class="post-image">
-                                <img src="{{ asset('storage/blogs/' . $item->thumbnailTwo) }}" alt="Image">
+                                <img src="{{ asset('storage/blogs/thumbnails/' . $item->thumbnail) }}" alt="{{$item->thumbnail_alt}}">
                             </figure>
                             <div class="post-content">
                                 <small class="post-date">

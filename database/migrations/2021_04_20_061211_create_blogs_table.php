@@ -32,8 +32,10 @@ class CreateBlogsTable extends Migration
             $table->text('meta_des')->nullable();
             $table->string('meta_tags')->nullable();
             $table->string('meta_keys')->nullable();
-            $table->string('thumbnailOne')->nullable();
-            $table->string('thumbnailTwo')->nullable();
+            $table->string('thumbnail')->nullable();
+            $table->string('image')->nullable();
+            $table->string('thumbnail_alt')->nullable();
+            $table->string('image_alt')->nullable();
             $table->boolean('isPublished')->default(0);
             $table->timestamps();
         });

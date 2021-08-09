@@ -19,6 +19,17 @@
     <meta property="og:image" content="{{ !is_null($blog->thumbnailOne) ? asset('storage/blogs/' . $blog->thumbnailOne) : asset('assets/images/blog/blog.jpg') }}" />
 @endpush
 
+@push('css')
+    <style>
+        .page-header .inner h3 {
+        color: #fff;
+        font-weight: 800;
+        font-size: 10vw;
+        letter-spacing: -1px;
+    }
+    </style>
+@endpush
+
 @section('content')
     <header class="page-header">
         <div class="video-bg">
@@ -27,7 +38,7 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>BLOG</h1>
+                <h3>BLOG</h3>
                 <p>We provide a free day to experience our benefits of digital world</p>
             </div>
             <!-- end container -->
@@ -41,14 +52,14 @@
                 <div class="col-lg-10">
                     <div class="post single">
                         <figure class="post-image">
-                            <img src="{{ !is_null($blog->thumbnailOne) ? asset('storage/blogs/' . $blog->thumbnailOne) : asset('assets/images/blog/blog.jpg') }}"
-                                alt="Image">
+                            <img src="{{ !is_null($blog->image) ? asset('storage/blogs/images/' . $blog->image) : asset('assets/images/blog/blog.jpg') }}"
+                                alt="{{$blog->image_alt}}">
                         </figure>
                         <div class="post-content">
                             <small class="post-date">
                                 {{ $blog->created_at }}
                             </small>
-                            <h3 class="post-title">{{ $blog->blog_title }}</h3>
+                            <h1 class="post-title">{{ $blog->blog_title }}</h1>
                             <div class="post-author">
                                 <img src="{{ asset($blog->user->photo ? 'storage/users/' . $blog->user->photo : 'admin/images/profile.png') }}"
                                     alt="Image">

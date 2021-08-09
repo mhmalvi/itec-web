@@ -3,33 +3,40 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class BlogRequest extends FormRequest
 {
-    /**
-     * Determine if the user is authorized to make this request.
-     *
-     * @return bool
-     */
-    public function authorize()
+    protected function saveThumbnail()
     {
-        return true;
+        //Get the file name without extension
+        $file = $this->file('thumbnail');
+        $thumbnailTitle = $this->thumb_title ? Str::slug($this->thumb_title) : $this->blog_title;
+        $ext = $file->getClientOriginalExtension();
+        $thumbnail = "{$thumbnailTitle}.{$ext}";
+
+        if (!Storage::exists("public/blogs/thumbnails")) {
+            Storage::makeDirectory("public/blogs/thumbnails");
+        }
+        Storage::putFileAs('public/blogs/thumbnails', $file, $thumbnail);
+
+        return $thumbnail;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array
-     */
-    public function rules()
+
+    protected function saveImage()
     {
-        return [
-            'category_id'   => 'required',
-            'blog_title'    => 'required|string',
-            'details'       => 'required',
-            'thumbnail' => 'required|image|mimes:jpg,png,jpeg|dimensions:min_width=780,min_height=1000',
-            'img' => 'required|image|mimes:jpg,png,jpeg|dimensions:min_width=1920,min_height=1080',
-            'meta_des'      => 'max:255'
-        ];
+        $file = $this->file('img');
+        $imageTitle = $this->img_title ? Str::slug($this->img_title) : $this->blog_title;
+        $ext = $file->getClientOriginalExtension();
+        $image = "{$imageTitle}.{$ext}";
+
+        //check if directory exist or not
+        if (!Storage::exists("public/blogs/images")) {
+            Storage::makeDirectory("public/images");
+        }
+
+        Storage::putFileAs('public/blogs', $file, $image);
     }
 }

@@ -1,5 +1,14 @@
 <script>
     $(document).ready(function() {
+        $("#title").on("keyup", function(){
+            var title = $(this).val();
+            var trims = $.trim(title);
+
+            var slug = trims.replace(/[^a-z0-9]/gi, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
+
+            $("#url-slug").val(slug.toLowerCase());
+        });
+
         $("#thumb").spartanMultiImagePicker({
             fieldName: 'thumbnail',
             width: '100%',

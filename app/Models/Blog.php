@@ -12,19 +12,7 @@ class Blog extends Model
 {
     use HasFactory, Sluggable;
 
-    protected $fillable = [
-        'action_user',
-        'blog_categories_id',
-        'blog_title',
-        'blog_slug',
-        'blog_des',
-        'meta_des',
-        'meta_tags',
-        'meta_keys',
-        'thumbnailOne',
-        'thumbnailTwo',
-        'isPublished'
-    ];
+    protected $guarded = [];
 
 
     /**

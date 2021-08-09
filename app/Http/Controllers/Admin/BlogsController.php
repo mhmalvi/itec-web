@@ -5,11 +5,10 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Blog;
 use App\Models\BlogCategory;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\BlogCreateRequest;
+use App\Http\Requests\BlogUpdateRequest;
 use Illuminate\Support\Facades\Storage;
-use Cviebrock\EloquentSluggable\Services\SlugService;
-use App\Http\Requests\BlogRequest;
 
 class BlogsController extends Controller
 {
@@ -41,51 +40,11 @@ class BlogsController extends Controller
      * @param $request
      * 
      */
-    public function store(BlogRequest $request)
+    public function store(BlogCreateRequest $request)
     {
         try {
-            $newImg = null;
-            $newThumb = null;
 
-            $slug = SlugService::createSlug(Blog::class, 'blog_slug', $request->blog_title);
-            $category = BlogCategory::where('title', $request->category_id)->first();
-
-            if (($request->hasFile('thumbnail')) && ($request->hasFile('img'))) {
-                //Get the file name without extension
-                $thumb = $request->file('thumbnail');
-                $thumbName = trim(pathinfo($thumb->getClientOriginalName(), PATHINFO_FILENAME));
-                $ext = $thumb->getClientOriginalExtension();
-
-                $image = $request->file('img');
-                $imageName = trim(pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME));
-                $ext = $image->getClientOriginalExtension();
-
-                $random = uniqid();
-
-                $newThumb = "{$thumbName}_{$random}.{$ext}";
-                $newImg = "{$imageName}_{$random}.{$ext}";
-
-                //check if directory exist or not
-                if (!Storage::exists("public/blogs")) {
-                    Storage::makeDirectory("public/blogs");
-                }
-                Storage::putFileAs('public/blogs', $thumb, $newThumb);
-                Storage::putFileAs('public/blogs', $image, $newImg);
-            }
-
-            $blog = Blog::create([
-                'action_user' => Auth::id(),
-                'blog_categories_id' => $category->id,
-                'blog_title' => $request->blog_title,
-                'blog_slug' => $slug,
-                'blog_des' => $request->details,
-                'meta_des' => $request->meta_des,
-                'meta_tags' => $request->meta_tags,
-                'meta_keys' => $request->meta_keys,
-                'thumbnailOne' => $newImg,
-                'thumbnailTwo' => $newThumb,
-                'isPublished' => ($request->publish === 'on') ? 1 : 0
-            ]);
+            $request->save();
 
             $notification = [
                 'message'   =>  'Successfully Saved.',
@@ -150,58 +109,10 @@ class BlogsController extends Controller
     /**
      * 
      */
-    public function update(Request $request, $id)
+    public function update(BlogUpdateRequest $request, $id)
     {
-        $slug = SlugService::createSlug(Blog::class, 'blog_slug', $request->blog_title);
-        $category = BlogCategory::where('title', $request->category_id)->first();
-
         try {
-            $blog = Blog::findOrFail($id);
-
-            $blog->blog_categories_id = $category->id;
-            $blog->blog_title = $request->blog_title;
-            $blog->blog_slug = $slug;
-            $blog->blog_des = $request->details;
-            $blog->meta_des = $request->meta_des;
-            $blog->meta_tags = $request->meta_tags;
-            $blog->meta_keys = $request->meta_keys;
-            $blog->isPublished = ($request->publish === 'on') ? 1 : 0;
-
-            if (($request->hasFile('thumbnail'))) {
-                //Get the file name without extension
-                $thumb = $request->file('thumbnail');
-                $thumbName = trim(pathinfo($thumb->getClientOriginalName(), PATHINFO_FILENAME));
-                $ext = $thumb->getClientOriginalExtension();
-
-                $random = uniqid();
-
-                $newThumb = "{$thumbName}_{$random}.{$ext}";
-
-                $blog->thumbnailTwo = $newThumb;
-
-                Storage::delete('public/blogs', $blog->thumbnailTwo);
-
-                Storage::putFileAs('public/blogs', $thumb, $newThumb);
-            }
-
-            if (($request->hasFile('img'))) {
-                //Get the file name without extension
-                $image = $request->file('img');
-                $imageName = trim(pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME));
-                $ext = $image->getClientOriginalExtension();
-
-                $random = uniqid();
-
-                $newImg = "{$imageName}_{$random}.{$ext}";
-
-                $blog->thumbnailOne = $newImg;
-
-                Storage::delete('public/blogs', $blog->thumbnailOne);
-
-                Storage::putFileAs('public/blogs', $image, $newImg);
-            }
-
-            $blog->save();
+            $request->update(Blog::findOrFail($id));
 
             $notification = [
                 'message'   =>  'Scuccessfully updated',

@@ -19,10 +19,21 @@
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Blog Title <small class="text-danger">*</small></label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" name="blog_title" value="{{ old('blog_title') }}">
+                                <input type="text" class="form-control" name="blog_title" id="title" value="{{ old('blog_title') }}">
                                 @error('blog_title')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">URL Slug<small class="text-danger">*</small></label>
+                            <div class="col-sm-10">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="slug">https://itecounsel.com/blog/</span>
+                                    </div>
+                                    <input type="text" class="form-control" id="url-slug" name="urlSlug" aria-describedby="slug">
+                                </div>
                             </div>
                         </div>
                         <div class="form-group  row">
@@ -64,7 +75,7 @@
                     <div class="ibox-content p-5">
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Tags (max 10)</label>
-                            <div class="col-sm-9" id="tags">
+                            <div class="col-sm-10" id="tags">
                                 <input type="text" class="form-control" name="meta_tags[]" />
                             </div>
                             {{-- <div class="col-sm-1 text-right">
@@ -75,7 +86,7 @@
                         </div>
                         <div class="form-group  row">
                             <label class="col-sm-2 col-form-label">Meta Keywords (max 5)</label>
-                            <div class="col-sm-9" id="keys">
+                            <div class="col-sm-10" id="keys">
                                 <input type="text" class="form-control" name="meta_keys[]" />
                             </div>
                             {{-- <div class="col-sm-1 text-right">
@@ -108,10 +119,25 @@
                                 <p>
                                     Max File Size: 1 mb
                                 </p>
-                                <div id="thumb" data-height="250px"></div>
+                                
                                 @error('thumbnail')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
+
+                                <div id="thumb" data-height="250px"></div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="thumb_title" value="{{ old('thumb_title') }}" placeholder="Optionally you can put image title..">
+                                    @error('thumb_title')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="thumb_alt" value="{{ old('thumb_alt') }}" placeholder="Optionally you can put image alt..">
+                                    @error('thumb_alt')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
+                                </div>
                             </div>
                             <div class="col-sm-6">
                                 <h5>Content Image (1920 x 1080) <small class="text-danger">*</small></h5>
@@ -121,10 +147,25 @@
                                 <p>
                                     Max File Size: 1 mb
                                 </p>
-                                <div id="img" data-height="250px"></div>
+                                
                                 @error('img')
                                     <small class="text-danger">{{ $message }}</small>
                                 @enderror
+
+                                <div id="img" data-height="250px"></div>
+                                
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="img_title" value="{{ old('img_title') }}" placeholder="Optionally you can put image title..">
+                                    @error('img_title')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="img_alt" value="{{ old('img_alt') }}" placeholder="Optionally you can put image alt..">
+                                    @error('img_alt')
+                                        <small class="text-danger">{{ $message }}</small>
+                                    @enderror
+                                </div>
                             </div>
                         </div>
                     </div>
