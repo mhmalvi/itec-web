@@ -71,7 +71,8 @@ class BlogsController extends Controller
     public function shareimg(Request $request)
     {
         if ($request->hasFile('file')) {
-            $fileName = $request->file('file')->getClientOriginalName();
+            $fileName = pathinfo($request->file('file')->getClientOriginalName(), PATHINFO_FILENAME);
+            // $fileExt = $request->file('file')->getClientOriginalExtension();
 
             $request->file('file')->move(public_path('blogImages'), $fileName);
 

@@ -194,7 +194,7 @@
                 '//www.tinymce.com/css/codepen.min.css'
             ],
 
-            image_title: true,
+            image_title: false,
             automatic_uploads: true,
             images_upload_url: "{{url('api/share-image')}}",
             file_picker_types: 'image',
@@ -208,7 +208,7 @@
                     var reader = new FileReader();
                     reader.readAsDataURL(file);
                     reader.onload = function() {
-                        var id = 'blobid' + (new Date()).getTime();
+                        var id = file.name;
                         var blobCache = tinymce.activeEditor.editorUpload.blobCache;
                         var base64 = reader.result.split(',')[1];
                         var blobInfo = blobCache.create(id, file, base64);
