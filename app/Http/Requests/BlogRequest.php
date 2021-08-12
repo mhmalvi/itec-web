@@ -34,7 +34,7 @@ class BlogRequest extends FormRequest
 
         //check if directory exist or not
         if (!Storage::exists("public/blogs/images")) {
-            Storage::makeDirectory("public/images");
+            Storage::makeDirectory("public/blogs/images");
         }
 
         Storage::putFileAs('public/blogs', $file, $image);
