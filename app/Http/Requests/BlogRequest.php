@@ -12,7 +12,7 @@ class BlogRequest extends FormRequest
     {
         //Get the file name without extension
         $file = $this->file('thumbnail');
-        $thumbnailTitle = $this->thumb_title ? Str::slug($this->thumb_title) : $this->blog_title;
+        $thumbnailTitle = $this->thumb_title ? Str::slug($this->thumb_title) : Str::slug($this->blog_title);
         $ext = $file->getClientOriginalExtension();
         $thumbnail = "{$thumbnailTitle}.{$ext}";
 
@@ -28,7 +28,7 @@ class BlogRequest extends FormRequest
     protected function saveImage()
     {
         $file = $this->file('img');
-        $imageTitle = $this->img_title ? Str::slug($this->img_title) : $this->blog_title;
+        $imageTitle = $this->img_title ? Str::slug($this->img_title) : Str::slug($this->blog_title);
         $ext = $file->getClientOriginalExtension();
         $image = "{$imageTitle}.{$ext}";
 
@@ -38,5 +38,7 @@ class BlogRequest extends FormRequest
         }
 
         Storage::putFileAs('public/blogs', $file, $image);
+
+        return $image;
     }
 }
