@@ -16,7 +16,7 @@
 
 @push('og')
     <meta property="og:title" content="{{ $blog->blog_title }}" />
-    <meta property="og:image" content="{{ !is_null($blog->thumbnailOne) ? asset('storage/blogs/' . $blog->thumbnailOne) : asset('assets/images/blog/blog.jpg') }}" />
+    <meta property="og:image" content="{{ !is_null($blog->image) ? asset('storage/blogs/images/' . $blog->image) : asset('assets/images/blog/blog.jpg') }}" />
 @endpush
 
 @push('css')
