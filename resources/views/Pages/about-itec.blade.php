@@ -8,9 +8,7 @@
 
 @section('content')
     <header class="page-header">
-        <div class="video-bg">
-            <video src="{{ asset('assets/videos/about.m4v') }}" muted loop autoplay></video>
-        </div>
+        <div class="video-bg img-bg img-bg-1"></div>
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">

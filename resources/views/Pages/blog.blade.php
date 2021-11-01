@@ -32,9 +32,7 @@
 
 @section('content')
     <header class="page-header">
-        <div class="video-bg">
-            <video src="videos/video02.mp4" muted loop autoplay></video>
-        </div>
+        <div class="video-bg img-bg img-bg-7"></div>
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">

@@ -3,14 +3,12 @@
 @section('title', 'IELTS')
 
 @push('seo')
-<meta name="description" content="Take the IELTS exam to prove that you have the required English language skills to study in Australia. IELTS ratings are accepted as evidence of English language proficiency by higher education institutions./>
+<meta name="description" content="Take the IELTS exam to prove that you have the required English language skills to study in Australia. IELTS ratings are accepted as evidence of English language proficiency by higher education institutions."/>
 @endpush
 
 @section('content')
     <header class="page-header">
-        <div class="video-bg">
-            <video src="{{ asset('assets/videos/Ielts.m4v') }}"muted loop autoplay></video>
-        </div>
+        <div class="video-bg img-bg img-bg-5"></div>
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">

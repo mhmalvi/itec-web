@@ -5,9 +5,7 @@
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
-        <div class="video-bg">
-            <video src="{{ asset('assets/videos/kuala-lumpur-city.m4v') }}" muted loop autoplay></video>
-        </div>
+        <div class="video-bg img-bg img-bg-3"></div>
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">

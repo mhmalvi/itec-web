@@ -67,7 +67,7 @@ CUSTOM CSS STARTS HERE
 
 .rpl-des ul li:hover a {
     text-decoration: none;
-    color: #CD4236;
+    color: #cd4236;
 }
 
 .rpl-card .rpl-des ul li {
@@ -115,7 +115,7 @@ CUSTOM CSS STARTS HERE
 
 .find:hover {
     background-color: #fff;
-    color: #CD4236;
+    color: #cd4236;
 }
 
 .service_box {
@@ -123,12 +123,12 @@ CUSTOM CSS STARTS HERE
     padding: 40px 20px;
     text-align: center;
     border-radius: 5px;
-    background: #CD4236;
-    transition: all 0.30s ease 0s;
+    background: #cd4236;
+    transition: all 0.3s ease 0s;
 }
 
 .service_box:hover {
-    background: #1C375B;
+    background: #1c375b;
 }
 
 .service_box .service_icon {
@@ -140,7 +140,7 @@ CUSTOM CSS STARTS HERE
     line-height: 70px;
     border-radius: 50px;
     transform: translateY(0);
-    transition: all 0.30s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .service_box:hover .service_icon {
@@ -170,7 +170,7 @@ CUSTOM CSS STARTS HERE
     color: #fff;
     margin: 0;
     opacity: 0;
-    transition: all 0.30s linear 0s;
+    transition: all 0.3s linear 0s;
 }
 
 .service_box:hover p {
@@ -185,19 +185,19 @@ CUSTOM CSS STARTS HERE
 }
 
 .migration {
-    background-image: url('../images/slider1.jpg');
+    background-image: url("../images/slider1.jpg");
 }
 
 .australia {
-    background-image: url('../images/BG/bg-parallax7.jpg');
+    background-image: url("../images/BG/bg-parallax7.jpg");
 }
 
 .europe {
-    background-image: url('../images/BG/bg-parallax7-europe.jpg');
+    background-image: url("../images/BG/bg-parallax7-europe.jpg");
 }
 
 .malaysia {
-    background-image: url('../images/BG/bg-parallax7-malaysia.jpg');
+    background-image: url("../images/BG/bg-parallax7-malaysia.jpg");
 }
 
 .works {
@@ -214,7 +214,7 @@ CUSTOM CSS STARTS HERE
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
     opacity: 0.7;
     filter: alpha(opacity=70);
-    background-color: #1C375B;
+    background-color: #1c375b;
 }
 
 .inner-text {
@@ -226,7 +226,7 @@ CUSTOM CSS STARTS HERE
 
 #migration-form select {
     color: #7d7d7d;
-    height: calc(1.5em + .75rem + 22px);
+    height: calc(1.5em + 0.75rem + 22px);
 }
 
 .works .content-box {
@@ -250,7 +250,7 @@ CUSTOM CSS STARTS HERE
 }
 
 #contactForm .form-control {
-    color: #1C375B !important;
+    color: #1c375b !important;
 }
 
 #contactForm textarea {
@@ -283,8 +283,8 @@ CUSTOM CSS STARTS HERE
 }
 
 .contact-card-right {
-    background-color: #1C375B;
-    background-image: url('../images/contact2.jpg');
+    background-color: #1c375b;
+    background-image: url("../images/contact2.jpg");
     color: #fff;
     background-blend-mode: multiply;
 }
@@ -307,13 +307,13 @@ CUSTOM CSS STARTS HERE
     margin: 25px auto;
     padding: 15px 30px;
     border: transparent;
-    background-color: #1C375B;
+    background-color: #1c375b;
     color: #fff;
 }
 
 .load-rpl {
     background-color: #fff !important;
-    color: #1C375B !important;
+    color: #1c375b !important;
 }
 
 .other {
@@ -330,12 +330,12 @@ CUSTOM CSS STARTS HERE
 
 .touch-btn:hover {
     background-color: #fff !important;
-    color: #1C375B !important;
+    color: #1c375b !important;
 }
 
 .accordion button h4 {
     font-size: 1.2rem;
-    color: #1C375B;
+    color: #1c375b;
     font-weight: 600;
 }
 
@@ -346,7 +346,7 @@ button:focus {
 }
 
 .accordion .card-body h5 {
-    color: #CD4236;
+    color: #cd4236;
 }
 
 .accordion .card-body {
@@ -359,7 +359,7 @@ button:focus {
 
 .accordion .card-body ul li::before {
     content: "\2713";
-    color: #CD4236;
+    color: #cd4236;
     margin-right: 5px;
 }
 
@@ -398,31 +398,30 @@ button:focus {
 }
 
 .bg-gray {
-    background: #F2F2F2 !important;
+    background: #f2f2f2 !important;
 }
 
 .bg-logo-primary {
-    background: #1C375B !important;
+    background: #1c375b !important;
 }
 
 .bg-logo-secondary {
-    background: #CD4236 !important;
+    background: #cd4236 !important;
 }
 
 .apply-form {
-    border: 1px solid #1C375B;
+    border: 1px solid #1c375b;
     padding: 100px 50px;
 }
 
 .apply-form .form-control {
-    color: #CD4236;
+    color: #cd4236;
 }
 
 .itec-services a {
     text-decoration: none;
     color: #fff;
 }
-
 
 textarea,
 select,
@@ -441,9 +440,8 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-    border-color: #CD4236 !important;
+    border-color: #cd4236 !important;
 }
-
 
 textarea:focus,
 select:focus,
@@ -477,11 +475,11 @@ input[type="color"]:focus,
 } */
 
 .modal-content {
-    background: #1C375B !important;
+    background: #1c375b !important;
 }
 
 .modal-body {
-    border: 2px solid #CD4236 !important;
+    border: 2px solid #cd4236 !important;
 }
 
 .popup-img {
@@ -499,7 +497,7 @@ input[type="color"]:focus,
 }
 
 .popup-title p span {
-    color: #CD4236 !important;
+    color: #cd4236 !important;
     font-size: 1.2rem !important;
     font-weight: 600;
 }
@@ -509,11 +507,11 @@ input[type="color"]:focus,
 }
 
 .popup-form button[type="submit"] {
-    border: 1px solid #CD4236 !important;
+    border: 1px solid #cd4236 !important;
 }
 
 .popup-form button[type="submit"]:hover {
-    background: #CD4236 !important;
+    background: #cd4236 !important;
 }
 
 .popup-form .btn-popup {
@@ -545,12 +543,12 @@ input[type="color"]:focus,
     right: -28px;
     color: #fff;
     font-size: 16px;
-    border: 2px solid #CD4236;
+    border: 2px solid #cd4236;
     padding: 5px 12px;
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
-    background: #1C375B;
+    background: #1c375b;
 }
 
 .rpl-modal-content {
@@ -564,18 +562,17 @@ input[type="color"]:focus,
 }
 
 .progress {
-    height: 20px
+    height: 20px;
 }
 
 .progress-bar {
-    background-color: #CD4236;
+    background-color: #cd4236;
 }
 
 .rpl-modal-form {
     display: none;
     font-size: 16px !important;
 }
-
 
 .rpl-modal-form fieldset {
     border: 0 none;
@@ -601,18 +598,18 @@ input[type="color"]:focus,
     text-align: left !important;
 }
 
-#rpl-form input[type=text],
-#rpl-form input[type=email],
+#rpl-form input[type="text"],
+#rpl-form input[type="email"],
 #rpl-form select,
-#rpl-form-2 input[type=text],
-#rpl-form-2 input[type=email],
+#rpl-form-2 input[type="text"],
+#rpl-form-2 input[type="email"],
 #rpl-form-2 select {
     border: 1px solid #ccc;
     width: 100%;
     height: 35px;
     box-sizing: border-box;
-    color: #2C3E50;
-    background-color: #ECEFF1;
+    color: #2c3e50;
+    background-color: #eceff1;
     font-size: 16px;
     letter-spacing: 1px;
 }
@@ -639,9 +636,9 @@ input[type="color"]:focus,
     display: none;
 }
 
-input[type="radio"]:checked~label {
-    background-color: #CD4236;
-    border: 2px solid #CD4236;
+input[type="radio"]:checked ~ label {
+    background-color: #cd4236;
+    border: 2px solid #cd4236;
 }
 
 .next,
@@ -658,7 +655,7 @@ input[type="radio"]:checked~label {
 
 /* RESPONSIVE TABLET FIXES */
 @media only screen and (max-width: 991px),
-only screen and (max-device-width: 991px) {
+    only screen and (max-device-width: 991px) {
     .rpl-modal-content {
         padding: 30px;
     }
@@ -676,7 +673,7 @@ only screen and (max-device-width: 991px) {
 
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px),
-only screen and (max-device-width: 767px) {
+    only screen and (max-device-width: 767px) {
     .fieldlabels {
         font-size: 12px;
     }
@@ -685,8 +682,8 @@ only screen and (max-device-width: 767px) {
         padding: 30px;
     }
 
-    #rpl-form input[type=text],
-    #rpl-form input[type=email],
+    #rpl-form input[type="text"],
+    #rpl-form input[type="email"],
     #rpl-form textarea,
     #rpl-form select {
         font-size: 12px;
@@ -751,7 +748,7 @@ only screen and (max-device-width: 767px) {
 /*
 ====> Check your Eligibility Form Styles
 */
-.rpl-form-heading{
+.rpl-form-heading {
     text-transform: uppercase !important;
     color: #fff !important;
     font-weight: 500 !important;
@@ -786,8 +783,8 @@ only screen and (max-device-width: 767px) {
     padding: 10px !important;
 }
 
-.rpl-form-select option{
-    background: #1C375B !important;
+.rpl-form-select option {
+    background: #1c375b !important;
 }
 
 .rpl-form-textarea {
@@ -800,7 +797,7 @@ only screen and (max-device-width: 767px) {
 }
 
 .rpl-form-file {
-    border: 1px dashed #CD4236 !important;
+    border: 1px dashed #cd4236 !important;
     padding: 35px !important;
     width: 100% !important;
     text-align: center !important;
@@ -813,7 +810,7 @@ only screen and (max-device-width: 767px) {
 }
 
 .exp-lbl-red {
-    border: 1px solid #CD4236 !important;
+    border: 1px solid #cd4236 !important;
 }
 
 .loader-wrapper {
@@ -932,4 +929,41 @@ only screen and (max-device-width: 767px) {
     100% {
         opacity: 0;
     }
+}
+
+.img-bg {
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-bg-1 {
+    background-image: url("../images/BG/ab-1.jpg");
+}
+
+.img-bg-2 {
+    background-image: url("../images/BG/rpl-1.jpg");
+}
+
+.img-bg-3 {
+    background-image: url("../images/BG/study-1.jpg");
+}
+
+.img-bg-4 {
+    background-image: url("../images/BG/training-1.jpg");
+}
+
+.img-bg-5 {
+    background-image: url("../images/BG/training-2.jpg");
+}
+
+.img-bg-6 {
+    background-image: url("../images/BG/mg-1.jpg");
+}
+
+.img-bg-7 {
+    background-image: url("../images/BG/blog-1.jpg");
+}
+
+.img-bg-8 {
+    background-image: url("../images/BG/contact-1.jpg");
 }

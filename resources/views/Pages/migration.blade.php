@@ -3,15 +3,13 @@
 @section('title', 'Migration')
 
 @push('seo')
-<meta name="description" content="ITEC is a licensed visa and immigration specialist with years of experience assisting people with their migration to Australia. Make an appointment./>
+<meta name="description" content="ITEC is a licensed visa and immigration specialist with years of experience assisting people with their migration to Australia. Make an appointment."/>
 @endpush
 
 @section('content')
     <!-- end all-cases-link -->
     <header class="page-header">
-        <div class="video-bg">
-            <video src="{{ asset('assets/videos/Migration.m4v') }}" muted loop autoplay></video>
-        </div>
+        <div class="video-bg img-bg img-bg-6"></div>
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
