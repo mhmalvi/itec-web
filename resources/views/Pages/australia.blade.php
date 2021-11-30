@@ -175,7 +175,7 @@
                 <div class="row">
                     <div class="col-lg-6 px-0 d-none d-sm-block">
                         <div>
-                            <img src="{{asset('images/apply.webp')}}" alt="">
+                            <img class="lazyload" data-src="{{asset('images/apply.webp')}}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 apply-form">

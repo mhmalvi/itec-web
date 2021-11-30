@@ -56,7 +56,7 @@
                     <tr>
                         <th align="center" colspan="2">
                             <a href="https://itecounsel.com" target="_blank">
-                                <img src="{{ asset('images/logo.webp') }}" alt="logo" style="display:block; width: 100px !important; padding: 35px 15px !important; margin: auto !important; vertical-align: middle !important;">
+                                <img class="lazyload" data-src="{{ asset('images/logo.webp') }}" alt="logo" style="display:block; width: 100px !important; padding: 35px 15px !important; margin: auto !important; vertical-align: middle !important;">
                             </a>
                         </th>
                     </tr>
