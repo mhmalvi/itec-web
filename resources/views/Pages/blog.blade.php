@@ -16,7 +16,7 @@
 
 @push('og')
     <meta property="og:title" content="{{ $blog->blog_title }}" />
-    <meta property="og:image" content="{{ !is_null($blog->image) ? asset('storage/blogs/images/' . $blog->image) : asset('assets/images/blog/blog.jpg') }}" />
+    <meta property="og:image" content="{{ !is_null($blog->image) ? asset('storage/blogs/images/' . $blog->image) : asset('images/blog/blog.jpg') }}" />
 @endpush
 
 @push('css')
@@ -50,7 +50,7 @@
                 <div class="col-lg-10">
                     <div class="post single">
                         <figure class="post-image">
-                            <img src="{{ !is_null($blog->image) ? asset('storage/blogs/images/' . $blog->image) : asset('assets/images/blog/blog.jpg') }}"
+                            <img class="lazyload" data-src="{{ !is_null($blog->image) ? asset('storage/blogs/images/' . $blog->image) : asset('images/blog/blog.jpg') }}"
                                 alt="{{$blog->image_alt}}">
                         </figure>
                         <div class="post-content">
@@ -59,7 +59,7 @@
                             </small>
                             <h1 class="post-title">{{ $blog->blog_title }}</h1>
                             <div class="post-author">
-                                <img src="{{ asset($blog->user->photo ? 'storage/users/' . $blog->user->photo : 'admin/images/profile.png') }}"
+                                <img class="lazyload" data-src="{{ asset($blog->user->photo ? 'storage/users/' . $blog->user->photo : 'admin/images/profile.png') }}"
                                     alt="Image">
                                 <span>by: {{ $blog->user->name }}</span>
                             </div>

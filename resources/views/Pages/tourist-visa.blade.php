@@ -56,7 +56,7 @@
             </div>
             <!-- end row -->
 
-            
+
             <div class="row mt-5 pt-5">
                 <div class="col-lg-4 wow" data-splitting>
                     <h3 class="section-title text-left">DOCUMENTS REQUIRED FOR AUSTRALIA VISA</h3>
@@ -95,7 +95,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/ielts/calendar.png') }}" alt="Image"> </figure>
+                        <figure> <img class="lazyload" data-src="{{ asset('images/ielts/calendar.webp') }}" alt="Image"> </figure>
                         <h6>DURATION</h6>
                         <ul>
                             <li>3 Months</li>
@@ -107,7 +107,7 @@
                 <!-- end col-12 -->
                 <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block selected">
-                        <figure> <img src="{{ asset('assets/images/ielts/money.png') }}" alt="Image"> </figure>
+                        <figure> <img class="lazyload" data-src="{{ asset('images/ielts/money.webp') }}" alt="Image"> </figure>
                         <h6>FEES</h6>
                         <ul>
                             <li>AUD $399.00</li>
@@ -118,7 +118,7 @@
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/ielts/location.png') }}" alt="Image"> </figure>
+                        <figure> <img class="lazyload" data-src="{{ asset('images/ielts/location.webp') }}" alt="Image"> </figure>
                         <h6>LOCATION</h6>
                         <ul>
                             <li>Australia Office</li>
@@ -150,21 +150,21 @@
                     <div class="py-2 text-justify">
                         <p><strong>How long before the start of the intended visit should I apply for an Australia Visa?</strong></p>
                         <p>
-                            Applicants are advised to apply for an Australia Visa in advance but not earlier then 90 days prior to the date of travel. 
+                            Applicants are advised to apply for an Australia Visa in advance but not earlier then 90 days prior to the date of travel.
                             The Australian High Commission recommends that you apply at least 3 weeks prior to your date of travel to accommodate any unforeseen processing delays.
                         </p>
                     </div>
                     <div class="py-2 text-justify">
                         <p><strong>Should I purchase my airline ticket before travelling?</strong></p>
                         <p>
-                            You should not purchase non-refundable tickets or accommodation prior to the grant of a visa. Any such purchases are the sole responsibility of the visa applicant. 
+                            You should not purchase non-refundable tickets or accommodation prior to the grant of a visa. Any such purchases are the sole responsibility of the visa applicant.
                             The Department of Home Affairs recommends that you lodge your Australia Visa application well ahead of your proposed travel date and finalize travel arrangements after visa issue.
                         </p>
                     </div>
                     <div class="py-2 text-justify">
                         <p><strong>Is Australia Visa a sticker Visa OR an E–Visa?</strong></p>
                         <p>
-                            The Australia Visa is an E-Visa i.e. it is not a Sticker visa endorsed on the passport, once decision is taken by the Australian High Commission; 
+                            The Australia Visa is an E-Visa i.e. it is not a Sticker visa endorsed on the passport, once decision is taken by the Australian High Commission;
                             E-Visa will be mailed on the registered Email ID which is mentioned on the visa form.
                         </p>
                     </div>

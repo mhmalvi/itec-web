@@ -148,22 +148,22 @@
             <ul>
                 <li>
                     <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/australia/1.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/australia/1.webp') }}" alt="Image">
                     </figure>
                 </li>
                 <li>
                     <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/australia/2.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/australia/2.webp') }}" alt="Image">
                     </figure>
                 </li>
                 <li>
                     <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/australia/3.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/australia/3.webp') }}" alt="Image">
                     </figure>
                 </li>
                 <li>
                     <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/australia/4.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/australia/4.webp') }}" alt="Image">
                     </figure>
                 </li>
             </ul>

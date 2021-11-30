@@ -29,7 +29,7 @@
                                         <input type="text" name="phone" id="" class="form-control my-3" placeholder="You Phone Number"/>
                                         <textarea name="message" id="" rows="3" class="form-control my-3" placeholder="Message"></textarea>
                                     </div>
-        
+
                                     <button type="submit" class="touch-btn">Submit</button>
                                 </form>
                             </div>
@@ -77,19 +77,19 @@
                               </button>
                             </h5>
                           </div>
-                      
+
                           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
                                 <h5>Qualification Name:</h5>
                                 <p>
                                     {{$course->course_name}}
                                 </p>
-            
+
                                 <h5>Qualification Code and Units of Competency:</h5>
                                 <p>
                                     {{ $course->course_code }}
                                 </p>
-            
+
                                 <h5>Duration:</h5>
                                 <p>
                                     Within four weeks of receiving sufficient and complying evidence of competency in all applied for units of competency.
@@ -122,7 +122,7 @@
                           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
                                 <p>
-                                    You will need to provide a range of evidence to assist your assessor to make a decision about your competence. 
+                                    You will need to provide a range of evidence to assist your assessor to make a decision about your competence.
                                     The types of evidence you may be asked to provide can include:
                                 </p>
                                 <ul>
@@ -182,7 +182,7 @@
                         </div>
                     </div>
 
-                    <p class="pt-5">View Other Qualifications in 
+                    <p class="pt-5">View Other Qualifications in
                         <a href="{{ route('industry', $course->courseIndustry->slug) }}" class="text-danger">
                             {{$course->courseIndustry->title}}
                         </a>

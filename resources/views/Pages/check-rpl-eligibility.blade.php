@@ -18,7 +18,7 @@
                             <form id="rpl-form-2">
                                 <div class="progress progress-bg-2">
                                     <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div> 
+                                </div>
                                 <fieldset>
                                     <div class="form-card">
                                         <div class="rpl-form-control-box">
@@ -103,8 +103,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
-                                    <button type="button" class="previous">Previous</button> 
+                                    </div>
+                                    <button type="button" class="previous">Previous</button>
                                     <button type="button" class="next">Next</button>
                                 </fieldset>
                                 <fieldset>
@@ -115,28 +115,28 @@
                                                 <div class="col-sm-3 col-6">
                                                     <input type="radio" name="location" id="locOne" value="NSW" />
                                                     <label for="locOne" class="exp-lbl exp-lbl-red">
-                                                        <img src="{{asset('assets/images/maps/01.png')}}" alt="nsw">
+                                                        <img class="lazyload" data-src="{{asset('images/maps/01.webp')}}" alt="nsw">
                                                         <div>NSW</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-3 col-6">
                                                     <input type="radio" name="location" id="locTwo" value="VIC">
                                                     <label for="locTwo" class="exp-lbl exp-lbl-red">
-                                                        <img src="{{asset('assets/images/maps/02.png')}}" alt="vic">
+                                                        <img class="lazyload" data-src="{{asset('images/maps/02.webp')}}" alt="vic">
                                                         <div>VIC</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-3 col-6">
                                                     <input type="radio" name="location" id="locThree" value="QLD">
                                                     <label for="locThree" class="exp-lbl exp-lbl-red">
-                                                        <img src="{{asset('assets/images/maps/03.png')}}" alt="qld">
+                                                        <img class="lazyload" data-src="{{asset('images/maps/03.webp')}}" alt="qld">
                                                         <div>QLDs</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-3 col-6">
                                                     <input type="radio" name="location" id="locFour" value="SA">
                                                     <label for="locFour" class="exp-lbl exp-lbl-red">
-                                                        <img src="{{asset('assets/images/maps/04.png')}}" alt="sa">
+                                                        <img class="lazyload" data-src="{{asset('images/maps/04.webp')}}" alt="sa">
                                                         <div>SA</div>
                                                     </label>
                                                 </div>
@@ -145,35 +145,35 @@
                                                 <div class="col-sm-3 col-6">
                                                     <input type="radio" name="location" id="locFive" value="WA" />
                                                     <label for="locFive" class="exp-lbl exp-lbl-red">
-                                                        <img src="{{asset('assets/images/maps/05.png')}}" alt="wa">
+                                                        <img class="lazyload" data-src="{{asset('images/maps/05.webp')}}" alt="wa">
                                                         <div>WA</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-3 col-6">
                                                     <input type="radio" name="location" id="locSix" value="ACT">
                                                     <label for="locSix" class="exp-lbl exp-lbl-red">
-                                                        <img src="{{asset('assets/images/maps/06.png')}}" alt="act">
+                                                        <img class="lazyload" data-src="{{asset('images/maps/06.webp')}}" alt="act">
                                                         <div>ACT</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-3 col-6">
                                                     <input type="radio" name="location" id="locSeven" value="NT">
                                                     <label for="locSeven" class="exp-lbl exp-lbl-red">
-                                                        <img src="{{asset('assets/images/maps/07.png')}}" alt="nt">
+                                                        <img class="lazyload" data-src="{{asset('images/maps/07.webp')}}" alt="nt">
                                                         <div>NT</div>
                                                     </label>
                                                 </div>
                                                 <div class="col-sm-3 col-6">
                                                     <input type="radio" name="location" id="locEight" value="TAS">
                                                     <label for="locEight" class="exp-lbl exp-lbl-red">
-                                                        <img src="{{asset('assets/images/maps/08.png')}}" alt="tas">
+                                                        <img class="lazyload" data-src="{{asset('images/maps/08.webp')}}" alt="tas">
                                                         <div>TAS</div>
                                                     </label>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> 
-                                    <button type="button" class="previous">Previous</button> 
+                                    </div>
+                                    <button type="button" class="previous">Previous</button>
                                     <button type="button" class="next">Next</button>
                                 </fieldset>
                                 <fieldset>
@@ -187,11 +187,11 @@
                                             <input type="email" id="email" class="rpl-form-control" placeholder="example@email.com" >
                                         </div>
                                         <div class="rpl-form-control-box">
-                                            <label for="phone" class="fieldlabels p-0 m-0">Enter Your Contact Number *</label> 
+                                            <label for="phone" class="fieldlabels p-0 m-0">Enter Your Contact Number *</label>
                                             <input type="text" id="phone" class="rpl-form-control" placeholder="Enter your contact number" >
                                         </div>
-                                    </div> 
-                                    <button type="button" class="previous">Previous</button> 
+                                    </div>
+                                    <button type="button" class="previous">Previous</button>
                                     <button type="button" class="next">Next</button>
                                 </fieldset>
                                 <fieldset>
@@ -205,8 +205,8 @@
                                             <label class="fieldlabels p-0 m-0 rpl-form-file" for="file">Upload your documents</label>
                                             <input type="file" id="file"/>
                                         </div>
-                                    </div> 
-                                    <button type="button" class="previous">Previous</button> 
+                                    </div>
+                                    <button type="button" class="previous">Previous</button>
                                     <button type="submit" class="rpl-form-submit" id="btn-submit">
                                         Submit
                                     </button>

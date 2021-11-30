@@ -62,7 +62,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/ielts/calendar.png') }}" alt="Image"> </figure>
+                        <figure> <img class="lazyload" data-src="{{ asset('assets/images/ielts/calendar.webp') }}" alt="Image"> </figure>
                         <h6>DURATION</h6>
                         <ul>
                             <li>Regular Course - 3 Months</li>
@@ -75,7 +75,7 @@
                 <!-- end col-12 -->
                 <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block selected">
-                        <figure> <img src="{{ asset('assets/images/ielts/money.png') }}" alt="Image"> </figure>
+                        <figure> <img class="lazyload" data-src="{{ asset('assets/images/ielts/money.webp') }}" alt="Image"> </figure>
                         <h6>FEES</h6>
                         <ul>
                             <li>Regular Course <strong>BDT 16,000</strong></li>
@@ -87,7 +87,7 @@
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/ielts/location.png') }}" alt="Image"> </figure>
+                        <figure> <img class="lazyload" data-src="{{ asset('assets/images/ielts/location.webp') }}" alt="Image"> </figure>
                         <h6>LOCATION</h6>
                         <ul>
                             <li>

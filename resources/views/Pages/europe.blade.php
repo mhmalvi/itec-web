@@ -572,22 +572,22 @@
             <ul>
                 <li>
                     <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/europe/1.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/europe/1.webp') }}" alt="Image">
                     </figure>
                 </li>
                 <li>
                     <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/europe/2.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/europe/2.webp') }}" alt="Image">
                     </figure>
                 </li>
                 <li>
                     <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/europe/3.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/europe/3.webp') }}" alt="Image">
                     </figure>
                 </li>
                 <li>
                     <figure data-aos="zoom-in">
-                        <img src="{{ asset('assets/images/europe/4.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/europe/4.webp') }}" alt="Image">
                     </figure>
                 </li>
             </ul>
@@ -599,7 +599,7 @@
                 <div class="row">
                     <div class="col-lg-6 px-0 d-none d-sm-block">
                         <div>
-                            <img src="{{asset('assets/images/apply.png')}}" alt="">
+                            <img class="lazyload" data-src="{{asset('assets/images/apply.webp')}}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 apply-form">

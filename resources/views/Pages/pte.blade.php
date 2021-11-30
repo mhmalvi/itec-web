@@ -36,14 +36,14 @@
                 <!-- end col-12 -->
                 <div class="col-lg-7" data-aos="fade-up">
                     <p class="text-justify">
-                        In ITEC , Our PTE coaching courses are fully computerized. To simulate the real exam environment, we provide all students with desktop computers. With 40 hours of training time, including lectures, videos, and online practice, you will be completely prepared for all four parts of the PTE Academic exam – 
+                        In ITEC , Our PTE coaching courses are fully computerized. To simulate the real exam environment, we provide all students with desktop computers. With 40 hours of training time, including lectures, videos, and online practice, you will be completely prepared for all four parts of the PTE Academic exam –
                         Speaking, Writing, Reading, and Listening – in our complete PTE training course (3 weeks).
                     </p>
 
                     <br>
 
                     <p class="text-justify">
-                        Join this full section kit PTE classes if you want to increase your chances of passing the exam. You'll learn technical and successful tactics, get ample computer practice time, 
+                        Join this full section kit PTE classes if you want to increase your chances of passing the exam. You'll learn technical and successful tactics, get ample computer practice time,
                         and learn some great practical tips to help your test go smoothly on the day.
                     </p>
 
@@ -69,7 +69,7 @@
                 </div>
                 <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/ielts/calendar.png') }}" alt="Image"> </figure>
+                        <figure> <img class="lazyload" data-src="{{ asset('images/ielts/calendar.webp') }}" alt="Image"> </figure>
                         <h6>DURATION</h6>
                         <ul>
                             <li>3 Months</li>
@@ -81,7 +81,7 @@
                 <!-- end col-12 -->
                 <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block selected">
-                        <figure> <img src="{{ asset('assets/images/ielts/money.png') }}" alt="Image"> </figure>
+                        <figure> <img class="lazyload" data-src="{{ asset('images/ielts/money.webp') }}" alt="Image"> </figure>
                         <h6>FEES</h6>
                         <ul>
                             <li>AUD $399.00</li>
@@ -92,7 +92,7 @@
                 <!-- end col-3 -->
                 <div class="col-lg-3 col-md-4" data-aos="fade-up">
                     <div class="content-block">
-                        <figure> <img src="{{ asset('assets/images/ielts/location.png') }}" alt="Image"> </figure>
+                        <figure> <img class="lazyload" data-src="{{ asset('images/ielts/location.webp') }}" alt="Image"> </figure>
                         <h6>LOCATION</h6>
                         <ul>
                             <li>Australia Office</li>
@@ -140,7 +140,7 @@
                     <div class="p-2 text-justify">
                         <p><strong>PTE Preparation</strong></p>
                         <p>
-                            This course is designed for students who have never taken the PTE exam or for students who have taken the PTE exam but need to improve their performance. Our experts have had great success in assisting students in achieving their target grades, 
+                            This course is designed for students who have never taken the PTE exam or for students who have taken the PTE exam but need to improve their performance. Our experts have had great success in assisting students in achieving their target grades,
                             which have ranged from 65 to as high as 79 and 90 in a limited period of time.
                         </p>
                     </div>

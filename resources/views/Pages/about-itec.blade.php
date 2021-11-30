@@ -125,7 +125,7 @@
                 </div>
                 <!-- end col-6 -->
                 <div class="col-lg-7 order-lg-1" data-aos="fade-up">
-                    <img src="{{asset('assets/images/team.jpeg')}}" alt="">
+                    <img class="lazyload" data-src="{{asset('images/team.webp')}}" alt="">
                 </div>
                 <!-- end col-6 -->
             </div>
@@ -139,7 +139,7 @@
         <div class="container">
             <div class="row py-5 px-3" data-aos="fade-up">
                 <div class="col-lg-4 offset-lg-1 order-lg-12">
-                    <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
+                    <img class="lazyload" data-src="{{ asset('images/122.webp') }}" alt="Image">
                 </div>
                 <!-- end col-7 -->
                 <div class="col-lg-7 order-lg-1 py-3" data-aos="fade-up">
@@ -164,7 +164,7 @@
 
             <div class="row py-5 mt-3 px-3">
                 <div class="col-lg-4" data-aos="fade-up">
-                    <img src="{{ asset('assets/images/123.jpg') }}" alt="Image">
+                    <img class="lazyload" data-src="{{ asset('images/123.webp') }}" alt="Image">
                 </div>
                 <!-- end col-5 -->
                 <div class="col-lg-7 offset-lg-1 py-3" data-aos="fade-up">

@@ -18,7 +18,7 @@
                 <h1 class="heading-secondary">Professional Australian Migration Services</h1>
                 <br>
                 <p>
-                    
+
                     ITEC is the most trusted Australian migration services provider in Sydney, and it will assist you by removing all of the hassle from the process and preparing visa applications on behalf of clients to ensure that you get your visa quickly and easily.
                 </p>
             </div>
@@ -41,29 +41,29 @@
                 <div class="col-lg-4">
                     <div class="inner-text" data-aos="fade-up">
                         <p class="text-justify wow bounceInUp">
-                            You can sign up for a contract with our licensed migration consultant after our initial consultation (online/email/face-to-face consultation) for Australian migration services. 
-                            We'll take care of it for you and prepare your application accordingly. 
+                            You can sign up for a contract with our licensed migration consultant after our initial consultation (online/email/face-to-face consultation) for Australian migration services.
+                            We'll take care of it for you and prepare your application accordingly.
                             A full collection of application forms and checklists will be sent to you by our migration agent in Sydney.
                         </p>
                     </div>
-                </div>   
+                </div>
                 <div class="col-lg-4">
                     <div class="inner-text" data-aos="fade-up">
                         <p class="text-justify wow bounceInUp">
-                            As your case-processor, one dedicated member of staff will be assigned to you. 
+                            As your case-processor, one dedicated member of staff will be assigned to you.
                             Our team will continue to assist you at every phase of the process, including training, qualifications evaluation, and filing with the Department of Immigration and Border Protection.
                         </p>
                     </div>
-                </div>   
+                </div>
                 <div class="col-lg-4">
                     <div class="inner-text" data-aos="fade-up">
                         <p class="text-justify wow bounceInUp">
-                            We use sophisticated migration process, this system helps with collecting all necessary information, fill the necessary DIBP Forms and we also provide a safe and confidential portal. 
-                            The portal system allows our clients to safely & securely attach their documents (ready for submission to Department of Immigration). 
+                            We use sophisticated migration process, this system helps with collecting all necessary information, fill the necessary DIBP Forms and we also provide a safe and confidential portal.
+                            The portal system allows our clients to safely & securely attach their documents (ready for submission to Department of Immigration).
                             The documents are encrypted and maintained in a secure environment.
                         </p>
                     </div>
-                </div>   
+                </div>
             </div>
         </div>
     </section>
@@ -73,7 +73,7 @@
             <div class="row">
                 <div class="col-lg-4 wow" data-splitting>
                     <h3 class="section-title">
-                        Immigration Services from <br/> Experienced Migration Agent 
+                        Immigration Services from <br/> Experienced Migration Agent
                     </h3>
                 </div>
                 <!-- end col-5 -->
@@ -82,7 +82,7 @@
                         <p class="text-justify wow bounceInUp">
                             We've been counselling students for educational Opportunity in Foreign countries.
                             <br/>
-                            There are a number of reasons why you should hire a migration agent to assist you in the very complex process of securing an Australian visa. 
+                            There are a number of reasons why you should hire a migration agent to assist you in the very complex process of securing an Australian visa.
                             Below we list common top reasons why hiring a Migration Agent is the best thing you can do when migrating to Australia.
                         </p>
                         <ul class="itec-list">
@@ -91,7 +91,7 @@
                             <li>- Find more information our website</li>
                         </ul>
                         <p class="text-justify wow bounceInUp">
-                            If you want to migrate to Australia, there has never been a better option than ITEC. We help clients who wish to study, work or settle in Australia, 
+                            If you want to migrate to Australia, there has never been a better option than ITEC. We help clients who wish to study, work or settle in Australia,
                             have a dream of immigrating to Australia or seek Permanent Residency.
                         </p>
                     </div>
@@ -105,7 +105,7 @@
                 <div class="row">
                     <div class="col-lg-6 px-0 d-none d-sm-block">
                         <div>
-                            <img src="{{asset('assets/images/apply.png')}}" alt="">
+                            <img class="lazyload" data-src="{{asset('images/apply.webp')}}" alt="">
                         </div>
                     </div>
                     <div class="col-lg-6 apply-form">
