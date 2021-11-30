@@ -1,8 +1,8 @@
 <div class="header">
-    <div class="logo logo-dark pt-2">
+    <div class="logo logo-dark">
         <a href="{{route('admin.dashboard')}}">
-            <img src="{{asset('qq_logo.png')}}" alt="Logo">
-            <img class="logo-fold" src="{{asset('qq_icon.webp')}}" alt="Logo">
+            <img class="pt-2" src="{{asset('qq_logo.png')}}" alt="Logo">
+            <img class="logo-fold pt-0" src="{{asset('qq_icon.webp')}}" alt="Logo">
         </a>
     </div>
     <div class="logo logo-white">

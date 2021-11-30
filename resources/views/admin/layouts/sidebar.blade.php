@@ -8,5 +8,13 @@
                 <span class="title">Dashboard</span>
             </a>
         </li>
+        <li class="nav-item">
+            <a href="{{route('admin.blog.create')}}">
+                <span class="icon-holder">
+                    <i class="anticon anticon-form"></i>
+                </span>
+                <span class="title">Add New Post</span>
+            </a>
+        </li>
     </ul>
 </div>

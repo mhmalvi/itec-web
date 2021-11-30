@@ -11,7 +11,7 @@
 
 @section('content')
     <div class="container">
-        <form action="{{ route('admin.blog.add') }}" method="POST" enctype="multipart/form-data">
+        <form action="" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="my-5">
                 <div class="ibox">

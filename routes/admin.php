@@ -4,10 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/dashboard', 'AdminController@index')->name('dashboard');
 
-Route::prefix('blogs')->group(function () {
-    Route::get('/', 'BlogsController@index')->name('blogs');
+Route::prefix('blogs')->name('blog.')->group(function () {
+    Route::get('/', 'BlogsController@index');
     Route::get('categories', 'BlogCategoriesController@index')->name('blog.category');
-    Route::get('add-new', 'BlogsController@create')->name('blogs.add');
+    Route::get('create', 'BlogsController@create')->name('create');
     Route::post('add-category', 'BlogCategoriesController@create')->name('blog.category.add');
     Route::post('add-blog', 'BlogsController@store')->name('blog.add');
     Route::get('edit/{slug}', 'BlogsController@edit')->name('blog.edit');
