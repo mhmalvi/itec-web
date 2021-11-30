@@ -1,12 +1,12 @@
 <div class="header">
-    <div class="logo logo-dark">
-        <a href="index.html">
-            <img src="assets/images/logo/logo.png" alt="Logo">
-            <img class="logo-fold" src="assets/images/logo/logo-fold.png" alt="Logo">
+    <div class="logo logo-dark pt-2">
+        <a href="{{route('admin.dashboard')}}">
+            <img src="{{asset('qq_logo.png')}}" alt="Logo">
+            <img class="logo-fold" src="{{asset('qq_icon.webp')}}" alt="Logo">
         </a>
     </div>
     <div class="logo logo-white">
-        <a href="index.html">
+        <a href="{{route('admin.dashboard')}}">
             <img src="assets/images/logo/logo-white.png" alt="Logo">
             <img class="logo-fold" src="assets/images/logo/logo-fold-white.png" alt="Logo">
         </a>
