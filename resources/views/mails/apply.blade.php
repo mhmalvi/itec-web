@@ -22,7 +22,7 @@
             width: 100%;
             padding-bottom: 25px !important;
             border: none;
-            border-spacing: 0; 
+            border-spacing: 0;
         }
         thead tr th{
             text-align: center;
@@ -56,7 +56,7 @@
                     <tr>
                         <th align="center" colspan="2">
                             <a href="https://itecounsel.com" target="_blank">
-                                <img src="https://itecounsel.com/public/assets/images/logo.png" alt="logo" style="display:block; width: 100px !important; padding: 35px 15px !important; margin: auto !important; vertical-align: middle !important;">
+                                <img src="{{ asset('images/logo.webp') }}" alt="logo" style="display:block; width: 100px !important; padding: 35px 15px !important; margin: auto !important; vertical-align: middle !important;">
                             </a>
                         </th>
                     </tr>
@@ -99,7 +99,7 @@
                             <small>
                                 International Training and Education Counsel
                             </small>
-                            <small>  
+                            <small>
                                 Level 1, 7 Greenfield Pde Bankstown, NSW 2200, Sydney, Australia
                                 1300 535 922
                                 info@itecounsel.com
