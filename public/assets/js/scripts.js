@@ -356,7 +356,7 @@
     });
 
     new Swiper(".rto-slider", {
-        slidesPerView: 4,
+        slidesPerView: 6,
         spaceBetween: 0,
         freeMode: true,
         centeredSlides: true,
@@ -365,25 +365,25 @@
             delay: 8000,
             disableOnInteraction: false,
         },
-         // Responsive breakpoints
+        // Responsive breakpoints
         breakpoints: {
             // when window width is >= 320px
             320: {
                 slidesPerView: 1,
-                spaceBetween: 10
+                spaceBetween: 10,
             },
             // when window width is >= 480px
             480: {
                 slidesPerView: 1,
-                spaceBetween: 10
+                spaceBetween: 10,
             },
             // when window width is >= 640px
             640: {
                 slidesPerView: 1,
-                spaceBetween: 10
-            }
-        }
-      });
+                spaceBetween: 10,
+            },
+        },
+    });
 
     // COUNTER
     $(document).scroll(function () {
@@ -414,7 +414,6 @@
         $("body").addClass("page-loaded");
     });
 
-
     //Course Load
     $(".industry-card").slice(0, 3).show();
     $(".course-card").slice(0, 6).show();
@@ -423,7 +422,7 @@
         e.preventDefault();
         $(".industry-card:hidden").slice(0, 3).slideDown();
         if ($(".industry-card:hidden").length == 0) {
-            $("#load").css('visibility', 'hidden');
+            $("#load").css("visibility", "hidden");
         }
         $("html,body").animate(
             {
@@ -438,7 +437,7 @@
         e.preventDefault();
         $(".short-card:hidden").slice(0, 3).slideDown();
         if ($(".short-card:hidden").length == 0) {
-            $("#load2").css('visibility', 'hidden');
+            $("#load2").css("visibility", "hidden");
         }
         $("html,body").animate(
             {

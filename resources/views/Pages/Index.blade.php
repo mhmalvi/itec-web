@@ -11,9 +11,9 @@
     <header class="slider">
         <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-background="{{ asset('assets/images/slider4.jpg') }}"></div>
-                <div class="swiper-slide" data-background="{{ asset('assets/images/slider3.jpg') }}"></div>
-                <div class="swiper-slide" data-background="{{ asset('assets/images/slider2.jpg') }}"></div>
+                <div class="swiper-slide" data-background="{{ asset('images/slider4.webp') }}"></div>
+                <div class="swiper-slide" data-background="{{ asset('images/slider3.webp') }}"></div>
+                <div class="swiper-slide" data-background="{{ asset('images/slider2.webp') }}"></div>
             </div>
             <!-- end swiper-wrapper -->
             <div class="slide-progress"> <span>01</span>
@@ -95,13 +95,13 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <figure class="reveal-effect masker wow"> <img
-                                        src="{{ asset('assets/images/home/1.jpg') }}" alt="Image">
+                                        class="lazyload" data-src="{{ asset('images/home/1.webp') }}" alt="Image">
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
                                 <figure>
-                                    <img src="{{ asset('assets/images/home/2.jpg') }}" alt="Image">
+                                    <img class="lazyload" data-src="{{ asset('images/home/2.webp') }}" alt="Image">
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->
@@ -130,7 +130,7 @@
                 <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="{{ route('page', 'ielts') }}">
                         <div class="content-block">
-                            <figure> <img src="{{ asset('assets/images/icon01.png') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon01.webp') }}" alt="Image"> </figure>
                             <h6>IELTS | PTE</h6>
                             <ul>
                                 <li>Expected Result</li>
@@ -145,7 +145,7 @@
                 <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="{{ route('rpl') }}">
                         <div class="content-block">
-                            <figure> <img src="{{ asset('assets/images/icon02.png') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon02.webp') }}" alt="Image"> </figure>
                             <h6>RPL</h6>
                             <ul>
                                 <li>Get Certified</li>
@@ -160,7 +160,7 @@
                 <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="{{ route('admission', 'australia') }}">
                         <div class="content-block">
-                            <figure> <img src="{{ asset('assets/images/icon03.png') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon03.webp') }}" alt="Image"> </figure>
                             <h6>ADMISSION</h6>
                             <ul>
                                 <li>University Admission</li>
@@ -175,7 +175,7 @@
                 <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="">
                         <div class="content-block">
-                            <figure> <img src="{{ asset('assets/images/icon04.png') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon04.webp') }}" alt="Image"> </figure>
                             <h6>TRAINING</h6>
                             <ul>
                                 <li>Short Courses</li>
@@ -205,7 +205,7 @@
                     <!-- end col-5 -->
                     <div class="col-lg-7" data-aos="fade-up">
 
-                        <img src="{{ asset('assets/images/122.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/122.webp') }}" alt="Image">
 
                     </div>
                     <!-- end col-7 -->
@@ -216,7 +216,7 @@
 
                 <div class="row py-5">
                     <div class="col-lg-5" data-aos="fade-up">
-                        <img src="{{ asset('assets/images/123.jpg') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/123.webp') }}" alt="Image">
                     </div>
                     <!-- end col-5 -->
                     <div class="col-lg-7" data-aos="fade-up">
@@ -302,7 +302,7 @@
                                     <blockquote>
                                         Great course and comes with great value! I strongly recommend it for anyone who wants to take higer study!
                                     </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/a1.jpg') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a1.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
                                             <h6>ALAMIN SHUVO</h6>
@@ -317,9 +317,9 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        Thank you ITEC for helping me. Your Pconsultency was excellent. Best instructor ever! I recommend this interested in higher study! 
+                                        Thank you ITEC for helping me. Your Pconsultency was excellent. Best instructor ever! I recommend this interested in higher study!
                                     </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/a4.jpg') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a4.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
                                             <h6>PIYASH KHAN</h6>
@@ -334,9 +334,9 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam. 
+                                        That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam.
                                     </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/a6.jpg') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a6.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
                                             <h6>DEW ANTHONY GOMES</h6>
@@ -351,9 +351,9 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam. 
+                                        That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam.
                                     </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/a6.jpg') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a6.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
                                             <h6>DEW ANTHONY GOMES</h6>
@@ -370,7 +370,7 @@
                                     <blockquote>
                                         Consulting with ITEC was pure pleasure! They were friendly and concerned. I was so glad I chose them to help me with my higher study.
                                     </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/a6.jpg') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a6.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
                                             <h6>Anthony Jhon</h6>
@@ -385,9 +385,9 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        Very knowledgeable and helpful company when it comes to higher study and IELTS preparation 
+                                        Very knowledgeable and helpful company when it comes to higher study and IELTS preparation
                                     </blockquote>
-                                    <div class="reviewer"> <img src="{{ asset('assets/images/a6.jpg') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a6.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
                                             <h6>RIAZ HOSSAIN</h6>
@@ -423,23 +423,23 @@
                     <div class="rto-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/UCT.png') }}" alt="Image">
+                                <img src="{{ asset('images/rto/UCT.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/BRIGHT.png') }}" alt="Image" style="max-width: 120px !important;">
+                                <img src="{{ asset('images/rto/BRIGHT.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/NTA.png') }}" alt="Image" style="max-width: 300px !important;">
+                                <img src="{{ asset('images/rto/NTA.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/ATR.png') }}" alt="Image" style="max-width: 170px !important;">
+                                <img src="{{ asset('images/rto/ATR.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/alpha.png') }}" alt="Image" style="max-width: 170px !important;">
+                                <img src="{{ asset('images/rto/alpha.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                         </div>
@@ -463,7 +463,7 @@
                 @forelse ($industries as $item)
                     <div class="col-lg-4 col-md-4 my-2 industry-card" data-aos="fade-up">
                         <div class="rpl-card reveal-effect masker wow">
-                            <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('assets/images/course/course.jpg') }}"
+                            <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('images/course/course.jpg') }}"
                                 alt="">
                             <div class="rpl-des">
                                 <h3>{{ $item->title }}</h3>

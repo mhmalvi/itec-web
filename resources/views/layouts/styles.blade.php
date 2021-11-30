@@ -38,4 +38,11 @@
     transform: rotate(360deg);
   }
 }
+
+.loader-logo
+{
+    /* aspect ratio of the image is 111 : 70 */
+    width: 199px !important;
+    height: 126px !important;
+}
 </style>

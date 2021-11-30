@@ -265,23 +265,23 @@
                     <div class="rto-slider" data-aos="fade-up">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/UCT.png') }}" alt="Image">
+                                <img class="lazyload" data-src="{{ asset('images/rto/UCT.webp') }}" alt="Image">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/BRIGHT.png') }}" alt="Image" style="max-width: 120px !important;">
+                                <img class="lazyload" data-src="{{ asset('images/rto/BRIGHT.webp') }}" alt="Image" style="max-width: 120px !important;">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/NTA.png') }}" alt="Image" style="max-width: 300px !important;">
+                                <img class="lazyload" data-src="{{ asset('images/rto/NTA.webp') }}" alt="Image" style="max-width: 300px !important;">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/ATR.png') }}" alt="Image" style="max-width: 170px !important;">
+                                <img class="lazyload" data-src="{{ asset('images/rto/ATR.webp') }}" alt="Image" style="max-width: 170px !important;">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('assets/images/rto/alpha.png') }}" alt="Image" style="max-width: 170px !important;">
+                                <img class="lazyload" data-src="{{ asset('images/rto/alpha.webp') }}" alt="Image" style="max-width: 170px !important;">
                             </div>
                             <!-- end swiper-slide -->
                         </div>
