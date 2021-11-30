@@ -9,23 +9,49 @@
 
     <title>ITEC - International Training & Educational Counsel</title>
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png">
+
     {{-- Style Sheets --}}
     @include('admin.layouts.styles')
 
 </head>
 
 <body>
-    <div id="wrapper">
-        {{-- Navbar --}}
-        @include('admin.layouts.sidebar')
-        <div id="page-wrapper" class="gray-bg dashbard-1">
+    <div class="app" id="app">
+        <div class="layout">
+            <!-- Header START -->
             @include('admin.layouts.header')
+            <!-- Header END -->
 
-            @yield('content')
+            <!-- Side Nav START -->
+            <div class="side-nav">
+                @include('admin.layouts.sidebar')
+            </div>
+            <!-- Side Nav END -->
 
+            <!-- Page Container START -->
+            <div class="page-container">
+                
+
+                <!-- Content Wrapper START -->
+                <div class="main-content">
+                    @yield('content')
+                </div>
+                <!-- Content Wrapper END -->
+
+                <!-- Footer START -->
+                <footer class="footer">
+                    @include('admin.layouts.footer')
+                </footer>
+                <!-- Footer END -->
+
+            </div>
+            <!-- Page Container END -->
         </div>
     </div>
 
+    <script src="{{asset('js/app.js')}}" defer></script>
     @include('admin.layouts.scripts')
 </body>
 
