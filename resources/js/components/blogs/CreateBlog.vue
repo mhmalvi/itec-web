@@ -33,27 +33,6 @@
 
         <div class="form-group">
           <label for="description">Description</label>
-          <quill-editor
-            theme="snow"
-            :modules="modules"
-            :toolbar="[
-              [{ header: [1, 2, 3, 4, false] }],
-              ['bold', 'italic', 'underline'],
-              [
-                { align: '' },
-                { align: 'center' },
-                { align: 'right' },
-                { align: 'justify' },
-              ],
-              [{ list: 'ordered' }, { list: 'bullet' }],
-              [{ indent: '-1' }, { indent: '+1' }],
-              [{ color: [] }],
-              ['link', 'image'],
-            ]"
-            v-model:content="formdata.description"
-            contentType="html"
-            @change="editorChange($event)"
-          ></quill-editor>
         </div>
       </div>
 
@@ -75,27 +54,15 @@
 </template>
 <script>
 import { reactive } from "vue";
-import { QuillEditor } from "@vueup/vue-quill";
-import "@vueup/vue-quill/dist/vue-quill.snow.css";
+
 export default {
-  components: { QuillEditor },
   setup() {
     const formdata = reactive({
       description: "",
     });
 
-    const modules = {
-      handlers: {
-        image: function () {
-          document.getElementById("getFile").click();
-        },
-      },
-    };
-
     return {
       formdata,
-      onUploadImage,
-      editorChange,
     };
   },
 };
