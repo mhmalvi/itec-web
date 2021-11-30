@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,10 +17,17 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        DB::table('users')->insert([
-            'name' => 'Quadque Tech',
-            'email' => 'admin@gmail.com',
-            'password' => Hash::make('admin'),
+        User::create([
+            'name' => 'Itecounsel',
+            'email' => 'admin@itecounsel.com',
+            'password' => Hash::make('itec@aus/ban'),
+            'isAdmin' => '1',
+        ]);
+
+        User::create([
+            'name' => 'Quadque',
+            'email' => 'admin@quadque.tech',
+            'password' => Hash::make('quadque@2020'),
             'isAdmin' => '1',
         ]);
     }
