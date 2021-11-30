@@ -1,3 +1,11 @@
-require('./bootstrap');
+require("./bootstrap");
+import { createApp } from "vue";
+import CreateBlog from "./components/blogs/CreateBlog.vue";
 
-require('alpinejs');
+const app = createApp({});
+
+app.component("blog-create", CreateBlog);
+
+app.mount("#app");
+
+require("alpinejs");
