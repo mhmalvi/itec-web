@@ -1,3 +1,35 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+
+Route::get('/dashboard', 'AdminController@index')->name('dashboard');
+
+Route::prefix('blogs')->group(function () {
+    Route::get('/', 'BlogsController@index')->name('blogs');
+    Route::get('categories', 'BlogCategoriesController@index')->name('blog.category');
+    Route::get('add-new', 'BlogsController@create')->name('blogs.add');
+    Route::post('add-category', 'BlogCategoriesController@create')->name('blog.category.add');
+    Route::post('add-blog', 'BlogsController@store')->name('blog.add');
+    Route::get('edit/{slug}', 'BlogsController@edit')->name('blog.edit');
+    Route::put('updated/{id}', 'BlogsController@update')->name('blog.update');
+    Route::get('remove/{slug}', 'BlogsController@destroy')->name('blog.remove');
+});
+
+Route::prefix('course')->group(function () {
+    Route::get('/all', 'CoursesController@index')->name('course');
+    Route::post('add-new', 'CoursesController@store');
+
+    Route::name('course.')->group(function () {
+        Route::get('add-new', 'CoursesController@create')->name('add');
+        Route::get('{id}', 'CoursesController@edit')->name('edit');
+        Route::put('/update/{id}', 'CoursesController@update')->name('update');
+    });
+
+    Route::post('add-category', 'CoursesController@createCategory')->name('category.add');
+    Route::post('add-industry', 'CoursesController@createIndustry')->name('industry.add');
+});
+
+
+Route::prefix('settings')->group(function () {
+    Route::view('profile', 'admin.settings.profile')->name('profile');
+});
