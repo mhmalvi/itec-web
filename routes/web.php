@@ -43,40 +43,4 @@ Route::view('check-your-rpl-eligibility', 'pages.check-rpl-eligibility')->name('
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
 Route::get('testMail', 'MailsController@testMail');
 
-
-Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
-    Route::get('/dashboard', 'Admin\AdminController@index')->name('dashboard');
-
-    Route::prefix('blogs')->group(function () {
-        Route::get('/', 'Admin\BlogsController@index')->name('blogs');
-        Route::get('categories', 'Admin\BlogCategoriesController@index')->name('blog.category');
-        Route::get('add-new', 'Admin\BlogsController@create')->name('blogs.add');
-        Route::post('add-category', 'Admin\BlogCategoriesController@create')->name('blog.category.add');
-        Route::post('add-blog', 'Admin\BlogsController@store')->name('blog.add');
-        Route::get('edit/{slug}', 'Admin\BlogsController@edit')->name('blog.edit');
-        Route::put('updated/{id}', 'Admin\BlogsController@update')->name('blog.update');
-        Route::get('remove/{slug}', 'Admin\BlogsController@destroy')->name('blog.remove');
-    });
-
-
-    Route::prefix('course')->group(function () {
-        Route::get('/all', 'Admin\CoursesController@index')->name('course');
-        Route::post('add-new', 'Admin\CoursesController@store');
-
-        Route::name('course.')->group(function () {
-            Route::get('add-new', 'Admin\CoursesController@create')->name('add');
-            Route::get('{id}', 'Admin\CoursesController@edit')->name('edit');
-            Route::put('/update/{id}', 'Admin\CoursesController@update')->name('update');
-        });
-
-        Route::post('add-category', 'Admin\CoursesController@createCategory')->name('category.add');
-        Route::post('add-industry', 'Admin\CoursesController@createIndustry')->name('industry.add');
-    });
-
-
-    Route::prefix('settings')->group(function () {
-        Route::view('profile', 'admin.settings.profile')->name('profile');
-    });
-});
-
 require __DIR__ . '/auth.php';
