@@ -122,12 +122,10 @@ export default {
 
     const searchByTitle = _.debounce((title) => {
       getBlogs(action_url);
-      console.log("asd", title);
     }, 500);
 
     watch(search, (newVal, oldVal) => {
       searchByTitle(search.value);
-      console.log("asd");
     });
 
     const getBlogs = (actionUrl) => {
