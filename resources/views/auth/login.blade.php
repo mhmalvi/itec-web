@@ -21,7 +21,7 @@
     <div class="middle-box text-center loginscreen animated fadeInDown">
         <div>
             <div class="d-flex justify-content-center" style="padding: 50px 0px 15px 0px;">
-                <img src="{{ asset('assets/images/logo.png') }}" alt="" style="max-width: 130px;">
+                <img src="{{ asset('images/logo.webp') }}" alt="" style="max-width: 130px;">
             </div>
             <div class="py-3">
                 <h3>Welcome Back!</h3>
