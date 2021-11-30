@@ -571,7 +571,7 @@ input[type="color"]:focus,
 
 .rpl-modal-form {
     display: none;
-    font-size: 16px !important;
+    font-size: 14px !important;
 }
 
 .rpl-modal-form fieldset {
@@ -610,7 +610,7 @@ input[type="color"]:focus,
     box-sizing: border-box;
     color: #2c3e50;
     background-color: #eceff1;
-    font-size: 16px;
+    font-size: 12px !important;
     letter-spacing: 1px;
 }
 
@@ -966,4 +966,7 @@ input[type="radio"]:checked ~ label {
 
 .img-bg-8 {
     background-image: url("../images/BG/contact-1.jpg");
+}
+.img-bg-9 {
+    background-image: url("../images/BG/rpl-bg.jpg");
 }
