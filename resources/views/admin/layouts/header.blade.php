@@ -1,21 +1,28 @@
-<div class="row border-bottom">
-    <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
-        <div class="navbar-header">
-            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
-            {{-- <form role="search" class="navbar-form-custom" action="search_results.html">
-                <div class="form-group">
-                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
-                </div>
-            </form> --}}
-        </div>
-        <ul class="nav navbar-top-links navbar-right">
-            <li>
-                <form action="{{ route('logout') }}" method="post" id="logoutForm">@csrf</form>
-                <a href="javascript:void(0)"
-                    onclick="event.preventDefault(); document.getElementById('logoutForm').submit();">
-                    <i class="fa fa-sign-out"></i> Log out
+<div class="header">
+    <div class="logo logo-dark">
+        <a href="index.html">
+            <img src="assets/images/logo/logo.png" alt="Logo">
+            <img class="logo-fold" src="assets/images/logo/logo-fold.png" alt="Logo">
+        </a>
+    </div>
+    <div class="logo logo-white">
+        <a href="index.html">
+            <img src="assets/images/logo/logo-white.png" alt="Logo">
+            <img class="logo-fold" src="assets/images/logo/logo-fold-white.png" alt="Logo">
+        </a>
+    </div>
+    <div class="nav-wrap">
+        <ul class="nav-left">
+            <li class="desktop-toggle">
+                <a href="javascript:void(0);">
+                    <i class="anticon"></i>
+                </a>
+            </li>
+            <li class="mobile-toggle">
+                <a href="javascript:void(0);">
+                    <i class="anticon"></i>
                 </a>
             </li>
         </ul>
-    </nav>
+    </div>
 </div>
