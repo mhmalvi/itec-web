@@ -119,28 +119,28 @@
                                         <div class="col-sm-3 col-6">
                                             <input type="radio" name="location" id="locOne" value="NSW" />
                                             <label for="locOne" class="exp-lbl p-1">
-                                                <img src="{{ asset('images/maps/01.webp') }}" alt="nsw">
+                                                <img class="lazyload" data-src="{{ asset('images/maps/01.webp') }}" alt="nsw">
                                                 <div>NSW</div>
                                             </label>
                                         </div>
                                         <div class="col-sm-3 col-6">
                                             <input type="radio" name="location" id="locTwo" value="VIC">
                                             <label for="locTwo" class="exp-lbl p-1">
-                                                <img src="{{ asset('images/maps/02.webp') }}" alt="vic">
+                                                <img class="lazyload" data-src="{{ asset('images/maps/02.webp') }}" alt="vic">
                                                 <div>VIC</div>
                                             </label>
                                         </div>
                                         <div class="col-sm-3 col-6">
                                             <input type="radio" name="location" id="locThree" value="QLD">
                                             <label for="locThree" class="exp-lbl p-1">
-                                                <img src="{{ asset('images/maps/03.webp') }}" alt="qld">
+                                                <img class="lazyload" data-src="{{ asset('images/maps/03.webp') }}" alt="qld">
                                                 <div>QLDs</div>
                                             </label>
                                         </div>
                                         <div class="col-sm-3 col-6">
                                             <input type="radio" name="location" id="locFour" value="SA">
                                             <label for="locFour" class="exp-lbl p-1">
-                                                <img src="{{ asset('images/maps/04.webp') }}" alt="sa">
+                                                <img class="lazyload" data-src="{{ asset('images/maps/04.webp') }}" alt="sa">
                                                 <div>SA</div>
                                             </label>
                                         </div>
@@ -149,28 +149,28 @@
                                         <div class="col-sm-3 col-6">
                                             <input type="radio" name="location" id="locFive" value="WA" />
                                             <label for="locFive" class="exp-lbl p-1">
-                                                <img src="{{ asset('images/maps/05.webp') }}" alt="wa">
+                                                <img class="lazyload" data-src="{{ asset('images/maps/05.webp') }}" alt="wa">
                                                 <div>WA</div>
                                             </label>
                                         </div>
                                         <div class="col-sm-3 col-6">
                                             <input type="radio" name="location" id="locSix" value="ACT">
                                             <label for="locSix" class="exp-lbl p-1">
-                                                <img src="{{ asset('images/maps/06.webp') }}" alt="act">
+                                                <img class="lazyload" data-src="{{ asset('images/maps/06.webp') }}" alt="act">
                                                 <div>ACT</div>
                                             </label>
                                         </div>
                                         <div class="col-sm-3 col-6">
                                             <input type="radio" name="location" id="locSeven" value="NT">
                                             <label for="locSeven" class="exp-lbl p-1">
-                                                <img src="{{ asset('images/maps/07.webp') }}" alt="nt">
+                                                <img class="lazyload" data-src="{{ asset('images/maps/07.webp') }}" alt="nt">
                                                 <div>NT</div>
                                             </label>
                                         </div>
                                         <div class="col-sm-3 col-6">
                                             <input type="radio" name="location" id="locEight" value="TAS">
                                             <label for="locEight" class="exp-lbl p-1">
-                                                <img src="{{ asset('images/maps/08.webp') }}" alt="tas">
+                                                <img class="lazyload" data-src="{{ asset('images/maps/08.webp') }}" alt="tas">
                                                 <div>TAS</div>
                                             </label>
                                         </div>

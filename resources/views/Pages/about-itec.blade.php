@@ -53,7 +53,7 @@
                 <div class="col-lg-3 col-md-3 mt-5" data-aos="fade-up">
                     <a href="{{ route('page', 'ielts') }}">
                         <div class="content-block">
-                            <figure> <img src="{{ asset('images/icon01.webp') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon01.webp') }}" alt="Image"> </figure>
                             <h6>IELTS | PTE</h6>
                             <ul>
                                 <li>Expected Result</li>
@@ -68,7 +68,7 @@
                 <div class="col-lg-3 col-md-3 mt-5" data-aos="fade-up">
                     <a href="{{ route('rpl') }}">
                         <div class="content-block">
-                            <figure> <img src="{{ asset('images/icon02.webp') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon02.webp') }}" alt="Image"> </figure>
                             <h6>RPL</h6>
                             <ul>
                                 <li>Get Certified</li>
@@ -83,7 +83,7 @@
                 <div class="col-lg-3 col-md-3 mt-5" data-aos="fade-up">
                     <a href="{{ route('admission', 'australia') }}">
                         <div class="content-block">
-                            <figure> <img src="{{ asset('images/icon03.webp') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon03.webp') }}" alt="Image"> </figure>
                             <h6>ADMISSION</h6>
                             <ul>
                                 <li>University Admission</li>
@@ -98,7 +98,7 @@
                 <div class="col-lg-3 col-md-3 mt-5" data-aos="fade-up">
                     <a href="">
                         <div class="content-block">
-                            <figure> <img src="{{ asset('images/icon04.webp') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon04.webp') }}" alt="Image"> </figure>
                             <h6>TRAINING</h6>
                             <ul>
                                 <li>Short Courses</li>

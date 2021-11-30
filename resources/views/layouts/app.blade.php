@@ -57,7 +57,7 @@
         <!-- end layer -->
         <div class="inner">
             <figure>
-                <img src="{{ asset('images/logo.webp') }}" alt="Image">
+                <img class="lazyload" data-src="{{ asset('images/logo.webp') }}" alt="Image">
             </figure>
             <span>Loading</span>
         </div>

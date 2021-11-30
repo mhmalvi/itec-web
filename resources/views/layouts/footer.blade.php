@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-xs-12 col-lg-2 col-md-2 my-4 d-none d-sm-block">
                 <div class="footer-logo">
-                    <img src="{{ asset('images/logo.webp') }}" alt="Image" class="img-fluid">
+                    <img class="lazyload" data-src="{{ asset('images/logo.webp') }}" alt="Image" class="img-fluid">
                 </div>
             </div>
             <div class="col-xs-12 col-lg-3 col-md-3">
