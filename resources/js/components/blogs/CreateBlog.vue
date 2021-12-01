@@ -33,7 +33,6 @@
 
         <div class="form-group">
           <label for="description">Description</label>
-          <QuillEditor :modules="modules" toolbar="full" />
         </div>
       </div>
 
@@ -54,31 +53,7 @@
   </form>
 </template>
 <script>
-import { reactive } from "vue";
-import { QuillEditor } from "@vueup/vue-quill";
-import "@vueup/vue-quill/dist/vue-quill.snow.css";
-import ImageUploader from "quill-image-uploader";
-export default {
-  components: {
-    QuillEditor,
-  },
-  setup() {
-    const formdata = reactive({
-      description: "",
-    });
-
-    const modules = {
-      name: "imageUploader",
-      module: ImageUploader,
-      options: {
-        upload: () => {
-          console.log();
-        },
-      },
-    };
-    return { modules };
-  },
-};
+export default {};
 </script>
 <style>
 .ql-container {
