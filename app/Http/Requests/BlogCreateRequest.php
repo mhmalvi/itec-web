@@ -31,14 +31,15 @@ class BlogCreateRequest extends BlogRequest
             'blog_title'    => 'required|string',
             'details'       => 'required',
             'meta_des'      => 'max:255',
-            'thumbnail'     => 'required|image|mimes:jpg,png,jpeg|dimensions:min_width=780,min_height=1000',
-            'img'           => 'required|image|mimes:jpg,png,jpeg|dimensions:min_width=1920,min_height=1080',
+            'thumbnail'     => 'required',
+            'img'           => 'required',
         ];
     }
 
 
     public function save()
     {
+        dd($this->all());
         $category = BlogCategory::where('title', $this->category_id)->first();
 
         $slug = Str::slug($this->blog_title);
