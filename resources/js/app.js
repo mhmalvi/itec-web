@@ -2,6 +2,7 @@ require("./bootstrap");
 import { createApp } from "vue";
 import axios from "axios";
 import CreateBlog from "./components/blogs/CreateBlog.vue";
+import BlogListComponent from "./components/blogs/BlogListComponent.vue";
 
 const app = createApp({});
 
@@ -10,6 +11,7 @@ axios.defaults.baseURL = document.head.querySelector(
 ).content;
 
 app.component("blog-create", CreateBlog);
+app.component("blog-list-component", BlogListComponent);
 
 app.mount("#app");
 

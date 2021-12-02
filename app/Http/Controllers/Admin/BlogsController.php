@@ -8,13 +8,14 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\BlogCreateRequest;
 use App\Http\Requests\BlogUpdateRequest;
+use App\Http\Resources\BlogsCollection;
 use Illuminate\Support\Facades\Storage;
 
 class BlogsController extends Controller
 {
     /**
      * @return View
-     * 
+     *
      */
     public function index()
     {
@@ -22,11 +23,23 @@ class BlogsController extends Controller
         return view('admin.blogs.index', compact('blogs'));
     }
 
-
+    public function getPaginatedList(Request $request)
+    {
+        try {
+            $perPage = $request->filled('items') ? $request->items : 10;
+            return new BlogsCollection(
+                Blog::where('blog_title', 'LIKE', '%' . $request->search . '%')->latest()->paginate($perPage)
+            );
+        } catch (\Throwable $e) {
+            return response()->json([
+                'message' => $e->getMessage(),
+            ], 500);
+        }
+    }
 
     /**
      * @return view
-     * 
+     *
      */
     public function create()
     {
@@ -38,7 +51,7 @@ class BlogsController extends Controller
 
     /**
      * @param $request
-     * 
+     *
      */
     public function store(BlogCreateRequest $request)
     {
@@ -86,7 +99,7 @@ class BlogsController extends Controller
 
     /**
      * @param Slug
-     * 
+     *
      */
     public function edit($slug)
     {
@@ -108,7 +121,7 @@ class BlogsController extends Controller
 
 
     /**
-     * 
+     *
      */
     public function update(BlogUpdateRequest $request, $id)
     {
@@ -134,7 +147,7 @@ class BlogsController extends Controller
 
     /**
      * @param Slug
-     * 
+     *
      */
     public function destroy($slug)
     {

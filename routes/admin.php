@@ -6,6 +6,7 @@ Route::get('/dashboard', 'AdminController@index')->name('dashboard');
 
 Route::prefix('blogs')->name('blog.')->group(function () {
     Route::get('/', 'BlogsController@index');
+    Route::get('list', 'BlogsController@getPaginatedList');
     Route::get('categories', 'BlogCategoriesController@index')->name('blog.category');
     Route::get('create', 'BlogsController@create')->name('create');
     Route::post('add-category', 'BlogCategoriesController@create')->name('blog.category.add');
