@@ -21048,7 +21048,7 @@ var _hoisted_3 = /*#__PURE__*/_withScopeId(function () {
 var _hoisted_4 = [_hoisted_3];
 var _hoisted_5 = {
   key: 1,
-  "class": "col-12 table-responsive"
+  "class": "col-12"
 };
 var _hoisted_6 = {
   "class": "row"
@@ -21097,7 +21097,7 @@ var _hoisted_14 = {
   "class": "row mt-2"
 };
 var _hoisted_15 = {
-  "class": "col-12"
+  "class": "col-12 table-responsive"
 };
 var _hoisted_16 = {
   "class": "table table-bordered"

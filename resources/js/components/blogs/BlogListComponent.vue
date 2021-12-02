@@ -3,7 +3,7 @@
     <div class="col-12" v-if="isLoading">
       <div class="d-flex justify-content-center">Loading...</div>
     </div>
-    <div class="col-12 table-responsive" v-else>
+    <div class="col-12" v-else>
       <div class="row">
         <div class="col-4">
           <select class="form-control" v-model="perPage">
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="row mt-2">
-        <div class="col-12">
+        <div class="col-12 table-responsive">
           <table class="table table-bordered">
             <thead>
               <tr>
