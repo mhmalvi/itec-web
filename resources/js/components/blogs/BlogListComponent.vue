@@ -50,8 +50,8 @@
                 <td>
                   {{ blog.title }}
                   <div class="py-3">
-                    <a href="javascript:void" class=""> Edit </a>
-                    <a href="javascript:void" class="mx-2"> Delete </a>
+                    <a href="javascript:void(0)" class=""> Edit </a>
+                    <a href="javascript:void(0)" class="mx-2"> Delete </a>
                   </div>
                 </td>
                 <td>
