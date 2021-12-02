@@ -53,19 +53,7 @@
   </form>
 </template>
 <script>
-import { reactive } from "vue";
-
-export default {
-  setup() {
-    const formdata = reactive({
-      description: "",
-    });
-
-    return {
-      formdata,
-    };
-  },
-};
+export default {};
 </script>
 <style>
 .ql-container {

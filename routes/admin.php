@@ -34,3 +34,5 @@ Route::prefix('course')->group(function () {
 Route::prefix('settings')->group(function () {
     Route::view('profile', 'admin.settings.profile')->name('profile');
 });
+
+Route::post("media-upload", 'AdminController@test');
