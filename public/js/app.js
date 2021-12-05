@@ -21289,7 +21289,7 @@ __webpack_require__.r(__webpack_exports__);
 
     var handleFormSubmit = function handleFormSubmit(_ref) {
       var form = _ref.form;
-      axios.post("/admin/blogs/create", form).then(function (res) {
+      axios.post("/admin/blogs/create", form.formData).then(function (res) {
         form_component.value.setSuccessResponse(res.data);
       })["catch"](function (err) {
         form_component.value.setErrorResponse(err);
@@ -21684,7 +21684,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     })
   }, null, 8
   /* PROPS */
-  , ["value", "options"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" meta keywords\n        meta tags\n        meta descriptions\n        "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  , ["value", "options"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" meta keywords\r\n        meta tags\r\n        meta descriptions\r\n        "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "text",
     "class": "form-control",
     id: "meta_keys",
@@ -24405,7 +24405,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.ql-container {\n  height: 500px !important;\n}\n.img-container {\n  border: 1px dashed;\n  padding: 20px;\n  text-align: center;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n}\n.img-container label {\n  cursor: pointer;\n  transition: 0.3s;\n}\n.img-container label:hover {\n  color: #30419b;\n}\n.img-wrapper {\n  position: relative;\n  padding: 5px;\n}\n.img-remove {\n  position: absolute;\n  top: 0;\n  right: 0;\n  margin: 5px 15px;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.ql-container {\r\n  height: 500px !important;\n}\n.img-container {\r\n  border: 1px dashed;\r\n  padding: 20px;\r\n  text-align: center;\r\n  width: 100%;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-direction: column;\n}\n.img-container label {\r\n  cursor: pointer;\r\n  transition: 0.3s;\n}\n.img-container label:hover {\r\n  color: #30419b;\n}\n.img-wrapper {\r\n  position: relative;\r\n  padding: 5px;\n}\n.img-remove {\r\n  position: absolute;\r\n  top: 0;\r\n  right: 0;\r\n  margin: 5px 15px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -24429,7 +24429,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.blog-thumbnail[data-v-7d081be4] {\n  width: 60px;\n  height: auto;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.blog-thumbnail[data-v-7d081be4] {\r\n  width: 60px;\r\n  height: auto;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
