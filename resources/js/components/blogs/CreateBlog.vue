@@ -33,6 +33,11 @@
 
         <div class="form-group">
           <label for="description">Description</label>
+          <quill-editor
+            v-model:value="state.content"
+            :options="state.editorOption"
+            @blur="onEditorChange($event)"
+          />
         </div>
       </div>
 
@@ -53,7 +58,63 @@
   </form>
 </template>
 <script>
-export default {};
+import { quillEditor, Quill } from "vue3-quill";
+import ImageUploader from "quill-image-uploader";
+import { reactive } from "vue";
+import axios from "axios";
+
+Quill.register("modules/imageUploader", ImageUploader);
+export default {
+  components: {
+    quillEditor,
+  },
+  setup() {
+    const state = reactive({
+      _content: "",
+      editorOption: {
+        placeholder: "core",
+        modules: {
+          imageUploader: {
+            upload: (file) => {
+              return new Promise((resolve, reject) => {
+                let fd = new FormData();
+                fd.append("file", file);
+                axios.post("admin/media-upload", fd).then((res) => {
+                  setTimeout(() => {
+                    resolve(`${res.data.url}`);
+                  }, 3500);
+                });
+              });
+            },
+          },
+        },
+        // more options
+      },
+    });
+
+    const onEditorBlur = (quill) => {
+      console.log("editor blur!", quill);
+    };
+    const onEditorFocus = (quill) => {
+      console.log("editor focus!", quill);
+    };
+    const onEditorReady = (quill) => {
+      console.log("editor ready!", quill);
+    };
+    const onEditorChange = ({ quill, html, text }) => {
+      state._content = html;
+      console.log(html);
+    };
+
+    return {
+      state,
+      onEditorBlur,
+      onEditorFocus,
+      onEditorReady,
+      onEditorChange,
+    };
+  },
+};
 </script>
 <style>
 .ql-container {

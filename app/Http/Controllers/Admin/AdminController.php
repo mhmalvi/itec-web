@@ -21,9 +21,9 @@ class AdminController extends Controller
     public function test(Request $request)
     {
         $file = $request->file('file');
-        $name = $request->name;
+        $name = $file->getClientOriginalName();
 
-        Storage::putFileAs('public/blogs', $file, $name);
+        Storage::putFileAs('public/blogs/', $file, $name);
 
         $url = asset(Storage::url("public/blogs/{$name}"));
 
