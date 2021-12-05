@@ -2,6 +2,7 @@
 
 namespace App\Http\Requests;
 
+use App\Models\Blog;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -9,13 +10,20 @@ use Intervention\Image\Facades\Image;
 
 class BlogRequest extends FormRequest
 {
+    public function messages()
+    {
+        return [
+            'tilte.required' => "Title required",
+        ];
+    }
+
     protected function saveThumbnail()
     {
         //Get the file name without extension
         $file = $this->thumbnail;
         $thumbnailTitle = $this->thumbnail_title ? Str::slug($this->thumbnail_title) : Str::slug($this->title);
         $ext = $this->getClientOriginalExtension($file);
-        $thumbnail = "{$thumbnailTitle}.{$ext}";
+        $thumbnail = "{$thumbnailTitle}{$ext}";
 
         if (!Storage::exists("public/blogs/thumbnails")) {
             Storage::makeDirectory("public/blogs/thumbnails");
@@ -34,7 +42,7 @@ class BlogRequest extends FormRequest
         $file = $this->featured_image;
         $imageTitle = $this->featured_image_title ? Str::slug($this->featured_image_title) : Str::slug($this->title);
         $ext = $this->getClientOriginalExtension($file);
-        $image = "{$imageTitle}.{$ext}";
+        $image = "{$imageTitle}{$ext}";
 
         //check if directory exist or not
         if (!Storage::exists("public/blogs/images")) {
@@ -43,7 +51,7 @@ class BlogRequest extends FormRequest
 
         Image::make($file)
             ->fit(1000)
-            ->save(storage_path('app/public/blogs/' . $image));
+            ->save(storage_path('app/public/blogs/images/' . $image));
 
         return $image;
     }
@@ -57,5 +65,15 @@ class BlogRequest extends FormRequest
         $ext = image_type_to_extension($info[2]);
 
         return $ext;
+    }
+
+    protected function destroyImage(Blog $blog)
+    {
+        Storage::delete('public/blogs/images/' . $blog->image);
+    }
+
+    protected function destroyThumbnail(Blog $blog)
+    {
+        Storage::delete('public/blogs/thumbnails/' . $blog->thumbnail);
     }
 }

@@ -1,22 +1,35 @@
 <template>
   <blog-form-component ref="form_component" @formSubmit="handleFormSubmit" />
 </template>
+
 <script>
-import { reactive, ref, onMounted } from "vue";
 import BlogFormComponent from "./BlogFormComponent.vue";
+import BlogCategory from "../../modules/BlogCategory";
+import { ref, reactive, onMounted } from "vue";
+import Blog from "../../modules/Blog";
 
 export default {
-  components: {
-    BlogFormComponent,
-  },
-  setup() {
+  components: { BlogFormComponent },
+  props: ["slug"],
+  setup({ slug }) {
     const form_component = ref(0);
+
+    onMounted(() => {
+      Blog.get(slug)
+        .then((data) => {
+          form_component.value.setFormData(data);
+        })
+        .catch((err) => {});
+    });
 
     const handleFormSubmit = ({ form }) => {
       axios
-        .post("/admin/blogs/create", form)
+        .post("/admin/blogs/update/" + slug, {
+          _method: "PUT",
+          ...form,
+        })
         .then((res) => {
-          form_component.value.setSuccessResponse(res.data);
+          form_component.value.setSuccessResponse(res.data, false);
         })
         .catch((err) => {
           form_component.value.setErrorResponse(err);
