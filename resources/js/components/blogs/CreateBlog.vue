@@ -2,6 +2,17 @@
   <form @submit.prevent="handleFormSubmit()">
     <div class="row">
       <div class="col-md-8">
+        <div
+          class="alert alert-success"
+          v-if="success_message"
+          v-html="success_message"
+        ></div>
+        <div
+          class="alert alert-danger"
+          v-if="validation.message && validation.errors.length == 0"
+        >
+          {{ validation.message }}
+        </div>
         <div class="form-group">
           <label for="title">
             Blog Title <span class="text-danger">*</span></label
@@ -11,8 +22,12 @@
             class="form-control"
             id="title"
             placeholder="Blog title is required ..."
+            @keyup="generateSlug(form.title)"
             v-model="form.title"
           />
+          <p class="text-danger" v-if="validation.errors.title">
+            {{ validation.errors.title[0] }}
+          </p>
         </div>
         <div class="form-group">
           <label for="slug">Blog's Slug</label>
@@ -38,15 +53,67 @@
           <quill-editor
             v-model:value="state.content"
             :options="state.editorOption"
-            @blur="onEditorChange($event)"
+            @change="onEditorChange($event)"
+          />
+        </div>
+
+        <!-- meta keywords
+        meta tags
+        meta descriptions
+        -->
+
+        <div class="form-group">
+          <label for="meta_keys">Meta Keywords(optional)</label>
+          <input
+            type="text"
+            class="form-control"
+            id="meta_keys"
+            v-model="form.meta_keys"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="meta_tags">Meta Tags(optional)</label>
+          <input
+            type="text"
+            class="form-control"
+            id="meta_tags"
+            v-model="form.meta_tags"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="meta_description">Meta Description(optional)</label>
+          <input
+            type="text"
+            class="form-control"
+            id="meta_description"
+            v-model="form.meta_description"
           />
         </div>
 
         <div class="form-group d-flex justify-content-end">
-          <button class="btn btn-primary">
-            <i class="fas fa-plus mr-2"></i>
+          <button
+            class="btn btn-default mr-2"
+            type="button"
+            @click="draftAndSave()"
+            :disabled="isSaving || isDrafting"
+          >
+            <i class="fas fa-cloud mr-1" v-if="!isDrafting"></i>
+            <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
+            Draft
+          </button>
+          <button
+            class="btn btn-primary"
+            type="button"
+            @click="save()"
+            :disabled="isSaving || isDrafting"
+          >
+            <i class="fas fa-plus mr-1" v-if="!isSaving"></i>
+            <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
             Save
           </button>
+          <button hidden>submit</button>
         </div>
       </div>
 
@@ -61,7 +128,13 @@
                 v-model="form.category_id"
               >
                 <option selected>Choose...</option>
-                <option value="1">Category 1</option>
+                <option
+                  :value="category.id"
+                  v-for="(category, index) in categories"
+                  :key="index"
+                >
+                  {{ category.title }}
+                </option>
               </select>
             </div>
           </div>
@@ -173,8 +246,10 @@
 <script>
 import { quillEditor, Quill } from "vue3-quill";
 import ImageUploader from "quill-image-uploader";
-import { reactive } from "vue";
+import { reactive, ref, onMounted } from "vue";
 import axios from "axios";
+import Slug from "../../modules/Slug";
+import BlogCategory from "../../modules/BlogCategory";
 
 Quill.register("modules/imageUploader", ImageUploader);
 export default {
@@ -183,6 +258,7 @@ export default {
   },
   setup() {
     const state = reactive({
+      content: "",
       _content: "",
       editorOption: {
         placeholder: "core",
@@ -207,26 +283,109 @@ export default {
 
     const form = reactive({
       title: "",
-      slug: "",
       description: "",
+      slug: "",
       category_id: "",
       featured_image: "",
       featured_image_title: "",
+      featured_image_alt: "",
       thumbnail: "",
       thumbnail_title: "",
+      thumbnail_alt: "",
+      meta_keys: "",
+      meta_tags: "",
+      meta_description: "",
+      isPublished: 1,
     });
+
+    const isSaving = ref(false);
+    const isDrafting = ref(false);
 
     const validation = reactive({
-      message: "",
       errors: [],
+      message: "",
     });
 
+    const success_message = ref("");
+
+    const categories = ref([]);
+
+    onMounted(() => {
+      getCategories();
+    });
+
+    const getCategories = () => {
+      BlogCategory.getRaw()
+        .then((data) => {
+          categories.value = data;
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    };
+
     const handleFormSubmit = () => {
-      console.log("form", form);
-      //   axios
-      //     .post("/admin/blogs/create", form)
-      //     .then((res) => {})
-      //     .catch((err) => {});
+      form.description = state._content;
+      validation.errors = "";
+      axios
+        .post("/admin/blogs/create", form)
+        .then((res) => {
+          success_message.value = res.data.message;
+          formReset();
+
+          forceScrollTop();
+        })
+        .catch((err) => {
+          validation.errors = err.response.data.errors;
+          validation.message = err.response.data.message;
+
+          forceScrollTop();
+        })
+        .finally(() => {
+          isSaving.value = false;
+          isDrafting.value = false;
+        });
+    };
+
+    const formReset = () => {
+      form.title = "";
+      form.description = "";
+      form.slug = "";
+      form.category_id = "";
+      form.featured_image = "";
+      form.featured_image_title = "";
+      form.featured_image_alt = "";
+      form.thumbnail = "";
+      form.thumbnail_title = "";
+      form.thumbnail_alt = "";
+      form.meta_keys = "";
+      form.meta_tags = "";
+      form.meta_description = "";
+      form.isPublished = 1;
+
+      state.content = "";
+
+      validation.message = "";
+      validation.errors = [];
+    };
+
+    const forceScrollTop = () => {
+      window.scroll({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+
+    const save = () => {
+      form.isPublished = 1;
+      isSaving.value = true;
+      handleFormSubmit();
+    };
+
+    const draftAndSave = () => {
+      form.isPublished = 0;
+      isDrafting.value = true;
+      handleFormSubmit();
     };
 
     const handleFeaturedImageChange = (e) => {
@@ -280,12 +439,22 @@ export default {
     };
     const onEditorChange = ({ quill, html, text }) => {
       state._content = html;
-      console.log(html);
+    };
+
+    const generateSlug = (title) => {
+      form.slug = Slug.generate(title);
     };
 
     return {
       form,
+      categories,
       handleFormSubmit,
+      save,
+      isDrafting,
+      isSaving,
+      draftAndSave,
+      validation,
+      success_message,
       handleFeaturedImageChange,
       imgDeleteHandler,
       handleThumbnailChange,
@@ -294,6 +463,7 @@ export default {
       onEditorFocus,
       onEditorReady,
       onEditorChange,
+      generateSlug,
     };
   },
 };

@@ -10,17 +10,21 @@ class BlogCategoriesController extends Controller
 {
     /**
      * @return View
-     * 
+     *
      */
     public function index()
     {
         return view('admin.BlogCategory.index');
     }
 
+    public function rawList()
+    {
+        return BlogCategory::all();
+    }
 
     /**
      * @param $request
-     * 
+     *
      */
     public function create(Request $request)
     {

@@ -17,6 +17,10 @@ Route::prefix('blogs')->name('blog.')->group(function () {
     Route::get('remove/{slug}', 'BlogsController@destroy')->name('blog.remove');
 });
 
+Route::prefix('categories')->name('category.')->group(function () {
+    Route::get('raw', 'BlogCategoriesController@rawList');
+});
+
 Route::prefix('course')->group(function () {
     Route::get('/all', 'CoursesController@index')->name('course');
     Route::post('add-new', 'CoursesController@store');

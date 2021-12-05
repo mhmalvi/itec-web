@@ -57,14 +57,17 @@ class BlogsController extends Controller
     {
         try {
 
-            $request->save();
+            $blog = $request->save();
 
-            $notification = [
-                'message'   =>  'Successfully Saved.',
-                'alert-type'    =>  'success'
-            ];
+            $link = route('blog.detail', ['slug' => $blog->blog_slug]);
+            $state = $blog->isPublished == 1 ? 'saved' : 'drafted';
 
-            return back()->with($notification);
+            $message = "Successfully $state." .
+                ($blog->isPublished ? " <a href='$link' target='_blank'>View Post</a>" : '');
+
+            return response()->json([
+                'message' => $message,
+            ], 200);
         } catch (\Throwable $th) {
             $notification = [
                 // 'message'   =>  'oops! Something went wrong',
@@ -72,7 +75,7 @@ class BlogsController extends Controller
                 'alert-type'    =>  'warning'
             ];
 
-            return back()->with($notification);
+            return response()->json($notification, 500);
         }
     }
 
