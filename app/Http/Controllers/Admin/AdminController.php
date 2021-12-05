@@ -10,7 +10,7 @@ class AdminController extends Controller
 {
     /**
      * @return View
-     * 
+     *
      */
     public function index()
     {
