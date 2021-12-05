@@ -14,7 +14,7 @@ export default {
 
     const handleFormSubmit = ({ form }) => {
       axios
-        .post("/admin/blogs/create", form.formData)
+        .post("/admin/blogs/create", form)
         .then((res) => {
           form_component.value.setSuccessResponse(res.data);
         })

@@ -22,8 +22,8 @@
             class="form-control"
             id="title"
             placeholder="Blog title is required ..."
-            @keyup="generateSlug(form.title)"
-            v-model="form.title"
+            @keyup="generateSlug(form.formData.title)"
+            v-model="form.formData.title"
           />
           <p class="text-danger" v-if="validation.errors.title">
             {{ validation.errors.title[0] }}
@@ -43,7 +43,7 @@
               id="url-slug"
               aria-describedby="slug-url"
               placeholder="Slug is a friendly version of your url ..."
-              v-model="form.slug"
+              v-model="form.formData.slug"
             />
           </div>
         </div>
@@ -51,9 +51,8 @@
         <div class="form-group">
           <label for="description">Description</label>
           <quill-editor
-            v-model:value="state._content"
-            :options="state.editorOption"
-            @change="onEditorChange($event)"
+            v-model:value="form.formData.description"
+            :options="options"
           />
         </div>
 
@@ -68,7 +67,7 @@
             type="text"
             class="form-control"
             id="meta_keys"
-            v-model="form.meta_keys"
+            v-model="form.formData.meta_keys"
           />
         </div>
 
@@ -78,7 +77,7 @@
             type="text"
             class="form-control"
             id="meta_tags"
-            v-model="form.meta_tags"
+            v-model="form.formData.meta_tags"
           />
         </div>
 
@@ -88,7 +87,7 @@
             type="text"
             class="form-control"
             id="meta_description"
-            v-model="form.meta_description"
+            v-model="form.formData.meta_description"
           />
         </div>
 
@@ -97,9 +96,9 @@
             class="btn btn-default mr-2"
             type="button"
             @click="draftAndSave()"
-            :disabled="isSaving || isDrafting"
+            :disabled="form.isSaving || form.isDraft"
           >
-            <i class="fas fa-cloud mr-1" v-if="!isDrafting"></i>
+            <i class="fas fa-cloud mr-1" v-if="!form.isDraft"></i>
             <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
             Draft
           </button>
@@ -107,9 +106,9 @@
             class="btn btn-primary"
             type="button"
             @click="save()"
-            :disabled="isSaving || isDrafting"
+            :disabled="form.isSaving || form.isDraft"
           >
-            <i class="fas fa-plus mr-1" v-if="!isSaving"></i>
+            <i class="fas fa-plus mr-1" v-if="!form.isSaving"></i>
             <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
             Save
           </button>
@@ -125,7 +124,7 @@
               <select
                 id="inputState"
                 class="form-control"
-                v-model="form.category_id"
+                v-model="form.formData.category_id"
               >
                 <option selected>Choose...</option>
                 <option
@@ -147,12 +146,12 @@
                 >Click here to upload image</label
               >
               <div class="img-wrapper">
-                <img :src="form.featured_image" class="img-fluid" />
+                <img :src="form.formData.featured_image" class="img-fluid" />
                 <a
                   href="javascript:void(0)"
                   @click.prevent="imgDeleteHandler(null, 'featured_image')"
                   class="text-danger d-block img-remove"
-                  v-if="form.featured_image"
+                  v-if="form.formData.featured_image"
                 >
                   <i class="fas fa-times"></i>
                 </a>
@@ -173,7 +172,7 @@
                 type="text"
                 name="featured_image_title"
                 class="form-control form-control-sm"
-                v-model="form.featured_image_title"
+                v-model="form.formData.featured_image_title"
               />
             </div>
             <div class="form-group">
@@ -184,7 +183,7 @@
                 type="text"
                 name="featured_image_alt"
                 class="form-control form-control-sm"
-                v-model="form.featured_image_alt"
+                v-model="form.formData.featured_image_alt"
               />
             </div>
           </div>
@@ -197,12 +196,12 @@
                 >Click here to upload image</label
               >
               <div class="img-wrapper">
-                <img :src="form.thumbnail" class="img-fluid" />
+                <img :src="form.formData.thumbnail" class="img-fluid" />
                 <a
                   href="javascript:void(0)"
                   @click.prevent="imgDeleteHandler(null, 'thumbnail')"
                   class="text-danger d-block img-remove"
-                  v-if="form.thumbnail"
+                  v-if="form.formData.thumbnail"
                 >
                   <i class="fas fa-times"></i>
                 </a>
@@ -223,7 +222,7 @@
                 type="text"
                 name="thumbnail_title"
                 class="form-control form-control-sm"
-                v-model="form.thumbnail_title"
+                v-model="form.formData.thumbnail_title"
               />
             </div>
             <div class="form-group">
@@ -234,7 +233,7 @@
                 type="text"
                 name="thumbnail_alt"
                 class="form-control form-control-sm"
-                v-model="form.thumbnail_alt"
+                v-model="form.formData.thumbnail_alt"
               />
             </div>
           </div>
@@ -243,79 +242,76 @@
     </div>
   </form>
 </template>
-
 <script>
-import { reactive, ref, onMounted } from "vue";
 import { quillEditor, Quill } from "vue3-quill";
-import axios from "axios";
 import ImageUploader from "quill-image-uploader";
+import { reactive, ref, onMounted } from "vue";
+import axios from "axios";
 import Slug from "../../modules/Slug";
 import BlogCategory from "../../modules/BlogCategory";
-
 Quill.register("modules/imageUploader", ImageUploader);
-
 export default {
   components: {
     quillEditor,
   },
   setup(_, context) {
-    const state = reactive({
-      //   content: "",
-      _content: "",
-      editorOption: {
-        placeholder: "core",
-        modules: {
-          imageUploader: {
-            upload: (file) => {
-              return new Promise((resolve, reject) => {
-                let fd = new FormData();
-                fd.append("file", file);
-                axios.post("admin/media-upload", fd).then((res) => {
-                  setTimeout(() => {
-                    resolve(`${res.data.url}`);
-                  }, 3500);
-                });
+    const options = reactive({
+      placeholder: "Create something awesome ...",
+      modules: {
+        toolbar: [
+          [{ header: [1, 2, 3, 4, 5, 6, false] }],
+          [{ size: ["small", false, "large", "huge"] }],
+          ["bold", "italic", "underline", "strike"],
+          [{ align: [] }],
+          [{ list: "ordered" }, { list: "bullet" }],
+          [{ indent: "-1" }, { indent: "+1" }],
+          [{ color: [] }, { background: [] }],
+          ["link", "image"],
+        ],
+        imageUploader: {
+          upload: (file) => {
+            return new Promise((resolve, reject) => {
+              let fd = new FormData();
+              fd.append("file", file);
+              axios.post("admin/media-upload", fd).then((res) => {
+                setTimeout(() => {
+                  resolve(`${res.data.url}`);
+                }, 3500);
               });
-            },
+            });
           },
         },
-        // more options
       },
     });
-
     const form = reactive({
-      title: "",
-      description: "",
-      slug: "",
-      category_id: "",
-      featured_image: "",
-      featured_image_title: "",
-      featured_image_alt: "",
-      thumbnail: "",
-      thumbnail_title: "",
-      thumbnail_alt: "",
-      meta_keys: "",
-      meta_tags: "",
-      meta_description: "",
-      isPublished: 1,
+      formData: {
+        title: "",
+        description: "",
+        slug: "",
+        category_id: "",
+        featured_image: "",
+        featured_image_title: "",
+        featured_image_alt: "",
+        thumbnail: "",
+        thumbnail_title: "",
+        thumbnail_alt: "",
+        meta_keys: "",
+        meta_tags: "",
+        meta_description: "",
+        isPublished: 1,
+      },
+      isSaving: false,
+      isDraft: false,
     });
-
-    const isSaving = ref(false);
-    const isDrafting = ref(false);
-
     const validation = reactive({
       errors: [],
       message: "",
     });
-
     const success_message = ref("");
-
     const categories = ref([]);
-
     onMounted(() => {
       getCategories();
     });
-
     const getCategories = () => {
       BlogCategory.getRaw()
         .then((data) => {
@@ -325,46 +321,64 @@ export default {
           console.error(err);
         });
     };
+    const handleFormSubmit = () => {
+      validation.errors = "";
+      context.emit("formSubmit", {
+        form: form.formData,
+      });
+    };
 
-    const setFormData = (data) => {
-      form.title = data.title;
-      form.description = data.description;
-      form.slug = data.slug;
-      form.category_id = data.category.id;
-      form.featured_image = data.image;
-      form.featured_image_title = data.image_alt;
-      form.featured_image_alt = data.featured_image_alt;
-      form.thumbnail = data.thumbnail;
-      form.thumbnail_title = data.thumbnail_title;
-      form.thumbnail_alt = data.thumbnail_alt;
-      form.meta_keys = data.meta_keys;
-      form.meta_tags = data.meta_tags;
-      form.meta_description = data.meta_description;
-      form.isPublished = data.isPublished;
-
-      state._content = data.description;
+    const setSuccessResponse = (data, resetForm = true) => {
+      success_message.value = data.message;
+      if (resetForm) {
+        formReset();
+      }
+      forceScrollTop();
+    };
+    const setErrorResponse = (error) => {
+      validation.errors = error.response.data.errors;
+      validation.message = error.response.data.message;
+      forceScrollTop();
+    };
+    const responseCompleted = () => {
+      form.isSaving = false;
+      form.isDraft = false;
     };
 
     const formReset = () => {
-      form.title = "";
-      form.description = "";
-      form.slug = "";
-      form.category_id = "";
-      form.featured_image = "";
-      form.featured_image_title = "";
-      form.featured_image_alt = "";
-      form.thumbnail = "";
-      form.thumbnail_title = "";
-      form.thumbnail_alt = "";
-      form.meta_keys = "";
-      form.meta_tags = "";
-      form.meta_description = "";
-      form.isPublished = 1;
-
-      state.content = "";
-
+      form.formData.title = "";
+      form.formData.description = "";
+      form.formData.slug = "";
+      form.formData.category_id = "";
+      form.formData.featured_image = "";
+      form.formData.featured_image_title = "";
+      form.formData.featured_image_alt = "";
+      form.formData.thumbnail = "";
+      form.formData.thumbnail_title = "";
+      form.formData.thumbnail_alt = "";
+      form.formData.meta_keys = "";
+      form.formData.meta_tags = "";
+      form.formData.meta_description = "";
+      form.formData.isPublished = 1;
       validation.message = "";
       validation.errors = [];
+    };
+
+    const setFormData = (data) => {
+      form.formData.title = data.title;
+      form.formData.description = data.description;
+      form.formData.slug = data.slug;
+      form.formData.category_id = data.category.id;
+      form.formData.featured_image = data.image;
+      form.formData.featured_image_title = data.image_alt;
+      form.formData.featured_image_alt = data.featured_image_alt;
+      form.formData.thumbnail = data.thumbnail;
+      form.formData.thumbnail_title = data.thumbnail_title;
+      form.formData.thumbnail_alt = data.thumbnail_alt;
+      form.formData.meta_keys = data.meta_keys;
+      form.formData.meta_tags = data.meta_tags;
+      form.formData.meta_description = data.meta_description;
+      form.formData.isPublished = data.isPublished;
     };
 
     const forceScrollTop = () => {
@@ -373,73 +387,32 @@ export default {
         behavior: "smooth",
       });
     };
-
-    const handleFormSubmit = () => {
-      form.description = state._content;
-      validation.errors = "";
-      context.emit("formSubmit", {
-        form,
-      });
-    };
-
-    const setSuccessResponse = (data, resetForm = true) => {
-      success_message.value = data.message;
-
-      if (resetForm) {
-        formReset();
-      }
-
-      forceScrollTop();
-    };
-
-    const setErrorResponse = (error) => {
-      validation.errors = error.response.data.errors;
-      validation.message = error.response.data.message;
-
-      forceScrollTop();
-    };
-
-    const responseCompleted = () => {
-      isSaving.value = false;
-      isDrafting.value = false;
-    };
-
     const save = () => {
-      form.isPublished = 1;
-      isSaving.value = true;
+      form.formData.isPublished = 1;
+      form.isSaving = true;
       handleFormSubmit();
     };
-
     const draftAndSave = () => {
-      form.isPublished = 0;
-      isDrafting.value = true;
+      form.formData.isPublished = 0;
+      form.isDraft = true;
       handleFormSubmit();
     };
-
     const handleFeaturedImageChange = (e) => {
       if (e.target.files.length == 0) return;
-
       const file = e.target.files[0];
-
-      form.featured_image_title = file.name;
-
+      form.formData.featured_image_title = file.name;
       convertImageIntoDataUrl(file, (data) => {
-        form.featured_image = data.target.result;
+        form.formData.featured_image = data.target.result;
       });
     };
-
     const handleThumbnailChange = (e) => {
       if (e.target.files.length == 0) return;
-
       const file = e.target.files[0];
-
-      form.thumbnail_title = file.name;
-
+      form.formData.thumbnail_title = file.name;
       convertImageIntoDataUrl(file, (data) => {
-        form.thumbnail = data.target.result;
+        form.formData.thumbnail = data.target.result;
       });
     };
-
     const convertImageIntoDataUrl = (file, success) => {
       const file_reader = new FileReader();
       file_reader.onload = (e) => {
@@ -447,50 +420,28 @@ export default {
       };
       file_reader.readAsDataURL(file);
     };
-
     const imgDeleteHandler = (index, type) => {
       if (type == "featured_image") {
-        form.featured_image = "";
+        form.formData.featured_image = "";
       } else if (type == "thumbnail") {
-        form.thumbnail = "";
+        form.formData.thumbnail = "";
       }
     };
-
-    const onEditorBlur = (quill) => {
-      console.log("editor blur!", quill);
-    };
-    const onEditorFocus = (quill) => {
-      console.log("editor focus!", quill);
-    };
-    const onEditorReady = (quill) => {
-      console.log("editor ready!", quill);
-    };
-    const onEditorChange = ({ quill, html, text }) => {
-      state._content = html;
-    };
-
     const generateSlug = (title) => {
-      form.slug = Slug.generate(title);
+      form.formData.slug = Slug.generate(title);
     };
-
     return {
+      options,
       form,
       categories,
       handleFormSubmit,
       save,
-      isDrafting,
-      isSaving,
       draftAndSave,
       validation,
       success_message,
       handleFeaturedImageChange,
       imgDeleteHandler,
       handleThumbnailChange,
-      state,
-      onEditorBlur,
-      onEditorFocus,
-      onEditorReady,
-      onEditorChange,
       generateSlug,
       setSuccessResponse,
       setErrorResponse,
@@ -500,41 +451,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.ql-container {
-  height: 500px !important;
-}
-
-.img-container {
-  border: 1px dashed;
-  padding: 20px;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.img-container label {
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.img-container label:hover {
-  color: #30419b;
-}
-
-.img-wrapper {
-  position: relative;
-  padding: 5px;
-}
-
-.img-remove {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 5px 15px;
-}
-</style>
