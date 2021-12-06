@@ -34,9 +34,9 @@ class BlogUpdateRequest extends BlogRequest
     {
         $slug = Str::slug($this->title);
 
-        $category = BlogCategory::findOrFail($this->category_id);
+        $category = BlogCategory::find($this->category_id);
 
-        $blog->blog_categories_id = $category->id;
+        $blog->blog_categories_id = $category ? $category->id : null;
         $blog->blog_title = $this->title;
         $blog->blog_slug = $this->has('urlSlug') ? $this->slug : $slug;
         $blog->blog_des = $this->description;

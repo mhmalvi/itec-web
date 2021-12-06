@@ -16,7 +16,8 @@ class BlogResource extends JsonResource
     {
         return [
             'action_user' => $this->user,
-            'category' => $this->category,
+            'category' => $this->category ? $this->category->title : 'Uncategorized',
+            'category_id' => ($this->category) ? $this->category->id : null, // this is for blog form
             'title' => $this->blog_title,
             'slug' => $this->blog_slug,
             'description' => $this->blog_des,

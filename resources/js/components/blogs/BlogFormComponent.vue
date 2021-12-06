@@ -93,7 +93,7 @@
 
         <div class="form-group d-flex justify-content-end">
           <button
-            class="btn btn-default btn-sm mr-2"
+            class="btn btn-default btn-sm btn-tone mr-2"
             type="button"
             @click="draftAndSave()"
             :disabled="form.isSaving || form.isDraft"
@@ -103,7 +103,7 @@
             {{ action_label }} and Draft
           </button>
           <button
-            class="btn btn-primary btn-sm"
+            class="btn btn-primary btn-sm btn-tone"
             type="button"
             @click="save()"
             :disabled="form.isSaving || form.isDraft"
@@ -126,7 +126,9 @@
                 class="form-control"
                 v-model="form.formData.category_id"
               >
-                <option selected>Choose...</option>
+                <!-- setting value to `null` because when no category is assigned,
+                    category id will be `null` -->
+                <option value="null" selected>Uncategorized</option>
                 <option
                   :value="category.id"
                   v-for="(category, index) in categories"
@@ -378,7 +380,7 @@ export default {
       form.formData.title = data.title;
       form.formData.description = data.description;
       form.formData.slug = data.slug;
-      form.formData.category_id = data.category.id;
+      form.formData.category_id = data.category_id;
       form.formData.featured_image = data.image;
       form.formData.featured_image_title = data.image_alt;
       form.formData.featured_image_alt = data.featured_image_alt;

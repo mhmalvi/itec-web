@@ -55,7 +55,7 @@
                   </div>
                 </td>
                 <td>
-                  {{ blog.category.title }}
+                  {{ blog.category }}
                 </td>
                 <td>
                   {{ blog.meta_keys }}

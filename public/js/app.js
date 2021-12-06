@@ -21087,7 +21087,7 @@ vue3_quill__WEBPACK_IMPORTED_MODULE_0__.Quill.register("modules/imageUploader", 
       form.formData.title = data.title;
       form.formData.description = data.description;
       form.formData.slug = data.slug;
-      form.formData.category_id = data.category.id;
+      form.formData.category_id = data.category_id;
       form.formData.featured_image = data.image;
       form.formData.featured_image_title = data.image_alt;
       form.formData.featured_image_alt = data.featured_image_alt;
@@ -21521,8 +21521,9 @@ var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+  value: "null",
   selected: ""
-}, "Choose...", -1
+}, "Uncategorized", -1
 /* HOISTED */
 );
 
@@ -21706,7 +21707,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, null, 512
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.form.formData.meta_description]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn btn-default btn-sm mr-2",
+    "class": "btn btn-default btn-sm btn-tone mr-2",
     type: "button",
     onClick: _cache[7] || (_cache[7] = function ($event) {
       return $setup.draftAndSave();
@@ -21717,7 +21718,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   )], 8
   /* PROPS */
   , _hoisted_21), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-    "class": "btn btn-primary btn-sm",
+    "class": "btn btn-primary btn-sm btn-tone",
     type: "button",
     onClick: _cache[8] || (_cache[8] = function ($event) {
       return $setup.save();
@@ -21733,7 +21734,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[9] || (_cache[9] = function ($event) {
       return $setup.form.formData.category_id = $event;
     })
-  }, [_hoisted_33, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.categories, function (category, index) {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" setting value to `null` because when no category is assigned,\n                    category id will be `null` "), _hoisted_33, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.categories, function (category, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       value: category.id,
       key: index
@@ -21998,7 +21999,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": ""
     }, " Edit ", 8
     /* PROPS */
-    , _hoisted_21), _hoisted_22])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(blog.category.title), 1
+    , _hoisted_21), _hoisted_22])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(blog.category), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(blog.meta_keys), 1
     /* TEXT */
@@ -24403,7 +24404,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.blog-thumbnail[data-v-7d081be4] {\r\n  width: 60px;\r\n  height: auto;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.blog-thumbnail[data-v-7d081be4] {\n  width: 60px;\n  height: auto;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
