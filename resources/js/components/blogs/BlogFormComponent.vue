@@ -7,12 +7,10 @@
           v-if="success_message"
           v-html="success_message"
         ></div>
+        <!-- there is some problems, need to fix later -->
         <div
           class="alert alert-danger"
-          v-if="
-            validation.message &&
-            (!validation.errors || validation.errors.length == 0)
-          "
+          v-if="validation.message && validation.errors.length == 0"
         >
           {{ validation.message }}
         </div>
