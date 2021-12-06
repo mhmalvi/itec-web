@@ -16,5 +16,27 @@
                 <span class="title">Add New Post</span>
             </a>
         </li>
+        <li class="nav-item dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0);">
+                <span class="icon-holder">
+                    <i class="anticon anticon-team"></i>
+                </span>
+                <span class="title">Users</span>
+                <span class="arrow">
+                    <i class="arrow-icon"></i>
+                </span>
+            </a>
+            <ul class="dropdown-menu" style="display: none;">
+                <li>
+                    <a href="">All Users</a>
+                </li>
+                <li>
+                    <a href="">New User</a>
+                </li>
+                <li>
+                    <a href="{{route('admin.profile')}}">Change Profile</a>
+                </li>
+            </ul>
+        </li>
     </ul>
 </div>
