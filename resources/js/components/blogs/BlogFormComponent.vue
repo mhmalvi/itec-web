@@ -93,24 +93,24 @@
 
         <div class="form-group d-flex justify-content-end">
           <button
-            class="btn btn-default mr-2"
+            class="btn btn-default btn-sm mr-2"
             type="button"
             @click="draftAndSave()"
             :disabled="form.isSaving || form.isDraft"
           >
             <i class="fas fa-cloud mr-1" v-if="!form.isDraft"></i>
             <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
-            Draft
+            {{ action_label }} and Draft
           </button>
           <button
-            class="btn btn-primary"
+            class="btn btn-primary btn-sm"
             type="button"
             @click="save()"
             :disabled="form.isSaving || form.isDraft"
           >
             <i class="fas fa-plus mr-1" v-if="!form.isSaving"></i>
             <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
-            Save
+            {{ action_label }} and Publish
           </button>
           <button hidden>submit</button>
         </div>
@@ -303,6 +303,16 @@ export default {
       isSaving: false,
       isDraft: false,
     });
+
+    const action_label = ref("Save");
+
+    const useAsSave = () => {
+      action_label.value = "Save";
+    };
+    const useAsUpdate = () => {
+      action_label.value = "Update";
+    };
+
     const validation = reactive({
       errors: [],
       message: "",
@@ -434,6 +444,9 @@ export default {
       options,
       form,
       categories,
+      action_label,
+      useAsSave,
+      useAsUpdate,
       handleFormSubmit,
       save,
       draftAndSave,
