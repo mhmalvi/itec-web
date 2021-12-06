@@ -9,7 +9,10 @@
         ></div>
         <div
           class="alert alert-danger"
-          v-if="validation.message && validation.errors.length == 0"
+          v-if="
+            validation.message &&
+            (!validation.errors || validation.errors.length == 0)
+          "
         >
           {{ validation.message }}
         </div>
@@ -126,9 +129,7 @@
                 class="form-control"
                 v-model="form.formData.category_id"
               >
-                <!-- setting value to `null` because when no category is assigned,
-                    category id will be `null` -->
-                <option value="null" selected>Uncategorized</option>
+                <option value="0" selected>Uncategorized</option>
                 <option
                   :value="category.id"
                   v-for="(category, index) in categories"
@@ -350,6 +351,7 @@ export default {
     const setErrorResponse = (error) => {
       validation.errors = error.response.data.errors;
       validation.message = error.response.data.message;
+      console.log(validation);
       forceScrollTop();
     };
     const responseCompleted = () => {
@@ -380,7 +382,7 @@ export default {
       form.formData.title = data.title;
       form.formData.description = data.description;
       form.formData.slug = data.slug;
-      form.formData.category_id = data.category_id;
+      form.formData.category_id = data.category_id ?? 0;
       form.formData.featured_image = data.image;
       form.formData.featured_image_title = data.image_alt;
       form.formData.featured_image_alt = data.featured_image_alt;

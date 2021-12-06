@@ -51,7 +51,13 @@
                   {{ blog.title }}
                   <div class="py-3">
                     <a :href="getEditLink(blog)" class=""> Edit </a>
-                    <a href="javascript:void(0)" class="mx-2"> Delete </a>
+                    <a
+                      href="javascript:void(0)"
+                      @click.prevent="promptToDelete(blog)"
+                      class="mx-2"
+                    >
+                      Delete
+                    </a>
                   </div>
                 </td>
                 <td>
@@ -102,6 +108,7 @@
 import axios from "axios";
 import { ref, onMounted, watch } from "vue";
 import _ from "lodash";
+import Blog from "../../modules/Blog";
 
 export default {
   setup() {
@@ -125,21 +132,15 @@ export default {
     }, 500);
 
     watch(search, (newVal, oldVal) => {
-      searchByTitle(search.value);
+      searchByTitle(newVal);
     });
 
     const getBlogs = (actionUrl) => {
       isLoading.value = true;
-      axios
-        .get(actionUrl, {
-          params: {
-            items: perPage.value,
-            search: search.value,
-          },
-        })
-        .then((res) => {
-          blogs.value = res.data.data;
-          paginationLinks.value = res.data.meta.links;
+      Blog.getPaginated(actionUrl, perPage.value, search.value)
+        .then((data) => {
+          blogs.value = data.data;
+          paginationLinks.value = data.meta.links;
         })
         .catch((err) => {
           console.err(err);
@@ -147,6 +148,18 @@ export default {
         .finally(() => {
           isLoading.value = false;
         });
+    };
+
+    const promptToDelete = (blog) => {
+      if (confirm("Are you sure you want delete?")) {
+        Blog.delete(blog.slug)
+          .then((res) => {
+            getBlogs(action_url);
+          })
+          .catch((err) => {
+            alert(err.response.data.message);
+          });
+      }
     };
 
     const getLink = (url, index) => {
@@ -165,6 +178,7 @@ export default {
       perPage,
       search,
       getEditLink,
+      promptToDelete,
     };
   },
 };

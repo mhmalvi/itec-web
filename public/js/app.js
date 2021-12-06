@@ -21056,6 +21056,7 @@ vue3_quill__WEBPACK_IMPORTED_MODULE_0__.Quill.register("modules/imageUploader", 
     var setErrorResponse = function setErrorResponse(error) {
       validation.errors = error.response.data.errors;
       validation.message = error.response.data.message;
+      console.log(validation);
       forceScrollTop();
     };
 
@@ -21084,10 +21085,12 @@ vue3_quill__WEBPACK_IMPORTED_MODULE_0__.Quill.register("modules/imageUploader", 
     };
 
     var setFormData = function setFormData(data) {
+      var _data$category_id;
+
       form.formData.title = data.title;
       form.formData.description = data.description;
       form.formData.slug = data.slug;
-      form.formData.category_id = data.category_id;
+      form.formData.category_id = (_data$category_id = data.category_id) !== null && _data$category_id !== void 0 ? _data$category_id : 0;
       form.formData.featured_image = data.image;
       form.formData.featured_image_title = data.image_alt;
       form.formData.featured_image_alt = data.featured_image_alt;
@@ -21201,6 +21204,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _modules_Blog__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../modules/Blog */ "./resources/js/modules/Blog.js");
+
 
 
 
@@ -21224,24 +21229,29 @@ __webpack_require__.r(__webpack_exports__);
     }, 500);
 
     (0,vue__WEBPACK_IMPORTED_MODULE_1__.watch)(search, function (newVal, oldVal) {
-      searchByTitle(search.value);
+      searchByTitle(newVal);
     });
 
     var getBlogs = function getBlogs(actionUrl) {
       isLoading.value = true;
-      axios__WEBPACK_IMPORTED_MODULE_0___default().get(actionUrl, {
-        params: {
-          items: perPage.value,
-          search: search.value
-        }
-      }).then(function (res) {
-        blogs.value = res.data.data;
-        paginationLinks.value = res.data.meta.links;
+      _modules_Blog__WEBPACK_IMPORTED_MODULE_3__.default.getPaginated(actionUrl, perPage.value, search.value).then(function (data) {
+        blogs.value = data.data;
+        paginationLinks.value = data.meta.links;
       })["catch"](function (err) {
         console.err(err);
       })["finally"](function () {
         isLoading.value = false;
       });
+    };
+
+    var promptToDelete = function promptToDelete(blog) {
+      if (confirm("Are you sure you want delete?")) {
+        _modules_Blog__WEBPACK_IMPORTED_MODULE_3__.default.delete(blog.slug).then(function (res) {
+          getBlogs(action_url);
+        })["catch"](function (err) {
+          alert(err.response.data.message);
+        });
+      }
     };
 
     var getLink = function getLink(url, index) {
@@ -21259,7 +21269,8 @@ __webpack_require__.r(__webpack_exports__);
       getLink: getLink,
       perPage: perPage,
       search: search,
-      getEditLink: getEditLink
+      getEditLink: getEditLink,
+      promptToDelete: promptToDelete
     };
   }
 });
@@ -21521,7 +21532,7 @@ var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
-  value: "null",
+  value: "0",
   selected: ""
 }, "Uncategorized", -1
 /* HOISTED */
@@ -21643,7 +21654,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     innerHTML: $setup.success_message
   }, null, 8
   /* PROPS */
-  , _hoisted_3)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $setup.validation.message && $setup.validation.errors.length == 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.validation.message), 1
+  , _hoisted_3)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), $setup.validation.message && (!$setup.validation.errors || $setup.validation.errors.length == 0) ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.validation.message), 1
   /* TEXT */
   )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [_hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     type: "text",
@@ -21734,7 +21745,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[9] || (_cache[9] = function ($event) {
       return $setup.form.formData.category_id = $event;
     })
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" setting value to `null` because when no category is assigned,\n                    category id will be `null` "), _hoisted_33, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.categories, function (category, index) {
+  }, [_hoisted_33, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.categories, function (category, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       value: category.id,
       key: index
@@ -21943,16 +21954,7 @@ var _hoisted_20 = {
   "class": "py-3"
 };
 var _hoisted_21 = ["href"];
-
-var _hoisted_22 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-    href: "javascript:void(0)",
-    "class": "mx-2"
-  }, " Delete ", -1
-  /* HOISTED */
-  );
-});
-
+var _hoisted_22 = ["onClick"];
 var _hoisted_23 = {
   "class": "row"
 };
@@ -21999,7 +22001,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       "class": ""
     }, " Edit ", 8
     /* PROPS */
-    , _hoisted_21), _hoisted_22])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(blog.category), 1
+    , _hoisted_21), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+      href: "javascript:void(0)",
+      onClick: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
+        return $setup.promptToDelete(blog);
+      }, ["prevent"]),
+      "class": "mx-2"
+    }, " Delete ", 8
+    /* PROPS */
+    , _hoisted_22)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(blog.category), 1
     /* TEXT */
     ), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("td", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(blog.meta_keys), 1
     /* TEXT */
@@ -22212,6 +22222,71 @@ var Blog = /*#__PURE__*/function () {
       }
 
       return get;
+    }()
+  }, {
+    key: "getPaginated",
+    value: function () {
+      var _getPaginated = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee2(actionUrl, itemsPerPage, query) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                return _context2.abrupt("return", new Promise(function (resolve, reject) {
+                  axios__WEBPACK_IMPORTED_MODULE_1___default().get(actionUrl, {
+                    params: {
+                      items: itemsPerPage,
+                      search: query
+                    }
+                  }).then(function (res) {
+                    resolve(res.data);
+                  })["catch"](function (err) {
+                    reject(err);
+                  });
+                }));
+
+              case 1:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+
+      function getPaginated(_x2, _x3, _x4) {
+        return _getPaginated.apply(this, arguments);
+      }
+
+      return getPaginated;
+    }()
+  }, {
+    key: "delete",
+    value: function () {
+      var _delete2 = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee3(slug) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                return _context3.abrupt("return", new Promise(function (resolve, reject) {
+                  axios__WEBPACK_IMPORTED_MODULE_1___default().get("/admin/blogs/remove/" + slug).then(function (res) {
+                    resolve(res.data);
+                  })["catch"](function (err) {
+                    reject(err);
+                  });
+                }));
+
+              case 1:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3);
+      }));
+
+      function _delete(_x5) {
+        return _delete2.apply(this, arguments);
+      }
+
+      return _delete;
     }()
   }]);
 

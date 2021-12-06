@@ -35,6 +35,8 @@ class BlogCreateRequest extends BlogRequest
     {
         $slug = Str::slug($this->title);
 
+        if ($this->category_id == 0) $this->category_id = null;
+
         $blog = Blog::create([
             'action_user' => Auth::id(),
             'blog_categories_id' => $this->category_id,
