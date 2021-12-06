@@ -38,5 +38,16 @@
                 </li>
             </ul>
         </li>
+        <li class="nav-item">
+            <a href="javascript:void(0)" onclick="event.preventDefault(); document.getElementById('logoutForm').submit()">
+                <span class="icon-holder">
+                    <i class="anticon opacity-04 font-size-16 anticon-logout"></i>
+                </span>
+                <span class="title">Logout</span>
+            </a>
+        </li>
+        <form action="{{route('logout')}}" method="post" hidden id="logoutForm">
+        @csrf
+        </form>
     </ul>
 </div>
