@@ -27,12 +27,14 @@
                 </span>
             </a>
             <ul class="dropdown-menu" style="display: none;">
-                <li>
-                    <a href="">All Users</a>
-                </li>
-                <li>
-                    <a href="">New User</a>
-                </li>
+                @if (Auth::user()->isAdmin)
+                    <li>
+                        <a href="">All Users</a>
+                    </li>
+                    <li>
+                        <a href="">New User</a>
+                    </li>
+                @endif
                 <li>
                     <a href="{{route('admin.profile')}}">Change Profile</a>
                 </li>

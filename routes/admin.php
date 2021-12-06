@@ -34,6 +34,8 @@ Route::prefix('course')->group(function () {
 
 Route::prefix('settings')->group(function () {
     Route::view('profile', 'admin.settings.profile')->name('profile');
+    Route::post('profile', 'UsersController@updateProfile');
+    Route::post('change-password', 'UsersController@changePassword');
 });
 
 Route::post("media-upload", 'AdminController@test');
