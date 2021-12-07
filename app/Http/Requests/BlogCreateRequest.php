@@ -16,7 +16,7 @@ class BlogCreateRequest extends BlogRequest
      */
     public function authorize()
     {
-        return true;
+        return auth()->check();
     }
 
     /**
@@ -27,37 +27,28 @@ class BlogCreateRequest extends BlogRequest
     public function rules()
     {
         return [
-            'category_id'   => 'required',
-            'blog_title'    => 'required|string',
-            'details'       => 'required',
-            'meta_des'      => 'max:255',
-            'thumbnail'     => 'required',
-            'img'           => 'required',
+            'title' => 'required|string',
         ];
     }
 
-
     public function save()
     {
-        dd($this->all());
-        $category = BlogCategory::where('title', $this->category_id)->first();
-
-        $slug = Str::slug($this->blog_title);
+        $slug = Str::slug($this->title);
 
         $blog = Blog::create([
             'action_user' => Auth::id(),
-            'blog_categories_id' => $category->id,
-            'blog_title' => $this->blog_title,
-            'blog_slug' => $this->has('urlSlug') ? $this->urlSlug : $slug,
-            'blog_des' => $this->details,
-            'meta_des' => $this->meta_des,
+            'blog_categories_id' => $this->category_id,
+            'blog_title' => $this->title,
+            'blog_slug' => $this->has('slug') ? $this->slug : $slug,
+            'blog_des' => $this->description,
+            'meta_des' => $this->meta_description,
             'meta_tags' => $this->meta_tags,
             'meta_keys' => $this->meta_keys,
-            'image' => $this->hasFile('img') ? $this->saveImage() : "",
-            'thumbnail' => $this->hasFile('thumbnail') ? $this->saveThumbnail() : "",
-            'image_alt' => $this->img_alt ? $this->img_alt : $this->blog_title,
-            'thumbnail_alt' => $this->thumb_alt ? $this->thumb_alt : $this->blog_title,
-            'isPublished' => ($this->publish === 'on') ? 1 : 0
+            'image' => $this->filled('featured_image') ? $this->saveImage() : "",
+            'thumbnail' => $this->filled('thumbnail') ? $this->saveThumbnail() : "",
+            'image_alt' => $this->featured_image_alt ? $this->featured_image_alt : $this->title,
+            'thumbnail_alt' => $this->thumbnail_alt ? $this->thumbnail_alt : $this->title,
+            'isPublished' => $this->isPublished,
         ]);
 
         return $blog;
