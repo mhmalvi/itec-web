@@ -10,7 +10,7 @@
         <!-- there is some problems, need to fix later -->
         <div
           class="alert alert-danger"
-          v-if="validation.message && validation.errors.length == 0"
+          v-if="validation.message && !validation.errors"
         >
           {{ validation.message }}
         </div>
@@ -26,7 +26,10 @@
             @keyup="generateSlug(form.formData.title)"
             v-model="form.formData.title"
           />
-          <p class="text-danger" v-if="validation.errors.title">
+          <p
+            class="text-danger"
+            v-if="validation.errors && validation.errors.title"
+          >
             {{ validation.errors.title[0] }}
           </p>
         </div>
@@ -340,6 +343,7 @@ export default {
     };
     const handleFormSubmit = () => {
       validation.errors = "";
+      validation.message = "";
       context.emit("formSubmit", {
         form: form.formData,
       });
@@ -355,7 +359,6 @@ export default {
     const setErrorResponse = (error) => {
       validation.errors = error.response.data.errors;
       validation.message = error.response.data.message;
-      console.log(validation);
       forceScrollTop();
     };
     const responseCompleted = () => {
