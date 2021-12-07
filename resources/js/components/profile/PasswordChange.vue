@@ -16,7 +16,7 @@
     <div class="col-md-8">
       <div class="card rounded">
         <div class="card-body">
-          <form @submit.prevent="handleFormSubmit">
+          <form @submit.prevent="handleFormSubmit" id="form">
             <div class="row">
               <div class="col-12 form-group">
                 <label for="old_password">Old Password</label>
@@ -101,6 +101,7 @@ export default {
         .post("admin/settings/change-password", formdata)
         .then((res) => {
           message.success = true;
+          document.getElementById("form").reset();
         })
         .catch((err) => {
           message.errors = err.response.data.errors;
