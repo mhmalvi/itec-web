@@ -24,7 +24,7 @@
                     @forelse ($blogs as $item)
                         <div class="post" data-aos="fade-up">
                             <figure class="post-image">
-                                <img src="{{ asset('storage/blogs/thumbnails/' . $item->thumbnail) }}" alt="{{$item->thumbnail_alt}}">
+                                <img src="{{ $item->thumbnail }}" alt="{{$item->thumbnail_alt}}">
                             </figure>
                             <div class="post-content">
                                 <small class="post-date">
@@ -36,11 +36,26 @@
                                     </a>
                                 </h3>
                                 <div class="post-author">
-                                    <span>by <a href="#">{{ $item->user->name }}</a></span>
+                                    <span>by 
+                                        <a href="#">
+                                            @if (is_null($item->user))
+                                                Admin
+                                            @else
+                                                {{$item->user->name}}
+                                            @endif
+                                        </a>
+                                    </span>
                                 </div>
                                 <!-- end post-author -->
                                 <ul class="post-categories">
-                                    <li><a href="#">{{ $item->category->title }}</a>
+                                    <li>
+                                        <a href="#">
+                                            @if (is_null($item->category))
+                                                Uncategorized
+                                            @else
+                                                {{$item->category->title}}
+                                            @endif
+                                        </a>
                                     </li>
                                 </ul>
                                 <a href="{{ route('blog.detail', $item->blog_slug) }}" class="post-link">READ MORE</a>

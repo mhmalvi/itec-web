@@ -50,7 +50,7 @@
                 <div class="col-lg-10">
                     <div class="post single">
                         <figure class="post-image">
-                            <img class="lazyload" data-src="{{ !is_null($blog->image) ? asset('storage/blogs/images/' . $blog->image) : asset('images/blog/blog.jpg') }}"
+                            <img class="lazyload" data-src="{{ $blog->image }}"
                                 alt="{{$blog->image_alt}}">
                         </figure>
                         <div class="post-content">
@@ -59,9 +59,19 @@
                             </small>
                             <h1 class="post-title">{{ $blog->blog_title }}</h1>
                             <div class="post-author">
-                                <img class="lazyload" data-src="{{ asset($blog->user->photo ? 'storage/users/' . $blog->user->photo : 'admin/images/profile.png') }}"
-                                    alt="Image">
-                                <span>by: {{ $blog->user->name }}</span>
+                                    @if (is_null($blog->user))
+                                        <img class="lazyload" data-src="{{ asset('avatar.png') }}" alt="Image">
+                                    @else
+                                        <img class="lazyload" data-src="{{ asset($blog->user->photo ? 'storage/users/' . $blog->user->photo : 'admin/images/profile.png') }}" alt="Image">
+                                    @endif
+
+                                <span>by: 
+                                    @if (is_null($blog->user))
+                                        Admin
+                                    @else
+                                        {{ $blog->user->name }}
+                                    @endif
+                                </span>
                             </div>
                             <!-- end post-author -->
                             {{-- <ul class="post-categories">

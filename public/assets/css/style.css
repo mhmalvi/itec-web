@@ -2303,7 +2303,7 @@ textarea {
 }
 
 .blog .post.single .post-content .post-title {
-    font-size: 4vw;
+    font-size: 3rem;
     line-height: 1.4;
 }
 
@@ -2448,7 +2448,6 @@ textarea {
     width: 100%;
     display: block;
     margin-bottom: 20px;
-    font-size: 3vw;
     font-weight: 800;
 }
 
