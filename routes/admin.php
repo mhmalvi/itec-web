@@ -7,13 +7,14 @@ Route::get('/dashboard', 'AdminController@index')->name('dashboard');
 Route::prefix('blogs')->name('blog.')->group(function () {
     Route::get('/', 'BlogsController@index');
     Route::get('list', 'BlogsController@getPaginatedList');
+    Route::get('{blog:blog_slug}/raw', 'BlogsController@rawItem');
     Route::get('categories', 'BlogCategoriesController@index')->name('blog.category');
     Route::get('create', 'BlogsController@create')->name('create');
     Route::post('create', 'BlogsController@store')->name('store');
     Route::post('add-category', 'BlogCategoriesController@create')->name('blog.category.add');
     Route::post('add-blog', 'BlogsController@store')->name('blog.add');
     Route::get('edit/{slug}', 'BlogsController@edit')->name('blog.edit');
-    Route::put('updated/{id}', 'BlogsController@update')->name('blog.update');
+    Route::put('update/{blog:blog_slug}', 'BlogsController@update')->name('blog.update');
     Route::get('remove/{slug}', 'BlogsController@destroy')->name('blog.remove');
 });
 

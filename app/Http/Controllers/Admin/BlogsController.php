@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\BlogCreateRequest;
 use App\Http\Requests\BlogUpdateRequest;
+use App\Http\Resources\BlogResource;
 use App\Http\Resources\BlogsCollection;
 use Illuminate\Support\Facades\Storage;
 
@@ -30,6 +31,17 @@ class BlogsController extends Controller
             return new BlogsCollection(
                 Blog::where('blog_title', 'LIKE', '%' . $request->search . '%')->latest()->paginate($perPage)
             );
+        } catch (\Throwable $e) {
+            return response()->json([
+                'message' => $e->getMessage(),
+            ], 500);
+        }
+    }
+
+    public function rawItem(Blog $blog)
+    {
+        try {
+            return new BlogResource($blog);
         } catch (\Throwable $e) {
             return response()->json([
                 'message' => $e->getMessage(),
@@ -107,10 +119,7 @@ class BlogsController extends Controller
     public function edit($slug)
     {
         try {
-            $categories = BlogCategory::all();
-            $blog = Blog::where('blog_slug', $slug)->first();
-
-            return view('admin.blogs.update', compact('blog', 'categories'));
+            return view('admin.blogs.update', compact('slug'));
         } catch (\Throwable $th) {
             $notification = [
                 'message'   =>  'oops! Something went wrong',
@@ -126,24 +135,24 @@ class BlogsController extends Controller
     /**
      *
      */
-    public function update(BlogUpdateRequest $request, $id)
+    public function update(BlogUpdateRequest $request, Blog $blog)
     {
         try {
-            $request->update(Blog::findOrFail($id));
+            $request->update($blog);
 
-            $notification = [
-                'message'   =>  'Scuccessfully updated',
-                'alert-type'    =>  'success'
-            ];
+            $message = "Successfully updated.";
+            if ($blog->isPublished == 1) {
+                $link = route('blog.detail', ['slug' => $blog->blog_slug]);
+                $message .= " <a href='$link' target='_blank'>View post</a>";
+            }
 
-            return redirect()->route('admin.blogs')->with($notification);
+            return response()->json([
+                'message' => $message,
+            ], 201);
         } catch (\Throwable $th) {
-            $notification = [
-                'message'   =>  $th->getMessage(),
-                'alert-type'    =>  'warning'
-            ];
-
-            return back()->with($notification);
+            return response()->json([
+                'message' => $th->getMessage(),
+            ], 500);
         }
     }
 

@@ -50,7 +50,7 @@
                 <td>
                   {{ blog.title }}
                   <div class="py-3">
-                    <a href="javascript:void(0)" class=""> Edit </a>
+                    <a :href="getEditLink(blog)" class=""> Edit </a>
                     <a href="javascript:void(0)" class="mx-2"> Delete </a>
                   </div>
                 </td>
@@ -153,6 +153,10 @@ export default {
       getBlogs(url);
     };
 
+    const getEditLink = (blog) => {
+      return "/admin/blogs/edit/" + blog.slug;
+    };
+
     return {
       isLoading,
       blogs,
@@ -160,6 +164,7 @@ export default {
       getLink,
       perPage,
       search,
+      getEditLink,
     };
   },
 };
