@@ -37,7 +37,7 @@ class PasswordChangeRequest extends FormRequest
     {
         $user = User::findOrFail(Auth::id());
 
-        $user->password = Hash::make('password');
+        $user->password = Hash::make($this->password);
 
         $user->save();
     }
