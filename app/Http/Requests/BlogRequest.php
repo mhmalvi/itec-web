@@ -30,7 +30,7 @@ class BlogRequest extends FormRequest
         }
 
         Image::make($file)
-            ->fit(1000)
+            ->fit(780, 1000)
             ->save(storage_path('app/public/blogs/thumbnails/' . $thumbnail));
 
         return $thumbnail;
@@ -50,7 +50,7 @@ class BlogRequest extends FormRequest
         }
 
         Image::make($file)
-            ->fit(1000)
+            ->fit(1080, 960)
             ->save(storage_path('app/public/blogs/images/' . $image));
 
         return $image;
