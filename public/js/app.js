@@ -20977,7 +20977,7 @@ vue3_quill__WEBPACK_IMPORTED_MODULE_0__.Quill.register("modules/imageUploader", 
             return new Promise(function (resolve, reject) {
               var fd = new FormData();
               fd.append("file", file);
-              axios__WEBPACK_IMPORTED_MODULE_3___default().post("admin/media-upload", fd).then(function (res) {
+              axios__WEBPACK_IMPORTED_MODULE_3___default().post("admin/blogs/media-upload", fd).then(function (res) {
                 setTimeout(function () {
                   resolve("".concat(res.data.url));
                 }, 3500);
@@ -21090,7 +21090,7 @@ vue3_quill__WEBPACK_IMPORTED_MODULE_0__.Quill.register("modules/imageUploader", 
       form.formData.title = data.title;
       form.formData.description = data.description;
       form.formData.slug = data.slug;
-      form.formData.category_id = (_data$category_id = data.category_id) !== null && _data$category_id !== void 0 ? _data$category_id : 0;
+      form.formData.category_id = (_data$category_id = data.category_id) !== null && _data$category_id !== void 0 ? _data$category_id : "";
       form.formData.featured_image = data.image;
       form.formData.featured_image_title = data.image_alt;
       form.formData.featured_image_alt = data.featured_image_alt;
@@ -21640,14 +21640,8 @@ var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
-  value: "0",
-  selected: ""
-}, "Uncategorized", -1
-/* HOISTED */
-);
-
-var _hoisted_34 = ["value"];
+var _hoisted_33 = ["selected"];
+var _hoisted_34 = ["value", "selected"];
 var _hoisted_35 = {
   "class": "card"
 };
@@ -21833,7 +21827,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $setup.draftAndSave();
     }),
     disabled: $setup.form.isSaving || $setup.form.isDraft
-  }, [!$setup.form.isDraft ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("i", _hoisted_22)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("i", _hoisted_23)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.action_label) + " and Draft ", 1
+  }, [!$setup.form.isDraft ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("i", _hoisted_22)) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("i", _hoisted_23)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.action_label) + " as Draft ", 1
   /* TEXT */
   )], 8
   /* PROPS */
@@ -21854,10 +21848,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[9] || (_cache[9] = function ($event) {
       return $setup.form.formData.category_id = $event;
     })
-  }, [_hoisted_33, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.categories, function (category, index) {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("option", {
+    value: "",
+    selected: $setup.form.formData.category_id == '' ? true : false
+  }, " Uncategorized ", 8
+  /* PROPS */
+  , _hoisted_33), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.categories, function (category, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("option", {
       value: category.id,
-      key: index
+      key: index,
+      selected: $setup.form.formData.category_id == '' ? false : true
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(category.title), 9
     /* TEXT, PROPS */
     , _hoisted_34);

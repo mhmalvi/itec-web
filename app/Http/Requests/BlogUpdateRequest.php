@@ -34,11 +34,9 @@ class BlogUpdateRequest extends BlogRequest
     {
         $slug = Str::slug($this->title);
 
-        $category = BlogCategory::find($this->category_id);
-
-        $blog->blog_categories_id = $category ? $category->id : null;
         $blog->blog_title = $this->title;
-        $blog->blog_slug = $this->has('urlSlug') ? $this->slug : $slug;
+        $blog->blog_categories_id = is_null($this->category_id) ? null : BlogCategory::findOrFail($this->category_id)->id;
+        $blog->blog_slug = $this->filled('slug') ? $this->slug : $slug;
         $blog->blog_des = $this->description;
         $blog->meta_des = $this->meta_description;
         $blog->meta_tags = $this->meta_tags;
@@ -46,13 +44,6 @@ class BlogUpdateRequest extends BlogRequest
         $blog->isPublished = $this->isPublished;
         $blog->image_alt = $this->featured_image_alt;
         $blog->thumbnail_alt = $this->thumbnail_alt;
-
-        if ($this->filled('thumbnail') && substr($this->thumbnail, 0, 4) != 'http') {
-            $blog->thumbnail = $this->saveThumbnail();
-        } else {
-            $this->destroyThumbnail($blog);
-            $blog->thumbnail = '';
-        }
 
         if ($this->filled('featured_image')) {
             // if the image data starts with http, it means
@@ -63,7 +54,16 @@ class BlogUpdateRequest extends BlogRequest
             }
         } else {
             $this->destroyImage($blog);
-            $blog->image = '';
+            $blog->image = null;
+        }
+
+        if ($this->filled('thumbnail')) {
+            if (substr($this->thumbnail, 0, 4) != 'http') {
+                $blog->thumbnail = $this->saveThumbnail();
+            }
+        } else {
+            $this->destroyThumbnail($blog);
+            $blog->thumbnail = null;
         }
 
         $blog->save();

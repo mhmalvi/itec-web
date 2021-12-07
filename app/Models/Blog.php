@@ -14,6 +14,11 @@ class Blog extends Model
 
     protected $guarded = [];
 
+    public function getRouteKeyName()
+    {
+        return 'blog_slug';
+    }
+
     public function getBlogCategoriesIdAttribute($value)
     {
         if (is_null($value)) {
@@ -61,7 +66,7 @@ class Blog extends Model
         if (is_null($value)) {
             return "https://dummyimage.com/780x1000";
         } else {
-            return Storage::url("blogs/thumbnails/{$value}");
+            return asset(Storage::url("blogs/thumbnails/{$value}"));
         }
     }
 
@@ -73,7 +78,7 @@ class Blog extends Model
         if (is_null($value)) {
             return "https://dummyimage.com/1920x1285";
         } else {
-            return Storage::url("blogs/images/{$value}");
+            return asset(Storage::url("blogs/images/{$value}"));
         }
     }
 }

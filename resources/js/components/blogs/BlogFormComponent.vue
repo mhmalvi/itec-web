@@ -101,7 +101,7 @@
           >
             <i class="fas fa-cloud mr-1" v-if="!form.isDraft"></i>
             <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
-            {{ action_label }} and Draft
+            {{ action_label }} as Draft
           </button>
           <button
             class="btn btn-primary btn-sm btn-tone"
@@ -127,11 +127,17 @@
                 class="form-control"
                 v-model="form.formData.category_id"
               >
-                <option value="0" selected>Uncategorized</option>
+                <option
+                  value=""
+                  :selected="form.formData.category_id == '' ? true : false"
+                >
+                  Uncategorized
+                </option>
                 <option
                   :value="category.id"
                   v-for="(category, index) in categories"
                   :key="index"
+                  :selected="form.formData.category_id == '' ? false : true"
                 >
                   {{ category.title }}
                 </option>
@@ -274,7 +280,7 @@ export default {
             return new Promise((resolve, reject) => {
               let fd = new FormData();
               fd.append("file", file);
-              axios.post("admin/media-upload", fd).then((res) => {
+              axios.post("admin/blogs/media-upload", fd).then((res) => {
                 setTimeout(() => {
                   resolve(`${res.data.url}`);
                 }, 3500);
@@ -380,7 +386,7 @@ export default {
       form.formData.title = data.title;
       form.formData.description = data.description;
       form.formData.slug = data.slug;
-      form.formData.category_id = data.category_id ?? 0;
+      form.formData.category_id = data.category_id ?? "";
       form.formData.featured_image = data.image;
       form.formData.featured_image_title = data.image_alt;
       form.formData.featured_image_alt = data.featured_image_alt;

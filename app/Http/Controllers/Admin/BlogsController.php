@@ -94,18 +94,21 @@ class BlogsController extends Controller
     /**
      * Share image in blog body
      */
-    public function shareimg(Request $request)
+    public function bodyImages(Request $request)
     {
-        if ($request->hasFile('file')) {
-            $fileName = pathinfo($request->file('file')->getClientOriginalName(), PATHINFO_FILENAME);
-            // $fileExt = $request->file('file')->getClientOriginalExtension();
+        try {
+            $file = $request->file('file');
+            $name = $file->getClientOriginalName();
 
-            $request->file('file')->move(public_path('blogImages'), $fileName);
+            Storage::putFileAs('public/blogs/', $file, $name);
 
-            $url = asset('blogImages/' . $fileName);
+            $url = asset(Storage::url("public/blogs/{$name}"));
 
-
-            return response()->json(['location' => $url])->header('content-type', 'application/json');
+            return response()->json(['url' => $url], 201);
+        } catch (\Throwable $th) {
+            return response()->json([
+                'message' => $th->getMessage(),
+            ], 500);
         }
     }
 
@@ -114,9 +117,11 @@ class BlogsController extends Controller
      * @param Slug
      *
      */
-    public function edit($slug)
+    public function edit(Blog $blog)
     {
         try {
+            $slug = $blog->blog_slug;
+
             return view('admin.blogs.update', compact('slug'));
         } catch (\Throwable $th) {
             $notification = [
@@ -159,12 +164,14 @@ class BlogsController extends Controller
      * @param Slug
      *
      */
-    public function destroy($slug)
+    public function destroy(Blog $blog)
     {
         try {
-            $blog = Blog::where('blog_slug', $slug)->first();
-
             $blog->delete();
+
+            Storage::delete('public/blogs/images/' . $blog->image);
+
+            Storage::delete('public/blogs/thumbnails/' . $blog->thumbnail);
 
             return response()->json([
                 'message' => 'Scuccessfully removed!',

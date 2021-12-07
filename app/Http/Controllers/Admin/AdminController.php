@@ -16,17 +16,4 @@ class AdminController extends Controller
     {
         return view('admin.dashboard');
     }
-
-
-    public function test(Request $request)
-    {
-        $file = $request->file('file');
-        $name = $file->getClientOriginalName();
-
-        Storage::putFileAs('public/blogs/', $file, $name);
-
-        $url = asset(Storage::url("public/blogs/{$name}"));
-
-        return response()->json(['url' => $url], 201);
-    }
 }

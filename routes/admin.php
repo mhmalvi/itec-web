@@ -7,15 +7,16 @@ Route::get('/dashboard', 'AdminController@index')->name('dashboard');
 Route::prefix('blogs')->name('blog.')->group(function () {
     Route::get('/', 'BlogsController@index');
     Route::get('list', 'BlogsController@getPaginatedList');
-    Route::get('{blog:blog_slug}/raw', 'BlogsController@rawItem');
+    Route::get('{blog}/raw', 'BlogsController@rawItem');
     Route::get('categories', 'BlogCategoriesController@index')->name('blog.category');
     Route::get('create', 'BlogsController@create')->name('create');
     Route::post('create', 'BlogsController@store')->name('store');
     Route::post('add-category', 'BlogCategoriesController@create')->name('blog.category.add');
     Route::post('add-blog', 'BlogsController@store')->name('blog.add');
-    Route::get('edit/{slug}', 'BlogsController@edit')->name('blog.edit');
-    Route::put('update/{blog:blog_slug}', 'BlogsController@update')->name('blog.update');
-    Route::get('remove/{slug}', 'BlogsController@destroy')->name('blog.remove');
+    Route::get('edit/{blog}', 'BlogsController@edit')->name('blog.edit');
+    Route::put('update/{blog}', 'BlogsController@update')->name('blog.update');
+    Route::get('remove/{blog}', 'BlogsController@destroy')->name('blog.remove');
+    Route::post("media-upload", 'BlogsController@bodyImages');
 });
 
 Route::prefix('categories')->name('category.')->group(function () {
@@ -42,5 +43,3 @@ Route::prefix('settings')->group(function () {
     Route::post('profile', 'UsersController@updateProfile');
     Route::post('change-password', 'UsersController@changePassword');
 });
-
-Route::post("media-upload", 'AdminController@test');
