@@ -81,13 +81,11 @@ class BlogsController extends Controller
                 'message' => $message,
             ], 200);
         } catch (\Throwable $th) {
-            $notification = [
-                // 'message'   =>  'oops! Something went wrong',
+            $response = [
                 'message' => $th->getMessage(),
-                'alert-type'    =>  'warning'
             ];
 
-            return response()->json($notification, 500);
+            return response()->json($response, 500);
         }
     }
 
@@ -168,19 +166,13 @@ class BlogsController extends Controller
 
             $blog->delete();
 
-            $notification = [
-                'message'   =>  'Scuccessfully removed!',
-                'alert-type'    =>  'success'
-            ];
-
-            return back()->with($notification);
+            return response()->json([
+                'message' => 'Scuccessfully removed!',
+            ], 202);
         } catch (\Throwable $th) {
-            $notification = [
-                'message'   =>  'oops! Something went wrong',
-                'alert-type'    =>  'warning'
-            ];
-
-            return back()->with($notification);
+            return response()->json([
+                'message' => $th->getMessage(),
+            ]);
         }
     }
 }

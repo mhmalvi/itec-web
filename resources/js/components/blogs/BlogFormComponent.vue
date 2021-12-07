@@ -7,6 +7,7 @@
           v-if="success_message"
           v-html="success_message"
         ></div>
+        <!-- there is some problems, need to fix later -->
         <div
           class="alert alert-danger"
           v-if="validation.message && validation.errors.length == 0"
@@ -93,24 +94,24 @@
 
         <div class="form-group d-flex justify-content-end">
           <button
-            class="btn btn-default mr-2"
+            class="btn btn-default btn-sm btn-tone mr-2"
             type="button"
             @click="draftAndSave()"
             :disabled="form.isSaving || form.isDraft"
           >
             <i class="fas fa-cloud mr-1" v-if="!form.isDraft"></i>
             <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
-            Draft
+            {{ action_label }} and Draft
           </button>
           <button
-            class="btn btn-primary"
+            class="btn btn-primary btn-sm btn-tone"
             type="button"
             @click="save()"
             :disabled="form.isSaving || form.isDraft"
           >
             <i class="fas fa-plus mr-1" v-if="!form.isSaving"></i>
             <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
-            Save
+            {{ action_label }} and Publish
           </button>
           <button hidden>submit</button>
         </div>
@@ -126,7 +127,7 @@
                 class="form-control"
                 v-model="form.formData.category_id"
               >
-                <option selected>Choose...</option>
+                <option value="0" selected>Uncategorized</option>
                 <option
                   :value="category.id"
                   v-for="(category, index) in categories"
@@ -303,6 +304,16 @@ export default {
       isSaving: false,
       isDraft: false,
     });
+
+    const action_label = ref("Save");
+
+    const useAsSave = () => {
+      action_label.value = "Save";
+    };
+    const useAsUpdate = () => {
+      action_label.value = "Update";
+    };
+
     const validation = reactive({
       errors: [],
       message: "",
@@ -338,6 +349,7 @@ export default {
     const setErrorResponse = (error) => {
       validation.errors = error.response.data.errors;
       validation.message = error.response.data.message;
+      console.log(validation);
       forceScrollTop();
     };
     const responseCompleted = () => {
@@ -368,7 +380,7 @@ export default {
       form.formData.title = data.title;
       form.formData.description = data.description;
       form.formData.slug = data.slug;
-      form.formData.category_id = data.category.id;
+      form.formData.category_id = data.category_id ?? 0;
       form.formData.featured_image = data.image;
       form.formData.featured_image_title = data.image_alt;
       form.formData.featured_image_alt = data.featured_image_alt;
@@ -434,6 +446,9 @@ export default {
       options,
       form,
       categories,
+      action_label,
+      useAsSave,
+      useAsUpdate,
       handleFormSubmit,
       save,
       draftAndSave,

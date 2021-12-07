@@ -18,6 +18,7 @@ export default {
       Blog.get(slug)
         .then((data) => {
           form_component.value.setFormData(data);
+          form_component.value.action_label = "Update";
         })
         .catch((err) => {});
     });
