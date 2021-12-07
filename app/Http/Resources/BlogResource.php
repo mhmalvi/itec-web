@@ -24,11 +24,12 @@ class BlogResource extends JsonResource
             'meta_description' => $this->meta_des,
             'meta_tags' => $this->meta_tags,
             'meta_keys' => $this->meta_keys,
-            'thumbnail' => ($this->thumbnail) ? asset('storage/blogs/thumbnails/' . $this->thumbnail) : '',
-            'image' => ($this->image) ? asset('storage/blogs/images/' . $this->image) : '',
+            'thumbnail' => $this->thumbnail,
+            'image' => $this->image,
             'thumbnail_alt' => $this->thumbnail_alt,
             'image_alt' => $this->image_alt,
             'isPublished' => $this->isPublished,
+            'action_url' => route('blog.detail', $this->blog_slug)
         ];
     }
 }

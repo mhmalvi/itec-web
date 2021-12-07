@@ -48,13 +48,17 @@
                   />
                 </td>
                 <td>
-                  {{ blog.title }}
+                  <a :href="blog.action_url" target="_blank" class="btn-link">
+                    {{ blog.title }}
+                  </a>
                   <div class="py-3">
-                    <a :href="getEditLink(blog)" class=""> Edit </a>
+                    <a :href="getEditLink(blog)" class="text-secondary">
+                      Edit
+                    </a>
                     <a
                       href="javascript:void(0)"
                       @click.prevent="promptToDelete(blog)"
-                      class="mx-2"
+                      class="mx-2 text-secondary"
                     >
                       Delete
                     </a>
