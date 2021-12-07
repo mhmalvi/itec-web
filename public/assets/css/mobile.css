@@ -1,6 +1,6 @@
 /* RESPONSIVE MOBILE FIXES */
 @media only screen and (max-width: 767px),
-only screen and (max-device-width: 767px) {
+    only screen and (max-device-width: 767px) {
     .section-title {
         font-size: 9vw;
         margin-bottom: 40px;
@@ -121,11 +121,11 @@ only screen and (max-device-width: 767px) {
         width: 100%;
     }
 
-    .works ul li:nth-child(2n+2) {
+    .works ul li:nth-child(2n + 2) {
         margin-top: 0;
     }
 
-    .works ul li:nth-child(3n+3) {
+    .works ul li:nth-child(3n + 3) {
         margin-top: 0;
     }
 
@@ -166,7 +166,7 @@ only screen and (max-device-width: 767px) {
     }
 
     .blog .post.single .post-content .post-title {
-        font-size: 8vw;
+        font-size: 3rem;
     }
 
     .footer h2 {
@@ -199,10 +199,10 @@ only screen and (max-device-width: 767px) {
         font-size: 16px;
         padding: 15px;
     }
-    .intro .exp{
+    .intro .exp {
         padding: 60px;
     }
-    .rpl-card{
+    .rpl-card {
         width: 332px;
     }
     .rpl-card .find {
