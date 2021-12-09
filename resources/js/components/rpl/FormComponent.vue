@@ -282,22 +282,28 @@
               >
               <div class="row">
                 <div class="col-2">
-                  <input type="radio" name="q7" id="q7y" value="yes" hidden />
-                  <label
-                    for="q7y"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q7"
+                    v-model="formData.q7"
+                    id="q7y"
+                    value="yes"
+                    hidden
+                  />
+                  <label for="q7y" class="exp-lbl checklist">
                     <div>Yes</div>
                   </label>
                 </div>
                 <div class="col-2">
-                  <input type="radio" name="q7" id="q7n" value="no" hidden />
-                  <label
-                    for="q7n"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q7"
+                    id="q7n"
+                    v-model="formData.q7"
+                    value="no"
+                    hidden
+                  />
+                  <label for="q7n" class="exp-lbl checklist">
                     <div>No</div>
                   </label>
                 </div>
@@ -493,5 +499,9 @@ button[type="submit"] {
   padding: 0 30px;
   font-weight: 600;
   font-size: 14px;
+}
+.checklist {
+  width: 50px !important;
+  height: 50px !important;
 }
 </style>

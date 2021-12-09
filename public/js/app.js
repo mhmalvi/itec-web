@@ -22818,11 +22818,90 @@ var _hoisted_36 = /*#__PURE__*/_withScopeId(function () {
 
 var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"card mb-3\" data-v-35381946><div class=\"card-body\" data-v-35381946><h5 data-v-35381946>Your Address</h5><div class=\"radio\" data-v-35381946><label for=\"q5\" data-v-35381946>What state do you live in?</label><div class=\"row\" data-v-35381946><div class=\"col-sm-3 col-6\" data-v-35381946><input type=\"radio\" name=\"q5\" id=\"NSW\" value=\"NSW\" hidden data-v-35381946><label for=\"NSW\" class=\"exp-lbl\" data-v-35381946><div data-v-35381946>New South Wales</div></label></div><div class=\"col-sm-3 col-6\" data-v-35381946><input type=\"radio\" name=\"q5\" id=\"VIC\" value=\"VIC\" data-v-35381946><label for=\"VIC\" class=\"exp-lbl\" data-v-35381946><div data-v-35381946>Victoria</div></label></div><div class=\"col-sm-3 col-6\" data-v-35381946><input type=\"radio\" name=\"q5\" id=\"QLD\" value=\"QLD\" data-v-35381946><label for=\"QLD\" class=\"exp-lbl\" data-v-35381946><div data-v-35381946>Queensland</div></label></div><div class=\"col-sm-3 col-6\" data-v-35381946><input type=\"radio\" name=\"q5\" id=\"SA\" value=\"SA\" data-v-35381946><label for=\"SA\" class=\"exp-lbl\" data-v-35381946><div data-v-35381946>South Australia</div></label></div></div><div class=\"row pt-sm-5\" data-v-35381946><div class=\"col-sm-3 col-6\" data-v-35381946><input type=\"radio\" name=\"q5\" id=\"WA\" value=\"WA\" data-v-35381946><label for=\"WA\" class=\"exp-lbl\" data-v-35381946><div data-v-35381946>Western Australia</div></label></div><div class=\"col-sm-3 col-6\" data-v-35381946><input type=\"radio\" name=\"q5\" id=\"ACT\" value=\"ACT\" data-v-35381946><label for=\"ACT\" class=\"exp-lbl\" data-v-35381946><div data-v-35381946>Australian Capital Territory</div></label></div><div class=\"col-sm-3 col-6\" data-v-35381946><input type=\"radio\" name=\"q5\" id=\"NT\" value=\"NT\" data-v-35381946><label for=\"NT\" class=\"exp-lbl\" data-v-35381946><div data-v-35381946>Northern Territory</div></label></div><div class=\"col-sm-3 col-6\" data-v-35381946><input type=\"radio\" name=\"q5\" id=\"TAS\" value=\"TAS\" data-v-35381946><label for=\"TAS\" class=\"exp-lbl\" data-v-35381946><div data-v-35381946>Tasmania</div></label></div></div></div></div></div><div class=\"card mb-3\" data-v-35381946><div class=\"card-body\" data-v-35381946><h5 data-v-35381946>Personal Informations</h5><div class=\"form-group\" data-v-35381946><input type=\"text\" id=\"name\" class=\"form-control\" placeholder=\"Please enter your full name\" data-v-35381946></div><div class=\"form-group\" data-v-35381946><input type=\"email\" id=\"email\" class=\"form-control\" placeholder=\"example@email.com\" data-v-35381946></div><div class=\"form-group\" data-v-35381946><input type=\"text\" id=\"phone\" class=\"form-control\" placeholder=\"Enter your contact number\" data-v-35381946></div></div></div>", 2);
 
-var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-md-6\" data-v-35381946><div class=\"card mb-3\" id=\"info\" data-v-35381946><div class=\"card-body\" data-v-35381946><h5 data-v-35381946>Type of Referees</h5><div class=\"py-2\" data-v-35381946><p data-v-35381946> For the RPL process an applicant must provide at least three referee details. Out of the three: one of your referee must be a Supervisor at work, who is referred to as ‘Testimonial Referee’ and the other two must be ‘Nominated Referees’, whom your Assessor will contact for reference check. One of your Nominated Referee should be able to provide you with ‘Third Party Report&#39;. The detail explanation of the type of referees are given below: </p><p data-v-35381946><strong data-v-35381946>Testimonial Referee:</strong> &#39;Testimonial Referees&#39; are mostly your Employer, Supervisor, Managers who can provide you with a testimonial letter declaring that they know you for more than 1 year and who can declare that you have sufficient job experience to meet the qualification requirements. </p><p data-v-35381946><strong data-v-35381946>Nominated Referee:</strong> You should have two Nominated referee who could either be your colleague, supervisor, manager and other relevant person, who has worked with you and can assess your skill and knowledge in relevance to each unit of competency. </p></div></div></div><div class=\"card mb-3\" data-v-35381946><div class=\"card-body\" data-v-35381946><h5 data-v-35381946>RPL Checklist</h5><div class=\"form-group\" data-v-35381946><label for=\"q7\" data-v-35381946>Can you provide referees who can support your RPL Assessment?**</label><div class=\"row\" data-v-35381946><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q7\" id=\"q7y\" value=\"yes\" hidden data-v-35381946><label for=\"q7y\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>Yes</div></label></div><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q7\" id=\"q7n\" value=\"no\" hidden data-v-35381946><label for=\"q7n\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>No</div></label></div></div></div><div class=\"form-group\" data-v-35381946><label for=\"q8\" data-v-35381946>Do you have any past academic qualification you have obtained in Australia ?</label><div class=\"row\" data-v-35381946><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q8\" id=\"q8y\" value=\"yes\" hidden data-v-35381946><label for=\"q8y\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>Yes</div></label></div><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q8\" id=\"q8n\" value=\"no\" hidden data-v-35381946><label for=\"q8n\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>No</div></label></div></div></div><div class=\"form-group\" data-v-35381946><label for=\"q9\" data-v-35381946>Do you accept that there will be many different type of evidences you have to supply for RPL Assessment, will you be able to supply the documents when requested?</label><div class=\"row\" data-v-35381946><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q9\" id=\"q9y\" value=\"yes\" hidden data-v-35381946><label for=\"q9y\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>Yes</div></label></div><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q9\" id=\"q9n\" value=\"no\" hidden data-v-35381946><label for=\"q9n\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>No</div></label></div></div></div><div class=\"form-group\" data-v-35381946><label for=\"q10\" data-v-35381946>During the RPL process, we may request you for some video or photo evidences, are you comfortable in supplying such evidences?</label><div class=\"row\" data-v-35381946><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q10\" id=\"q10y\" value=\"yes\" hidden data-v-35381946><label for=\"q10y\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>Yes</div></label></div><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q10\" id=\"q10n\" value=\"no\" hidden data-v-35381946><label for=\"q10n\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>No</div></label></div></div></div><div class=\"form-group\" data-v-35381946><label for=\"q11\" data-v-35381946>During the RPL process, we may request you for some video or photo evidences, are you comfortable in supplying such evidences?</label><div class=\"row\" data-v-35381946><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q11\" id=\"q11y\" value=\"yes\" hidden data-v-35381946><label for=\"q11y\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>Yes</div></label></div><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q11\" id=\"q11n\" value=\"no\" hidden data-v-35381946><label for=\"q11n\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>No</div></label></div></div></div><div class=\"form-group\" data-v-35381946><textarea name=\"\" rows=\"5\" placeholder=\"Do you have any other query?\" class=\"form-control\" data-v-35381946></textarea></div></div></div><button type=\"submit\" data-v-35381946>Submit</button></div>", 1);
+var _hoisted_39 = {
+  "class": "col-md-6"
+};
+
+var _hoisted_40 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "card mb-3",
+    id: "info"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "card-body"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, "Type of Referees"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "py-2"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " For the RPL process an applicant must provide at least three referee details. Out of the three: one of your referee must be a Supervisor at work, who is referred to as ‘Testimonial Referee’ and the other two must be ‘Nominated Referees’, whom your Assessor will contact for reference check. One of your Nominated Referee should be able to provide you with ‘Third Party Report'. The detail explanation of the type of referees are given below: "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Testimonial Referee:"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" 'Testimonial Referees' are mostly your Employer, Supervisor, Managers who can provide you with a testimonial letter declaring that they know you for more than 1 year and who can declare that you have sufficient job experience to meet the qualification requirements. ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("strong", null, "Nominated Referee:"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" You should have two Nominated referee who could either be your colleague, supervisor, manager and other relevant person, who has worked with you and can assess your skill and knowledge in relevance to each unit of competency. ")])])])], -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_41 = {
+  "class": "card mb-3"
+};
+var _hoisted_42 = {
+  "class": "card-body"
+};
+
+var _hoisted_43 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, "RPL Checklist", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_44 = {
+  "class": "form-group"
+};
+
+var _hoisted_45 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "q7"
+  }, "Can you provide referees who can support your RPL Assessment?**", -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_46 = {
+  "class": "row"
+};
+var _hoisted_47 = {
+  "class": "col-2"
+};
+
+var _hoisted_48 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "q7y",
+    "class": "exp-lbl checklist"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "Yes")], -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_49 = {
+  "class": "col-2"
+};
+
+var _hoisted_50 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("label", {
+    "for": "q7n",
+    "class": "exp-lbl checklist"
+  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, "No")], -1
+  /* HOISTED */
+  );
+});
+
+var _hoisted_51 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"form-group\" data-v-35381946><label for=\"q8\" data-v-35381946>Do you have any past academic qualification you have obtained in Australia ?</label><div class=\"row\" data-v-35381946><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q8\" id=\"q8y\" value=\"yes\" hidden data-v-35381946><label for=\"q8y\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>Yes</div></label></div><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q8\" id=\"q8n\" value=\"no\" hidden data-v-35381946><label for=\"q8n\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>No</div></label></div></div></div><div class=\"form-group\" data-v-35381946><label for=\"q9\" data-v-35381946>Do you accept that there will be many different type of evidences you have to supply for RPL Assessment, will you be able to supply the documents when requested?</label><div class=\"row\" data-v-35381946><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q9\" id=\"q9y\" value=\"yes\" hidden data-v-35381946><label for=\"q9y\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>Yes</div></label></div><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q9\" id=\"q9n\" value=\"no\" hidden data-v-35381946><label for=\"q9n\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>No</div></label></div></div></div><div class=\"form-group\" data-v-35381946><label for=\"q10\" data-v-35381946>During the RPL process, we may request you for some video or photo evidences, are you comfortable in supplying such evidences?</label><div class=\"row\" data-v-35381946><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q10\" id=\"q10y\" value=\"yes\" hidden data-v-35381946><label for=\"q10y\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>Yes</div></label></div><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q10\" id=\"q10n\" value=\"no\" hidden data-v-35381946><label for=\"q10n\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>No</div></label></div></div></div><div class=\"form-group\" data-v-35381946><label for=\"q11\" data-v-35381946>During the RPL process, we may request you for some video or photo evidences, are you comfortable in supplying such evidences?</label><div class=\"row\" data-v-35381946><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q11\" id=\"q11y\" value=\"yes\" hidden data-v-35381946><label for=\"q11y\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>Yes</div></label></div><div class=\"col-2\" data-v-35381946><input type=\"radio\" name=\"q11\" id=\"q11n\" value=\"no\" hidden data-v-35381946><label for=\"q11n\" class=\"exp-lbl\" style=\"width:50px;height:50px;\" data-v-35381946><div data-v-35381946>No</div></label></div></div></div><div class=\"form-group\" data-v-35381946><textarea name=\"\" rows=\"5\" placeholder=\"Do you have any other query?\" class=\"form-control\" data-v-35381946></textarea></div>", 5);
+
+var _hoisted_56 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "submit"
+  }, "Submit", -1
+  /* HOISTED */
+  );
+});
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("form", {
-    onSubmit: _cache[9] || (_cache[9] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
+    onSubmit: _cache[11] || (_cache[11] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
       return $setup.handleFormSubmit && $setup.handleFormSubmit.apply($setup, arguments);
     }, ["prevent"]))
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("select", {
@@ -22918,7 +22997,29 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     hidden: ""
   }, null, 512
   /* NEED_PATCH */
-  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.formData.q4]]), _hoisted_36])])])])]), _hoisted_37]), _hoisted_39])], 32
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.formData.q4]]), _hoisted_36])])])])]), _hoisted_37]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [_hoisted_40, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [_hoisted_43, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_44, [_hoisted_45, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_46, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "radio",
+    name: "q7",
+    "onUpdate:modelValue": _cache[9] || (_cache[9] = function ($event) {
+      return $setup.formData.q7 = $event;
+    }),
+    id: "q7y",
+    value: "yes",
+    hidden: ""
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.formData.q7]]), _hoisted_48]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+    type: "radio",
+    name: "q7",
+    id: "q7n",
+    "onUpdate:modelValue": _cache[10] || (_cache[10] = function ($event) {
+      return $setup.formData.q7 = $event;
+    }),
+    value: "no",
+    hidden: ""
+  }, null, 512
+  /* NEED_PATCH */
+  ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelRadio, $setup.formData.q7]]), _hoisted_50])])]), _hoisted_51])]), _hoisted_56])])], 32
   /* HYDRATE_EVENTS */
   );
 }
@@ -25389,7 +25490,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.form-control[data-v-35381946] {\r\n  font-size: 0.9rem !important;\n}\ninput[type=\"text\"][data-v-35381946],\r\ninput[type=\"email\"][data-v-35381946] {\r\n  height: 38px !important;\n}\n#info[data-v-35381946] {\r\n  font-size: 0.8rem !important;\n}\nbutton[type=\"submit\"][data-v-35381946] {\r\n  height: 45px;\r\n  border: 1px solid #cd4236 !important;\r\n  background: #cd4236 !important;\r\n  color: #fff;\r\n  padding: 0 30px;\r\n  font-weight: 600;\r\n  font-size: 14px;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.form-control[data-v-35381946] {\r\n  font-size: 0.9rem !important;\n}\ninput[type=\"text\"][data-v-35381946],\r\ninput[type=\"email\"][data-v-35381946] {\r\n  height: 38px !important;\n}\n#info[data-v-35381946] {\r\n  font-size: 0.8rem !important;\n}\nbutton[type=\"submit\"][data-v-35381946] {\r\n  height: 45px;\r\n  border: 1px solid #cd4236 !important;\r\n  background: #cd4236 !important;\r\n  color: #fff;\r\n  padding: 0 30px;\r\n  font-weight: 600;\r\n  font-size: 14px;\n}\n.checklist[data-v-35381946] {\r\n  width: 50px !important;\r\n  height: 50px !important;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
