@@ -39,4 +39,20 @@ class RplFormRequest extends FormRequest
             'q10' => 'required',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'q1.required' => "This field is required",
+            'q2.required' => "This field is required",
+            'q3.required' => "This field is required",
+            'q4.required' => "This field is required",
+            'q5.required' => "This field is required",
+            'q6.required' => "This field is required",
+            'q7.required' => "This field is required",
+            'q8.required' => "This field is required",
+            'q9.required' => "This field is required",
+            'q10.required' => "This field is required",
+        ];
+    }
 }

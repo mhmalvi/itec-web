@@ -74,7 +74,22 @@ class MailsController extends Controller
             'q10' => $request->q10,
         ];
 
-        // RplEligibilityRequest::create($data);
+        RplEligibilityRequest::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'contact' => $data['contact'],
+            'industry' => $data['q1'],
+            'qualification' => $data['q2'],
+            'work_experience' => $data['q3'],
+            'work_location' => $data['q4'],
+            'living_state' => $data['q5'],
+            'qus1' => $data['q6'],
+            'qus2' => $data['q7'],
+            'qus3' => $data['q8'],
+            'qus4' => $data['q9'],
+            'qus5' => $data['q10'],
+            'remark' => $data['remark'],
+        ]);
 
         if ($request->hasFile('files') && count($request->file('files')) > 0) {
             $files = $request->file('files');
@@ -97,7 +112,13 @@ class MailsController extends Controller
             }
         }
 
-        Mail::to('dev.quadque@gmail.com')->cc('tousif@quadque.tech')->send(new RplMail($data, $filePath));
+        try {
+            Mail::to('dev.quadque@gmail.com')->cc('tousif@quadque.tech')->send(new RplMail($data, $filePath));
+        } catch (\Throwable $e) {
+            return response()->json([
+                'message' => "Something went wrong!",
+            ], 500);
+        }
 
         if ($request->hasFile('files') && count($request->file('files')) > 0) {
             Storage::delete('public/rpl/' . $fileName);

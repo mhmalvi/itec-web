@@ -4,6 +4,15 @@
       <div class="col-md-6">
         <div class="card mb-3">
           <div class="card-body">
+            <div
+              class="alert alert-warning"
+              v-if="
+                validation.message.length > 0 &&
+                (!validation.errors || validation.errors.length == 0)
+              "
+            >
+              {{ validation.message }}
+            </div>
             <h5>Qualifications</h5>
 
             <div class="form-group">
@@ -28,6 +37,12 @@
                   {{ industry.title }}
                 </option>
               </select>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q1"
+              >
+                {{ validation.errors.q1[0] }}
+              </small>
             </div>
             <div class="form-group">
               <label for="q2">What qualification are you looking for?</label>
@@ -52,6 +67,12 @@
                   {{ qualification.Course }}
                 </option>
               </select>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q2"
+              >
+                {{ validation.errors.q2[0] }}
+              </small>
             </div>
           </div>
         </div>
@@ -130,6 +151,12 @@
                   </label>
                 </div>
               </div>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q3"
+              >
+                {{ validation.errors.q3[0] }}
+              </small>
             </div>
             <div class="form-group">
               <label for="q4">Where is your work experience?</label>
@@ -174,6 +201,12 @@
                   </label>
                 </div>
               </div>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q4"
+              >
+                {{ validation.errors.q4[0] }}
+              </small>
             </div>
           </div>
         </div>
@@ -285,6 +318,12 @@
                   </label>
                 </div>
               </div>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q5"
+              >
+                {{ validation.errors.q5[0] }}
+              </small>
             </div>
           </div>
         </div>
@@ -300,6 +339,12 @@
                 placeholder="Please enter your full name"
                 v-model="formData.name"
               />
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.name"
+              >
+                {{ validation.errors.name[0] }}
+              </small>
             </div>
             <div class="form-group">
               <input
@@ -309,6 +354,12 @@
                 v-model="formData.email"
                 placeholder="example@email.com"
               />
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.email"
+              >
+                {{ validation.errors.email[0] }}
+              </small>
             </div>
             <div class="form-group">
               <input
@@ -318,6 +369,12 @@
                 v-model="formData.phone"
                 placeholder="Enter your contact number"
               />
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.phone"
+              >
+                {{ validation.errors.phone[0] }}
+              </small>
             </div>
           </div>
         </div>
@@ -391,6 +448,12 @@
                   </label>
                 </div>
               </div>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q6"
+              >
+                {{ validation.errors.q6[0] }}
+              </small>
             </div>
 
             <div class="form-group">
@@ -426,6 +489,12 @@
                   </label>
                 </div>
               </div>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q7"
+              >
+                {{ validation.errors.q7[0] }}
+              </small>
             </div>
 
             <div class="form-group">
@@ -462,6 +531,12 @@
                   </label>
                 </div>
               </div>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q8"
+              >
+                {{ validation.errors.q8[0] }}
+              </small>
             </div>
 
             <div class="form-group">
@@ -498,6 +573,12 @@
                   </label>
                 </div>
               </div>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q9"
+              >
+                {{ validation.errors.q9[0] }}
+              </small>
             </div>
 
             <div class="form-group">
@@ -534,6 +615,12 @@
                   </label>
                 </div>
               </div>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.q10"
+              >
+                {{ validation.errors.q10[0] }}
+              </small>
             </div>
             <div class="form-group">
               <textarea
@@ -543,11 +630,20 @@
                 class="form-control"
                 v-model="formData.remarks"
               ></textarea>
+              <small
+                class="text-danger"
+                v-if="validation.errors && validation.errors.remarks"
+              >
+                {{ validation.errors.remarks[0] }}
+              </small>
             </div>
           </div>
         </div>
 
-        <button type="submit">Submit</button>
+        <button type="submit" :disabled="isSubmitting">
+          <i class="fas fa-circle-notch fa-spin mr-2" v-if="isSubmitting"></i>
+          Submit
+        </button>
       </div>
     </div>
   </form>
@@ -595,6 +691,8 @@ export default {
 
     const handleFormSubmit = () => {
       isSubmitting.value = true;
+      validation.errors = [];
+      validation.message = "";
 
       axios
         .post("/api/rpl", formData)
@@ -602,13 +700,20 @@ export default {
           formReset();
         })
         .catch((err) => {
-          console.log(err.response.data);
+          validation.errors = err.response.data.errors;
+          validation.message = err.response.data.message;
         })
         .finally(() => {
-          isSubmitting.value = true;
+          isSubmitting.value = false;
+          forceScrollToTop();
         });
     };
-
+    const forceScrollToTop = () => {
+      scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
     const formReset = () => {
       Object.keys(formData).forEach((key) => {
         formData[key] = "";
@@ -642,7 +747,7 @@ export default {
           data.qualifications = res.data.data;
         })
         .catch((err) => {
-          console.log(err.response);
+          console.error(err);
         })
         .finally(() => {
           data.qualifications_loading = false;
@@ -656,6 +761,8 @@ export default {
     return {
       formData,
       data,
+      isSubmitting,
+      validation,
       handleFormSubmit,
       handleIndustrySelect,
     };
