@@ -13,6 +13,7 @@
     <link rel="canonical" href="{{ URL::current() }}" />
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
     <meta name="title" content="@yield('title') - ITEC" />
+    <meta name="api-base-url" content="{{ URL::to('/') }}" />
     @stack('seo')
 
     {{-- Open Graph --}}
@@ -51,7 +52,7 @@
     @include('layouts.styles')
 </head>
 
-<body id="body" data-audio="">
+<body>
     <div class="preloader">
         <div class="layer"></div>
         <!-- end layer -->
@@ -104,13 +105,6 @@
     <main>
         @if (Route::currentRouteName() != 'check-rpl-eligibility')
             @include('layouts.sidebar')
-
-            <!-- end left-side -->
-            <div class="all-cases-link" id="open-rpl-modal">
-                <span>CHECK YOUR RPL ELIGIBILITY</span>
-                <b><i class="fas fa-tasks"></i></b>
-            </div>
-            <!-- end all-cases-link -->
         @endif
 
         @yield('content')
@@ -118,9 +112,6 @@
     <!-- end main -->
 
     @if (Route::currentRouteName() != 'check-rpl-eligibility')
-        {{-- //RPL Modal --}}
-        @include('layouts.rpl-modal')
-
         {{-- //popup add --}}
         @include('layouts.popup')
 
@@ -128,6 +119,7 @@
         <!-- end footer -->
     @endif
 
+    <script src="{{asset('js/app.js')}}" defer></script>
     @include('layouts.scripts')
 </body>
 

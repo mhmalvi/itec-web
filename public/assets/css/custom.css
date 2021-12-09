@@ -615,11 +615,15 @@ input[type="color"]:focus,
 }
 
 .exp-lbl {
-    width: 100%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 20px;
-    color: #fff;
-    border: 2px solid #fff;
+    font-size: 14px;
+    padding: 10px;
+    border: 1.5px solid #cd4236 !important;
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
@@ -637,8 +641,9 @@ input[type="color"]:focus,
 }
 
 input[type="radio"]:checked ~ label {
-    background-color: #cd4236;
-    border: 2px solid #cd4236;
+    color: #fff !important;
+    background-color: #cd4236 !important;
+    border: 1.5px solid #cd4236 !important;
 }
 
 .next,
