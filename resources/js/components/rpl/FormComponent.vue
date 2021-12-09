@@ -8,17 +8,48 @@
 
             <div class="form-group">
               <label for="q1">What industry is your experience in?</label>
-              <select class="form-control" id="q1" v-model="formData.q1">
+              <span v-show="data.industries_loading" class="float-right">
+                <i class="fas fa-circle-notch fa-spin"></i>
+              </span>
+              <select
+                class="form-control"
+                id="q1"
+                v-model="formData.q1"
+                @change="handleIndustrySelect()"
+              >
                 <option value="" selected>
                   Select the qualification's industry ...
+                </option>
+                <option
+                  v-for="(industry, index) in data.industries"
+                  :key="index"
+                  :value="industry.title"
+                >
+                  {{ industry.title }}
                 </option>
               </select>
             </div>
             <div class="form-group">
               <label for="q2">What qualification are you looking for?</label>
-              <select class="form-control" id="q2" v-model="formData.q2">
-                <option value="" selected>
+              <span v-show="data.qualifications_loading" class="float-right">
+                <i class="fas fa-circle-notch fa-spin"></i>
+              </span>
+              <select
+                class="form-control"
+                id="q2"
+                v-model="formData.q2"
+                :disabled="formData.q1 == '' || data.qualifications.length == 0"
+              >
+                <option value="" :selected="formData.q2 == ''">
                   Select the qualification you looking for ...
+                </option>
+
+                <option
+                  v-for="(qualification, index) in data.qualifications"
+                  :key="index"
+                  :value="qualification.Course"
+                >
+                  {{ qualification.Course }}
                 </option>
               </select>
             </div>
@@ -155,25 +186,50 @@
               <label for="q5">What state do you live in?</label>
               <div class="row">
                 <div class="col-sm-3 col-6">
-                  <input type="radio" name="q5" id="NSW" value="NSW" hidden />
+                  <input
+                    type="radio"
+                    name="q5"
+                    id="NSW"
+                    value="NSW"
+                    v-model="formData.q5"
+                    hidden
+                  />
                   <label for="NSW" class="exp-lbl">
                     <div>New South Wales</div>
                   </label>
                 </div>
                 <div class="col-sm-3 col-6">
-                  <input type="radio" name="q5" id="VIC" value="VIC" />
+                  <input
+                    type="radio"
+                    name="q5"
+                    id="VIC"
+                    v-model="formData.q5"
+                    value="VIC"
+                  />
                   <label for="VIC" class="exp-lbl">
                     <div>Victoria</div>
                   </label>
                 </div>
                 <div class="col-sm-3 col-6">
-                  <input type="radio" name="q5" id="QLD" value="QLD" />
+                  <input
+                    type="radio"
+                    name="q5"
+                    id="QLD"
+                    v-model="formData.q5"
+                    value="QLD"
+                  />
                   <label for="QLD" class="exp-lbl">
                     <div>Queensland</div>
                   </label>
                 </div>
                 <div class="col-sm-3 col-6">
-                  <input type="radio" name="q5" id="SA" value="SA" />
+                  <input
+                    type="radio"
+                    name="q5"
+                    id="SA"
+                    v-model="formData.q5"
+                    value="SA"
+                  />
                   <label for="SA" class="exp-lbl">
                     <div>South Australia</div>
                   </label>
@@ -181,25 +237,49 @@
               </div>
               <div class="row pt-sm-5">
                 <div class="col-sm-3 col-6">
-                  <input type="radio" name="q5" id="WA" value="WA" />
+                  <input
+                    type="radio"
+                    name="q5"
+                    id="WA"
+                    v-model="formData.q5"
+                    value="WA"
+                  />
                   <label for="WA" class="exp-lbl">
                     <div>Western Australia</div>
                   </label>
                 </div>
                 <div class="col-sm-3 col-6">
-                  <input type="radio" name="q5" id="ACT" value="ACT" />
+                  <input
+                    type="radio"
+                    name="q5"
+                    id="ACT"
+                    v-model="formData.q5"
+                    value="ACT"
+                  />
                   <label for="ACT" class="exp-lbl">
                     <div>Australian Capital Territory</div>
                   </label>
                 </div>
                 <div class="col-sm-3 col-6">
-                  <input type="radio" name="q5" id="NT" value="NT" />
+                  <input
+                    type="radio"
+                    name="q5"
+                    id="NT"
+                    v-model="formData.q5"
+                    value="NT"
+                  />
                   <label for="NT" class="exp-lbl">
                     <div>Northern Territory</div>
                   </label>
                 </div>
                 <div class="col-sm-3 col-6">
-                  <input type="radio" name="q5" id="TAS" value="TAS" />
+                  <input
+                    type="radio"
+                    name="q5"
+                    id="TAS"
+                    v-model="formData.q5"
+                    value="TAS"
+                  />
                   <label for="TAS" class="exp-lbl">
                     <div>Tasmania</div>
                   </label>
@@ -218,6 +298,7 @@
                 id="name"
                 class="form-control"
                 placeholder="Please enter your full name"
+                v-model="formData.name"
               />
             </div>
             <div class="form-group">
@@ -225,6 +306,7 @@
                 type="email"
                 id="email"
                 class="form-control"
+                v-model="formData.email"
                 placeholder="example@email.com"
               />
             </div>
@@ -233,6 +315,7 @@
                 type="text"
                 id="phone"
                 class="form-control"
+                v-model="formData.phone"
                 placeholder="Enter your contact number"
               />
             </div>
@@ -282,22 +365,28 @@
               >
               <div class="row">
                 <div class="col-2">
-                  <input type="radio" name="q7" id="q7y" value="yes" hidden />
-                  <label
-                    for="q7y"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q7"
+                    id="q7y"
+                    v-model="formData.q6"
+                    value="yes"
+                    hidden
+                  />
+                  <label for="q7y" class="exp-lbl">
                     <div>Yes</div>
                   </label>
                 </div>
                 <div class="col-2">
-                  <input type="radio" name="q7" id="q7n" value="no" hidden />
-                  <label
-                    for="q7n"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q7"
+                    id="q7n"
+                    value="no"
+                    v-model="formData.q6"
+                    hidden
+                  />
+                  <label for="q7n" class="exp-lbl">
                     <div>No</div>
                   </label>
                 </div>
@@ -311,22 +400,28 @@
               >
               <div class="row">
                 <div class="col-2">
-                  <input type="radio" name="q8" id="q8y" value="yes" hidden />
-                  <label
-                    for="q8y"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q8"
+                    id="q8y"
+                    value="yes"
+                    v-model="formData.q7"
+                    hidden
+                  />
+                  <label for="q8y" class="exp-lbl">
                     <div>Yes</div>
                   </label>
                 </div>
                 <div class="col-2">
-                  <input type="radio" name="q8" id="q8n" value="no" hidden />
-                  <label
-                    for="q8n"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q8"
+                    id="q8n"
+                    value="no"
+                    v-model="formData.q7"
+                    hidden
+                  />
+                  <label for="q8n" class="exp-lbl">
                     <div>No</div>
                   </label>
                 </div>
@@ -341,22 +436,28 @@
               >
               <div class="row">
                 <div class="col-2">
-                  <input type="radio" name="q9" id="q9y" value="yes" hidden />
-                  <label
-                    for="q9y"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q9"
+                    id="q9y"
+                    value="yes"
+                    v-model="formData.q8"
+                    hidden
+                  />
+                  <label for="q9y" class="exp-lbl">
                     <div>Yes</div>
                   </label>
                 </div>
                 <div class="col-2">
-                  <input type="radio" name="q9" id="q9n" value="no" hidden />
-                  <label
-                    for="q9n"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q9"
+                    id="q9n"
+                    value="no"
+                    v-model="formData.q8"
+                    hidden
+                  />
+                  <label for="q9n" class="exp-lbl">
                     <div>No</div>
                   </label>
                 </div>
@@ -371,22 +472,28 @@
               >
               <div class="row">
                 <div class="col-2">
-                  <input type="radio" name="q10" id="q10y" value="yes" hidden />
-                  <label
-                    for="q10y"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q10"
+                    id="q10y"
+                    value="yes"
+                    v-model="formData.q9"
+                    hidden
+                  />
+                  <label for="q10y" class="exp-lbl">
                     <div>Yes</div>
                   </label>
                 </div>
                 <div class="col-2">
-                  <input type="radio" name="q10" id="q10n" value="no" hidden />
-                  <label
-                    for="q10n"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q10"
+                    id="q10n"
+                    value="no"
+                    v-model="formData.q9"
+                    hidden
+                  />
+                  <label for="q10n" class="exp-lbl">
                     <div>No</div>
                   </label>
                 </div>
@@ -401,22 +508,28 @@
               >
               <div class="row">
                 <div class="col-2">
-                  <input type="radio" name="q11" id="q11y" value="yes" hidden />
-                  <label
-                    for="q11y"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q11"
+                    id="q11y"
+                    value="yes"
+                    v-model="formData.q10"
+                    hidden
+                  />
+                  <label for="q11y" class="exp-lbl">
                     <div>Yes</div>
                   </label>
                 </div>
                 <div class="col-2">
-                  <input type="radio" name="q11" id="q11n" value="no" hidden />
-                  <label
-                    for="q11n"
-                    class="exp-lbl"
-                    :style="['width: 50px', 'height: 50px']"
-                  >
+                  <input
+                    type="radio"
+                    name="q11"
+                    id="q11n"
+                    value="no"
+                    v-model="formData.q10"
+                    hidden
+                  />
+                  <label for="q11n" class="exp-lbl">
                     <div>No</div>
                   </label>
                 </div>
@@ -428,6 +541,7 @@
                 rows="5"
                 placeholder="Do you have any other query?"
                 class="form-control"
+                v-model="formData.remarks"
               ></textarea>
             </div>
           </div>
@@ -439,10 +553,12 @@
   </form>
 </template>
 <script>
+import axios from "axios";
 import { reactive, ref, onMounted } from "vue";
 export default {
   setup(props) {
     const formData = reactive({
+      course_industry: "",
       q1: "",
       q2: "",
       q3: "",
@@ -453,20 +569,95 @@ export default {
       q8: "",
       q9: "",
       q10: "",
-      q11: "",
       name: "",
       email: "",
       phone: "",
       remarks: "",
     });
 
+    const validation = reactive({
+      errors: [],
+      message: "",
+    });
+
+    const isSubmitting = ref(false);
+
+    onMounted(() => {
+      getIndustries();
+    });
+
+    const data = reactive({
+      industries: [],
+      qualifications: [],
+      industries_loading: false,
+      qualifications_loading: false,
+    });
+
     const handleFormSubmit = () => {
-      console.log(formData);
+      isSubmitting.value = true;
+
+      axios
+        .post("/api/rpl", formData)
+        .then((res) => {
+          formReset();
+        })
+        .catch((err) => {
+          console.log(err.response.data);
+        })
+        .finally(() => {
+          isSubmitting.value = true;
+        });
+    };
+
+    const formReset = () => {
+      Object.keys(formData).forEach((key) => {
+        formData[key] = "";
+      });
+    };
+
+    const getIndustries = () => {
+      data.industries_loading = true;
+      axios
+        .get("/api/course-industry/all")
+        .then((res) => {
+          data.industries = res.data.data;
+        })
+        .catch((err) => {
+          console.error(err.response.data);
+        })
+        .finally(() => {
+          data.industries_loading = false;
+        });
+    };
+
+    const getCoursesByIndustry = (industry_title) => {
+      data.qualifications_loading = true;
+      axios
+        .get("/api/get-course-by-industry", {
+          params: {
+            title: industry_title,
+          },
+        })
+        .then((res) => {
+          data.qualifications = res.data.data;
+        })
+        .catch((err) => {
+          console.log(err.response);
+        })
+        .finally(() => {
+          data.qualifications_loading = false;
+        });
+    };
+
+    const handleIndustrySelect = () => {
+      getCoursesByIndustry(formData.q1);
     };
 
     return {
       formData,
+      data,
       handleFormSubmit,
+      handleIndustrySelect,
     };
   },
 };

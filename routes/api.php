@@ -18,6 +18,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::get('course-industry/all', 'CourseIndustriesController@list');
+
 Route::get('get-course-by-industry', 'CourseController@getCourseByIndustry');
 Route::post('subscribe', 'SubscribesController@subscribe');
 Route::post('rpl', 'MailsController@rpl');

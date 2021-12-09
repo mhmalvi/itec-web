@@ -84,19 +84,42 @@
                             </div>
                             <div>
                                 <h4>Location</h4>
-                                <p>{{$data['location']}}</p>
+                                <p>{{$data['q5']}}</p>
                             </div>
                             <div>
                                 <h4>Work Location</h4>
-                                <p>{{$data['work_location']}}</p>
+                                <p>{{$data['q4']}}</p>
                             </div>
                             <div>
                                 <h4>Preffered Course Industry</h4>
-                                <p>{{$data['industry']}}</p>
+                                <p>{{$data['q1']}}</p>
                             </div>
                             <div>
                                 <h4>Qualification</h4>
-                                <p>{{$data['qualification']}}</p>
+                                <p>{{$data['q2']}}</p>
+                            </div>
+                            <div>
+                                <h4>Can you provide referees who can support your RPL Assessment?</h4>
+                                <p>{{ $data['q6'] }}</p>
+                            </div>
+                            <div>
+                                <h4>Do you have any past academic qualification you have obtained in Australia?</h4>
+                                <p>{{ $data['q7'] }}</p>
+                            </div>
+                            <div>
+                                <h4>Do you accept that there will be many different type of evidences you have to
+                                    supply for RPL Assessment, will you be able to supply the documents when requested?</h4>
+                                <p>{{ $data['q8'] }}</p>
+                            </div>
+                            <div>
+                                <h4>During the RPL process, we may request you for some video or photo evidences,
+                                    are you comfortable in supplying such evidences?</h4>
+                                <p>{{ $data['q9'] }}</p>
+                            </div>
+                            <div>
+                                <h4>During the RPL process, we may request you for some video or photo evidences,
+                                    are you comfortable in supplying such evidences?</h4>
+                                <p>{{ $data['q10'] }}</p>
                             </div>
                             <div>
                                 <h4>Remarks</h4>

@@ -10,7 +10,7 @@ class CourseController extends Controller
 {
     /**
      * @param Slug
-     * 
+     *
      * @return view
      */
     public function index($slug)
@@ -21,7 +21,7 @@ class CourseController extends Controller
 
     /**
      * @param Slug
-     * 
+     *
      * @return view
      */
     public function course($slug)
@@ -33,9 +33,9 @@ class CourseController extends Controller
 
     /**
      * @param title
-     * 
+     *
      * @return Json
-     * 
+     *
      */
     public function getCourseByIndustry(Request $request)
     {
