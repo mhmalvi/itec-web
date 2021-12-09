@@ -4,6 +4,9 @@
       <div class="col-md-6">
         <div class="card mb-3">
           <div class="card-body">
+            <div class="alert alert-success" v-if="success_message.length > 0">
+              {{ success_message }}
+            </div>
             <div
               class="alert alert-warning"
               v-if="
@@ -676,6 +679,8 @@ export default {
       message: "",
     });
 
+    const success_message = ref("");
+
     const isSubmitting = ref(false);
 
     onMounted(() => {
@@ -697,6 +702,7 @@ export default {
       axios
         .post("/api/rpl", formData)
         .then((res) => {
+          success_message.value = res.data.success;
           formReset();
         })
         .catch((err) => {
@@ -763,6 +769,7 @@ export default {
       data,
       isSubmitting,
       validation,
+      success_message,
       handleFormSubmit,
       handleIndustrySelect,
     };
