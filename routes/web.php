@@ -39,7 +39,14 @@ Route::prefix('training')->group(function () {
     });
 });
 
+/**
+ * Mails
+ */
 Route::view('check-your-rpl-eligibility', 'pages.check-rpl-eligibility')->name('check-rpl-eligibility');
+Route::post('check-your-rpl-eligibility', 'MailsController@rplRequest');
+Route::post('subscribe', 'MailsController@subscribe');
+
+
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
 Route::get('testMail', 'MailsController@testMail');
 

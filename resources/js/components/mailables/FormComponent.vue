@@ -1,21 +1,21 @@
 <template>
+  <div class="alert alert-success" v-if="success_message.length > 0">
+    {{ success_message }}
+  </div>
+  <div
+    class="alert alert-danger"
+    v-if="
+      validation.message.length > 0 &&
+      (!validation.errors || validation.errors.length == 0)
+    "
+  >
+    {{ validation.message }}
+  </div>
   <form @submit.prevent="handleFormSubmit">
     <div class="row">
       <div class="col-md-6">
         <div class="card mb-3">
           <div class="card-body">
-            <div class="alert alert-success" v-if="success_message.length > 0">
-              {{ success_message }}
-            </div>
-            <div
-              class="alert alert-warning"
-              v-if="
-                validation.message.length > 0 &&
-                (!validation.errors || validation.errors.length == 0)
-              "
-            >
-              {{ validation.message }}
-            </div>
             <h5>Qualifications</h5>
 
             <div class="form-group">
@@ -89,7 +89,7 @@
                 >How many years of relevant work experience do you have?</label
               >
               <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                   <input
                     type="radio"
                     name="q3"
@@ -105,7 +105,7 @@
                     </div>
                   </label>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-md-3">
                   <input
                     type="radio"
                     name="q3"
@@ -433,7 +433,7 @@
                     value="yes"
                     hidden
                   />
-                  <label for="q7y" class="exp-lbl">
+                  <label for="q7y" class="exp-lbl checklist">
                     <div>Yes</div>
                   </label>
                 </div>
@@ -446,7 +446,7 @@
                     v-model="formData.q6"
                     hidden
                   />
-                  <label for="q7n" class="exp-lbl">
+                  <label for="q7n" class="exp-lbl checklist">
                     <div>No</div>
                   </label>
                 </div>
@@ -474,7 +474,7 @@
                     v-model="formData.q7"
                     hidden
                   />
-                  <label for="q8y" class="exp-lbl">
+                  <label for="q8y" class="exp-lbl checklist">
                     <div>Yes</div>
                   </label>
                 </div>
@@ -487,7 +487,7 @@
                     v-model="formData.q7"
                     hidden
                   />
-                  <label for="q8n" class="exp-lbl">
+                  <label for="q8n" class="exp-lbl checklist">
                     <div>No</div>
                   </label>
                 </div>
@@ -516,7 +516,7 @@
                     v-model="formData.q8"
                     hidden
                   />
-                  <label for="q9y" class="exp-lbl">
+                  <label for="q9y" class="exp-lbl checklist">
                     <div>Yes</div>
                   </label>
                 </div>
@@ -529,7 +529,7 @@
                     v-model="formData.q8"
                     hidden
                   />
-                  <label for="q9n" class="exp-lbl">
+                  <label for="q9n" class="exp-lbl checklist">
                     <div>No</div>
                   </label>
                 </div>
@@ -558,7 +558,7 @@
                     v-model="formData.q9"
                     hidden
                   />
-                  <label for="q10y" class="exp-lbl">
+                  <label for="q10y" class="exp-lbl checklist">
                     <div>Yes</div>
                   </label>
                 </div>
@@ -571,7 +571,7 @@
                     v-model="formData.q9"
                     hidden
                   />
-                  <label for="q10n" class="exp-lbl">
+                  <label for="q10n" class="exp-lbl checklist">
                     <div>No</div>
                   </label>
                 </div>
@@ -600,7 +600,7 @@
                     v-model="formData.q10"
                     hidden
                   />
-                  <label for="q11y" class="exp-lbl">
+                  <label for="q11y" class="exp-lbl checklist">
                     <div>Yes</div>
                   </label>
                 </div>
@@ -613,7 +613,7 @@
                     v-model="formData.q10"
                     hidden
                   />
-                  <label for="q11n" class="exp-lbl">
+                  <label for="q11n" class="exp-lbl checklist">
                     <div>No</div>
                   </label>
                 </div>
@@ -657,7 +657,6 @@ import { reactive, ref, onMounted } from "vue";
 export default {
   setup(props) {
     const formData = reactive({
-      course_industry: "",
       q1: "",
       q2: "",
       q3: "",
@@ -700,7 +699,7 @@ export default {
       validation.message = "";
 
       axios
-        .post("/api/rpl", formData)
+        .post("check-your-rpl-eligibility", formData)
         .then((res) => {
           success_message.value = res.data.success;
           formReset();

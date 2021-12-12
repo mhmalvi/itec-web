@@ -19,10 +19,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('course-industry/all', 'CourseIndustriesController@list');
-
 Route::get('get-course-by-industry', 'CourseController@getCourseByIndustry');
-Route::post('subscribe', 'SubscribesController@subscribe');
-Route::post('rpl', 'MailsController@rpl');
 Route::post('book-appointment', 'MailsController@appointment');
 Route::post('apply-now', 'MailsController@applied');
 Route::post('share-image', 'Admin\BlogsController@shareImg');

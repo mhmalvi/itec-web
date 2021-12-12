@@ -2,40 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Subscribe;
-use Illuminate\Http\Request;
-use App\Jobs\SendEmailJob;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\SubscribeMail;
-use Illuminate\Support\Facades\Validator;
+use App\Http\Requests\SubscribersRequest;
 
 class SubscribesController extends Controller
 {
     /**
      * 
      */
-    public function subscribe(Request $request)
+    public function subscribe(SubscribersRequest $request)
     {
-        $validator = Validator::make($request->all(), [
-            'email' => 'required|email',
-        ]);
-
-        if ($validator->fails()) {
-            return json_encode([
-                'errors' => $validator->errors()->all(),
-                'status' => 422
-            ], JSON_FORCE_OBJECT);
-        }
-
         try {
-            Subscribe::create([
-                'email' => $request->email
-            ]);
-
-            Mail::to('dev.quadque@gmail.com')->send(new SubscribeMail([
-                'email' => $request->email
-            ]));
-
+            $request->save();
             return json_encode([
                 'success' => 'Thanks for your subscription',
                 'status' => 200

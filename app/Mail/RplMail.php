@@ -19,7 +19,7 @@ class RplMail extends Mailable
      *
      * @return void
      */
-    public function __construct($data, $filePath)
+    public function __construct($data, $filePath = null)
     {
         $this->data = $data;
         $this->filePath = $filePath;
@@ -34,11 +34,11 @@ class RplMail extends Mailable
     {
         $email = $this->subject("There is a new request to check eligibility for RPL")->view('mails.rpl');
 
-        if (count($this->filePath) > 0) {
-            foreach ($this->filePath as $path) {
-                $email->attach($path);
-            }
-        }
+        // if (count($this->filePath) > 0) {
+        //     foreach ($this->filePath as $path) {
+        //         $email->attach($path);
+        //     }
+        // }
 
         return $email;
     }

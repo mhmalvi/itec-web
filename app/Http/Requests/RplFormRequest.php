@@ -2,9 +2,11 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Mail\RplMail;
+use App\Models\RplEligibilityRequest;
+use Illuminate\Support\Facades\Mail;
 
-class RplFormRequest extends FormRequest
+class RplFormRequest extends MailsRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -54,5 +56,33 @@ class RplFormRequest extends FormRequest
             'q9.required' => "This field is required",
             'q10.required' => "This field is required",
         ];
+    }
+
+    public function save()
+    {
+        $data = [
+            'name' => $this['name'],
+            'email' => $this['email'],
+            'contact' => $this['phone'],
+            'industry' => $this['q1'],
+            'qualification' => $this['q2'],
+            'work_experience' => $this['q3'],
+            'work_location' => $this['q4'],
+            'living_state' => $this['q5'],
+            'qus1' => $this['q6'],
+            'qus2' => $this['q7'],
+            'qus3' => $this['q8'],
+            'qus4' => $this['q9'],
+            'qus5' => $this['q10'],
+            'remark' => $this['remark'],
+        ];
+
+        RplEligibilityRequest::create($data);
+        $this->sendMail($data);
+    }
+
+    private function sendMail($data)
+    {
+        Mail::to($this->receipent)->cc($this->cc)->send(new RplMail($data));
     }
 }
