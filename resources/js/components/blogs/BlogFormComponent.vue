@@ -102,8 +102,6 @@
             @click="draftAndSave()"
             :disabled="form.isSaving || form.isDraft"
           >
-            <i class="fas fa-cloud mr-1" v-if="!form.isDraft"></i>
-            <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
             {{ action_label }} as Draft
           </button>
           <button
@@ -112,8 +110,6 @@
             @click="save()"
             :disabled="form.isSaving || form.isDraft"
           >
-            <i class="fas fa-plus mr-1" v-if="!form.isSaving"></i>
-            <i class="fas fa-circle-notch fa-spin mr-1" v-else></i>
             {{ action_label }} and Publish
           </button>
           <button hidden>submit</button>
