@@ -648,7 +648,7 @@
           Submit
         </button>
 
-        <button class="ml-2" type="submit" @click="returnToHome">
+        <button class="ml-2" type="button" @click="returnToHome">
           Return To Home
         </button>
       </div>
@@ -798,7 +798,8 @@ input[type="email"] {
   font-size: 0.8rem !important;
 }
 
-button[type="submit"] {
+button[type="submit"],
+button[type="button"] {
   height: 45px;
   border: 1px solid #cd4236 !important;
   background: #cd4236 !important;
