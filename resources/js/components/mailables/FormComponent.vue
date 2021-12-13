@@ -647,6 +647,10 @@
           <i class="fas fa-circle-notch fa-spin mr-2" v-if="isSubmitting"></i>
           Submit
         </button>
+
+        <button class="ml-2" type="submit" @click="returnToHome">
+          Return To Home
+        </button>
       </div>
     </div>
   </form>
@@ -763,6 +767,10 @@ export default {
       getCoursesByIndustry(formData.q1);
     };
 
+    const returnToHome = () => {
+      window.location.href = "/";
+    };
+
     return {
       formData,
       data,
@@ -771,6 +779,7 @@ export default {
       success_message,
       handleFormSubmit,
       handleIndustrySelect,
+      returnToHome,
     };
   },
 };

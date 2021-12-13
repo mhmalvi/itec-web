@@ -21,7 +21,13 @@
       </div>
     </div>
     <div class="btn-popup">
-      <button type="submit">Submit</button>
+      <button type="submit" :disabled="messages.isSubmitting">
+        <i
+          class="fas fa-circle-notch fa-spin mr-2"
+          v-if="messages.isSubmitting"
+        ></i>
+        Submit
+      </button>
     </div>
   </form>
 </template>
@@ -36,16 +42,20 @@ export default {
     const messages = reactive({
       success: "",
       errors: [],
+      isSubmitting: false,
     });
 
     const handleFormSubmit = () => {
+      messages.isSubmitting = true;
       axios
         .post("subscribe", formdata)
         .then((res) => {
           messages.success = res.data.success;
+          messages.isSubmitting = false;
         })
         .catch((err) => {
           messages.errors = err.response.data.errors;
+          messages.isSubmitting = false;
         });
     };
 

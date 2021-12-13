@@ -105,6 +105,15 @@
     <main>
         @if (Route::currentRouteName() != 'check-rpl-eligibility')
             @include('layouts.sidebar')
+
+            <!-- end left-side -->
+            <div class="all-cases-link">
+                <b>+</b>
+                <span>
+                    <a class="text-white" href="{{route('check-rpl-eligibility')}}" target="_blank">CHECK YOUR RPL ELIGIBILITY</a>
+                </span>
+            </div>
+            <!-- end all-cases-link -->
         @endif
 
         @yield('content')
