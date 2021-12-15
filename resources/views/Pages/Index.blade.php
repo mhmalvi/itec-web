@@ -423,19 +423,19 @@
                     <div class="rto-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="{{ asset('images/rto/UCT.webp') }}" alt="Image" width="150px" height="150px">
+                                <img src="{{ asset('images/rto/uct.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('images/rto/BRIGHT.webp') }}" alt="Image" width="150px" height="150px">
+                                <img src="{{ asset('images/rto/bright.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('images/rto/NTA.webp') }}" alt="Image" width="150px" height="150px">
+                                <img src="{{ asset('images/rto/nta.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('images/rto/ATR.webp') }}" alt="Image" width="150px" height="150px">
+                                <img src="{{ asset('images/rto/atr.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">

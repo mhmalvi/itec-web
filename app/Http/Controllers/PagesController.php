@@ -6,8 +6,6 @@ use App\Models\Blog;
 use App\Models\Course;
 use App\Models\CourseCategory;
 use App\Models\CourseIndustry;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
 class PagesController extends Controller
@@ -27,7 +25,7 @@ class PagesController extends Controller
     public function index()
     {
         $industries = CourseIndustry::with('courses')->get();
-        return view('Pages.Index', compact('industries'));
+        return view('pages.Index', compact('industries'));
     }
 
 
@@ -40,7 +38,7 @@ class PagesController extends Controller
         $blogs = Blog::with(['user', 'category'])->orderBy('created_at', 'desc')->paginate('5');
         $industries = CourseIndustry::all();
 
-        return view('Pages.blogs', compact('blogs', 'industries'));
+        return view('pages.blogs', compact('blogs', 'industries'));
     }
 
 
@@ -52,7 +50,7 @@ class PagesController extends Controller
     public function blogDetail($slug)
     {
         $blog = Blog::with('user')->where('blog_slug', $slug)->first();
-        return view('Pages.blog', compact('blog'));
+        return view('pages.blog', compact('blog'));
     }
 
 
@@ -64,7 +62,7 @@ class PagesController extends Controller
     public function rpl()
     {
         $industries = CourseIndustry::with('courses')->get();
-        return view('Pages.rpl', compact('industries'));
+        return view('pages.rpl', compact('industries'));
     }
 
 
@@ -80,7 +78,7 @@ class PagesController extends Controller
         $industry = CourseIndustry::where('slug', $slug)->first();
         $courses = Course::where('course_industries_id', $industry->id)->get();
 
-        return view('Pages.courses', compact('industry', 'courses', 'industries'));
+        return view('pages.courses', compact('industry', 'courses', 'industries'));
     }
 
 
@@ -92,7 +90,7 @@ class PagesController extends Controller
     public function course($slug)
     {
         $course = Course::with('courseIndustry')->where('course_code', $slug)->first();
-        return view('Pages.course-single', compact('course'));
+        return view('pages.course-single', compact('course'));
     }
 
 
@@ -117,7 +115,7 @@ class PagesController extends Controller
         $full = Course::with('qualifications')->select($columns)->where('qualification_id', 1)->limit(6)->get();
         $short = Course::with('qualifications')->select($columns)->where('qualification_id', 2)->limit(6)->get();
 
-        return view('Pages.training', compact('full', 'short'));
+        return view('pages.training', compact('full', 'short'));
     }
 
 
@@ -129,7 +127,7 @@ class PagesController extends Controller
         $columns = ['course_name', 'course_code', 'thumbnail'];
         $full = Course::with('qualifications')->select($columns)->where('qualification_id', '1')->paginate(12);
 
-        return view('Pages.fullQualifications', compact('full'));
+        return view('pages.fullQualifications', compact('full'));
     }
 
 
@@ -141,6 +139,6 @@ class PagesController extends Controller
         $columns = ['course_name', 'course_code', 'thumbnail'];
         $short = Course::with('qualifications')->select($columns)->where('qualification_id', '2')->paginate(12);
 
-        return view('Pages.shortCourses', compact('short'));
+        return view('pages.shortCourses', compact('short'));
     }
 }
