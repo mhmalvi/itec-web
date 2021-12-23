@@ -39,6 +39,8 @@ Route::prefix('training')->group(function () {
     });
 });
 
+Route::view('faq', 'pages.faq')->name('faqs');
+
 /**
  * Mails
  */

@@ -46,7 +46,7 @@
                     </p>
                     <ul>
                         <li class="pb-2">
-                            Level 1, 7 Greenfield Pde Bankstown, NSW 2200, Sydney, Australia
+                            Level 1, 7 Greenfield Parade Bankstown, NSW 2200, Sydney, Australia
                         </li>
                         <li class="py-2">
                             1300 535 922

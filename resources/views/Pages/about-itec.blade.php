@@ -116,7 +116,7 @@
     </section>
     <!-- end icon-content-block -->
 
-        <section class="testimonials">
+    <section class="testimonials">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 order-lg-12 wow" data-splitting>

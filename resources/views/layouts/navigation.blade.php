@@ -30,6 +30,7 @@
                 </ul>
             </li>
             <li><a href="{{ route('page', 'migration') }}">MIGRATION</a> <small>Migration Information</small> </li>
+            <li><a href="{{ route('faqs') }}">FAQ's</a> <small>Frequently Asked Questions</small> </li>
             <li><a href="{{ route('blogs') }}">BLOG</a> <small>Recent posts</small> </li>
             <li><a href="{{ route('page', 'contact') }}">CONTACT</a> <small>Say hello</small> </li>
         </ul>

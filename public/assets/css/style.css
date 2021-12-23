@@ -634,12 +634,12 @@ textarea {
 }
 
 .site-navigation .inner ul li i {
-    margin-left: 20px;
-    font-size: 30px;
+    margin-left: 4px;
+    font-size: 16px;
     color: #1c375b;
     display: inline-block;
     line-height: 1;
-    transform: translateY(-5px);
+    transform: translateY(-2px);
     cursor: pointer;
 }
 
@@ -653,11 +653,11 @@ textarea {
     text-transform: uppercase;
     font-weight: 600;
     transform: translateY(-15px);
-    padding-top: 8px;
+    padding-top: 12px;
 }
 
 .site-navigation .inner ul li a {
-    font-size: 28px;
+    font-size: 20px;
     display: inline-block;
     font-weight: 800;
     color: #1c375b;

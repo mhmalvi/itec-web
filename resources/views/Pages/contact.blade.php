@@ -29,7 +29,7 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up">
                     <h6>HEAD OFFICE</h6>
                     <address>
-                        Level 1, 7 Greenfield Pde Bankstown,<br>NSW 2200, Sydney, Australia
+                        Level 1, 7 Greenfield Parade Bankstown, NSW 2200, Sydney, Australia
                     </address>
                     <address>
                         <p>1300 535 922</p>

@@ -108,7 +108,6 @@
 
             <!-- end left-side -->
             <div class="all-cases-link">
-                <b>+</b>
                 <span>
                     <a class="text-white" href="{{route('check-rpl-eligibility')}}" target="_blank">CHECK YOUR RPL ELIGIBILITY</a>
                 </span>

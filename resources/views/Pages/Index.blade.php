@@ -247,7 +247,9 @@
             <div class="row">
                 <div class="col-lg-4 wow" data-splitting>
                     <h2 class="section-title text-left">Free Study in Australia Service</h2>
-                    <video src="{{ asset('assets/videos/contact2.mp4') }}" muted loop autoplay width="300" height="300"></video>
+                    <iframe width="500" height="300" src="http://www.youtube.com/embed/Zg1EN70w6DQ?autoplay=1&loop=1&playlist=Zg1EN70w6DQ" title="RPL" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
                 </div>
                 <div class="col-lg-7 offset-lg-1" data-aos="fade-up">
                     <div class="p-2 text-justify">
