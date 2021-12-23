@@ -12,6 +12,6 @@ class AdmissionsController extends Controller
      */
     public function __invoke()
     {
-        return view('Pages.' . request()->segment(2));
+        return view('pages.' . request()->segment(2));
     }
 }

@@ -15,7 +15,7 @@ class PagesController extends Controller
      */
     public function __invoke()
     {
-        return view('Pages.' . request()->segment(1));
+        return view('pages.' . request()->segment(1));
     }
 
 
