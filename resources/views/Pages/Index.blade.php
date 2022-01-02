@@ -95,13 +95,13 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <figure class="reveal-effect masker wow"> <img
-                                        class="lazyload" data-src="{{ asset('images/home/1.webp') }}" alt="Image">
+                                        class="lazyload" data-src="{{ asset('images/home/1.webp') }}" alt="Image" width="1310" height="478">
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
                                 <figure>
-                                    <img class="lazyload" data-src="{{ asset('images/home/2.webp') }}" alt="Image">
+                                    <img class="lazyload" data-src="{{ asset('images/home/2.webp') }}" alt="Image" width="1310" height="478">
                                 </figure>
                             </div>
                             <!-- end swiper-slide -->
@@ -130,7 +130,7 @@
                 <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="{{ route('page', 'ielts') }}">
                         <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon01.webp') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon01.webp') }}" alt="Image" width="75" height="75"> </figure>
                             <h6>IELTS | PTE</h6>
                             <ul>
                                 <li>Expected Result</li>
@@ -145,7 +145,7 @@
                 <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="{{ route('rpl') }}">
                         <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon02.webp') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon02.webp') }}" alt="Image" width="75" height="75"> </figure>
                             <h6>RPL</h6>
                             <ul>
                                 <li>Get Certified</li>
@@ -160,7 +160,7 @@
                 <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="{{ route('admission', 'australia') }}">
                         <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon03.webp') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon03.webp') }}" alt="Image" width="75" height="75"> </figure>
                             <h6>ADMISSION</h6>
                             <ul>
                                 <li>University Admission</li>
@@ -175,7 +175,7 @@
                 <div class="col-lg-3 col-md-3" data-aos="fade-up">
                     <a href="">
                         <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon04.webp') }}" alt="Image"> </figure>
+                            <figure> <img class="lazyload" data-src="{{ asset('images/icon04.webp') }}" alt="Image" width="75" height="75"> </figure>
                             <h6>TRAINING</h6>
                             <ul>
                                 <li>Short Courses</li>
@@ -205,7 +205,7 @@
                     <!-- end col-5 -->
                     <div class="col-lg-7" data-aos="fade-up">
 
-                        <img class="lazyload" data-src="{{ asset('images/122.webp') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/122.webp') }}" alt="Image" width="560" height="320">
 
                     </div>
                     <!-- end col-7 -->
@@ -216,7 +216,7 @@
 
                 <div class="row py-5">
                     <div class="col-lg-5" data-aos="fade-up">
-                        <img class="lazyload" data-src="{{ asset('images/123.webp') }}" alt="Image">
+                        <img class="lazyload" data-src="{{ asset('images/123.webp') }}" alt="Image" width="560" height="320">
                     </div>
                     <!-- end col-5 -->
                     <div class="col-lg-7" data-aos="fade-up">
@@ -425,23 +425,23 @@
                     <div class="rto-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="{{ asset('images/rto/uct.webp') }}" alt="Image" width="150px" height="150px">
+                                <img class="lazyload" data-src="{{ asset('images/rto/uct.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('images/rto/bright.webp') }}" alt="Image" width="150px" height="150px">
+                                <img class="lazyload" data-src="{{ asset('images/rto/bright.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('images/rto/nta.webp') }}" alt="Image" width="150px" height="150px">
+                                <img class="lazyload" data-src="{{ asset('images/rto/nta.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('images/rto/atr.webp') }}" alt="Image" width="150px" height="150px">
+                                <img class="lazyload" data-src="{{ asset('images/rto/atr.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img src="{{ asset('images/rto/alpha.webp') }}" alt="Image" width="150px" height="150px">
+                                <img class="lazyload" data-src="{{ asset('images/rto/alpha.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                         </div>
@@ -465,8 +465,8 @@
                 @forelse ($industries as $item)
                     <div class="col-lg-4 col-md-4 my-2 industry-card" data-aos="fade-up">
                         <div class="rpl-card reveal-effect masker wow">
-                            <img src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('images/course/course.jpg') }}"
-                                alt="">
+                            <img class="lazyload" data-src="{{ !is_null($item->thumbnail) ? asset('storage/industry/' . $item->thumbnail) : asset('images/course/course.jpg') }}"
+                                alt="" width="447" height="532">
                             <div class="rpl-des">
                                 <h3>{{ $item->title }}</h3>
                                 <ul class="text-left">

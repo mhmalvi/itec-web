@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
+    <meta http-equiv="Cache-control" content="public">
     <meta name="google-site-verification" content="" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -57,10 +58,7 @@
         <div class="layer"></div>
         <!-- end layer -->
         <div class="inner">
-            <figure>
-                <img src="{{ asset('images/logo.webp') }}" alt="Image" class="loader-logo">
-            </figure>
-            <span>Loading</span>
+            <span>Please wait ...</span>
         </div>
         <!-- end inner -->
     </div>
@@ -108,6 +106,7 @@
 
             <!-- end left-side -->
             <div class="all-cases-link">
+                <b><i class="far fa-file-alt"></i></b>
                 <span>
                     <a class="text-white" href="{{route('check-rpl-eligibility')}}" target="_blank">CHECK YOUR RPL ELIGIBILITY</a>
                 </span>

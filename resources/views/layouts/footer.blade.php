@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-xs-12 col-lg-2 col-md-2 my-4 d-none d-sm-block">
                 <div class="footer-logo">
-                    <img class="lazyload" data-src="{{ asset('images/logo.webp') }}" alt="Image" class="img-fluid">
+                    <img class="lazyload" data-src="{{ asset('images/logo.webp') }}" alt="Image" class="img-fluid" width="110" height="69.3">
                 </div>
             </div>
             <div class="col-xs-12 col-lg-3 col-md-3">
@@ -46,7 +46,7 @@
                     </p>
                     <ul>
                         <li class="pb-2">
-                            Level 1, 7 Greenfield Parade Bankstown, NSW 2200, Sydney, Australia
+                            Level 1, 7 Greenfield Pde Bankstown, NSW 2200, Sydney, Australia
                         </li>
                         <li class="py-2">
                             1300 535 922

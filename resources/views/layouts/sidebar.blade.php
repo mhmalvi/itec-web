@@ -1,6 +1,6 @@
 <aside class="left-side">
     <div class="logo"> <a href="{{ route('index') }}">
-            <img class="lazyload" data-src="{{ asset('images/logo.webp') }}" alt="Image" id="itec-logo"></a>
+            <img class="lazyload" data-src="{{ asset('images/logo.webp') }}" alt="Image" id="itec-logo" width="110" height="69.3"></a>
     </div>
     <!-- end logo -->
     <div class="hamburger" id="hamburger">
