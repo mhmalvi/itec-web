@@ -16,7 +16,7 @@
 
 @push('og')
     <meta property="og:title" content="{{ $blog->blog_title }}" />
-    <meta property="og:image" content="{{ $blog->image }}" />
+    <meta property="og:image" content="{{ $blog->thumbnail }}" />
 @endpush
 
 @push('css')
@@ -49,44 +49,33 @@
             <div class="row justify-content-center">
                 <div class="col-lg-10">
                     <div class="post single">
-                        <figure class="post-image">
-                            <img class="lazyload" data-src="{{ $blog->image }}"
-                                alt="{{$blog->image_alt}}">
-                        </figure>
-                        <div class="post-content">
-                            <small class="post-date">
-                                {{ $blog->created_at }}
-                            </small>
-                            <h1 class="post-title">{{ $blog->blog_title }}</h1>
-                            <div class="post-author">
-                                    @if (is_null($blog->user))
-                                        <img class="lazyload" data-src="{{ asset('avatar.png') }}" alt="Image">
-                                    @else
-                                        <img class="lazyload" data-src="{{ asset($blog->user->photo ? 'storage/users/' . $blog->user->photo : 'admin/images/profile.png') }}" alt="Image">
-                                    @endif
-
-                                <span>by: 
-                                    @if (is_null($blog->user))
-                                        Admin
-                                    @else
-                                        {{ $blog->user->name }}
-                                    @endif
-                                </span>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <figure class="post-image">
+                                    <img class="lazyload" data-src="{{ $blog->thumbnail }}" alt="{{$blog->thumbnail_alt}}">
+                                </figure>
                             </div>
-                            <!-- end post-author -->
-                            {{-- <ul class="post-categories">
-                                <li><a href="#">DESIGN</a></li>
-                                <li><a href="#">ECOMMERCE</a></li>
-                                <li><a href="#">DIGITAL</a></li>
-                            </ul> --}}
-                            {{-- <ul class="social-share">
-                                <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li class="google-plus"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                                <li class="linkedin"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li class="youtube"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            </ul> --}}
-
+                            <div class="col-md-6 offset-md-1 d-flex align-items-center">
+                                <div>
+                                    <h1 class="post-title font-weight-bold">{{ $blog->blog_title }}</h1>
+                                
+                                    <small class="post-date">
+                                        {{ $blog->created_at }}
+                                    </small>
+                                    
+                                    <div class="post-author">
+                                        <span>Author: 
+                                            @if (is_null($blog->user))
+                                                Admin
+                                            @else
+                                                {{ $blog->user->name }}
+                                            @endif
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content px-0 text-justify">
                             {!! $blog->blog_des !!}
                         </div>
                         <!-- end post-content -->
