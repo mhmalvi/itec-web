@@ -148,56 +148,6 @@
         <div class="card">
           <div class="card-body">
             <div class="form-group img-container">
-              <label for="featured_image" class="form-label"
-                >Click here to upload image</label
-              >
-              <div class="img-wrapper">
-                <img :src="form.formData.featured_image" class="img-fluid" />
-                <a
-                  href="javascript:void(0)"
-                  @click.prevent="imgDeleteHandler(null, 'featured_image')"
-                  class="text-danger d-block img-remove"
-                  v-if="form.formData.featured_image"
-                >
-                  <i class="fas fa-times"></i>
-                </a>
-                <input
-                  type="file"
-                  class="form-control"
-                  id="featured_image"
-                  @change="handleFeaturedImageChange"
-                  hidden
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="featured_image_title" class="form-label"
-                >Featured Image Title(optional)</label
-              >
-              <input
-                type="text"
-                name="featured_image_title"
-                class="form-control form-control-sm"
-                v-model="form.formData.featured_image_title"
-              />
-            </div>
-            <div class="form-group">
-              <label for="featured_image_alt" class="form-label"
-                >Featured Image Alt(optional)</label
-              >
-              <input
-                type="text"
-                name="featured_image_alt"
-                class="form-control form-control-sm"
-                v-model="form.formData.featured_image_alt"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-body">
-            <div class="form-group img-container">
               <label for="thumbnail" class="form-label"
                 >Click here to upload image</label
               >
@@ -295,9 +245,6 @@ export default {
         description: "",
         slug: "",
         category_id: "",
-        featured_image: "",
-        featured_image_title: "",
-        featured_image_alt: "",
         thumbnail: "",
         thumbnail_title: "",
         thumbnail_alt: "",
@@ -367,9 +314,6 @@ export default {
       form.formData.description = "";
       form.formData.slug = "";
       form.formData.category_id = "";
-      form.formData.featured_image = "";
-      form.formData.featured_image_title = "";
-      form.formData.featured_image_alt = "";
       form.formData.thumbnail = "";
       form.formData.thumbnail_title = "";
       form.formData.thumbnail_alt = "";
@@ -386,9 +330,6 @@ export default {
       form.formData.description = data.description;
       form.formData.slug = data.slug;
       form.formData.category_id = data.category_id ?? "";
-      form.formData.featured_image = data.image;
-      form.formData.featured_image_title = data.image_alt;
-      form.formData.featured_image_alt = data.featured_image_alt;
       form.formData.thumbnail = data.thumbnail;
       form.formData.thumbnail_title = data.thumbnail_title;
       form.formData.thumbnail_alt = data.thumbnail_alt;
@@ -413,14 +354,6 @@ export default {
       form.formData.isPublished = 0;
       form.isDraft = true;
       handleFormSubmit();
-    };
-    const handleFeaturedImageChange = (e) => {
-      if (e.target.files.length == 0) return;
-      const file = e.target.files[0];
-      form.formData.featured_image_title = file.name;
-      convertImageIntoDataUrl(file, (data) => {
-        form.formData.featured_image = data.target.result;
-      });
     };
     const handleThumbnailChange = (e) => {
       if (e.target.files.length == 0) return;
@@ -459,7 +392,6 @@ export default {
       draftAndSave,
       validation,
       success_message,
-      handleFeaturedImageChange,
       imgDeleteHandler,
       handleThumbnailChange,
       generateSlug,
