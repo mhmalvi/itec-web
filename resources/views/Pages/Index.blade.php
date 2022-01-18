@@ -441,7 +441,19 @@
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img class="lazyload" data-src="{{ asset('images/rto/alpha.webp') }}" alt="Image" width="150px" height="150px">
+                                <img class="lazyload" data-src="{{ asset('images/rto/aibt.webp') }}" alt="Image" width="150px" height="150px">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img class="lazyload" data-src="{{ asset('images/rto/lead.webp') }}" alt="Image" width="150px" height="150px">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img class="lazyload" data-src="{{ asset('images/rto/via.webp') }}" alt="Image" width="150px" height="150px">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img class="lazyload" data-src="{{ asset('images/rto/rockford.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                         </div>
