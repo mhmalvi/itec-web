@@ -98,4 +98,12 @@ class MailsController extends Controller
             'status' => 'Success'
         ], 200);
     }
+
+    /**
+     * Join As Rto Partner
+     */
+    public function rtoPartner(Request $request)
+    {
+        dd($request->all());
+    }
 }

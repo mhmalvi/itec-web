@@ -40,7 +40,6 @@ Route::prefix('training')->group(function () {
 });
 
 Route::view('join-as-rto-partner', 'pages.rto');
-Route::post('join-as-rto-partner', 'JoinAsRtoPartnerController@store');
 
 Route::view('faq', 'pages.faq')->name('faqs');
 
@@ -50,6 +49,7 @@ Route::view('faq', 'pages.faq')->name('faqs');
 Route::view('check-your-rpl-eligibility', 'pages.check-rpl-eligibility')->name('check-rpl-eligibility');
 Route::post('check-your-rpl-eligibility', 'MailsController@rplRequest');
 Route::post('subscribe', 'MailsController@subscribe');
+Route::post('join-as-rto-partner', 'MailsController@rtoPartner');
 
 
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');

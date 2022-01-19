@@ -57,10 +57,8 @@
         />
       </div>
 
-      {{ count }}
-
       <button type="submit">
-        <!-- <i class="fas fa-circle-notch fa-spin mr-2" v-if="state.isSubmit"></i> -->
+        <i class="fas fa-circle-notch fa-spin mr-2" v-if="state.isSubmit"></i>
         Submit
       </button>
     </form>
@@ -69,6 +67,7 @@
 
 <script>
 import { reactive, ref } from "vue";
+import axios from "axios";
 
 export default {
   setup() {
@@ -85,27 +84,25 @@ export default {
         errors: {},
         message: "",
       },
+      isSubmit: false,
     });
 
-    const submitting = ref(false);
-    const count = ref(0);
-
-    setInterval(() => {
-      submitting.value = !submitting.value;
-      count.value = count.value + 1;
-      console.log("updating..", count.value);
-    }, 700);
-
     const handleFormSubmit = () => {
-      state.form.first_name = "Hello";
-      submitting.value = true;
-      state.form.last_name = "World";
+      axios
+        .post("join-as-rto-partner", state.form)
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .finally(() => {
+          console.log("do something");
+        });
     };
 
     return {
       state,
-      submitting,
-      count,
       handleFormSubmit,
     };
   },
