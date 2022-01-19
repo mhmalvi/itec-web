@@ -40,6 +40,8 @@ Route::prefix('training')->group(function () {
 });
 
 Route::view('join-as-rto-partner', 'pages.rto');
+Route::post('join-as-rto-partner', 'JoinAsRtoPartnerController@store');
+
 Route::view('faq', 'pages.faq')->name('faqs');
 
 /**
