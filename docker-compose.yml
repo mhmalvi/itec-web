@@ -2,12 +2,12 @@ version: "3.7"
 
 services:
     web:
-        image: cynax/php:7.4-fpm
+        image: itec_app:latest
         volumes:
-            - .:/var/www/html
+            - .:/app
         ports:
-            - 8001:8000
-        # command: bash -c 'php artisan serve --host=0.0.0.0'
+            - 9090:8000
+        command: bash -c 'php artisan serve --host=0.0.0.0'
         depends_on:
             - db
         links:

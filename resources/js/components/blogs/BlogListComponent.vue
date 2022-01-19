@@ -1,9 +1,6 @@
 <template>
   <div class="row">
-    <div class="col-12" v-if="isLoading">
-      <div class="d-flex justify-content-center">Loading...</div>
-    </div>
-    <div class="col-12" v-else>
+    <div class="col-12">
       <div class="row">
         <div class="col-4">
           <select class="form-control" v-model="perPage">
@@ -37,7 +34,25 @@
               </tr>
             </thead>
 
-            <tbody>
+            <tbody v-if="isLoading">
+              <tr>
+                <td colspan="12">
+                  <div class="d-flex justify-content-center">Loading...</div>
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody v-else-if="blogs.length == 0">
+              <tr>
+                <td colspan="12">
+                  <div class="d-flex justify-content-center">
+                    No blogs found.
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+
+            <tbody v-else>
               <tr v-for="(blog, index) in blogs" :key="index">
                 <td>#</td>
                 <td>
@@ -82,7 +97,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" v-if="blogs.length != 0 && !isLoading">
         <div class="col-12">
           <nav aria-label="Blogs pagination">
             <ul class="pagination justify-content-center">
@@ -90,7 +105,7 @@
                 class="page-item"
                 v-for="(page, index) in paginationLinks"
                 :key="index"
-                :class="page.url == null ? 'disabled' : ''"
+                :class="{ disabled: page.url == null, active: page.active }"
               >
                 <a
                   class="page-link"

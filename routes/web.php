@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@index')->name('index');
 Route::get('{page}', 'PagesController')
-    ->where('page', 'contact|migration|ielts|tourist-visa|pte|about-itec')
+    ->where('page', 'contact|migration|ielts|tourist-visa|pte|about-itec|faq')
     ->name('page');
 Route::get('admission/{page}', 'AdmissionsController')
     ->where('page', 'australia|canada|europe|malaysia')

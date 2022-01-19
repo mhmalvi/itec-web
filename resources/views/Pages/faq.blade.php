@@ -1,13 +1,9 @@
 @extends('layouts.app')
 
-@section('title', "FAQs")
+@section('title', 'FAQ')
 
-@push('css')
-    <style>
-        .section-contact{
-            padding: 40px 0px;
-        }
-    </style>
+@push('seo')
+    <meta name="description" content="ITEC is the best education consultant & migration agency in Australia. Those who want to study, work or travel to Australia will get the best consultancy from our expert." />
 @endpush
 
 @section('content')
@@ -16,7 +12,7 @@
         <!-- end video-bg -->
         <div class="inner">
             <div class="container">
-                <h1>FAQs</h1>
+                <h1>FAQ</h1>
                 <p>Frequently Asked Questions</p>
             </div>
             <!-- end container -->
