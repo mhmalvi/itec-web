@@ -247,8 +247,8 @@
             <div class="row">
                 <div class="col-lg-4 wow" data-splitting>
                     <h2 class="section-title text-left">Free Study in Australia Service</h2>
-                    <iframe width="500" height="300" src="http://www.youtube.com/embed/Zg1EN70w6DQ?autoplay=1&loop=1&playlist=Zg1EN70w6DQ" title="RPL" 
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    <iframe width="500" height="300" src="http://www.youtube.com/embed/Zg1EN70w6DQ?autoplay=1&loop=1&playlist=Zg1EN70w6DQ" title="RPL"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 </div>
                 <div class="col-lg-7 offset-lg-1" data-aos="fade-up">
@@ -304,10 +304,10 @@
                                     <blockquote>
                                         Great course and comes with great value! I strongly recommend it for anyone who wants to take higer study!
                                     </blockquote>
-                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a1.webp') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/1.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
-                                            <h6>ALAMIN SHUVO</h6>
+                                            <h6>Zac Morice</h6>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
@@ -321,10 +321,10 @@
                                     <blockquote>
                                         Thank you ITEC for helping me. Your Pconsultency was excellent. Best instructor ever! I recommend this interested in higher study!
                                     </blockquote>
-                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a4.webp') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/2.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
-                                            <h6>PIYASH KHAN</h6>
+                                            <h6>Kate Buxton</h6>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
@@ -338,10 +338,10 @@
                                     <blockquote>
                                         That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam.
                                     </blockquote>
-                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a6.webp') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/3.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
-                                            <h6>DEW ANTHONY GOMES</h6>
+                                            <h6>Dominic Howie</h6>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
@@ -355,10 +355,10 @@
                                     <blockquote>
                                         That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam.
                                     </blockquote>
-                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a6.webp') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/4.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
-                                            <h6>DEW ANTHONY GOMES</h6>
+                                            <h6>Audrey De La Rue</h6>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
@@ -372,10 +372,10 @@
                                     <blockquote>
                                         Consulting with ITEC was pure pleasure! They were friendly and concerned. I was so glad I chose them to help me with my higher study.
                                     </blockquote>
-                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a6.webp') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/5.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
-                                            <h6>Anthony Jhon</h6>
+                                            <h6>Alyssa Sandes</h6>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
@@ -389,10 +389,10 @@
                                     <blockquote>
                                         Very knowledgeable and helpful company when it comes to higher study and IELTS preparation
                                     </blockquote>
-                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/a6.webp') }}"
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/6.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
-                                            <h6>RIAZ HOSSAIN</h6>
+                                            <h6>Ben McMinn</h6>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
