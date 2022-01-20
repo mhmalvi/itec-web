@@ -20957,9 +20957,9 @@ __webpack_require__.r(__webpack_exports__);
     var handleFormSubmit = function handleFormSubmit() {
       isSubmit.value = false;
       axios__WEBPACK_IMPORTED_MODULE_1___default().post("join-as-rto-partner", state.form).then(function (res) {
-        console.log(res);
+        location.href = "/";
       })["catch"](function (error) {
-        console.log(error.response.data);
+        console.error(error.response.data.errors);
       })["finally"](function () {
         isSubmit.value = true;
       });
