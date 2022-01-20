@@ -39,8 +39,7 @@ Route::prefix('training')->group(function () {
     });
 });
 
-Route::view('join-as-rto-partner', 'pages.rto');
-
+Route::view('join-as-rto-partner', 'pages.rto')->name('rto-partner');
 Route::view('faq', 'pages.faq')->name('faqs');
 
 /**

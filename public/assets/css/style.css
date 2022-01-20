@@ -692,7 +692,7 @@ textarea {
     font-family: "Fjalla One", sans-serif;
     margin-bottom: 80px;
     line-height: 1.4;
-    font-size: 4vw;
+    font-size: 3vw;
     letter-spacing: 2px;
 }
 
@@ -1478,12 +1478,12 @@ textarea {
 .page-header .inner h1 {
     color: #fff;
     font-weight: 800;
-    font-size: 10vw;
+    font-size: 8vw;
     letter-spacing: -1px;
 }
 
 .page-header .inner .heading-secondary {
-    font-size: 28px !important;
+    font-size: 21px !important;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -1541,7 +1541,7 @@ textarea {
 }
 
 .intro p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     margin-bottom: 35px;
 }
@@ -1843,7 +1843,7 @@ textarea {
 }
 
 .testimonials .testimonial blockquote {
-    font-size: 21px;
+    font-size: 18px;
     line-height: 1.7;
     font-weight: 300;
     padding-bottom: 30px;
@@ -2706,6 +2706,7 @@ textarea {
     flex-wrap: wrap;
     padding-top: 100px;
     color: #1c375b;
+    background: url(../../images/footer.webp) bottom center no-repeat;
     background-size: 80% auto;
 }
 

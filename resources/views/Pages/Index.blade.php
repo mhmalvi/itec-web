@@ -367,23 +367,6 @@
                                 <!-- end testimonial -->
                             </div>
                             <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        Very knowledgeable and helpful company when it comes to higher study and IELTS preparation
-                                    </blockquote>
-                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/6.webp') }}"
-                                            alt="Image">
-                                        <div class="reviewer-infos">
-                                            <h6>Ben McMinn</h6>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
 
                             <div class="swiper-slide">
                                 <div class="testimonial">
@@ -486,6 +469,10 @@
                 <!-- end col-7 -->
             </div>
             <!-- end row -->
+
+            <div class="d-flex justify-content-center">
+                <a href="{{route('rto-partner')}}" id="load">Join as RTO Partner</a>
+            </div>
         </div>
         <!-- end container -->
     </section>
@@ -535,7 +522,7 @@
         $(document).ready(function(){
             setTimeout(() => {
                 $("#exampleModalCenter").modal('show');
-            }, 2800);
+            }, 5000);
         })
     </script>
 @endpush

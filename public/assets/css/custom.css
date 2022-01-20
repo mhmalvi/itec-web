@@ -942,36 +942,36 @@ input[type="radio"]:checked ~ label {
 }
 
 .img-bg-1 {
-    background-image: url("../images/BG/ab-1.jpg");
+    background-image: url(../../images/BG/ab-1.webp);
 }
 
 .img-bg-2 {
-    background-image: url("../images/BG/rpl-1.jpg");
+    background-image: url(../../images/BG/rpl-1.webp);
 }
 
 .img-bg-3 {
-    background-image: url("../images/BG/study-1.jpg");
+    background-image: url(../../images/BG/study-1.webp);
 }
 
 .img-bg-4 {
-    background-image: url("../images/BG/training-1.jpg");
+    background-image: url(../../images/BG/training-1.webp);
 }
 
 .img-bg-5 {
-    background-image: url("../images/BG/training-2.jpg");
+    background-image: url(../../images/BG/training-2.webp);
 }
 
 .img-bg-6 {
-    background-image: url("../images/BG/mg-1.jpg");
+    background-image: url(../../images/BG/mg-1.webp);
 }
 
 .img-bg-7 {
-    background-image: url("../images/BG/blog-1.jpg");
+    background-image: url(../../images/BG/blog-1.webp);
 }
 
 .img-bg-8 {
-    background-image: url("../images/BG/contact-1.jpg");
+    background-image: url(../../images/BG/contact-1.webp);
 }
 .img-bg-9 {
-    background-image: url("../images/BG/rpl-bg.jpg");
+    background-image: url(../../images/BG/rpl-bg.webp);
 }
