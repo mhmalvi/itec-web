@@ -35,10 +35,13 @@ class JoinAsRtoCreateRequest extends MailsRequest
 
     public function send()
     {
-        Mail::to('asm.zakaria120@gmail.com')->send(
-            new JoinAsRtoMail(
-                $this->validated()
-            )
-        );
+        Mail::to($this->receipent)
+            ->bcc($this->bcc)
+            ->cc($this->cc)
+            ->send(
+                new JoinAsRtoMail(
+                    $this->validated()
+                )
+            );
     }
 }
