@@ -29,7 +29,7 @@
                 <!-- end col-12 -->
                 <div class="col-12" data-aos="fade-up">
                     <h5>
-                        If so, then let accredify do the hard work. We market RPL Australia wide, compile evidence portfolios on your behalf and 
+                        If so, then let accredify do the hard work. We market RPL Australia wide, compile evidence portfolios on your behalf and
                         help you to increase your revenues while reducing the administrative burden that RPL usually requires.
                     </h5>
                 </div>
@@ -43,8 +43,11 @@
     <section class="icon-content-block pt-250">
         <div class="container">
             <div class="row justify-content-center itec-services">
-                <div class="col-12 wow" data-splitting>
+                <div class="col-md-6 wow" data-splitting>
                     <h3 class="section-title">Partner With Us</h3>
+                    <div class="mt-2" id="app">
+                        <rto-form-component />
+                    </div>
                 </div>
                 <!-- end col-12 -->
             </div>
