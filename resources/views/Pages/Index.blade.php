@@ -384,6 +384,42 @@
                                 <!-- end testimonial -->
                             </div>
                             <!-- end swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        After I joined ITEC, I am fully pleased with the quality of training and lessons provided by the trainer and the teachers. The online class environment is so good and the trainers are excellent in service.
+                                    </blockquote>
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/4.webp') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>Jessica Florina</h6>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
+
+                            <div class="swiper-slide">
+                                <div class="testimonial">
+                                    <blockquote>
+                                        ITEC is a wonderful platform for anyone to learn and get qualified for professional courses. Teachers are amazing to support during the classes. I had a great experience during the whole journey.
+                                    </blockquote>
+                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/6.webp') }}"
+                                            alt="Image">
+                                        <div class="reviewer-infos">
+                                            <h6>Sabella Leona</h6>
+                                        </div>
+                                        <!-- end reviewer-infos -->
+                                    </div>
+                                    <!-- end reviewers -->
+                                </div>
+                                <!-- end testimonial -->
+                            </div>
+                            <!-- end swiper-slide -->
                         </div>
                         <!-- end swiper-wrapper -->
                     </div>
