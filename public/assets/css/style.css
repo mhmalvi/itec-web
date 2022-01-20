@@ -1699,7 +1699,6 @@ textarea {
     right: -25px;
     bottom: -30px;
     z-index: -1;
-    background: url(../images/dot-pattern.png) right;
     background-size: 10px;
 }
 
@@ -2055,7 +2054,6 @@ textarea {
     right: -25px;
     bottom: -30px;
     z-index: -1;
-    background: url(../images/dot-pattern.png) right;
     background-size: 10px;
     opacity: 0;
     -webkit-transition: 0.25s ease-in-out;
@@ -2347,7 +2345,6 @@ textarea {
     right: -25px;
     bottom: -30px;
     z-index: 0;
-    background: url(../images/dot-pattern.png) right;
     background-size: 10px;
     -webkit-transition: 0.25s ease-in-out;
     -moz-transition: 0.25s ease-in-out;
