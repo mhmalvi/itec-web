@@ -87,7 +87,7 @@
       </div>
 
       <button type="submit">
-        <i class="fas fa-circle-notch fa-spin mr-2" v-if="state.isSubmit"></i>
+        <i class="fas fa-circle-notch fa-spin mr-2" v-show="!isSubmit"></i>
         Submit
       </button>
     </form>
@@ -113,26 +113,30 @@ export default {
         errors: {},
         message: "",
       },
-      isSubmit: false,
     });
 
+    const isSubmit = ref(true);
+
     const handleFormSubmit = () => {
+      isSubmit.value = false;
+
       axios
         .post("join-as-rto-partner", state.form)
         .then((res) => {
           console.log(res);
         })
         .catch((error) => {
-          console.log(error);
+          console.log(error.response.data);
         })
         .finally(() => {
-          console.log("do something");
+          isSubmit.value = true;
         });
     };
 
     return {
       state,
       handleFormSubmit,
+      isSubmit,
     };
   },
 };
