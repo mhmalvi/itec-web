@@ -117,8 +117,7 @@
                                 <p>{{ $data['qus4'] }}</p>
                             </div>
                             <div>
-                                <h4>During the RPL process, we may request you for some video or photo evidences,
-                                    are you comfortable in supplying such evidences?</h4>
+                                <h4>Are you ready to fill out the application form and begin the RPL Assessment immediately?</h4>
                                 <p>{{ $data['qus5'] }}</p>
                             </div>
                             <div>

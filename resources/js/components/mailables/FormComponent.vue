@@ -16,7 +16,7 @@
       <div class="col-md-6">
         <div class="card mb-3">
           <div class="card-body">
-            <h5>Qualifications</h5>
+            <h5>Industries and Qualifications</h5>
 
             <div class="form-group">
               <label for="q1">What industry is your experience in?</label>
@@ -56,7 +56,12 @@
                 class="form-control"
                 id="q2"
                 v-model="formData.q2"
-                :disabled="formData.q1 == '' || data.qualifications.length == 0"
+                v-if="formData.q1.toLowerCase() != 'other'"
+                :disabled="
+                  formData.q1 == '' ||
+                  data.qualifications.length == 0 ||
+                  data.qualifications_loading
+                "
               >
                 <option value="" :selected="formData.q2 == ''">
                   Select the qualification you looking for ...
@@ -70,6 +75,12 @@
                   {{ qualification.Course }}
                 </option>
               </select>
+              <input
+                type="text"
+                class="form-control"
+                v-model="formData.q2"
+                v-else
+              />
               <small
                 class="text-danger"
                 v-if="validation.errors && validation.errors.q2"
@@ -585,11 +596,10 @@
             </div>
 
             <div class="form-group">
-              <label for="q11"
-                >During the RPL process, we may request you for some video or
-                photo evidences, are you comfortable in supplying such
-                evidences?</label
-              >
+              <label for="q11">
+                Are you ready to fill out the application form and begin the RPL
+                Assessment immediately?
+              </label>
               <div class="row">
                 <div class="col-2">
                   <input
@@ -683,7 +693,6 @@ export default {
     });
 
     const success_message = ref("");
-
     const isSubmitting = ref(false);
 
     onMounted(() => {
@@ -764,7 +773,11 @@ export default {
     };
 
     const handleIndustrySelect = () => {
-      getCoursesByIndustry(formData.q1);
+      if (formData.q1 == "" || formData.q1.toLowerCase() == "other") {
+        formData.q2 = "";
+      } else {
+        getCoursesByIndustry(formData.q1);
+      }
     };
 
     const returnToHome = () => {
