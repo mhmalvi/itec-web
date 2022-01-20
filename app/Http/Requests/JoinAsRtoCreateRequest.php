@@ -2,9 +2,10 @@
 
 namespace App\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Mail\JoinAsRtoMail;
+use Illuminate\Support\Facades\Mail;
 
-class JoinAsRtoCreateRequest extends FormRequest
+class JoinAsRtoCreateRequest extends MailsRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -30,5 +31,14 @@ class JoinAsRtoCreateRequest extends FormRequest
             'email' => "required|email|max:125",
             'rto_name' => "required|max:125|alpha_num",
         ];
+    }
+
+    public function send()
+    {
+        Mail::to('asm.zakaria120@gmail.com')->send(
+            new JoinAsRtoMail(
+                $this->validated()
+            )
+        );
     }
 }

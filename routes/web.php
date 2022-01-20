@@ -51,7 +51,6 @@ Route::post('check-your-rpl-eligibility', 'MailsController@rplRequest');
 Route::post('subscribe', 'MailsController@subscribe');
 Route::post('join-as-rto-partner', 'MailsController@rtoPartner');
 
-
 Route::get('{File}/Download', 'PagesController@downloadFile')->name('file.download');
 Route::get('testMail', 'MailsController@testMail');
 
