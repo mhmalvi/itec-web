@@ -65,7 +65,7 @@
                 <tbody>
                     <tr>
                         <td colspan="2" align="center">
-                            <h2 style="color: #CD4236;">Request For becoming an RTO partner.</h2>
+                            <h2 style="color: #CD4236;">Request For RTO partner.</h2>
                         </td>
                     </tr>
                     <tr>

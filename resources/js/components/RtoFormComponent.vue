@@ -123,10 +123,10 @@ export default {
       axios
         .post("join-as-rto-partner", state.form)
         .then((res) => {
-          console.log(res);
+          location.href = "/";
         })
         .catch((error) => {
-          console.log(error.response.data);
+          console.error(error.response.data.errors);
         })
         .finally(() => {
           isSubmit.value = true;
