@@ -265,23 +265,39 @@
                     <div class="rto-slider" data-aos="fade-up">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img class="lazyload" data-src="{{ asset('images/rto/UCT.webp') }}" alt="Image">
+                                <img class="lazyload" data-src="{{ asset('images/rto/uct.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img class="lazyload" data-src="{{ asset('images/rto/BRIGHT.webp') }}" alt="Image" style="max-width: 120px !important;">
+                                <img class="lazyload" data-src="{{ asset('images/rto/bright.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img class="lazyload" data-src="{{ asset('images/rto/NTA.webp') }}" alt="Image" style="max-width: 300px !important;">
+                                <img class="lazyload" data-src="{{ asset('images/rto/nta.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img class="lazyload" data-src="{{ asset('images/rto/ATR.webp') }}" alt="Image" style="max-width: 170px !important;">
+                                <img class="lazyload" data-src="{{ asset('images/rto/atr.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                             <div class="swiper-slide">
-                                <img class="lazyload" data-src="{{ asset('images/rto/alpha.webp') }}" alt="Image" style="max-width: 170px !important;">
+                                <img class="lazyload" data-src="{{ asset('images/rto/aibt.webp') }}" alt="Image" width="150px" height="150px">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img class="lazyload" data-src="{{ asset('images/rto/lead.webp') }}" alt="Image" width="150px" height="150px">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img class="lazyload" data-src="{{ asset('images/rto/via.webp') }}" alt="Image" width="150px" height="150px">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img class="lazyload" data-src="{{ asset('images/rto/rockford.webp') }}" alt="Image" width="150px" height="150px">
+                            </div>
+                            <!-- end swiper-slide -->
+                            <div class="swiper-slide">
+                                <img class="lazyload" data-src="{{ asset('images/rto/tkl.webp') }}" alt="Image" width="150px" height="150px">
                             </div>
                             <!-- end swiper-slide -->
                         </div>
