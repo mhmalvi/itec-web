@@ -1,11 +1,6 @@
 <template>
   <div>
     <form @submit.prevent="handleFormSubmit">
-      <!-- <div class="form-group">
-        <div class="alert alert-danger" v-if="validation.message">
-          {{ validation.message }}
-        </div>
-      </div> -->
       <div class="form-group">
         <div class="row">
           <div class="col-md-6">
@@ -15,6 +10,14 @@
               placeholder="First name"
               v-model="state.form.first_name"
             />
+            <small
+              class="text-danger"
+              v-if="
+                state.validation.errors && state.validation.errors.first_name
+              "
+            >
+              {{ state.validation.errors.first_name[0] }}
+            </small>
           </div>
           <div class="col-md-6 mt-md-0 mt-3">
             <input
@@ -23,6 +26,14 @@
               placeholder="Last name"
               v-model="state.form.last_name"
             />
+            <small
+              class="text-danger"
+              v-if="
+                state.validation.errors && state.validation.errors.last_name
+              "
+            >
+              {{ state.validation.errors.last_name[0] }}
+            </small>
           </div>
         </div>
       </div>
@@ -36,6 +47,12 @@
               placeholder="Phone"
               v-model="state.form.phone"
             />
+            <small
+              class="text-danger"
+              v-if="state.validation.errors && state.validation.errors.phone"
+            >
+              {{ state.validation.errors.phone[0] }}
+            </small>
           </div>
           <div class="col-md-6 mt-md-0 mt-3">
             <input
@@ -44,6 +61,12 @@
               placeholder="Email"
               v-model="state.form.email"
             />
+            <small
+              class="text-danger"
+              v-if="state.validation.errors && state.validation.errors.email"
+            >
+              {{ state.validation.errors.email[0] }}
+            </small>
           </div>
         </div>
       </div>
@@ -55,10 +78,16 @@
           placeholder="RTO Name"
           v-model="state.form.rto_name"
         />
+        <small
+          class="text-danger"
+          v-if="state.validation.errors && state.validation.errors.rto_name"
+        >
+          {{ state.validation.errors.rto_name[0] }}
+        </small>
       </div>
 
       <button type="submit">
-        <i class="fas fa-circle-notch fa-spin mr-2" v-if="state.isSubmit"></i>
+        <i class="fas fa-circle-notch fa-spin mr-2" v-show="!isSubmit"></i>
         Submit
       </button>
     </form>
@@ -84,26 +113,30 @@ export default {
         errors: {},
         message: "",
       },
-      isSubmit: false,
     });
 
+    const isSubmit = ref(true);
+
     const handleFormSubmit = () => {
+      isSubmit.value = false;
+
       axios
         .post("join-as-rto-partner", state.form)
         .then((res) => {
-          console.log(res);
+          location.href = "/";
         })
         .catch((error) => {
-          console.log(error);
+          console.error(error.response.data.errors);
         })
         .finally(() => {
-          console.log("do something");
+          isSubmit.value = true;
         });
     };
 
     return {
       state,
       handleFormSubmit,
+      isSubmit,
     };
   },
 };

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\AppointmentRequest;
+use App\Http\Requests\JoinAsRtoCreateRequest;
 use App\Http\Requests\RplFormRequest;
 use App\Jobs\SendEmailJob;
 use App\Mail\ApplyMail;
@@ -102,8 +103,19 @@ class MailsController extends Controller
     /**
      * Join As Rto Partner
      */
-    public function rtoPartner(Request $request)
+    public function rtoPartner(JoinAsRtoCreateRequest $request)
     {
-        dd($request->all());
+        try {
+            $request->send();
+
+            return response()->json([
+                'message' => "Successfully sent the email request!",
+            ], 201);
+        } catch (\Throwable $th) {
+            return response()->json([
+                'message' => "Something went wrong! Please try again later.",
+                'error' => $th->getMessage(),
+            ], 500);
+        }
     }
 }
