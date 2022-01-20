@@ -353,23 +353,6 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam.
-                                    </blockquote>
-                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/4.webp') }}"
-                                            alt="Image">
-                                        <div class="reviewer-infos">
-                                            <h6>Audrey De La Rue</h6>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <blockquote>
                                         Consulting with ITEC was pure pleasure! They were friendly and concerned. I was so glad I chose them to help me with my higher study.
                                     </blockquote>
                                     <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/5.webp') }}"
