@@ -74,7 +74,7 @@ class RplFormRequest extends MailsRequest
             'qus3' => $this['q8'],
             'qus4' => $this['q9'],
             'qus5' => $this['q10'],
-            'remark' => $this['remark'],
+            'remark' => $this['remarks'],
         ];
 
         RplEligibilityRequest::create($data);
