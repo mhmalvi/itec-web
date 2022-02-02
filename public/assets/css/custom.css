@@ -975,3 +975,43 @@ input[type="radio"]:checked ~ label {
 .img-bg-9 {
     background-image: url(../../images/BG/rpl-bg.webp);
 }
+
+.rpl-check-section {
+    background-color: #cd4236;
+    width: 100%;
+}
+
+.check-rpl-link
+{
+    height: 45px;
+    border: 1px solid #cd4236 !important;
+    background: #cd4236 !important;
+    color: #fff;
+    padding: 20px 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.check-rpl-link:hover {
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #cd4236;
+    text-decoration: none;
+}
+
+.check-rpl-link-2 {
+    height: 45px;
+    border: 1px solid #1C375B !important;
+    background: #1C375B !important;
+    color: #fff;
+    padding: 20px 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.check-rpl-link-2:hover {
+    background-color: #fff !important;
+    border-color: #fff !important;
+    color: #1C375B;
+    text-decoration: none;
+}
