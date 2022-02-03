@@ -37,16 +37,147 @@
                 <div class="col-12 px-4">
                     <h2>Qualification Description</h2>
                     <p>
-                        This qualification reflects the role of workers in the community and/or residential setting who follow an individualised plan to provide person-centred support to people who may require support due to ageing, disability or some other reason. Work involves using discretion and judgement in relation to individual support as well as taking responsibility for own outputs. Workers have a range of factual, technical and procedural knowledge, as well as some theoretical knowledge of the concepts and practices required to provide person-centred support.
+                        This qualification reflects the role of individuals who service, diagnose and repair electrical systems and components in vehicles in the automotive electrical service and repair industry.
+                    </p>
+                    <h2>Entry Requirements</h2>
+                    <p>
+                        This qualification may be accessed by direct entry.
                     </p>
                     <p>
-                        To achieve this qualification, the candidate must have completed at least 120 hours of work as detailed in the Assessment Requirements of the units of competency.
+                        No licensing, legislative or certification requirements apply to this qualification at the time of publication.
+                    </p>
+
+                    <h2>Packaging Rules</h2>
+                    <p>
+                        Total number of units = 32
                     </p>
                     <p>
-                        <i>
-                            No licensing, legislative, regulatory or certification requirements apply to this qualification at the time of publication.
-                        </i>
+                        20  core units, plus
                     </p>
+                    12  elective units, of which:
+                    <ul>
+                        <li>
+                            up to 12  units may be chosen from the Elective Units listed below
+                        </li>
+                        <li>
+                            up to 6  units may be chosen from a Certificate II qualification or above in this Training Package or another endorsed Training Package or accredited course, provided that the units chosen contribute to the vocational outcome of this qualification and do not duplicate the outcome of another unit chosen for the qualification.
+                        </li>
+                    </ul>
+                    <h3>Core Units </h3>
+                    <ul>
+                        <li>
+                            AURAEA002 - Follow environmental and sustainability best practice in an automotive workplace
+                        </li>
+                        <li>
+                            AURASA002 - Follow safe working practices in an automotive workplace
+                        </li>
+                        <li>
+                            AURETK002 - Use and maintain electrical test equipment in an automotive workplace
+                        </li>
+                        <li>
+                            AURETR006 - Solder electrical wiring and circuits
+                        </li>
+                        <li>
+                            AURETR007 - Apply knowledge of automotive electrical circuits and wiring systems
+                        </li>
+                        <li>
+                            AURETR009 - Install vehicle lighting and wiring systems
+                        </li>
+                        <li>
+                            AURETR010 - Repair wiring harnesses and looms
+                        </li>
+                        <li>
+                            AURETR012 - Test and repair basic electrical circuits
+                        </li>
+                        <li>
+                            AURETR023 - Diagnose and repair spark ignition engine management systems
+                        </li>
+                        <li>
+                            AURETR024 - Diagnose and repair compression ignition engine management systems
+                        </li>
+                        <li>
+                            AURETR025 - Test, charge and replace batteries and jump-start vehicles
+                        </li>
+                        <li>
+                            AURETR027 - Install ancillary electronic systems and components
+                        </li>
+                        <li>
+                            AURETR028 - Diagnose and repair instruments and warning systems
+                        </li>
+                        <li>
+                            AURETR029 - Diagnose and repair charging systems
+                        </li>
+                        <li>
+                            AURETR030 - Diagnose and repair starting systems
+                        </li>
+                        <li>
+                            AURETR031 - Diagnose and repair ignition systems
+                        </li>
+                        <li>
+                            AURETR032 - Diagnose and repair automotive electrical systems
+                        </li>
+                        <li>
+                            AURETR035 - Apply knowledge of petrol and diesel engine operation
+                        </li>
+                        <li>
+                            AURETR043 - Diagnose and repair electronic body management systems
+                        </li>
+                        <li>
+                            AURTTA018 - Carry out diagnostic procedures
+                        </li>
+                    </ul>
+
+                    <h3>Elective Units</h3>
+                    <ul>
+                        <li>
+                            AURAFA003 - Communicate effectively in an automotive workplace
+                        </li>
+                        <li>
+                            AURAKA002 - Adapt work processes to new technologies in an automotive workplace
+                        </li>
+                        <li>
+                            AURAMA001 - Work effectively with others in an automotive workplace
+                        </li>
+                        <li>
+                            AURAMA002 - Communicate business information in an automotive workplace
+                        </li>
+                        <li>
+                            AURAQA002 - Inspect technical quality of work in an automotive workplace
+                        </li>
+                        <li>
+                            AURAQA003 - Maintain quality processes in an automotive workplace
+                        </li>
+                        <li>
+                            AURATA004 - Provide technical guidance
+                        </li>
+                        <li>
+                            AURATA005 - Estimate and quote automotive mechanical and electrical repairs
+                        </li>
+                        <li>
+                            AURETB001 - Diagnose and repair electric braking systems
+                        </li>
+                        <li>
+                            AURETD011 - Diagnose and repair electronically controlled steering systems
+                        </li>
+                        <li>
+                            AURETH001 - Depower and reinitialise battery electric vehicles
+                        </li>
+                        <li>
+                            AURETH002 - Service and maintain battery electric vehicles (Prerequisite unit AURETH001)
+                        </li>
+                        <li>
+                            AURETH011 - Depower and reinitialise hybrid electric vehicles
+                        </li>
+                        <li>
+                            AURETR005 - Install automotive security systems and components
+                        </li>
+                        <li>
+                            AURETR008 - Remove and replace electrical units and assemblies
+                        </li>
+                        <li>
+                            AURETR011 - Install basic ancillary electrical systems and components
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!-- end row -->
