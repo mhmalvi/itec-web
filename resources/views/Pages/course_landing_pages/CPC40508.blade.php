@@ -35,24 +35,615 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 px-4">
-                    <h2>Qualification Description</h2>
+                    <h2>Description</h2>
                     <p>
-                        This qualification reflects the role of workers in the community and/or residential setting who follow an individualised plan to provide person-centred support to people who may require support due to ageing, disability or some other reason. Work involves using discretion and judgement in relation to individual support as well as taking responsibility for own outputs. Workers have a range of factual, technical and procedural knowledge, as well as some theoretical knowledge of the concepts and practices required to provide person-centred support.
+                        This qualification is designed to meet the needs of site managers and supervisors in the building and construction industry.
                     </p>
                     <p>
-                        To achieve this qualification, the candidate must have completed at least 120 hours of work as detailed in the Assessment Requirements of the units of competency.
+                        Occupational titles may include:
                     </p>
                     <p>
                         <i>
-                            No licensing, legislative, regulatory or certification requirements apply to this qualification at the time of publication.
+                            Building site manager
                         </i>
+                        <li>
+                            Building site supervisor.
+                        </li>
                     </p>
+
+                    <p>The qualification has core unit of competency requirements that cover common skills for the construction industry.</p>
+
+                    <p>The construction industry strongly affirms that training and assessment leading to recognition of skills must be undertaken in a real or very closely simulated workplace environment and this qualification requires all units of competency to be delivered in this context.</p>
+
+                    <p>Completion of the general induction training program specified by the National Code of Practice for Induction Training for Construction Work (ASCC 2007) is required before entering a construction work site. Achievement of unit CPCCOHS1001A covers this requirement.</p>
+
+                    <p>Additional units of competency may be required to meet builder registration requirements in various States and Territories.</p>
+
+                    <h5>Pathways information</h5>
+                    <p>
+                        This qualification is suitable for an Australian Apprenticeship pathway.
+                    </p>
+
+                    <h2>Pathways Information</h2>
+                    <p>Not applicable.</p>
+
+                    <h2>Licensing/Regulatory Information</h2>
+                    <p>Check with relevant state and territory licensing and regulatory authorities. State and territory jurisdictions may have different regulatory requirements.</p>
+
+                    <h2>Entry Requirements</h2>
+                    <p>Not applicable.</p>
+
+                    <h2>Employability Skills Summary</h2>
+
+                    <table class="table table-bordered text-white">
+                        <tbody>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" width="224">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Employability skill</strong>&nbsp;</p>
+                                </td>
+                                <td style="border:0;;vertical-align: top;" width="722">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Industry/enterprise requirements for this qualification include:</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" width="224">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Communication</strong>&nbsp;</p>
+                                </td>
+                                <td style="border:0;;vertical-align: top;" width="722"><ul class="ait13"><li>Communicates work health and safety (WHS) policies and procedures</li>
+                                <li>Participates in ensuring compliance with standards, regulations and policies</li>
+                                <li>Communicates effectively with a range of relevant parties through a range of media</li>
+                                <li>Establishes on-site communication systems</li>
+                                <li>Facilitates site meetings</li>
+                                <li>Articulates complex ideas clearly</li>
+                                <li>Interprets a range of complex and technical documents, including relevant regulatory, legislative, licensing and registration requirements, codes and standards, plans, drawings and specifications, contracts, schedules, site files, development approvals, and organisational policies and procedures</li>
+                                <li>Analyses and evaluates reports and reference materials</li>
+                                <li>Understands relevant definitions, terminology, symbols and language</li>
+                                <li>Maintains and checks logs, records and documents</li>
+                                <li>Prepares a range of documents, including construction contracts, plans, sketches and drawings and specifications, reports, tenders, schedules, building applications and submissions and file notes</li>
+                                <li>Reports and records hazards and risks</li>
+                                <li>Negotiates conflict and dispute resolution</li>
+                                <li>Analyses a range of data, including company and stakeholder resource consumption and waste product volumes</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" width="224">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Teamwork</strong>&nbsp;</p>
+                                </td>
+                                <td style="border:0;;vertical-align: top;" width="722"><ul class="ait13"><li>Conducts briefings with team members</li>
+                                <li>Coordinates a range of team members and activities</li>
+                                <li>Keeps team informed of work practices, quality requirements and required actions</li>
+                                <li>Relates positively to fellow workers and the management team</li>
+                                <li>Relates to people from diverse social, cultural and ethnic backgrounds and with varying physical and mental abilities</li>
+                                <li>Seeks expert advice where appropriate</li>
+                                <li>Works collaboratively with relevant stakeholders</li>
+                                <li>Understands various stakeholders’ roles</li>
+                                <li>Supervises and checks others’ work, monitors work processes and ensures safe work practices</li>
+                                <li>Discusses ideas with team members</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" width="224">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Problem solving</strong>&nbsp;</p>
+                                </td>
+                                <td style="border:0;;vertical-align: top;" width="722"><ul class="ait13"><li>Assesses structural integrity of residential and commercial low rise buildings</li>
+                                <li>Performs various calculations relating to estimating resource acquisition and costs, rise and fall amounts measurement of levels, heights and gradients, structural analysis, drawing dimensions, setting out of construction projects, comparisons of alternative water management systems, waste management minimisation strategies and thermal efficiency, rated capacity and working load limits and budgeting and forecasting</li>
+                                <li>Examines tools and equipment prior to use for damage, missing components or other defects</li>
+                                <li>Identifies and rectifies faults</li>
+                                <li>Responds effectively to hazards, risks and emergencies</li>
+                                <li>Analyses problems and applies appropriate remedial solutions</li>
+                                <li>Resolves business disputes</li>
+                                <li>Deals with customer complaints and disputes</li>
+                                <li>Analyses rejected building applications and determines the likely success of an appeal or a resubmission</li>
+                                <li>Devises approaches, implements and reflects on environmental and water, energy and resource efficiency management policies and procedures relevant to work site to improve environmental sustainability and shares alternative approaches as required</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" width="224">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Initiative and enterprise</strong>&nbsp;</p>
+                                </td>
+                                <td style="border:0;;vertical-align: top;" width="722"><ul class="ait13"><li>Evaluates properties of construction materials and selects appropriate materials based on evaluation</li>
+                                <li>Develops compliant, alternative solutions to construction problems</li>
+                                <li>Assesses thermal efficiency of buildings and reviews design solutions for effectiveness and compliance</li>
+                                <li>Identifies risks and hazards</li>
+                                <li>Identifies opportunities for improved water management</li>
+                                <li>Evaluates effective strategies for insulating structures</li>
+                                <li>Develops waste management strategies and dispute resolution procedures</li>
+                                <li>Identifies environmental and resource efficiency improvements, applies knowledge about resource use to organisational activities and customer service and develops resource efficiency tools</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" width="224">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Planning and organising</strong>&nbsp;</p>
+                                </td>
+                                <td style="border:0;;vertical-align: top;" width="722"><ul class="ait13"><li>Plans and coordinates various work operations</li>
+                                <li>Prepares project schedules</li>
+                                <li>Participates in effective implementation of organisation's operational plans</li>
+                                <li>Plans and organises on-site activities and implements procedures associated with building and construction work</li>
+                                <li>Identifies and organises resource requirements and obtains supply information</li>
+                                <li>Supervises various administrative and work processes, including claims and payments, insurance coverage, payroll systems and tax systems</li>
+                                <li>Collects, analyses and organises workplace information and data</li>
+                                <li>Plans and organises inspections</li>
+                                <li>Organises testing of construction materials to ensure suitability</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" width="224">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Self management</strong>&nbsp;</p>
+                                </td>
+                                <td style="border:0;;vertical-align: top;" width="722"><ul class="ait13"><li>Manages own performance to ensure required levels of service standards, work quality and professional competence</li>
+                                <li>Manages work priorities and professional development</li>
+                                <li>Uses feedback to improve own performance</li>
+                                <li>Organises and completes daily work activities</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" width="224">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Learning</strong>&nbsp;</p>
+                                </td>
+                                <td style="border:0;;vertical-align: top;" width="722"><ul class="ait13"><li>Is open to new ideas and techniques</li>
+                                <li>Seeks feedback on personal performance</li>
+                                <li>Uses information effectively to improve work performance</li>
+                                <li>Learns from colleagues as part of effective teamwork</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" width="224">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Technology</strong>&nbsp;</p>
+                                </td>
+                                <td style="border:0;;vertical-align: top;" width="722"><ul class="ait13"><li>Operates office equipment</li>
+                                <li>Uses computer equipment and relevant software</li>
+                                <li>Uses cameras</li>
+                                <li>Assesses new and emerging technologies for application to construction processes</li>
+                                <li>Uses a range of tools and equipment, including technical instruments and surveying equipment</li>
+                                <li>Maintains tools and equipment as required</li>
+                                <li>Uses technology to improve efficiency and effectiveness of managing work</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Packaging Rules</h2>
+                    <p>To achieve this qualification, the candidate must demonstrate competency in:</p>
+
+                    <ul>
+                        <li>15 units of competency:</li>
+                        <ul>
+                            <li>9 core units</li>
+                            <li>6 elective units.</li>
+                        </ul>
+                    </ul>
+
+                    <p>
+                        The elective units must ensure the integrity of the AQF alignment and contribute to a valid, industry-supported vocational outcome and are to be chosen as follows:
+                    </p>
+
+                    <ul>
+                        <li>all six elective units may be selected from the elective units listed below</li>
+                        <li>two of the six elective units may be selected from a Certificate IV qualification in another endorsed Training Package or from CPC08 Construction, Plumbing and Services Training Package</li>
+                        <li>one of the six elective units may be selected from either Certificate III or Diploma level.</li>
+                    </ul>
+
+                    <p>Some units in this qualification may have prerequisite requirements, which must be met when packaging the qualification. Users are referred to the list of CPC08 units with prerequisite unit requirements available in this Training Package for this purpose.</p>
+
+                    <h5>Core units</h5>
+                    <table class="ait-table" width="943">
+                        <tbody>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">BSBWOR402A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Promote team effectiveness</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">CPCCBC4001A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Apply building codes and standards to the construction process for low rise building projects</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">CPCCBC4002A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Manage occupational health and safety in the building and construction workplace</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">CPCCBC4007A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Plan building or construction work</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">CPCCBC4008B</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Conduct on-site supervision of building and construction projects</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">CPCCBC4009B</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Apply legal requirements to building and construction projects</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">CPCCBC4010B</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Apply structural principles to residential low rise constructions</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">CPCCBC4011B</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Apply structural principles to commercial low rise constructions</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">CPCCBC4012B</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Read and interpret plans and specifications</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 1px solid #333333;border-bottom: 0px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 1px solid #333333;border-bottom: 0px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 0px solid #333333;border-bottom: 1px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Elective units </strong>&nbsp;</p>
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBCUS301</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Deliver and monitor a service to customers</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBITU201</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Produce simple word processed documents</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBITU202</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Create and use spreadsheets</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBITU301</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Create and use databases</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBMGT403</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Implement continuous improvement</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBPMG404A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Apply quality management techniques</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBPMG407A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Apply risk management techniques</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBPMG522</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Undertake project work</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBLDR402</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Lead effective workplace relationships</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">BSBWRT401</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Write complex documents</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4005A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Produce labour and material schedules for ordering</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4014A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Prepare simple building sketches and drawings</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4015A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Prepare specifications for all construction works</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4017A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Arrange resources and prepare for the building or construction project</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4018A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Apply site surveys and set-out procedures to building and construction projects</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4019A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Apply sustainable building design principles to water management systems</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4020A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Build thermally efficient and sustainable structures</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4021A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Minimise waste on the building and construction site</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4024A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Resolve business disputes</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4026A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Arrange building applications and approvals</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4028A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Prepare design brief for construction works</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCBC4051A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Supervise asbestos removal</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCCO4001A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Supervise concreting work</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCCWHS1001</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Prepare to work safely in the construction industry</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">CPCSUS4001A</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Implement and monitor environmentally sustainable work practices</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <p class="
+                                        ait4">HLTHIR403C</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <p class="
+                                        ait4">Work effectively with culturally diverse clients and co-workers</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <p class="
+                                        ait4">TAEDEL402</p>
+                                </td>
+                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <p class="
+                                        ait4">Plan, organise and facilitate learning in the workplace</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <!-- end row -->
         </div>
         <!-- end container -->
     </section>
+
     <section class="pb-5 rpl-check-section">
         <div class="container">
             <div class="row">
@@ -95,7 +686,6 @@
                             <div class="card-body">
                                 <h5>Qualification Name:</h5>
                                 <p>
-                                    CPC40508<br />
                                     Certificate IV in Building and Construction (Site Management)
                                 </p>
 
@@ -108,20 +698,6 @@
                                 <p>
                                     Within four weeks of receiving sufficient and complying evidence of competency in all applied for units of competency.
                                 </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card rounded-0">
-                          <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                    <h4>Let us certify your skills:</h4>
-                                </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-
                             </div>
                           </div>
                         </div>

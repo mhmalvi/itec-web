@@ -12,6 +12,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-lg-9">
+                        <p class="text-light">RTO - ACHIEVEMENT INSTITUTE AUSTRALIA (AIA) PTY LTD (45667)</p>
                         <h2 class="section-title text-light">SIT30813</h2>
                         <h2 class="section-title text-light">Certificate III in Commercial Cookery</h2>
                     </div>
@@ -35,18 +36,268 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 px-4">
-                    <h2>Qualification Description</h2>
+                    <h2>Description</h2>
                     <p>
-                        This qualification reflects the role of workers in the community and/or residential setting who follow an individualised plan to provide person-centred support to people who may require support due to ageing, disability or some other reason. Work involves using discretion and judgement in relation to individual support as well as taking responsibility for own outputs. Workers have a range of factual, technical and procedural knowledge, as well as some theoretical knowledge of the concepts and practices required to provide person-centred support.
+                        This qualification reflects the role of commercial cooks who use a wide range of cookery skills. They use discretion and judgement and have a sound knowledge of kitchen operations. They work with some independence and under limited supervision and may provide operational advice and support to team members.
                     </p>
                     <p>
-                        To achieve this qualification, the candidate must have completed at least 120 hours of work as detailed in the Assessment Requirements of the units of competency.
+                        This qualification is suitable for an Australian Apprenticeship pathway.
                     </p>
+                    <h5>Job roles</h5>
+                    <p>This qualification provides a pathway to work as a commercial cook in organisations such as restaurants, hotels, clubs, pubs, cafes, cafeterias and coffee shops.</p>
+                    <p>Possible job title includes:</p>
+                    <ul>
+                        <li>cook.</li>
+                    </ul>
+
+                    <h2>Pathways Information</h2>
+                    <h5>Pathways into the qualification </h5>
+
+                    <p>Individuals may enter SIT30813 Certificate III in Commercial Cookery with limited or no vocational experience and without a lower level qualification.</p>
+
+                    <h5>Pathways from the qualification</h5>
+
                     <p>
-                        <i>
-                            No licensing, legislative, regulatory or certification requirements apply to this qualification at the time of publication.
-                        </i>
+                        After achieving SIT30813 Certificate III in Commercial Cookery, individuals could progress to SIT40413 Certificate IV in Commercial Cookery, SIT40613 Certificate IV in Catering Operations or SIT40713 Certificate IV in Patisserie.
                     </p>
+
+                    <h2>Licensing/Regulatory Information</h2>
+
+                    <p>No licensing, legislative, regulatory or certification requirements apply to this qualification at the time of endorsement.</p>
+
+                    <h2>Entry Requirements</h2>
+                    <p>There are no entry requirements for this qualification.</p>
+
+                    <h2>Employability Skills Summary</h2>
+
+                    <table class="table table-bordered text-white">
+                        <tbody>
+                            <tr>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Employability Skill</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Industry/enterprise requirements for this qualification include:</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Communication</p>
+                                </td>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Interpreting food preparation lists and discussing with colleagues and supervisors to determine the operational requirements of the service period; interpreting verbal and written information about recipes, menu items and customer meal requirements to ensure a quality dining experience; negotiating acceptable solutions to operational service difficulties and customer complaints.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Initiative and enterprise</p>
+                                </td>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Identifying and suggesting ways to improve kitchen operations and service efficiency; generating and suggesting ideas for new or improved recipes and menu items.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Learning</p>
+                                </td>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Knowing own product knowledge and cookery skill strengths and weaknesses, being aware of opportunities to learn and participating in commercial cookery professional development activities; seeking and sharing information with colleagues on new food trends, products, services and suppliers; coaching others in job skills.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Planning and organising</p>
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Collecting, analysing and organising food preparation lists, recipes, menus and procedural information to efficiently plan the production of meals for the service period; collecting and analysing information to meet the specific needs of the customer group; setting timelines, organising own work flow to produce and serve meals to meet operational, customer requirements and service standards of the hospitality business; adjusting timelines and pacing food production throughout the service period to meet changing customer traffic requirements.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Problem-solving</p>
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Anticipating problems that may arise with kitchen operational and service activities; mitigating problems by planning kitchen operational activities; identifying and clarifying the extent of problems; taking responsibility for solving operational and service issues; referring high-level problems to supervisors and participating in the solution; using discretion and judgement as well as predetermined policies and procedures to guide solutions to operational problems in the kitchen.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Self-management</p>
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Understanding and following policies and procedures for legal compliance; organising own work priorities to produce meals for the service period; taking responsibility for own job role in servicing the hospitality customer and for resolving operational problems in the kitchen; thinking about own work performance and seeking feedback and guidance on success in cooking activities.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Teamwork</p>
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Working as a skilled team member to deliver the quality service goals of the hospitality business; taking responsibility for own role in kitchen operations; working collaboratively as a team member by giving and receiving instructions and providing feedback and assistance to other team members; providing guidance and instruction to assistant or trainee kitchen team members.</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Technology</p>
+                                </td>
+                                <td style="" width="552">
+                                <p class="
+                                        ait4">Understanding the operating capability of, selecting and using kitchen tools and equipment, computer systems, software and information systems that assist in commercial cookery activities; selecting and using the right personal protective equipment to manage personal safety in the kitchen.</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Packaging Rules</h2>
+
+                    <p>25 units must be completed:</p>
+                    <ul>
+                        <li>
+                            22 core units
+                        </li>
+                        <li>
+                            3 elective units, consisting of:
+                        </li>
+                        <ul>
+                            <li>
+                                3 units from the list below, elsewhere in SIT12 Training Package, or any other current Training Package or accredited course.
+                            </li>
+                        </ul>
+                    </ul>
+
+                    <p>The selection of electives must be guided by the job outcome sought, local industry requirements and the complexity of skills appropriate to the AQF level of this qualification.</p>
+
+                    <h5>Core units</h5>
+                        <P class="">BSBSUS201A Participate in environmentally sustainable work practices</P>
+                        <P class="">BSBWOR203B Work effectively with others</P>
+                        <P class="">HLTAID003 Provide first aid</P>
+                        <P class="">SITHCCC101 Use food preparation equipment *</P>
+                        <P class="">SITHCCC201 Produce dishes using basic methods of cookery *</P>
+                        <P class="">SITHCCC202 Produce appetisers and salads *</P>
+                        <P class="">SITHCCC203 Produce stocks<STRONG class="">, </STRONG>&nbsp;sauces<STRONG class=""></STRONG>&nbsp;and<STRONG class=""></STRONG>&nbsp;soups<STRONG class=""></STRONG>&nbsp;*</P>
+                        <P class="">SITHCCC204 Produce vegetable, fruit, egg and farinaceous dishes *</P>
+                        <P class="">SITHCCC301 Produce poultry dishes *</P>
+                        <P class="">SITHCCC302 Produce seafood dishes *</P>
+                        <P class="">SITHCCC303 Produce meat dishes *</P>
+                        <P class="">SITHCCC307 Prepare food to meet special dietary requirements *</P>
+                        <P class="">SITHCCC308 Produce cakes, pastries and breads *</P>
+                        <P class="">SITHCCC309 Work effectively as a cook *</P>
+                        <P class="">SITHKOP101 Clean kitchen premises and equipment *</P>
+                        <P class="">SITHKOP302 Plan and cost basic menus</P>
+                        <P class="">SITHPAT306 Produce desserts *</P>
+                        <P class="">SITXFSA101 Use hygienic practices for food safety</P>
+                        <P class="">SITXFSA201 Participate in safe food handling practices</P>
+                        <P class="">SITXHRM301 Coach others in job skills</P>
+                        <P class="">SITXINV202 Maintain the quality of perishable items *</P>
+                        <P class="">SITXWHS101 Participate in safe work practices</P>
+                        <P class="">*<EM class="&#xA;                ait7">Prerequisite unit is SITXFSA101 Use hygienic practices for food safety</EM></P>
+                        <P class=""></P>
+                        <P class=""><STRONG class="">Elective units</STRONG>&nbsp;</P>
+                        <P class=""><STRONG class="">Administration</STRONG>&nbsp;</P>
+                        <P class="">BSBCMM201A Communicate in the workplace</P>
+                        <P class="">TLIE1005A Carry out basic workplace calculations</P>
+                        <P class=""><STRONG class="">Asian Cookery</STRONG>&nbsp;</P>
+                        <P class="">SITHASC201 Produce dishes using basic methods of Asian cookery *</P>
+                        <P class="">SITHASC202 Produce Asian appetisers and snacks *</P>
+                        <P class="">SITHASC203 Produce Asian stocks and soups *</P>
+                        <P class="">SITHASC204 Produce Asian sauces, dips and accompaniments *</P>
+                        <P class="">SITHASC205 Produce Asian salads *</P>
+                        <P class="">SITHASC206 Produce Asian rice and noodles *</P>
+                        <P class="">SITHASC207 Produce curry pastes and powders *</P>
+                        <P class="">SITHASC301 Produce Asian cooked dishes *</P>
+                        <P class="">SITHASC302 Produce Asian desserts *</P>
+                        <P class="">SITHASC303 Produce Japanese cooked dishes *</P>
+                        <P class="">SITHASC304 Produce sashimi *</P>
+                        <P class="">SITHASC305 Produce sushi *</P>
+                        <P class="">SITHASC306 Produce Japanese desserts *</P>
+                        <P class="">SITHASC307 Produce dim sum *</P>
+                        <P class="">SITHASC308 Produce Chinese roast meat and poultry dishes *</P>
+                        <P class="">SITHASC309 Produce tandoori dishes *</P>
+                        <P class="">SITHASC310 Produce Indian breads *</P>
+                        <P class="">SITHASC311 Produce Indian sweetmeats *</P>
+                        <P class="">SITHASC312 Produce Indian pickles and chutneys *</P>
+                        <P class="">*<EM class="&#xA;                ait7">Prerequisite is SITXFSA101 Use hygienic practices for food safety</EM></P>
+                        <P class=""><STRONG class="">Client and Customer Service</STRONG>&nbsp;</P>
+                        <P class="">SITXCCS303 Provide service to customers</P>
+                        <P class=""><STRONG class="">Commercial Cookery and Catering</STRONG>&nbsp;</P>
+                        <P class="">SITHCCC103 Prepare sandwiches *</P>
+                        <P class="">SITHCCC104 Package prepared foodstuffs *</P>
+                        <P class="">SITHCCC205 Produce cook-chill and cook-freeze foods *</P>
+                        <P class="">SITHCCC206 Rethermalise chilled and frozen foods *</P>
+                        <P class="">SITHCCC304 Produce and serve food for buffets *</P>
+                        <P class="">SITHCCC305 Produce pates and terrines *</P>
+                        <P class="">SITHCCC306 Handle and serve cheese *</P>
+                        <P class="">SITHCCC401 Produce specialised food items *</P>
+                        <P class="">*<EM class="&#xA;                ait7">Prerequisite is SITXFSA101 Use hygienic practices for food safety</EM></P>
+                        <P class=""><STRONG class="">Communication and Teamwork</STRONG>&nbsp;</P>
+                        <P class="">SITXCOM101 Source and present information</P>
+                        <P class="">SITXCOM201 Show social and cultural sensitivity</P>
+                        <P class=""><STRONG class="">Computer Operations and ICT Management</STRONG>&nbsp;</P>
+                        <P class="">BSBITU102A Develop keyboard skills</P>
+                        <P class="">BSBITU201A Produce simple word processed documents</P>
+                        <P class="">BSBITU202A Create and use spreadsheets</P>
+                        <P class="">BSBITU306A Design and produce business documents</P>
+                        <P class="">BSBWOR204A Use business technology</P>
+                        <P class=""><STRONG class="">Environmental Sustainability</STRONG>&nbsp;</P>
+                        <P class="">BSBSUS301A Implement and monitor environmentally sustainable work practices</P>
+                        <P class=""><STRONG class="">Food Safety</STRONG>&nbsp;</P>
+                        <P class="">SITXFSA202 Transport and store food</P>
+                        <P class=""><STRONG class="">Inventory</STRONG>&nbsp;</P>
+                        <P class="">SITXINV201 Receive and store stock</P>
+                        <P class="">SITXINV301 Purchase goods</P>
+                        <P class=""><STRONG class="">Kitchen Operations</STRONG>&nbsp;</P>
+                        <P class="">HLTNA303D Plan and modify meals and menus according to nutrition<STRONG class=""></STRONG>&nbsp;care<STRONG class=""></STRONG>&nbsp;plans</P>
+                        <P class=""><STRONG class="">Quality and Innovation</STRONG>&nbsp;</P>
+                        <P class="">BSBINN201A Contribute to workplace innovation</P>
+                        <P class=""><STRONG class="">Work Health and Safety</STRONG>&nbsp;</P>
+                        <P class="">SITXWHS301 Identify hazards, assess and control safety risks</P>
+                        <P class=""><STRONG class="">Working in Industry</STRONG>&nbsp;</P>
+                        <P class="">SITHIND201 Source and use information on the hospitality industry</P>
+                        <P class=""></P>
+                        <P class="">Examples of elective units relevant to specific job outcomes and contexts at this level are as follows:</P>
+                        <P class=""></P>
+                        <P class=""><STRONG class="">Qualified cook in a cafe or small restaurant serving some Asian dishes</STRONG>&nbsp;</P>
+                        <P class="">SITHASC201 Produce dishes using basic methods of Asian cookery</P>
+                        <P class="">SITHASC206 Produce Asian rice and noodles</P>
+                        <P class="">SITHASC301 Produce Asian cooked dishes</P>
+                        <P class=""></P>
+                        <P class=""><STRONG class="">Qualified cook in large restaurant</STRONG>&nbsp;</P>
+                        <P class="">SITHCCC304 Produce and serve food for buffets</P>
+                        <P class="">SITHCCC305 Produce pates and terrines</P>
+                        <P class="">SITHCCC306 Handle and serve cheese</P>
+                        <P class=""></P>
+                        <P class=""><STRONG class="">Qualified cook working in a hospital or aged care facility</STRONG>&nbsp;</P>
+                        <P class="">HLTNA303D Plan and modify meals and menus according to nutrition care plans</P>
+                        <P class="">SITHCCC205A Produce cook-chill and cook-freeze foods</P>
+                        <P class="">SITHCCC206A Rethermalise chilled and frozen foods</P>
+
                 </div>
             </div>
             <!-- end row -->
@@ -95,7 +346,6 @@
                             <div class="card-body">
                                 <h5>Qualification Name:</h5>
                                 <p>
-                                    SIT30813<br />
                                     Certificate III in Commercial Cookery
                                 </p>
 
@@ -108,20 +358,6 @@
                                 <p>
                                     Within four weeks of receiving sufficient and complying evidence of competency in all applied for units of competency.
                                 </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card rounded-0">
-                          <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                    <h4>Let us certify your skills:</h4>
-                                </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-
                             </div>
                           </div>
                         </div>
@@ -190,7 +426,7 @@
                           </div>
                           <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                             <div class="card-body">
-                                <p class="p-4">RTO</p>
+                                <p class="p-4">45667 - ACHIEVEMENT INSTITUTE AUSTRALIA (AIA) PTY LTD</p>
                             </div>
                           </div>
                         </div>

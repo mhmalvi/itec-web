@@ -46,6 +46,11 @@
                     <p>
                         No licensing, legislative or certification requirements apply to this qualification at the time of publication.
                     </p>
+                    <p>
+                        <h5>
+                            You must have licensed electrician who can sign off your reference letter.
+                        </h5>
+                    </p>
 
                     <h2>Packaging Rules</h2>
                     <p>
@@ -63,127 +68,1319 @@
                             up to 6  units may be chosen from a Certificate II qualification or above in this Training Package or another endorsed Training Package or accredited course, provided that the units chosen contribute to the vocational outcome of this qualification and do not duplicate the outcome of another unit chosen for the qualification.
                         </li>
                     </ul>
-                    <h3>Core Units </h3>
-                    <ul>
-                        <li>
-                            AURAEA002 - Follow environmental and sustainability best practice in an automotive workplace
-                        </li>
-                        <li>
-                            AURASA002 - Follow safe working practices in an automotive workplace
-                        </li>
-                        <li>
-                            AURETK002 - Use and maintain electrical test equipment in an automotive workplace
-                        </li>
-                        <li>
-                            AURETR006 - Solder electrical wiring and circuits
-                        </li>
-                        <li>
-                            AURETR007 - Apply knowledge of automotive electrical circuits and wiring systems
-                        </li>
-                        <li>
-                            AURETR009 - Install vehicle lighting and wiring systems
-                        </li>
-                        <li>
-                            AURETR010 - Repair wiring harnesses and looms
-                        </li>
-                        <li>
-                            AURETR012 - Test and repair basic electrical circuits
-                        </li>
-                        <li>
-                            AURETR023 - Diagnose and repair spark ignition engine management systems
-                        </li>
-                        <li>
-                            AURETR024 - Diagnose and repair compression ignition engine management systems
-                        </li>
-                        <li>
-                            AURETR025 - Test, charge and replace batteries and jump-start vehicles
-                        </li>
-                        <li>
-                            AURETR027 - Install ancillary electronic systems and components
-                        </li>
-                        <li>
-                            AURETR028 - Diagnose and repair instruments and warning systems
-                        </li>
-                        <li>
-                            AURETR029 - Diagnose and repair charging systems
-                        </li>
-                        <li>
-                            AURETR030 - Diagnose and repair starting systems
-                        </li>
-                        <li>
-                            AURETR031 - Diagnose and repair ignition systems
-                        </li>
-                        <li>
-                            AURETR032 - Diagnose and repair automotive electrical systems
-                        </li>
-                        <li>
-                            AURETR035 - Apply knowledge of petrol and diesel engine operation
-                        </li>
-                        <li>
-                            AURETR043 - Diagnose and repair electronic body management systems
-                        </li>
-                        <li>
-                            AURTTA018 - Carry out diagnostic procedures
-                        </li>
-                    </ul>
+
+                    <h3>Core Units</h3>
+                    <table class="table table-bordered text-white">
+                        <tbody>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        "><strong class="
+                                        ait24">Unit code</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        "><strong class="
+                                        ait24">Unit title</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "><strong class="
+                                        ait24">Prerequisite unit</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURAEA002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Follow environmental and sustainability best practice in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURASA002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Follow safe working practices in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETK002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Use and maintain electrical test equipment in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR006</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Solder electrical wiring and circuits</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR007</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Apply knowledge of automotive electrical circuits and wiring systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR009</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Install vehicle lighting and wiring systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR010</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Repair wiring harnesses and looms</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR012</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Test and repair basic electrical circuits</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR023</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair spark ignition engine management systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR024</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair compression ignition engine management systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR025</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Test, charge and replace batteries and jump-start vehicles</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR027</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Install ancillary electronic systems and components</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR028</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair instruments and warning systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR029</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair charging systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR030</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair starting systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR031</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair ignition systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR032</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair automotive electrical systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR035</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Apply knowledge of petrol and diesel engine operation</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR043</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair electronic body management systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTA018</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Carry out diagnostic procedures </p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <h3>Elective Units</h3>
-                    <ul>
-                        <li>
-                            AURAFA003 - Communicate effectively in an automotive workplace
-                        </li>
-                        <li>
-                            AURAKA002 - Adapt work processes to new technologies in an automotive workplace
-                        </li>
-                        <li>
-                            AURAMA001 - Work effectively with others in an automotive workplace
-                        </li>
-                        <li>
-                            AURAMA002 - Communicate business information in an automotive workplace
-                        </li>
-                        <li>
-                            AURAQA002 - Inspect technical quality of work in an automotive workplace
-                        </li>
-                        <li>
-                            AURAQA003 - Maintain quality processes in an automotive workplace
-                        </li>
-                        <li>
-                            AURATA004 - Provide technical guidance
-                        </li>
-                        <li>
-                            AURATA005 - Estimate and quote automotive mechanical and electrical repairs
-                        </li>
-                        <li>
-                            AURETB001 - Diagnose and repair electric braking systems
-                        </li>
-                        <li>
-                            AURETD011 - Diagnose and repair electronically controlled steering systems
-                        </li>
-                        <li>
-                            AURETH001 - Depower and reinitialise battery electric vehicles
-                        </li>
-                        <li>
-                            AURETH002 - Service and maintain battery electric vehicles (Prerequisite unit AURETH001)
-                        </li>
-                        <li>
-                            AURETH011 - Depower and reinitialise hybrid electric vehicles
-                        </li>
-                        <li>
-                            AURETR005 - Install automotive security systems and components
-                        </li>
-                        <li>
-                            AURETR008 - Remove and replace electrical units and assemblies
-                        </li>
-                        <li>
-                            AURETR011 - Install basic ancillary electrical systems and components
-                        </li>
-                    </ul>
+                    <table class="table table-bordered text-white">
+                        <tbody>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        "><strong class="
+                                        ait24">Unit code</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        "><strong class="
+                                        ait24">Unit title</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "><strong class="
+                                        ait24">Prerequisite unit</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURAFA003</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Communicate effectively in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURAKA002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Adapt work processes to new technologies in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURAMA001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Work effectively with others in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURAMA002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Communicate business information in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURAQA002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect technical quality of work in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURAQA003</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Maintain quality processes in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURATA004</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Provide technical guidance</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURATA005</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Estimate and quote automotive mechanical and electrical repairs</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETB001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair electric braking systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETD011</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair electronically controlled steering systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETH001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Depower and reinitialise battery electric vehicles</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETH002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Service and maintain battery electric vehicles</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETH001</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETH011</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Depower and reinitialise hybrid electric vehicles</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR005</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Install automotive security systems and components</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR008</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Remove and replace electrical units and assemblies</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR011</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Install basic ancillary electrical systems and components</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR013</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect, test and service charging systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR014</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect, test and service starting systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR015</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect, test and service batteries</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR016</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Read and apply vehicle wiring schematics and drawings</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR017</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Overhaul charging system alternators</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR018</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Overhaul starting system motors</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR019</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect, service and repair AC electric motor drive systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR020</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair network electronic control systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR021</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect, service and repair electronic management, monitoring and tracking systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR022</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair vehicle dynamic control systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR026</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Remove, replace and program electrical and electronic units and assemblies</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR136</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair electronically controlled suspension systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR042</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Remove, refit and operate electrical components following body repair activities</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR044</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair integrated engine and transmission management systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETR045</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect, service and repair DC electric motor drive systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETU001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Install air conditioning systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETU002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Recover vehicle refrigerants</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETU003</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Service air conditioning and HVAC systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETU004</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair air conditioning and HVAC systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETU005</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Retrofit and modify air conditioning and HVAC systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURETU007</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Overhaul air conditioning and HVAC system compressors</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURHTZ001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair heavy vehicle emission control systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURLTB003</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair light vehicle hydraulic braking systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURLTD004</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair light vehicle steering systems </p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURLTD005</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair light vehicle suspension systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURLTE001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Remove and install light vehicle engine assemblies</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURLTE002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair light vehicle engines</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURLTF001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair light vehicle mechanical fuel injection systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURPTR002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Test and service electric outdoor power equipment</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURRTR006</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair marine electrical systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURRTR007</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Install marine electrical systems and components</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTA004</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Carry out servicing operations</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTA005</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Select and use bearings, seals, gaskets, sealants and adhesives</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTA017</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Carry out vehicle safety inspections</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTA021</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose complex system faults</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTB001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect and service braking systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTC003</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair cooling systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTE004</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect and service engines</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTF001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect and service petrol fuel systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTK002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Use and maintain tools and equipment in an automotive workplace</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTL010</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Install LPG, CNG and LNG electrical control equipment</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTW001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Carry out soft soldering techniques</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURTTZ002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Diagnose and repair exhaust systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURVTA002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Remove and replace vehicle supplementary restraint systems</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURVTA004</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Inspect damaged vehicle systems and recommend repairs</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURVTT003</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Remove and replace automotive and marine interior trim components</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURVTW001</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Carry out manual metal arc welding on components</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURVTW002</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Carry out oxyacetylene brazing of components</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURVTW003</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Carry out advanced gas metal arc welding on vehicle body sections</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURVTW004</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Carry out tungsten inert gas welding</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">AURVTW018</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Carry out oxyacetylene welding, thermal heating and cutting</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">BSBINN301</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Promote innovation in a team environment</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">BSBWHS301</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Maintain workplace safety</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="186">
+                                <p class="
+                                        ">TAEDEL301</p>
+                                </td>
+                                <td style="" width="685">
+                                <p class="
+                                        ">Provide work skill instruction</p>
+                                </td>
+                                <td style="" width="186">
+                                <p class="
+                                        "></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <!-- end row -->
         </div>
         <!-- end container -->
     </section>
+
     <section class="pb-5 rpl-check-section">
         <div class="container">
             <div class="row">
@@ -209,6 +1406,7 @@
                 </div>
                 <!-- end col-12 -->
             </div>
+
             <!-- end row -->
             <div class="row justify-content-center my-4 text-light">
                 <div class="col-md-10">
@@ -226,7 +1424,6 @@
                             <div class="card-body">
                                 <h5>Qualification Name:</h5>
                                 <p>
-                                    AUR30316<br />
                                     Certificate III in Automotive Electrical Technology
                                 </p>
 
@@ -237,22 +1434,8 @@
 
                                 <h5>Duration:</h5>
                                 <p>
-                                    Within four weeks of receiving sufficient and complying evidence of competency in all applied for units of competency.
+                                    4 weeks of class. Total 12-14 classes.
                                 </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card rounded-0">
-                          <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                    <h4>Let us certify your skills:</h4>
-                                </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-
                             </div>
                           </div>
                         </div>

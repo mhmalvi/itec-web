@@ -35,24 +35,850 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 px-4">
-                    <h2>Qualification Description</h2>
+                    <h2>Description</h2>
                     <p>
-                        This qualification reflects the role of workers in the community and/or residential setting who follow an individualised plan to provide person-centred support to people who may require support due to ageing, disability or some other reason. Work involves using discretion and judgement in relation to individual support as well as taking responsibility for own outputs. Workers have a range of factual, technical and procedural knowledge, as well as some theoretical knowledge of the concepts and practices required to provide person-centred support.
+                        This qualification provides a trade outcome in carpentry and joinery, covering work in residential and commercial applications.
                     </p>
+
                     <p>
-                        To achieve this qualification, the candidate must have completed at least 120 hours of work as detailed in the Assessment Requirements of the units of competency.
+                        Occupational titles may include:
                     </p>
+
+                    <ul>
+                        <li>
+                            Carpenter and joiner.
+                        </li>
+                    </ul>
+
+                    <p>The qualification has core unit of competency requirements that cover common skills for the construction industry, as well as two specialist fields of work.</p>
+
                     <p>
-                        <i>
-                            No licensing, legislative, regulatory or certification requirements apply to this qualification at the time of publication.
-                        </i>
+                        The construction industry strongly affirms that training and assessment leading to recognition of skills must be undertaken in a real or very closely simulated workplace environment and this qualification requires all units of competency to be delivered in this context.
                     </p>
+
+                    <p>
+                        Completion of the general induction training program specified by the National Code of Practice for Induction Training for Construction Work (ASCC 2007) is required before entering a construction work site. Achievement of unit CPCCOHS1001A covers this requirement.
+                    </p>
+
+                    <h2>
+                        Pathways Information
+                    </h2>
+                    <p>Not applicable.</p>
+
+                    <h2>Licensing/Regulatory Information</h2>
+                    <p>Not applicable.</p>
+
+                    <h2>Entry Requirements</h2>
+                    <p>Not applicable.</p>
+
+                    <h2>Employability Skills Summary</h2>
+                    <table class="table table-bordered text-white">
+                        <tbody>
+                            <tr>
+                                <td style="" width="237">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Employability skill</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="747">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Industry/enterprise requirements for this qualification include:</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="237">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Communication</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="747"><ul class="ait13"><li>Communicates with clients, colleagues and others using effective and appropriate communication techniques, including:</li></ul><ul class="ait14"><li>clear and direct communication</li>
+                                <li>active listening</li>
+                                <li>verbal and non-verbal language</li>
+                                <li>questioning to identify and confirm requirements</li>
+                                <li>language and concepts appropriate to cultural differences</li>
+                                <li>follows instructions from supervisor and other relevant persons</li></ul><ul class="ait13"><li>Understands, interprets and applies information as required from:</li></ul><ul class="ait14"><li>Regulatory, legislative, licensing and organisational requirements</li>
+                                <li>Environmental and OHS requirements, including material safety data sheets (MSDS)</li>
+                                <li>Codes and standards</li>
+                                <li>Plans and drawings</li>
+                                <li>Specifications</li>
+                                <li>Safety signs and symbols</li>
+                                <li>Organisational policies and procedures</li></ul><ul class="ait13"><li>Understands relevant definitions, terminology, symbols, abbreviations and language</li>
+                                <li>Records relevant information using standard workplace documentation</li>
+                                <li>Applies measurements and calculations using appropriate equipment, formulas and records as required</li>
+                                <li>Reports and records hazards and risks</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="237">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Teamwork</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="747"><ul class="ait13"><li>Works as part of a team</li>
+                                <li>Provides assistance and encouragement to other team members</li>
+                                <li>Initiates and encourages improvements in team performance</li>
+                                <li>Identifies and utilises the strengths of other team members</li>
+                                <li>Relates to people from diverse social, cultural and ethnic backgrounds and with varying physical and mental abilities</li>
+                                <li>Coordinates and actions tasks</li>
+                                <li>Participates in on-site meetings</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="237">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Problem solving</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="747"><ul class="ait13"><li>Examines tools and equipment prior to use for damage, missing components or other defects</li>
+                                <li>Identifies typical faults and problems and takes necessary remedial action</li>
+                                <li>Rectifies simple faults with tools and equipment</li>
+                                <li>Performs routine maintenance as required</li>
+                                <li>Checks materials and products for conformity to specifications</li>
+                                <li>Carries out data input adjustments</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="237">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Initiative and enterprise</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="747"><ul class="ait13"><li>Identifies opportunities to improve resource efficiency and makes suggestions as appropriate</li>
+                                <li>Responds to change and workplace challenges</li>
+                                <li>Puts ideas into action</li>
+                                <li>Maximises use of resources by recycling, re-using or using appropriate disposal methods</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="237">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Planning and organising</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="747"><ul class="ait13"><li>Identifies hazards and implements appropriate hazard control measures</li>
+                                <li>Selects and uses appropriate materials, tools and equipment</li>
+                                <li>Determines material quantity requirements</li>
+                                <li>Prioritises and sequences tasks</li>
+                                <li>Applies time management skills to ensure work is completed to time requirements</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="237">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Self management</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="747"><ul class="ait13"><li>Evaluates own actions and makes judgements about performance and necessary improvements</li>
+                                <li>Contributes to workplace responsibilities, such as current work site environmental/sustainability frameworks or management systems</li>
+                                <li>Manages own performance to meet workplace standards</li>
+                                <li>Seeks support to improve work performance</li>
+                                <li>Cleans up work area, including tools and equipment</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="237">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Learning</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="747"><ul class="ait13"><li>Identifies own learning needs and seeks skill development as required</li>
+                                <li>Is open to learning new ideas and techniques</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="237">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Technology</strong>&nbsp;</p>
+                                </td>
+                                <td style="" width="747"><ul class="ait13"><li>Uses calculators</li>
+                                <li>Uses and operates a range of tools and equipment correctly and safely including computer-controlled equipment</li></ul><p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2>Packaging Rules</h2>
+                    <p>To achieve this qualification, the candidate must demonstrate competency in:</p>
+
+                    <ul>
+                        <li>32 units of competency:</li>
+                        <ul>
+                            <li>28 core units</li>
+                            <li>4 elective units.</li>
+                        </ul>
+                    </ul>
+
+                    <p>
+                        A maximum of two of the four required elective units may be substituted by selecting relevant units of competency from any Certificate III or IV construction qualification or qualification in another endorsed Training Package.
+                    </p>
+
+                    <p>
+                        Some units in this qualification may have prerequisite requirements, which must be met when packaging the qualification. Users are referred to the list of CPC08 units with prerequisite unit requirements available in this Training Package for this purpose.
+                    </p>
+
+                    <h5>Core units </h5>
+
+                    <table class="table table-bordered text-white">
+                        <tbody>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4"></p>
+                                <p class="
+                                        ait4">CPCCCA2002B</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Use carpentry tools and equipment</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA2011A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Handle carpentry materials</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3001A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Carry out general demolition of minor building structures</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3002A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Carry out setting out</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3010A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Install and replace windows and doors</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3013A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Install lining, panelling and moulding</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3017B</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Install exterior cladding</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3019A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Erect and dismantle formwork to suspended slabs, columns, beams and walls</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3023A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Carry out levelling operations</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM1012A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Work effectively and sustainably in the construction industry</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM1013A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Plan and organise work</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM1014A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Conduct workplace communication</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM1015A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Carry out measurements and calculations</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM2001A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Read and interpret plans and specifications</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM2007B</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Use explosive power tools</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM2008B</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Erect and dismantle restricted height scaffolding</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM2010B</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Work safely at heights</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCO2013A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Carry out concreting to simple forms</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCOHS2001A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Apply OHS requirements, policies and procedures in the construction industry</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 1px solid #333333;border-bottom: 0px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Construction and erection of frames, trusses, eaves and roofs field of work</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 0px solid #333333;border-bottom: 1px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCCA3003A</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Install flooring systems</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCCA3004A</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Construct wall frames</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCCA3005B</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Construct ceiling frames</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCCA3006B</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Erect roof trusses</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCCA3007C</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Construct pitched roofs</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCCA3008B</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Construct eaves</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 1px solid #333333;border-bottom: 0px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Joinery - machining and component manufacture and assembly field of work</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 0px solid #333333;border-bottom: 1px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCJN3001A</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Use static machines</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCJN3003A</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Manufacture components for door and window frames and doors</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCJN3004A</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Manufacture joinery components</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 1px solid #333333;border-bottom: 0px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Elective units</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Carpentry installation field of work</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 0px solid #333333;border-bottom: 1px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCCA3012A</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Frame and fit wet area fixtures</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">CPCCCA3016A</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Construct timber external stairs</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 1px solid #333333;border-bottom: 0px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">Joinery - stairs field of work</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 0px solid #333333;border-bottom: 1px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCJN3002A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Use computer-controlled machinery</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCJS3002A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Manufacture stair components for straight flighted stairs</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCJS3003A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Assemble and install stairs</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCJS3004A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Manufacture and install continuous handrailing and special stair components</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCJS3006A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Construct fabricated stairs</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCJS3011A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Design and set out stairs</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 1px solid #333333;border-bottom: 0px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border:0;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"><strong class="
+                                        ait24">General electives</strong>&nbsp;</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="border-left: 0px solid #333333;border-right: 0px solid #333333;border-top: 0px solid #333333;border-bottom: 1px solid #333333;;vertical-align: top;" colspan="2" width="943">
+                                <p class="
+                                        ait4"></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">BSBSMB301</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Investigate micro business opportunities</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">BSBSMB406</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Manage small business finances</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3009B</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Construct advanced roofs</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3011A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Refurbish timber sashes to window frames</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3014A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Construct bulkheads</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3015A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Assemble partitions</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCA3022A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Install curtain walling</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM2002A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Carry out excavation</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCCM3001C</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Operate elevated work platforms</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCSF2003A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Cut and bend materials using oxy-LPG equipment</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCSF2004A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Place and fix reinforcement materials</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCSH2003A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Apply and install sealant and sealant devices</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCSH3001A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Set out and assemble cabinets, showcases, wall units, counters and workstations</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" width="303">
+                                <p class="
+                                        ait4">CPCCWC3003A</p>
+                                </td>
+                                <td style="" width="693">
+                                <p class="
+                                        ait4">Install dry wall passive fire-rated systems</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">RIICCM210D</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Install trench support</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">RIIWHS202D</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Enter and work in confined spaces</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="" valign="middle" width="303">
+                                <p class="
+                                        ait4">RIIWMG203D</p>
+                                </td>
+                                <td style="" valign="middle" width="693">
+                                <p class="
+                                        ait4">Drain and dewater civil construction site</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <!-- end row -->
         </div>
         <!-- end container -->
     </section>
+
     <section class="pb-5 rpl-check-section">
         <div class="container">
             <div class="row">
@@ -95,7 +921,6 @@
                             <div class="card-body">
                                 <h5>Qualification Name:</h5>
                                 <p>
-                                    CPC32011<br />
                                     Certificate III in Carpentry and Joinery
                                 </p>
 
@@ -108,20 +933,6 @@
                                 <p>
                                     Within four weeks of receiving sufficient and complying evidence of competency in all applied for units of competency.
                                 </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="card rounded-0">
-                          <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                                    <h4>Let us certify your skills:</h4>
-                                </button>
-                            </h5>
-                          </div>
-                          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-
                             </div>
                           </div>
                         </div>
