@@ -936,20 +936,6 @@
                             </div>
                           </div>
                         </div>
-                        <div class="card rounded-0">
-                          <div class="card-header" id="headingFive">
-                            <h5 class="mb-0">
-                              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                <h4>This qualification will be offered by one of the following RTOs:</h4>
-                              </button>
-                            </h5>
-                          </div>
-                          <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                            <div class="card-body">
-                                <p class="p-4">RTO</p>
-                            </div>
-                          </div>
-                        </div>
                     </div>
 
                     {{-- <p class="pt-5">View Other Qualifications in
