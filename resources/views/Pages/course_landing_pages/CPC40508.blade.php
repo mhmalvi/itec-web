@@ -254,94 +254,94 @@
                     <p>Some units in this qualification may have prerequisite requirements, which must be met when packaging the qualification. Users are referred to the list of CPC08 units with prerequisite unit requirements available in this Training Package for this purpose.</p>
 
                     <h5>Core units</h5>
-                    <table class="ait-table" width="943">
+                    <table class="table table-bordered text-white">
                         <tbody>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">BSBWOR402A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Promote team effectiveness</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">CPCCBC4001A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Apply building codes and standards to the construction process for low rise building projects</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">CPCCBC4002A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Manage occupational health and safety in the building and construction workplace</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">CPCCBC4007A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Plan building or construction work</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">CPCCBC4008B</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Conduct on-site supervision of building and construction projects</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">CPCCBC4009B</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Apply legal requirements to building and construction projects</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">CPCCBC4010B</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Apply structural principles to residential low rise constructions</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">CPCCBC4011B</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Apply structural principles to commercial low rise constructions</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">CPCCBC4012B</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Read and interpret plans and specifications</p>
                                 </td>
@@ -366,271 +366,271 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBCUS301</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Deliver and monitor a service to customers</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBITU201</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Produce simple word processed documents</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBITU202</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Create and use spreadsheets</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBITU301</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Create and use databases</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBMGT403</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Implement continuous improvement</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBPMG404A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Apply quality management techniques</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBPMG407A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Apply risk management techniques</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBPMG522</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Undertake project work</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBLDR402</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Lead effective workplace relationships</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">BSBWRT401</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Write complex documents</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4005A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Produce labour and material schedules for ordering</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4014A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Prepare simple building sketches and drawings</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4015A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Prepare specifications for all construction works</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4017A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Arrange resources and prepare for the building or construction project</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4018A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Apply site surveys and set-out procedures to building and construction projects</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4019A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Apply sustainable building design principles to water management systems</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4020A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Build thermally efficient and sustainable structures</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4021A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Minimise waste on the building and construction site</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4024A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Resolve business disputes</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4026A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Arrange building applications and approvals</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4028A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Prepare design brief for construction works</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCBC4051A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Supervise asbestos removal</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCCO4001A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Supervise concreting work</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCCWHS1001</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Prepare to work safely in the construction industry</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">CPCSUS4001A</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Implement and monitor environmentally sustainable work practices</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="237">
+                                <td style="" valign="middle" width="237">
                                 <p class="
                                         ait4">HLTHIR403C</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" valign="middle" width="747">
+                                <td style="" valign="middle" width="747">
                                 <p class="
                                         ait4">Work effectively with culturally diverse clients and co-workers</p>
                                 </td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="237">
+                                <td style="" width="237">
                                 <p class="
                                         ait4">TAEDEL402</p>
                                 </td>
-                                <td style="border:1px solid #333333;;vertical-align: top;" width="747">
+                                <td style="" width="747">
                                 <p class="
                                         ait4">Plan, organise and facilitate learning in the workplace</p>
                                 </td>

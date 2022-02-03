@@ -2302,7 +2302,7 @@
             <div class="row">
                 <div class="col-12" data-aos="fade-up">
                     <figure class="post-image text-center">
-                        <img src="{{ asset('course_images/SIT50416.webp') }}"
+                        <img src="{{ asset('storage/courses/45.jpg') }}"
                             alt="Image">
                     </figure>
                 </div>
