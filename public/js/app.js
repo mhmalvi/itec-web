@@ -26300,7 +26300,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.form-control[data-v-182a31b1] {\n  font-size: 0.9rem !important;\n}\ninput[type=\"text\"][data-v-182a31b1],\ninput[type=\"email\"][data-v-182a31b1] {\n  height: 38px !important;\n}\n#info[data-v-182a31b1] {\n  font-size: 0.8rem !important;\n}\nbutton[type=\"submit\"][data-v-182a31b1],\nbutton[type=\"button\"][data-v-182a31b1] {\n  height: 45px;\n  border: 1px solid #cd4236 !important;\n  background: #cd4236 !important;\n  color: #fff;\n  padding: 0 30px;\n  font-weight: 600;\n  font-size: 14px;\n}\n.checklist[data-v-182a31b1] {\n  width: 50px !important;\n  height: 50px !important;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.form-control[data-v-182a31b1] {\r\n  font-size: 0.9rem !important;\n}\ninput[type=\"text\"][data-v-182a31b1],\r\ninput[type=\"email\"][data-v-182a31b1] {\r\n  height: 38px !important;\n}\n#info[data-v-182a31b1] {\r\n  font-size: 0.8rem !important;\n}\nbutton[type=\"submit\"][data-v-182a31b1],\r\nbutton[type=\"button\"][data-v-182a31b1] {\r\n  height: 45px;\r\n  border: 1px solid #cd4236 !important;\r\n  background: #cd4236 !important;\r\n  color: #fff;\r\n  padding: 0 30px;\r\n  font-weight: 600;\r\n  font-size: 14px;\n}\n.checklist[data-v-182a31b1] {\r\n  width: 50px !important;\r\n  height: 50px !important;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
