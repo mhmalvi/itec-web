@@ -12,635 +12,592 @@
     {{ validation.message }}
   </div>
   <form @submit.prevent="handleFormSubmit">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5>Qualifications</h5>
-
-            <div class="form-group">
-              <label for="q1">What industry is your experience in?</label>
-              <span v-show="data.industries_loading" class="float-right">
-                <i class="fas fa-circle-notch fa-spin"></i>
-              </span>
-              <select
-                class="form-control"
-                id="q1"
-                v-model="formData.q1"
-                @change="handleIndustrySelect()"
-              >
-                <option value="" selected>
-                  Select the qualification's industry ...
-                </option>
-                <option
-                  v-for="(industry, index) in data.industries"
-                  :key="index"
-                  :value="industry.title"
-                >
-                  {{ industry.title }}
-                </option>
-              </select>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q1"
-              >
-                {{ validation.errors.q1[0] }}
-              </small>
-            </div>
-            <div class="form-group">
-              <label for="q2">What qualification are you looking for?</label>
-              <span v-show="data.qualifications_loading" class="float-right">
-                <i class="fas fa-circle-notch fa-spin"></i>
-              </span>
-              <select
-                class="form-control"
-                id="q2"
-                v-model="formData.q2"
-                :disabled="formData.q1 == '' || data.qualifications.length == 0"
-              >
-                <option value="" :selected="formData.q2 == ''">
-                  Select the qualification you looking for ...
-                </option>
-
-                <option
-                  v-for="(qualification, index) in data.qualifications"
-                  :key="index"
-                  :value="qualification.Course"
-                >
-                  {{ qualification.Course }}
-                </option>
-              </select>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q2"
-              >
-                {{ validation.errors.q2[0] }}
-              </small>
-            </div>
-          </div>
+    <div class="card mb-3 p-3">
+      <div class="card-body">
+        <div class="form-group">
+          <label for="q1">What industry is your experience in?</label>
+          <span v-show="data.industries_loading" class="float-right">
+            <i class="fas fa-circle-notch fa-spin"></i>
+          </span>
+          <select
+            class="form-control"
+            id="q1"
+            v-model="formData.q1"
+            @change="handleIndustrySelect()"
+          >
+            <option value="" selected>
+              Select the qualification's industry ...
+            </option>
+            <option
+              v-for="(industry, index) in data.industries"
+              :key="index"
+              :value="industry.title"
+            >
+              {{ industry.title }}
+            </option>
+          </select>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q1"
+          >
+            {{ validation.errors.q1[0] }}
+          </small>
         </div>
+        <div class="form-group">
+          <label for="q2">What qualification are you looking for?</label>
+          <span v-show="data.qualifications_loading" class="float-right">
+            <i class="fas fa-circle-notch fa-spin"></i>
+          </span>
+          <select
+            class="form-control"
+            id="q2"
+            v-model="formData.q2"
+            :disabled="formData.q1 == '' || data.qualifications.length == 0"
+          >
+            <option value="" :selected="formData.q2 == ''">
+              Select the qualification you looking for ...
+            </option>
 
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5>Professional Experience</h5>
-
-            <div class="form-group">
-              <label for="q3"
-                >How many years of relevant work experience do you have?</label
-              >
-              <div class="row">
-                <div class="col-sm-6 col-md-3">
-                  <input
-                    type="radio"
-                    name="q3"
-                    v-model="formData.q3"
-                    id="one"
-                    value="1 - 2 years"
-                    hidden
-                  />
-                  <label for="one" class="exp-lbl">
-                    <div>
-                      1 - 2 <br />
-                      Years
-                    </div>
-                  </label>
-                </div>
-                <div class="col-sm-6 col-md-3">
-                  <input
-                    type="radio"
-                    name="q3"
-                    v-model="formData.q3"
-                    id="two"
-                    value="3 - 4 years"
-                    hidden
-                  />
-                  <label for="two" class="exp-lbl">
-                    <div>
-                      3 - 4 <br />
-                      Years
-                    </div>
-                  </label>
-                </div>
-                <div class="col-sm-3">
-                  <input
-                    type="radio"
-                    name="q3"
-                    v-model="formData.q3"
-                    id="three"
-                    value="5 - 9 years"
-                    hidden
-                  />
-                  <label for="three" class="exp-lbl">
-                    <div>
-                      5 - 9 <br />
-                      Years
-                    </div>
-                  </label>
-                </div>
-                <div class="col-sm-3">
-                  <input
-                    type="radio"
-                    name="q3"
-                    v-model="formData.q3"
-                    id="four"
-                    value="10 + years"
-                    hidden
-                  />
-                  <label for="four" class="exp-lbl">
-                    <div>
-                      10 + <br />
-                      Years
-                    </div>
-                  </label>
-                </div>
-              </div>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q3"
-              >
-                {{ validation.errors.q3[0] }}
-              </small>
-            </div>
-            <div class="form-group">
-              <label for="q4">Where is your work experience?</label>
-              <div class="row">
-                <div class="col-sm-4">
-                  <input
-                    type="radio"
-                    name="q4"
-                    v-model="formData.q4"
-                    id="wlOne"
-                    value="Australia"
-                    hidden
-                  />
-                  <label for="wlOne" class="exp-lbl">
-                    <div>Australia</div>
-                  </label>
-                </div>
-                <div class="col-sm-4">
-                  <input
-                    type="radio"
-                    name="q4"
-                    v-model="formData.q4"
-                    id="wlTwo"
-                    value="Overseas"
-                    hidden
-                  />
-                  <label for="wlTwo" class="exp-lbl">
-                    <div>Overseas</div>
-                  </label>
-                </div>
-                <div class="col-sm-4">
-                  <input
-                    type="radio"
-                    name="q4"
-                    v-model="formData.q4"
-                    id="wlThree"
-                    value="Other"
-                    hidden
-                  />
-                  <label for="wlThree" class="exp-lbl">
-                    <div>Other</div>
-                  </label>
-                </div>
-              </div>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q4"
-              >
-                {{ validation.errors.q4[0] }}
-              </small>
-            </div>
-          </div>
-        </div>
-
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5>Your Address</h5>
-
-            <div class="radio">
-              <label for="q5">What state do you live in?</label>
-              <div class="row">
-                <div class="col-sm-3 col-6">
-                  <input
-                    type="radio"
-                    name="q5"
-                    id="NSW"
-                    value="NSW"
-                    v-model="formData.q5"
-                    hidden
-                  />
-                  <label for="NSW" class="exp-lbl">
-                    <div>New South Wales</div>
-                  </label>
-                </div>
-                <div class="col-sm-3 col-6">
-                  <input
-                    type="radio"
-                    name="q5"
-                    id="VIC"
-                    v-model="formData.q5"
-                    value="VIC"
-                  />
-                  <label for="VIC" class="exp-lbl">
-                    <div>Victoria</div>
-                  </label>
-                </div>
-                <div class="col-sm-3 col-6">
-                  <input
-                    type="radio"
-                    name="q5"
-                    id="QLD"
-                    v-model="formData.q5"
-                    value="QLD"
-                  />
-                  <label for="QLD" class="exp-lbl">
-                    <div>Queensland</div>
-                  </label>
-                </div>
-                <div class="col-sm-3 col-6">
-                  <input
-                    type="radio"
-                    name="q5"
-                    id="SA"
-                    v-model="formData.q5"
-                    value="SA"
-                  />
-                  <label for="SA" class="exp-lbl">
-                    <div>South Australia</div>
-                  </label>
-                </div>
-              </div>
-              <div class="row pt-sm-5">
-                <div class="col-sm-3 col-6">
-                  <input
-                    type="radio"
-                    name="q5"
-                    id="WA"
-                    v-model="formData.q5"
-                    value="WA"
-                  />
-                  <label for="WA" class="exp-lbl">
-                    <div>Western Australia</div>
-                  </label>
-                </div>
-                <div class="col-sm-3 col-6">
-                  <input
-                    type="radio"
-                    name="q5"
-                    id="ACT"
-                    v-model="formData.q5"
-                    value="ACT"
-                  />
-                  <label for="ACT" class="exp-lbl">
-                    <div>Australian Capital Territory</div>
-                  </label>
-                </div>
-                <div class="col-sm-3 col-6">
-                  <input
-                    type="radio"
-                    name="q5"
-                    id="NT"
-                    v-model="formData.q5"
-                    value="NT"
-                  />
-                  <label for="NT" class="exp-lbl">
-                    <div>Northern Territory</div>
-                  </label>
-                </div>
-                <div class="col-sm-3 col-6">
-                  <input
-                    type="radio"
-                    name="q5"
-                    id="TAS"
-                    v-model="formData.q5"
-                    value="TAS"
-                  />
-                  <label for="TAS" class="exp-lbl">
-                    <div>Tasmania</div>
-                  </label>
-                </div>
-              </div>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q5"
-              >
-                {{ validation.errors.q5[0] }}
-              </small>
-            </div>
-          </div>
-        </div>
-
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5>Personal Informations</h5>
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                class="form-control"
-                placeholder="Please enter your full name"
-                v-model="formData.name"
-              />
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.name"
-              >
-                {{ validation.errors.name[0] }}
-              </small>
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                class="form-control"
-                v-model="formData.email"
-                placeholder="example@email.com"
-              />
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.email"
-              >
-                {{ validation.errors.email[0] }}
-              </small>
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                id="phone"
-                class="form-control"
-                v-model="formData.phone"
-                placeholder="Enter your contact number"
-              />
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.phone"
-              >
-                {{ validation.errors.phone[0] }}
-              </small>
-            </div>
-          </div>
+            <option
+              v-for="(qualification, index) in data.qualifications"
+              :key="index"
+              :value="qualification.Course"
+            >
+              {{ qualification.Course }}
+            </option>
+          </select>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q2"
+          >
+            {{ validation.errors.q2[0] }}
+          </small>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="card mb-3" id="info">
-          <div class="card-body">
-            <h5>Type of Referees</h5>
+    </div>
 
-            <div class="py-2">
-              <p>
-                For the RPL process an applicant must provide at least three
-                referee details. Out of the three: one of your referee must be a
-                Supervisor at work, who is referred to as ‘Testimonial Referee’
-                and the other two must be ‘Nominated Referees’, whom your
-                Assessor will contact for reference check. One of your Nominated
-                Referee should be able to provide you with ‘Third Party Report'.
-                The detail explanation of the type of referees are given below:
-              </p>
-              <p>
-                <strong>Testimonial Referee:</strong> 'Testimonial Referees' are
-                mostly your Employer, Supervisor, Managers who can provide you
-                with a testimonial letter declaring that they know you for more
-                than 1 year and who can declare that you have sufficient job
-                experience to meet the qualification requirements.
-              </p>
-              <p>
-                <strong>Nominated Referee:</strong> You should have two
-                Nominated referee who could either be your colleague,
-                supervisor, manager and other relevant person, who has worked
-                with you and can assess your skill and knowledge in relevance to
-                each unit of competency.
-              </p>
+    <div class="card mb-3 p-3">
+      <div class="card-body">
+        <div class="form-group">
+          <label for="q3"
+            >How many years of relevant work experience do you have?</label
+          >
+          <div class="row">
+            <div class="col-6 col-md-2 mb-1">
+              <input
+                type="radio"
+                name="q3"
+                v-model="formData.q3"
+                id="one"
+                value="1 - 2 years"
+                hidden
+              />
+              <label for="one" class="exp-lbl">
+                <div>
+                  1 - 2 <br />
+                  Years
+                </div>
+              </label>
+            </div>
+            <div class="col-6 col-md-2 mb-1">
+              <input
+                type="radio"
+                name="q3"
+                v-model="formData.q3"
+                id="two"
+                value="3 - 4 years"
+                hidden
+              />
+              <label for="two" class="exp-lbl">
+                <div>
+                  3 - 4 <br />
+                  Years
+                </div>
+              </label>
+            </div>
+            <div class="col-6 col-md-2 mb-1">
+              <input
+                type="radio"
+                name="q3"
+                v-model="formData.q3"
+                id="three"
+                value="5 - 9 years"
+                hidden
+              />
+              <label for="three" class="exp-lbl">
+                <div>
+                  5 - 9 <br />
+                  Years
+                </div>
+              </label>
+            </div>
+            <div class="col-6 col-md-2 mb-1">
+              <input
+                type="radio"
+                name="q3"
+                v-model="formData.q3"
+                id="four"
+                value="10 + years"
+                hidden
+              />
+              <label for="four" class="exp-lbl">
+                <div>
+                  10 + <br />
+                  Years
+                </div>
+              </label>
             </div>
           </div>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q3"
+          >
+            {{ validation.errors.q3[0] }}
+          </small>
         </div>
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5>RPL Checklist</h5>
-
-            <div class="form-group">
-              <label for="q7"
-                >Can you provide referees who can support your RPL
-                Assessment?**</label
-              >
-              <div class="row">
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q7"
-                    id="q7y"
-                    v-model="formData.q6"
-                    value="yes"
-                    hidden
-                  />
-                  <label for="q7y" class="exp-lbl checklist">
-                    <div>Yes</div>
-                  </label>
-                </div>
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q7"
-                    id="q7n"
-                    value="no"
-                    v-model="formData.q6"
-                    hidden
-                  />
-                  <label for="q7n" class="exp-lbl checklist">
-                    <div>No</div>
-                  </label>
-                </div>
-              </div>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q6"
-              >
-                {{ validation.errors.q6[0] }}
-              </small>
+        <div class="form-group">
+          <label for="q4">Where is your work experience?</label>
+          <div class="row">
+            <div class="col-sm-6 col-md-2">
+              <input
+                type="radio"
+                name="q4"
+                v-model="formData.q4"
+                id="wlOne"
+                value="Australia"
+                hidden
+              />
+              <label for="wlOne" class="exp-lbl">
+                <div>Australia</div>
+              </label>
             </div>
-
-            <div class="form-group">
-              <label for="q8"
-                >Do you have any past academic qualification you have obtained
-                in Australia ?</label
-              >
-              <div class="row">
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q8"
-                    id="q8y"
-                    value="yes"
-                    v-model="formData.q7"
-                    hidden
-                  />
-                  <label for="q8y" class="exp-lbl checklist">
-                    <div>Yes</div>
-                  </label>
-                </div>
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q8"
-                    id="q8n"
-                    value="no"
-                    v-model="formData.q7"
-                    hidden
-                  />
-                  <label for="q8n" class="exp-lbl checklist">
-                    <div>No</div>
-                  </label>
-                </div>
-              </div>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q7"
-              >
-                {{ validation.errors.q7[0] }}
-              </small>
+            <div class="col-sm-6 col-md-2">
+              <input
+                type="radio"
+                name="q4"
+                v-model="formData.q4"
+                id="wlTwo"
+                value="Overseas"
+                hidden
+              />
+              <label for="wlTwo" class="exp-lbl">
+                <div>Overseas</div>
+              </label>
             </div>
-
-            <div class="form-group">
-              <label for="q9"
-                >Do you accept that there will be many different type of
-                evidences you have to supply for RPL Assessment, will you be
-                able to supply the documents when requested?</label
-              >
-              <div class="row">
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q9"
-                    id="q9y"
-                    value="yes"
-                    v-model="formData.q8"
-                    hidden
-                  />
-                  <label for="q9y" class="exp-lbl checklist">
-                    <div>Yes</div>
-                  </label>
-                </div>
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q9"
-                    id="q9n"
-                    value="no"
-                    v-model="formData.q8"
-                    hidden
-                  />
-                  <label for="q9n" class="exp-lbl checklist">
-                    <div>No</div>
-                  </label>
-                </div>
-              </div>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q8"
-              >
-                {{ validation.errors.q8[0] }}
-              </small>
-            </div>
-
-            <div class="form-group">
-              <label for="q10"
-                >During the RPL process, we may request you for some video or
-                photo evidences, are you comfortable in supplying such
-                evidences?</label
-              >
-              <div class="row">
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q10"
-                    id="q10y"
-                    value="yes"
-                    v-model="formData.q9"
-                    hidden
-                  />
-                  <label for="q10y" class="exp-lbl checklist">
-                    <div>Yes</div>
-                  </label>
-                </div>
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q10"
-                    id="q10n"
-                    value="no"
-                    v-model="formData.q9"
-                    hidden
-                  />
-                  <label for="q10n" class="exp-lbl checklist">
-                    <div>No</div>
-                  </label>
-                </div>
-              </div>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q9"
-              >
-                {{ validation.errors.q9[0] }}
-              </small>
-            </div>
-
-            <div class="form-group">
-              <label for="q11"
-                >During the RPL process, we may request you for some video or
-                photo evidences, are you comfortable in supplying such
-                evidences?</label
-              >
-              <div class="row">
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q11"
-                    id="q11y"
-                    value="yes"
-                    v-model="formData.q10"
-                    hidden
-                  />
-                  <label for="q11y" class="exp-lbl checklist">
-                    <div>Yes</div>
-                  </label>
-                </div>
-                <div class="col-2">
-                  <input
-                    type="radio"
-                    name="q11"
-                    id="q11n"
-                    value="no"
-                    v-model="formData.q10"
-                    hidden
-                  />
-                  <label for="q11n" class="exp-lbl checklist">
-                    <div>No</div>
-                  </label>
-                </div>
-              </div>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.q10"
-              >
-                {{ validation.errors.q10[0] }}
-              </small>
-            </div>
-            <div class="form-group">
-              <textarea
-                name=""
-                rows="5"
-                placeholder="Do you have any other query?"
-                class="form-control"
-                v-model="formData.remarks"
-              ></textarea>
-              <small
-                class="text-danger"
-                v-if="validation.errors && validation.errors.remarks"
-              >
-                {{ validation.errors.remarks[0] }}
-              </small>
+            <div class="col-sm-6 col-md-2">
+              <input
+                type="radio"
+                name="q4"
+                v-model="formData.q4"
+                id="wlThree"
+                value="Other"
+                hidden
+              />
+              <label for="wlThree" class="exp-lbl">
+                <div>Other</div>
+              </label>
             </div>
           </div>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q4"
+          >
+            {{ validation.errors.q4[0] }}
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3 p-3">
+      <div class="card-body">
+        <div class="radio">
+          <label for="q5">What state do you live in?</label>
+          <div class="row">
+            <div class="col-sm-3 col-6">
+              <input
+                type="radio"
+                name="q5"
+                id="NSW"
+                value="NSW"
+                v-model="formData.q5"
+                hidden
+              />
+              <label for="NSW" class="exp-lbl">
+                <div>New South Wales</div>
+              </label>
+            </div>
+            <div class="col-sm-3 col-6">
+              <input
+                type="radio"
+                name="q5"
+                id="VIC"
+                v-model="formData.q5"
+                value="VIC"
+              />
+              <label for="VIC" class="exp-lbl">
+                <div>Victoria</div>
+              </label>
+            </div>
+            <div class="col-sm-3 col-6">
+              <input
+                type="radio"
+                name="q5"
+                id="QLD"
+                v-model="formData.q5"
+                value="QLD"
+              />
+              <label for="QLD" class="exp-lbl">
+                <div>Queensland</div>
+              </label>
+            </div>
+            <div class="col-sm-3 col-6">
+              <input
+                type="radio"
+                name="q5"
+                id="SA"
+                v-model="formData.q5"
+                value="SA"
+              />
+              <label for="SA" class="exp-lbl">
+                <div>South Australia</div>
+              </label>
+            </div>
+          </div>
+          <div class="row pt-sm-5">
+            <div class="col-sm-3 col-6">
+              <input
+                type="radio"
+                name="q5"
+                id="WA"
+                v-model="formData.q5"
+                value="WA"
+              />
+              <label for="WA" class="exp-lbl">
+                <div>Western Australia</div>
+              </label>
+            </div>
+            <div class="col-sm-3 col-6">
+              <input
+                type="radio"
+                name="q5"
+                id="ACT"
+                v-model="formData.q5"
+                value="ACT"
+              />
+              <label for="ACT" class="exp-lbl">
+                <div>Australian Capital Territory</div>
+              </label>
+            </div>
+            <div class="col-sm-3 col-6">
+              <input
+                type="radio"
+                name="q5"
+                id="NT"
+                v-model="formData.q5"
+                value="NT"
+              />
+              <label for="NT" class="exp-lbl">
+                <div>Northern Territory</div>
+              </label>
+            </div>
+            <div class="col-sm-3 col-6">
+              <input
+                type="radio"
+                name="q5"
+                id="TAS"
+                v-model="formData.q5"
+                value="TAS"
+              />
+              <label for="TAS" class="exp-lbl">
+                <div>Tasmania</div>
+              </label>
+            </div>
+          </div>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q5"
+          >
+            {{ validation.errors.q5[0] }}
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3 p-3">
+      <div class="card-body">
+        <div class="form-group">
+          <label for="q7"
+            >Can you provide referees who can support your RPL
+            Assessment?**</label
+          >
+          <div class="row">
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q7"
+                id="q7y"
+                v-model="formData.q6"
+                value="yes"
+                hidden
+              />
+              <label for="q7y" class="exp-lbl checklist">
+                <div>Yes</div>
+              </label>
+            </div>
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q7"
+                id="q7n"
+                value="no"
+                v-model="formData.q6"
+                hidden
+              />
+              <label for="q7n" class="exp-lbl checklist">
+                <div>No</div>
+              </label>
+            </div>
+          </div>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q6"
+          >
+            {{ validation.errors.q6[0] }}
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="q8"
+            >Do you have any past academic qualification you have obtained in
+            Australia ?</label
+          >
+          <div class="row">
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q8"
+                id="q8y"
+                value="yes"
+                v-model="formData.q7"
+                hidden
+              />
+              <label for="q8y" class="exp-lbl checklist">
+                <div>Yes</div>
+              </label>
+            </div>
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q8"
+                id="q8n"
+                value="no"
+                v-model="formData.q7"
+                hidden
+              />
+              <label for="q8n" class="exp-lbl checklist">
+                <div>No</div>
+              </label>
+            </div>
+          </div>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q7"
+          >
+            {{ validation.errors.q7[0] }}
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="q9"
+            >Do you accept that there will be many different type of evidences
+            you have to supply for RPL Assessment, will you be able to supply
+            the documents when requested?</label
+          >
+          <div class="row">
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q9"
+                id="q9y"
+                value="yes"
+                v-model="formData.q8"
+                hidden
+              />
+              <label for="q9y" class="exp-lbl checklist">
+                <div>Yes</div>
+              </label>
+            </div>
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q9"
+                id="q9n"
+                value="no"
+                v-model="formData.q8"
+                hidden
+              />
+              <label for="q9n" class="exp-lbl checklist">
+                <div>No</div>
+              </label>
+            </div>
+          </div>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q8"
+          >
+            {{ validation.errors.q8[0] }}
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="q10"
+            >During the RPL process, we may request you for some video or photo
+            evidences, are you comfortable in supplying such evidences?</label
+          >
+          <div class="row">
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q10"
+                id="q10y"
+                value="yes"
+                v-model="formData.q9"
+                hidden
+              />
+              <label for="q10y" class="exp-lbl checklist">
+                <div>Yes</div>
+              </label>
+            </div>
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q10"
+                id="q10n"
+                value="no"
+                v-model="formData.q9"
+                hidden
+              />
+              <label for="q10n" class="exp-lbl checklist">
+                <div>No</div>
+              </label>
+            </div>
+          </div>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q9"
+          >
+            {{ validation.errors.q9[0] }}
+          </small>
+        </div>
+
+        <div class="form-group">
+          <label for="q11"
+            >During the RPL process, we may request you for some video or photo
+            evidences, are you comfortable in supplying such evidences?</label
+          >
+          <div class="row">
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q11"
+                id="q11y"
+                value="yes"
+                v-model="formData.q10"
+                hidden
+              />
+              <label for="q11y" class="exp-lbl checklist">
+                <div>Yes</div>
+              </label>
+            </div>
+            <div class="col-6 col-md-2">
+              <input
+                type="radio"
+                name="q11"
+                id="q11n"
+                value="no"
+                v-model="formData.q10"
+                hidden
+              />
+              <label for="q11n" class="exp-lbl checklist">
+                <div>No</div>
+              </label>
+            </div>
+          </div>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.q10"
+          >
+            {{ validation.errors.q10[0] }}
+          </small>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3 p-3">
+      <div class="card-body">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            placeholder="Please enter your full name"
+            v-model="formData.name"
+          />
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.name"
+          >
+            {{ validation.errors.name[0] }}
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            v-model="formData.email"
+            placeholder="example@email.com"
+          />
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.email"
+          >
+            {{ validation.errors.email[0] }}
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="text"
+            id="phone"
+            class="form-control"
+            v-model="formData.phone"
+            placeholder="Enter your contact number"
+          />
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.phone"
+          >
+            {{ validation.errors.phone[0] }}
+          </small>
+        </div>
+        <div class="form-group">
+          <label for="query">Additional Query</label>
+          <textarea
+            name="query"
+            rows="5"
+            placeholder="Do you have any other query?"
+            class="form-control"
+            v-model="formData.remarks"
+          ></textarea>
+          <small
+            class="text-danger"
+            v-if="validation.errors && validation.errors.remarks"
+          >
+            {{ validation.errors.remarks[0] }}
+          </small>
         </div>
 
         <button type="submit" :disabled="isSubmitting">
@@ -809,7 +766,7 @@ button[type="button"] {
   font-size: 14px;
 }
 .checklist {
-  width: 50px !important;
-  height: 50px !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 </style>

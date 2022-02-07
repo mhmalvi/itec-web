@@ -615,8 +615,8 @@ input[type="color"]:focus,
 }
 
 .exp-lbl {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;

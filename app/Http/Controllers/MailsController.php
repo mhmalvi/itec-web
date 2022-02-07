@@ -34,7 +34,9 @@ class MailsController extends Controller
     {
         try {
             $request->save();
-            return response()->json(['success' => 'Your request has been submitted successfully!'], 200);
+            return response()->json([
+                'success' => 'Thanks for your response. One of our consultant will contact with you soon.'
+            ], 200);
         } catch (\Throwable $th) {
             return response()->json([
                 'errors' => $this->error,

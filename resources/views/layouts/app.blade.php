@@ -118,15 +118,12 @@
     </main>
     <!-- end main -->
 
-    @if (Route::currentRouteName() != 'check-rpl-eligibility')
-        {{-- //popup add --}}
-        @include('layouts.popup')
+    {{-- //popup add --}}
+    @include('layouts.popup')
 
-        @include('layouts.footer')
-        <!-- end footer -->
-    @endif
+    @include('layouts.footer')
 
-    <script src="{{asset('js/app.js')}}" defer></script>
+    @stack('vue')
     @include('layouts.scripts')
 </body>
 
