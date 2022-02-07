@@ -600,12 +600,12 @@
           </small>
         </div>
 
-        <button type="submit" :disabled="isSubmitting">
+        <button class="my-2" type="submit" :disabled="isSubmitting">
           <i class="fas fa-circle-notch fa-spin mr-2" v-if="isSubmitting"></i>
           Submit
         </button>
 
-        <button class="ml-2" type="button" @click="returnToHome">
+        <button class="m-2 mr-0" type="button" @click="returnToHome">
           Return To Home
         </button>
       </div>
