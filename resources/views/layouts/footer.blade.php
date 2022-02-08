@@ -34,12 +34,7 @@
         </div>
 
         <div class="row">
-            <div class="col-xs-12 col-lg-2 col-md-2 my-4 d-none d-sm-block">
-                <div class="footer-logo">
-                    <img class="lazyload" data-src="{{ asset('images/logo.webp') }}" alt="Image" class="img-fluid" width="110" height="69.3">
-                </div>
-            </div>
-            <div class="col-xs-12 col-lg-3 col-md-3">
+            <div class="col-xs-12 col-lg-4 col-md-4">
                 <div class="footer-links">
                     <p>
                         <strong>Head Office</strong>
@@ -56,26 +51,27 @@
                         </li>
                     </ul>
                 </div>
+
+                <ul>
+                    <li class="p-2 fb"><a href="https://www.facebook.com/ITECOUNSEL.AUSTRALIA/"><i
+                                class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="p-2 tw"><a href="https://twitter.com/itecounsel"><i class="fab fa-twitter"></i></a></li>
+                    <li class="p-2 yt">
+                        <a href="https://www.youtube.com/channel/UCUKW0wimJCwb4NaItMiK8LA">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="p-2"><a href="https://www.instagram.com/itecounsel/"><i class="fab fa-instagram"></i></a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-xs-12 col-lg-3 col-md-3">
+            <div class="col-xs-12 col-lg-4 col-md-4">
                 <div class="footer-links">
-                    <p>
-                        <strong>Offshore Branch</strong>
-                    </p>
-                    <ul>
-                        <li class="pb-2">
-                            Level -7, 8/C, F.R Tower, PanthaPath, Dhaka - 1207, Bangladeshh
-                        </li>
-                        <li class="py-2">
-                            +880 1309 001 813
-                        </li>
-                        <li class="py-2">
-                            info@itecounsel.com
-                        </li>
-                    </ul>
+                    <img class="lazyload" data-src="{{asset('images/award.webp')}}" alt="Image" class="img-fluid"  width="305" height="419">
                 </div>
             </div>
-            <div class="col-xs-12 col-lg-2 col-md-2 d-none d-sm-block">
+            <div class="col-xs-12 col-lg-4 col-md-4 d-none d-sm-block">
                 <div class="footer-links">
                     <p>
                         <strong>Most Usefull Links</strong>
@@ -98,21 +94,6 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-xs-12 col-lg-2 col-md-2">
-                <ul>
-                    <li class="p-2 fb"><a href="https://www.facebook.com/ITECOUNSEL.AUSTRALIA/"><i
-                                class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li class="p-2 tw"><a href="https://twitter.com/itecounsel"><i class="fab fa-twitter"></i></a></li>
-                    <li class="p-2 yt">
-                        <a href="https://www.youtube.com/channel/UCUKW0wimJCwb4NaItMiK8LA">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="p-2"><a href="https://www.instagram.com/itecounsel/"><i class="fab fa-instagram"></i></a>
-                    </li>
-                </ul>
             </div>
             <!-- end col-12 -->
             <div class="col-12">
