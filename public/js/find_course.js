@@ -19066,7 +19066,9 @@ __webpack_require__.r(__webpack_exports__);
     var getQualifications = function getQualifications(title) {
       state.qualifications_loading = true;
       state.form.qualification = "";
+      state.form.course_code = "";
       state.qualifications = [];
+      state.course_codes = [];
       axios__WEBPACK_IMPORTED_MODULE_1___default().get("/api/get-course-by-industry", {
         params: {
           title: title
@@ -19083,7 +19085,7 @@ __webpack_require__.r(__webpack_exports__);
     };
 
     var handleFormSubmit = function handleFormSubmit() {
-      location.href = "".concat(state.form.course_code, "/course");
+      if (state.form.course_code) location.href = "".concat(state.form.course_code, "/course");
     };
 
     return {
@@ -19167,19 +19169,22 @@ var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 );
 
 var _hoisted_17 = ["value"];
-
-var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_18 = {
   "class": "col-md-2 d-flex justify-content-start align-items-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  "class": "find-course-button mt-2",
-  type: "submit"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Learn More "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+};
+var _hoisted_19 = ["disabled"];
+
+var _hoisted_20 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Learn More ");
+
+var _hoisted_21 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "ml-2 fas fa-arrow-right"
-})])], -1
+}, null, -1
 /* HOISTED */
 );
 
-var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_22 = [_hoisted_20, _hoisted_21];
+
+var _hoisted_23 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "row d-flex justify-content-center"
 }, null, -1
 /* HOISTED */
@@ -19225,9 +19230,15 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* KEYED_FRAGMENT */
   ))], 8
   /* PROPS */
-  , _hoisted_15), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $setup.state.form.qualification]])])]), _hoisted_18])], 32
+  , _hoisted_15), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $setup.state.form.qualification]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_18, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    "class": "find-course-button mt-2",
+    type: "submit",
+    disabled: !$setup.state.form.course_code
+  }, _hoisted_22, 8
+  /* PROPS */
+  , _hoisted_19)])])], 32
   /* HYDRATE_EVENTS */
-  )])]), _hoisted_19], 64
+  )])]), _hoisted_23], 64
   /* STABLE_FRAGMENT */
   );
 }

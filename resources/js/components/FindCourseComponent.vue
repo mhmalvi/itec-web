@@ -44,7 +44,11 @@
           </div>
 
           <div class="col-md-2 d-flex justify-content-start align-items-center">
-            <button class="find-course-button mt-2" type="submit">
+            <button
+              class="find-course-button mt-2"
+              type="submit"
+              :disabled="!state.form.course_code"
+            >
               Learn More <i class="ml-2 fas fa-arrow-right"></i>
             </button>
           </div>
@@ -118,8 +122,12 @@ export default {
 
     const getQualifications = (title) => {
       state.qualifications_loading = true;
+
       state.form.qualification = "";
+      state.form.course_code = "";
+
       state.qualifications = [];
+      state.course_codes = [];
 
       axios
         .get("/api/get-course-by-industry", {
@@ -141,7 +149,8 @@ export default {
     };
 
     const handleFormSubmit = () => {
-      location.href = `${state.form.course_code}/course`;
+      if (state.form.course_code)
+        location.href = `${state.form.course_code}/course`;
     };
 
     return {
