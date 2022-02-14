@@ -47,6 +47,97 @@
     </section>
 
     <!-- end slider -->
+
+    <section class="intro pb-0">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card rpl-step-item">
+                                <div class="card-body text-center">
+                                    <h1 class="section-title card-title">
+                                        <img src="{{ asset('rpl-steps/step-1.png') }}"
+                                            class="rpl-step-image" alt="Step 1">
+                                    </h1>
+                                    <h4 class="section-title">Free Skills Assessment</h4>
+                                    <p>
+                                        Speak to Skills Certified Australia about your goals,
+                                        and allow us to guide you towards the qualification
+                                        that will help you reach them.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card rpl-step-item">
+                                <div class="card-body text-center">
+                                    <h1 class="section-title card-title">
+                                        <img src="{{ asset('rpl-steps/step-2.png') }}"
+                                            class="rpl-step-image" alt="Step 2">
+                                    </h1>
+                                    <h4 class="section-title">Portfolio of Experience</h4>
+                                    <p>
+                                        Your dedicated consultant will guide you through the
+                                        process of putting together a portfolio of evidence.
+                                        This can contain overseas qualifications, transcripts,
+                                        certificates, photos and videos, samples or work examples,
+                                        letters of reference, your current resume, etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card rpl-step-item">
+                                <div class="card-body text-center">
+                                    <h1 class="section-title card-title">
+                                        <img src="{{ asset('rpl-steps/step-3.png') }}"
+                                            class="rpl-step-image" alt="Step 3">
+                                    </h1>
+                                    <h4 class="section-title">Evidence Review</h4>
+                                    <p>
+                                        Once one of our partner registered training organisations (RTOs)
+                                        has assessed your portfolio, the assessor assigned to your case
+                                        may be in touch if any additional evidence is required. If you
+                                        have any weak areas, the RTO may assign a trainer to upskill you
+                                        at no cost to you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card rpl-step-item">
+                                <div class="card-body text-center">
+                                    <h1 class="section-title card-title">
+                                        <img src="{{ asset('rpl-steps/step-4.png') }}"
+                                            class="rpl-step-image" alt="Step 4">
+                                    </h1>
+                                    <h4 class="section-title">You’re qualified</h4>
+                                    <p>
+                                        Skills Certified Australia is partnered with Registered Training
+                                        Organisations whose qualifications are nationally recognised in
+                                        Australia, and are the same as the qualification you would receive
+                                        from full time study. Qualifications can also be useful for licensing
+                                        or immigration purposes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 py-3 d-flex justify-content-center">
+                            <a href="#" id="load">Check Your RPL Eligibility</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="intro">
         <div class="container">
             <div class="row">

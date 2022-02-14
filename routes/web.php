@@ -31,6 +31,23 @@ Route::get('rpl', 'PagesController@rpl')->name('rpl');
 Route::get('{slug}/industry', 'PagesController@industry')->name('industry');
 Route::get('{Slug}/course', 'PagesController@course')->name('course.single');
 
+Route::view("course/CHC43315", "pages.course_landing_pages.CHC43315");
+Route::view("course/CHC43115", "pages.course_landing_pages.CHC43115");
+Route::view("course/CHC33015", "pages.course_landing_pages.CHC33015");
+Route::view("course/CHC43015", "pages.course_landing_pages.CHC43015");
+Route::view("course/CHC52015", "pages.course_landing_pages.CHC52015");
+Route::view("course/CPC40110", "pages.course_landing_pages.CPC40110");
+Route::view("course/CPC40508", "pages.course_landing_pages.CPC40508");
+Route::view("course/CPC30111", "pages.course_landing_pages.CPC30111");
+Route::view("course/CPC32011", "pages.course_landing_pages.CPC32011");
+Route::view("course/CPC31311", "pages.course_landing_pages.CPC31311");
+Route::view("course/CPC30611", "pages.course_landing_pages.CPC30611");
+Route::view("course/UEE32220", "pages.course_landing_pages.UEE32220");
+Route::view("course/AUR30316", "pages.course_landing_pages.AUR30316");
+Route::view("course/SIT30813", "pages.course_landing_pages.SIT30813");
+Route::view("course/SIT40516", "pages.course_landing_pages.SIT40516");
+Route::view("course/SIT50416", "pages.course_landing_pages.SIT50416");
+
 Route::prefix('training')->group(function () {
     Route::get('/', 'PagesController@training')->name('trainings');
     Route::name('trainings.')->group(function () {
