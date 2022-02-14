@@ -138,6 +138,51 @@
         </div>
     </section>
 
+    <section class="icon-content-block py-0 mb-0">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 d-flex align-items-center text-left">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>
+                                Having your skills recognised through Recognition of Prior Learning (RPL) may have a wide range of benefits for your career and lifestyle.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <p>
+                                An initial assessment could help you achieve a nationally recognised qualification through Skills Certified Australia and its partner RTOs.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <small>
+                                There are so many benefits to having your skills recognised including increased career opportunities, avoiding unnecessary training and much more.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="{{ asset('images/rpl-details.jpg') }}" alt="RPL Details">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients shadow-0 py-0 bg-gray">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <h3 class="section-title">All qualifications are awarded by our partner RTO’s</h3>
+
+                    <a href="#" id="load">View Qualifications</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ asset('blogImages/Steps to Get Qualified for Certification.jpg') }}" alt="RPL Details 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="intro">
         <div class="container">
             <div class="row">

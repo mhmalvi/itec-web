@@ -1028,5 +1028,9 @@ input[type="radio"]:checked ~ label {
 }
 
 .rpl-step-image {
-    width: 80px;
+    width: 60px;
+}
+
+.rpl-step-item p {
+    font-size: 14px;
 }
