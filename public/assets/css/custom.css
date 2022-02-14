@@ -1015,3 +1015,18 @@ input[type="radio"]:checked ~ label {
     color: #1C375B;
     text-decoration: none;
 }
+
+.rpl-step-item {
+    color: #fff !important;
+    background-color: rgb(220 123 115) !important;
+    border-color: none;
+}
+
+.rpl-step-item .section-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.rpl-step-image {
+    width: 80px;
+}
