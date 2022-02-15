@@ -174,7 +174,7 @@
                 <div class="col-md-6 py-5">
                     <h3 class="section-title">All qualifications are awarded by our partner RTO’s</h3>
 
-                    <a href="#" id="load">View Qualifications</a>
+                    <a href="{{ route('trainings') }}" class="blue-btn">View Qualifications</a>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('blogImages/Steps to Get Qualified for Certification.jpg') }}" alt="RPL Details 2">
@@ -493,7 +493,7 @@
             <!-- end row -->
 
             <div class="d-flex justify-content-center">
-                <a href="{{route('rto-partner')}}" id="load">Join as RTO Partner</a>
+                <a href="{{route('rto-partner')}}" class="blue-btn">Join as RTO Partner</a>
             </div>
         </div>
         <!-- end container -->
