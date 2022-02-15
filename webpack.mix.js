@@ -14,6 +14,7 @@ const mix = require("laravel-mix");
 mix.js("resources/js/app.js", "public/js")
     .js("resources/js/rpl.js", "public/js")
     .js("resources/js/find_course.js", "public/js")
+    .js("resources/js/subs.js", "public/js")
     .vue()
     .postCss("resources/css/app.css", "public/css")
     .postCss("resources/css/custom.css", "public/css");

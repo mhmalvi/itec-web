@@ -142,7 +142,7 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-6 d-flex align-items-center text-left">
-                    <div class="row">
+                    <div class="row py-5">
                         <div class="col-12">
                             <p>
                                 Having your skills recognised through Recognition of Prior Learning (RPL) may have a wide range of benefits for your career and lifestyle.
@@ -171,7 +171,7 @@
     <section class="clients shadow-0 py-0 bg-gray">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-6 py-5">
                     <h3 class="section-title">All qualifications are awarded by our partner RTO’s</h3>
 
                     <a href="#" id="load">View Qualifications</a>
@@ -263,129 +263,6 @@
         </div>
         <!-- end container -->
     </section>
-
-    <section class="icon-content-block">
-        <div class="container">
-            <div class="row justify-content-center itec-services">
-                <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title">THE THINGS<br>
-                        WE ARE ABLE TO DO</h3>
-                </div>
-                <!-- end col-12 -->
-                <div class="col-lg-3 col-md-3" data-aos="fade-up">
-                    <a href="{{ route('page', 'ielts') }}">
-                        <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon01.webp') }}" alt="Image" width="75" height="75"> </figure>
-                            <h6>IELTS | PTE</h6>
-                            <ul>
-                                <li>Expected Result</li>
-                                <li>Experienced Mentors</li>
-                                <li>Flexible Batch Times</li>
-                            </ul>
-                        </div>
-                        <!-- end content-block -->
-                    </a>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3" data-aos="fade-up">
-                    <a href="{{ route('rpl') }}">
-                        <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon02.webp') }}" alt="Image" width="75" height="75"> </figure>
-                            <h6>RPL</h6>
-                            <ul>
-                                <li>Get Certified</li>
-                                <li>Boost Your Career</li>
-                                <li>Get Your Dream Job</li>
-                            </ul>
-                        </div>
-                        <!-- end content-block -->
-                    </a>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3" data-aos="fade-up">
-                    <a href="{{ route('admission', 'australia') }}">
-                        <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon03.webp') }}" alt="Image" width="75" height="75"> </figure>
-                            <h6>ADMISSION</h6>
-                            <ul>
-                                <li>University Admission</li>
-                                <li>Migration</li>
-                                <li>Travel Visa</li>
-                            </ul>
-                        </div>
-                        <!-- end content-block -->
-                    </a>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3" data-aos="fade-up">
-                    <a href="">
-                        <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon04.webp') }}" alt="Image" width="75" height="75"> </figure>
-                            <h6>TRAINING</h6>
-                            <ul>
-                                <li>Short Courses</li>
-                                <li>Long Qualifications</li>
-                            </ul>
-                        </div>
-                        <!-- end content-block -->
-                    </a>
-                </div>
-                <!-- end col-3 -->
-            </div>
-            <!-- end row -->
-
-            <div class="section-new">
-                <div class="row py-5">
-                    <div class="col-lg-5" data-aos="fade-up">
-                        <h2>Study, Travel, Work and Immigrate in Australia </h2>
-                        <br>
-                        <p>
-                            ITEC is designed to give consultancy to students, and who travel to Australia from all over the
-                            world.
-                            You will get reliable information about the fantastic opportunities to study, work or travel in
-                            Australia.
-                        </p>
-
-                    </div>
-                    <!-- end col-5 -->
-                    <div class="col-lg-7" data-aos="fade-up">
-
-                        <img class="lazyload" data-src="{{ asset('images/122.webp') }}" alt="Image" width="560" height="320">
-
-                    </div>
-                    <!-- end col-7 -->
-                </div>
-                <!-- end row -->
-
-                <div class="py-5"></div>
-
-                <div class="row py-5">
-                    <div class="col-lg-5" data-aos="fade-up">
-                        <img class="lazyload" data-src="{{ asset('images/123.webp') }}" alt="Image" width="560" height="320">
-                    </div>
-                    <!-- end col-5 -->
-                    <div class="col-lg-7" data-aos="fade-up">
-                        <h2>We help international students to: </h2>
-                        <br>
-                        <ul>
-                            <li>Find courses</li>
-                            <li>Get accepted into colleges, universities</li>
-                            <li>Apply for a students or travel visa</li>
-                            <li>Fina a student job while studying in Australia</li>
-                            <li>Apply for our work experience program</li>
-                            <li>Get in contact with immigration agents to apply for your PR visa</li>
-                        </ul>
-
-
-                    </div>
-                    <!-- end col-7 -->
-                </div>
-                <!-- end row -->
-            </div>
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end icon-content-block -->
 
     <section class="intro">
         <div class="container">
