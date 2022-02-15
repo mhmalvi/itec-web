@@ -130,7 +130,7 @@
 
                     <div class="row">
                         <div class="col-md-12 py-3 d-flex justify-content-center">
-                            <a href="#" id="load">Check Your RPL Eligibility</a>
+                            <a href="{{ route('check-rpl-eligibility') }}" class="blue-btn">Check Your RPL Eligibility</a>
                         </div>
                     </div>
                 </div>
