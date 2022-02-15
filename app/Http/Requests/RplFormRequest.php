@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use App\Mail\RplMail;
 use App\Models\RplEligibilityRequest;
+use App\Services\GoogleSheetHandler;
 use Illuminate\Support\Facades\Mail;
 
 class RplFormRequest extends MailsRequest
@@ -74,11 +75,15 @@ class RplFormRequest extends MailsRequest
             'qus3' => $this['q8'],
             'qus4' => $this['q9'],
             'qus5' => $this['q10'],
-            'remark' => $this['remark'],
+            'remark' => $this['remarks'],
         ];
 
         RplEligibilityRequest::create($data);
         $this->sendMail($data);
+
+        $google_sheet_handler = new GoogleSheetHandler();
+
+        $google_sheet_handler->setData($data)->saveRPL();
     }
 
     private function sendMail($data)
