@@ -7,6 +7,7 @@ import PasswordChange from "./components/profile/PasswordChange.vue";
 import EditBlogComponent from "./components/blogs/EditBlogComponent.vue";
 import SubscribersComponent from "./components/mailables/SubscribersComponent.vue";
 import RtoFormComponent from "./components/RtoFormComponent.vue";
+import CreateCourseComponent from "./components/courses/CreateCourseComponent.vue";
 
 const app = createApp({});
 
@@ -21,6 +22,7 @@ app.component("password-change", PasswordChange);
 app.component("blog-edit-component", EditBlogComponent);
 app.component("subscribers-component", SubscribersComponent);
 app.component("rto-form-component", RtoFormComponent);
+app.component("create-course-component", CreateCourseComponent);
 
 app.mount("#app");
 

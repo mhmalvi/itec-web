@@ -4,30 +4,32 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Course;
+use Illuminate\Support\Str;
 use App\Models\CourseCategory;
 use App\Models\CourseIndustry;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Auth;
+use Intervention\Image\Facades\Image;
 use Cviebrock\EloquentSluggable\Services\SlugService;
 
 class CoursesController extends Controller
 {
     /**
      * @return View
-     * 
+     *
      */
     public function index()
     {
         $courses = Course::all();
-        return view('admin.Course.index', compact('courses'));
+        return view('admin.courses.index', compact('courses'));
     }
 
 
 
     /**
      * @return Json Response
-     * 
+     *
      */
     public function createCategory(Request $request)
     {
@@ -47,7 +49,7 @@ class CoursesController extends Controller
 
     /**
      * @return Json response
-     * 
+     *
      */
     public function createIndustry(Request $request)
     {
@@ -76,85 +78,61 @@ class CoursesController extends Controller
 
     /**
      * @return view
-     * 
+     *
      */
     public function create()
     {
         $categories = CourseCategory::all();
         $industries = CourseIndustry::all();
-        return view('admin.Course.create', compact('categories', 'industries'));
+        return view('admin.courses.create', compact('categories', 'industries'));
     }
 
 
 
     /**
      * @param Form Data
-     * 
-     * 
+     *
+     *
      */
     public function store(Request $request)
     {
         try {
-            $category = CourseCategory::where('title', $request->category)->first();
-            $industry = CourseIndustry::where('title', $request->industry)->first();
-
-            $newName = null;
-            $fileName = null;
-
-            if ($request->hasFile('thumbnail')) {
-                //Get the file name without extension
-                $image = $request->file('thumbnail');
-                $imagename = pathinfo($image->getClientOriginalName(), PATHINFO_FILENAME);
-                $ext = $image->getClientOriginalExtension();
-                $random = uniqid();
-
-                $newName = "{$imagename}_{$random}.{$ext}";
-
-                //check if directory exist or not
-                if (!Storage::exists("public/courses")) {
-                    Storage::makeDirectory("public/courses");
-                }
-                Storage::putFileAs('public/courses', $image, $newName);
-            }
-
-            if ($request->hasFile('checklist')) {
-                $file = $request->file('checklist');
-                $ext = $file->getClientOriginalExtension();
-                $fileName = "{$request->course_code}.{$ext}";
-
-                //check if directory exist or not
-                if (!Storage::exists("public/checklists")) {
-                    Storage::makeDirectory("public/checklists");
-                }
-                Storage::putFileAs('public/checklists', $file, $fileName);
-            }
-
-            Course::create([
-                'action_user' => Auth::id(),
-                'course_code' => $request->course_code,
-                'course_name' => $request->course_title,
-                'course_categories_id' => $category->id,
-                'course_industries_id' => $industry->id,
-                'course_desc' => $request->details,
-                'thumbnail' => $newName,
-                'checklist' => $fileName,
-                'isPublished' => ($request->publish === 'on') ? 1 : 0
+            $request->validate([
+                "category" => "required",
+                "course_code" => "required",
+                "course_title" => "required",
+                "industry" => "required",
             ]);
+            $category = CourseCategory::find($request->category);
+            $industry = CourseIndustry::find($request->industry);
 
-            $notification = [
-                'message'   =>  'Successfully Saved.',
-                'alert-type'    =>  'success'
-            ];
+            $new_image_name = null;
 
-            return back()->with($notification);
+            if ($request->filled('thumbnail')) {
+                $new_image_name = $this->saveThumbnail($request->thumbnail, $request->course_title);
+            }
+
+            $course = new Course;
+
+            $course->action_user = Auth::id();
+            $course->course_code = $request->course_code;
+            $course->course_name = $request->course_title;
+            $course->course_desc = $request->description;
+            $course->thumbnail = $new_image_name;
+            $course->category()->associate($category);
+            $course->courseIndustry()->associate($industry);
+            $course->isPublished = $request->isPublished;
+
+            $course->save();
+
+            return response()->json([
+                'message' => 'Course Created Successfully'
+            ], 200);
         } catch (\Throwable $th) {
-            $notification = [
-                // 'message'   =>  'oops! Something went wrong',
+            throw $th;
+            return response()->json([
                 'message' => $th->getMessage(),
-                'alert-type'    =>  'warning'
-            ];
-
-            return back()->with($notification);
+            ], 500);
         }
     }
 
@@ -194,5 +172,35 @@ class CoursesController extends Controller
 
             return back()->with($notification);
         }
+    }
+
+    private function saveThumbnail($image, $title)
+    {
+        $ext = $this->getClientOriginalExtension($image);
+        $name = Str::slug($title);
+
+        $new_image_name = time() . "_{$name}.{$ext}";
+
+        //check if directory exist or not
+        if (!Storage::exists("public/courses")) {
+            Storage::makeDirectory("public/courses");
+        }
+
+        Image::make($image)->save(
+            storage_path('app/public/courses/' . $new_image_name)
+        );
+
+        return $new_image_name;
+    }
+
+    private function getClientOriginalExtension($file)
+    {
+        $encodedImgString = explode(',', $file, 2)[1];
+        $decodedImgString = base64_decode($encodedImgString);
+        $info = getimagesizefromstring($decodedImgString);
+
+        $ext = image_type_to_extension($info[2]);
+
+        return $ext;
     }
 }

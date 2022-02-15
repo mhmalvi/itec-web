@@ -25,7 +25,7 @@ class Course extends Model
 
 
     /**
-     * 
+     *
      */
     public function courseIndustry()
     {
@@ -34,10 +34,15 @@ class Course extends Model
 
 
     /**
-     * 
+     *
      */
     public function qualifications()
     {
         return $this->belongsTo(Qualification::class);
+    }
+
+    public function category()
+    {
+        return $this->belongsTo(CourseCategory::class, 'course_categories_id');
     }
 }

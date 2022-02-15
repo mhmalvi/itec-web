@@ -19,7 +19,7 @@
                     <div class="ibox-content">
 
                         <div class="table-responsive">
-                            <table class="table table-striped table-bordered table-hover dataTables-example">
+                            <table class="table table-bordered table-hover dataTables-example">
                                 <thead>
                                     <tr class="text-center">
                                         <th>Course Code</th>
