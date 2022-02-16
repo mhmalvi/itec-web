@@ -61,7 +61,7 @@
                                     </h1>
                                     <h4 class="section-title">Free Skills Assessment</h4>
                                     <p>
-                                        Speak to Skills Certified Australia about your goals,
+                                        Speak to ITEC Australia about your goals,
                                         and allow us to guide you towards the qualification
                                         that will help you reach them.
                                     </p>
@@ -116,7 +116,7 @@
                                     </h1>
                                     <h4 class="section-title">You’re qualified</h4>
                                     <p>
-                                        Skills Certified Australia is partnered with Registered Training
+                                        ITEC Australia is partnered with Registered Training
                                         Organisations whose qualifications are nationally recognised in
                                         Australia, and are the same as the qualification you would receive
                                         from full time study. Qualifications can also be useful for licensing
@@ -129,9 +129,49 @@
 
                     <div class="row">
                         <div class="col-md-12 py-3 d-flex justify-content-center">
-                            <a href="#" id="load">Check Your RPL Eligibility</a>
+                            <a href="{{ route('check-rpl-eligibility') }}" class="blue-btn">Check Your RPL Eligibility</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="icon-content-block py-0 mb-0">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 px-0">
+                    <img src="{{ asset('images/rpl-details.webp') }}" alt="RPL Details">
+                </div>
+
+                <div class="col-md-6 d-flex align-items-center text-left">
+                    <div class="row py-5">
+                        <div class="col-12">
+                            <p class="section-title section-title-sm">
+                                Having your skills recognised through Recognition of Prior Learning (RPL) may have a wide range of benefits for your career and lifestyle.
+                            </p>
+                        </div>
+                        <div class="col-12">
+                            <p class="section-title section-title-sm">
+                                An initial assessment could help you achieve a nationally recognised qualification through ITEC Australia and its partner RTOs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients shadow-0 py-0 bg-gray">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 py-5">
+                    <h3 class="section-title">All qualifications are provided by our partner RTO’s</h3>
+
+                    <a href="{{ route('trainings') }}" class="blue-btn">View Qualifications</a>
+                </div>
+                <div class="col-md-6 px-0">
+                    <img src="{{ asset('blogImages/Steps to Get Qualified for Certification.jpg') }}" alt="RPL Details 2">
                 </div>
             </div>
         </div>
@@ -218,174 +258,7 @@
         <!-- end container -->
     </section>
 
-    <section class="icon-content-block">
-        <div class="container">
-            <div class="row justify-content-center itec-services">
-                <div class="col-12 wow" data-splitting>
-                    <h3 class="section-title">THE THINGS<br>
-                        WE ARE ABLE TO DO</h3>
-                </div>
-                <!-- end col-12 -->
-                <div class="col-lg-3 col-md-3" data-aos="fade-up">
-                    <a href="{{ route('page', 'ielts') }}">
-                        <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon01.webp') }}" alt="Image" width="75" height="75"> </figure>
-                            <h6>IELTS | PTE</h6>
-                            <ul>
-                                <li>Expected Result</li>
-                                <li>Experienced Mentors</li>
-                                <li>Flexible Batch Times</li>
-                            </ul>
-                        </div>
-                        <!-- end content-block -->
-                    </a>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3" data-aos="fade-up">
-                    <a href="{{ route('rpl') }}">
-                        <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon02.webp') }}" alt="Image" width="75" height="75"> </figure>
-                            <h6>RPL</h6>
-                            <ul>
-                                <li>Get Certified</li>
-                                <li>Boost Your Career</li>
-                                <li>Get Your Dream Job</li>
-                            </ul>
-                        </div>
-                        <!-- end content-block -->
-                    </a>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3" data-aos="fade-up">
-                    <a href="{{ route('admission', 'australia') }}">
-                        <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon03.webp') }}" alt="Image" width="75" height="75"> </figure>
-                            <h6>ADMISSION</h6>
-                            <ul>
-                                <li>University Admission</li>
-                                <li>Migration</li>
-                                <li>Travel Visa</li>
-                            </ul>
-                        </div>
-                        <!-- end content-block -->
-                    </a>
-                </div>
-                <!-- end col-3 -->
-                <div class="col-lg-3 col-md-3" data-aos="fade-up">
-                    <a href="">
-                        <div class="content-block">
-                            <figure> <img class="lazyload" data-src="{{ asset('images/icon04.webp') }}" alt="Image" width="75" height="75"> </figure>
-                            <h6>TRAINING</h6>
-                            <ul>
-                                <li>Short Courses</li>
-                                <li>Long Qualifications</li>
-                            </ul>
-                        </div>
-                        <!-- end content-block -->
-                    </a>
-                </div>
-                <!-- end col-3 -->
-            </div>
-            <!-- end row -->
-
-            <div class="section-new">
-                <div class="row py-5">
-                    <div class="col-lg-5" data-aos="fade-up">
-                        <h2>Study, Travel, Work and Immigrate in Australia </h2>
-                        <br>
-                        <p>
-                            ITEC is designed to give consultancy to students, and who travel to Australia from all over the
-                            world.
-                            You will get reliable information about the fantastic opportunities to study, work or travel in
-                            Australia.
-                        </p>
-
-                    </div>
-                    <!-- end col-5 -->
-                    <div class="col-lg-7" data-aos="fade-up">
-
-                        <img class="lazyload" data-src="{{ asset('images/122.webp') }}" alt="Image" width="560" height="320">
-
-                    </div>
-                    <!-- end col-7 -->
-                </div>
-                <!-- end row -->
-
-                <div class="py-5"></div>
-
-                <div class="row py-5">
-                    <div class="col-lg-5" data-aos="fade-up">
-                        <img class="lazyload" data-src="{{ asset('images/123.webp') }}" alt="Image" width="560" height="320">
-                    </div>
-                    <!-- end col-5 -->
-                    <div class="col-lg-7" data-aos="fade-up">
-                        <h2>We help international students to: </h2>
-                        <br>
-                        <ul>
-                            <li>Find courses</li>
-                            <li>Get accepted into colleges, universities</li>
-                            <li>Apply for a students or travel visa</li>
-                            <li>Fina a student job while studying in Australia</li>
-                            <li>Apply for our work experience program</li>
-                            <li>Get in contact with immigration agents to apply for your PR visa</li>
-                        </ul>
-
-
-                    </div>
-                    <!-- end col-7 -->
-                </div>
-                <!-- end row -->
-            </div>
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end icon-content-block -->
-
-    <section class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 wow" data-splitting>
-                    <h2 class="section-title text-left">Free Study in Australia Service</h2>
-                    <iframe width="500" height="300" src="http://www.youtube.com/embed/Zg1EN70w6DQ?autoplay=1&loop=1&playlist=Zg1EN70w6DQ" title="RPL"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-                <div class="col-lg-7 offset-lg-1" data-aos="fade-up">
-                    <div class="p-2 text-justify">
-                        <p><strong>Free Study in Australia</strong></p>
-                        <p>
-                            In ITEC we provide Free Study in Australia Service by our experience of
-                            our registered education experts. We help thousands of students to help immigrate and study in
-                            Australia. Registered education and immigration consultants provide free education services for
-                            international students and education providers.
-                        </p>
-                    </div>
-                    <div class="p-2 text-justify">
-                        <p><strong>Free Counseling</strong></p>
-                        <p>
-                            We are a consulting firm that has been offering high-quality services to
-                            people who want to research, work, or travel in Australia for many years. We provide free
-                            counseling and guidance to applicants from all over the world.
-                        </p>
-                    </div>
-                    <div class="p-2 text-justify">
-                        <p><strong>PTE Academic</strong></p>
-                        <p>
-                            PTE Academic is a computer-based academic English language exam for
-                            non-native English speakers who choose to study in a foreign country. ITEC offers the best PTE
-                            course in Australia
-                        </p>
-                    </div>
-                </div>
-                <!-- end col-7 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end intro -->
-
-    <section class="testimonials">
+    <section class="testimonials mt-3">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 order-lg-12 wow" data-splitting>
@@ -570,7 +443,7 @@
             <!-- end row -->
 
             <div class="d-flex justify-content-center">
-                <a href="{{route('rto-partner')}}" id="load">Join as RTO Partner</a>
+                <a href="{{route('rto-partner')}}" class="blue-btn">Join as RTO Partner</a>
             </div>
         </div>
         <!-- end container -->
