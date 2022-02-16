@@ -51,6 +51,8 @@
     </script>
 
     @include('layouts.styles')
+
+    @stack('css')
 </head>
 
 <body>
@@ -106,10 +108,12 @@
 
             <!-- end left-side -->
             <div class="all-cases-link">
-                <b><i class="far fa-file-alt"></i></b>
-                <span>
-                    <a class="text-white" href="{{route('check-rpl-eligibility')}}" target="_blank">CHECK YOUR RPL ELIGIBILITY</a>
-                </span>
+                <a class="text-white" href="{{route('check-rpl-eligibility')}}" target="_blank">
+                    <b><i class="far fa-file-alt"></i></b>
+                    <span>
+                        CHECK YOUR RPL ELIGIBILITY
+                    </span>
+                </a>
             </div>
             <!-- end all-cases-link -->
         @endif

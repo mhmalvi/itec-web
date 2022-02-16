@@ -6,29 +6,77 @@
     <meta name="description" content="ITEC is the best education consultant & migration agency in Australia. Those who want to study, work or travel to Australia will get the best consultancy from our expert." />
 @endpush
 
+@push('css')
+    <style>
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 26px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        color: #fff;
+        font-size: 8vw;
+        font-weight: 900;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
+@endpush
+
 @section('content')
+    {{-- <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+    </div> --}}
+
     <header class="slider">
-        <div class="swiper-container gallery-top">
+        <div class="swiper mySwiper swiper-container gallery-top">
             <div class="swiper-wrapper">
-                <div class="swiper-slide" data-background="{{ asset('images/slider4.webp') }}"></div>
-                <div class="swiper-slide" data-background="{{ asset('images/slider3.webp') }}"></div>
-                <div class="swiper-slide" data-background="{{ asset('images/slider2.webp') }}"></div>
+                <div class="swiper-slide" data-background="{{ asset('images/slider4.webp') }}">
+                    ACHIEVE
+                </div>
+                <div class="swiper-slide" data-background="{{ asset('images/slider3.webp') }}">
+                    RPL
+                </div>
+                <div class="swiper-slide" data-background="{{ asset('images/slider2.webp') }}">
+                    CERTIFY
+                </div>
             </div>
             <!-- end swiper-wrapper -->
-            <div class="slide-progress"> <span>01</span>
-                <div class="swiper-pagination"></div> <span>03</span> </div> <!-- end slide-progress --> <div class="swiper-button-prev">PREV</div> <!-- end button-prev --> <div class="swiper-button-next">NEXT</div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
             <!-- end buttin-next -->
         </div>
         <!-- end gallery-top -->
-        <div class="swiper-container gallery-thumbs">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><span>ACHIEVE</span> <a href="#">PROFESSIONAL QUALIFICATION</a> </div>
-                <div class="swiper-slide"><span>RPL</span> <a href="#">FOR SKILLED PEOPLE</a></div>
-                <div class="swiper-slide"><span>CERTIFY</span> <a href="#">GOVERNMENT AUTHORIZED</a></div>
-            </div>
-            <!-- end swiper-wrapper -->
-        </div>
-        <!-- end gallery-thumbs -->
     </header>
 
     <section class="icon-content-block py-5 mb-0">
@@ -461,5 +509,26 @@
                 $("#exampleModalCenter").modal('show');
             }, 5000);
         })
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // autoplay: {
+            //     delay: 2500,
+            //     disableOnInteraction: false,
+            // },
+            grabCursor: true,
+        });
     </script>
 @endpush
