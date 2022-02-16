@@ -47,13 +47,13 @@
 
     <!-- end slider -->
 
-    <section class="intro pb-0">
+    <section class="intro pb-0 pt-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="card rpl-step-item">
+                            <div class="card rpl-step-item h-100">
                                 <div class="card-body text-center">
                                     <h1 class="section-title card-title">
                                         <img src="{{ asset('rpl-steps/step-1.png') }}"
@@ -70,7 +70,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <div class="card rpl-step-item">
+                            <div class="card rpl-step-item h-100">
                                 <div class="card-body text-center">
                                     <h1 class="section-title card-title">
                                         <img src="{{ asset('rpl-steps/step-2.png') }}"
@@ -89,7 +89,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <div class="card rpl-step-item">
+                            <div class="card rpl-step-item h-100">
                                 <div class="card-body text-center">
                                     <h1 class="section-title card-title">
                                         <img src="{{ asset('rpl-steps/step-3.png') }}"
@@ -108,7 +108,7 @@
                         </div>
 
                         <div class="col-md-3">
-                            <div class="card rpl-step-item">
+                            <div class="card rpl-step-item h-100">
                                 <div class="card-body text-center">
                                     <h1 class="section-title card-title">
                                         <img src="{{ asset('rpl-steps/step-4.png') }}"
@@ -274,7 +274,7 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        Great course and comes with great value! I strongly recommend it for anyone who wants to take higer study!
+                                        By RPL (Recognition of Prior Learning) process, ITEC helped me to understand my strengths, weaknesses and interests, and improved my confidence and motivation to learn.
                                     </blockquote>
                                     <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/1.webp') }}"
                                             alt="Image">
@@ -291,7 +291,7 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        Thank you ITEC for helping me. Your Pconsultency was excellent. Best instructor ever! I recommend this interested in higher study!
+                                        The RPL (Recognition of Prior Learning) process was very useful to maximize my potential and to aid development of my career.
                                     </blockquote>
                                     <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/2.webp') }}"
                                             alt="Image">
@@ -308,7 +308,7 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        That was a wonderful and fruitful class, I learned and mastered how to take preparation for IELTS exam.
+                                        The RPL (Recognition of Prior Learning) was the most powerful process for my career planning and ITEC really helped me through-out the process.
                                     </blockquote>
                                     <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/3.webp') }}"
                                             alt="Image">
@@ -325,7 +325,7 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        Consulting with ITEC was pure pleasure! They were friendly and concerned. I was so glad I chose them to help me with my higher study.
+                                        The experienced professional assessors from ITEC, with their professional judgments helped me for an effective RPL (Recognition of Prior Learning) process.
                                     </blockquote>
                                     <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/5.webp') }}"
                                             alt="Image">
@@ -343,30 +343,12 @@
                             <div class="swiper-slide">
                                 <div class="testimonial">
                                     <blockquote>
-                                        After I joined ITEC, I am fully pleased with the quality of training and lessons provided by the trainer and the teachers. The online class environment is so good and the trainers are excellent in service.
+                                        I have never thought I could get nationally recognized qualification by my experience. Thanks to ITEC and their RPL (Recognition of Prior Learning) process.
                                     </blockquote>
                                     <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/4.webp') }}"
                                             alt="Image">
                                         <div class="reviewer-infos">
                                             <h6>Jessica Florina</h6>
-                                        </div>
-                                        <!-- end reviewer-infos -->
-                                    </div>
-                                    <!-- end reviewers -->
-                                </div>
-                                <!-- end testimonial -->
-                            </div>
-                            <!-- end swiper-slide -->
-
-                            <div class="swiper-slide">
-                                <div class="testimonial">
-                                    <blockquote>
-                                        ITEC is a wonderful platform for anyone to learn and get qualified for professional courses. Teachers are amazing to support during the classes. I had a great experience during the whole journey.
-                                    </blockquote>
-                                    <div class="reviewer"> <img class="lazyload" data-src="{{ asset('images/testimonials/6.webp') }}"
-                                            alt="Image">
-                                        <div class="reviewer-infos">
-                                            <h6>Sabella Leona</h6>
                                         </div>
                                         <!-- end reviewer-infos -->
                                     </div>
