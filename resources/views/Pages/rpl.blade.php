@@ -58,6 +58,7 @@
         <!-- end inner -->
     </header>
     <!-- end page-header -->
+
     <section class="text-content-block">
         <div class="container">
             <div class="row">
@@ -126,6 +127,7 @@
         <!-- end container -->
     </section>
     <!-- end text-content-block -->
+
     <section class="testimonials">
         <div class="container justify-content-center">
             <div class="row">
