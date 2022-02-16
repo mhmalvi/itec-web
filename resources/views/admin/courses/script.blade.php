@@ -1,12 +1,5 @@
 <script>
     $(document).ready(function() {
-        $("#thumb").spartanMultiImagePicker({
-            fieldName: 'thumbnail',
-            width: '100%',
-            maxCount: 1,
-        });
-
-
         $("#category").select2({
             placeholder: 'Select or Create Course Category...',
             theme: 'bootstrap4',

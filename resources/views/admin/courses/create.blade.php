@@ -12,143 +12,18 @@
 
 @section('content')
     <div class="container">
-        <form action="{{ route('admin.course.add') }}" method="POST" enctype="multipart/form-data">
-            @csrf
-            <div class="my-5">
-                <div class="ibox">
-                    <div class="ibox-content p-5">
-                        <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Course Code</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="course_code">
-                            </div>
-                        </div>
-                        <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Course Title</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" name="course_title">
-                            </div>
-                        </div>
-                        <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Course Category</label>
-                            <div class="col-sm-4">
-                                <select name="category" class="form-control" id="category">
-                                    <option value selected disabled>Select or Create Course Category...</option>
-                                    @forelse ($categories as $item)
-                                        <option value="{{ $item->title }}">{{ $item->title }}</option>
-                                    @empty
-
-                                    @endforelse
-                                </select>
-                            </div>
-
-                            <label class="col-sm-2 col-form-label text-right">Course Industry</label>
-                            <div class="col-sm-4">
-                                <select name="industry" class="form-control" id="industry">
-                                    <option value selected disabled>Select or Create Course Industry...</option>
-                                    @forelse ($industries as $item)
-                                        <option value="{{ $item->title }}">{{ $item->title }}</option>
-                                    @empty
-
-                                    @endforelse
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <create-course-component categories_data="{{ json_encode($categories) }}"
+                    industries_data="{{ json_encode($industries) }}" />
             </div>
-            <div class="my-5">
-                <div class="ibox">
-                    <div class="ibox-content p-5">
-                        <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Informations</label>
-                            <div class="col-sm-10">
-                                <textarea name="details" class="info"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="my-5">
-                <div class="ibox">
-                    <div class="ibox-content p-5">
-                        <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Meta Tags (max 10)</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" name="meta_tags[]" />
-                            </div>
-                            <div class="col-sm-1 text-right">
-                                <button type="button" class="btn btn-sm btn-primary my-1">Add</button>
-                            </div>
-                        </div>
-                        <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Meta Keywords (max 5)</label>
-                            <div class="col-sm-9">
-                                <input type="text" class="form-control" name="meta_keys[]" />
-                            </div>
-                            <div class="col-sm-1 text-right">
-                                <button type="button" class="btn btn-sm btn-primary my-1">Add</button>
-                            </div>
-                        </div>
-                        <div class="form-group  row">
-                            <label class="col-sm-2 col-form-label">Meta Description</label>
-                            <div class="col-sm-10">
-                                <textarea class="form-control" name="meta_des" rows="5" style="resize: none;"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="my-5">
-                <div class="ibox">
-                    <div class="ibox-content p-5">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <h5>Course Thumbnail (1920 x 1080)</h5>
-                                <p class="text-secondary">
-                                    Upload image that should show as thumbnail image to visitors.
-                                </p>
-                                <p>
-                                    Max File Size: 1 mb
-                                </p>
-                            </div>
-                            <div class="col-sm-8">
-                                <div id="thumb" data-height="250px"></div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <h5>Upload Check List</h5>
-                                <p>
-                                    Max File Size: 1 mb
-                                </p>
-                            </div>
-                            <div class="col-sm-8 form-group">
-                                <input type="file" name="checklist" class="form-control" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mb-5 d-flex justify-content-between">
-                <div class="checkbox checkbox-success pl-0">
-                    <input id="checkbox3" type="checkbox" name="publish" checked>
-                    <label for="checkbox3">
-                        Publish Course
-                    </label>
-                </div>
-                <button type="submit" class="btn btn-primary mr-4">Publish</button>
-                <button type="reset" class="btn btn-light">Clear</button>
-            </div>
-        </form>
+        </div>
     </div>
 @endsection
 
 @push('js')
     <!-- Tags Input -->
     <script src="{{ asset('admin/js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js') }}"></script>
-
-    <script src="{{ asset('admin/js/plugins/spartan/spartan-multi-image-picker.js') }}"></script>
 
     <!-- iCheck -->
     <script src="{{ asset('admin/js/plugins/iCheck/icheck.min.js') }}"></script>
@@ -158,5 +33,5 @@
 
     <script src="{{ asset('admin/tinymce/tinymce.min.js') }}"></script>
 
-    @include('admin.Course.script')
+    @include('admin.courses.script')
 @endpush
