@@ -7,7 +7,6 @@
 @endpush
 
 @section('content')
-    <div id="subs"></div>
     <header class="slider">
         <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
@@ -518,6 +517,7 @@
     <!-- end clients -->
 @endsection
 @push('js')
+    <script src="{{asset('js/subscriber.js')}}"></script>
     <script>
         $(document).ready(function(){
             setTimeout(() => {

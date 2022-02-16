@@ -30,6 +30,6 @@ class SubscribeMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Test Mail')->view('mails.subscribe');
+        return $this->subject('Someone just subscribed from your website')->view('mails.subscribe');
     }
 }

@@ -10,7 +10,7 @@ class MailsRequest extends FormRequest
 {
     public $receipent = "admin@itecounsel.com";
     public $bcc = "info@itecounsel.com";
-    public $cc = "tousif@quadque.tech";
+    public $cc = "ashfaq@quadque.tech";
 
     protected function fileProcess()
     {

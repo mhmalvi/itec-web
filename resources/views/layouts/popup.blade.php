@@ -6,7 +6,7 @@
         <button type="button" class="close popup" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <div class="popup-img" id="app">
+        <div class="popup-img" id="subs">
           <div class="popup-title">
             <h2 class="">SUBSCRIBE</h2>
             <p>To get <span>$100</span> off</p>
