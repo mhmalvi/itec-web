@@ -17,7 +17,7 @@
                     <li><a href="{{ route('admission', 'malaysia') }}">STUDY IN MALAYSIA</a></li>
                 </ul>
             </li>
-            <li><a href="{{ route('trainings') }}">TRAINING</a><small>Learn about trainigs</small></li>
+            <li><a href="{{ route('trainings') }}">TRAINING</a><small>Learn about RPL qualifications</small></li>
             <li><a href="{{ route('faqs') }}">FAQ's</a> <small>Frequently Asked Questions</small> </li>
             <li><a href="{{ route('blogs') }}">BLOG</a> <small>Recent posts</small> </li>
             <li><a href="{{ route('page', 'contact') }}">CONTACT</a> <small>Say hello</small> </li>
