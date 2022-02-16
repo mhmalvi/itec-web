@@ -62,7 +62,7 @@
                                     </h1>
                                     <h4 class="section-title">Free Skills Assessment</h4>
                                     <p>
-                                        Speak to Skills Certified Australia about your goals,
+                                        Speak to ITEC Australia about your goals,
                                         and allow us to guide you towards the qualification
                                         that will help you reach them.
                                     </p>
@@ -117,7 +117,7 @@
                                     </h1>
                                     <h4 class="section-title">You’re qualified</h4>
                                     <p>
-                                        Skills Certified Australia is partnered with Registered Training
+                                        ITEC Australia is partnered with Registered Training
                                         Organisations whose qualifications are nationally recognised in
                                         Australia, and are the same as the qualification you would receive
                                         from full time study. Qualifications can also be useful for licensing
@@ -154,13 +154,8 @@
                         </div>
                         <div class="col-12">
                             <p class="section-title section-title-sm">
-                                An initial assessment could help you achieve a nationally recognised qualification through Skills Certified Australia and its partner RTOs.
+                                An initial assessment could help you achieve a nationally recognised qualification through ITEC Australia and its partner RTOs.
                             </p>
-                        </div>
-                        <div class="col-12">
-                            <small>
-                                There are so many benefits to having your skills recognised including increased career opportunities, avoiding unnecessary training and much more.
-                            </small>
                         </div>
                     </div>
                 </div>
@@ -172,7 +167,7 @@
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-md-6 py-5">
-                    <h3 class="section-title">All qualifications are awarded by our partner RTO’s</h3>
+                    <h3 class="section-title">All qualifications are provided by our partner RTO’s</h3>
 
                     <a href="{{ route('trainings') }}" class="blue-btn">View Qualifications</a>
                 </div>
