@@ -141,15 +141,19 @@
     <section class="icon-content-block py-0 mb-0">
         <div class="container">
             <div class="row d-flex justify-content-center">
+                <div class="col-md-6 px-0">
+                    <img src="{{ asset('images/rpl-details.webp') }}" alt="RPL Details">
+                </div>
+
                 <div class="col-md-6 d-flex align-items-center text-left">
                     <div class="row py-5">
                         <div class="col-12">
-                            <p>
+                            <p class="section-title section-title-sm">
                                 Having your skills recognised through Recognition of Prior Learning (RPL) may have a wide range of benefits for your career and lifestyle.
                             </p>
                         </div>
                         <div class="col-12">
-                            <p>
+                            <p class="section-title section-title-sm">
                                 An initial assessment could help you achieve a nationally recognised qualification through Skills Certified Australia and its partner RTOs.
                             </p>
                         </div>
@@ -159,10 +163,6 @@
                             </small>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-6">
-                    <img src="{{ asset('images/rpl-details.jpg') }}" alt="RPL Details">
                 </div>
             </div>
         </div>
@@ -176,7 +176,7 @@
 
                     <a href="{{ route('trainings') }}" class="blue-btn">View Qualifications</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 px-0">
                     <img src="{{ asset('blogImages/Steps to Get Qualified for Certification.jpg') }}" alt="RPL Details 2">
                 </div>
             </div>
