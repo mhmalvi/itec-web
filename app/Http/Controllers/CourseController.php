@@ -50,6 +50,9 @@ class CourseController extends Controller
 
                 return $data;
             }),
+            'course_codes' => $courses->map(function ($res) {
+                return $res->course_code;
+            }),
             'status' => 200
         ]);
     }

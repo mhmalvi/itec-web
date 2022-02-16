@@ -36,6 +36,15 @@
         </div>
         <!-- end gallery-thumbs -->
     </header>
+
+    <section class="icon-content-block py-5 mb-0">
+        <div class="container">
+            <div id="find_course">
+                <find-course-component></find-course-component>
+            </div>
+        </div>
+    </section>
+
     <!-- end slider -->
 
     <section class="intro pb-0">
@@ -609,6 +618,8 @@
 @endsection
 @push('js')
     <script src="{{asset('js/subscriber.js')}}"></script>
+    <script src="{{ asset('js/find_course.js') }}"></script>
+
     <script>
         $(document).ready(function(){
             setTimeout(() => {
