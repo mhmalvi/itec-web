@@ -1,6 +1,9 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/rpl.js": "/js/rpl.js",
+    "/js/subscriber.js": "/js/subscriber.js",
+    "/js/find_course.js": "/js/find_course.js",
+    "/js/subs.js": "/js/subs.js",
     "/css/app.css": "/css/app.css",
     "/css/custom.css": "/css/custom.css"
 }
