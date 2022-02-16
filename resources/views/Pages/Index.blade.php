@@ -264,51 +264,7 @@
         <!-- end container -->
     </section>
 
-    <section class="intro">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 wow" data-splitting>
-                    <h2 class="section-title text-left">Free Study in Australia Service</h2>
-                    <iframe width="500" height="300" src="http://www.youtube.com/embed/Zg1EN70w6DQ?autoplay=1&loop=1&playlist=Zg1EN70w6DQ" title="RPL"
-                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                </div>
-                <div class="col-lg-7 offset-lg-1" data-aos="fade-up">
-                    <div class="p-2 text-justify">
-                        <p><strong>Free Study in Australia</strong></p>
-                        <p>
-                            In ITEC we provide Free Study in Australia Service by our experience of
-                            our registered education experts. We help thousands of students to help immigrate and study in
-                            Australia. Registered education and immigration consultants provide free education services for
-                            international students and education providers.
-                        </p>
-                    </div>
-                    <div class="p-2 text-justify">
-                        <p><strong>Free Counseling</strong></p>
-                        <p>
-                            We are a consulting firm that has been offering high-quality services to
-                            people who want to research, work, or travel in Australia for many years. We provide free
-                            counseling and guidance to applicants from all over the world.
-                        </p>
-                    </div>
-                    <div class="p-2 text-justify">
-                        <p><strong>PTE Academic</strong></p>
-                        <p>
-                            PTE Academic is a computer-based academic English language exam for
-                            non-native English speakers who choose to study in a foreign country. ITEC offers the best PTE
-                            course in Australia
-                        </p>
-                    </div>
-                </div>
-                <!-- end col-7 -->
-            </div>
-            <!-- end row -->
-        </div>
-        <!-- end container -->
-    </section>
-    <!-- end intro -->
-
-    <section class="testimonials">
+    <section class="testimonials mt-3">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 order-lg-12 wow" data-splitting>
