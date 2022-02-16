@@ -67,8 +67,8 @@
                 </ul>
             </div>
             <div class="col-xs-12 col-lg-4 col-md-4">
-                <div class="footer-links">
-                    <img class="lazyload" data-src="{{asset('images/award.webp')}}" alt="Image" class="img-fluid"  width="305" height="419">
+                <div class="footer-links d-flex justify-content-center">
+                    <img class="lazyload" data-src="{{asset('images/award.webp')}}" alt="Image" class="img-fluid"  width="auto" height="209">
                 </div>
             </div>
             <div class="col-xs-12 col-lg-4 col-md-4 d-none d-sm-block">

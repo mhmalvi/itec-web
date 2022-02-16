@@ -16,21 +16,15 @@
             </div>
             <!-- end swiper-wrapper -->
             <div class="slide-progress"> <span>01</span>
-                <div class="swiper-pagination"></div>
-                <span>03</span>
-            </div>
-            <!-- end slide-progress -->
-            <div class="swiper-button-prev">PREV</div>
-            <!-- end button-prev -->
-            <div class="swiper-button-next">NEXT</div>
+                <div class="swiper-pagination"></div> <span>03</span> </div> <!-- end slide-progress --> <div class="swiper-button-prev">PREV</div> <!-- end button-prev --> <div class="swiper-button-next">NEXT</div>
             <!-- end buttin-next -->
         </div>
         <!-- end gallery-top -->
         <div class="swiper-container gallery-thumbs">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><span>START</span> <a href="#">YOUR HIGHER EDUCATION JOURNEY</a> </div>
-                <div class="swiper-slide"><span>CONSULT</span> <a href="#">FOR MIGRATION AND CITIZENSHIP</a></div>
-                <div class="swiper-slide"><span>CERTIFY</span> <a href="#">YOUR SKILLS</a></div>
+                <div class="swiper-slide"><span>ACHIEVE</span> <a href="#">PROFESSIONAL QUALIFICATION</a> </div>
+                <div class="swiper-slide"><span>RPL</span> <a href="#">FOR SKILLED PEOPLE</a></div>
+                <div class="swiper-slide"><span>CERTIFY</span> <a href="#">GOVERNMENT AUTHORIZED</a></div>
             </div>
             <!-- end swiper-wrapper -->
         </div>
@@ -59,11 +53,9 @@
                                         <img src="{{ asset('rpl-steps/step-1.png') }}"
                                             class="rpl-step-image" alt="Step 1">
                                     </h1>
-                                    <h4 class="section-title">Free Skills Assessment</h4>
+                                    <h4 class="section-title">FREE SKILLS ASSESSMENT</h4>
                                     <p>
-                                        Speak to ITEC Australia about your goals,
-                                        and allow us to guide you towards the qualification
-                                        that will help you reach them.
+                                        A free, no obligation, RPL skills check provided by an experienced ITEC representative
                                     </p>
                                 </div>
                             </div>
@@ -76,13 +68,9 @@
                                         <img src="{{ asset('rpl-steps/step-2.png') }}"
                                             class="rpl-step-image" alt="Step 2">
                                     </h1>
-                                    <h4 class="section-title">Portfolio of Experience</h4>
+                                    <h4 class="section-title">EVIDENCE PORTFOLIO</h4>
                                     <p>
-                                        Your dedicated consultant will guide you through the
-                                        process of putting together a portfolio of evidence.
-                                        This can contain overseas qualifications, transcripts,
-                                        certificates, photos and videos, samples or work examples,
-                                        letters of reference, your current resume, etc.
+                                        Compiling and submitting your 'Experience Portfolio' to provide relevant documentation such as photos and videos of you on the job, references, previous qualifications, current resume etc.
                                     </p>
                                 </div>
                             </div>
@@ -95,13 +83,9 @@
                                         <img src="{{ asset('rpl-steps/step-3.png') }}"
                                             class="rpl-step-image" alt="Step 3">
                                     </h1>
-                                    <h4 class="section-title">Evidence Review</h4>
+                                    <h4 class="section-title">SKILLS CHECK</h4>
                                     <p>
-                                        Once one of our partner registered training organisations (RTOs)
-                                        has assessed your portfolio, the assessor assigned to your case
-                                        may be in touch if any additional evidence is required. If you
-                                        have any weak areas, the RTO may assign a trainer to upskill you
-                                        at no cost to you.
+                                        A qualified assessor, from one of our partnering RTOs, will review the evidence and determine if you are competent in the units for that qualification via an RPL assessment.
                                     </p>
                                 </div>
                             </div>
@@ -114,13 +98,9 @@
                                         <img src="{{ asset('rpl-steps/step-4.png') }}"
                                             class="rpl-step-image" alt="Step 4">
                                     </h1>
-                                    <h4 class="section-title">You’re qualified</h4>
+                                    <h4 class="section-title">QUALIFIED!</h4>
                                     <p>
-                                        ITEC Australia is partnered with Registered Training
-                                        Organisations whose qualifications are nationally recognised in
-                                        Australia, and are the same as the qualification you would receive
-                                        from full time study. Qualifications can also be useful for licensing
-                                        or immigration purposes.
+                                        If the RTO assesses you as competent in all required units of competency, then a qualification will be awarded by the registered training organisation.
                                     </p>
                                 </div>
                             </div>
