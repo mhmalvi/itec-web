@@ -1068,3 +1068,7 @@ input[type="radio"]:checked ~ label {
 .section-title {
     font-family: 'Roboto', sans-serif;
 }
+
+.all-cases-link span {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}

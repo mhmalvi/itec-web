@@ -3,7 +3,7 @@
     <div class="col-md-12">
       <form @submit.prevent="handleFormSubmit">
         <div class="row d-flex justify-content-center text-left">
-          <div class="col-md-4">
+          <div class="col-md-5">
             <div class="form-group">
               <label>What industry is your experience in?</label>
               <select class="form-control" v-model="state.form.industry">
@@ -19,7 +19,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-5">
             <div class="form-group">
               <label>What qualification are you looking for?</label>
               <span v-show="state.qualifications_loading" class="float-right">
