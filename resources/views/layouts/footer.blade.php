@@ -41,13 +41,14 @@
                     </p>
                     <ul>
                         <li class="pb-2">
-                            Level 1, 7 Greenfield Pde Bankstown, NSW 2200, Sydney, Australia
+                            <i class="fas fa-location-arrow"></i> Level 1, 7 Greenfield Pde Bankstown,
+                            <br> NSW 2200, Sydney, Australia
                         </li>
                         <li class="py-2">
-                            1300 535 922
+                            <i class="fas fa-phone"></i> 1300 535 922
                         </li>
                         <li class="py-2">
-                            info@itecounsel.com
+                            <i class="fas fa-at"></i> info@itecounsel.com
                         </li>
                     </ul>
                 </div>

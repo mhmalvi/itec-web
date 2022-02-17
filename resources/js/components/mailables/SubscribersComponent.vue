@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class="btn-popup">
+    <div class="btn-popup d-flex justify-content-center">
       <button type="submit" :disabled="messages.isSubmitting">
         <i
           class="fas fa-circle-notch fa-spin mr-2"

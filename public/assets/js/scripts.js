@@ -385,6 +385,21 @@
         },
     });
 
+    new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        // navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        // },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
+        // grabCursor: true,
+    });
+
     // COUNTER
     $(document).scroll(function () {
         $(".odometer").each(function () {

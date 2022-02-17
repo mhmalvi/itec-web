@@ -8,8 +8,8 @@
         </button>
         <div class="popup-img" id="subs">
           <div class="popup-title">
-            <h2 class="">SUBSCRIBE</h2>
-            <p>To get <span>$100</span> off</p>
+            <h2 class="">To get $100 off</h2>
+            <p>Please Subscribe</p>
           </div>
           <subscribers-component></subscribers-component>
         </div>

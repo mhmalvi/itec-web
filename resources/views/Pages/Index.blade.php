@@ -29,7 +29,7 @@
         -webkit-align-items: center;
         align-items: center;
         color: #fff;
-        font-size: 8vw;
+        font-size: 5vw;
         font-weight: 900;
         font-family: 'Roboto', sans-serif;
       }
@@ -59,24 +59,19 @@
     </div> --}}
 
     <header class="slider">
-        <div class="swiper mySwiper swiper-container gallery-top">
+        <div class="swiper mySwiper swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide" data-background="{{ asset('images/slider4.webp') }}">
-                    ACHIEVE
+                    ACHIEVE <br> PROFESSIONAL <br> QUALIFICATION
                 </div>
                 <div class="swiper-slide" data-background="{{ asset('images/slider3.webp') }}">
-                    RPL
+                    RPL FOR <br> SKILLED PEOPLE
                 </div>
                 <div class="swiper-slide" data-background="{{ asset('images/slider2.webp') }}">
-                    CERTIFY
+                    CERTIFY <br> GOVERNMENT <br> AUTHORIZED
                 </div>
             </div>
-            <!-- end swiper-wrapper -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <!-- end buttin-next -->
         </div>
-        <!-- end gallery-top -->
     </header>
 
     <section class="icon-content-block py-5 mb-0">
@@ -274,8 +269,6 @@
                             <!-- end swiper-slide -->
                         </div>
                         <!-- end swiper-wrapper -->
-                        <div class="swiper-pagination"></div>
-                        <!-- end swiper-pagination -->
                     </div>
                     <!-- end office-slider -->
                 </div>
@@ -509,26 +502,5 @@
                 $("#exampleModalCenter").modal('show');
             }, 5000);
         })
-    </script>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 0,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            // autoplay: {
-            //     delay: 2500,
-            //     disableOnInteraction: false,
-            // },
-            grabCursor: true,
-        });
     </script>
 @endpush

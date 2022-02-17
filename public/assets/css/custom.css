@@ -1057,7 +1057,7 @@ input[type="radio"]:checked ~ label {
 }
 
 .site-navigation .inner ul li {
-    padding: 0 !important;
+    padding: 2px 0 !important;
     margin-bottom: -8px;
 }
 
