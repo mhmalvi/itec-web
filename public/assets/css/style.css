@@ -46,12 +46,6 @@ theme.
 		38. RESPONSIVE TABLET FIXES
 		39. RESPONSIVE MOBILE FIXES
 
-
-
-*/
-/* GOOGLE FONTS */
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Poppins:300,400,600,800&display=swap");
-
 /* BODY */
 * {
     outline: none !important;
@@ -689,7 +683,7 @@ textarea {
 
 /* SECTION TITLES */
 .section-title {
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 80px;
     line-height: 1.4;
     font-size: 3vw;
@@ -942,7 +936,7 @@ textarea {
 
 .all-cases-link span {
     color: #fff;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin-right: 10px;
 }
 
@@ -1010,7 +1004,7 @@ textarea {
 
 .left-side .follow-us {
     width: 100px;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     text-align: center;
     transform: rotate(-90deg);
@@ -1020,7 +1014,7 @@ textarea {
 
 .left-side .rpl {
     width: 100px;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #cd4236;
     text-align: center;
     transform: rotate(-90deg);
@@ -1117,7 +1111,7 @@ textarea {
     display: none;
     font-size: 13px;
     color: #fff;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-bottom: 5px;
     position: relative;
 }
@@ -1167,7 +1161,7 @@ textarea {
     top: auto;
     right: 120px;
     bottom: 30px;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     background: none;
 }
@@ -1179,7 +1173,7 @@ textarea {
     top: auto;
     right: 40px;
     bottom: 30px;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     background: none;
 }
@@ -1199,7 +1193,7 @@ textarea {
 .slider .slide-progress span {
     display: inline-block;
     color: #fff;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
 }
 
@@ -1267,7 +1261,7 @@ textarea {
 .video-hero .inner a {
     font-size: 19px;
     color: #fff;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-bottom: 5px;
     position: relative;
     border-bottom: 2px solid #fff;
@@ -1356,7 +1350,7 @@ textarea {
 .carousel-hero .carousel-slider .swiper-slide .inner a {
     font-size: 19px;
     color: #fff;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-bottom: 5px;
     position: relative;
     border-bottom: 2px solid #fff;
@@ -1375,7 +1369,7 @@ textarea {
     top: auto;
     right: 120px;
     bottom: 30px;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     background: none;
 }
@@ -1387,7 +1381,7 @@ textarea {
     top: auto;
     right: 40px;
     bottom: 30px;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #fff;
     background: none;
 }
@@ -1407,7 +1401,7 @@ textarea {
 .carousel-hero .slide-progress span {
     display: inline-block;
     color: #fff;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
 }
 
@@ -1530,7 +1524,7 @@ textarea {
 .intro b {
     font-size: 120px;
     line-height: 1;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     float: left;
     font-weight: 400;
     margin-right: 20px;
@@ -1637,7 +1631,7 @@ textarea {
 }
 
 .process .odometer {
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 5vw;
     line-height: 1;
 }
@@ -1766,7 +1760,7 @@ textarea {
 
 .text-content-block h6 {
     font-size: 20px;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .text-content-block p {
@@ -2084,7 +2078,7 @@ textarea {
 
 .works ul li small {
     display: block;
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     opacity: 0.7;
 }
 
@@ -2103,7 +2097,7 @@ textarea {
 }
 
 .case-study h5 {
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 5vw;
     text-align: center;
     margin-top: 50px;
@@ -2512,7 +2506,7 @@ textarea {
 }
 
 .blog .post .post-content .post-link {
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     border-bottom: 2px solid #1c375b;
     padding-bottom: 5px;
 }
@@ -2745,7 +2739,7 @@ textarea {
 }
 
 .footer h6 {
-    font-family: "Fjalla One", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 2vw;
     margin-bottom: 20px;
 }
