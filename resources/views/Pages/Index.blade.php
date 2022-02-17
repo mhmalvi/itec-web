@@ -468,12 +468,12 @@
                             <div class="rpl-des">
                                 <h3>{{ $item->title }}</h3>
                                 <ul class="text-left">
-                                    @foreach ($item->courses->take(5) as $course)
-                                        <li>
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                            <a
-                                                href="{{ route('course.single', $course->course_code) }}">{{ $course->course_code }}-{{ $course->course_name }}</a>
-                                        </li>
+                                    @foreach ($item->getFeaturedCourses() as $course)
+                                            <li>
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                                <a
+                                                    href="{{ route('course.single', $course->course_code) }}">{{ $course->course_code }}-{{ $course->course_name }}</a>
+                                            </li>
                                     @endforeach
                                 </ul>
                             </div>
