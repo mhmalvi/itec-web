@@ -162,13 +162,13 @@
 
     <section class="icon-content-block py-0 mb-0">
         <div class="container">
-            <div class="row d-flex justify-content-center">
+            <div class="row">
                 <div class="col-md-6 px-0">
                     <img src="{{ asset('images/rpl-details.webp') }}" alt="RPL Details">
                 </div>
 
-                <div class="col-md-6 d-flex align-items-center text-left">
-                    <div class="row py-5">
+                <div class="col-md-5 d-flex align-items-center text-left">
+                    <div class="row py-5 pl-3">
                         <div class="col-12">
                             <p class="section-title section-title-sm">
                                 Having your skills recognised through Recognition of Prior Learning (RPL) may have a wide range of benefits for your career and lifestyle.
@@ -188,7 +188,7 @@
     <section class="clients shadow-0 py-0 bg-gray">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-md-6 py-5">
+                <div class="col-md-5 offset-md-1 py-5">
                     <h3 class="section-title">All qualifications are provided by our partner RTO’s</h3>
 
                     <a href="{{ route('trainings') }}" class="blue-btn">View Qualifications</a>
@@ -202,8 +202,8 @@
 
     <section class="intro">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 wow" data-splitting>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 wow" data-splitting>
                     <h1 class="section-title">ITEC Education Consultant and Student Agency</h1>
 
                     <div class="exp">
@@ -216,7 +216,7 @@
                     </div>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-7" data-aos="fade-up">
+                <div class="col-lg-6" data-aos="fade-up">
                     <p class="text-justify">
                         Choosing to study abroad is a life-changing choice, and gaining an Australian qualification,
                         studying English, or earning a diploma or university degree would provide you with excellent work
@@ -249,6 +249,7 @@
         <!-- end container -->
     </section>
     <!-- end intro -->
+
     <section class="intro-image">
         <div class="container">
             <div class="row">
@@ -281,15 +282,15 @@
 
     <section class="testimonials mt-3">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 order-lg-12 wow" data-splitting>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-4 order-lg-12 wow" data-splitting>
                     <h3 class="section-title">LISTEN FROM<br>
-                        OUR<br>
+                        OUR
                         STUDENTS</h3>
                     <a href="#"></a>
                 </div>
                 <!-- end col-6 -->
-                <div class="col-lg-7 order-lg-1" data-aos="fade-up">
+                <div class="col-lg-6 order-lg-1" data-aos="fade-up">
                     <div class="testimonials-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
