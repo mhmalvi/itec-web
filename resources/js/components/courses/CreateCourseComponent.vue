@@ -89,6 +89,7 @@
                   v-model:value="state.form.description"
                 /> -->
                 <quill-editor
+                  ref="description_editor"
                   v-model:content="state.form.description"
                   contentType="html"
                   :options="options"
@@ -178,7 +179,7 @@
 </template>
 
 <script>
-import { reactive } from "vue";
+import { reactive, ref } from "vue";
 import { QuillEditor } from "@vueup/vue-quill";
 import "@vueup/vue-quill/dist/vue-quill.snow.css";
 
@@ -188,6 +189,7 @@ export default {
   },
   props: ["categories_data", "industries_data"],
   setup({ categories_data, industries_data }) {
+    const description_editor = ref(0);
     const options = reactive({
       placeholder: "Create something awesome ...",
       modules: {
@@ -254,9 +256,11 @@ export default {
         qualification: "",
         thumbnail: "",
       };
+      description_editor.value.setHTML("");
     };
 
     return {
+      description_editor,
       state,
       categories,
       options,
