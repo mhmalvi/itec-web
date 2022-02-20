@@ -121,7 +121,7 @@ class CoursesController extends Controller
             $course->thumbnail = $new_image_name;
             $course->category()->associate($category);
             $course->courseIndustry()->associate($industry);
-            $course->isPublished = $request->isPublished;
+            $course->isPublished = $request->is_published;
 
             $course->save();
 
@@ -179,7 +179,7 @@ class CoursesController extends Controller
         $ext = $this->getClientOriginalExtension($image);
         $name = Str::slug($title);
 
-        $new_image_name = time() . "_{$name}.{$ext}";
+        $new_image_name = time() . "_{$name}{$ext}";
 
         //check if directory exist or not
         if (!Storage::exists("public/courses")) {
