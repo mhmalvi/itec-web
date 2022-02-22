@@ -2,36 +2,42 @@
   <div>
     <FormComponent
       ref="form_component"
-      :categories_data="categories_data"
       :industries_data="industries_data"
-      @formSubmit="handleCreateCourse"
+      :categories_data="categories_data"
+      @formSubmit="handleEditCourse"
     />
   </div>
 </template>
 
 <script>
-import { ref } from "vue";
 import FormComponent from "./CourseFormComponent.vue";
+import { ref, onMounted } from "vue";
 import useCourse from "../../composables/useCourse";
 
 export default {
   components: {
     FormComponent,
   },
-  props: ["categories_data", "industries_data"],
-  setup({ categories_data, industries_data }) {
+  props: ["course_data", "categories_data", "industries_data"],
+  setup({ course_data, categories_data, industries_data }) {
     const form_component = ref(0);
-    const { create: createCourse } = useCourse();
+    const { update: editCourse } = useCourse();
 
-    const handleCreateCourse = (data) => {
-      createCourse(data)
+    const course = JSON.parse(course_data);
+
+    onMounted(() => {
+      form_component.value.setFormData(course);
+    });
+
+    const handleEditCourse = (data) => {
+      editCourse(course.id, data)
         .then((res) => {
-          form_component.value.success(res);
+          form_component.value.success(res, false);
           alert(res.data.message);
         })
         .catch((err) => {
-          alert(err.response.data.message);
           form_component.value.fail(err);
+          if (err.response.status != 422) alert(err.response.data.message);
         })
         .finally(() => {
           form_component.value.completed();
@@ -42,7 +48,7 @@ export default {
       form_component,
       categories_data,
       industries_data,
-      handleCreateCourse,
+      handleEditCourse,
     };
   },
 };

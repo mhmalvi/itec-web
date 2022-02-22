@@ -10,7 +10,11 @@ export default () => {
         });
     };
 
-    const edit = async (id, data) => {
+    const create = async (data) => {
+        return await axios.post("/admin/course/add-new", data);
+    };
+
+    const update = async (id, data) => {
         return await axios.patch("/admin/course/update/" + id, data);
     };
 
@@ -20,7 +24,8 @@ export default () => {
 
     return {
         get,
-        edit,
+        create,
+        update,
         destroy,
     };
 };
