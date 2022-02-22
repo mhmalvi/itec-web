@@ -115,13 +115,13 @@ class CoursesController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            "category" => "required",
+            "course_code" => "required|unique:courses,course_code",
+            "course_title" => "required",
+            "industry" => "required",
+        ]);
         try {
-            $request->validate([
-                "category" => "required",
-                "course_code" => "required|unique:courses,course_code",
-                "course_title" => "required",
-                "industry" => "required",
-            ]);
             $category = CourseCategory::find($request->category);
             $industry = CourseIndustry::find($request->industry);
 
@@ -140,7 +140,7 @@ class CoursesController extends Controller
             $course->thumbnail = $new_image_name;
             $course->category()->associate($category);
             $course->courseIndustry()->associate($industry);
-            $course->isPublished = $request->isPublished;
+            $course->isPublished = $request->is_published;
 
             $course->save();
 
@@ -180,13 +180,14 @@ class CoursesController extends Controller
             $new_image_name = null;
 
             if ($request->filled('thumbnail')) {
+                $this->deleteThumbnail($course);
                 $new_image_name = $this->saveThumbnail($request->thumbnail, $request->course_title);
+                $course->thumbnail = $new_image_name;
             }
 
             $course->course_code = $request->course_code;
             $course->course_name = $request->course_title;
             $course->course_desc = $request->description;
-            $course->thumbnail = $new_image_name;
             $course->category()->associate($category);
             $course->courseIndustry()->associate($industry);
             $course->isPublished = $request->is_published;

@@ -1,6 +1,16 @@
 <template>
   <div>
-    <div class="table-response">
+    <div class="row d-flex justify-content-end">
+      <div class="col-md-4">
+        <input
+          type="text"
+          class="form-control"
+          v-model="state.paginate_options.search"
+          placeholder="Search (code, title)"
+        />
+      </div>
+    </div>
+    <div class="table-response mt-3">
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -56,28 +66,33 @@
       </table>
     </div>
 
-    <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li
-          class="page-item"
-          v-for="(item, index) in state.pagination_meta.links"
-          :key="index"
-        >
-          <a
-            class="page-link"
-            :href="item.url"
-            :class="{ active: item.active }"
-            v-html="item.label"
-            @click.prevent="getPage(item.url)"
-          ></a>
-        </li>
-      </ul>
-    </nav>
+    <div
+      class="row d-flex justify-content-center"
+      v-if="!state.loading || state.course == [] || state.courses == null"
+    >
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li
+            class="page-item"
+            v-for="(item, index) in state.pagination_meta.links"
+            :key="index"
+          >
+            <a
+              class="page-link"
+              :href="item.url"
+              :class="{ active: item.active }"
+              v-html="item.label"
+              @click.prevent="getPage(item.url)"
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </template>
 
 <script>
-import { reactive, onMounted } from "vue";
+import { reactive, onMounted, watch } from "vue";
 import useCourse from "../../composables/useCourse";
 
 export default {
@@ -100,6 +115,13 @@ export default {
       edit: editCourse,
       destroy: deleteCourse,
     } = useCourse();
+
+    watch(
+      () => state.paginate_options.search,
+      _.debounce(() => {
+        fetchCourses();
+      }, 500)
+    );
 
     onMounted(() => {
       fetchCourses();

@@ -4,6 +4,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <a href="{{ route('admin.course') }}" class="btn btn-default">
+                    Back
+                </a>
+            </div>
+            <div class="col-md-12">
                 <edit-course-component
                     course_data="{{ json_encode($course) }}"
                     categories_data="{{ json_encode($categories) }}"

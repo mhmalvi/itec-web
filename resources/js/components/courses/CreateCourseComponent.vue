@@ -30,7 +30,6 @@ export default {
           alert(res.data.message);
         })
         .catch((err) => {
-          alert(err.response.data.message);
           form_component.value.fail(err);
         })
         .finally(() => {
