@@ -27,10 +27,14 @@ Route::prefix('course')->group(function () {
     Route::get('/all', 'CoursesController@index')->name('course');
     Route::post('add-new', 'CoursesController@store');
 
+    Route::get('/list', 'CoursesController@getPaginatedList');
+
     Route::name('course.')->group(function () {
         Route::get('add-new', 'CoursesController@create')->name('add');
+        Route::get("edit/{course}", "CoursesController@edit")->name('edit');
         Route::get('{id}', 'CoursesController@edit')->name('edit');
         Route::put('/update/{id}', 'CoursesController@update')->name('update');
+        Route::delete('/delete/{course}', 'CoursesController@destroy');
     });
 
     Route::post('add-category', 'CoursesController@createCategory')->name('category.add');

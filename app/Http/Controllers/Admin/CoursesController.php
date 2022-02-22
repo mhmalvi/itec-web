@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\CoursesCollection;
 use App\Models\Course;
 use Illuminate\Support\Str;
 use App\Models\CourseCategory;
@@ -25,7 +26,24 @@ class CoursesController extends Controller
         return view('admin.courses.index', compact('courses'));
     }
 
+    public function getPaginatedList()
+    {
+        try {
+            $search = request()->filled('search') ? request()->get('search') : '';
+            $per_page = request()->filled('per_page') ? request()->get('per_page') : 10;
 
+            return new CoursesCollection(
+                Course::where('course_name', 'like', '%' . $search . '%')
+                    ->orWhere('course_code', 'like', '%' . $search . '%')
+                    ->latest()
+                    ->paginate($per_page)
+            );
+        } catch (\Throwable $th) {
+            return response()->json([
+                'message' => "Something went wrong while fetching the courses!"
+            ], 500);
+        }
+    }
 
     /**
      * @return Json Response
@@ -174,6 +192,23 @@ class CoursesController extends Controller
         }
     }
 
+    public function destroy(Course $course)
+    {
+        try {
+            $this->deleteThumbnail($course);
+            $course->delete();
+
+            return response()->json([
+                'message' => "Course Deleted Successfully",
+            ], 200);
+        } catch (\Throwable $th) {
+            return response()->json([
+                'message' => "Something went wrong while deleting the course!",
+                'error' => $th->getMessage(),
+            ], 500);
+        }
+    }
+
     private function saveThumbnail($image, $title)
     {
         $ext = $this->getClientOriginalExtension($image);
@@ -202,5 +237,10 @@ class CoursesController extends Controller
         $ext = image_type_to_extension($info[2]);
 
         return $ext;
+    }
+
+    private function deleteThumbnail(Course $course)
+    {
+        Storage::delete('public/courses/' . $course->thumbnail);
     }
 }

@@ -1,13 +1,11 @@
 @extends('admin.layouts.app')
 
 @push('css')
-    <link href="{{ asset('admin/css/plugins/dataTables/datatables.min.css') }}" rel="stylesheet">
     <style>
         .devider {
             display: inline;
             padding: 0px 5px;
         }
-
     </style>
 @endpush
 
@@ -17,68 +15,10 @@
             <div class="col-lg-12">
                 <div class="ibox ">
                     <div class="ibox-content">
-
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover dataTables-example">
-                                <thead>
-                                    <tr class="text-center">
-                                        <th>Course Code</th>
-                                        <th>Course Title</th>
-                                        <th>Posted at</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-
-                                <tbody>
-                                    @forelse ($courses as $item)
-                                        <tr>
-                                            <td>{{ $item->course_code }}</td>
-                                            <td>{{ $item->course_name }}</td>
-                                            <td>{{ $item->created_at }}</td>
-                                            <td>
-                                                <a href="{{route('admin.course.edit', $item->id)}}" class="btn btn-sm btn-outline-info">
-                                                    <i class="fa fa-edit"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                    @empty
-
-                                    @endforelse
-                                </tbody>
-                            </table>
-                        </div>
+                        <course-list-component />
                     </div>
                 </div>
             </div>
         </div>
     </div>
 @endsection
-
-@push('js')
-    <script src="{{ asset('admin/js/plugins/dataTables/datatables.min.js') }}"></script>
-    <script src="{{ asset('admin/js/plugins/dataTables/dataTables.bootstrap4.min.js') }}"></script>
-
-    <script>
-        $(document).ready(function() {
-            $('.dataTables-example').DataTable({
-                pageLength: 10,
-                responsive: true,
-                dom: '<"html5buttons"B>lTfgitp',
-                buttons: [{
-                    extend: 'print',
-                    customize: function(win) {
-                        $(win.document.body).addClass('white-bg');
-                        $(win.document.body).css('font-size', '10px');
-
-                        $(win.document.body).find('table')
-                            .addClass('compact')
-                            .css('font-size', 'inherit');
-                    }
-                }]
-
-            });
-
-        });
-
-    </script>
-@endpush
