@@ -25,7 +25,7 @@ class PagesController extends Controller
     public function index()
     {
         $industries = CourseIndustry::with('courses')
-            ->where('is_published', 1)
+            // ->where('is_published', 1)
             ->get();
         return view('pages.Index', compact('industries'));
     }
