@@ -29,12 +29,21 @@ class CourseIndustry extends Model
         ];
     }
 
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'action_user');
+    }
 
     /**
-     * 
+     *
      */
     public function courses()
     {
         return $this->hasMany(Course::class, 'course_industries_id');
+    }
+
+    public function getThumbnailUrlAttribute()
+    {
+        return $this->thumbnail ? asset('storage/industries/' . $this->thumbnail) : null;
     }
 }

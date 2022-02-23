@@ -41,8 +41,9 @@ Route::prefix('course')->group(function () {
 });
 
 Route::prefix("industries")->name('industries.')->group(function () {
-    Route::get('/', 'IndustriesController@index');
-    Route::get('create', 'IndustriesController@create');
+    Route::get('/', 'IndustriesController@index')->name('index');
+    Route::get("list", "IndustriesController@getPaginatedList");
+    Route::get('create', 'IndustriesController@create')->name('create');
 });
 
 Route::prefix('settings')->group(function () {
