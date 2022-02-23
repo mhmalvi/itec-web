@@ -4,7 +4,7 @@
     <div class="inner">
         <ul data-splitting>
             <li class="mb-2"><a href="{{ route('index') }}">HOME</a></li>
-            <li><a href="{{ route('page', 'about-itec') }}">ITEC</a> <small>All About Us</small> </li>
+            <li><a href="{{ route('page', 'about-itec') }}">ITEC</a> <small>About Us</small> </li>
             <li><a href="{{ route('rpl') }}">RPL</a><small>Recognitions of Prior Learning</small></li>
             <li>
                 <div class="nav-tree">

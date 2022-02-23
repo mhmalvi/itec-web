@@ -10,6 +10,10 @@ import CreateCourseComponent from "./components/courses/CreateCourseComponent.vu
 import CourseListComponent from "./components/courses/CourseListComponent.vue";
 import EditCourseComponent from "./components/courses/EditCourseComponent.vue";
 
+import IndustryListComponent from "./components/industries/IndustryListComponent.vue";
+import CreateIndustryComponent from "./components/industries/CreateIndustryComponent.vue";
+import EditIndustryComponent from "./components/industries/EditIndustryComponent.vue";
+
 const app = createApp({});
 
 axios.defaults.baseURL = document.head.querySelector(
@@ -25,6 +29,10 @@ app.component("rto-form-component", RtoFormComponent);
 app.component("create-course-component", CreateCourseComponent);
 app.component("course-list-component", CourseListComponent);
 app.component("edit-course-component", EditCourseComponent);
+
+app.component("industry-list-component", IndustryListComponent);
+app.component("create-industry-component", CreateIndustryComponent);
+app.component("edit-industry-component", EditIndustryComponent);
 
 app.mount("#app");
 

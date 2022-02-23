@@ -14,6 +14,8 @@ class IndustriesCollection extends ResourceCollection
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return $this->collection->map(function ($res) {
+            return new IndustryResource($res);
+        });
     }
 }

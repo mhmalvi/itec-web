@@ -14,6 +14,14 @@ class IndustryResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'action_user' => $this->user,
+            'title' => $this->title,
+            'slug' => $this->slug,
+            'description' => $this->description,
+            'thumbnail' => $this->thumbnail_url,
+            'is_published' => $this->is_published ? true : false,
+        ];
     }
 }
