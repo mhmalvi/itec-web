@@ -227,7 +227,7 @@ class CoursesController extends Controller
         $ext = $this->getClientOriginalExtension($image);
         $name = Str::slug($title);
 
-        $new_image_name = time() . "_{$name}.{$ext}";
+        $new_image_name = time() . "_{$name}{$ext}";
 
         //check if directory exist or not
         if (!Storage::exists("public/courses")) {

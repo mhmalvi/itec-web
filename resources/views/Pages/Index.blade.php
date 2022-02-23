@@ -87,7 +87,7 @@
     <section class="intro pb-0 pt-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-3">
                             <div class="card rpl-step-item h-100">
@@ -161,7 +161,7 @@
     </section>
 
     <section class="icon-content-block py-0 mb-0">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 px-0">
                     <img src="{{ asset('images/rpl-details.webp') }}" alt="RPL Details">
@@ -186,7 +186,7 @@
     </section>
 
     <section class="clients shadow-0 py-0 bg-gray">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row d-flex align-items-center">
                 <div class="col-md-5 offset-md-1 py-5">
                     <h3 class="section-title">All qualifications are provided by our partner RTO’s</h3>
@@ -203,7 +203,7 @@
     <section class="intro">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-4 wow" data-splitting>
+                <div class="col-lg-5 wow" data-splitting>
                     <h1 class="section-title">ITEC Education Consultant and Student Agency</h1>
 
                     <div class="exp">
@@ -216,7 +216,7 @@
                     </div>
                 </div>
                 <!-- end col-5 -->
-                <div class="col-lg-6" data-aos="fade-up">
+                <div class="col-lg-7" data-aos="fade-up">
                     <p class="text-justify">
                         Choosing to study abroad is a life-changing choice, and gaining an Australian qualification,
                         studying English, or earning a diploma or university degree would provide you with excellent work
@@ -283,14 +283,14 @@
     <section class="testimonials mt-3">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-lg-4 order-lg-12 wow" data-splitting>
+                <div class="col-lg-5 order-lg-12 wow" data-splitting>
                     <h3 class="section-title">LISTEN FROM<br>
                         OUR
                         STUDENTS</h3>
                     <a href="#"></a>
                 </div>
                 <!-- end col-6 -->
-                <div class="col-lg-6 order-lg-1" data-aos="fade-up">
+                <div class="col-lg-7 order-lg-1" data-aos="fade-up">
                     <div class="testimonials-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -393,7 +393,7 @@
     <!-- end testimonials -->
 
     <section class="clients shadow-0 bg-gray">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12 wow" data-splitting>
                     <h3 class="section-title text-center">OUR RTO PARTNERS</h3>
@@ -468,12 +468,12 @@
                             <div class="rpl-des">
                                 <h3>{{ $item->title }}</h3>
                                 <ul class="text-left">
-                                    @foreach ($item->courses->take(5) as $course)
-                                        <li>
-                                            <i class="fas fa-long-arrow-alt-right"></i>
-                                            <a
-                                                href="{{ route('course.single', $course->course_code) }}">{{ $course->course_code }}-{{ $course->course_name }}</a>
-                                        </li>
+                                    @foreach ($item->getFeaturedCourses() as $course)
+                                            <li>
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                                <a
+                                                    href="{{ route('course.single', $course->course_code) }}">{{ $course->course_code }}-{{ $course->course_name }}</a>
+                                            </li>
                                     @endforeach
                                 </ul>
                             </div>

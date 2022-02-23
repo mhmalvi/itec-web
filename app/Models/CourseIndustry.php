@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Course;
+use App\Services\FeaturedCoursesProvider;
 use Cviebrock\EloquentSluggable\Sluggable;
 
 class CourseIndustry extends Model
@@ -31,10 +32,16 @@ class CourseIndustry extends Model
 
 
     /**
-     * 
+     *
      */
     public function courses()
     {
         return $this->hasMany(Course::class, 'course_industries_id');
+    }
+
+    public function getFeaturedCourses()
+    {
+        $course_provider = new FeaturedCoursesProvider();
+        return $course_provider->getByIndustry($this);
     }
 }

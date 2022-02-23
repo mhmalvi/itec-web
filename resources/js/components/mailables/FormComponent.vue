@@ -48,24 +48,18 @@
           <span v-show="data.qualifications_loading" class="float-right">
             <i class="fas fa-circle-notch fa-spin"></i>
           </span>
-          <select
-            class="form-control"
-            id="q2"
-            v-model="formData.q2"
-            :disabled="formData.q1 == '' || data.qualifications.length == 0"
-          >
-            <option value="" :selected="formData.q2 == ''">
-              Select the qualification you looking for ...
-            </option>
 
-            <option
-              v-for="(qualification, index) in data.qualifications"
-              :key="index"
-              :value="qualification.Course"
-            >
-              {{ qualification.Course }}
-            </option>
-          </select>
+          <vue-select
+            class="form-control"
+            :disabled="data.qualifications.length == 0"
+            :options="data.qualifications"
+            label-by="Course"
+            value-by="Course"
+            :searchable="true"
+            search-placeholder="Search for a qualification"
+            v-model="formData.q2"
+          >
+          </vue-select>
           <small
             class="text-danger"
             v-if="validation.errors && validation.errors.q2"
@@ -615,7 +609,13 @@
 <script>
 import axios from "axios";
 import { reactive, ref, onMounted } from "vue";
+import VueSelect from "vue-next-select";
+import "vue-next-select/dist/index.min.css";
+
 export default {
+  components: {
+    VueSelect,
+  },
   setup(props) {
     const formData = reactive({
       q1: "",
@@ -703,6 +703,8 @@ export default {
 
     const getCoursesByIndustry = (industry_title) => {
       data.qualifications_loading = true;
+      data.qualifications = [];
+
       axios
         .get("/api/get-course-by-industry", {
           params: {

@@ -31,7 +31,7 @@ class PagesController extends Controller
 
     /**
      * @return View
-     * 
+     *
      */
     public function blogs()
     {
@@ -45,7 +45,7 @@ class PagesController extends Controller
 
     /**
      * @return View
-     * 
+     *
      */
     public function blogDetail($slug)
     {
@@ -57,7 +57,7 @@ class PagesController extends Controller
 
     /**
      * @return View
-     * 
+     *
      */
     public function rpl()
     {
@@ -69,7 +69,7 @@ class PagesController extends Controller
 
     /**
      * @return View
-     * 
+     *
      */
     public function industry($slug)
     {
@@ -85,18 +85,21 @@ class PagesController extends Controller
 
     /**
      * @return View
-     * 
+     *
      */
     public function course($slug)
     {
         $course = Course::with('courseIndustry')->where('course_code', $slug)->first();
+        if ($course->courseIndustry == null) {
+            return redirect()->route('index');
+        }
         return view('pages.course-single', compact('course'));
     }
 
 
 
     /**
-     * 
+     *
      */
     public function downloadFile($file)
     {
@@ -106,7 +109,7 @@ class PagesController extends Controller
 
 
     /**
-     * 
+     *
      */
     public function training()
     {
@@ -120,7 +123,7 @@ class PagesController extends Controller
 
 
     /**
-     * 
+     *
      */
     public function fullQualifications()
     {
@@ -132,7 +135,7 @@ class PagesController extends Controller
 
 
     /**
-     * 
+     *
      */
     public function shortCourses()
     {

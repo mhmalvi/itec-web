@@ -1068,3 +1068,27 @@ input[type="radio"]:checked ~ label {
 .section-title {
     font-family: 'Roboto', sans-serif;
 }
+
+.all-cases-link span {
+    font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.vue-select {
+  width: 100% !important;
+}
+
+.vue-dropdown-item.selected {
+  background: #cdcdcd !important;
+  font-weight: normal;
+}
+
+.vue-dropdown-item.highlighted {
+  background: #2c5283 !important;
+  color: #fff;
+}
+
+.vue-dropdown-item.highlighted.selected {
+  background: #cd4236 !important;
+  color: #fff;
+}
+}

@@ -10,15 +10,10 @@
 </template>
 
 <script>
-import { ref } from "vue";
 import FormComponent from "./CourseFormComponent.vue";
 import useCourse from "../../composables/useCourse";
 
 export default {
-  components: {
-    FormComponent,
-  },
-  props: ["categories_data", "industries_data"],
   setup({ categories_data, industries_data }) {
     const form_component = ref(0);
     const { create: createCourse } = useCourse();

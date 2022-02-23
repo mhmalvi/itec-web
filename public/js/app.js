@@ -22080,23 +22080,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _CourseFormComponent_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CourseFormComponent.vue */ "./resources/js/components/courses/CourseFormComponent.vue");
-/* harmony import */ var _composables_useCourse__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../composables/useCourse */ "./resources/js/composables/useCourse.js");
-
+/* harmony import */ var _CourseFormComponent_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CourseFormComponent.vue */ "./resources/js/components/courses/CourseFormComponent.vue");
+/* harmony import */ var _composables_useCourse__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../composables/useCourse */ "./resources/js/composables/useCourse.js");
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  components: {
-    FormComponent: _CourseFormComponent_vue__WEBPACK_IMPORTED_MODULE_1__.default
-  },
-  props: ["categories_data", "industries_data"],
   setup: function setup(_ref) {
     var categories_data = _ref.categories_data,
         industries_data = _ref.industries_data;
-    var form_component = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(0);
+    var form_component = ref(0);
 
-    var _useCourse = (0,_composables_useCourse__WEBPACK_IMPORTED_MODULE_2__.default)(),
+    var _useCourse = (0,_composables_useCourse__WEBPACK_IMPORTED_MODULE_1__.default)(),
         createCourse = _useCourse.create;
 
     var handleCreateCourse = function handleCreateCourse(data) {
@@ -23340,7 +23334,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* NEED_PATCH */
   ), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelSelect, $setup.state.form.industry]]), $setup.state.validation.errors && $setup.state.validation.errors.industry ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("small", _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.state.validation.errors.industry[0]), 1
   /* TEXT */
-  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <QuillEditor\n                  theme=\"snow\"\n                  v-model:value=\"state.form.description\"\n                /> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_quill_editor, {
+  )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [_hoisted_27, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <QuillEditor\r\n                  theme=\"snow\"\r\n                  v-model:value=\"state.form.description\"\r\n                /> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_quill_editor, {
     ref: "description_editor",
     content: $setup.state.form.description,
     "onUpdate:content": _cache[4] || (_cache[4] = function ($event) {
