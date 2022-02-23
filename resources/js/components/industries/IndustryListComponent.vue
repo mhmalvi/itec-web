@@ -69,7 +69,7 @@ export default {
         current_page: 0,
       },
     });
-    const { get: getIndustries } = useIndustry();
+    const { get: getIndustries, destroy: deleteIndustry } = useIndustry();
 
     onMounted(() => {
       fetchIndustries();
@@ -101,7 +101,18 @@ export default {
       return "/admin/industries/edit/" + industry.id;
     };
 
-    const attemptDelete = (industry) => {};
+    const attemptDelete = (industry) => {
+      if (confirm("Are you sure you want to delete this industry?")) {
+        deleteIndustry(industry.id)
+          .then((res) => {
+            alert(res.data.message);
+            fetchIndustries();
+          })
+          .catch((err) => {
+            alert(err.response.data.message);
+          });
+      }
+    };
 
     return {
       state,

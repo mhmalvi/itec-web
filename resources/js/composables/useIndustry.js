@@ -18,9 +18,14 @@ export default () => {
         return axios.patch("/admin/industries/update/" + id, data);
     };
 
+    const destroy = (id) => {
+        return axios.delete("/admin/industries/" + id);
+    };
+
     return {
         get,
         create,
         update,
+        destroy,
     };
 };

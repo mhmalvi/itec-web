@@ -22419,7 +22419,8 @@ __webpack_require__.r(__webpack_exports__);
     });
 
     var _useIndustry = (0,_composables_useIndustry__WEBPACK_IMPORTED_MODULE_1__.default)(),
-        getIndustries = _useIndustry.get;
+        getIndustries = _useIndustry.get,
+        deleteIndustry = _useIndustry.destroy;
 
     (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(function () {
       fetchIndustries();
@@ -22443,7 +22444,16 @@ __webpack_require__.r(__webpack_exports__);
       return "/admin/industries/edit/" + industry.id;
     };
 
-    var attemptDelete = function attemptDelete(industry) {};
+    var attemptDelete = function attemptDelete(industry) {
+      if (confirm("Are you sure you want to delete this industry?")) {
+        deleteIndustry(industry.id).then(function (res) {
+          alert(res.data.message);
+          fetchIndustries();
+        })["catch"](function (err) {
+          alert(err.response.data.message);
+        });
+      }
+    };
 
     return {
       state: state,
@@ -24758,10 +24768,15 @@ __webpack_require__.r(__webpack_exports__);
     return axios__WEBPACK_IMPORTED_MODULE_0___default().patch("/admin/industries/update/" + id, data);
   };
 
+  var destroy = function destroy(id) {
+    return axios__WEBPACK_IMPORTED_MODULE_0___default().delete("/admin/industries/" + id);
+  };
+
   return {
     get: get,
     create: create,
-    update: update
+    update: update,
+    destroy: destroy
   };
 });
 

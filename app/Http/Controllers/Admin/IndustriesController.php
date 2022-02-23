@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\IndustryCreateRequest;
+use App\Http\Requests\IndustryDeleteRequest;
 use App\Http\Requests\IndustryUpdateRequest;
 use App\Http\Resources\IndustriesCollection;
 use App\Models\CourseIndustry;
@@ -78,6 +79,22 @@ class IndustriesController extends Controller
         } catch (\Throwable $th) {
             return response()->json([
                 'message' => "Something went wrong while updating the industry",
+                'error' => $th->getMessage(),
+            ], 500);
+        }
+    }
+
+    public function destroy(CourseIndustry $industry, IndustryDeleteRequest $request)
+    {
+        try {
+            $request->delete($industry);
+
+            return response()->json([
+                'message' => "Successfully deleted the industry",
+            ], 200);
+        } catch (\Throwable $th) {
+            return response()->json([
+                'message' => "Something went wrong while deleting the industry",
                 'error' => $th->getMessage(),
             ], 500);
         }

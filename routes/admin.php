@@ -47,6 +47,7 @@ Route::prefix("industries")->name('industries.')->group(function () {
     Route::post('/', 'IndustriesController@store');
     Route::get('edit/{industry}', 'IndustriesController@edit');
     Route::patch("update/{industry}", 'IndustriesController@update');
+    Route::delete("{industry}", 'IndustriesController@destroy');
 });
 
 Route::prefix('settings')->group(function () {
