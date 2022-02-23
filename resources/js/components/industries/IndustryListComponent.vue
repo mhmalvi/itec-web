@@ -22,7 +22,12 @@
         <tbody v-else>
           <tr v-for="(industry, index) in state.industries" :key="index">
             <td>
-              {{ index + 1 }}
+              {{
+                index +
+                1 +
+                (state.pagination_meta.current_page - 1) *
+                  state.paginate_option.per_page
+              }}
             </td>
             <td class="d-flex align-items-center">
               <img
@@ -47,6 +52,32 @@
           </tr>
         </tbody>
       </table>
+    </div>
+
+    <div
+      class="row d-flex justify-content-center"
+      v-if="
+        !state.loading || state.industries == [] || state.industries == null
+      "
+    >
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li
+            class="page-item"
+            v-for="(item, index) in state.pagination_meta.links"
+            :key="index"
+          >
+            <a
+              class="page-link"
+              href="javascript:void(0)"
+              :class="{ active: item.active }"
+              v-html="item.label"
+              @click.prevent="getPage(item.url)"
+              :disabled="item.url == null"
+            ></a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
 </template>
@@ -114,10 +145,15 @@ export default {
       }
     };
 
+    const getPage = (link) => {
+      if (link) fetchIndustries(link);
+    };
+
     return {
       state,
       getEditLink,
       attemptDelete,
+      getPage,
     };
   },
 };

@@ -40,7 +40,9 @@ class CourseController extends Controller
     public function getCourseByIndustry(Request $request)
     {
         $industry = CourseIndustry::where('title', $request->title)->first();
-        $courses = Course::where('course_industries_id', $industry->id)->get();
+        $courses = Course::where('course_industries_id', $industry->id)
+            ->where('isPublished', 1)
+            ->get();
 
         return response()->json([
             'data' => $courses->map(function ($res) {

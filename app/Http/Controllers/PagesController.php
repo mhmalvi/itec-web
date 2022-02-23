@@ -24,14 +24,16 @@ class PagesController extends Controller
      */
     public function index()
     {
-        $industries = CourseIndustry::with('courses')->get();
+        $industries = CourseIndustry::with('courses')
+            ->where('is_published', 1)
+            ->get();
         return view('pages.Index', compact('industries'));
     }
 
 
     /**
      * @return View
-     * 
+     *
      */
     public function blogs()
     {
@@ -45,7 +47,7 @@ class PagesController extends Controller
 
     /**
      * @return View
-     * 
+     *
      */
     public function blogDetail($slug)
     {
@@ -57,7 +59,7 @@ class PagesController extends Controller
 
     /**
      * @return View
-     * 
+     *
      */
     public function rpl()
     {
@@ -69,7 +71,7 @@ class PagesController extends Controller
 
     /**
      * @return View
-     * 
+     *
      */
     public function industry($slug)
     {
@@ -85,7 +87,7 @@ class PagesController extends Controller
 
     /**
      * @return View
-     * 
+     *
      */
     public function course($slug)
     {
@@ -96,7 +98,7 @@ class PagesController extends Controller
 
 
     /**
-     * 
+     *
      */
     public function downloadFile($file)
     {
@@ -106,7 +108,7 @@ class PagesController extends Controller
 
 
     /**
-     * 
+     *
      */
     public function training()
     {
@@ -120,7 +122,7 @@ class PagesController extends Controller
 
 
     /**
-     * 
+     *
      */
     public function fullQualifications()
     {
@@ -132,7 +134,7 @@ class PagesController extends Controller
 
 
     /**
-     * 
+     *
      */
     public function shortCourses()
     {

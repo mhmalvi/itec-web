@@ -10,7 +10,8 @@ class CourseIndustriesController extends Controller
     public function list()
     {
         try {
-            $industries = CourseIndustry::all();
+            $industries = CourseIndustry::where('is_published', 1)
+                ->get();
 
             return response()->json([
                 'data' => $industries,
