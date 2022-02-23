@@ -44,6 +44,9 @@ Route::prefix("industries")->name('industries.')->group(function () {
     Route::get('/', 'IndustriesController@index')->name('index');
     Route::get("list", "IndustriesController@getPaginatedList");
     Route::get('create', 'IndustriesController@create')->name('create');
+    Route::post('/', 'IndustriesController@store');
+    Route::get('edit/{industry}', 'IndustriesController@edit');
+    Route::patch("update/{industry}", 'IndustriesController@update');
 });
 
 Route::prefix('settings')->group(function () {

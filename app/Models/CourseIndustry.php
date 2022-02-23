@@ -11,9 +11,7 @@ class CourseIndustry extends Model
 {
     use HasFactory, Sluggable;
 
-    protected $fillable = ['action_user', 'title', 'slug'];
-
-
+    protected $guarded = [];
 
     /**
      * Return the sluggable configuration array for this model.
@@ -44,6 +42,6 @@ class CourseIndustry extends Model
 
     public function getThumbnailUrlAttribute()
     {
-        return $this->thumbnail ? asset('storage/industries/' . $this->thumbnail) : null;
+        return $this->thumbnail ? asset('storage/industry/' . $this->thumbnail) : null;
     }
 }

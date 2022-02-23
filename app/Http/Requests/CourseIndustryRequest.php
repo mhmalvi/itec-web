@@ -2,7 +2,10 @@
 
 namespace App\Http\Requests;
 
+use App\Models\CourseIndustry;
+use App\Services\ImageHandler;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Storage;
 
 class CourseIndustryRequest extends FormRequest
 {
@@ -16,15 +19,19 @@ class CourseIndustryRequest extends FormRequest
         return true;
     }
 
-    /**
-     * Get the validation rules that apply to the request.
-     *
-     * @return array
-     */
-    public function rules()
+    protected function saveThumbnail($name)
     {
-        return [
-            'title' => 'required:unique:course_industries'
-        ];
+        $image_handler = new ImageHandler();
+        $image_handler->setImage($this->thumbnail)
+            ->setName($name)
+            ->setDimension(780, 1000)
+            ->setPath("industry");
+
+        return $image_handler->storeFromImageData();
+    }
+
+    protected function deleteThumbnail(CourseIndustry $industry)
+    {
+        Storage::delete('public/industry/' . $industry->thumbnail);
     }
 }

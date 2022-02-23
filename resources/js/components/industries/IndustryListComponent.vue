@@ -24,12 +24,24 @@
             <td>
               {{ index + 1 }}
             </td>
-            <td>
-              <div>
-                <img :src="industry.thumbnail" :alt="industry.title" />
-              </div>
-              <div>
+            <td class="d-flex align-items-center">
+              <img
+                :src="industry.thumbnail"
+                :alt="industry.title"
+                class="img-thumbnail"
+                width="80"
+              />
+              <div class="ml-3">
                 {{ industry.title }}
+                <div>
+                  <a :href="getEditLink(industry)" class="btn-link">Edit</a>
+                  <a
+                    href="#"
+                    @click.prevent="attemptDelete(industry)"
+                    class="btn-link ml-2"
+                    >Delete</a
+                  >
+                </div>
               </div>
             </td>
           </tr>
@@ -85,8 +97,16 @@ export default {
         });
     };
 
+    const getEditLink = (industry) => {
+      return "/admin/industries/edit/" + industry.id;
+    };
+
+    const attemptDelete = (industry) => {};
+
     return {
       state,
+      getEditLink,
+      attemptDelete,
     };
   },
 };

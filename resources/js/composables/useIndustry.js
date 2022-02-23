@@ -10,7 +10,17 @@ export default () => {
         });
     };
 
+    const create = (data) => {
+        return axios.post("/admin/industries", data);
+    };
+
+    const update = (id, data) => {
+        return axios.patch("/admin/industries/update/" + id, data);
+    };
+
     return {
         get,
+        create,
+        update,
     };
 };

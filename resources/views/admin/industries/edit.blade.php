@@ -9,7 +9,7 @@
                 </a>
             </div>
             <div class="col-lg-12 mt-3">
-                <create-industry-component />
+                <edit-industry-component industry_data="{{ json_encode($industry) }}" />
             </div>
         </div>
     </div>
