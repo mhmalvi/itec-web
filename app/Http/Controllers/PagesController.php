@@ -25,7 +25,7 @@ class PagesController extends Controller
     public function index()
     {
         $industries = CourseIndustry::with('courses')->get();
-        return view('pages.Index', compact('industries'));
+        return view('pages.index', compact('industries'));
     }
 
 
