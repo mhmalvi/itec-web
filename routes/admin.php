@@ -40,6 +40,11 @@ Route::prefix('course')->group(function () {
     Route::post('add-industry', 'CoursesController@createIndustry')->name('industry.add');
 });
 
+Route::prefix("industries")->name('industries.')->group(function () {
+    Route::get('/', 'IndustriesController@index');
+    Route::get('create', 'IndustriesController@create');
+});
+
 Route::prefix('settings')->group(function () {
     Route::view('profile', 'admin.settings.profile')->name('profile');
     Route::post('profile', 'UsersController@updateProfile');
