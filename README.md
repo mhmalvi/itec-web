@@ -1,3 +1,6 @@
+<!-- repo-card -->
+![itec-web](docs/assets/social-card.png)
+
 # ITEC Web
 
 The official website for ITE Counsel (ITEC), built with Laravel. This platform serves as the primary web presence for ITEC, featuring service information, content management, and user interaction capabilities. Includes Docker and Dockerfile for containerized deployment.
